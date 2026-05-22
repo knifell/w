@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аренда недвижимости - OshEstate</title>
+    <link rel="stylesheet" href="style_main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Firebase SDK (Compat version for old-style usage) -->
+    <script>if(localStorage.getItem('oshe_theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+</head>
+<body data-page="rent"> <div id="toast-container"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Osh<span>Estate</span></a>
+            <ul class="nav-links" id="nav-links-container">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="buy.html">Купить</a></li>
+                <li><a href="rent.html">Снять</a></li>
+                <li><a href="land.html">Участки</a></li>
+                <li><a href="commerce.html">Коммерция</a></li>
+                <li><a href="login.html">Войти</a></li>
+                <li><a href="register.html" class="btn-login">Регистрация</a></li>
+            </ul>
+            <button id="darkModeToggle" class="dark-mode-btn" aria-label="Переключить тему"><i class="fas fa-moon"></i></button>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <div class="page-header-breadcrumb"><a href="index.html">Главная</a><i class="fas fa-chevron-right" style="font-size:0.65rem"></i><span>Аренда</span></div>
+            <div class="page-header-badge"><i class="fas fa-clock"></i> Аренда</div>
+            <h1>Аренда недвижимости в Оше</h1>
+            <p class="page-header-sub">Квартиры, дома и коммерческие помещения в аренду</p>
+        </div>
+    </div>
+
+    <div class="fbar-wrapper">
+        <div class="container">
+            <div class="fbar-top">
+                <div class="fbar-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Адрес, район, описание...">
+                </div>
+                <select id="sortSelect" class="fbar-sort">
+                    <option value="new">Сначала новые</option>
+                    <option value="cheap">Цена: дешевле</option>
+                    <option value="expensive">Цена: дороже</option>
+                </select>
+                <button class="fbar-toggle-btn" id="fbarToggleBtn" onclick="toggleFbar()">
+                    <i class="fas fa-sliders-h"></i> Фильтры
+                    <span class="fbar-badge" id="fbarBadge" style="display:none">0</span>
+                </button>
+            </div>
+            <div class="fbar-panel" id="fbarPanel">
+                <div class="fbar-grid">
+                    <div class="fbar-field">
+                        <label class="fbar-label">Категория</label>
+                        <select id="categorySelect" class="fbar-select">
+                            <option value="all">Все категории</option>
+                            <option value="flat"> Квартиры</option>
+                            <option value="house"> Дома</option>
+                            <option value="commerce"> Коммерция</option>
+                        </select>
+                    </div>
+                    <div class="fbar-field">
+                        <label class="fbar-label">Район</label>
+                        <select id="districtFilter" class="fbar-select">
+                            <option value="">Все районы</option>
+                            <option value="center">Центр</option>
+                            <option value="maydan">Площадь Ленина</option>
+                            <option value="jibek">Жибек Жолу</option>
+                            <option value="tunguch">Тунгуч</option>
+                            <option value="batyra">Батыра</option>
+                            <option value="kurmanjan">Курманжан Датка</option>
+                            <option value="massa">Масса</option>
+                            <option value="kenesh">Кенеш</option>
+                        </select>
+                    </div>
+                    <div class="fbar-field">
+                        <label class="fbar-label">Комнат</label>
+                        <select id="roomsFilter" class="fbar-select">
+                            <option value="">Любое кол-во</option>
+                            <option value="1">1 комната</option>
+                            <option value="2">2 комнаты</option>
+                            <option value="3">3 комнаты</option>
+                            <option value="4">4 комнаты</option>
+                            <option value="5+">5+ комнат</option>
+                        </select>
+                    </div>
+                    <div class="fbar-field fbar-field--wide">
+                        <label class="fbar-label">Цена в месяц (сом)</label>
+                        <div class="fbar-price-range">
+                            <input type="number" id="priceMin" class="fbar-price-input" placeholder="от">
+                            <span class="fbar-price-dash">—</span>
+                            <input type="number" id="priceMax" class="fbar-price-input" placeholder="до">
+                        </div>
+                    </div>
+                </div>
+                <div class="fbar-actions">
+                    <button class="fbar-apply-btn" onclick="triggerFilterApply()">
+                        <i class="fas fa-check"></i> Применить
+                    </button>
+                    <button class="fbar-reset-btn" id="resetFiltersBtn">
+                        <i class="fas fa-times"></i> Сбросить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container section">
+        <div class="section-header">
+            <h2>Найдено вариантов: <span id="count-badge">0</span></h2>
+        </div>
+        <div class="listings-grid" id="listings-container">
+            <div class="loader">Загрузка...</div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в Админку - OshEstate</title>
+    <link rel="stylesheet" href="../style_main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+</head>
+<body style="background: #f0f2f5; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0;">
+
+    <div class="card-style" style="width: 100%; max-width: 400px; text-align: center; padding: 40px;">
+        <a href="../index.html" class="logo" style="display:block; margin-bottom:30px; text-decoration:none; font-size: 2rem;">
+            Osh<span style="background: linear-gradient(135deg, #ff7f50, #ff6b81); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Estate</span>
+        </a>
+        
+        <h2 style="margin-bottom: 20px; color: #333;">Вход для персонала</h2>
+        <div id="adminLoginError" style="display:none; color:#e74c3c; margin-bottom:14px; font-size:0.9rem;"></div>
+
+        <form id="adminPageLoginForm">
+            <div class="form-group" style="margin-bottom: 20px;">
+                <label style="text-align: left; display:block; margin-bottom:6px;">Пароль администратора</label>
+                <input type="password" id="adminPagePass" placeholder="Введите пароль" 
+                       style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; box-sizing:border-box; text-align:center;">
+            </div>
+            <button type="submit" class="btn-submit" id="adminLoginBtn">Войти в панель</button>
+        </form>
+
+        <a href="../index.html" style="display: block; margin-top: 20px; color: #7f8c8d; font-size: 0.9rem;">
+            &larr; Вернуться на сайт
+        </a>
+    </div>
+
+    <script src="../script.js"></script>
+    <script>
+    (function(){
+        const form = document.getElementById('adminPageLoginForm');
+        const errEl = document.getElementById('adminLoginError');
+        const btn = document.getElementById('adminLoginBtn');
+        if (!form) return;
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const pass = document.getElementById('adminPagePass').value;
+            if (pass !== 'admin123') {
+                errEl.textContent = 'Неверный пароль';
+                errEl.style.display = 'block';
+                return;
+            }
+            btn.disabled = true; btn.textContent = 'Вход...';
+            try {
+                const svc = getFirebaseServices();
+                if (svc && !svc.auth.currentUser) {
+                    await svc.auth.signInAnonymously();
+                }
+            } catch(e) {}
+            localStorage.setItem('oshAdminLoggedIn', 'true');
+            window.location.href = 'index.html';
+        });
+    })();
+    </script>
+</body>
+</html>

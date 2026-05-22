@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детали объявления - OshEstate</title>
+    <link rel="stylesheet" href="style_main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Firebase SDK (Compat version for old-style usage) -->
+    <script>if(localStorage.getItem('oshe_theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body data-page="details">
+    <div id="toast-container"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Osh<span>Estate</span></a>
+            <ul class="nav-links" id="nav-links-container">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="buy.html">Купить</a></li>
+                <li><a href="rent.html">Снять</a></li>
+                <li><a href="land.html">Участки</a></li>
+                <li><a href="commerce.html">Коммерция</a></li>
+                <li><a href="login.html">Войти</a></li>
+                <li><a href="register.html" class="btn-login">Регистрация</a></li>
+            </ul>
+            <button id="darkModeToggle" class="dark-mode-btn" aria-label="Переключить тему"><i class="fas fa-moon"></i></button>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <div id="property-content" class="container section" style="padding-top: 40px;">
+        
+        <div class="property-header">
+            <div>
+                <span id="detail-badge" class="badge-static">Продажа</span>
+                <h1 id="detail-title">Загрузка заголовка...</h1>
+                <p class="detail-address"><i class="fas fa-map-marker-alt"></i> <span id="detail-address">Адрес...</span></p>
+            </div>
+            <div class="detail-price-box">
+                <div id="detail-price" class="detail-price">0 сом</div>
+                <div class="detail-subprice">Цена окончательная</div>
+            </div>
+        </div>
+
+        <div class="property-grid">
+            
+            <div class="property-main">
+                
+                <div class="slider-container" id="detail-slider-container">
+                    <div class="slider-main">
+                        <button class="slider-btn prev" id="sliderPrevBtn"><i class="fas fa-chevron-left"></i></button>
+                        <img id="sliderMainImg" src="" alt="Фото недвижимости">
+                        <button class="slider-btn next" id="sliderNextBtn"><i class="fas fa-chevron-right"></i></button>
+                        <button class="card-fav-btn detail-fav-btn" id="detailFavBtn">
+                           <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="slider-thumbs" id="sliderThumbs"></div>
+                </div>
+
+                <div class="card-style detail-block">
+                    <h3>Описание</h3>
+                    <p id="detail-desc">Описание отсутствует.</p>
+                </div>
+
+                <div class="card-style detail-block">
+                    <h3>Характеристики</h3>
+                    <ul class="detail-specs" id="detail-specs"></ul>
+                </div>
+
+                <div class="card-style detail-block" id="map-section" style="display: none;">
+                    <h3>Расположение на карте</h3>
+                    <div id="map-view" class="map-container"></div>
+                </div>
+
+            </div>
+
+            <div class="property-sidebar">
+                <div class="card-style agent-card">
+                    <h3>Контактное лицо</h3>
+                    <div class="agent-info">
+                        <div class="agent-avatar"><i class="fas fa-user"></i></div>
+                        <div>
+                            <h4 id="detail-author">Имя продавца</h4>
+                            <p style="color:#777; font-size:0.9rem;">На сайте OshEstate</p>
+                        </div>
+                    </div>
+                    
+                    <div id="contact-placeholder">
+                        <p style="font-size:0.9rem; margin-bottom:10px; color:#e74c3c;">
+                            <i class="fas fa-lock"></i> Войдите, чтобы увидеть номер
+                        </p>
+                        <a href="login.html" class="btn-submit" style="display:block; text-align:center; text-decoration:none;">Войти</a>
+                    </div>
+                    
+                    <div id="contact-real" style="display:none;">
+                        <div id="phones-container"></div>
+                        <button id="openChatBtn" class="btn-submit" style="margin-top:10px; width:100%;">💬 Написать в чат</button>
+                    </div>
+                </div>
+
+                <div class="card-style" style="margin-top: 20px;">
+                    <h3>Безопасность</h3>
+                    <ul style="font-size: 0.9rem; color: #555; list-style: disc; padding-left: 20px;">
+                        <li>Не отправляйте предоплату</li>
+                        <li>Встречайтесь в людном месте</li>
+                        <li>Проверяйте документы</li>
+                    </ul>
+                    <button id="reportAdBtn" class="btn-reset" style="margin-top:12px;">Пожаловаться на объявление</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="chatModal" class="modal">
+        <div class="modal-content" style="max-width: 520px;">
+            <span class="close-modal" onclick="document.getElementById('chatModal').style.display='none'" style="position:absolute; right:20px; top:15px; cursor:pointer; font-size:24px; color:#ccc;">&times;</span>
+            <h3 style="margin-top:0;">Чат по объявлению</h3>
+            <div id="chatMessages" style="max-height:280px; overflow:auto; background:#f8f9fb; border-radius:10px; padding:10px; margin:12px 0;"></div>
+            <div style="display:flex; gap:8px;">
+                <input id="chatInput" class="modal-input" placeholder="Введите сообщение..." style="margin:0;">
+                <button id="chatSendBtn" class="btn-submit" style="width:auto; margin:0; padding:10px 16px;">Отправить</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>OshEstate</h3>
+                <p>Ваш надежный партнер.</p>
+            </div>
+            <div class="footer-bottom">&copy; 2025 OshEstate.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

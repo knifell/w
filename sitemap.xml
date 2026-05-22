@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>/index.html</loc></url>
+  <url><loc>/buy.html</loc></url>
+  <url><loc>/rent.html</loc></url>
+  <url><loc>/land.html</loc></url>
+  <url><loc>/commerce.html</loc></url>
+  <url><loc>/add.html</loc></url>
+  <url><loc>/favorites.html</loc></url>
+  <url><loc>/profile.html</loc></url>
+  <url><loc>/login.html</loc></url>
+  <url><loc>/register.html</loc></url>
+  <url><loc>/details.html</loc></url>
+</urlset>

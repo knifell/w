@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Избранное - OshEstate</title>
+    <link rel="stylesheet" href="style_main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Firebase SDK (Compat version for old-style usage) -->
+    <script>if(localStorage.getItem('oshe_theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+</head>
+<body data-page="favorites"> <div id="toast-container"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Osh<span>Estate</span></a>
+            <ul class="nav-links" id="nav-links-container">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="buy.html">Купить</a></li>
+                <li><a href="rent.html">Снять</a></li>
+                <li><a href="land.html">Участки</a></li>
+                <li><a href="commerce.html">Коммерция</a></li>
+                <li><a href="login.html">Войти</a></li>
+                <li><a href="register.html" class="btn-login">Регистрация</a></li>
+            </ul>
+            <button id="darkModeToggle" class="dark-mode-btn" aria-label="Переключить тему"><i class="fas fa-moon"></i></button>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <div class="page-header-breadcrumb"><a href="index.html">Главная</a><i class="fas fa-chevron-right" style="font-size:0.65rem"></i><span>Избранное</span></div>
+            <div class="page-header-badge"><i class="fas fa-heart"></i> Сохранённое</div>
+            <h1>Избранное</h1>
+            <p class="page-header-sub">Объявления, которые вы сохранили</p>
+        </div>
+    </div>
+
+    <section class="container section">
+        <div class="listings-grid" id="listings-container">
+            <div class="loader">Загрузка...</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>OshEstate</h3>
+                <p>Ваш надежный партнер.</p>
+            </div>
+            <div class="footer-bottom">&copy; 2025 OshEstate.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

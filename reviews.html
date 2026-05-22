@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы - OshEstate</title>
+    <link rel="stylesheet" href="style_main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Firebase SDK -->
+    <script>if(localStorage.getItem('oshe_theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    
+    <style>
+        .reviews-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .reviews-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .reviews-header h1 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .reviews-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            min-width: 150px;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--accent);
+        }
+        
+        .stat-label {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+        
+        .review-form {
+            background: white;
+            padding: 30px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            margin-bottom: 40px;
+        }
+        
+        .rating-input {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .star-input {
+            font-size: 2rem;
+            color: #ddd;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .star-input:hover,
+        .star-input.active {
+            color: #ffd700;
+            transform: scale(1.1);
+        }
+        
+        .reviews-list {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .review-card {
+            background: white;
+            padding: 25px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #f0f0f0;
+            transition: var(--transition);
+        }
+        
+        .review-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+        
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .reviewer-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .reviewer-details h4 {
+            margin: 0;
+            color: var(--primary);
+        }
+        
+        .reviewer-details .review-date {
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+        
+        .review-rating {
+            display: flex;
+            gap: 2px;
+            color: #ffd700;
+        }
+        
+        .review-content {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .review-actions {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        
+        .helpful-btn {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 10px;
+            border: 1px solid #e9ecef;
+            background: white;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.85rem;
+        }
+        
+        .helpful-btn:hover {
+            background: #f8f9fa;
+            border-color: var(--accent);
+        }
+        
+        .helpful-btn.active {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+        
+        .verification-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 10px;
+            background: #27ae60;
+            color: white;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .user-rating-summary {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .user-rating-stars {
+            display: flex;
+            gap: 2px;
+            color: #ffd700;
+            font-size: 1.2rem;
+        }
+        
+        .user-reviews-count {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
+        .filter-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .filter-tab {
+            padding: 10px 20px;
+            border: none;
+            background: none;
+            color: var(--text-light);
+            cursor: pointer;
+            transition: var(--transition);
+            border-bottom: 3px solid transparent;
+            font-weight: 600;
+        }
+        
+        .filter-tab.active {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+        
+        .filter-tab:hover {
+            color: var(--primary);
+        }
+        
+        @media (max-width: 768px) {
+            .reviews-stats {
+                gap: 20px;
+            }
+            
+            .stat-card {
+                min-width: 120px;
+                padding: 15px;
+            }
+            
+            .review-header {
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+            }
+            
+            .filter-tabs {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body data-page="reviews">
+    <div id="toast-container"></div>
+    
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Osh<span>Estate</span></a>
+            <ul class="nav-links" id="nav-links-container">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="buy.html">Купить</a></li>
+                <li><a href="rent.html">Снять</a></li>
+                <li><a href="land.html">Участки</a></li>
+                <li><a href="commerce.html">Коммерция</a></li>
+                <li><a href="add.html">Подать объявление</a></li>
+                <li><a href="chat.html" class="chat-nav-link">
+                    <i class="fas fa-comments"></i> Сообщения
+                    <span class="unread-badge" id="unreadBadge" style="display: none;">0</span>
+                </a></li>
+                <li><a href="favorites.html">Избранное</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+                <li><a href="#" id="logout-link" class="btn-login">Выйти</a></li>
+            </ul>
+            <button id="darkModeToggle" class="dark-mode-btn" aria-label="Переключить тему"><i class="fas fa-moon"></i></button>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+    
+    <div class="container section">
+        <div class="reviews-container">
+            <div class="reviews-header">
+                <h1>Отзывы пользователей</h1>
+                <p>Реальные оценки от покупателей и продавцов недвижимости</p>
+            </div>
+            
+            <div class="reviews-stats">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalReviews">0</div>
+                    <div class="stat-label">Всего отзывов</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="avgRating">0.0</div>
+                    <div class="stat-label">Средняя оценка</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="verifiedUsers">0</div>
+                    <div class="stat-label">Верифицированных</div>
+                </div>
+            </div>
+            
+            <div class="review-form" id="reviewForm">
+                <h3>Оставить отзыв</h3>
+                <div class="user-rating-summary">
+                    <div class="user-rating-stars" id="userRating">
+                        <i class="fas fa-star star-input" data-rating="1"></i>
+                        <i class="fas fa-star star-input" data-rating="2"></i>
+                        <i class="fas fa-star star-input" data-rating="3"></i>
+                        <i class="fas fa-star star-input" data-rating="4"></i>
+                        <i class="fas fa-star star-input" data-rating="5"></i>
+                    </div>
+                    <span class="user-reviews-count">Выберите оценку</span>
+                </div>
+                <form id="submitReviewForm">
+                    <div class="form-group">
+                        <label>Ваш отзыв</label>
+                        <textarea id="reviewText" rows="4" placeholder="Расскажите о вашем опыте..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Опубликовать отзыв</button>
+                </form>
+            </div>
+            
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">Все отзывы</button>
+                <button class="filter-tab" data-filter="5">5 звезд</button>
+                <button class="filter-tab" data-filter="4">4 звезды</button>
+                <button class="filter-tab" data-filter="3">3 звезды</button>
+                <button class="filter-tab" data-filter="2">2 звезды</button>
+                <button class="filter-tab" data-filter="1">1 звезда</button>
+            </div>
+            
+            <div class="reviews-list" id="reviewsList">
+                <div class="loader">Загрузка отзывов...</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

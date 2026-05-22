@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OshEstate - Недвижимость в Оше</title>
+    <meta name="description" content="OshEstate - портал недвижимости в Оше: покупка, аренда, участки и коммерция в одном месте.">
+    <meta property="og:title" content="OshEstate - Недвижимость в Оше">
+    <meta property="og:description" content="Найдите квартиру, дом, участок или коммерческое помещение в Оше.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style_main.css">
+
+    <script>if(localStorage.getItem('oshe_theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+</head>
+
+<body data-page="home">
+
+    <div id="toast-container"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Osh<span>Estate</span></a>
+            <ul class="nav-links" id="nav-links-container">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="buy.html">Купить</a></li>
+                <li><a href="rent.html">Снять</a></li>
+                <li><a href="land.html">Участки</a></li>
+                <li><a href="commerce.html">Коммерция</a></li>
+                <li><a href="login.html">Войти</a></li>
+                <li><a href="register.html" class="btn-login">Регистрация</a></li>
+            </ul>
+            <button id="darkModeToggle" class="dark-mode-btn" aria-label="Переключить тему"><i class="fas fa-moon"></i></button>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <header class="hero home-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in-up">
+            <div class="hero-badge"><i class="fas fa-map-marker-alt"></i> Ош, Кыргызстан</div>
+            <h1 data-lang="hero_title">Найдите свою<br>идеальную недвижимость</h1>
+            <p data-lang="hero_subtitle" id="heroTyping"></p>
+
+            <div class="hero-search-bar">
+                <div class="hero-search-input">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="heroSearch" placeholder="Район, улица, тип недвижимости...">
+                </div>
+                <button class="hero-search-btn" onclick="heroSearchGo()">
+                    <i class="fas fa-search"></i> Найти
+                </button>
+            </div>
+
+            <div class="category-choice">
+                <a href="buy.html" class="choice-card card-hover">
+                    <div class="icon-box"><i class="fas fa-key"></i></div>
+                    <h3>Купить</h3>
+                    <p>Квартиры и дома</p>
+                    <span class="btn-link">Перейти &rarr;</span>
+                </a>
+                <a href="rent.html" class="choice-card card-hover">
+                    <div class="icon-box"><i class="fas fa-clock"></i></div>
+                    <h3>Снять</h3>
+                    <p>Аренда жилья</p>
+                    <span class="btn-link">Перейти &rarr;</span>
+                </a>
+                <a href="land.html" class="choice-card card-hover">
+                    <div class="icon-box"><i class="fas fa-tree"></i></div>
+                    <h3>Участки</h3>
+                    <p>Земельные участки</p>
+                    <span class="btn-link">Перейти &rarr;</span>
+                </a>
+                <a href="commerce.html" class="choice-card card-hover">
+                    <div class="icon-box"><i class="fas fa-store"></i></div>
+                    <h3>Коммерция</h3>
+                    <p>Бизнес помещения</p>
+                    <span class="btn-link">Перейти &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- СТАТИСТИКА -->
+    <section class="stats-section reveal">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-in-up">
+                    <div class="stat-number" id="statTotalAds">—</div>
+                    <div class="stat-plus"></div>
+                    <div class="stat-label">Объявлений на сайте</div>
+                </div>
+                <div class="stat-item fade-in-up">
+                    <div class="stat-number" id="statActiveAds">—</div>
+                    <div class="stat-plus"></div>
+                    <div class="stat-label">Активных объявлений</div>
+                </div>
+                <div class="stat-item fade-in-up">
+                    <div class="stat-number">4</div>
+                    <div class="stat-plus"></div>
+                    <div class="stat-label">Категории недвижимости</div>
+                </div>
+                <div class="stat-item fade-in-up">
+                    <div class="stat-number">2</div>
+                    <div class="stat-plus"></div>
+                    <div class="stat-label">Типа сделок</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КАК ЭТО РАБОТАЕТ -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title"><span class="section-title-gradient" data-lang="how_title">Как это работает</span></h2>
+            <div class="steps-grid">
+                <div class="step-card reveal reveal-delay-1">
+                    <div class="step-number">1</div>
+                    <div class="step-icon"><i class="fas fa-registered"></i></div>
+                    <h3 data-lang="step1_title">Зарегистрируйтесь</h3>
+                    <p data-lang="step1_desc">Создайте аккаунт в несколько кликов</p>
+                </div>
+                <div class="step-card reveal reveal-delay-2">
+                    <div class="step-number">2</div>
+                    <div class="step-icon"><i class="fas fa-pen-fancy"></i></div>
+                    <h3 data-lang="step2_title">Разместите объявление</h3>
+                    <p data-lang="step2_desc">Добавьте фото, описание и цену</p>
+                </div>
+                <div class="step-card reveal reveal-delay-3">
+                    <div class="step-number">3</div>
+                    <div class="step-icon"><i class="fas fa-search"></i></div>
+                    <h3 data-lang="step3_title">Найдите покупателя</h3>
+                    <p data-lang="step3_desc">Общайтесь с заинтересованными</p>
+                </div>
+                <div class="step-card reveal reveal-delay-4">
+                    <div class="step-number">4</div>
+                    <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+                    <h3 data-lang="step4_title">Завершите сделку</h3>
+                    <p data-lang="step4_desc">Свяжитесь с контрагентом</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title"><span class="section-title-gradient">Почему OshEstate?</span></h2>
+            <div class="reviews-grid">
+                <div class="review-card reveal reveal-delay-1" style="text-align:center;">
+                    <div style="font-size:2.5rem; margin-bottom:14px;">🆓</div>
+                    <h3 style="color:#1a2b3c; margin:0 0 10px;">Бесплатное размещение</h3>
+                    <p style="color:#666; font-size:0.92rem; line-height:1.6;">Разместить объявление о продаже или аренде — полностью бесплатно. Без скрытых платежей.</p>
+                </div>
+                <div class="review-card reveal reveal-delay-2" style="text-align:center;">
+                    <div style="font-size:2.5rem; margin-bottom:14px;">🗺️</div>
+                    <h3 style="color:#1a2b3c; margin:0 0 10px;">Карта объектов</h3>
+                    <p style="color:#666; font-size:0.92rem; line-height:1.6;">Каждое объявление отображается на интерактивной карте города Ош с точным адресом.</p>
+                </div>
+                <div class="review-card reveal reveal-delay-3" style="text-align:center;">
+                    <div style="font-size:2.5rem; margin-bottom:14px;">📱</div>
+                    <h3 style="color:#1a2b3c; margin:0 0 10px;">Связь через WhatsApp</h3>
+                    <p style="color:#666; font-size:0.92rem; line-height:1.6;">Продавец и покупатель связываются напрямую — по звонку или через WhatsApp без посредников.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ВОЗМОЖНОСТИ ПЛАТФОРМЫ -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Что ты можешь делать на OshEstate</h2>
+            <div class="features-grid">
+                <div class="feature-card reveal reveal-delay-1">
+                    <div class="feature-icon"><i class="fas fa-user-plus"></i></div>
+                    <h3>Быстрая регистрация</h3>
+                    <p>Зарегистрируйся за 1 минуту и получи доступ ко всем функциям платформы</p>
+                    <a href="register.html" class="feature-link">Зарегистрироваться →</a>
+                </div>
+                <div class="feature-card reveal reveal-delay-2">
+                    <div class="feature-icon"><i class="fas fa-plus-circle"></i></div>
+                    <h3>Добавлять объявления</h3>
+                    <p>Размещай объявления о продаже или аренде с фото, описанием и ценой</p>
+                    <a href="add.html" class="feature-link">Добавить объявление →</a>
+                </div>
+                <div class="feature-card reveal reveal-delay-3">
+                    <div class="feature-icon"><i class="fas fa-search"></i></div>
+                    <h3>Искать недвижимость</h3>
+                    <p>Фильтрация по цене, типу, площади и району города</p>
+                    <a href="buy.html" class="feature-link">Начать поиск →</a>
+                </div>
+                <div class="feature-card reveal reveal-delay-4">
+                    <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Сохранять избранное</h3>
+                    <p>Добавляй понравившиеся объявления в избранное и сравнивай варианты</p>
+                    <a href="favorites.html" class="feature-link">Мои избранные →</a>
+                </div>
+                <div class="feature-card reveal reveal-delay-1">
+                    <div class="feature-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Просматривать на карте</h3>
+                    <p>Интерактивная карта Оша с точным расположением каждого объекта</p>
+                    <a href="buy.html" class="feature-link">Открыть карту →</a>
+                </div>
+                <div class="feature-card reveal reveal-delay-2">
+                    <div class="feature-icon"><i class="fas fa-comment"></i></div>
+                    <h3>Связаться с продавцом</h3>
+                    <p>Позвони или напиши в WhatsApp прямо с страницы объявления без посредников</p>
+                    <a href="buy.html" class="feature-link">Просмотреть объявления →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ГОРЯЧИЕ ПРЕДЛОЖЕНИЯ -->
+    <section class="featured-section reveal">
+        <div class="container">
+            <h2 class="section-title" data-lang="featured_title">Горячие предложения</h2>
+            <div class="featured-grid" id="featured-listings">
+                <div class="loader">Загрузка объявлений...</div>
+            </div>
+            <div class="section-center-mt">
+                <a href="buy.html" class="btn-primary" data-lang="btn_see_all">Смотреть все предложения</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- КАТЕГОРИИ -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title"><span class="section-title-gradient" data-lang="categories_title">Категории недвижимости</span></h2>
+            <div class="categories-grid">
+                <a href="buy.html?category=flat" class="category-item fade-in-up category-link-reset hover-lift">
+                    <div class="category-icon"><i class="fas fa-building"></i></div>
+                    <h4>Квартиры</h4>
+                    <p>Современные и уютные квартиры</p>
+                </a>
+                <a href="buy.html?category=house" class="category-item fade-in-up category-link-reset hover-lift">
+                    <div class="category-icon"><i class="fas fa-home"></i></div>
+                    <h4>Дома</h4>
+                    <p>Частные дома с участками</p>
+                </a>
+                <a href="land.html" class="category-item fade-in-up category-link-reset hover-lift">
+                    <div class="category-icon"><i class="fas fa-tree"></i></div>
+                    <h4>Участки</h4>
+                    <p>Земельные участки в разных районах</p>
+                </a>
+                <a href="commerce.html" class="category-item fade-in-up category-link-reset hover-lift">
+                    <div class="category-icon"><i class="fas fa-store"></i></div>
+                    <h4>Коммерческие</h4>
+                    <p>Помещения для бизнеса</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- О ПРОЕКТЕ -->
+    <section class="about-section">
+        <div class="container about-content">
+            <div class="about-text fade-in-up">
+                <h2>О проекте OshEstate</h2>
+                <p>OshEstate — это веб-платформа для размещения объявлений о недвижимости в городе Ош и Ошской области.</p>
+                <p>Цель проекта — дать жителям Оша удобный инструмент для поиска, покупки, продажи и аренды недвижимости без посредников.</p>
+                <p>Платформа находится в активной разработке. Все объявления проходят модерацию перед публикацией.</p>
+                <div class="about-btn-wrap">
+                    <a href="buy.html" class="btn-primary">Начать поиск</a>
+                </div>
+            </div>
+            <div class="about-image fade-in-up">
+                <div class="about-icon-large"><i class="fas fa-building"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA СЕКЦИЯ -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content fade-in-up">
+                <h2 data-lang="cta_title">Готовы найти идеальную недвижимость?</h2>
+                <p data-lang="cta_subtitle">Найдите или разместите объявление о недвижимости в Оше прямо сейчас</p>
+                <div class="cta-buttons">
+                    <a href="buy.html" class="btn-primary hover-lift" data-lang="btn_buy_now">Начать поиск</a>
+                    <a href="add.html" class="btn-secondary hover-lift" data-lang="btn_register">Создать объявление</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>OshEstate</h3>
+                <p data-lang="footer_text">Ваш надежный партнер в мире недвижимости</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-lang="footer_links">Ссылки</h4>
+                <ul class="footer-links-list">
+                    <li><a href="buy.html" data-lang="nav_buy">Купить</a></li>
+                    <li><a href="rent.html" data-lang="nav_rent">Снять</a></li>
+                    <li><a href="login.html" data-lang="nav_login">Войти</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <p>📱 +996 (312) 123-45-67</p>
+                <p>📧 info@oshestate.kg</p>
+            </div>
+            <div class="footer-bottom">&copy; 2025 OshEstate. Все права защищены.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подать объявление - OshEstate</title>
+    <link rel="stylesheet" href="style_main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Firebase SDK (Compat version for old-style usage) -->
+    <script>if(localStorage.getItem('oshe_theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+</head>
+<body data-page="add">
+
+    <div id="toast-container"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Osh<span>Estate</span></a>
+            <ul class="nav-links" id="nav-links-container">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="buy.html">Купить</a></li>
+                <li><a href="rent.html">Снять</a></li>
+                <li><a href="land.html">Участки</a></li>
+                <li><a href="commerce.html">Коммерция</a></li>
+                <li><a href="login.html">Войти</a></li>
+                <li><a href="register.html" class="btn-login">Регистрация</a></li>
+            </ul>
+            <button id="darkModeToggle" class="dark-mode-btn" aria-label="Переключить тему"><i class="fas fa-moon"></i></button>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <div class="container section">
+        <!-- БЛОК ДЛЯ НЕАВТОРИЗОВАННЫХ ПОЛЬЗОВАТЕЛЕЙ -->
+        <div id="notAuthBlock" class="auth-required-block">
+            <i class="fas fa-lock auth-required-icon"></i>
+            <h2 class="auth-required-title">Требуется авторизация</h2>
+            <p class="auth-required-text">Для размещения объявления необходимо войти в аккаунт или зарегистрироваться</p>
+            <div class="auth-required-actions">
+                <a href="login.html" class="btn-submit auth-required-btn">
+                    <i class="fas fa-sign-in-alt icon-gap"></i>Войти
+                </a>
+                <a href="register.html" class="btn-submit auth-required-btn auth-required-btn-secondary">
+                    <i class="fas fa-user-plus icon-gap"></i>Зарегистрироваться
+                </a>
+            </div>
+        </div>
+
+        <!-- ФОРМА ДЛЯ АВТОРИЗОВАННЫХ ПОЛЬЗОВАТЕЛЕЙ -->
+        <div id="authBlock" style="display: none;">
+            <!-- СОВЕТЫ ДЛЯ ДОБАВЛЕНИЯ ОБЪЯВЛЕНИЯ -->
+            <div class="tips-block">
+                <h3 class="tips-title"><i class="fas fa-lightbulb tips-icon"></i>Советы для успешного объявления:</h3>
+                <ul class="tips-list">
+                    <li class="tips-item"><i class="fas fa-check-circle tips-check"></i> <strong>Четкие фото:</strong> Загрузи 3-5 качественных фотографий - объявления с фото в 5 раз привлекательнее</li>
+                    <li class="tips-item"><i class="fas fa-check-circle tips-check"></i> <strong>Точный адрес:</strong> Указав правильный адрес, покупатели смогут увидеть объект на карте</li>
+                    <li class="tips-item"><i class="fas fa-check-circle tips-check"></i> <strong>Полное описание:</strong> Опиши все преимущества: новый ремонт, парковка, рядом школа и т.д.</li>
+                    <li class="tips-item"><i class="fas fa-check-circle tips-check"></i> <strong>Реальная цена:</strong> Проверь рыночные цены - неправильная цена отпугнет покупателей</li>
+                    <li class="tips-item"><i class="fas fa-check-circle tips-check"></i> <strong>Актуальный контакт:</strong> Убедись что номер телефона правильный - это главное для связи</li>
+                </ul>
+            </div>
+
+            <div class="card-style add-ad-card">
+                <h2 class="centered-title">Новое объявление</h2>
+                <p class="centered-subtitle">Бесплатное размещение за 1 минуту</p>
+
+                <form id="createAdForm">
+                    
+                    <div class="form-group">
+                        <label>Тип сделки</label>
+                        <div class="radio-group">
+                            <label class="radio-btn">
+                                <input type="radio" name="dealType" value="sale" checked>
+                                <span>Продажа</span>
+                            </label>
+                            <label class="radio-btn">
+                                <input type="radio" name="dealType" value="rent">
+                                <span>Аренда</span>
+                            </label>
+                        </div>
+                    </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Категория</label>
+                        <select id="inputType">
+                            <option value="flat">Квартира</option>
+                            <option value="house">Дом</option>
+                            <option value="land">Участок</option>
+                            <option value="commerce">Коммерция</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="roomsGroup">
+                        <label>Комнат</label>
+                        <div class="fbar-segmented" id="roomsSegControl" role="group">
+                            <button type="button" class="fbar-seg-btn active" data-val="1">1</button>
+                            <button type="button" class="fbar-seg-btn" data-val="2">2</button>
+                            <button type="button" class="fbar-seg-btn" data-val="3">3</button>
+                            <button type="button" class="fbar-seg-btn" data-val="4+">4+</button>
+                        </div>
+                        <input type="hidden" id="inputRooms" value="1">
+                    </div>
+                </div>
+
+                <!-- Дополнительные поля для квартир и домов -->
+                <div id="flatHouseFields" style="display:none;">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Этаж</label>
+                            <input type="number" id="inputFloor" min="1" placeholder="Напр: 3">
+                        </div>
+                        <div class="form-group">
+                            <label>Этажей в доме</label>
+                            <input type="number" id="inputTotalFloors" min="1" placeholder="Напр: 9">
+                        </div>
+                        <div class="form-group">
+                            <label>Мебель</label>
+                            <select id="inputFurniture">
+                                <option value="">Не указано</option>
+                                <option value="yes">С мебелью</option>
+                                <option value="no">Без мебели</option>
+                                <option value="partial">Частично</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Дополнительные поля для участков -->
+                <div id="landFields" style="display:none;">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Назначение участка</label>
+                            <select id="inputLandPurpose">
+                                <option value="">Не указано</option>
+                                <option value="residential">ИЖС (под жилой дом)</option>
+                                <option value="garden">Дача / садоводство</option>
+                                <option value="agricultural">Сельхозназначение</option>
+                                <option value="commercial">Коммерческое</option>
+                                <option value="industrial">Промышленное</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Коммуникации</label>
+                            <div class="check-grid" id="inputUtilitiesGroup">
+                                <label class="check-pill"><input type="checkbox" value="water"> Вода</label>
+                                <label class="check-pill"><input type="checkbox" value="electricity"> Электричество</label>
+                                <label class="check-pill"><input type="checkbox" value="gas"> Газ</label>
+                                <label class="check-pill"><input type="checkbox" value="sewage"> Канализация</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Дополнительные поля для коммерции -->
+                <div id="commerceFields" style="display:none;">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Тип помещения</label>
+                            <select id="inputCommerceType">
+                                <option value="">Не указано</option>
+                                <option value="office">Офис</option>
+                                <option value="shop">Магазин / торговая точка</option>
+                                <option value="warehouse">Склад</option>
+                                <option value="production">Производство</option>
+                                <option value="restaurant">Ресторан / кафе</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Этаж</label>
+                            <input type="number" id="inputCommerceFloor" min="1" placeholder="Напр: 1">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <div class="fbar-label-row">
+                            <label>Цена <span id="inputPriceCurLabel">(сом)</span></label>
+                            <div class="fbar-currency-toggle" id="inputCurrencyToggle">
+                                <button type="button" class="fbar-cur-btn active" data-cur="KGS">сом</button>
+                                <button type="button" class="fbar-cur-btn" data-cur="USD">$</button>
+                            </div>
+                        </div>
+                        <input type="number" id="inputPrice" placeholder="0" required>
+                        <input type="hidden" id="inputCurrency" value="KGS">
+                    </div>
+                    <div class="form-group">
+                        <label>Площадь (м²)</label>
+                        <input type="number" id="inputArea" placeholder="0" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Документы <span style="color:#888;font-weight:400;font-size:.85em;">(можно выбрать несколько)</span></label>
+                    <div class="check-grid" id="inputDocumentsGroup">
+                        <label class="check-pill"><input type="checkbox" value="red_book"> Красная книга</label>
+                        <label class="check-pill"><input type="checkbox" value="tech_passport"> Техпаспорт</label>
+                        <label class="check-pill"><input type="checkbox" value="dkp"> ДКП</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Регион и населённый пункт</label>
+                    <button type="button" id="addRegionBtn" class="region-filter-btn" style="width:100%;cursor:pointer;text-align:left;display:flex;align-items:center;justify-content:space-between;gap:8px;">
+                        <span class="rf-btn-label"><i class="fas fa-map-marker-alt" style="color:#ff6b35;margin-right:6px;"></i>Выбрать регион и район</span>
+                        <i class="fas fa-chevron-down" style="opacity:.6;"></i>
+                    </button>
+                    <input type="hidden" id="inputRegion" value="">
+                    <input type="hidden" id="inputDistrict" value="">
+                </div>
+
+                <div class="form-group" style="position: relative;">
+                    <label>Адрес (Начните вводить или поставьте точку на карте)</label>
+                    
+                    <input type="text" id="inputAddress" placeholder="Например: Ош, улица Ленина" required autocomplete="off">
+                    
+                    <ul id="suggestions" class="suggestions-list"></ul>
+                    
+                    <div id="map-picker" class="map-container"></div>
+                    <small style="color: #7f8c8d;">Клик по карте автоматически заполнит адрес.</small>
+                    
+                    <input type="hidden" id="inputLat">
+                    <input type="hidden" id="inputLng">
+                </div>
+
+                <div class="form-group">
+                    <label>Фотографии объекта <span style="color:#e74c3c;">*</span> <span style="color:#888;font-weight:400;font-size:.85em;">(минимум 1, максимум 5)</span></label>
+                    <input type="file" id="inputImageFile" accept="image/*" multiple style="padding: 10px; background: #f9f9f9; border: 1px dashed #ccc;">
+                    <div id="imagePreviewContainer" style="margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap;"></div>
+                </div>
+
+                <div class="form-group">
+                    <label>Описание</label>
+                    <textarea id="inputDesc" rows="4" placeholder="Расскажите подробнее..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Контактный номер <span style="color:#e74c3c;">*</span></label>
+                    <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+                        <input type="tel" id="inputPhone" placeholder="+996 555 123 456" required
+                               inputmode="tel" autocomplete="tel"
+                               style="flex:1; min-width:160px;">
+                        <select id="inputPhoneType" style="width:175px;">
+                            <option value="both">📞 Звонок + WhatsApp</option>
+                            <option value="call">📞 Только звонок</option>
+                            <option value="whatsapp">💬 Только WhatsApp</option>
+                        </select>
+                    </div>
+                    <small style="color:#999;">Можно указать другой номер, отличный от номера аккаунта. Выберите способ связи.</small>
+                </div>
+
+                <button type="submit" class="btn-submit">Опубликовать</button>
+            </form>
+        </div>
+        </div>
+    </div>
+
+    <!-- Модалка выбора пакета (рендерится из JS) -->
+    <div id="packageModal" class="pkg-modal" style="display:none;">
+        <div class="pkg-backdrop"></div>
+        <div class="pkg-sheet"></div>
+    </div>
+
+    <!-- Модалка оплаты (рендерится из JS) -->
+    <div id="paymentModal" class="pay-modal" style="display:none;">
+        <div class="pay-backdrop"></div>
+        <div class="pay-sheet"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -984,10 +984,6 @@ function mountLayout() {
                 <li><a href="rent.html">Снять</a></li>
                 <li><a href="land.html">Участки</a></li>
                 <li><a href="commerce.html">Коммерция</a></li>
-                <li><a href="chat.html" class="chat-nav-link">
-                    <i class="fas fa-comments"></i> Сообщения
-                    <span class="unread-badge" id="unreadBadge" style="display: none;">0</span>
-                </a></li>
                 <li><a href="favorites.html">Избранное</a></li>
                 <li><a href="profile.html">Профиль</a></li>
                 <li><a href="#" id="logout-link" class="btn-login">Выйти</a></li>
@@ -2923,7 +2919,10 @@ function initProfile() {
                 <button class="btn-settings-icon" onclick="openSettings()"><i class="fas fa-cog"></i></button>
                 <div class="user-avatar-container"><div class="user-avatar">${(user.name || "U")[0].toUpperCase()}</div></div>
                 <div class="user-info"><h2 class="user-name">${user.name || "User"}</h2><p class="user-contact">${user.email}</p></div>
-                <div style="margin-top:16px;"><a href="add.html" class="btn-submit" style="display:inline-block; width:auto; padding:10px 18px;">Подать объявление</a></div>
+                <div style="margin-top:16px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+                    <a href="add.html" class="btn-submit" style="display:inline-block; width:auto; padding:10px 18px;">Подать объявление</a>
+                    <a href="chat.html" class="btn-submit" style="display:inline-block; width:auto; padding:10px 18px; background:#3498db;"><i class="fas fa-comments"></i> Чаты</a>
+                </div>
             </div>`;
     };
 

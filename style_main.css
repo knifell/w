@@ -461,12 +461,13 @@ opacity: 0;
     align-items: center;
     background: white;
     border-radius: 14px;
-    overflow: hidden;
+    overflow: visible;
     box-shadow: 0 8px 32px rgba(0,0,0,0.25);
     max-width: 660px;
     margin: 0 auto 44px;
     border: 2px solid transparent;
     transition: border 0.2s;
+    position: relative;
 }
 .hero-search-bar:focus-within {
     border-color: var(--accent);
@@ -506,6 +507,59 @@ opacity: 0;
     font-family: 'Inter', sans-serif;
 }
 .hero-search-btn:hover { opacity: 0.92; }
+
+/* Search suggestions */
+.search-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    margin-top: 4px;
+    z-index: 1000;
+    display: none;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item {
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover {
+    background: #f8f9fa;
+}
+
+.suggestion-item i {
+    color: var(--accent);
+    font-size: 0.9rem;
+    width: 20px;
+    text-align: center;
+}
+
+.suggestion-item span {
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.suggestion-item small {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    margin-left: auto;
+}
 
 /* ========= STATISTICS SECTION ========= */
 .stats-section {
@@ -568,10 +622,26 @@ opacity: 0;
     .stat-item:nth-child(2n) { border-right: none; }
     .stat-item:nth-last-child(-n+2) { border-bottom: none; }
     .stat-number { font-size: 2rem; }
-    .hero-search-bar { margin-bottom: 28px; flex-wrap: wrap; }
+    .hero-search-bar { margin-bottom: 28px; flex-wrap: wrap; position: relative; }
     .hero-search-btn { width: 100%; padding: 12px; text-align: center; border-radius: 0 0 12px 12px; }
     .hero-search-input { width: 100%; }
     .hero-badge { font-size: 0.78rem; padding: 5px 12px; }
+
+    .search-suggestions {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        max-height: 300px;
+    }
+
+    .suggestion-item {
+        padding: 10px 14px;
+    }
+
+    .suggestion-item small {
+        display: none;
+    }
 }
 
 .category-choice {
@@ -1268,13 +1338,13 @@ opacity: 0;
 
 .listing-card {
     background: white;
-    border-radius: var(--radius-lg);
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     cursor: pointer;
     position: relative;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     animation: fadeInUp 0.6s ease-out;
 }
 
@@ -1285,7 +1355,7 @@ opacity: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
     transition: var(--transition-slow);
     z-index: 1;
     pointer-events: none;
@@ -1296,15 +1366,15 @@ opacity: 0;
 }
 
 .listing-card:hover {
-    transform: translateY(-12px) scale(1.02);
-    box-shadow: var(--shadow-xl);
-    border-color: rgba(255, 127, 80, 0.2);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border-color: rgba(255, 107, 53, 0.3);
 }
 
 .card-image {
-    height: 240px;
+    height: 260px;
     position: relative;
-    background: linear-gradient(135deg, #e9ecef, #dee2e6);
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
     overflow: hidden;
 }
 
@@ -1315,7 +1385,7 @@ opacity: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(0deg, rgba(0,0,0,0) 60%, rgba(0,0,0,0.3) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%);
     opacity: 0;
     transition: var(--transition);
     z-index: 2;
@@ -1329,26 +1399,27 @@ opacity: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .listing-card:hover .card-image img {
-    transform: scale(1.1) rotate(1deg);
+    transform: scale(1.08);
 }
 
 .badge {
     position: absolute;
     top: 15px;
     left: 15px;
-    padding: 8px 14px;
+    padding: 6px 12px;
     color: white;
-    border-radius: 6px;
-    font-size: 0.75rem;
+    border-radius: 8px;
+    font-size: 0.7rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     z-index: 2;
+    backdrop-filter: blur(10px);
 }
 
 .badge.sale {
@@ -1374,60 +1445,78 @@ opacity: 0;
     position: absolute;
     top: 12px;
     right: 12px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    border: none;
-    width: 40px;
-    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: var(--transition);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     z-index: 3;
     font-size: 1.1rem;
+    color: #95a5a6;
 }
 
 .card-fav-btn:hover {
-    transform: scale(1.15);
+    transform: scale(1.15) rotate(5deg);
     background: rgba(255, 255, 255, 1);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    color: #e74c3c;
 }
 
 .card-fav-btn.active {
     color: #e74c3c;
+    background: rgba(255, 255, 255, 1);
     animation: heartBeat 0.6s ease;
 }
 
 .card-details {
-    padding: 24px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
 .price {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 800;
     color: var(--accent);
     margin-bottom: 8px;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .card-title {
-    font-size: 1.1rem;
-    margin-bottom: 12px;
+    font-size: 1.05rem;
+    margin-bottom: 10px;
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1.4;
     color: var(--primary);
+    transition: color 0.3s ease;
+}
+
+.listing-card:hover .card-title {
+    color: var(--accent);
 }
 
 .card-address {
     color: var(--text-light);
-    font-size: 0.9rem;
-    margin-bottom: 16px;
+    font-size: 0.88rem;
+    margin-bottom: 14px;
     display: flex;
     gap: 6px;
+    align-items: center;
+}
+
+.card-address i {
+    color: var(--accent);
+    font-size: 0.8rem;
 }
 
 /* ========================================================================
@@ -1892,10 +1981,23 @@ footer {
 
     .listing-card {
         animation: none;
+        border-radius: 12px;
     }
 
     .card-image {
-        height: 180px;
+        height: 200px;
+    }
+
+    .card-details {
+        padding: 16px;
+    }
+
+    .price {
+        font-size: 1.4rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
     }
 
     .form-group {
@@ -3766,6 +3868,11 @@ opacity: 1;
 [data-theme="dark"] .cta-section { background: linear-gradient(135deg, #1c2541 0%, #0d1117 100%) !important; }
 [data-theme="dark"] footer { background: #010409 !important; color: #8b949e !important; }
 [data-theme="dark"] .hero-search-bar { background: rgba(22,27,34,0.9) !important; }
+[data-theme="dark"] .search-suggestions { background: #161b22 !important; border-color: #30363d !important; }
+[data-theme="dark"] .suggestion-item { border-color: #30363d !important; }
+[data-theme="dark"] .suggestion-item:hover { background: #21262d !important; }
+[data-theme="dark"] .suggestion-item span { color: #e6edf3 !important; }
+[data-theme="dark"] .suggestion-item small { color: #8b949e !important; }
 [data-theme="dark"] input, [data-theme="dark"] select, [data-theme="dark"] textarea {
     background: #21262d !important;
     color: #c9d1d9 !important;

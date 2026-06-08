@@ -5547,9 +5547,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         // Инициализация подсказок поиска
-        initSearchSuggestions('heroSearch', () => {
-            heroSearchGo();
-        });
+        initSmartSearch();
         initSearchSuggestions('searchInput');
     
         // Инициализация чатов
@@ -5602,3 +5600,108 @@ document.addEventListener("DOMContentLoaded", () => {
         syncAdsFromFirestore().catch(() => {})
     ]).finally(afterAuthSync);
 });
+
+// ============================================================
+// Умный поиск с подсказками
+// ============================================================
+function initSmartSearch() {
+    const searchInput = document.getElementById('heroSearch');
+    if (!searchInput) return;
+
+    // Создаём контейнер для подсказок если его нет
+    let suggestionsContainer = document.getElementById('searchSuggestions');
+    if (!suggestionsContainer) {
+        suggestionsContainer = document.createElement('div');
+        suggestionsContainer.id = 'searchSuggestions';
+        suggestionsContainer.className = 'search-suggestions';
+        searchInput.closest('.hero-search-bar').appendChild(suggestionsContainer);
+    }
+
+    // Функция для получения всех регионов, айыл окмоту и айыл
+    function getAllLocations() {
+        const locations = [];
+        OSH_REGIONS.forEach(region => {
+            locations.push({ type: 'region', name: region.name, value: region.name });
+            if (region.aiylokmotu) {
+                region.aiylokmotu.forEach(aiylokmotu => {
+                    locations.push({ type: 'aiylokmotu', name: aiylokmotu.name, parent: region.name, value: `${aiylokmotu.name}, ${region.name}` });
+                    if (aiylokmotu.aiyldar) {
+                        aiylokmotu.aiyldar.forEach(aiyl => {
+                            locations.push({ type: 'aiyl', name: aiyl, parent: aiylokmotu.name, grandparent: region.name, value: `${aiyl}, ${aiylokmotu.name}, ${region.name}` });
+                        });
+                    }
+                });
+            }
+        });
+        return locations;
+    }
+
+    // Функция для фильтрации подсказок
+    function filterSuggestions(query) {
+        const locations = getAllLocations();
+        const queryLower = query.toLowerCase();
+
+        return locations.filter(loc =>
+            loc.name.toLowerCase().includes(queryLower) ||
+            loc.value.toLowerCase().includes(queryLower)
+        ).slice(0, 8); // Максимум 8 подсказок
+    }
+
+    // Показать подсказки
+    function showSuggestions(suggestions) {
+        if (!suggestions.length) {
+            suggestionsContainer.style.display = 'none';
+            return;
+        }
+
+        suggestionsContainer.innerHTML = suggestions.map(s => `
+            <div class="suggestion-item" data-value="${s.value}">
+                <i class="fas fa-${s.type === 'region' ? 'map-marker-alt' : s.type === 'aiylokmotu' ? 'building' : 'home'}"></i>
+                <span>${s.name}</span>
+                ${s.parent ? `<small>${s.parent}${s.grandparent ? ', ' + s.grandparent : ''}</small>` : ''}
+            </div>
+        `).join('');
+
+        suggestionsContainer.style.display = 'block';
+
+        // Добавляем обработчики кликов
+        suggestionsContainer.querySelectorAll('.suggestion-item').forEach(item => {
+            item.addEventListener('click', () => {
+                searchInput.value = item.dataset.value;
+                suggestionsContainer.style.display = 'none';
+                heroSearchGo();
+            });
+        });
+    }
+
+    // Обработчик ввода
+    let debounceTimer;
+    searchInput.addEventListener('input', (e) => {
+        clearTimeout(debounceTimer);
+        const query = e.target.value.trim();
+
+        if (query.length < 2) {
+            suggestionsContainer.style.display = 'none';
+            return;
+        }
+
+        debounceTimer = setTimeout(() => {
+            const suggestions = filterSuggestions(query);
+            showSuggestions(suggestions);
+        }, 300);
+    });
+
+    // Скрывать подсказки при клике вне
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.hero-search-bar')) {
+            suggestionsContainer.style.display = 'none';
+        }
+    });
+
+    // Скрывать подсказки при нажатии Escape
+    searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            suggestionsContainer.style.display = 'none';
+        }
+    });
+}

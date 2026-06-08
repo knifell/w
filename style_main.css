@@ -5488,6 +5488,75 @@ opacity: 1;
 }
 
 /* ============================================================================
+   PROFILE PAGE MOBILE TABS DROPDOWN
+   ============================================================================ */
+@media (max-width: 600px) {
+    .profile-page .mobile-tabs-dropdown {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 14px 16px;
+        background: #fdf2f2;
+        color: #e74c3c;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin-bottom: 8px;
+    }
+    .profile-page .mobile-tabs-dropdown i {
+        transition: transform 0.3s;
+    }
+    .profile-page .mobile-tabs-dropdown.open i {
+        transform: rotate(180deg);
+    }
+    .profile-page .mobile-tabs-menu {
+        display: none;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 15px;
+    }
+    .profile-page .mobile-tabs-menu.open {
+        display: flex;
+    }
+    .profile-page .mobile-tab-item {
+        padding: 14px 16px;
+        background: white;
+        color: #2c3e50;
+        border: 2px solid #f0f0f0;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        text-align: left;
+        transition: all 0.2s;
+    }
+    .profile-page .mobile-tab-item:hover {
+        border-color: #e74c3c;
+        background: #fdf2f2;
+    }
+    .profile-page .mobile-tab-item.active {
+        background: #fdf2f2;
+        color: #e74c3c;
+        border-color: #e74c3c;
+    }
+    /* Скрыть десктопные вкладки на мобильных */
+    .profile-page .tab-btn {
+        display: none !important;
+    }
+}
+
+@media (min-width: 601px) {
+    /* Скрыть мобильные элементы на десктопе */
+    .profile-page .mobile-tabs-dropdown,
+    .profile-page .mobile-tabs-menu {
+        display: none !important;
+    }
+}
+
+/* ============================================================================
    MASTER MOBILE POLISH — ОБЩАЯ АДАПТИВНОСТЬ ДЛЯ ВСЕХ СТРАНИЦ
    Этот блок идёт ПОСЛЕДНИМ, чтобы перекрывать предыдущие правила.
    Покрывает все известные проблемы на узких экранах (320–768px).

@@ -2913,10 +2913,37 @@ function initProfile() {
         document.querySelectorAll(".tab-btn").forEach((b) => b.classList.remove("active"));
         const activeBtn = tab === "active" ? 0 : tab === "pending" ? 1 : tab === "rejected" ? 2 : tab === "chats" ? 3 : tab === "services" ? 4 : 5;
         document.querySelectorAll(".tab-btn")[activeBtn]?.classList.add("active");
+        
+        // Update mobile dropdown
+        document.querySelectorAll(".mobile-tab-item").forEach((b) => b.classList.remove("active"));
+        const mobileActiveBtn = tab === "active" ? 0 : tab === "pending" ? 1 : tab === "rejected" ? 2 : tab === "chats" ? 3 : tab === "services" ? 4 : 5;
+        document.querySelectorAll(".mobile-tab-item")[mobileActiveBtn]?.classList.add("active");
+        
+        // Update dropdown button label
+        const tabLabels = {
+            'active': 'Активные',
+            'pending': 'На проверке',
+            'rejected': 'Отклоненные',
+            'chats': 'Чаты',
+            'services': 'Продвижение',
+            'support': 'Обращение'
+        };
+        const labelEl = document.getElementById('currentTabLabel');
+        if (labelEl) labelEl.textContent = tabLabels[tab] || 'Активные';
+        
         if (tab === "chats") return renderChats();
         if (tab === "services") return renderServices();
         if (tab === "support") return renderSupport();
         renderAds(tab);
+    };
+    
+    window.toggleMobileTabs = () => {
+        const dropdown = document.getElementById('mobileTabsDropdown');
+        const menu = document.getElementById('mobileTabsMenu');
+        if (dropdown && menu) {
+            dropdown.classList.toggle('open');
+            menu.classList.toggle('open');
+        }
     };
     window.openEditModal = (id) => {
         const ad = storage.getAds().find((x) => x.id === id);

@@ -182,12 +182,29 @@
         </div>
     </nav>
 
-    <div class="container profile-section section">
+    <div class="container profile-section section profile-page">
         
         <div id="profileHeader">
             </div>
 
         <div class="tabs-container">
+            <!-- Mobile dropdown button -->
+            <button class="mobile-tabs-dropdown" id="mobileTabsDropdown" onclick="toggleMobileTabs()">
+                <span id="currentTabLabel">Активные</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            
+            <!-- Mobile dropdown menu -->
+            <div class="mobile-tabs-menu" id="mobileTabsMenu">
+                <button class="mobile-tab-item active" onclick="switchTab('active'); toggleMobileTabs();">Активные</button>
+                <button class="mobile-tab-item" onclick="switchTab('pending'); toggleMobileTabs();">На проверке</button>
+                <button class="mobile-tab-item" onclick="switchTab('rejected'); toggleMobileTabs();">Отклоненные</button>
+                <button class="mobile-tab-item" onclick="switchTab('chats'); toggleMobileTabs();">Чаты</button>
+                <button class="mobile-tab-item" onclick="switchTab('services'); toggleMobileTabs();">Продвижение</button>
+                <button class="mobile-tab-item" onclick="switchTab('support'); toggleMobileTabs();">Обращение</button>
+            </div>
+            
+            <!-- Desktop tabs -->
             <button class="tab-btn active" onclick="switchTab('active')">Активные</button>
             <button class="tab-btn" onclick="switchTab('pending')">На проверке</button>
             <button class="tab-btn" onclick="switchTab('rejected')">Отклоненные</button>

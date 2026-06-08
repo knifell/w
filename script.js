@@ -984,7 +984,6 @@ function mountLayout() {
                 <li><a href="rent.html">Снять</a></li>
                 <li><a href="land.html">Участки</a></li>
                 <li><a href="commerce.html">Коммерция</a></li>
-                <li><a href="favorites.html">Избранное</a></li>
                 <li><a href="profile.html">Профиль</a></li>
                 <li><a href="#" id="logout-link" class="btn-login">Выйти</a></li>
             `;
@@ -2922,6 +2921,7 @@ function initProfile() {
                 <div style="margin-top:16px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
                     <a href="add.html" class="btn-submit" style="display:inline-block; width:auto; padding:10px 18px;">Подать объявление</a>
                     <a href="chat.html" class="btn-submit" style="display:inline-block; width:auto; padding:10px 18px; background:#3498db;"><i class="fas fa-comments"></i> Чаты</a>
+                    <a href="favorites.html" class="btn-submit" style="display:inline-block; width:auto; padding:10px 18px; background:#e67e22;"><i class="fas fa-heart"></i> Избранное</a>
                 </div>
             </div>`;
     };

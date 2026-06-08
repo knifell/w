@@ -209,11 +209,12 @@
                 <div class="form-group">
                     <label>Регион и населённый пункт</label>
                     <button type="button" id="addRegionBtn" class="region-filter-btn" style="width:100%;cursor:pointer;text-align:left;display:flex;align-items:center;justify-content:space-between;gap:8px;">
-                        <span class="rf-btn-label"><i class="fas fa-map-marker-alt" style="color:#ff6b35;margin-right:6px;"></i>Выбрать регион и район</span>
+                        <span class="rf-btn-label"><i class="fas fa-map-marker-alt" style="color:#ff6b35;margin-right:6px;"></i>Выбрать регион, айыл окмоту, айыл</span>
                         <i class="fas fa-chevron-down" style="opacity:.6;"></i>
                     </button>
                     <input type="hidden" id="inputRegion" value="">
-                    <input type="hidden" id="inputDistrict" value="">
+                    <input type="hidden" id="inputAiylokmotu" value="">
+                    <input type="hidden" id="inputAiyldar" value="">
                 </div>
 
                 <div class="form-group" style="position: relative;">
@@ -231,7 +232,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label>Фотографии объекта <span style="color:#e74c3c;">*</span> <span style="color:#888;font-weight:400;font-size:.85em;">(минимум 1, максимум 5)</span></label>
+                    <label>Фотографии объекта <span style="color:#e74c3c;">*</span> <span style="color:#888;font-weight:400;font-size:.85em;">(минимум 1, максимум 10)</span></label>
                     <input type="file" id="inputImageFile" accept="image/*" multiple style="padding: 10px; background: #f9f9f9; border: 1px dashed #ccc;">
                     <div id="imagePreviewContainer" style="margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap;"></div>
                 </div>

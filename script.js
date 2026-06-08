@@ -12,125 +12,309 @@ const STORAGE_KEYS = {
 };
 
 // ============================================================
-// ГЕОГРАФИЯ: г. Ош + Ошская область (регионы и районы/сёла/мкр)
+// ГЕОГРАФИЯ: г. Ош + Ошская область (регионы, айыл окмоту, айылдар)
 // ============================================================
 const OSH_REGIONS = [
     {
         id: 'osh_city',
         name: 'г. Ош',
-        districts: [
-            // Центральные районы
-            'Центр', 'Старый город', 'Сулейман-Тоо',
-            // Микрорайоны
-            'Мкр. Амир-Темур', 'Мкр. Анар', 'Мкр. Ак-Тилек', 'Мкр. Арашан',
-            'Мкр. Бешик-Жон', 'Мкр. Достук', 'Мкр. Кыргызстан', 'Мкр. Он-Адыр',
-            'Мкр. Папан', 'Мкр. Туран', 'Мкр. Черёмушки', 'Мкр. Юго-Восток',
-            'Мкр. Фуркат', 'Мкр. Маданият', 'Мкр. Маяк', 'Мкр. Ак-Буура',
-            'Мкр. Южный', 'Мкр. Северный', 'Мкр. Восточный', 'Мкр. Западный',
-            '35-й микрорайон',
-            // Жилмассивы / сёла в городской черте
-            'ХБК', 'Жапалак', 'Тулейкен', 'Кенеш', 'Турусбеково', 'Кызыл-Кыштак',
-            'Ак-Жар', 'Калинин айылы', 'Кызыл-Жар', 'Шейит-Дөбө',
-            'Жаңы-Турмуш', 'Өзгүр', 'Манас айылы', 'Ак-Күч', 'Бугу-Таш',
-            'Кулатов', 'Кара-Суу айылы', 'Аэропорт'
-        ]
-    },
-    {
-        id: 'alay',
-        name: 'Алайский район',
-        districts: [
-            'Гүлчө', 'Сары-Таш', 'Сары-Могол', 'Кашка-Суу', 'Кең-Жылга',
-            'Жошолу', 'Талдуу-Булак', 'Жекенди', 'Жылга', 'Кара-Мык',
-            'Будалык', 'Кызыл-Эшме', 'Конур-Дөбө', 'Таш-Булак', 'Кулчу',
-            'Ачык-Суу', 'Иркештам', 'Талдык', 'Ак-Босого', 'Кызыл-Шарк',
-            'Арчалуу', 'Төлөйкөн', 'Кара-Кабак', 'Кара-Тейит',
-            'Мырзаке', 'Айдар-Кен', 'Жаңы-Алай'
-        ]
-    },
-    {
-        id: 'aravan',
-        name: 'Араванский район',
-        districts: [
-            'Араван', 'Кара-Тоо', 'Чек-Абад', 'Мангыт', 'Ак-Таш',
-            'Нурабад', 'Таш-Булак', 'Керме-Тоо', 'Жаңы-Араван',
-            'Мырза-Аке', 'Мадыкөз', 'Карабагыш', 'Жаңы-Айыл', 'Күлбала',
-            'Бек-Абад', 'Шур-Абад', 'Жаңы-Жол', 'Бүргөндү', 'Төө-Моюн',
-            'Жаш-Тилек', 'Кыргыз-Кыштак', 'Ак-Жар', 'Достук',
-            'Шаркыратма', 'Жалпак-Таш', 'Күлбала-Сай'
-        ]
-    },
-    {
-        id: 'kara_kuldja',
-        name: 'Кара-Кульджинский район',
-        districts: [
-            'Кара-Кульджа', 'Көлдүк', 'Эркин-Тоо', 'Кашкар-Кыштак',
-            'Алай-Куу', 'Сары-Булак', 'Кара-Коо', 'Ылай-Талаа',
-            'Сопу-Коргон', 'Арпалык', 'Мырза-Ата', 'Карыпсалды',
-            'Кош-Булак', 'Капчыгай', 'Ылай-Саз', 'Жаңы-Жол',
-            'Кылжыр', 'Каранды', 'Кара-Бак', 'Эгиз-Тал',
-            'Каракулжа-Ата', 'Ак-Татыр', 'Жекенди', 'Ачы-Таш',
-            'Бел-Алды', 'Чалма', 'Кара-Шоро'
-        ]
-    },
-    {
-        id: 'kara_suu',
-        name: 'Кара-Суйский район',
-        districts: [
-            'Кара-Суу', 'Нариман', 'Мады', 'Жоош', 'Шарк', 'Папан',
-            'Отуз-Адыр', 'Савай', 'Төлөйкөн', 'Катта-Талдык',
-            'Кызыл-Кыштак', 'Кашкар-Кыштак', 'Мырза-Аке', 'Жийде',
-            'Кызыл-Суу', 'Достук', 'Ак-Таш', 'Кызыл-Шарк',
-            'Жаңы-Арык', 'Ак-Жар', 'Куршаб', 'Ак-Кыя', 'Жаңы-Жол',
-            'Бейшеке', 'Ленин айылы', 'Озгор', 'Чек', 'Мады-Ордо',
-            'Кулунду', 'Кара-Таш', 'Жапалак', 'Кызыл-Жар', 'Фуркат',
-            'Ылайлуу-Талаа', 'Жаңы-Турмуш', 'Ак-Буура', 'Найман',
-            'Кыргыз-Чек', 'Кара-Жыгач', 'Төө-Моюн', 'Төлөйкөн'
+        aiylokmotu: [
+            {
+                name: 'Алмалык',
+                aiyldar: ['Алмалык']
+            },
+            {
+                name: 'Арек',
+                aiyldar: ['Арек']
+            },
+            {
+                name: 'Жапалак',
+                aiyldar: ['Жапалак']
+            },
+            {
+                name: 'Керме-Тоо',
+                aiyldar: ['Керме-Тоо']
+            },
+            {
+                name: 'Кеңеш',
+                aiyldar: ['Кеңеш']
+            },
+            {
+                name: 'Өзгүр',
+                aiyldar: ['Өзгүр']
+            },
+            {
+                name: 'Орке',
+                aiyldar: ['Орке']
+            },
+            {
+                name: 'Пятилетка',
+                aiyldar: ['Пятилетка']
+            },
+            {
+                name: 'Төлөйкөн',
+                aiyldar: ['Төлөйкөн']
+            },
+            {
+                name: 'Тээке',
+                aiyldar: ['Тээке']
+            },
+            {
+                name: 'Гүлбаар-Төлөйкөн',
+                aiyldar: ['Гүлбаар-Төлөйкөн']
+            }
         ]
     },
     {
         id: 'nookat',
         name: 'Ноокатский район',
-        districts: [
-            'Ноокат', 'Эски-Ноокат', 'Жаңы-Ноокат', 'Гүлбаар',
-            'Кыргыз-Ата', 'Жийде', 'Көк-Жар', 'Кулатов', 'Төөлөс',
-            'Он-Экин', 'Исанов', 'Кызыл-Октябрь', 'Бүргөндү',
-            'Зулпуев', 'Мырза-Аке', 'Ак-Жаңы', 'Кайрагач', 'Күлкөл',
-            'Сасык-Үңкүр', 'Көк-Бел', 'Ак-Кыя', 'Ничке-Сай',
-            'Мырза-Арык', 'Тон-Моюн', 'Чапаев', 'Жыйыр-Маа',
-            'Он-Төрт', 'Кыргыз-Ата-Арык', 'Кум-Бел', 'Ак-Таш',
-            'Ленин айылы', 'Көк-Арт', 'Кашка-Жол', 'Жаңы-Жол',
-            'Аркыт', 'Жооку', 'Сары-Булак'
+        aiylokmotu: [
+            {
+                name: 'Т.Зулпуев айыл өкмөтү',
+                aiyldar: ['Өсөр', 'Айбек', 'Ак-Чабуу', 'Интернационал', 'Караке', 'Коммунизм', 'Таштак', 'Үч-Бай', 'Чучук', 'Ятан', 'Калдай']
+            },
+            {
+                name: 'Бел айыл өкмөтү',
+                aiyldar: ['Бел', 'Кайрагач', 'Жаш', 'Таш-Булак', 'Борбаш']
+            },
+            {
+                name: 'Гүлстан айыл өкмөтү',
+                aiyldar: ['Фрунзе', 'Гүлстан', 'Беш-Коргон', 'Бостон', 'Чоң-Кыштоо']
+            },
+            {
+                name: 'Кара-Таш айыл өкмөтү',
+                aiyldar: ['Кара-Таш', 'Нойгут']
+            },
+            {
+                name: 'Кулатов айыл өкмөтү',
+                aiyldar: ['Кожо-Арык', 'Ак-Чал', 'Баглан', 'Кош-Дөбө', 'Кызыл-Булак', 'Абшыр-Ата', 'Арык-Тейит', 'Кулуштан', 'Ынтымак', 'Беш-Буркан', 'Арык-Бою', 'Дөң-Маала', 'Акшар', 'Таш-Булак', 'Челекчи', 'Ничке-Суу']
+            },
+            {
+                name: 'Жаңы-Ноокат айыл өкмөтү',
+                aiyldar: ['Жаңы-Ноокат', 'Кызыл-Тейит', 'Темир-Корук']
+            },
+            {
+                name: 'Кеңеш айыл өкмөтү',
+                aiyldar: ['Кеңеш', 'Ак-Терек', 'Арбын', 'Чегеден', 'Шанкол']
+            },
+            {
+                name: 'Кыргыз-Ата айыл өкмөтү',
+                aiyldar: ['Кыргыз-Ата']
+            },
+            {
+                name: 'Исанов айыл өкмөтү',
+                aiyldar: ['Жар-Коргон', 'Федоров', 'Чеч-Дөбө', 'Кожоке', 'Кичик-Алай']
+            },
+            {
+                name: 'Найман айыл өкмөтү',
+                aiyldar: ['Найман']
+            },
+            {
+                name: 'Көк-Бел айыл өкмөтү',
+                aiyldar: ['Көк-Бел']
+            },
+            {
+                name: 'Кызыл-Октябрь айыл өкмөтү',
+                aiyldar: ['Кызыл-Октябрь']
+            },
+            {
+                name: 'Он-Эки-Бел айыл өкмөтү',
+                aiyldar: ['Он-Эки-Бел']
+            },
+            {
+                name: 'Тоолес айыл өкмөтү',
+                aiyldar: ['Тоолес']
+            },
+            {
+                name: 'Мирмахмудов айыл өкмөтү',
+                aiyldar: ['Мирмахмудов']
+            },
+            {
+                name: 'Ынтымак айыл өкмөтү',
+                aiyldar: ['Ынтымак']
+            },
+            {
+                name: 'Көк-Жар айыл өкмөтү',
+                aiyldar: ['Көк-Жар']
+            }
         ]
     },
     {
-        id: 'uzgen',
-        name: 'Узгенский район',
-        districts: [
-            'Узген', 'Мырза-Аке', 'Жазы', 'Кара-Таш', 'Заргер',
-            'Көлдүк', 'Кара-Даңкы', 'Куршаб', 'Салам-Алик', 'Жийде',
-            'Ден-Булак', 'Ден-Сай', 'Ылай-Талаа', 'Алтын-Булак',
-            'Ак-Терек', 'Кыргыз-Кыштак', 'Улуу-Тоо', 'Көк-Жар',
-            'Чанач', 'Боз-Жар', 'Мырза-Ата', 'Кызыл-Октябрь',
-            'Жигуль', 'Көк-Арт', 'Көк-Таш', 'Нариман', 'Ийри-Суу',
-            'Кара-Гуз', 'Жалгыз-Өрүк', 'Кашкалдак', 'Жаңы-Заман',
-            'Ак-Жар', 'Жаңы-Турмуш', 'Бөрү-Тал', 'Кызыл-Тоо',
-            'Чолпон', 'Жаңы-Арык'
+        id: 'alay',
+        name: 'Алайский район',
+        aiylokmotu: [
+            {
+                name: 'К.Белекбаев атындагы Алай айыл өкмөтү',
+                aiyldar: ['Сопу-Коргон', 'Аскалы', 'Джергетал', 'Колдук', 'Таргалак', 'Терек', 'Чий-Талаа']
+            },
+            {
+                name: 'Будалы айыл өкмөтү',
+                aiyldar: ['Будалы']
+            },
+            {
+                name: 'Бүлөлү айыл өкмөтү',
+                aiyldar: ['Бүлөлү']
+            },
+            {
+                name: 'Гүлчө айыл өкмөтү',
+                aiyldar: ['Гүлчө', 'Жылы-Суу', 'Кара-Булак', 'Курманжан-Датка']
+            },
+            {
+                name: 'Жаңы-Алай айыл өкмөтү',
+                aiyldar: ['Жаңы-Алай']
+            },
+            {
+                name: 'Жошолун айыл өкмөтү',
+                aiyldar: ['Жошолу']
+            },
+            {
+                name: 'Коңур-Дөбө айыл өкмөтү',
+                aiyldar: ['Коңур-Дөбө']
+            },
+            {
+                name: 'Кабылан-Кол айыл өкмөтү',
+                aiyldar: ['Кабылан-Кол']
+            },
+            {
+                name: 'Корул айыл өкмөтү',
+                aiyldar: ['Корул']
+            },
+            {
+                name: 'Ленин айыл өкмөтү',
+                aiyldar: ['Ленин']
+            },
+            {
+                name: 'Сары-Могол айыл өкмөтү',
+                aiyldar: ['Сары-Могол']
+            },
+            {
+                name: 'Сары-Таш айыл өкмөтү',
+                aiyldar: ['Сары-Таш']
+            },
+            {
+                name: 'Талды-Суу айыл өкмөтү',
+                aiyldar: ['Талды-Суу']
+            },
+            {
+                name: 'Уч-Дөбө айыл өкмөтү',
+                aiyldar: ['Уч-Дөбө']
+            }
+        ]
+    },
+    {
+        id: 'aravan',
+        name: 'Араванский район',
+        aiylokmotu: [
+            {
+                name: 'Алля-Анаров айыл өкмөтү',
+                aiyldar: ['Араван']
+            },
+            {
+                name: 'Пахтачы айыл өкмөтү',
+                aiyldar: ['Пахтачы']
+            },
+            {
+                name: 'Чек-Абад айыл өкмөтү',
+                aiyldar: ['Чек-Абад']
+            },
+            {
+                name: 'Төлөйкөн айыл өкмөтү',
+                aiyldar: ['Төлөйкөн']
+            }
         ]
     },
     {
         id: 'chon_alay',
         name: 'Чон-Алайский район',
-        districts: [
-            'Дароот-Коргон', 'Жекенди', 'Кабык', 'Кызыл-Эшме',
-            'Сары-Могол', 'Жаш-Тилек', 'Кашка-Суу', 'Чак',
-            'Жылуу-Суу', 'Карамык', 'Кара-Теит', 'Ачык-Алма',
-            'Ылай-Суу', 'Кашкар-Көл', 'Кызыл-Алай'
+        aiylokmotu: [
+            {
+                name: 'Дароот-Коргон айыл өкмөтү',
+                aiyldar: ['Дароот-Коргон']
+            }
+        ]
+    },
+    {
+        id: 'kara_kuldja',
+        name: 'Кара-Кульджинский район',
+        aiylokmotu: [
+            {
+                name: 'Алайкуу айыл өкмөтү',
+                aiyldar: ['Ара-Булак', 'Жылкол', 'Шаркыратма', 'Сай', 'Сары-Таш']
+            },
+            {
+                name: 'Чалма айыл өкмөтү',
+                aiyldar: ['Чалма']
+            },
+            {
+                name: 'Ылай-Талаа айыл өкмөтү',
+                aiyldar: ['Ылай-Талаа']
+            }
+        ]
+    },
+    {
+        id: 'kara_suu',
+        name: 'Кара-Суйский район',
+        aiylokmotu: [
+            {
+                name: 'Кара-Суу шаары',
+                aiyldar: ['Кара-Суу']
+            },
+            {
+                name: 'Ак-Таш айыл өкмөтү',
+                aiyldar: ['Ак-Таш']
+            },
+            {
+                name: 'Жоош айыл өкмөтү',
+                aiyldar: ['Жоош']
+            },
+            {
+                name: 'Көк-Жар айыл өкмөтү',
+                aiyldar: ['Көк-Жар']
+            },
+            {
+                name: 'Мады айыл өкмөтү',
+                aiyldar: ['Мады']
+            },
+            {
+                name: 'Нариман айыл өкмөтү',
+                aiyldar: ['Нариман']
+            },
+            {
+                name: 'Шарк айыл өкмөтү',
+                aiyldar: ['Шарк', 'Жаңы-Кыштак']
+            }
+        ]
+    },
+    {
+        id: 'uzgen',
+        name: 'Узгенский район',
+        aiylokmotu: [
+            {
+                name: 'Мырза-Аке айыл өкмөтү',
+                aiyldar: ['Мырза-Аке']
+            },
+            {
+                name: 'Жалпак-Таш айыл өкмөтү',
+                aiyldar: ['Жалпак-Таш']
+            },
+            {
+                name: 'Куршаб айыл өкмөтү',
+                aiyldar: ['Куршаб']
+            },
+            {
+                name: 'Салам-Алик айыл өкмөтү',
+                aiyldar: ['Салам-Алик']
+            },
+            {
+                name: 'Дөң-Булак айыл өкмөтү',
+                aiyldar: ['Дөң-Булак']
+            }
         ]
     }
 ];
 
-// Глобальный стейт выбранного региона/района
-window.__regionDistrictFilter = { region: '', district: '' };
+// Глобальный стейт выбранного региона/айыл окмоту/айыл
+window.__regionDistrictFilter = { region: '', aiylokmotu: '', aiyldar: '' };
 
 // Нормализация для сравнения адресов
 function _normLoc(s) {
@@ -391,9 +575,10 @@ function initRegionFilterUI() {
     // Восстановление из URL / сохранённого фильтра
     const sp = new URLSearchParams(window.location.search);
     const savedRegion = sp.get('region') || '';
-    const savedDistrict = sp.get('district') || '';
-    if (savedRegion || savedDistrict) {
-        setRegionDistrict(savedRegion, savedDistrict, false);
+    const savedAiylokmotu = sp.get('aiylokmotu') || '';
+    const savedAiyldar = sp.get('aiyldar') || '';
+    if (savedRegion || savedAiylokmotu || savedAiyldar) {
+        setRegionDistrict(savedRegion, savedAiylokmotu, savedAiyldar, false);
     }
 }
 
@@ -405,7 +590,7 @@ function buildRegionModal() {
         <div class="rd-modal-backdrop"></div>
         <div class="rd-modal-box">
             <div class="rd-modal-head">
-                <h3><i class="fas fa-map-marker-alt"></i> Выберите регион и район</h3>
+                <h3><i class="fas fa-map-marker-alt"></i> Выберите регион, айыл окмоту, айыл</h3>
                 <button class="rd-close" type="button" aria-label="Закрыть">&times;</button>
             </div>
             <div class="rd-modal-body">
@@ -414,11 +599,18 @@ function buildRegionModal() {
                     <div class="rd-search"><input type="text" id="rdRegionSearch" placeholder="Поиск региона..."></div>
                     <div class="rd-list" id="rdRegionsList"></div>
                 </div>
-                <div class="rd-col rd-districts">
-                    <div class="rd-col-title">Районы / сёла / мкр</div>
-                    <div class="rd-search"><input type="text" id="rdDistrictSearch" placeholder="Поиск места..."></div>
-                    <div class="rd-list" id="rdDistrictsList">
+                <div class="rd-col rd-aiylokmotu">
+                    <div class="rd-col-title">Айыл окмоту</div>
+                    <div class="rd-search"><input type="text" id="rdAiylokmotuSearch" placeholder="Поиск айыл окмоту..."></div>
+                    <div class="rd-list" id="rdAiylokmotuList">
                         <div class="rd-empty">Сначала выберите регион слева</div>
+                    </div>
+                </div>
+                <div class="rd-col rd-aiyldar">
+                    <div class="rd-col-title">Айылдар</div>
+                    <div class="rd-search"><input type="text" id="rdAiyldarSearch" placeholder="Поиск айыла..."></div>
+                    <div class="rd-list" id="rdAiyldarList">
+                        <div class="rd-empty">Сначала выберите айыл окмоту</div>
                     </div>
                 </div>
             </div>
@@ -431,11 +623,15 @@ function buildRegionModal() {
     document.body.appendChild(modal);
 
     const regionsList = modal.querySelector('#rdRegionsList');
+    const aiylokmotuList = modal.querySelector('#rdAiylokmotuList');
+    const aiyldarList = modal.querySelector('#rdAiyldarList');
     const regionSearchInput = modal.querySelector('#rdRegionSearch');
-    const districtSearchInput = modal.querySelector('#rdDistrictSearch');
+    const aiylokmotuSearchInput = modal.querySelector('#rdAiylokmotuSearch');
+    const aiyldarSearchInput = modal.querySelector('#rdAiyldarSearch');
 
     let tempRegion = window.__regionDistrictFilter.region || '';
-    let tempDistrict = window.__regionDistrictFilter.district || '';
+    let tempAiylokmotu = window.__regionDistrictFilter.aiylokmotu || '';
+    let tempAiyldar = window.__regionDistrictFilter.aiyldar || '';
 
     const renderRegions = () => {
         const q = _normLoc(regionSearchInput?.value || '');
@@ -445,65 +641,106 @@ function buildRegionModal() {
         if (!filtered.length && q) regionsList.innerHTML = '<div class="rd-empty">Ничего не найдено</div>';
     };
 
-    const renderDistricts = () => {
-        const listEl = modal.querySelector('#rdDistrictsList');
+    const renderAiylokmotu = () => {
         if (!tempRegion) {
-            listEl.innerHTML = `<div class="rd-empty">Сначала выберите регион слева</div>`;
+            aiylokmotuList.innerHTML = `<div class="rd-empty">Сначала выберите регион слева</div>`;
+            aiyldarList.innerHTML = `<div class="rd-empty">Сначала выберите айыл окмоту</div>`;
             return;
         }
         const region = OSH_REGIONS.find(r => r.name === tempRegion);
-        if (!region) { listEl.innerHTML = ''; return; }
-        const q = _normLoc(districtSearchInput?.value || '');
-        const filtered = region.districts.filter(d => !q || _normLoc(d).includes(q));
-        listEl.innerHTML = (!q ? `<div class="rd-item rd-item-all ${!tempDistrict ? 'active' : ''}" data-district="">Весь ${region.name}</div>` : '') +
-            filtered.map(d => `<div class="rd-item ${tempDistrict === d ? 'active' : ''}" data-district="${d}">${d}</div>`).join('');
-        if (!filtered.length && q) listEl.innerHTML = '<div class="rd-empty">Ничего не найдено</div>';
+        if (!region || !region.aiylokmotu) { 
+            aiylokmotuList.innerHTML = '<div class="rd-empty">Нет айыл окмоту</div>';
+            aiyldarList.innerHTML = '<div class="rd-empty">Сначала выберите айыл окмоту</div>';
+            return;
+        }
+        const q = _normLoc(aiylokmotuSearchInput?.value || '');
+        const filtered = region.aiylokmotu.filter(a => !q || _normLoc(a.name).includes(q));
+        aiylokmotuList.innerHTML = (!q ? `<div class="rd-item rd-item-all ${!tempAiylokmotu ? 'active' : ''}" data-aiylokmotu="">Все айыл окмоту</div>` : '') +
+            filtered.map(a => `<div class="rd-item ${tempAiylokmotu === a.name ? 'active' : ''}" data-aiylokmotu="${a.name}">${a.name}</div>`).join('');
+        if (!filtered.length && q) aiylokmotuList.innerHTML = '<div class="rd-empty">Ничего не найдено</div>';
+        
+        // Сбросить айыл при изменении айыл окмоту
+        tempAiyldar = '';
+        renderAiyldar();
+    };
+
+    const renderAiyldar = () => {
+        if (!tempRegion || !tempAiylokmotu) {
+            aiyldarList.innerHTML = `<div class="rd-empty">Сначала выберите айыл окмоту</div>`;
+            return;
+        }
+        const region = OSH_REGIONS.find(r => r.name === tempRegion);
+        if (!region) { aiyldarList.innerHTML = ''; return; }
+        const aiylokmotu = region.aiylokmotu.find(a => a.name === tempAiylokmotu);
+        if (!aiylokmotu || !aiylokmotu.aiyldar) {
+            aiyldarList.innerHTML = '<div class="rd-empty">Нет айылдар</div>';
+            return;
+        }
+        const q = _normLoc(aiyldarSearchInput?.value || '');
+        const filtered = aiylokmotu.aiyldar.filter(a => !q || _normLoc(a).includes(q));
+        aiyldarList.innerHTML = (!q ? `<div class="rd-item rd-item-all ${!tempAiyldar ? 'active' : ''}" data-aiyldar="">Все айылдар</div>` : '') +
+            filtered.map(a => `<div class="rd-item ${tempAiyldar === a ? 'active' : ''}" data-aiyldar="${a}">${a}</div>`).join('');
+        if (!filtered.length && q) aiyldarList.innerHTML = '<div class="rd-empty">Ничего не найдено</div>';
     };
 
     renderRegions();
     regionSearchInput?.addEventListener('input', renderRegions);
-    districtSearchInput?.addEventListener('input', renderDistricts);
+    aiylokmotuSearchInput?.addEventListener('input', renderAiylokmotu);
+    aiyldarSearchInput?.addEventListener('input', renderAiyldar);
 
     regionsList.addEventListener('click', (e) => {
         const item = e.target.closest('.rd-item');
         if (!item) return;
         tempRegion = item.dataset.region || '';
-        tempDistrict = '';
+        tempAiylokmotu = '';
+        tempAiyldar = '';
         regionsList.querySelectorAll('.rd-item').forEach(el => el.classList.toggle('active', el === item));
-        renderDistricts();
+        renderAiylokmotu();
     });
 
-    modal.querySelector('#rdDistrictsList').addEventListener('click', (e) => {
+    aiylokmotuList.addEventListener('click', (e) => {
         const item = e.target.closest('.rd-item');
         if (!item) return;
-        tempDistrict = item.dataset.district || '';
-        item.parentElement.querySelectorAll('.rd-item').forEach(el => el.classList.toggle('active', el === item));
+        tempAiylokmotu = item.dataset.aiylokmotu || '';
+        tempAiyldar = '';
+        aiylokmotuList.querySelectorAll('.rd-item').forEach(el => el.classList.toggle('active', el === item));
+        renderAiyldar();
+    });
+
+    aiyldarList.addEventListener('click', (e) => {
+        const item = e.target.closest('.rd-item');
+        if (!item) return;
+        tempAiyldar = item.dataset.aiyldar || '';
+        aiyldarList.querySelectorAll('.rd-item').forEach(el => el.classList.toggle('active', el === item));
     });
 
     modal.querySelector('.rd-close').addEventListener('click', closeRegionModal);
     modal.querySelector('.rd-modal-backdrop').addEventListener('click', closeRegionModal);
-    modal._applyHandler = (r, d) => setRegionDistrict(r, d, true);
+    modal._applyHandler = (r, a, ay) => setRegionDistrict(r, a, ay, true);
     modal.querySelector('.rd-btn-reset').addEventListener('click', () => {
-        tempRegion = ''; tempDistrict = '';
-        modal._applyHandler('', '');
+        tempRegion = ''; tempAiylokmotu = ''; tempAiyldar = '';
+        modal._applyHandler('', '', '');
         closeRegionModal();
     });
     modal.querySelector('.rd-btn-apply').addEventListener('click', () => {
-        modal._applyHandler(tempRegion, tempDistrict);
+        modal._applyHandler(tempRegion, tempAiylokmotu, tempAiyldar);
         closeRegionModal();
     });
     // Экспонируем установку временного состояния извне
-    modal._setTemp = (r, d) => { tempRegion = r || ''; tempDistrict = d || ''; };
+    modal._setTemp = (r, a, ay) => { tempRegion = r || ''; tempAiylokmotu = a || ''; tempAiyldar = ay || ''; };
 
     // Экспонируем для пересинхронизации при открытии
     modal._syncFromState = (override) => {
         const src = override || window.__regionDistrictFilter;
         tempRegion = src.region || '';
-        tempDistrict = src.district || '';
+        tempAiylokmotu = src.aiylokmotu || '';
+        tempAiyldar = src.aiyldar || '';
         if (regionSearchInput) regionSearchInput.value = '';
-        if (districtSearchInput) districtSearchInput.value = '';
+        if (aiylokmotuSearchInput) aiylokmotuSearchInput.value = '';
+        if (aiyldarSearchInput) aiyldarSearchInput.value = '';
         renderRegions();
-        renderDistricts();
+        renderAiylokmotu();
+        renderAiyldar();
     };
 }
 
@@ -514,7 +751,7 @@ function openRegionModal(opts) {
     if (opts && typeof opts.onApply === 'function') {
         modal._applyHandler = opts.onApply;
     } else {
-        modal._applyHandler = (r, d) => setRegionDistrict(r, d, true);
+        modal._applyHandler = (r, a, ay) => setRegionDistrict(r, a, ay, true);
     }
     const initial = opts?.initial || null;
     if (typeof modal._syncFromState === 'function') modal._syncFromState(initial);
@@ -529,14 +766,15 @@ function closeRegionModal() {
     document.body.style.overflow = '';
 }
 
-function setRegionDistrict(region, district, triggerApply) {
-    window.__regionDistrictFilter = { region: region || '', district: district || '' };
+function setRegionDistrict(region, aiylokmotu, aiyldar, triggerApply) {
+    window.__regionDistrictFilter = { region: region || '', aiylokmotu: aiylokmotu || '', aiyldar: aiyldar || '' };
     // Обновить кнопку
     const btn = document.getElementById('regionFilterBtn');
     if (btn) {
         const labelEl = btn.querySelector('.rf-btn-label');
         let text = 'Все регионы';
-        if (region && district) text = `${district}, ${region}`;
+        if (region && aiylokmotu && aiyldar) text = `${aiyldar}, ${aiylokmotu}, ${region}`;
+        else if (region && aiylokmotu) text = `${aiylokmotu}, ${region}`;
         else if (region) text = region;
         if (labelEl) labelEl.innerHTML = `<i class="fas fa-map-marker-alt" style="color:#ff6b35;margin-right:6px;"></i>${text}`;
     }
@@ -544,7 +782,8 @@ function setRegionDistrict(region, district, triggerApply) {
     try {
         const url = new URL(window.location.href);
         if (region) url.searchParams.set('region', region); else url.searchParams.delete('region');
-        if (district) url.searchParams.set('district', district); else url.searchParams.delete('district');
+        if (aiylokmotu) url.searchParams.set('aiylokmotu', aiylokmotu); else url.searchParams.delete('aiylokmotu');
+        if (aiyldar) url.searchParams.set('aiyldar', aiyldar); else url.searchParams.delete('aiyldar');
         history.replaceState({}, '', url.toString());
     } catch (e) {}
     // Триггер применения
@@ -554,20 +793,35 @@ function setRegionDistrict(region, district, triggerApply) {
     }
 }
 
-// Совпадает ли адрес объявления с выбранным регионом/районом
+// Совпадает ли адрес объявления с выбранным регионом/айыл окмоту/айыл
 function adMatchesRegionDistrict(ad) {
     const sel = window.__regionDistrictFilter || {};
-    if (!sel.region && !sel.district) return true;
+    if (!sel.region && !sel.aiylokmotu && !sel.aiyldar) return true;
     const addr = _normLoc(ad.address);
-    if (sel.district) {
-        return addr.includes(_normLoc(sel.district));
+    
+    // Если выбран конкретный айыл
+    if (sel.aiyldar) {
+        return addr.includes(_normLoc(sel.aiyldar));
     }
+    
+    // Если выбрано айыл окмоту
+    if (sel.aiylokmotu) {
+        return addr.includes(_normLoc(sel.aiylokmotu));
+    }
+    
+    // Если выбран только регион
     const region = OSH_REGIONS.find(r => r.name === sel.region);
     if (!region) return addr.includes(_normLoc(sel.region));
     if (addr.includes(_normLoc(sel.region))) return true;
+    
     // Для г. Ош сопоставляем также по "ош"
     if (region.id === 'osh_city' && /\bош\b/.test(addr)) return true;
-    return region.districts.some(d => addr.includes(_normLoc(d)));
+    
+    // Проверяем по всем айыл окмоту и айылдар региона
+    return region.aiylokmotu.some(a => {
+        if (addr.includes(_normLoc(a.name))) return true;
+        return a.aiyldar.some(ay => addr.includes(_normLoc(ay)));
+    });
 }
 
 const firebaseConfig = {
@@ -889,8 +1143,25 @@ async function createAdInFirestore(ad) {
         err.code = 'not-authenticated';
         throw err;
     }
+    
+    // Проверка размера массивов перед отправкой
+    const adToSave = { ...ad };
+    
+    // Ограничение количества изображений
+    if (adToSave.images && Array.isArray(adToSave.images)) {
+        if (adToSave.images.length > 10) {
+            adToSave.images = adToSave.images.slice(0, 10);
+        }
+    }
+    
+    // Проверка размера данных (примерно)
+    const dataSize = JSON.stringify(adToSave).length;
+    if (dataSize > 900000) { // 900KB для безопасности
+        throw new Error('data-too-large: Объявление слишком большое. Уменьшите количество изображений или текст описания.');
+    }
+    
     const ref = await db.collection('ads').add({
-        ...ad,
+        ...adToSave,
         authorUid: user.uid,
         createdAt: new Date().toISOString()
     });
@@ -2008,21 +2279,24 @@ function initAddPageForm() {
     // --- Кнопка "Регион и населённый пункт" ---
     const regionBtn = document.getElementById('addRegionBtn');
     const regionHidden = document.getElementById('inputRegion');
-    const districtHidden = document.getElementById('inputDistrict');
+    const aiylokmotuHidden = document.getElementById('inputAiylokmotu');
+    const aiyldarHidden = document.getElementById('inputAiyldar');
     regionBtn?.addEventListener('click', () => {
         openRegionModal({
-            initial: { region: regionHidden?.value || '', district: districtHidden?.value || '' },
-            onApply: (region, district) => {
+            initial: { region: regionHidden?.value || '', aiylokmotu: aiylokmotuHidden?.value || '', aiyldar: aiyldarHidden?.value || '' },
+            onApply: (region, aiylokmotu, aiyldar) => {
                 if (regionHidden) regionHidden.value = region || '';
-                if (districtHidden) districtHidden.value = district || '';
+                if (aiylokmotuHidden) aiylokmotuHidden.value = aiylokmotu || '';
+                if (aiyldarHidden) aiyldarHidden.value = aiyldar || '';
                 const labelEl = regionBtn.querySelector('.rf-btn-label');
-                let text = 'Выбрать регион и район';
-                if (region && district) text = `${district}, ${region}`;
+                let text = 'Выбрать регион, айыл окмоту, айыл';
+                if (region && aiylokmotu && aiyldar) text = `${aiyldar}, ${aiylokmotu}, ${region}`;
+                else if (region && aiylokmotu) text = `${aiylokmotu}, ${region}`;
                 else if (region) text = region;
                 if (labelEl) labelEl.innerHTML = `<i class="fas fa-map-marker-alt" style="color:#ff6b35;margin-right:6px;"></i>${text}`;
                 // Если адрес пустой — предзаполнить комбинацией
-                if (addressInput && !addressInput.value.trim() && (region || district)) {
-                    addressInput.value = [district, region].filter(Boolean).join(', ');
+                if (addressInput && !addressInput.value.trim() && (region || aiylokmotu || aiyldar)) {
+                    addressInput.value = [aiyldar, aiylokmotu, region].filter(Boolean).join(', ');
                 }
             }
         });
@@ -2067,17 +2341,34 @@ function initAddPageForm() {
     }
 
     fileInput?.addEventListener("change", (e) => {
-        uploaded = [];
-        preview.innerHTML = "";
-        Array.from(e.target.files || []).slice(0, 5).forEach((file) => {
+        Array.from(e.target.files || []).forEach((file) => {
+            if (uploaded.length >= 10) {
+                showToast("Максимум 10 изображений", "error");
+                return;
+            }
             const reader = new FileReader();
             reader.onload = (evt) => {
                 uploaded.push(evt.target.result);
-                preview.innerHTML += `<img src="${evt.target.result}" style="width:80px;height:60px;object-fit:cover;border-radius:6px;">`;
+                renderImagePreviews();
             };
             reader.readAsDataURL(file);
         });
+        fileInput.value = ''; // Сбросить input чтобы можно было выбрать те же файлы
     });
+
+    function renderImagePreviews() {
+        preview.innerHTML = uploaded.map((img, index) => `
+            <div style="position:relative;display:inline-block;">
+                <img src="${img}" style="width:80px;height:60px;object-fit:cover;border-radius:6px;">
+                <button type="button" onclick="removeImage(${index})" style="position:absolute;top:-8px;right:-8px;width:24px;height:24px;background:#e74c3c;color:white;border:none;border-radius:50%;cursor:pointer;font-size:14px;line-height:1;display:flex;align-items:center;justify-content:center;">&times;</button>
+            </div>
+        `).join('');
+    }
+
+    window.removeImage = (index) => {
+        uploaded.splice(index, 1);
+        renderImagePreviews();
+    };
 
     form.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -2183,7 +2474,8 @@ function initAddPageForm() {
             : [];
         const currency = document.getElementById('inputCurrency')?.value || 'KGS';
         const region = document.getElementById('inputRegion')?.value || '';
-        const district = document.getElementById('inputDistrict')?.value || '';
+        const aiylokmotu = document.getElementById('inputAiylokmotu')?.value || '';
+        const aiyldar = document.getElementById('inputAiyldar')?.value || '';
 
         const adDraft = {
             type: document.querySelector('input[name="dealType"]:checked')?.value || "sale",
@@ -2199,7 +2491,8 @@ function initAddPageForm() {
             documents,
             currency,
             region,
-            district,
+            aiylokmotu,
+            aiyldar,
             price,
             area,
             address,
@@ -2592,13 +2885,22 @@ async function submitAdWithPackage(draft, pkg, opts = {}) {
         showConfetti();
         setTimeout(() => { window.location.href = "profile.html"; }, 1800);
     } catch (err) {
+        console.error('Ошибка при отправке объявления:', err);
         const code = err?.code || "";
+        const message = err?.message || "";
+        
         if (code.includes("permission-denied")) {
             showToast("Firestore закрыт правилами. Разреши запись (Rules).", "error");
         } else if (code.includes("unauthorized-domain")) {
             showToast("Домен не разрешён в Firebase. Добавь его в Authorized domains.", "error");
+        } else if (code.includes("not-authenticated")) {
+            showToast("Вы не авторизованы. Войдите в аккаунт.", "error");
+        } else if (message.includes("data-too-large")) {
+            showToast("Объявление слишком большое. Уменьшите количество изображений или текст описания.", "error");
+        } else if (message.includes("longer than")) {
+            showToast("Данные слишком большие для Firestore. Уменьшите количество изображений.", "error");
         } else {
-            showToast("Не удалось отправить объявление. Попробуй позже.", "error");
+            showToast(`Ошибка: ${message || 'Не удалось отправить объявление'}`, "error");
         }
     } finally {
         if (submitBtn) setButtonLoading(submitBtn, false);

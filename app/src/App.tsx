@@ -90,7 +90,8 @@ export function App() {
     const learned = Object.keys(st.mem).map((id) => allWords.get(id)).filter((w): w is Word => !!w);
     return vocabOf([...lower, ...learned, ...extra]);
   };
-  const startReview = (words: Word[]) => go({ s: 'session', kind: 'review', build: () => buildReview(words, [...allWords.values()]) });
+  const startReview = (words: Word[]) => go({ s: 'session', kind: 'review', build: () => buildReview(words, [...allWords.values()], Date.now(),
+    Object.keys(st.mem).map((id) => allWords.get(id)).filter((w): w is Word => !!w)) });
 
   const startLesson = (l: Lesson) => {
     const start = () => {

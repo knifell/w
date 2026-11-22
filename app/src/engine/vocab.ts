@@ -1,12 +1,7 @@
-// Какие слова игрок уже видел: служебные слова + выученные слова курса (и их формы).
+// Какие слова игрок уже видел: выученные слова курса (и их формы) + имена и названия.
+// Служебные слова (I, is, the…) курс проходит в первых уроках A1, поэтому отдельной поблажки для них нет.
 // Нужно, чтобы в активных заданиях (сборка предложения) не требовались незнакомые слова.
 import type { Word } from '../types';
-
-/** Самые частые служебные слова: местоимения, be/do/can, артикли, предлоги, союзы, вопросы. */
-export const CORE = new Set(`i me my mine you your yours he him his she her hers it its we us our ours they them their
-this that these those a an the is am are was were be been isn't aren't wasn't weren't
-do does did don't doesn't didn't can can't not and or but to of in on at for with from by about
-here there very too so what who where when how why which yes no let's`.split(/\s+/));
 
 /** Имена людей и географические названия: в примерах их не нужно изучать. */
 export const NAMES = new Set(`anna tom max kate ben mia london paris moscow spain france rome italy japan canada england scotland
@@ -27,7 +22,7 @@ const stems = (t: string) => [
 ];
 
 export function vocabOf(words: Iterable<Word>): Set<string> {
-  const v = new Set([...CORE, ...NAMES]);
+  const v = new Set(NAMES);
   for (const w of words) for (const s of [w.en, ...(w.forms ?? [])]) tokens(s).forEach((t) => v.add(t));
   return v;
 }

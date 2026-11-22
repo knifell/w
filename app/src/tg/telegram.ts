@@ -1,5 +1,5 @@
 // Тонкая обёртка над Telegram WebApp SDK. Работает и в обычном браузере (dev).
-import { useEffect } from 'preact/hooks';
+import { useEffect, useRef } from 'preact/hooks';
 import { setTrustedStart } from '../game/clock';
 type HapticStyle = 'light' | 'medium' | 'heavy';
 type Notify = 'error' | 'success' | 'warning';
@@ -52,11 +52,16 @@ export const ask = (msg: string) =>
 
 /** Системная кнопка «Назад» Telegram: показывается, пока экран открыт и обработчик задан. */
 export function useTgBack(onBack?: () => void) {
+  // Обработчик держим в ref: иначе на каждой перерисовке кнопка пряталась бы и показывалась снова (мигание).
+  const ref = useRef(onBack);
+  ref.current = onBack;
+  const has = !!onBack;
   useEffect(() => {
     const bb = tg?.BackButton;
-    if (!bb || !onBack) return;
-    bb.onClick(onBack);
+    if (!bb || !has) return;
+    const click = () => ref.current?.();
+    bb.onClick(click);
     bb.show();
-    return () => { bb.offClick(onBack); bb.hide(); };
-  }, [onBack]);
+    return () => { bb.offClick(click); bb.hide(); };
+  }, [has]);
 }

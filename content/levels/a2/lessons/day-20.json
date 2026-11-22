@@ -1,0 +1,160 @@
+{
+  "id": "a2-d20",
+  "level": "A2",
+  "day": 20,
+  "island": 2,
+  "title": "At school",
+  "topic": "school",
+  "words": [
+    {
+      "id": "a2-d20-01",
+      "en": "lesson",
+      "ru": [
+        "урок"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Our English lesson starts at ten.",
+          "ru": "Наш урок английского начинается в десять."
+        }
+      ]
+    },
+    {
+      "id": "a2-d20-02",
+      "en": "homework",
+      "ru": [
+        "домашнее задание"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I do my homework after dinner.",
+          "ru": "Я делаю домашнее задание после ужина."
+        }
+      ]
+    },
+    {
+      "id": "a2-d20-03",
+      "en": "exam",
+      "ru": [
+        "экзамен"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I have an exam on Monday.",
+          "ru": "В понедельник у меня экзамен."
+        }
+      ]
+    },
+    {
+      "id": "a2-d20-04",
+      "en": "pass",
+      "ru": [
+        "сдать",
+        "сдавать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I hope to pass the test.",
+          "ru": "Надеюсь сдать тест."
+        }
+      ]
+    },
+    {
+      "id": "a2-d20-05",
+      "en": "fail",
+      "ru": [
+        "провалить",
+        "не сдать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "failed"
+      ],
+      "examples": [
+        {
+          "en": "He failed his driving test.",
+          "ru": "Он не сдал экзамен по вождению."
+        }
+      ]
+    },
+    {
+      "id": "a2-d20-06",
+      "en": "mistake",
+      "ru": [
+        "ошибка"
+      ],
+      "pos": "noun",
+      "forms": [
+        "mistakes"
+      ],
+      "examples": [
+        {
+          "en": "Everyone makes mistakes.",
+          "ru": "Все делают ошибки."
+        }
+      ]
+    },
+    {
+      "id": "a2-d20-07",
+      "en": "explain",
+      "ru": [
+        "объяснять"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Can you explain this word?",
+          "ru": "Можешь объяснить это слово?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d20-08",
+      "en": "remember",
+      "ru": [
+        "помнить",
+        "вспоминать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I can't remember his name.",
+          "ru": "Не могу вспомнить его имя."
+        }
+      ]
+    },
+    {
+      "id": "a2-d20-09",
+      "en": "practise",
+      "ru": [
+        "практиковаться",
+        "тренироваться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Practise English every day.",
+          "ru": "Практикуй английский каждый день."
+        }
+      ]
+    },
+    {
+      "id": "a2-d20-10",
+      "en": "dictionary",
+      "ru": [
+        "словарь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Look it up in the dictionary.",
+          "ru": "Посмотри в словаре."
+        }
+      ]
+    }
+  ]
+}

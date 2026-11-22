@@ -1,0 +1,156 @@
+{
+  "id": "a2-d30",
+  "level": "A2",
+  "day": 30,
+  "island": 3,
+  "title": "Weekend plans",
+  "topic": "plans",
+  "words": [
+    {
+      "id": "a2-d30-01",
+      "en": "plan",
+      "ru": [
+        "план"
+      ],
+      "pos": "noun",
+      "forms": [
+        "plans"
+      ],
+      "examples": [
+        {
+          "en": "Do you have any plans for Saturday?",
+          "ru": "У тебя есть планы на субботу?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d30-02",
+      "en": "meet",
+      "ru": [
+        "встречаться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Let's meet at the cinema.",
+          "ru": "Давай встретимся у кинотеатра."
+        }
+      ]
+    },
+    {
+      "id": "a2-d30-03",
+      "en": "cinema",
+      "ru": [
+        "кино",
+        "кинотеатр"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We went to the cinema last night.",
+          "ru": "Вчера вечером мы ходили в кино."
+        }
+      ]
+    },
+    {
+      "id": "a2-d30-04",
+      "en": "concert",
+      "ru": [
+        "концерт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The concert was amazing.",
+          "ru": "Концерт был потрясающим."
+        }
+      ]
+    },
+    {
+      "id": "a2-d30-05",
+      "en": "picnic",
+      "ru": [
+        "пикник"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Let's have a picnic in the park.",
+          "ru": "Давай устроим пикник в парке."
+        }
+      ]
+    },
+    {
+      "id": "a2-d30-06",
+      "en": "relax",
+      "ru": [
+        "расслабляться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I just want to relax at home.",
+          "ru": "Я просто хочу расслабиться дома."
+        }
+      ]
+    },
+    {
+      "id": "a2-d30-07",
+      "en": "maybe",
+      "ru": [
+        "может быть",
+        "возможно"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Maybe we can go tomorrow.",
+          "ru": "Может, сходим завтра."
+        }
+      ]
+    },
+    {
+      "id": "a2-d30-08",
+      "en": "busy",
+      "ru": [
+        "занятой",
+        "занят"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Sorry, I'm busy on Sunday.",
+          "ru": "Извини, в воскресенье я занят."
+        }
+      ]
+    },
+    {
+      "id": "a2-d30-09",
+      "en": "together",
+      "ru": [
+        "вместе"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Let's cook together tonight.",
+          "ru": "Давай вечером приготовим ужин вместе."
+        }
+      ]
+    },
+    {
+      "id": "a2-d30-10",
+      "en": "fun",
+      "ru": [
+        "веселье"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The party was great fun.",
+          "ru": "Вечеринка была очень весёлой."
+        }
+      ]
+    }
+  ]
+}

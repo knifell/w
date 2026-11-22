@@ -1,0 +1,152 @@
+{
+  "id": "a2-d06",
+  "level": "A2",
+  "day": 6,
+  "island": 1,
+  "title": "Food",
+  "topic": "food",
+  "words": [
+    {
+      "id": "a2-d06-01",
+      "en": "vegetables",
+      "ru": [
+        "овощи"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Eat more vegetables every day.",
+          "ru": "Ешь больше овощей каждый день."
+        }
+      ]
+    },
+    {
+      "id": "a2-d06-02",
+      "en": "meat",
+      "ru": [
+        "мясо"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I don't eat meat.",
+          "ru": "Я не ем мясо."
+        }
+      ]
+    },
+    {
+      "id": "a2-d06-03",
+      "en": "bread",
+      "ru": [
+        "хлеб"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Can you buy some bread?",
+          "ru": "Можешь купить хлеба?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d06-04",
+      "en": "cheese",
+      "ru": [
+        "сыр"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This cheese is from France.",
+          "ru": "Этот сыр из Франции."
+        }
+      ]
+    },
+    {
+      "id": "a2-d06-05",
+      "en": "salt",
+      "ru": [
+        "соль"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Add a little salt to the soup.",
+          "ru": "Добавь немного соли в суп."
+        }
+      ]
+    },
+    {
+      "id": "a2-d06-06",
+      "en": "sugar",
+      "ru": [
+        "сахар"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I drink coffee without sugar.",
+          "ru": "Я пью кофе без сахара."
+        }
+      ]
+    },
+    {
+      "id": "a2-d06-07",
+      "en": "delicious",
+      "ru": [
+        "очень вкусный",
+        "вкусный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This cake is delicious!",
+          "ru": "Этот торт очень вкусный!"
+        }
+      ]
+    },
+    {
+      "id": "a2-d06-08",
+      "en": "hungry",
+      "ru": [
+        "голодный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I'm hungry, let's eat.",
+          "ru": "Я голоден, давай поедим."
+        }
+      ]
+    },
+    {
+      "id": "a2-d06-09",
+      "en": "thirsty",
+      "ru": [
+        "хотящий пить",
+        "испытывающий жажду"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I'm thirsty after the run.",
+          "ru": "После пробежки мне хочется пить."
+        }
+      ]
+    },
+    {
+      "id": "a2-d06-10",
+      "en": "dinner",
+      "ru": [
+        "ужин"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We have dinner at seven.",
+          "ru": "Мы ужинаем в семь."
+        }
+      ]
+    }
+  ]
+}

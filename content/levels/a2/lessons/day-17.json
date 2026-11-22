@@ -1,0 +1,154 @@
+{
+  "id": "a2-d17",
+  "level": "A2",
+  "day": 17,
+  "island": 2,
+  "title": "Finding the way",
+  "topic": "directions",
+  "words": [
+    {
+      "id": "a2-d17-01",
+      "en": "turn",
+      "ru": [
+        "поворачивать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Turn left at the bank.",
+          "ru": "Поверни налево у банка."
+        }
+      ]
+    },
+    {
+      "id": "a2-d17-02",
+      "en": "straight on",
+      "ru": [
+        "прямо"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Go straight on for two minutes.",
+          "ru": "Идите прямо две минуты."
+        }
+      ]
+    },
+    {
+      "id": "a2-d17-03",
+      "en": "corner",
+      "ru": [
+        "угол"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The café is on the corner.",
+          "ru": "Кафе на углу."
+        }
+      ]
+    },
+    {
+      "id": "a2-d17-04",
+      "en": "opposite",
+      "ru": [
+        "напротив"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "The bank is opposite the park.",
+          "ru": "Банк напротив парка."
+        }
+      ]
+    },
+    {
+      "id": "a2-d17-05",
+      "en": "between",
+      "ru": [
+        "между"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "The shop is between the bank and the café.",
+          "ru": "Магазин между банком и кафе."
+        }
+      ]
+    },
+    {
+      "id": "a2-d17-06",
+      "en": "behind",
+      "ru": [
+        "за",
+        "позади"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "The car park is behind the hotel.",
+          "ru": "Парковка за гостиницей."
+        }
+      ]
+    },
+    {
+      "id": "a2-d17-07",
+      "en": "far",
+      "ru": [
+        "далеко"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Is it far from here?",
+          "ru": "Это далеко отсюда?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d17-08",
+      "en": "map",
+      "ru": [
+        "карта местности",
+        "карта"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Can you show me on the map?",
+          "ru": "Можете показать на карте?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d17-09",
+      "en": "cross",
+      "ru": [
+        "переходить",
+        "пересекать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Cross the road at the lights.",
+          "ru": "Переходи дорогу на светофоре."
+        }
+      ]
+    },
+    {
+      "id": "a2-d17-10",
+      "en": "lost",
+      "ru": [
+        "заблудившийся",
+        "потерявшийся"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Excuse me, I'm lost.",
+          "ru": "Извините, я заблудился."
+        }
+      ]
+    }
+  ]
+}

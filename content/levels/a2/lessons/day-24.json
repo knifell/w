@@ -1,0 +1,157 @@
+{
+  "id": "a2-d24",
+  "level": "A2",
+  "day": 24,
+  "island": 3,
+  "title": "Sport",
+  "topic": "sport",
+  "words": [
+    {
+      "id": "a2-d24-01",
+      "en": "team",
+      "ru": [
+        "команда"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Our team won the match.",
+          "ru": "Наша команда выиграла матч."
+        }
+      ]
+    },
+    {
+      "id": "a2-d24-02",
+      "en": "match",
+      "ru": [
+        "матч"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The match starts at six.",
+          "ru": "Матч начинается в шесть."
+        }
+      ]
+    },
+    {
+      "id": "a2-d24-03",
+      "en": "win",
+      "ru": [
+        "побеждать",
+        "выигрывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I hope we win today.",
+          "ru": "Надеюсь, сегодня мы победим."
+        }
+      ]
+    },
+    {
+      "id": "a2-d24-04",
+      "en": "lose",
+      "ru": [
+        "проигрывать",
+        "терять"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We didn't want to lose.",
+          "ru": "Мы не хотели проигрывать."
+        }
+      ]
+    },
+    {
+      "id": "a2-d24-05",
+      "en": "score",
+      "ru": [
+        "забивать",
+        "набирать очки"
+      ],
+      "pos": "verb",
+      "forms": [
+        "scored"
+      ],
+      "examples": [
+        {
+          "en": "He scored two goals.",
+          "ru": "Он забил два гола."
+        }
+      ]
+    },
+    {
+      "id": "a2-d24-06",
+      "en": "goal",
+      "ru": [
+        "гол"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What a goal!",
+          "ru": "Какой гол!"
+        }
+      ]
+    },
+    {
+      "id": "a2-d24-07",
+      "en": "coach",
+      "ru": [
+        "тренер"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Our coach is very strict.",
+          "ru": "Наш тренер очень строгий."
+        }
+      ]
+    },
+    {
+      "id": "a2-d24-08",
+      "en": "swim",
+      "ru": [
+        "плавать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Can you swim?",
+          "ru": "Ты умеешь плавать?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d24-09",
+      "en": "gym",
+      "ru": [
+        "спортзал"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I go to the gym twice a week.",
+          "ru": "Я хожу в спортзал два раза в неделю."
+        }
+      ]
+    },
+    {
+      "id": "a2-d24-10",
+      "en": "race",
+      "ru": [
+        "гонка",
+        "забег"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She won the race.",
+          "ru": "Она выиграла забег."
+        }
+      ]
+    }
+  ]
+}

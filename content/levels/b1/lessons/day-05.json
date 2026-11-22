@@ -1,0 +1,158 @@
+{
+  "id": "b1-d05",
+  "level": "B1",
+  "day": 5,
+  "island": 1,
+  "title": "Around town",
+  "topic": "getting around",
+  "words": [
+    {
+      "id": "b1-d05-01",
+      "en": "commute",
+      "ru": [
+        "ездить на работу"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I commute to work by train.",
+          "ru": "Я езжу на работу на поезде."
+        }
+      ]
+    },
+    {
+      "id": "b1-d05-02",
+      "en": "timetable",
+      "ru": [
+        "расписание"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Check the timetable before you leave.",
+          "ru": "Проверь расписание перед выходом."
+        }
+      ]
+    },
+    {
+      "id": "b1-d05-03",
+      "en": "fare",
+      "ru": [
+        "стоимость проезда"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The bus fare has gone up.",
+          "ru": "Проезд в автобусе подорожал."
+        }
+      ]
+    },
+    {
+      "id": "b1-d05-04",
+      "en": "route",
+      "ru": [
+        "маршрут"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This is the fastest route to the airport.",
+          "ru": "Это самый быстрый маршрут до аэропорта."
+        }
+      ]
+    },
+    {
+      "id": "b1-d05-05",
+      "en": "connection",
+      "ru": [
+        "пересадка",
+        "связь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I missed my connection in Berlin.",
+          "ru": "Я опоздал на пересадку в Берлине."
+        }
+      ]
+    },
+    {
+      "id": "b1-d05-06",
+      "en": "rush hour",
+      "ru": [
+        "час пик"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Avoid driving in the rush hour.",
+          "ru": "Не езди за рулём в час пик."
+        }
+      ]
+    },
+    {
+      "id": "b1-d05-07",
+      "en": "vehicle",
+      "ru": [
+        "транспортное средство"
+      ],
+      "pos": "noun",
+      "forms": [
+        "vehicles"
+      ],
+      "examples": [
+        {
+          "en": "No vehicles are allowed in the centre.",
+          "ru": "Въезд транспорта в центр запрещён."
+        }
+      ]
+    },
+    {
+      "id": "b1-d05-08",
+      "en": "pedestrian",
+      "ru": [
+        "пешеход"
+      ],
+      "pos": "noun",
+      "forms": [
+        "pedestrians"
+      ],
+      "examples": [
+        {
+          "en": "This street is for pedestrians only.",
+          "ru": "Эта улица только для пешеходов."
+        }
+      ]
+    },
+    {
+      "id": "b1-d05-09",
+      "en": "crossroads",
+      "ru": [
+        "перекрёсток"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Turn right at the crossroads.",
+          "ru": "На перекрёстке поверни направо."
+        }
+      ]
+    },
+    {
+      "id": "b1-d05-10",
+      "en": "roundabout",
+      "ru": [
+        "круговое движение",
+        "кольцо"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Take the second exit at the roundabout.",
+          "ru": "На кольце сверни на второй съезд."
+        }
+      ]
+    }
+  ]
+}

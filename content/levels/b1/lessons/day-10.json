@@ -1,0 +1,154 @@
+{
+  "id": "b1-d10",
+  "level": "B1",
+  "day": 10,
+  "island": 1,
+  "title": "Our planet",
+  "topic": "environment",
+  "words": [
+    {
+      "id": "b1-d10-01",
+      "en": "environment",
+      "ru": [
+        "окружающая среда"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We must protect the environment.",
+          "ru": "Мы должны беречь окружающую среду."
+        }
+      ]
+    },
+    {
+      "id": "b1-d10-02",
+      "en": "pollution",
+      "ru": [
+        "загрязнение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Air pollution is a big problem in cities.",
+          "ru": "Загрязнение воздуха — большая проблема городов."
+        }
+      ]
+    },
+    {
+      "id": "b1-d10-03",
+      "en": "recycle",
+      "ru": [
+        "перерабатывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We recycle paper and glass.",
+          "ru": "Мы сдаём на переработку бумагу и стекло."
+        }
+      ]
+    },
+    {
+      "id": "b1-d10-04",
+      "en": "waste",
+      "ru": [
+        "тратить впустую",
+        "отходы"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Don't waste water.",
+          "ru": "Не трать воду зря."
+        }
+      ]
+    },
+    {
+      "id": "b1-d10-05",
+      "en": "climate",
+      "ru": [
+        "климат"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The climate is changing.",
+          "ru": "Климат меняется."
+        }
+      ]
+    },
+    {
+      "id": "b1-d10-06",
+      "en": "energy",
+      "ru": [
+        "энергия"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Solar energy is clean.",
+          "ru": "Солнечная энергия чистая."
+        }
+      ]
+    },
+    {
+      "id": "b1-d10-07",
+      "en": "plastic",
+      "ru": [
+        "пластик"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Try to use less plastic.",
+          "ru": "Старайся использовать меньше пластика."
+        }
+      ]
+    },
+    {
+      "id": "b1-d10-08",
+      "en": "species",
+      "ru": [
+        "вид животных",
+        "биологический вид"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Many species are in danger.",
+          "ru": "Многим видам грозит исчезновение."
+        }
+      ]
+    },
+    {
+      "id": "b1-d10-09",
+      "en": "protect",
+      "ru": [
+        "защищать",
+        "беречь"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Trees protect the soil.",
+          "ru": "Деревья защищают почву."
+        }
+      ]
+    },
+    {
+      "id": "b1-d10-10",
+      "en": "reduce",
+      "ru": [
+        "сокращать",
+        "уменьшать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We need to reduce our energy use.",
+          "ru": "Нам нужно сократить потребление энергии."
+        }
+      ]
+    }
+  ]
+}

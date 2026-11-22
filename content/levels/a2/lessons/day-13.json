@@ -1,0 +1,157 @@
+{
+  "id": "a2-d13",
+  "level": "A2",
+  "day": 13,
+  "island": 2,
+  "title": "Clothes",
+  "topic": "clothes",
+  "words": [
+    {
+      "id": "a2-d13-01",
+      "en": "jacket",
+      "ru": [
+        "куртка",
+        "пиджак"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Put on your jacket, it's cold.",
+          "ru": "Надень куртку, холодно."
+        }
+      ]
+    },
+    {
+      "id": "a2-d13-02",
+      "en": "dress",
+      "ru": [
+        "платье"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She wore a red dress to the party.",
+          "ru": "Она надела красное платье на вечеринку."
+        }
+      ]
+    },
+    {
+      "id": "a2-d13-03",
+      "en": "trousers",
+      "ru": [
+        "брюки"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "These trousers are too long.",
+          "ru": "Эти брюки слишком длинные."
+        }
+      ]
+    },
+    {
+      "id": "a2-d13-04",
+      "en": "boots",
+      "ru": [
+        "ботинки",
+        "сапоги"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I need warm boots for winter.",
+          "ru": "Мне нужны тёплые ботинки на зиму."
+        }
+      ]
+    },
+    {
+      "id": "a2-d13-05",
+      "en": "hat",
+      "ru": [
+        "шапка",
+        "шляпа"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Don't forget your hat.",
+          "ru": "Не забудь шапку."
+        }
+      ]
+    },
+    {
+      "id": "a2-d13-06",
+      "en": "gloves",
+      "ru": [
+        "перчатки"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My gloves are in my bag.",
+          "ru": "Мои перчатки в сумке."
+        }
+      ]
+    },
+    {
+      "id": "a2-d13-07",
+      "en": "pocket",
+      "ru": [
+        "карман"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I keep my keys in my pocket.",
+          "ru": "Я держу ключи в кармане."
+        }
+      ]
+    },
+    {
+      "id": "a2-d13-08",
+      "en": "wear",
+      "ru": [
+        "носить"
+      ],
+      "pos": "verb",
+      "forms": [
+        "wears"
+      ],
+      "examples": [
+        {
+          "en": "He usually wears jeans.",
+          "ru": "Обычно он носит джинсы."
+        }
+      ]
+    },
+    {
+      "id": "a2-d13-09",
+      "en": "fit",
+      "ru": [
+        "подходить по размеру",
+        "сидеть"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "These shoes don't fit me.",
+          "ru": "Эти туфли мне не по размеру."
+        }
+      ]
+    },
+    {
+      "id": "a2-d13-10",
+      "en": "fashionable",
+      "ru": [
+        "модный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This colour is fashionable this year.",
+          "ru": "Этот цвет в моде в этом году."
+        }
+      ]
+    }
+  ]
+}

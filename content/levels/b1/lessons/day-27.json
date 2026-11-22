@@ -1,0 +1,157 @@
+{
+  "id": "b1-d27",
+  "level": "B1",
+  "day": 27,
+  "island": 3,
+  "title": "Lifestyle",
+  "topic": "lifestyle",
+  "words": [
+    {
+      "id": "b1-d27-01",
+      "en": "diet",
+      "ru": [
+        "рацион",
+        "диета"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A healthy diet is important.",
+          "ru": "Здоровое питание важно."
+        }
+      ]
+    },
+    {
+      "id": "b1-d27-02",
+      "en": "exercise",
+      "ru": [
+        "заниматься спортом"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I try to exercise every day.",
+          "ru": "Я стараюсь заниматься спортом каждый день."
+        }
+      ]
+    },
+    {
+      "id": "b1-d27-03",
+      "en": "lifestyle",
+      "ru": [
+        "образ жизни"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He has a very active lifestyle.",
+          "ru": "У него очень активный образ жизни."
+        }
+      ]
+    },
+    {
+      "id": "b1-d27-04",
+      "en": "stress",
+      "ru": [
+        "стресс"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Work causes a lot of stress.",
+          "ru": "Работа вызывает много стресса."
+        }
+      ]
+    },
+    {
+      "id": "b1-d27-05",
+      "en": "avoid",
+      "ru": [
+        "избегать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Avoid eating late at night.",
+          "ru": "Избегай поздних перекусов."
+        }
+      ]
+    },
+    {
+      "id": "b1-d27-06",
+      "en": "balance",
+      "ru": [
+        "баланс",
+        "равновесие"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "It's hard to find a good balance.",
+          "ru": "Трудно найти хороший баланс."
+        }
+      ]
+    },
+    {
+      "id": "b1-d27-07",
+      "en": "give up",
+      "ru": [
+        "бросать",
+        "отказываться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "gave up"
+      ],
+      "examples": [
+        {
+          "en": "He gave up smoking.",
+          "ru": "Он бросил курить."
+        }
+      ]
+    },
+    {
+      "id": "b1-d27-08",
+      "en": "cut down on",
+      "ru": [
+        "сокращать",
+        "есть меньше"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I'm trying to cut down on sugar.",
+          "ru": "Я стараюсь есть меньше сахара."
+        }
+      ]
+    },
+    {
+      "id": "b1-d27-09",
+      "en": "in shape",
+      "ru": [
+        "в форме"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "I want to get in shape for summer.",
+          "ru": "Хочу прийти в форму к лету."
+        }
+      ]
+    },
+    {
+      "id": "b1-d27-10",
+      "en": "addicted",
+      "ru": [
+        "зависимый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He is addicted to his phone.",
+          "ru": "Он зависим от телефона."
+        }
+      ]
+    }
+  ]
+}

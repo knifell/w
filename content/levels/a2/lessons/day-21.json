@@ -1,0 +1,153 @@
+{
+  "id": "a2-d21",
+  "level": "A2",
+  "day": 21,
+  "island": 3,
+  "title": "Nature",
+  "topic": "nature",
+  "words": [
+    {
+      "id": "a2-d21-01",
+      "en": "forest",
+      "ru": [
+        "лес"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We walked in the forest.",
+          "ru": "Мы гуляли в лесу."
+        }
+      ]
+    },
+    {
+      "id": "a2-d21-02",
+      "en": "river",
+      "ru": [
+        "река"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The river runs through the city.",
+          "ru": "Река протекает через город."
+        }
+      ]
+    },
+    {
+      "id": "a2-d21-03",
+      "en": "lake",
+      "ru": [
+        "озеро"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We swam in the lake.",
+          "ru": "Мы плавали в озере."
+        }
+      ]
+    },
+    {
+      "id": "a2-d21-04",
+      "en": "mountain",
+      "ru": [
+        "гора"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "They climbed the mountain.",
+          "ru": "Они поднялись на гору."
+        }
+      ]
+    },
+    {
+      "id": "a2-d21-05",
+      "en": "hill",
+      "ru": [
+        "холм"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Our house is on a hill.",
+          "ru": "Наш дом на холме."
+        }
+      ]
+    },
+    {
+      "id": "a2-d21-06",
+      "en": "field",
+      "ru": [
+        "поле"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The cows are in the field.",
+          "ru": "Коровы в поле."
+        }
+      ]
+    },
+    {
+      "id": "a2-d21-07",
+      "en": "sky",
+      "ru": [
+        "небо"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The sky is blue today.",
+          "ru": "Сегодня небо голубое."
+        }
+      ]
+    },
+    {
+      "id": "a2-d21-08",
+      "en": "island",
+      "ru": [
+        "остров"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We sailed to a small island.",
+          "ru": "Мы приплыли на маленький остров."
+        }
+      ]
+    },
+    {
+      "id": "a2-d21-09",
+      "en": "beach",
+      "ru": [
+        "пляж"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Let's go to the beach.",
+          "ru": "Пойдём на пляж."
+        }
+      ]
+    },
+    {
+      "id": "a2-d21-10",
+      "en": "wave",
+      "ru": [
+        "волна"
+      ],
+      "pos": "noun",
+      "forms": [
+        "waves"
+      ],
+      "examples": [
+        {
+          "en": "The waves are very big today.",
+          "ru": "Сегодня волны очень большие."
+        }
+      ]
+    }
+  ]
+}

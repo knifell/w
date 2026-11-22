@@ -1,0 +1,161 @@
+{
+  "id": "b1-d18",
+  "level": "B1",
+  "day": 18,
+  "island": 2,
+  "title": "Rules and laws",
+  "topic": "law",
+  "words": [
+    {
+      "id": "b1-d18-01",
+      "en": "law",
+      "ru": [
+        "закон"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "It's against the law.",
+          "ru": "Это противозаконно."
+        }
+      ]
+    },
+    {
+      "id": "b1-d18-02",
+      "en": "rule",
+      "ru": [
+        "правило"
+      ],
+      "pos": "noun",
+      "forms": [
+        "rules"
+      ],
+      "examples": [
+        {
+          "en": "You must follow the rules.",
+          "ru": "Нужно соблюдать правила."
+        }
+      ]
+    },
+    {
+      "id": "b1-d18-03",
+      "en": "allow",
+      "ru": [
+        "разрешать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "allowed"
+      ],
+      "examples": [
+        {
+          "en": "Smoking is not allowed here.",
+          "ru": "Здесь курить запрещено."
+        }
+      ]
+    },
+    {
+      "id": "b1-d18-04",
+      "en": "forbid",
+      "ru": [
+        "запрещать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "forbids"
+      ],
+      "examples": [
+        {
+          "en": "The school forbids phones in class.",
+          "ru": "В школе запрещены телефоны на уроках."
+        }
+      ]
+    },
+    {
+      "id": "b1-d18-05",
+      "en": "fine",
+      "ru": [
+        "штраф"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He had to pay a fine for speeding.",
+          "ru": "Ему пришлось заплатить штраф за превышение скорости."
+        }
+      ]
+    },
+    {
+      "id": "b1-d18-06",
+      "en": "police",
+      "ru": [
+        "полиция"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Call the police!",
+          "ru": "Вызови полицию!"
+        }
+      ]
+    },
+    {
+      "id": "b1-d18-07",
+      "en": "witness",
+      "ru": [
+        "свидетель"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Was there a witness to the crash?",
+          "ru": "Был ли свидетель аварии?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d18-08",
+      "en": "accident",
+      "ru": [
+        "авария",
+        "несчастный случай"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Nobody was hurt in the accident.",
+          "ru": "В аварии никто не пострадал."
+        }
+      ]
+    },
+    {
+      "id": "b1-d18-09",
+      "en": "illegal",
+      "ru": [
+        "незаконный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It's illegal to drive without a licence.",
+          "ru": "Водить без прав незаконно."
+        }
+      ]
+    },
+    {
+      "id": "b1-d18-10",
+      "en": "licence",
+      "ru": [
+        "права",
+        "лицензия"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I got my driving licence last month.",
+          "ru": "В прошлом месяце я получил права."
+        }
+      ]
+    }
+  ]
+}

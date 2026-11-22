@@ -1,0 +1,158 @@
+{
+  "id": "a2-d09",
+  "level": "A2",
+  "day": 9,
+  "island": 1,
+  "title": "Free time",
+  "topic": "hobbies",
+  "words": [
+    {
+      "id": "a2-d09-01",
+      "en": "hobby",
+      "ru": [
+        "хобби",
+        "увлечение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My hobby is photography.",
+          "ru": "Моё хобби — фотография."
+        }
+      ]
+    },
+    {
+      "id": "a2-d09-02",
+      "en": "paint",
+      "ru": [
+        "рисовать красками"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "She likes to paint the sea.",
+          "ru": "Она любит рисовать море."
+        }
+      ]
+    },
+    {
+      "id": "a2-d09-03",
+      "en": "collect",
+      "ru": [
+        "собирать",
+        "коллекционировать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "collects"
+      ],
+      "examples": [
+        {
+          "en": "He collects old coins.",
+          "ru": "Он собирает старые монеты."
+        }
+      ]
+    },
+    {
+      "id": "a2-d09-04",
+      "en": "guitar",
+      "ru": [
+        "гитара"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I'm learning to play the guitar.",
+          "ru": "Я учусь играть на гитаре."
+        }
+      ]
+    },
+    {
+      "id": "a2-d09-05",
+      "en": "dance",
+      "ru": [
+        "танцевать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Do you like to dance?",
+          "ru": "Ты любишь танцевать?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d09-06",
+      "en": "camera",
+      "ru": [
+        "фотоаппарат",
+        "камера"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I took this photo with my new camera.",
+          "ru": "Я сделал это фото новым фотоаппаратом."
+        }
+      ]
+    },
+    {
+      "id": "a2-d09-07",
+      "en": "join",
+      "ru": [
+        "вступать",
+        "присоединяться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I want to join a chess club.",
+          "ru": "Я хочу вступить в шахматный клуб."
+        }
+      ]
+    },
+    {
+      "id": "a2-d09-08",
+      "en": "free time",
+      "ru": [
+        "свободное время"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What do you do in your free time?",
+          "ru": "Что ты делаешь в свободное время?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d09-09",
+      "en": "enjoy",
+      "ru": [
+        "наслаждаться",
+        "получать удовольствие"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I enjoy reading in the evening.",
+          "ru": "Я люблю читать по вечерам."
+        }
+      ]
+    },
+    {
+      "id": "a2-d09-10",
+      "en": "board game",
+      "ru": [
+        "настольная игра"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We played a board game last night.",
+          "ru": "Вчера вечером мы играли в настольную игру."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "id": "b1-d25",
+  "level": "B1",
+  "day": 25,
+  "island": 3,
+  "title": "Behaviour",
+  "topic": "behaviour",
+  "words": [
+    {
+      "id": "b1-d25-01",
+      "en": "behave",
+      "ru": [
+        "вести себя"
+      ],
+      "pos": "verb",
+      "forms": [
+        "behaved"
+      ],
+      "examples": [
+        {
+          "en": "The children behaved very well.",
+          "ru": "Дети вели себя очень хорошо."
+        }
+      ]
+    },
+    {
+      "id": "b1-d25-02",
+      "en": "habit",
+      "ru": [
+        "привычка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Smoking is a bad habit.",
+          "ru": "Курение — плохая привычка."
+        }
+      ]
+    },
+    {
+      "id": "b1-d25-03",
+      "en": "attitude",
+      "ru": [
+        "отношение",
+        "настрой"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She has a positive attitude.",
+          "ru": "У неё позитивный настрой."
+        }
+      ]
+    },
+    {
+      "id": "b1-d25-04",
+      "en": "respect",
+      "ru": [
+        "уважать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I respect your choice.",
+          "ru": "Я уважаю твой выбор."
+        }
+      ]
+    },
+    {
+      "id": "b1-d25-05",
+      "en": "decision",
+      "ru": [
+        "решение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "It was a difficult decision.",
+          "ru": "Это было трудное решение."
+        }
+      ]
+    },
+    {
+      "id": "b1-d25-06",
+      "en": "mood",
+      "ru": [
+        "настроение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He's in a good mood today.",
+          "ru": "Сегодня у него хорошее настроение."
+        }
+      ]
+    },
+    {
+      "id": "b1-d25-07",
+      "en": "temper",
+      "ru": [
+        "самообладание",
+        "вспыльчивость"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He lost his temper.",
+          "ru": "Он вышел из себя."
+        }
+      ]
+    },
+    {
+      "id": "b1-d25-08",
+      "en": "lie",
+      "ru": [
+        "лгать",
+        "врать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Don't lie to me.",
+          "ru": "Не лги мне."
+        }
+      ]
+    },
+    {
+      "id": "b1-d25-09",
+      "en": "blame",
+      "ru": [
+        "винить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Don't blame yourself.",
+          "ru": "Не вини себя."
+        }
+      ]
+    },
+    {
+      "id": "b1-d25-10",
+      "en": "encourage",
+      "ru": [
+        "поощрять",
+        "поддерживать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "encouraged"
+      ],
+      "examples": [
+        {
+          "en": "My parents encouraged me to travel.",
+          "ru": "Родители поощряли мои путешествия."
+        }
+      ]
+    }
+  ]
+}

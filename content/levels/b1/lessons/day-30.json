@@ -1,0 +1,155 @@
+{
+  "id": "b1-d30",
+  "level": "B1",
+  "day": 30,
+  "island": 3,
+  "title": "The road to success",
+  "topic": "success",
+  "words": [
+    {
+      "id": "b1-d30-01",
+      "en": "success",
+      "ru": [
+        "успех"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Hard work is the key to success.",
+          "ru": "Упорный труд — ключ к успеху."
+        }
+      ]
+    },
+    {
+      "id": "b1-d30-02",
+      "en": "failure",
+      "ru": [
+        "неудача",
+        "провал"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Failure is part of learning.",
+          "ru": "Неудачи — часть обучения."
+        }
+      ]
+    },
+    {
+      "id": "b1-d30-03",
+      "en": "effort",
+      "ru": [
+        "усилие",
+        "старание"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Thank you for your effort.",
+          "ru": "Спасибо за твои старания."
+        }
+      ]
+    },
+    {
+      "id": "b1-d30-04",
+      "en": "challenge",
+      "ru": [
+        "вызов",
+        "трудная задача"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Learning a language is a challenge.",
+          "ru": "Изучение языка — это вызов."
+        }
+      ]
+    },
+    {
+      "id": "b1-d30-05",
+      "en": "progress",
+      "ru": [
+        "прогресс",
+        "успехи"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "You're making good progress.",
+          "ru": "Ты делаешь хорошие успехи."
+        }
+      ]
+    },
+    {
+      "id": "b1-d30-06",
+      "en": "confidence",
+      "ru": [
+        "уверенность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Practice gives you confidence.",
+          "ru": "Практика даёт уверенность."
+        }
+      ]
+    },
+    {
+      "id": "b1-d30-07",
+      "en": "achievement",
+      "ru": [
+        "достижение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Finishing the marathon was a great achievement.",
+          "ru": "Пробежать марафон было большим достижением."
+        }
+      ]
+    },
+    {
+      "id": "b1-d30-08",
+      "en": "dream",
+      "ru": [
+        "мечта"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "It was my dream to see Paris.",
+          "ru": "Моей мечтой было увидеть Париж."
+        }
+      ]
+    },
+    {
+      "id": "b1-d30-09",
+      "en": "determined",
+      "ru": [
+        "решительный",
+        "полный решимости"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He is determined to win.",
+          "ru": "Он полон решимости победить."
+        }
+      ]
+    },
+    {
+      "id": "b1-d30-10",
+      "en": "patience",
+      "ru": [
+        "терпение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Learning takes patience.",
+          "ru": "Учёба требует терпения."
+        }
+      ]
+    }
+  ]
+}

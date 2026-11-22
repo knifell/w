@@ -1,0 +1,151 @@
+{
+  "id": "b1-d17",
+  "level": "B1",
+  "day": 17,
+  "island": 2,
+  "title": "Shopping problems",
+  "topic": "consumer",
+  "words": [
+    {
+      "id": "b1-d17-01",
+      "en": "refund",
+      "ru": [
+        "возврат денег"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I'd like a refund, please.",
+          "ru": "Я бы хотел вернуть деньги."
+        }
+      ]
+    },
+    {
+      "id": "b1-d17-02",
+      "en": "guarantee",
+      "ru": [
+        "гарантия"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The TV has a two-year guarantee.",
+          "ru": "На телевизор гарантия два года."
+        }
+      ]
+    },
+    {
+      "id": "b1-d17-03",
+      "en": "faulty",
+      "ru": [
+        "неисправный",
+        "бракованный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The phone I bought is faulty.",
+          "ru": "Купленный мной телефон бракованный."
+        }
+      ]
+    },
+    {
+      "id": "b1-d17-04",
+      "en": "exchange",
+      "ru": [
+        "обменивать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Can I exchange this shirt for a bigger one?",
+          "ru": "Можно обменять эту рубашку на побольше?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d17-05",
+      "en": "bargain",
+      "ru": [
+        "выгодная покупка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This coat was a real bargain.",
+          "ru": "Это пальто — очень выгодная покупка."
+        }
+      ]
+    },
+    {
+      "id": "b1-d17-06",
+      "en": "deliver",
+      "ru": [
+        "доставлять"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "They will deliver the sofa tomorrow.",
+          "ru": "Диван доставят завтра."
+        }
+      ]
+    },
+    {
+      "id": "b1-d17-07",
+      "en": "delivery",
+      "ru": [
+        "доставка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Delivery is free on orders over 50 pounds.",
+          "ru": "Доставка бесплатна при заказе от 50 фунтов."
+        }
+      ]
+    },
+    {
+      "id": "b1-d17-08",
+      "en": "in stock",
+      "ru": [
+        "в наличии"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Is this model in stock?",
+          "ru": "Эта модель есть в наличии?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d17-09",
+      "en": "compare",
+      "ru": [
+        "сравнивать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Compare prices before you buy.",
+          "ru": "Сравнивай цены перед покупкой."
+        }
+      ]
+    },
+    {
+      "id": "b1-d17-10",
+      "en": "quality",
+      "ru": [
+        "качество"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The quality of this coat is excellent.",
+          "ru": "Качество этого пальто отличное."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "id": "b1-d29",
+  "level": "B1",
+  "day": 29,
+  "island": 3,
+  "title": "Phrasal verbs",
+  "topic": "phrasal verbs",
+  "words": [
+    {
+      "id": "b1-d29-01",
+      "en": "look forward to",
+      "ru": [
+        "с нетерпением ждать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I look forward to hearing from you.",
+          "ru": "С нетерпением жду ответа."
+        }
+      ]
+    },
+    {
+      "id": "b1-d29-02",
+      "en": "find out",
+      "ru": [
+        "выяснять",
+        "узнавать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I need to find out the truth.",
+          "ru": "Мне нужно узнать правду."
+        }
+      ]
+    },
+    {
+      "id": "b1-d29-03",
+      "en": "turn down",
+      "ru": [
+        "отклонять",
+        "убавлять"
+      ],
+      "pos": "verb",
+      "forms": [
+        "turned down"
+      ],
+      "examples": [
+        {
+          "en": "She turned down the job offer.",
+          "ru": "Она отклонила предложение о работе."
+        }
+      ]
+    },
+    {
+      "id": "b1-d29-04",
+      "en": "set up",
+      "ru": [
+        "основать",
+        "открыть"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "They set up a small business.",
+          "ru": "Они открыли небольшой бизнес."
+        }
+      ]
+    },
+    {
+      "id": "b1-d29-05",
+      "en": "put off",
+      "ru": [
+        "откладывать на потом"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Don't put off your homework.",
+          "ru": "Не откладывай домашнее задание."
+        }
+      ]
+    },
+    {
+      "id": "b1-d29-06",
+      "en": "run out of",
+      "ru": [
+        "заканчиваться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We've run out of milk.",
+          "ru": "У нас закончилось молоко."
+        }
+      ]
+    },
+    {
+      "id": "b1-d29-07",
+      "en": "take up",
+      "ru": [
+        "начать заниматься"
+      ],
+      "pos": "verb",
+      "forms": [
+        "took up"
+      ],
+      "examples": [
+        {
+          "en": "I took up yoga last year.",
+          "ru": "В прошлом году я занялся йогой."
+        }
+      ]
+    },
+    {
+      "id": "b1-d29-08",
+      "en": "come up with",
+      "ru": [
+        "придумывать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "came up with"
+      ],
+      "examples": [
+        {
+          "en": "She came up with a great idea.",
+          "ru": "Она придумала отличную идею."
+        }
+      ]
+    },
+    {
+      "id": "b1-d29-09",
+      "en": "deal with",
+      "ru": [
+        "справляться с",
+        "иметь дело с"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "How do you deal with stress?",
+          "ru": "Как ты справляешься со стрессом?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d29-10",
+      "en": "carry on",
+      "ru": [
+        "продолжать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Carry on, I'm listening.",
+          "ru": "Продолжай, я слушаю."
+        }
+      ]
+    }
+  ]
+}

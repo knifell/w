@@ -1,0 +1,157 @@
+{
+  "id": "a2-d26",
+  "level": "A2",
+  "day": 26,
+  "island": 3,
+  "title": "At the hotel",
+  "topic": "hotel",
+  "words": [
+    {
+      "id": "a2-d26-01",
+      "en": "hotel",
+      "ru": [
+        "гостиница",
+        "отель"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The hotel is near the beach.",
+          "ru": "Отель рядом с пляжем."
+        }
+      ]
+    },
+    {
+      "id": "a2-d26-02",
+      "en": "room",
+      "ru": [
+        "номер",
+        "комната"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I'd like a room with a view.",
+          "ru": "Я бы хотел номер с видом."
+        }
+      ]
+    },
+    {
+      "id": "a2-d26-03",
+      "en": "key",
+      "ru": [
+        "ключ"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Here is your key.",
+          "ru": "Вот ваш ключ."
+        }
+      ]
+    },
+    {
+      "id": "a2-d26-04",
+      "en": "reception",
+      "ru": [
+        "ресепшн",
+        "стойка регистрации"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Leave your key at reception.",
+          "ru": "Оставьте ключ на ресепшн."
+        }
+      ]
+    },
+    {
+      "id": "a2-d26-05",
+      "en": "lift",
+      "ru": [
+        "лифт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The lift is broken.",
+          "ru": "Лифт сломан."
+        }
+      ]
+    },
+    {
+      "id": "a2-d26-06",
+      "en": "towel",
+      "ru": [
+        "полотенце"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Can I have another towel?",
+          "ru": "Можно ещё одно полотенце?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d26-07",
+      "en": "single",
+      "ru": [
+        "одноместный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I need a single room.",
+          "ru": "Мне нужен одноместный номер."
+        }
+      ]
+    },
+    {
+      "id": "a2-d26-08",
+      "en": "double",
+      "ru": [
+        "двухместный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We booked a double room.",
+          "ru": "Мы забронировали двухместный номер."
+        }
+      ]
+    },
+    {
+      "id": "a2-d26-09",
+      "en": "view",
+      "ru": [
+        "вид"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What a beautiful view!",
+          "ru": "Какой красивый вид!"
+        }
+      ]
+    },
+    {
+      "id": "a2-d26-10",
+      "en": "stay",
+      "ru": [
+        "останавливаться",
+        "оставаться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "stayed"
+      ],
+      "examples": [
+        {
+          "en": "We stayed in a small hotel.",
+          "ru": "Мы остановились в маленьком отеле."
+        }
+      ]
+    }
+  ]
+}

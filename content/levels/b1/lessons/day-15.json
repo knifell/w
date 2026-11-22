@@ -1,0 +1,161 @@
+{
+  "id": "b1-d15",
+  "level": "B1",
+  "day": 15,
+  "island": 2,
+  "title": "University",
+  "topic": "education",
+  "words": [
+    {
+      "id": "b1-d15-01",
+      "en": "graduate",
+      "ru": [
+        "окончить вуз",
+        "выпускаться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "graduated"
+      ],
+      "examples": [
+        {
+          "en": "She graduated from university in 2020.",
+          "ru": "Она окончила университет в 2020 году."
+        }
+      ]
+    },
+    {
+      "id": "b1-d15-02",
+      "en": "lecture",
+      "ru": [
+        "лекция"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The lecture was really interesting.",
+          "ru": "Лекция была очень интересной."
+        }
+      ]
+    },
+    {
+      "id": "b1-d15-03",
+      "en": "subject",
+      "ru": [
+        "предмет"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Maths is my favourite subject.",
+          "ru": "Математика — мой любимый предмет."
+        }
+      ]
+    },
+    {
+      "id": "b1-d15-04",
+      "en": "scholarship",
+      "ru": [
+        "стипендия"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He won a scholarship to study in Canada.",
+          "ru": "Он получил стипендию на учёбу в Канаде."
+        }
+      ]
+    },
+    {
+      "id": "b1-d15-05",
+      "en": "research",
+      "ru": [
+        "исследование"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She does research on climate change.",
+          "ru": "Она изучает изменение климата."
+        }
+      ]
+    },
+    {
+      "id": "b1-d15-06",
+      "en": "essay",
+      "ru": [
+        "эссе",
+        "сочинение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I have to write an essay by Monday.",
+          "ru": "К понедельнику мне нужно написать эссе."
+        }
+      ]
+    },
+    {
+      "id": "b1-d15-07",
+      "en": "term",
+      "ru": [
+        "семестр",
+        "четверть"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The new term starts in September.",
+          "ru": "Новый семестр начинается в сентябре."
+        }
+      ]
+    },
+    {
+      "id": "b1-d15-08",
+      "en": "qualification",
+      "ru": [
+        "квалификация"
+      ],
+      "pos": "noun",
+      "forms": [
+        "qualifications"
+      ],
+      "examples": [
+        {
+          "en": "What qualifications do you need for this job?",
+          "ru": "Какая квалификация нужна для этой работы?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d15-09",
+      "en": "revise",
+      "ru": [
+        "повторять к экзамену",
+        "готовиться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I need to revise for my exams.",
+          "ru": "Мне нужно готовиться к экзаменам."
+        }
+      ]
+    },
+    {
+      "id": "b1-d15-10",
+      "en": "tutor",
+      "ru": [
+        "репетитор",
+        "наставник"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My tutor helps me with grammar.",
+          "ru": "Репетитор помогает мне с грамматикой."
+        }
+      ]
+    }
+  ]
+}

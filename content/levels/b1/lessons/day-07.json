@@ -1,0 +1,152 @@
+{
+  "id": "b1-d07",
+  "level": "B1",
+  "day": 7,
+  "island": 1,
+  "title": "Trouble on the road",
+  "topic": "travel problems",
+  "words": [
+    {
+      "id": "b1-d07-01",
+      "en": "stolen",
+      "ru": [
+        "украденный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "My phone was stolen on the train.",
+          "ru": "У меня в поезде украли телефон."
+        }
+      ]
+    },
+    {
+      "id": "b1-d07-02",
+      "en": "wallet",
+      "ru": [
+        "кошелёк",
+        "бумажник"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I left my wallet at the hotel.",
+          "ru": "Я оставил кошелёк в отеле."
+        }
+      ]
+    },
+    {
+      "id": "b1-d07-03",
+      "en": "embassy",
+      "ru": [
+        "посольство"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Contact your embassy if you lose your passport.",
+          "ru": "Обратитесь в посольство, если потеряли паспорт."
+        }
+      ]
+    },
+    {
+      "id": "b1-d07-04",
+      "en": "insurance",
+      "ru": [
+        "страховка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Don't travel without insurance.",
+          "ru": "Не путешествуй без страховки."
+        }
+      ]
+    },
+    {
+      "id": "b1-d07-05",
+      "en": "breakdown",
+      "ru": [
+        "поломка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We had a breakdown on the motorway.",
+          "ru": "У нас сломалась машина на трассе."
+        }
+      ]
+    },
+    {
+      "id": "b1-d07-06",
+      "en": "emergency",
+      "ru": [
+        "экстренная ситуация",
+        "чрезвычайная ситуация"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "In an emergency, call 112.",
+          "ru": "В экстренной ситуации звони 112."
+        }
+      ]
+    },
+    {
+      "id": "b1-d07-07",
+      "en": "lost property",
+      "ru": [
+        "бюро находок"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Ask at the lost property office.",
+          "ru": "Спроси в бюро находок."
+        }
+      ]
+    },
+    {
+      "id": "b1-d07-08",
+      "en": "strike",
+      "ru": [
+        "забастовка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "All trains are cancelled because of a strike.",
+          "ru": "Все поезда отменены из-за забастовки."
+        }
+      ]
+    },
+    {
+      "id": "b1-d07-09",
+      "en": "translate",
+      "ru": [
+        "переводить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Can you translate this sign for me?",
+          "ru": "Можешь перевести мне эту табличку?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d07-10",
+      "en": "rely on",
+      "ru": [
+        "полагаться на"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "You can't always rely on public transport.",
+          "ru": "На общественный транспорт не всегда можно положиться."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "id": "a2-d08",
+  "level": "A2",
+  "day": 8,
+  "island": 1,
+  "title": "Getting around",
+  "topic": "transport",
+  "words": [
+    {
+      "id": "a2-d08-01",
+      "en": "ticket",
+      "ru": [
+        "билет"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I bought a ticket for the train.",
+          "ru": "Я купил билет на поезд."
+        }
+      ]
+    },
+    {
+      "id": "a2-d08-02",
+      "en": "station",
+      "ru": [
+        "вокзал",
+        "станция"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The station is ten minutes away.",
+          "ru": "Вокзал в десяти минутах отсюда."
+        }
+      ]
+    },
+    {
+      "id": "a2-d08-03",
+      "en": "platform",
+      "ru": [
+        "платформа"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The train leaves from platform two.",
+          "ru": "Поезд отходит со второй платформы."
+        }
+      ]
+    },
+    {
+      "id": "a2-d08-04",
+      "en": "driver",
+      "ru": [
+        "водитель"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The driver stopped the bus.",
+          "ru": "Водитель остановил автобус."
+        }
+      ]
+    },
+    {
+      "id": "a2-d08-05",
+      "en": "passenger",
+      "ru": [
+        "пассажир"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Every passenger needs a ticket.",
+          "ru": "Каждому пассажиру нужен билет."
+        }
+      ]
+    },
+    {
+      "id": "a2-d08-06",
+      "en": "underground",
+      "ru": [
+        "метро"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I go to work by underground.",
+          "ru": "Я езжу на работу на метро."
+        }
+      ]
+    },
+    {
+      "id": "a2-d08-07",
+      "en": "traffic",
+      "ru": [
+        "пробки",
+        "движение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There is a lot of traffic today.",
+          "ru": "Сегодня большие пробки."
+        }
+      ]
+    },
+    {
+      "id": "a2-d08-08",
+      "en": "get on",
+      "ru": [
+        "садиться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Get on the bus at the next stop.",
+          "ru": "Садись в автобус на следующей остановке."
+        }
+      ]
+    },
+    {
+      "id": "a2-d08-09",
+      "en": "get off",
+      "ru": [
+        "выходить",
+        "сходить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We get off at the last station.",
+          "ru": "Мы выходим на последней станции."
+        }
+      ]
+    },
+    {
+      "id": "a2-d08-10",
+      "en": "park",
+      "ru": [
+        "парковаться",
+        "парковать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "You can't park here.",
+          "ru": "Здесь нельзя парковаться."
+        }
+      ]
+    }
+  ]
+}

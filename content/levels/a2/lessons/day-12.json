@@ -1,0 +1,151 @@
+{
+  "id": "a2-d12",
+  "level": "A2",
+  "day": 12,
+  "island": 2,
+  "title": "At the café",
+  "topic": "cafe",
+  "words": [
+    {
+      "id": "a2-d12-01",
+      "en": "menu",
+      "ru": [
+        "меню"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Can I see the menu, please?",
+          "ru": "Можно меню, пожалуйста?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d12-02",
+      "en": "waiter",
+      "ru": [
+        "официант"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The waiter brought our drinks.",
+          "ru": "Официант принёс наши напитки."
+        }
+      ]
+    },
+    {
+      "id": "a2-d12-03",
+      "en": "order",
+      "ru": [
+        "заказывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Are you ready to order?",
+          "ru": "Вы готовы сделать заказ?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d12-04",
+      "en": "bill",
+      "ru": [
+        "счёт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Could we have the bill, please?",
+          "ru": "Можно счёт, пожалуйста?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d12-05",
+      "en": "tip",
+      "ru": [
+        "чаевые"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We left a tip for the waiter.",
+          "ru": "Мы оставили официанту чаевые."
+        }
+      ]
+    },
+    {
+      "id": "a2-d12-06",
+      "en": "dessert",
+      "ru": [
+        "десерт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I'll have ice cream for dessert.",
+          "ru": "На десерт я возьму мороженое."
+        }
+      ]
+    },
+    {
+      "id": "a2-d12-07",
+      "en": "starter",
+      "ru": [
+        "закуска"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We shared a starter.",
+          "ru": "Мы разделили одну закуску."
+        }
+      ]
+    },
+    {
+      "id": "a2-d12-08",
+      "en": "table",
+      "ru": [
+        "столик",
+        "стол"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A table for two, please.",
+          "ru": "Столик на двоих, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a2-d12-09",
+      "en": "spicy",
+      "ru": [
+        "острый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This soup is too spicy for me.",
+          "ru": "Этот суп для меня слишком острый."
+        }
+      ]
+    },
+    {
+      "id": "a2-d12-10",
+      "en": "vegetarian",
+      "ru": [
+        "вегетарианский"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Do you have vegetarian dishes?",
+          "ru": "У вас есть вегетарианские блюда?"
+        }
+      ]
+    }
+  ]
+}

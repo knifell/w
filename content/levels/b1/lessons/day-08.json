@@ -1,0 +1,153 @@
+{
+  "id": "b1-d08",
+  "level": "B1",
+  "day": 8,
+  "island": 1,
+  "title": "Money matters",
+  "topic": "finance",
+  "words": [
+    {
+      "id": "b1-d08-01",
+      "en": "account",
+      "ru": [
+        "банковский счёт",
+        "счёт в банке"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I opened a bank account.",
+          "ru": "Я открыл банковский счёт."
+        }
+      ]
+    },
+    {
+      "id": "b1-d08-02",
+      "en": "loan",
+      "ru": [
+        "кредит",
+        "заём"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "They took out a loan to buy a house.",
+          "ru": "Они взяли кредит на покупку дома."
+        }
+      ]
+    },
+    {
+      "id": "b1-d08-03",
+      "en": "debt",
+      "ru": [
+        "долг"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He is trying to pay off his debt.",
+          "ru": "Он пытается погасить долг."
+        }
+      ]
+    },
+    {
+      "id": "b1-d08-04",
+      "en": "afford",
+      "ru": [
+        "позволить себе"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We can't afford a new car.",
+          "ru": "Мы не можем позволить себе новую машину."
+        }
+      ]
+    },
+    {
+      "id": "b1-d08-05",
+      "en": "budget",
+      "ru": [
+        "бюджет"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We need to stay within our budget.",
+          "ru": "Нам нужно уложиться в бюджет."
+        }
+      ]
+    },
+    {
+      "id": "b1-d08-06",
+      "en": "withdraw",
+      "ru": [
+        "снимать деньги"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I need to withdraw some money.",
+          "ru": "Мне нужно снять немного денег."
+        }
+      ]
+    },
+    {
+      "id": "b1-d08-07",
+      "en": "interest",
+      "ru": [
+        "проценты",
+        "интерес"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The bank charges high interest.",
+          "ru": "Банк берёт высокие проценты."
+        }
+      ]
+    },
+    {
+      "id": "b1-d08-08",
+      "en": "currency",
+      "ru": [
+        "валюта"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What currency do they use in Japan?",
+          "ru": "Какая валюта в Японии?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d08-09",
+      "en": "exchange rate",
+      "ru": [
+        "обменный курс"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The exchange rate is good today.",
+          "ru": "Сегодня хороший обменный курс."
+        }
+      ]
+    },
+    {
+      "id": "b1-d08-10",
+      "en": "income",
+      "ru": [
+        "доход"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Her income has doubled.",
+          "ru": "Её доход удвоился."
+        }
+      ]
+    }
+  ]
+}

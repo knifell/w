@@ -1,0 +1,159 @@
+{
+  "id": "b1-d11",
+  "level": "B1",
+  "day": 11,
+  "island": 2,
+  "title": "Office life",
+  "topic": "office",
+  "words": [
+    {
+      "id": "b1-d11-01",
+      "en": "department",
+      "ru": [
+        "отдел"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She works in the sales department.",
+          "ru": "Она работает в отделе продаж."
+        }
+      ]
+    },
+    {
+      "id": "b1-d11-02",
+      "en": "shift",
+      "ru": [
+        "смена"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I work the night shift.",
+          "ru": "Я работаю в ночную смену."
+        }
+      ]
+    },
+    {
+      "id": "b1-d11-03",
+      "en": "overtime",
+      "ru": [
+        "сверхурочно",
+        "сверхурочные"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He often works overtime.",
+          "ru": "Он часто работает сверхурочно."
+        }
+      ]
+    },
+    {
+      "id": "b1-d11-04",
+      "en": "staff",
+      "ru": [
+        "персонал",
+        "сотрудники"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The staff are very friendly.",
+          "ru": "Персонал очень дружелюбный."
+        }
+      ]
+    },
+    {
+      "id": "b1-d11-05",
+      "en": "employee",
+      "ru": [
+        "сотрудник",
+        "работник"
+      ],
+      "pos": "noun",
+      "forms": [
+        "employees"
+      ],
+      "examples": [
+        {
+          "en": "The company has 200 employees.",
+          "ru": "В компании 200 сотрудников."
+        }
+      ]
+    },
+    {
+      "id": "b1-d11-06",
+      "en": "employer",
+      "ru": [
+        "работодатель"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My employer pays for my courses.",
+          "ru": "Мой работодатель оплачивает мои курсы."
+        }
+      ]
+    },
+    {
+      "id": "b1-d11-07",
+      "en": "promotion",
+      "ru": [
+        "повышение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She got a promotion last year.",
+          "ru": "В прошлом году её повысили."
+        }
+      ]
+    },
+    {
+      "id": "b1-d11-08",
+      "en": "task",
+      "ru": [
+        "задача",
+        "задание"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I have a difficult task today.",
+          "ru": "Сегодня у меня трудная задача."
+        }
+      ]
+    },
+    {
+      "id": "b1-d11-09",
+      "en": "schedule",
+      "ru": [
+        "график",
+        "расписание"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My schedule is full this week.",
+          "ru": "На этой неделе мой график забит."
+        }
+      ]
+    },
+    {
+      "id": "b1-d11-10",
+      "en": "part-time",
+      "ru": [
+        "на полставки",
+        "неполный рабочий день"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She has a part-time job.",
+          "ru": "У неё работа на полставки."
+        }
+      ]
+    }
+  ]
+}

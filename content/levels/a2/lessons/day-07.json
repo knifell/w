@@ -1,0 +1,151 @@
+{
+  "id": "a2-d07",
+  "level": "A2",
+  "day": 7,
+  "island": 1,
+  "title": "Around the city",
+  "topic": "city",
+  "words": [
+    {
+      "id": "a2-d07-01",
+      "en": "library",
+      "ru": [
+        "библиотека"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I borrow books from the library.",
+          "ru": "Я беру книги в библиотеке."
+        }
+      ]
+    },
+    {
+      "id": "a2-d07-02",
+      "en": "museum",
+      "ru": [
+        "музей"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The museum is closed on Mondays.",
+          "ru": "Музей закрыт по понедельникам."
+        }
+      ]
+    },
+    {
+      "id": "a2-d07-03",
+      "en": "bank",
+      "ru": [
+        "банк"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I need to go to the bank.",
+          "ru": "Мне нужно сходить в банк."
+        }
+      ]
+    },
+    {
+      "id": "a2-d07-04",
+      "en": "post office",
+      "ru": [
+        "почта"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The post office opens at nine.",
+          "ru": "Почта открывается в девять."
+        }
+      ]
+    },
+    {
+      "id": "a2-d07-05",
+      "en": "pharmacy",
+      "ru": [
+        "аптека"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "You can buy medicine at the pharmacy.",
+          "ru": "Лекарство можно купить в аптеке."
+        }
+      ]
+    },
+    {
+      "id": "a2-d07-06",
+      "en": "square",
+      "ru": [
+        "площадь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Let's meet in the main square.",
+          "ru": "Давай встретимся на главной площади."
+        }
+      ]
+    },
+    {
+      "id": "a2-d07-07",
+      "en": "bridge",
+      "ru": [
+        "мост"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We walked across the old bridge.",
+          "ru": "Мы прошли по старому мосту."
+        }
+      ]
+    },
+    {
+      "id": "a2-d07-08",
+      "en": "crowded",
+      "ru": [
+        "переполненный",
+        "людный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The bus is always crowded in the morning.",
+          "ru": "Утром автобус всегда переполнен."
+        }
+      ]
+    },
+    {
+      "id": "a2-d07-09",
+      "en": "quiet",
+      "ru": [
+        "тихий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We live in a quiet street.",
+          "ru": "Мы живём на тихой улице."
+        }
+      ]
+    },
+    {
+      "id": "a2-d07-10",
+      "en": "noisy",
+      "ru": [
+        "шумный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The city centre is very noisy.",
+          "ru": "Центр города очень шумный."
+        }
+      ]
+    }
+  ]
+}

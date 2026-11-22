@@ -1,0 +1,152 @@
+{
+  "id": "b1-d28",
+  "level": "B1",
+  "day": 28,
+  "island": 3,
+  "title": "Society",
+  "topic": "society",
+  "words": [
+    {
+      "id": "b1-d28-01",
+      "en": "crime",
+      "ru": [
+        "преступность",
+        "преступление"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Crime has fallen in our city.",
+          "ru": "Преступность в нашем городе снизилась."
+        }
+      ]
+    },
+    {
+      "id": "b1-d28-02",
+      "en": "poverty",
+      "ru": [
+        "бедность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Many families live in poverty.",
+          "ru": "Многие семьи живут в бедности."
+        }
+      ]
+    },
+    {
+      "id": "b1-d28-03",
+      "en": "homeless",
+      "ru": [
+        "бездомный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The charity helps homeless people.",
+          "ru": "Благотворительный фонд помогает бездомным."
+        }
+      ]
+    },
+    {
+      "id": "b1-d28-04",
+      "en": "charity",
+      "ru": [
+        "благотворительность",
+        "благотворительный фонд"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She gives money to charity.",
+          "ru": "Она жертвует деньги на благотворительность."
+        }
+      ]
+    },
+    {
+      "id": "b1-d28-05",
+      "en": "government",
+      "ru": [
+        "правительство"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The government promised lower taxes.",
+          "ru": "Правительство пообещало снизить налоги."
+        }
+      ]
+    },
+    {
+      "id": "b1-d28-06",
+      "en": "tax",
+      "ru": [
+        "налог"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Everyone has to pay tax.",
+          "ru": "Все обязаны платить налоги."
+        }
+      ]
+    },
+    {
+      "id": "b1-d28-07",
+      "en": "vote",
+      "ru": [
+        "голосовать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Did you vote in the election?",
+          "ru": "Ты голосовал на выборах?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d28-08",
+      "en": "election",
+      "ru": [
+        "выборы"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The election is next month.",
+          "ru": "Выборы в следующем месяце."
+        }
+      ]
+    },
+    {
+      "id": "b1-d28-09",
+      "en": "population",
+      "ru": [
+        "население"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The population of the city is growing.",
+          "ru": "Население города растёт."
+        }
+      ]
+    },
+    {
+      "id": "b1-d28-10",
+      "en": "equal",
+      "ru": [
+        "равный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Everyone should have equal rights.",
+          "ru": "У всех должны быть равные права."
+        }
+      ]
+    }
+  ]
+}

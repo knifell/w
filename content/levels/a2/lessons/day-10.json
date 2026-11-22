@@ -1,0 +1,157 @@
+{
+  "id": "a2-d10",
+  "level": "A2",
+  "day": 10,
+  "island": 1,
+  "title": "At the doctor's",
+  "topic": "health",
+  "words": [
+    {
+      "id": "a2-d10-01",
+      "en": "headache",
+      "ru": [
+        "головная боль"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I have a terrible headache.",
+          "ru": "У меня ужасно болит голова."
+        }
+      ]
+    },
+    {
+      "id": "a2-d10-02",
+      "en": "fever",
+      "ru": [
+        "температура",
+        "жар"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The child has a fever.",
+          "ru": "У ребёнка температура."
+        }
+      ]
+    },
+    {
+      "id": "a2-d10-03",
+      "en": "cough",
+      "ru": [
+        "кашель"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Drink hot tea for your cough.",
+          "ru": "Пей горячий чай от кашля."
+        }
+      ]
+    },
+    {
+      "id": "a2-d10-04",
+      "en": "medicine",
+      "ru": [
+        "лекарство"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Take this medicine twice a day.",
+          "ru": "Принимай это лекарство два раза в день."
+        }
+      ]
+    },
+    {
+      "id": "a2-d10-05",
+      "en": "dentist",
+      "ru": [
+        "стоматолог",
+        "зубной врач"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I'm afraid of the dentist.",
+          "ru": "Я боюсь стоматолога."
+        }
+      ]
+    },
+    {
+      "id": "a2-d10-06",
+      "en": "hurt",
+      "ru": [
+        "болеть",
+        "ушибить"
+      ],
+      "pos": "verb",
+      "forms": [
+        "hurts"
+      ],
+      "examples": [
+        {
+          "en": "My leg hurts.",
+          "ru": "У меня болит нога."
+        }
+      ]
+    },
+    {
+      "id": "a2-d10-07",
+      "en": "ill",
+      "ru": [
+        "больной"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She was ill last week.",
+          "ru": "На прошлой неделе она болела."
+        }
+      ]
+    },
+    {
+      "id": "a2-d10-08",
+      "en": "healthy",
+      "ru": [
+        "здоровый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Fruit is healthy food.",
+          "ru": "Фрукты — здоровая еда."
+        }
+      ]
+    },
+    {
+      "id": "a2-d10-09",
+      "en": "appointment",
+      "ru": [
+        "запись",
+        "приём"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I have an appointment with the doctor.",
+          "ru": "У меня запись к врачу."
+        }
+      ]
+    },
+    {
+      "id": "a2-d10-10",
+      "en": "rest",
+      "ru": [
+        "отдыхать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "You should rest at home.",
+          "ru": "Тебе стоит отдохнуть дома."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "id": "b1-d21",
+  "level": "B1",
+  "day": 21,
+  "island": 3,
+  "title": "Personality",
+  "topic": "personality",
+  "words": [
+    {
+      "id": "b1-d21-01",
+      "en": "generous",
+      "ru": [
+        "щедрый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "My grandfather is very generous.",
+          "ru": "Мой дедушка очень щедрый."
+        }
+      ]
+    },
+    {
+      "id": "b1-d21-02",
+      "en": "honest",
+      "ru": [
+        "честный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Please be honest with me.",
+          "ru": "Пожалуйста, будь со мной честен."
+        }
+      ]
+    },
+    {
+      "id": "b1-d21-03",
+      "en": "patient",
+      "ru": [
+        "терпеливый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Teachers need to be patient.",
+          "ru": "Учителям нужно быть терпеливыми."
+        }
+      ]
+    },
+    {
+      "id": "b1-d21-04",
+      "en": "selfish",
+      "ru": [
+        "эгоистичный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Don't be so selfish.",
+          "ru": "Не будь таким эгоистом."
+        }
+      ]
+    },
+    {
+      "id": "b1-d21-05",
+      "en": "shy",
+      "ru": [
+        "застенчивый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She was very shy as a child.",
+          "ru": "В детстве она была очень застенчивой."
+        }
+      ]
+    },
+    {
+      "id": "b1-d21-06",
+      "en": "stubborn",
+      "ru": [
+        "упрямый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "My brother is very stubborn.",
+          "ru": "Мой брат очень упрямый."
+        }
+      ]
+    },
+    {
+      "id": "b1-d21-07",
+      "en": "cheerful",
+      "ru": [
+        "жизнерадостный",
+        "весёлый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She is always cheerful in the morning.",
+          "ru": "По утрам она всегда весёлая."
+        }
+      ]
+    },
+    {
+      "id": "b1-d21-08",
+      "en": "sensible",
+      "ru": [
+        "благоразумный",
+        "разумный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "That's a sensible choice.",
+          "ru": "Это разумный выбор."
+        }
+      ]
+    },
+    {
+      "id": "b1-d21-09",
+      "en": "polite",
+      "ru": [
+        "вежливый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It's polite to say thank you.",
+          "ru": "Вежливо говорить спасибо."
+        }
+      ]
+    },
+    {
+      "id": "b1-d21-10",
+      "en": "rude",
+      "ru": [
+        "грубый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Don't be rude to the waiter.",
+          "ru": "Не грубите официанту."
+        }
+      ]
+    }
+  ]
+}

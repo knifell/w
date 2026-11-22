@@ -1,0 +1,156 @@
+{
+  "id": "b1-d09",
+  "level": "B1",
+  "day": 9,
+  "island": 1,
+  "title": "Health care",
+  "topic": "medicine",
+  "words": [
+    {
+      "id": "b1-d09-01",
+      "en": "symptom",
+      "ru": [
+        "симптом"
+      ],
+      "pos": "noun",
+      "forms": [
+        "symptoms"
+      ],
+      "examples": [
+        {
+          "en": "What are your symptoms?",
+          "ru": "Какие у вас симптомы?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d09-02",
+      "en": "prescription",
+      "ru": [
+        "рецепт врача",
+        "назначение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "You need a prescription for this medicine.",
+          "ru": "Для этого лекарства нужен рецепт."
+        }
+      ]
+    },
+    {
+      "id": "b1-d09-03",
+      "en": "injury",
+      "ru": [
+        "травма"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He missed the game because of an injury.",
+          "ru": "Он пропустил игру из-за травмы."
+        }
+      ]
+    },
+    {
+      "id": "b1-d09-04",
+      "en": "recover",
+      "ru": [
+        "выздоравливать",
+        "восстанавливаться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "It took her a month to recover.",
+          "ru": "Ей понадобился месяц, чтобы выздороветь."
+        }
+      ]
+    },
+    {
+      "id": "b1-d09-05",
+      "en": "treatment",
+      "ru": [
+        "лечение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The treatment was successful.",
+          "ru": "Лечение прошло успешно."
+        }
+      ]
+    },
+    {
+      "id": "b1-d09-06",
+      "en": "allergic",
+      "ru": [
+        "страдающий аллергией"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I'm allergic to cats.",
+          "ru": "У меня аллергия на кошек."
+        }
+      ]
+    },
+    {
+      "id": "b1-d09-07",
+      "en": "painful",
+      "ru": [
+        "болезненный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The injection was painful.",
+          "ru": "Укол был болезненным."
+        }
+      ]
+    },
+    {
+      "id": "b1-d09-08",
+      "en": "surgery",
+      "ru": [
+        "операция",
+        "хирургия"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She needs surgery on her knee.",
+          "ru": "Ей нужна операция на колене."
+        }
+      ]
+    },
+    {
+      "id": "b1-d09-09",
+      "en": "pill",
+      "ru": [
+        "таблетка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Take one pill after each meal.",
+          "ru": "Принимай по одной таблетке после еды."
+        }
+      ]
+    },
+    {
+      "id": "b1-d09-10",
+      "en": "sore throat",
+      "ru": [
+        "больное горло"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I have a sore throat.",
+          "ru": "У меня болит горло."
+        }
+      ]
+    }
+  ]
+}

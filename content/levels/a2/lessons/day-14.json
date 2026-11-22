@@ -1,0 +1,157 @@
+{
+  "id": "a2-d14",
+  "level": "A2",
+  "day": 14,
+  "island": 2,
+  "title": "Money",
+  "topic": "money",
+  "words": [
+    {
+      "id": "a2-d14-01",
+      "en": "money",
+      "ru": [
+        "деньги"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I don't have much money.",
+          "ru": "У меня мало денег."
+        }
+      ]
+    },
+    {
+      "id": "a2-d14-02",
+      "en": "coin",
+      "ru": [
+        "монета"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I found a coin on the street.",
+          "ru": "Я нашёл монету на улице."
+        }
+      ]
+    },
+    {
+      "id": "a2-d14-03",
+      "en": "card",
+      "ru": [
+        "карта",
+        "карточка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Can I pay by card?",
+          "ru": "Можно оплатить картой?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d14-04",
+      "en": "change",
+      "ru": [
+        "сдача"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Here is your change.",
+          "ru": "Вот ваша сдача."
+        }
+      ]
+    },
+    {
+      "id": "a2-d14-05",
+      "en": "spend",
+      "ru": [
+        "тратить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I spend too much on coffee.",
+          "ru": "Я трачу слишком много на кофе."
+        }
+      ]
+    },
+    {
+      "id": "a2-d14-06",
+      "en": "save",
+      "ru": [
+        "копить",
+        "экономить"
+      ],
+      "pos": "verb",
+      "forms": [
+        "saves"
+      ],
+      "examples": [
+        {
+          "en": "She saves money for a car.",
+          "ru": "Она копит деньги на машину."
+        }
+      ]
+    },
+    {
+      "id": "a2-d14-07",
+      "en": "cost",
+      "ru": [
+        "стоить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "How much does this cost?",
+          "ru": "Сколько это стоит?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d14-08",
+      "en": "pay",
+      "ru": [
+        "платить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I'll pay for dinner.",
+          "ru": "Я заплачу за ужин."
+        }
+      ]
+    },
+    {
+      "id": "a2-d14-09",
+      "en": "borrow",
+      "ru": [
+        "брать взаймы",
+        "занимать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Can I borrow ten pounds?",
+          "ru": "Можно занять десять фунтов?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d14-10",
+      "en": "lend",
+      "ru": [
+        "давать взаймы",
+        "одалживать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Could you lend me your pen?",
+          "ru": "Можешь одолжить мне ручку?"
+        }
+      ]
+    }
+  ]
+}

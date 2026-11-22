@@ -1,0 +1,152 @@
+{
+  "id": "b1-d06",
+  "level": "B1",
+  "day": 6,
+  "island": 1,
+  "title": "Sights and culture",
+  "topic": "culture",
+  "words": [
+    {
+      "id": "b1-d06-01",
+      "en": "sightseeing",
+      "ru": [
+        "осмотр достопримечательностей"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We spent the day sightseeing.",
+          "ru": "Мы весь день осматривали достопримечательности."
+        }
+      ]
+    },
+    {
+      "id": "b1-d06-02",
+      "en": "landmark",
+      "ru": [
+        "достопримечательность",
+        "ориентир"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The tower is the city's most famous landmark.",
+          "ru": "Башня — самая известная достопримечательность города."
+        }
+      ]
+    },
+    {
+      "id": "b1-d06-03",
+      "en": "exhibition",
+      "ru": [
+        "выставка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There's a new exhibition at the museum.",
+          "ru": "В музее новая выставка."
+        }
+      ]
+    },
+    {
+      "id": "b1-d06-04",
+      "en": "gallery",
+      "ru": [
+        "галерея"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The gallery is free on Sundays.",
+          "ru": "По воскресеньям вход в галерею бесплатный."
+        }
+      ]
+    },
+    {
+      "id": "b1-d06-05",
+      "en": "ancient",
+      "ru": [
+        "древний"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We visited an ancient temple.",
+          "ru": "Мы посетили древний храм."
+        }
+      ]
+    },
+    {
+      "id": "b1-d06-06",
+      "en": "tradition",
+      "ru": [
+        "традиция"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "It's a tradition to dance in the street.",
+          "ru": "Танцевать на улице — традиция."
+        }
+      ]
+    },
+    {
+      "id": "b1-d06-07",
+      "en": "local",
+      "ru": [
+        "местный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Try the local food.",
+          "ru": "Попробуй местную еду."
+        }
+      ]
+    },
+    {
+      "id": "b1-d06-08",
+      "en": "statue",
+      "ru": [
+        "статуя"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There is a statue in the middle of the square.",
+          "ru": "Посреди площади стоит статуя."
+        }
+      ]
+    },
+    {
+      "id": "b1-d06-09",
+      "en": "admission",
+      "ru": [
+        "вход",
+        "плата за вход"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Admission is free for children.",
+          "ru": "Для детей вход бесплатный."
+        }
+      ]
+    },
+    {
+      "id": "b1-d06-10",
+      "en": "guided tour",
+      "ru": [
+        "экскурсия с гидом"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We booked a guided tour of the castle.",
+          "ru": "Мы заказали экскурсию по замку с гидом."
+        }
+      ]
+    }
+  ]
+}

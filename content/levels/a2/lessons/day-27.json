@@ -1,0 +1,156 @@
+{
+  "id": "a2-d27",
+  "level": "A2",
+  "day": 27,
+  "island": 3,
+  "title": "Feelings",
+  "topic": "feelings",
+  "words": [
+    {
+      "id": "a2-d27-01",
+      "en": "happy",
+      "ru": [
+        "счастливый",
+        "довольный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I'm so happy to see you!",
+          "ru": "Я так рад тебя видеть!"
+        }
+      ]
+    },
+    {
+      "id": "a2-d27-02",
+      "en": "sad",
+      "ru": [
+        "грустный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The film was very sad.",
+          "ru": "Фильм был очень грустный."
+        }
+      ]
+    },
+    {
+      "id": "a2-d27-03",
+      "en": "angry",
+      "ru": [
+        "злой",
+        "сердитый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Why are you angry with me?",
+          "ru": "Почему ты на меня злишься?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d27-04",
+      "en": "afraid",
+      "ru": [
+        "испуганный",
+        "боящийся"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "My sister is afraid of spiders.",
+          "ru": "Моя сестра боится пауков."
+        }
+      ]
+    },
+    {
+      "id": "a2-d27-05",
+      "en": "bored",
+      "ru": [
+        "скучающий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I'm bored, let's go out.",
+          "ru": "Мне скучно, пойдём погуляем."
+        }
+      ]
+    },
+    {
+      "id": "a2-d27-06",
+      "en": "excited",
+      "ru": [
+        "взволнованный",
+        "в восторге"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The kids are excited about the trip.",
+          "ru": "Дети в восторге от поездки."
+        }
+      ]
+    },
+    {
+      "id": "a2-d27-07",
+      "en": "worried",
+      "ru": [
+        "встревоженный",
+        "переживающий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I'm worried about the exam.",
+          "ru": "Я переживаю из-за экзамена."
+        }
+      ]
+    },
+    {
+      "id": "a2-d27-08",
+      "en": "surprised",
+      "ru": [
+        "удивлённый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I was surprised by the news.",
+          "ru": "Я был удивлён новостями."
+        }
+      ]
+    },
+    {
+      "id": "a2-d27-09",
+      "en": "nervous",
+      "ru": [
+        "нервный",
+        "волнующийся"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I always feel nervous before a test.",
+          "ru": "Перед тестом я всегда нервничаю."
+        }
+      ]
+    },
+    {
+      "id": "a2-d27-10",
+      "en": "lonely",
+      "ru": [
+        "одинокий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He felt lonely in the new city.",
+          "ru": "В новом городе ему было одиноко."
+        }
+      ]
+    }
+  ]
+}

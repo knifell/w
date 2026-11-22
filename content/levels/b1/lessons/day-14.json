@@ -1,0 +1,158 @@
+{
+  "id": "b1-d14",
+  "level": "B1",
+  "day": 14,
+  "island": 2,
+  "title": "Technology",
+  "topic": "technology",
+  "words": [
+    {
+      "id": "b1-d14-01",
+      "en": "device",
+      "ru": [
+        "устройство"
+      ],
+      "pos": "noun",
+      "forms": [
+        "devices"
+      ],
+      "examples": [
+        {
+          "en": "Turn off all devices during the flight.",
+          "ru": "Выключите все устройства во время полёта."
+        }
+      ]
+    },
+    {
+      "id": "b1-d14-02",
+      "en": "software",
+      "ru": [
+        "программное обеспечение",
+        "программа"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "You need new software for this.",
+          "ru": "Для этого нужна новая программа."
+        }
+      ]
+    },
+    {
+      "id": "b1-d14-03",
+      "en": "update",
+      "ru": [
+        "обновлять"
+      ],
+      "pos": "verb",
+      "forms": [
+        "updates"
+      ],
+      "examples": [
+        {
+          "en": "My phone updates automatically.",
+          "ru": "Мой телефон обновляется автоматически."
+        }
+      ]
+    },
+    {
+      "id": "b1-d14-04",
+      "en": "install",
+      "ru": [
+        "устанавливать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "How do I install this app?",
+          "ru": "Как установить это приложение?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d14-05",
+      "en": "storage",
+      "ru": [
+        "память",
+        "хранилище"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My phone is running out of storage.",
+          "ru": "На телефоне заканчивается память."
+        }
+      ]
+    },
+    {
+      "id": "b1-d14-06",
+      "en": "wireless",
+      "ru": [
+        "беспроводной"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I bought wireless headphones.",
+          "ru": "Я купил беспроводные наушники."
+        }
+      ]
+    },
+    {
+      "id": "b1-d14-07",
+      "en": "log in",
+      "ru": [
+        "входить в систему"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Log in with your email address.",
+          "ru": "Войдите с помощью электронной почты."
+        }
+      ]
+    },
+    {
+      "id": "b1-d14-08",
+      "en": "attachment",
+      "ru": [
+        "вложение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I sent the file as an attachment.",
+          "ru": "Я отправил файл вложением."
+        }
+      ]
+    },
+    {
+      "id": "b1-d14-09",
+      "en": "invention",
+      "ru": [
+        "изобретение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The phone was a great invention.",
+          "ru": "Телефон был великим изобретением."
+        }
+      ]
+    },
+    {
+      "id": "b1-d14-10",
+      "en": "reliable",
+      "ru": [
+        "надёжный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This laptop is very reliable.",
+          "ru": "Этот ноутбук очень надёжный."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "id": "a2-d04",
+  "level": "A2",
+  "day": 4,
+  "island": 1,
+  "title": "My family",
+  "topic": "family",
+  "words": [
+    {
+      "id": "a2-d04-01",
+      "en": "parents",
+      "ru": [
+        "родители"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My parents live in a small town.",
+          "ru": "Мои родители живут в маленьком городе."
+        }
+      ]
+    },
+    {
+      "id": "a2-d04-02",
+      "en": "grandmother",
+      "ru": [
+        "бабушка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My grandmother makes great soup.",
+          "ru": "Моя бабушка варит отличный суп."
+        }
+      ]
+    },
+    {
+      "id": "a2-d04-03",
+      "en": "uncle",
+      "ru": [
+        "дядя"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My uncle works in a bank.",
+          "ru": "Мой дядя работает в банке."
+        }
+      ]
+    },
+    {
+      "id": "a2-d04-04",
+      "en": "aunt",
+      "ru": [
+        "тётя"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Her aunt lives in London.",
+          "ru": "Её тётя живёт в Лондоне."
+        }
+      ]
+    },
+    {
+      "id": "a2-d04-05",
+      "en": "cousin",
+      "ru": [
+        "двоюродный брат",
+        "двоюродная сестра"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I often play games with my cousin.",
+          "ru": "Я часто играю в игры с двоюродным братом."
+        }
+      ]
+    },
+    {
+      "id": "a2-d04-06",
+      "en": "married",
+      "ru": [
+        "женатый",
+        "замужем"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "They have been married for ten years.",
+          "ru": "Они женаты уже десять лет."
+        }
+      ]
+    },
+    {
+      "id": "a2-d04-07",
+      "en": "husband",
+      "ru": [
+        "муж"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Her husband is a doctor.",
+          "ru": "Её муж — врач."
+        }
+      ]
+    },
+    {
+      "id": "a2-d04-08",
+      "en": "wife",
+      "ru": [
+        "жена"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "His wife speaks three languages.",
+          "ru": "Его жена говорит на трёх языках."
+        }
+      ]
+    },
+    {
+      "id": "a2-d04-09",
+      "en": "twins",
+      "ru": [
+        "близнецы"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The twins look exactly the same.",
+          "ru": "Близнецы выглядят совершенно одинаково."
+        }
+      ]
+    },
+    {
+      "id": "a2-d04-10",
+      "en": "grow up",
+      "ru": [
+        "расти",
+        "вырастать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "grew up"
+      ],
+      "examples": [
+        {
+          "en": "I grew up near the sea.",
+          "ru": "Я вырос у моря."
+        }
+      ]
+    }
+  ]
+}

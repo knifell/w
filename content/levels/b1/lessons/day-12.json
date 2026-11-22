@@ -1,0 +1,156 @@
+{
+  "id": "b1-d12",
+  "level": "B1",
+  "day": 12,
+  "island": 2,
+  "title": "Business",
+  "topic": "business",
+  "words": [
+    {
+      "id": "b1-d12-01",
+      "en": "company",
+      "ru": [
+        "компания"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He started his own company.",
+          "ru": "Он основал собственную компанию."
+        }
+      ]
+    },
+    {
+      "id": "b1-d12-02",
+      "en": "profit",
+      "ru": [
+        "прибыль"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The company made a big profit.",
+          "ru": "Компания получила большую прибыль."
+        }
+      ]
+    },
+    {
+      "id": "b1-d12-03",
+      "en": "product",
+      "ru": [
+        "продукт",
+        "товар"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This product sells well.",
+          "ru": "Этот товар хорошо продаётся."
+        }
+      ]
+    },
+    {
+      "id": "b1-d12-04",
+      "en": "advertise",
+      "ru": [
+        "рекламировать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "They advertise on social media.",
+          "ru": "Они рекламируются в соцсетях."
+        }
+      ]
+    },
+    {
+      "id": "b1-d12-05",
+      "en": "competition",
+      "ru": [
+        "конкуренция",
+        "соревнование"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There is a lot of competition in this market.",
+          "ru": "На этом рынке большая конкуренция."
+        }
+      ]
+    },
+    {
+      "id": "b1-d12-06",
+      "en": "brand",
+      "ru": [
+        "бренд",
+        "марка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What brand is your phone?",
+          "ru": "Какой марки твой телефон?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d12-07",
+      "en": "contract",
+      "ru": [
+        "договор",
+        "контракт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Read the contract carefully.",
+          "ru": "Внимательно прочитай договор."
+        }
+      ]
+    },
+    {
+      "id": "b1-d12-08",
+      "en": "negotiate",
+      "ru": [
+        "вести переговоры",
+        "договариваться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We need to negotiate a better price.",
+          "ru": "Нам нужно договориться о лучшей цене."
+        }
+      ]
+    },
+    {
+      "id": "b1-d12-09",
+      "en": "invest",
+      "ru": [
+        "инвестировать",
+        "вкладывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "They invest in new technology.",
+          "ru": "Они вкладывают деньги в новые технологии."
+        }
+      ]
+    },
+    {
+      "id": "b1-d12-10",
+      "en": "supplier",
+      "ru": [
+        "поставщик"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We changed our supplier.",
+          "ru": "Мы сменили поставщика."
+        }
+      ]
+    }
+  ]
+}

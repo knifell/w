@@ -1,0 +1,151 @@
+{
+  "id": "a2-d23",
+  "level": "A2",
+  "day": 23,
+  "island": 3,
+  "title": "Seasons and holidays",
+  "topic": "seasons",
+  "words": [
+    {
+      "id": "a2-d23-01",
+      "en": "spring",
+      "ru": [
+        "весна"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Flowers appear in spring.",
+          "ru": "Весной появляются цветы."
+        }
+      ]
+    },
+    {
+      "id": "a2-d23-02",
+      "en": "autumn",
+      "ru": [
+        "осень"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Leaves fall in autumn.",
+          "ru": "Осенью падают листья."
+        }
+      ]
+    },
+    {
+      "id": "a2-d23-03",
+      "en": "winter",
+      "ru": [
+        "зима"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Winter is long here.",
+          "ru": "Зима здесь долгая."
+        }
+      ]
+    },
+    {
+      "id": "a2-d23-04",
+      "en": "summer",
+      "ru": [
+        "лето"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We go to the sea every summer.",
+          "ru": "Каждое лето мы ездим на море."
+        }
+      ]
+    },
+    {
+      "id": "a2-d23-05",
+      "en": "birthday",
+      "ru": [
+        "день рождения"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Happy birthday to you!",
+          "ru": "С днём рождения!"
+        }
+      ]
+    },
+    {
+      "id": "a2-d23-06",
+      "en": "present",
+      "ru": [
+        "подарок"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Thank you for the present!",
+          "ru": "Спасибо за подарок!"
+        }
+      ]
+    },
+    {
+      "id": "a2-d23-07",
+      "en": "celebrate",
+      "ru": [
+        "праздновать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "How do you celebrate New Year?",
+          "ru": "Как вы празднуете Новый год?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d23-08",
+      "en": "invite",
+      "ru": [
+        "приглашать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I want to invite you to my party.",
+          "ru": "Хочу пригласить тебя на вечеринку."
+        }
+      ]
+    },
+    {
+      "id": "a2-d23-09",
+      "en": "party",
+      "ru": [
+        "вечеринка",
+        "праздник"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The party starts at eight.",
+          "ru": "Вечеринка начинается в восемь."
+        }
+      ]
+    },
+    {
+      "id": "a2-d23-10",
+      "en": "decorate",
+      "ru": [
+        "украшать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We decorate the tree in December.",
+          "ru": "Мы украшаем ёлку в декабре."
+        }
+      ]
+    }
+  ]
+}

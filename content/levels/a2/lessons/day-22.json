@@ -1,0 +1,151 @@
+{
+  "id": "a2-d22",
+  "level": "A2",
+  "day": 22,
+  "island": 3,
+  "title": "Animals",
+  "topic": "animals",
+  "words": [
+    {
+      "id": "a2-d22-01",
+      "en": "bird",
+      "ru": [
+        "птица"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A bird is singing outside.",
+          "ru": "На улице поёт птица."
+        }
+      ]
+    },
+    {
+      "id": "a2-d22-02",
+      "en": "horse",
+      "ru": [
+        "лошадь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She rides a horse every weekend.",
+          "ru": "Она катается на лошади каждые выходные."
+        }
+      ]
+    },
+    {
+      "id": "a2-d22-03",
+      "en": "sheep",
+      "ru": [
+        "овца"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There are sheep on the hill.",
+          "ru": "На холме пасутся овцы."
+        }
+      ]
+    },
+    {
+      "id": "a2-d22-04",
+      "en": "rabbit",
+      "ru": [
+        "кролик"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My son has a rabbit.",
+          "ru": "У моего сына есть кролик."
+        }
+      ]
+    },
+    {
+      "id": "a2-d22-05",
+      "en": "mouse",
+      "ru": [
+        "мышь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The cat caught a mouse.",
+          "ru": "Кот поймал мышь."
+        }
+      ]
+    },
+    {
+      "id": "a2-d22-06",
+      "en": "insect",
+      "ru": [
+        "насекомое"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A bee is an insect.",
+          "ru": "Пчела — насекомое."
+        }
+      ]
+    },
+    {
+      "id": "a2-d22-07",
+      "en": "wild",
+      "ru": [
+        "дикий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Wild animals live in the forest.",
+          "ru": "Дикие животные живут в лесу."
+        }
+      ]
+    },
+    {
+      "id": "a2-d22-08",
+      "en": "pet",
+      "ru": [
+        "питомец",
+        "домашнее животное"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Do you have a pet?",
+          "ru": "У тебя есть питомец?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d22-09",
+      "en": "feed",
+      "ru": [
+        "кормить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Don't forget to feed the cat.",
+          "ru": "Не забудь покормить кота."
+        }
+      ]
+    },
+    {
+      "id": "a2-d22-10",
+      "en": "tail",
+      "ru": [
+        "хвост"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The dog is wagging its tail.",
+          "ru": "Собака виляет хвостом."
+        }
+      ]
+    }
+  ]
+}

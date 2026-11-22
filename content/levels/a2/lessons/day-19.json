@@ -1,0 +1,154 @@
+{
+  "id": "a2-d19",
+  "level": "A2",
+  "day": 19,
+  "island": 2,
+  "title": "Phone and messages",
+  "topic": "phone",
+  "words": [
+    {
+      "id": "a2-d19-01",
+      "en": "message",
+      "ru": [
+        "сообщение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I sent you a message.",
+          "ru": "Я отправил тебе сообщение."
+        }
+      ]
+    },
+    {
+      "id": "a2-d19-02",
+      "en": "call",
+      "ru": [
+        "звонить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Call me after work.",
+          "ru": "Позвони мне после работы."
+        }
+      ]
+    },
+    {
+      "id": "a2-d19-03",
+      "en": "answer",
+      "ru": [
+        "отвечать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "She didn't answer the phone.",
+          "ru": "Она не ответила на звонок."
+        }
+      ]
+    },
+    {
+      "id": "a2-d19-04",
+      "en": "battery",
+      "ru": [
+        "аккумулятор",
+        "батарея"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My battery is almost dead.",
+          "ru": "У меня почти сел аккумулятор."
+        }
+      ]
+    },
+    {
+      "id": "a2-d19-05",
+      "en": "charger",
+      "ru": [
+        "зарядка",
+        "зарядное устройство"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Can I use your charger?",
+          "ru": "Можно взять твою зарядку?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d19-06",
+      "en": "password",
+      "ru": [
+        "пароль"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I forgot my password.",
+          "ru": "Я забыл пароль."
+        }
+      ]
+    },
+    {
+      "id": "a2-d19-07",
+      "en": "download",
+      "ru": [
+        "скачивать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Download the app for free.",
+          "ru": "Скачай приложение бесплатно."
+        }
+      ]
+    },
+    {
+      "id": "a2-d19-08",
+      "en": "screen",
+      "ru": [
+        "экран"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The screen on my phone is broken.",
+          "ru": "Экран моего телефона разбит."
+        }
+      ]
+    },
+    {
+      "id": "a2-d19-09",
+      "en": "online",
+      "ru": [
+        "онлайн",
+        "в интернете"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "I buy most things online.",
+          "ru": "Большинство вещей я покупаю онлайн."
+        }
+      ]
+    },
+    {
+      "id": "a2-d19-10",
+      "en": "send",
+      "ru": [
+        "отправлять",
+        "посылать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Send me a photo.",
+          "ru": "Пришли мне фото."
+        }
+      ]
+    }
+  ]
+}

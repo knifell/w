@@ -1,0 +1,170 @@
+{
+  "id": "b1-d23",
+  "level": "B1",
+  "day": 23,
+  "island": 3,
+  "title": "Say it right",
+  "topic": "communication",
+  "words": [
+    {
+      "id": "b1-d23-01",
+      "en": "mention",
+      "ru": [
+        "упоминать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "He didn't mention the price.",
+          "ru": "Он не упомянул цену."
+        }
+      ]
+    },
+    {
+      "id": "b1-d23-02",
+      "en": "complain",
+      "ru": [
+        "жаловаться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "complaining"
+      ],
+      "examples": [
+        {
+          "en": "Stop complaining about the weather.",
+          "ru": "Хватит жаловаться на погоду."
+        }
+      ]
+    },
+    {
+      "id": "b1-d23-03",
+      "en": "admit",
+      "ru": [
+        "признавать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "admitted"
+      ],
+      "examples": [
+        {
+          "en": "She admitted her mistake.",
+          "ru": "Она признала свою ошибку."
+        }
+      ]
+    },
+    {
+      "id": "b1-d23-04",
+      "en": "deny",
+      "ru": [
+        "отрицать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "denied"
+      ],
+      "examples": [
+        {
+          "en": "He denied everything.",
+          "ru": "Он всё отрицал."
+        }
+      ]
+    },
+    {
+      "id": "b1-d23-05",
+      "en": "persuade",
+      "ru": [
+        "уговаривать",
+        "убеждать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "persuaded"
+      ],
+      "examples": [
+        {
+          "en": "I persuaded him to come.",
+          "ru": "Я уговорил его прийти."
+        }
+      ]
+    },
+    {
+      "id": "b1-d23-06",
+      "en": "warn",
+      "ru": [
+        "предупреждать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "warned"
+      ],
+      "examples": [
+        {
+          "en": "I warned you about the traffic.",
+          "ru": "Я предупреждал тебя о пробках."
+        }
+      ]
+    },
+    {
+      "id": "b1-d23-07",
+      "en": "promise",
+      "ru": [
+        "обещать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I promise to call you.",
+          "ru": "Обещаю позвонить."
+        }
+      ]
+    },
+    {
+      "id": "b1-d23-08",
+      "en": "recommend",
+      "ru": [
+        "рекомендовать",
+        "советовать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Can you recommend a good restaurant?",
+          "ru": "Можешь посоветовать хороший ресторан?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d23-09",
+      "en": "whisper",
+      "ru": [
+        "шептать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "whispered"
+      ],
+      "examples": [
+        {
+          "en": "She whispered something in his ear.",
+          "ru": "Она что-то прошептала ему на ухо."
+        }
+      ]
+    },
+    {
+      "id": "b1-d23-10",
+      "en": "gossip",
+      "ru": [
+        "сплетничать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "They love to gossip about neighbours.",
+          "ru": "Они любят сплетничать о соседях."
+        }
+      ]
+    }
+  ]
+}

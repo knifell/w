@@ -1,0 +1,161 @@
+{
+  "id": "a2-d25",
+  "level": "A2",
+  "day": 25,
+  "island": 3,
+  "title": "On holiday",
+  "topic": "holiday",
+  "words": [
+    {
+      "id": "a2-d25-01",
+      "en": "holiday",
+      "ru": [
+        "отпуск",
+        "каникулы"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We are on holiday in Spain.",
+          "ru": "Мы в отпуске в Испании."
+        }
+      ]
+    },
+    {
+      "id": "a2-d25-02",
+      "en": "suitcase",
+      "ru": [
+        "чемодан"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My suitcase is too heavy.",
+          "ru": "Мой чемодан слишком тяжёлый."
+        }
+      ]
+    },
+    {
+      "id": "a2-d25-03",
+      "en": "passport",
+      "ru": [
+        "паспорт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Don't forget your passport.",
+          "ru": "Не забудь паспорт."
+        }
+      ]
+    },
+    {
+      "id": "a2-d25-04",
+      "en": "flight",
+      "ru": [
+        "рейс",
+        "полёт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Our flight is at six.",
+          "ru": "Наш рейс в шесть."
+        }
+      ]
+    },
+    {
+      "id": "a2-d25-05",
+      "en": "trip",
+      "ru": [
+        "поездка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "How was your trip?",
+          "ru": "Как прошла поездка?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d25-06",
+      "en": "tourist",
+      "ru": [
+        "турист"
+      ],
+      "pos": "noun",
+      "forms": [
+        "tourists"
+      ],
+      "examples": [
+        {
+          "en": "The city is full of tourists.",
+          "ru": "Город полон туристов."
+        }
+      ]
+    },
+    {
+      "id": "a2-d25-07",
+      "en": "visit",
+      "ru": [
+        "посещать",
+        "навещать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "visited"
+      ],
+      "examples": [
+        {
+          "en": "We visited an old castle.",
+          "ru": "Мы посетили старый замок."
+        }
+      ]
+    },
+    {
+      "id": "a2-d25-08",
+      "en": "souvenir",
+      "ru": [
+        "сувенир"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I bought a souvenir for my mum.",
+          "ru": "Я купил сувенир маме."
+        }
+      ]
+    },
+    {
+      "id": "a2-d25-09",
+      "en": "pack",
+      "ru": [
+        "собирать вещи",
+        "упаковывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I need to pack tonight.",
+          "ru": "Мне нужно собрать вещи сегодня вечером."
+        }
+      ]
+    },
+    {
+      "id": "a2-d25-10",
+      "en": "guide",
+      "ru": [
+        "гид",
+        "путеводитель"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Our guide spoke good English.",
+          "ru": "Наш гид хорошо говорил по-английски."
+        }
+      ]
+    }
+  ]
+}

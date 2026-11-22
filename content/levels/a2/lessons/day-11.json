@@ -1,0 +1,151 @@
+{
+  "id": "a2-d11",
+  "level": "A2",
+  "day": 11,
+  "island": 2,
+  "title": "At the market",
+  "topic": "market",
+  "words": [
+    {
+      "id": "a2-d11-01",
+      "en": "fruit",
+      "ru": [
+        "фрукты"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The fruit at this market is fresh.",
+          "ru": "Фрукты на этом рынке свежие."
+        }
+      ]
+    },
+    {
+      "id": "a2-d11-02",
+      "en": "fresh",
+      "ru": [
+        "свежий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I buy fresh fish on Fridays.",
+          "ru": "По пятницам я покупаю свежую рыбу."
+        }
+      ]
+    },
+    {
+      "id": "a2-d11-03",
+      "en": "potato",
+      "ru": [
+        "картофель",
+        "картошка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Wash the potato first.",
+          "ru": "Сначала помой картошку."
+        }
+      ]
+    },
+    {
+      "id": "a2-d11-04",
+      "en": "onion",
+      "ru": [
+        "лук"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Cutting an onion makes me cry.",
+          "ru": "Когда я режу лук, я плачу."
+        }
+      ]
+    },
+    {
+      "id": "a2-d11-05",
+      "en": "kilo",
+      "ru": [
+        "килограмм"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A kilo of apples, please.",
+          "ru": "Килограмм яблок, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a2-d11-06",
+      "en": "ripe",
+      "ru": [
+        "спелый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "These bananas are not ripe yet.",
+          "ru": "Эти бананы ещё не спелые."
+        }
+      ]
+    },
+    {
+      "id": "a2-d11-07",
+      "en": "basket",
+      "ru": [
+        "корзина"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She put the eggs in her basket.",
+          "ru": "Она положила яйца в корзину."
+        }
+      ]
+    },
+    {
+      "id": "a2-d11-08",
+      "en": "seller",
+      "ru": [
+        "продавец"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The seller gave me a good price.",
+          "ru": "Продавец назвал мне хорошую цену."
+        }
+      ]
+    },
+    {
+      "id": "a2-d11-09",
+      "en": "discount",
+      "ru": [
+        "скидка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Is there a discount for students?",
+          "ru": "Есть скидка для студентов?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d11-10",
+      "en": "choose",
+      "ru": [
+        "выбирать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Choose the biggest watermelon.",
+          "ru": "Выбери самый большой арбуз."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "id": "b1-d16",
+  "level": "B1",
+  "day": 16,
+  "island": 2,
+  "title": "News and media",
+  "topic": "media",
+  "words": [
+    {
+      "id": "b1-d16-01",
+      "en": "headline",
+      "ru": [
+        "заголовок"
+      ],
+      "pos": "noun",
+      "forms": [
+        "headlines"
+      ],
+      "examples": [
+        {
+          "en": "Did you see today's headlines?",
+          "ru": "Ты видел сегодняшние заголовки?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d16-02",
+      "en": "article",
+      "ru": [
+        "статья"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I read an interesting article.",
+          "ru": "Я прочитал интересную статью."
+        }
+      ]
+    },
+    {
+      "id": "b1-d16-03",
+      "en": "journalist",
+      "ru": [
+        "журналист"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The journalist asked many questions.",
+          "ru": "Журналист задал много вопросов."
+        }
+      ]
+    },
+    {
+      "id": "b1-d16-04",
+      "en": "broadcast",
+      "ru": [
+        "транслировать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "The match will be broadcast live.",
+          "ru": "Матч покажут в прямом эфире."
+        }
+      ]
+    },
+    {
+      "id": "b1-d16-05",
+      "en": "audience",
+      "ru": [
+        "аудитория",
+        "зрители"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The audience loved the show.",
+          "ru": "Зрителям понравилось шоу."
+        }
+      ]
+    },
+    {
+      "id": "b1-d16-06",
+      "en": "advertisement",
+      "ru": [
+        "реклама",
+        "объявление"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I saw an advertisement for the job.",
+          "ru": "Я видел объявление об этой работе."
+        }
+      ]
+    },
+    {
+      "id": "b1-d16-07",
+      "en": "report",
+      "ru": [
+        "сообщать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "reported"
+      ],
+      "examples": [
+        {
+          "en": "The news reported a big fire.",
+          "ru": "В новостях сообщили о большом пожаре."
+        }
+      ]
+    },
+    {
+      "id": "b1-d16-08",
+      "en": "celebrity",
+      "ru": [
+        "знаменитость"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A famous celebrity came to our town.",
+          "ru": "В наш город приехала знаменитость."
+        }
+      ]
+    },
+    {
+      "id": "b1-d16-09",
+      "en": "subscribe",
+      "ru": [
+        "подписываться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Subscribe to our channel.",
+          "ru": "Подпишитесь на наш канал."
+        }
+      ]
+    },
+    {
+      "id": "b1-d16-10",
+      "en": "fake",
+      "ru": [
+        "поддельный",
+        "фальшивый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Be careful with fake news.",
+          "ru": "Будь осторожен с фейковыми новостями."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "id": "b1-d26",
+  "level": "B1",
+  "day": 26,
+  "island": 3,
+  "title": "Life events",
+  "topic": "life events",
+  "words": [
+    {
+      "id": "b1-d26-01",
+      "en": "born",
+      "ru": [
+        "рождённый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I was born in 1995.",
+          "ru": "Я родился в 1995 году."
+        }
+      ]
+    },
+    {
+      "id": "b1-d26-02",
+      "en": "childhood",
+      "ru": [
+        "детство"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I had a happy childhood.",
+          "ru": "У меня было счастливое детство."
+        }
+      ]
+    },
+    {
+      "id": "b1-d26-03",
+      "en": "move",
+      "ru": [
+        "переезжать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "moved"
+      ],
+      "examples": [
+        {
+          "en": "We moved to a new flat.",
+          "ru": "Мы переехали в новую квартиру."
+        }
+      ]
+    },
+    {
+      "id": "b1-d26-04",
+      "en": "wedding",
+      "ru": [
+        "свадьба"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Their wedding was in June.",
+          "ru": "Их свадьба была в июне."
+        }
+      ]
+    },
+    {
+      "id": "b1-d26-05",
+      "en": "divorce",
+      "ru": [
+        "развод"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Their divorce was difficult.",
+          "ru": "Их развод был тяжёлым."
+        }
+      ]
+    },
+    {
+      "id": "b1-d26-06",
+      "en": "pregnant",
+      "ru": [
+        "беременная"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "My sister is pregnant.",
+          "ru": "Моя сестра беременна."
+        }
+      ]
+    },
+    {
+      "id": "b1-d26-07",
+      "en": "funeral",
+      "ru": [
+        "похороны"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Many people came to the funeral.",
+          "ru": "На похороны пришло много людей."
+        }
+      ]
+    },
+    {
+      "id": "b1-d26-08",
+      "en": "anniversary",
+      "ru": [
+        "годовщина"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Today is our wedding anniversary.",
+          "ru": "Сегодня годовщина нашей свадьбы."
+        }
+      ]
+    },
+    {
+      "id": "b1-d26-09",
+      "en": "adult",
+      "ru": [
+        "взрослый"
+      ],
+      "pos": "noun",
+      "forms": [
+        "adults"
+      ],
+      "examples": [
+        {
+          "en": "Tickets for adults cost ten pounds.",
+          "ru": "Билеты для взрослых стоят десять фунтов."
+        }
+      ]
+    },
+    {
+      "id": "b1-d26-10",
+      "en": "elderly",
+      "ru": [
+        "пожилой"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We help elderly people in our street.",
+          "ru": "Мы помогаем пожилым людям на нашей улице."
+        }
+      ]
+    }
+  ]
+}

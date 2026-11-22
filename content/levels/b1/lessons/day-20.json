@@ -1,0 +1,159 @@
+{
+  "id": "b1-d20",
+  "level": "B1",
+  "day": 20,
+  "island": 2,
+  "title": "Science",
+  "topic": "science",
+  "words": [
+    {
+      "id": "b1-d20-01",
+      "en": "experiment",
+      "ru": [
+        "эксперимент",
+        "опыт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We did an experiment in class.",
+          "ru": "Мы провели эксперимент на уроке."
+        }
+      ]
+    },
+    {
+      "id": "b1-d20-02",
+      "en": "discover",
+      "ru": [
+        "открывать",
+        "обнаруживать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "discovered"
+      ],
+      "examples": [
+        {
+          "en": "Who discovered penicillin?",
+          "ru": "Кто открыл пенициллин?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d20-03",
+      "en": "scientist",
+      "ru": [
+        "учёный"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The scientist won a prize.",
+          "ru": "Учёный получил премию."
+        }
+      ]
+    },
+    {
+      "id": "b1-d20-04",
+      "en": "evidence",
+      "ru": [
+        "доказательства"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There is no evidence for this idea.",
+          "ru": "Этой идее нет доказательств."
+        }
+      ]
+    },
+    {
+      "id": "b1-d20-05",
+      "en": "theory",
+      "ru": [
+        "теория"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "It's just a theory.",
+          "ru": "Это всего лишь теория."
+        }
+      ]
+    },
+    {
+      "id": "b1-d20-06",
+      "en": "measure",
+      "ru": [
+        "измерять"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Measure the length of the table.",
+          "ru": "Измерь длину стола."
+        }
+      ]
+    },
+    {
+      "id": "b1-d20-07",
+      "en": "laboratory",
+      "ru": [
+        "лаборатория"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She works in a laboratory.",
+          "ru": "Она работает в лаборатории."
+        }
+      ]
+    },
+    {
+      "id": "b1-d20-08",
+      "en": "space",
+      "ru": [
+        "космос",
+        "пространство"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He dreams of travelling to space.",
+          "ru": "Он мечтает полететь в космос."
+        }
+      ]
+    },
+    {
+      "id": "b1-d20-09",
+      "en": "planet",
+      "ru": [
+        "планета"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Mars is the red planet.",
+          "ru": "Марс — красная планета."
+        }
+      ]
+    },
+    {
+      "id": "b1-d20-10",
+      "en": "result",
+      "ru": [
+        "результат"
+      ],
+      "pos": "noun",
+      "forms": [
+        "results"
+      ],
+      "examples": [
+        {
+          "en": "The results were surprising.",
+          "ru": "Результаты оказались неожиданными."
+        }
+      ]
+    }
+  ]
+}

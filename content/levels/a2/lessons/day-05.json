@@ -1,0 +1,152 @@
+{
+  "id": "a2-d05",
+  "level": "A2",
+  "day": 5,
+  "island": 1,
+  "title": "Home sweet home",
+  "topic": "home",
+  "words": [
+    {
+      "id": "a2-d05-01",
+      "en": "kitchen",
+      "ru": [
+        "кухня"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The kitchen is next to the living room.",
+          "ru": "Кухня рядом с гостиной."
+        }
+      ]
+    },
+    {
+      "id": "a2-d05-02",
+      "en": "bedroom",
+      "ru": [
+        "спальня"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My bedroom has a big window.",
+          "ru": "В моей спальне большое окно."
+        }
+      ]
+    },
+    {
+      "id": "a2-d05-03",
+      "en": "living room",
+      "ru": [
+        "гостиная"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We watch TV in the living room.",
+          "ru": "Мы смотрим телевизор в гостиной."
+        }
+      ]
+    },
+    {
+      "id": "a2-d05-04",
+      "en": "stairs",
+      "ru": [
+        "лестница"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Be careful on the stairs.",
+          "ru": "Осторожно на лестнице."
+        }
+      ]
+    },
+    {
+      "id": "a2-d05-05",
+      "en": "floor",
+      "ru": [
+        "пол",
+        "этаж"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I live on the third floor.",
+          "ru": "Я живу на третьем этаже."
+        }
+      ]
+    },
+    {
+      "id": "a2-d05-06",
+      "en": "wall",
+      "ru": [
+        "стена"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There is a clock on the wall.",
+          "ru": "На стене висят часы."
+        }
+      ]
+    },
+    {
+      "id": "a2-d05-07",
+      "en": "furniture",
+      "ru": [
+        "мебель"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We need new furniture for the flat.",
+          "ru": "Нам нужна новая мебель для квартиры."
+        }
+      ]
+    },
+    {
+      "id": "a2-d05-08",
+      "en": "neighbour",
+      "ru": [
+        "сосед"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Our neighbour has a big dog.",
+          "ru": "У нашего соседа большая собака."
+        }
+      ]
+    },
+    {
+      "id": "a2-d05-09",
+      "en": "rent",
+      "ru": [
+        "снимать",
+        "арендовать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "They rent a flat in the city centre.",
+          "ru": "Они снимают квартиру в центре города."
+        }
+      ]
+    },
+    {
+      "id": "a2-d05-10",
+      "en": "garden",
+      "ru": [
+        "сад"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My mother grows flowers in the garden.",
+          "ru": "Мама выращивает цветы в саду."
+        }
+      ]
+    }
+  ]
+}

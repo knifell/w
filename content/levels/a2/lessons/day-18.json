@@ -1,0 +1,152 @@
+{
+  "id": "a2-d18",
+  "level": "A2",
+  "day": 18,
+  "island": 2,
+  "title": "Time",
+  "topic": "time",
+  "words": [
+    {
+      "id": "a2-d18-01",
+      "en": "yesterday",
+      "ru": [
+        "вчера"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "I saw her yesterday.",
+          "ru": "Я видел её вчера."
+        }
+      ]
+    },
+    {
+      "id": "a2-d18-02",
+      "en": "tomorrow",
+      "ru": [
+        "завтра"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "See you tomorrow!",
+          "ru": "Увидимся завтра!"
+        }
+      ]
+    },
+    {
+      "id": "a2-d18-03",
+      "en": "weekend",
+      "ru": [
+        "выходные"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What are you doing at the weekend?",
+          "ru": "Что ты делаешь на выходных?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d18-04",
+      "en": "month",
+      "ru": [
+        "месяц"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My birthday is next month.",
+          "ru": "Мой день рождения в следующем месяце."
+        }
+      ]
+    },
+    {
+      "id": "a2-d18-05",
+      "en": "century",
+      "ru": [
+        "век",
+        "столетие"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This church is from the 15th century.",
+          "ru": "Эта церковь пятнадцатого века."
+        }
+      ]
+    },
+    {
+      "id": "a2-d18-06",
+      "en": "calendar",
+      "ru": [
+        "календарь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I wrote the date in my calendar.",
+          "ru": "Я записал дату в календарь."
+        }
+      ]
+    },
+    {
+      "id": "a2-d18-07",
+      "en": "date",
+      "ru": [
+        "дата",
+        "число"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What's the date today?",
+          "ru": "Какое сегодня число?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d18-08",
+      "en": "already",
+      "ru": [
+        "уже"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "I have already finished.",
+          "ru": "Я уже закончил."
+        }
+      ]
+    },
+    {
+      "id": "a2-d18-09",
+      "en": "soon",
+      "ru": [
+        "скоро"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "The film starts soon.",
+          "ru": "Фильм скоро начнётся."
+        }
+      ]
+    },
+    {
+      "id": "a2-d18-10",
+      "en": "ago",
+      "ru": [
+        "назад"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "I moved here two years ago.",
+          "ru": "Я переехал сюда два года назад."
+        }
+      ]
+    }
+  ]
+}

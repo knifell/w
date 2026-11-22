@@ -1,0 +1,151 @@
+{
+  "id": "a2-d16",
+  "level": "A2",
+  "day": 16,
+  "island": 2,
+  "title": "What is it like?",
+  "topic": "describing",
+  "words": [
+    {
+      "id": "a2-d16-01",
+      "en": "heavy",
+      "ru": [
+        "тяжёлый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This box is too heavy.",
+          "ru": "Эта коробка слишком тяжёлая."
+        }
+      ]
+    },
+    {
+      "id": "a2-d16-02",
+      "en": "light",
+      "ru": [
+        "лёгкий",
+        "светлый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "My laptop is very light.",
+          "ru": "Мой ноутбук очень лёгкий."
+        }
+      ]
+    },
+    {
+      "id": "a2-d16-03",
+      "en": "soft",
+      "ru": [
+        "мягкий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The bed is soft.",
+          "ru": "Кровать мягкая."
+        }
+      ]
+    },
+    {
+      "id": "a2-d16-04",
+      "en": "comfortable",
+      "ru": [
+        "удобный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "These shoes are really comfortable.",
+          "ru": "Эти туфли очень удобные."
+        }
+      ]
+    },
+    {
+      "id": "a2-d16-05",
+      "en": "empty",
+      "ru": [
+        "пустой"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The fridge is empty.",
+          "ru": "Холодильник пустой."
+        }
+      ]
+    },
+    {
+      "id": "a2-d16-06",
+      "en": "full",
+      "ru": [
+        "полный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The glass is full of water.",
+          "ru": "Стакан полон воды."
+        }
+      ]
+    },
+    {
+      "id": "a2-d16-07",
+      "en": "round",
+      "ru": [
+        "круглый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We have a round table.",
+          "ru": "У нас круглый стол."
+        }
+      ]
+    },
+    {
+      "id": "a2-d16-08",
+      "en": "wide",
+      "ru": [
+        "широкий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The river is very wide here.",
+          "ru": "Здесь река очень широкая."
+        }
+      ]
+    },
+    {
+      "id": "a2-d16-09",
+      "en": "narrow",
+      "ru": [
+        "узкий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The streets in the old town are narrow.",
+          "ru": "Улицы в старом городе узкие."
+        }
+      ]
+    },
+    {
+      "id": "a2-d16-10",
+      "en": "dirty",
+      "ru": [
+        "грязный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Your shoes are dirty.",
+          "ru": "Твои ботинки грязные."
+        }
+      ]
+    }
+  ]
+}

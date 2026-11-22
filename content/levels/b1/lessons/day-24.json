@@ -1,0 +1,155 @@
+{
+  "id": "b1-d24",
+  "level": "B1",
+  "day": 24,
+  "island": 3,
+  "title": "Opinions",
+  "topic": "opinions",
+  "words": [
+    {
+      "id": "b1-d24-01",
+      "en": "opinion",
+      "ru": [
+        "мнение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "In my opinion, it's too expensive.",
+          "ru": "По-моему, это слишком дорого."
+        }
+      ]
+    },
+    {
+      "id": "b1-d24-02",
+      "en": "agree",
+      "ru": [
+        "соглашаться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I agree with you.",
+          "ru": "Я с тобой согласен."
+        }
+      ]
+    },
+    {
+      "id": "b1-d24-03",
+      "en": "disagree",
+      "ru": [
+        "не соглашаться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I'm afraid I disagree.",
+          "ru": "Боюсь, я не согласен."
+        }
+      ]
+    },
+    {
+      "id": "b1-d24-04",
+      "en": "point of view",
+      "ru": [
+        "точка зрения"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I understand your point of view.",
+          "ru": "Я понимаю твою точку зрения."
+        }
+      ]
+    },
+    {
+      "id": "b1-d24-05",
+      "en": "argument",
+      "ru": [
+        "спор",
+        "аргумент"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We had an argument about politics.",
+          "ru": "Мы поспорили о политике."
+        }
+      ]
+    },
+    {
+      "id": "b1-d24-06",
+      "en": "convince",
+      "ru": [
+        "убедить",
+        "убеждать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "convinced"
+      ],
+      "examples": [
+        {
+          "en": "You've convinced me.",
+          "ru": "Ты меня убедил."
+        }
+      ]
+    },
+    {
+      "id": "b1-d24-07",
+      "en": "obviously",
+      "ru": [
+        "очевидно"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Obviously, we need more time.",
+          "ru": "Очевидно, нам нужно больше времени."
+        }
+      ]
+    },
+    {
+      "id": "b1-d24-08",
+      "en": "on the other hand",
+      "ru": [
+        "с другой стороны"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "On the other hand, it's very convenient.",
+          "ru": "С другой стороны, это очень удобно."
+        }
+      ]
+    },
+    {
+      "id": "b1-d24-09",
+      "en": "advantage",
+      "ru": [
+        "преимущество"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The main advantage is the price.",
+          "ru": "Главное преимущество — цена."
+        }
+      ]
+    },
+    {
+      "id": "b1-d24-10",
+      "en": "disadvantage",
+      "ru": [
+        "недостаток"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The only disadvantage is the noise.",
+          "ru": "Единственный недостаток — шум."
+        }
+      ]
+    }
+  ]
+}

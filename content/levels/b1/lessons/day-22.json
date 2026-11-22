@@ -1,0 +1,158 @@
+{
+  "id": "b1-d22",
+  "level": "B1",
+  "day": 22,
+  "island": 3,
+  "title": "Relationships",
+  "topic": "relationships",
+  "words": [
+    {
+      "id": "b1-d22-01",
+      "en": "relationship",
+      "ru": [
+        "отношения"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "They have a good relationship.",
+          "ru": "У них хорошие отношения."
+        }
+      ]
+    },
+    {
+      "id": "b1-d22-02",
+      "en": "get along",
+      "ru": [
+        "ладить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I get along well with my sister.",
+          "ru": "Я хорошо лажу с сестрой."
+        }
+      ]
+    },
+    {
+      "id": "b1-d22-03",
+      "en": "argue",
+      "ru": [
+        "спорить",
+        "ссориться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "They argue about money.",
+          "ru": "Они ссорятся из-за денег."
+        }
+      ]
+    },
+    {
+      "id": "b1-d22-04",
+      "en": "trust",
+      "ru": [
+        "доверять"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I trust my best friend.",
+          "ru": "Я доверяю своему лучшему другу."
+        }
+      ]
+    },
+    {
+      "id": "b1-d22-05",
+      "en": "support",
+      "ru": [
+        "поддерживать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "supports"
+      ],
+      "examples": [
+        {
+          "en": "My family always supports me.",
+          "ru": "Семья всегда меня поддерживает."
+        }
+      ]
+    },
+    {
+      "id": "b1-d22-06",
+      "en": "break up",
+      "ru": [
+        "расставаться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "broke up"
+      ],
+      "examples": [
+        {
+          "en": "They broke up last month.",
+          "ru": "Они расстались в прошлом месяце."
+        }
+      ]
+    },
+    {
+      "id": "b1-d22-07",
+      "en": "engaged",
+      "ru": [
+        "помолвленный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Tom and Anna got engaged.",
+          "ru": "Том и Анна обручились."
+        }
+      ]
+    },
+    {
+      "id": "b1-d22-08",
+      "en": "apologise",
+      "ru": [
+        "извиняться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "You should apologise to her.",
+          "ru": "Тебе стоит извиниться перед ней."
+        }
+      ]
+    },
+    {
+      "id": "b1-d22-09",
+      "en": "forgive",
+      "ru": [
+        "прощать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Please forgive me.",
+          "ru": "Пожалуйста, прости меня."
+        }
+      ]
+    },
+    {
+      "id": "b1-d22-10",
+      "en": "partner",
+      "ru": [
+        "партнёр",
+        "партнёрша"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She lives with her partner.",
+          "ru": "Она живёт со своим партнёром."
+        }
+      ]
+    }
+  ]
+}

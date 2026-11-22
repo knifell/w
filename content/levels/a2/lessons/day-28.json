@@ -1,0 +1,154 @@
+{
+  "id": "a2-d28",
+  "level": "A2",
+  "day": 28,
+  "island": 3,
+  "title": "Jobs",
+  "topic": "jobs",
+  "words": [
+    {
+      "id": "a2-d28-01",
+      "en": "job",
+      "ru": [
+        "работа"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She has a new job.",
+          "ru": "У неё новая работа."
+        }
+      ]
+    },
+    {
+      "id": "a2-d28-02",
+      "en": "nurse",
+      "ru": [
+        "медсестра",
+        "медбрат"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The nurse took my temperature.",
+          "ru": "Медсестра измерила мне температуру."
+        }
+      ]
+    },
+    {
+      "id": "a2-d28-03",
+      "en": "engineer",
+      "ru": [
+        "инженер"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My brother is an engineer.",
+          "ru": "Мой брат инженер."
+        }
+      ]
+    },
+    {
+      "id": "a2-d28-04",
+      "en": "lawyer",
+      "ru": [
+        "юрист",
+        "адвокат"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "You should talk to a lawyer.",
+          "ru": "Тебе стоит поговорить с юристом."
+        }
+      ]
+    },
+    {
+      "id": "a2-d28-05",
+      "en": "cook",
+      "ru": [
+        "повар"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He works as a cook in a hotel.",
+          "ru": "Он работает поваром в отеле."
+        }
+      ]
+    },
+    {
+      "id": "a2-d28-06",
+      "en": "farmer",
+      "ru": [
+        "фермер"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The farmer gets up very early.",
+          "ru": "Фермер встаёт очень рано."
+        }
+      ]
+    },
+    {
+      "id": "a2-d28-07",
+      "en": "office",
+      "ru": [
+        "офис"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Our office is on the fifth floor.",
+          "ru": "Наш офис на пятом этаже."
+        }
+      ]
+    },
+    {
+      "id": "a2-d28-08",
+      "en": "boss",
+      "ru": [
+        "начальник",
+        "босс"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My boss is on holiday.",
+          "ru": "Мой начальник в отпуске."
+        }
+      ]
+    },
+    {
+      "id": "a2-d28-09",
+      "en": "earn",
+      "ru": [
+        "зарабатывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "How much do you earn?",
+          "ru": "Сколько ты зарабатываешь?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d28-10",
+      "en": "uniform",
+      "ru": [
+        "форма",
+        "униформа"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Pilots wear a uniform.",
+          "ru": "Пилоты носят форму."
+        }
+      ]
+    }
+  ]
+}

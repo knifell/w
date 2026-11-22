@@ -1,0 +1,157 @@
+{
+  "id": "b1-d19",
+  "level": "B1",
+  "day": 19,
+  "island": 2,
+  "title": "Career",
+  "topic": "career",
+  "words": [
+    {
+      "id": "b1-d19-01",
+      "en": "career",
+      "ru": [
+        "карьера"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She wants a career in medicine.",
+          "ru": "Она хочет сделать карьеру в медицине."
+        }
+      ]
+    },
+    {
+      "id": "b1-d19-02",
+      "en": "ambition",
+      "ru": [
+        "стремление",
+        "амбиция"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "His ambition is to become a pilot.",
+          "ru": "Его мечта — стать пилотом."
+        }
+      ]
+    },
+    {
+      "id": "b1-d19-03",
+      "en": "achieve",
+      "ru": [
+        "достигать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "You can achieve anything if you work hard.",
+          "ru": "Можно достичь чего угодно, если усердно работать."
+        }
+      ]
+    },
+    {
+      "id": "b1-d19-04",
+      "en": "target",
+      "ru": [
+        "цель",
+        "план"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We reached our sales target.",
+          "ru": "Мы выполнили план продаж."
+        }
+      ]
+    },
+    {
+      "id": "b1-d19-05",
+      "en": "improve",
+      "ru": [
+        "улучшать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I want to improve my English.",
+          "ru": "Я хочу улучшить свой английский."
+        }
+      ]
+    },
+    {
+      "id": "b1-d19-06",
+      "en": "opportunity",
+      "ru": [
+        "возможность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This job is a great opportunity.",
+          "ru": "Эта работа — отличная возможность."
+        }
+      ]
+    },
+    {
+      "id": "b1-d19-07",
+      "en": "training",
+      "ru": [
+        "обучение",
+        "тренинг"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The company offers free training.",
+          "ru": "Компания предлагает бесплатное обучение."
+        }
+      ]
+    },
+    {
+      "id": "b1-d19-08",
+      "en": "retire",
+      "ru": [
+        "уходить на пенсию"
+      ],
+      "pos": "verb",
+      "forms": [
+        "retired"
+      ],
+      "examples": [
+        {
+          "en": "My father retired last year.",
+          "ru": "Мой отец вышел на пенсию в прошлом году."
+        }
+      ]
+    },
+    {
+      "id": "b1-d19-09",
+      "en": "unemployed",
+      "ru": [
+        "безработный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He has been unemployed for six months.",
+          "ru": "Он без работы уже полгода."
+        }
+      ]
+    },
+    {
+      "id": "b1-d19-10",
+      "en": "volunteer",
+      "ru": [
+        "волонтёр",
+        "доброволец"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She works as a volunteer at the hospital.",
+          "ru": "Она работает волонтёром в больнице."
+        }
+      ]
+    }
+  ]
+}

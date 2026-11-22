@@ -69,8 +69,7 @@ t('костёр: уголь спасает, без угля — спасение
 });
 
 const pack = JSON.parse(readFileSync('app/public/content/a2.json', 'utf8')) as LevelPack;
-// виртуальный остров 1 с 3 уроками; делаем вид, что 2-й остров существует
-const fake: LevelPack = { ...pack, lessons: [...pack.lessons, { ...pack.lessons[0], id: 'a2-d11', day: 11, island: 2, words: pack.lessons[0].words.map((w) => ({ ...w, id: w.id + 'x' })) }] };
+const fake = pack;
 
 t('остров открывается только после закрепления 80% слов и паузы экспедиции', () => {
   const s = emptyState();
@@ -79,10 +78,11 @@ t('остров открывается только после закрепле�
   assert.equal(islandState(fake, isl2, s).kind, 'locked');
   for (const l of fake.lessons.filter((l) => l.island === 1)) s.done[l.id] = { best: 100, at: 0 };
   const words = fake.lessons.filter((l) => l.island === 1).flatMap((l) => l.words);
-  words.slice(0, 23).forEach((w) => (s.mem[w.id] = { s: 3, due: 0, seen: 4, wrong: 0 }));
+  const need = Math.ceil(words.length * 0.8);
+  words.slice(0, need - 1).forEach((w) => (s.mem[w.id] = { s: 3, due: 0, seen: 4, wrong: 0 }));
   commitUnlocks(s, [fake]);
-  assert.equal(islandState(fake, isl2, s).kind, 'locked'); // 23/30 < 24
-  s.mem[words[23].id] = { s: 3, due: 0, seen: 4, wrong: 0 };
+  assert.equal(islandState(fake, isl2, s).kind, 'locked'); // на одно слово меньше нормы
+  s.mem[words[need - 1].id] = { s: 3, due: 0, seen: 4, wrong: 0 };
   commitUnlocks(s, [fake]);
   assert.equal(islandState(fake, isl2, s).kind, 'open');
   // второй архипелаг не открывается раньше паузы
@@ -95,13 +95,15 @@ t('остров открывается только после закрепле�
 });
 
 t('генератор: каждое слово урока встречается, повторение строится', () => {
-  const pool = pack.lessons.flatMap((l) => l.words);
-  for (const l of pack.lessons) {
+  const b1 = JSON.parse(readFileSync('app/public/content/b1.json', 'utf8')) as LevelPack;
+  for (const pk of [pack, b1]) for (const l of pk.lessons) {
+    const pool = pk.lessons.flatMap((x) => x.words);
     const ex = buildLesson(l, pool, 1);
     const seen = new Set(ex.flatMap((e) => (e.kind === 'pairs' ? e.words : [e.word])).map((w) => w.id));
     l.words.forEach((w) => assert.ok(seen.has(w.id), w.en));
     ex.filter((e) => e.kind === 'choice').forEach((e) => e.kind === 'choice' && assert.equal(new Set(e.options).size, 4));
   }
+  const pool = pack.lessons.flatMap((l) => l.words);
   assert.ok(buildReview(pool.slice(0, 12), pool, 1).length >= 12);
 });
 

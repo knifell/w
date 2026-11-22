@@ -1,0 +1,156 @@
+{
+  "id": "b1-d04",
+  "level": "B1",
+  "day": 4,
+  "island": 1,
+  "title": "Where to stay",
+  "topic": "accommodation",
+  "words": [
+    {
+      "id": "b1-d04-01",
+      "en": "accommodation",
+      "ru": [
+        "жильё",
+        "проживание"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The price includes accommodation and meals.",
+          "ru": "Цена включает проживание и питание."
+        }
+      ]
+    },
+    {
+      "id": "b1-d04-02",
+      "en": "check in",
+      "ru": [
+        "заселяться",
+        "регистрироваться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We can check in after two o'clock.",
+          "ru": "Заселиться можно после двух."
+        }
+      ]
+    },
+    {
+      "id": "b1-d04-03",
+      "en": "check out",
+      "ru": [
+        "выезжать",
+        "выселяться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "You must check out by noon.",
+          "ru": "Выехать нужно до полудня."
+        }
+      ]
+    },
+    {
+      "id": "b1-d04-04",
+      "en": "facilities",
+      "ru": [
+        "удобства",
+        "оснащение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The hotel has excellent facilities.",
+          "ru": "В отеле отличные удобства."
+        }
+      ]
+    },
+    {
+      "id": "b1-d04-05",
+      "en": "included",
+      "ru": [
+        "включённый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Breakfast is included in the price.",
+          "ru": "Завтрак включён в стоимость."
+        }
+      ]
+    },
+    {
+      "id": "b1-d04-06",
+      "en": "available",
+      "ru": [
+        "свободный",
+        "доступный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Are there any rooms available?",
+          "ru": "Есть свободные номера?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d04-07",
+      "en": "host",
+      "ru": [
+        "хозяин",
+        "принимающая сторона"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Our host showed us around the house.",
+          "ru": "Хозяин показал нам дом."
+        }
+      ]
+    },
+    {
+      "id": "b1-d04-08",
+      "en": "hostel",
+      "ru": [
+        "хостел"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Students often stay in a hostel.",
+          "ru": "Студенты часто останавливаются в хостеле."
+        }
+      ]
+    },
+    {
+      "id": "b1-d04-09",
+      "en": "cancel",
+      "ru": [
+        "отменять"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I had to cancel my booking.",
+          "ru": "Мне пришлось отменить бронь."
+        }
+      ]
+    },
+    {
+      "id": "b1-d04-10",
+      "en": "complaint",
+      "ru": [
+        "жалоба"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I'd like to make a complaint.",
+          "ru": "Я хотел бы подать жалобу."
+        }
+      ]
+    }
+  ]
+}

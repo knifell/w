@@ -1,0 +1,155 @@
+{
+  "id": "a2-d15",
+  "level": "A2",
+  "day": 15,
+  "island": 2,
+  "title": "In the kitchen",
+  "topic": "cooking",
+  "words": [
+    {
+      "id": "a2-d15-01",
+      "en": "boil",
+      "ru": [
+        "кипятить",
+        "варить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Boil the water for the pasta.",
+          "ru": "Вскипяти воду для пасты."
+        }
+      ]
+    },
+    {
+      "id": "a2-d15-02",
+      "en": "fry",
+      "ru": [
+        "жарить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Fry the onions for five minutes.",
+          "ru": "Обжарь лук пять минут."
+        }
+      ]
+    },
+    {
+      "id": "a2-d15-03",
+      "en": "bake",
+      "ru": [
+        "печь",
+        "выпекать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "My sister likes to bake bread.",
+          "ru": "Моя сестра любит печь хлеб."
+        }
+      ]
+    },
+    {
+      "id": "a2-d15-04",
+      "en": "cut",
+      "ru": [
+        "резать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Cut the cheese into small pieces.",
+          "ru": "Нарежь сыр маленькими кусочками."
+        }
+      ]
+    },
+    {
+      "id": "a2-d15-05",
+      "en": "mix",
+      "ru": [
+        "смешивать",
+        "мешать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Mix the eggs and the sugar.",
+          "ru": "Смешай яйца с сахаром."
+        }
+      ]
+    },
+    {
+      "id": "a2-d15-06",
+      "en": "pour",
+      "ru": [
+        "наливать",
+        "лить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Pour the milk into a glass.",
+          "ru": "Налей молоко в стакан."
+        }
+      ]
+    },
+    {
+      "id": "a2-d15-07",
+      "en": "recipe",
+      "ru": [
+        "рецепт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This is my grandmother's recipe.",
+          "ru": "Это рецепт моей бабушки."
+        }
+      ]
+    },
+    {
+      "id": "a2-d15-08",
+      "en": "oven",
+      "ru": [
+        "духовка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Put the cake in the oven.",
+          "ru": "Поставь торт в духовку."
+        }
+      ]
+    },
+    {
+      "id": "a2-d15-09",
+      "en": "pan",
+      "ru": [
+        "сковорода",
+        "кастрюля"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The pan is very hot.",
+          "ru": "Сковорода очень горячая."
+        }
+      ]
+    },
+    {
+      "id": "a2-d15-10",
+      "en": "taste",
+      "ru": [
+        "пробовать на вкус"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Taste the soup before you add salt.",
+          "ru": "Попробуй суп, прежде чем солить."
+        }
+      ]
+    }
+  ]
+}

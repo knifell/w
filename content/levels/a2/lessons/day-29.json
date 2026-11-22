@@ -1,0 +1,154 @@
+{
+  "id": "a2-d29",
+  "level": "A2",
+  "day": 29,
+  "island": 3,
+  "title": "Everyday verbs",
+  "topic": "verbs",
+  "words": [
+    {
+      "id": "a2-d29-01",
+      "en": "forget",
+      "ru": [
+        "забывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Don't forget your keys.",
+          "ru": "Не забудь ключи."
+        }
+      ]
+    },
+    {
+      "id": "a2-d29-02",
+      "en": "find",
+      "ru": [
+        "находить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I can't find my phone.",
+          "ru": "Не могу найти телефон."
+        }
+      ]
+    },
+    {
+      "id": "a2-d29-03",
+      "en": "carry",
+      "ru": [
+        "нести",
+        "носить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Can you help me carry this box?",
+          "ru": "Поможешь донести эту коробку?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d29-04",
+      "en": "bring",
+      "ru": [
+        "приносить",
+        "приводить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Bring your friends to the party.",
+          "ru": "Приводи друзей на вечеринку."
+        }
+      ]
+    },
+    {
+      "id": "a2-d29-05",
+      "en": "build",
+      "ru": [
+        "строить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "They want to build a new school.",
+          "ru": "Они хотят построить новую школу."
+        }
+      ]
+    },
+    {
+      "id": "a2-d29-06",
+      "en": "break",
+      "ru": [
+        "ломать",
+        "разбивать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Be careful, don't break the glass.",
+          "ru": "Осторожно, не разбей стакан."
+        }
+      ]
+    },
+    {
+      "id": "a2-d29-07",
+      "en": "close",
+      "ru": [
+        "закрывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Please close the window.",
+          "ru": "Пожалуйста, закрой окно."
+        }
+      ]
+    },
+    {
+      "id": "a2-d29-08",
+      "en": "wait",
+      "ru": [
+        "ждать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Wait for me here.",
+          "ru": "Подожди меня здесь."
+        }
+      ]
+    },
+    {
+      "id": "a2-d29-09",
+      "en": "believe",
+      "ru": [
+        "верить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I don't believe you.",
+          "ru": "Я тебе не верю."
+        }
+      ]
+    },
+    {
+      "id": "a2-d29-10",
+      "en": "learn",
+      "ru": [
+        "учить",
+        "изучать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I want to learn Spanish.",
+          "ru": "Я хочу выучить испанский."
+        }
+      ]
+    }
+  ]
+}

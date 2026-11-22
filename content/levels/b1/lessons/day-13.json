@@ -1,0 +1,162 @@
+{
+  "id": "b1-d13",
+  "level": "B1",
+  "day": 13,
+  "island": 2,
+  "title": "Meetings",
+  "topic": "meetings",
+  "words": [
+    {
+      "id": "b1-d13-01",
+      "en": "meeting",
+      "ru": [
+        "совещание",
+        "встреча"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The meeting starts at nine.",
+          "ru": "Совещание начинается в девять."
+        }
+      ]
+    },
+    {
+      "id": "b1-d13-02",
+      "en": "agenda",
+      "ru": [
+        "повестка дня"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What's on the agenda today?",
+          "ru": "Что сегодня в повестке?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d13-03",
+      "en": "presentation",
+      "ru": [
+        "презентация"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I'm giving a presentation tomorrow.",
+          "ru": "Завтра я выступаю с презентацией."
+        }
+      ]
+    },
+    {
+      "id": "b1-d13-04",
+      "en": "suggest",
+      "ru": [
+        "предлагать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I suggest we take a break.",
+          "ru": "Предлагаю сделать перерыв."
+        }
+      ]
+    },
+    {
+      "id": "b1-d13-05",
+      "en": "point out",
+      "ru": [
+        "указывать",
+        "обращать внимание"
+      ],
+      "pos": "verb",
+      "forms": [
+        "pointed out"
+      ],
+      "examples": [
+        {
+          "en": "She pointed out a mistake in the report.",
+          "ru": "Она указала на ошибку в отчёте."
+        }
+      ]
+    },
+    {
+      "id": "b1-d13-06",
+      "en": "summary",
+      "ru": [
+        "краткое изложение",
+        "сводка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Here's a short summary of the results.",
+          "ru": "Вот краткая сводка результатов."
+        }
+      ]
+    },
+    {
+      "id": "b1-d13-07",
+      "en": "postpone",
+      "ru": [
+        "откладывать",
+        "переносить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Let's postpone the meeting until Friday.",
+          "ru": "Давай перенесём совещание на пятницу."
+        }
+      ]
+    },
+    {
+      "id": "b1-d13-08",
+      "en": "attend",
+      "ru": [
+        "посещать",
+        "присутствовать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "attended"
+      ],
+      "examples": [
+        {
+          "en": "Ten people attended the meeting.",
+          "ru": "На совещании присутствовали десять человек."
+        }
+      ]
+    },
+    {
+      "id": "b1-d13-09",
+      "en": "chart",
+      "ru": [
+        "диаграмма",
+        "график"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This chart shows our sales.",
+          "ru": "Эта диаграмма показывает наши продажи."
+        }
+      ]
+    },
+    {
+      "id": "b1-d13-10",
+      "en": "discuss",
+      "ru": [
+        "обсуждать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We need to discuss the budget.",
+          "ru": "Нам нужно обсудить бюджет."
+        }
+      ]
+    }
+  ]
+}

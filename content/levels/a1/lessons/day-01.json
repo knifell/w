@@ -1,0 +1,155 @@
+{
+  "id": "a1-d01",
+  "level": "A1",
+  "day": 1,
+  "island": 1,
+  "title": "Hello!",
+  "topic": "greetings",
+  "words": [
+    {
+      "id": "a1-d01-01",
+      "en": "hello",
+      "ru": [
+        "привет",
+        "здравствуйте"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Hello! How are you?",
+          "ru": "Привет! Как дела?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d01-02",
+      "en": "goodbye",
+      "ru": [
+        "до свидания",
+        "пока"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Goodbye, see you soon!",
+          "ru": "До свидания, до скорой встречи!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d01-03",
+      "en": "please",
+      "ru": [
+        "пожалуйста"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "A glass of water, please.",
+          "ru": "Стакан воды, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a1-d01-04",
+      "en": "thank you",
+      "ru": [
+        "спасибо"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Thank you very much!",
+          "ru": "Большое спасибо!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d01-05",
+      "en": "yes",
+      "ru": [
+        "да"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Yes, I like it.",
+          "ru": "Да, мне нравится."
+        }
+      ]
+    },
+    {
+      "id": "a1-d01-06",
+      "en": "no",
+      "ru": [
+        "нет"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "No, thanks.",
+          "ru": "Нет, спасибо."
+        }
+      ]
+    },
+    {
+      "id": "a1-d01-07",
+      "en": "sorry",
+      "ru": [
+        "извините",
+        "простите"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Sorry, I'm late.",
+          "ru": "Извините, я опоздал."
+        }
+      ]
+    },
+    {
+      "id": "a1-d01-08",
+      "en": "name",
+      "ru": [
+        "имя"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My name is Anna.",
+          "ru": "Меня зовут Анна."
+        }
+      ]
+    },
+    {
+      "id": "a1-d01-09",
+      "en": "nice",
+      "ru": [
+        "приятный",
+        "милый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Nice to meet you.",
+          "ru": "Приятно познакомиться."
+        }
+      ]
+    },
+    {
+      "id": "a1-d01-10",
+      "en": "friend",
+      "ru": [
+        "друг",
+        "подруга"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This is my friend Max.",
+          "ru": "Это мой друг Макс."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "id": "a1-d07",
+  "level": "A1",
+  "day": 7,
+  "island": 1,
+  "title": "My body",
+  "topic": "body",
+  "words": [
+    {
+      "id": "a1-d07-01",
+      "en": "head",
+      "ru": [
+        "голова"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My head hurts.",
+          "ru": "У меня болит голова."
+        }
+      ]
+    },
+    {
+      "id": "a1-d07-02",
+      "en": "face",
+      "ru": [
+        "лицо"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Wash your face.",
+          "ru": "Умой лицо."
+        }
+      ]
+    },
+    {
+      "id": "a1-d07-03",
+      "en": "eye",
+      "ru": [
+        "глаз"
+      ],
+      "pos": "noun",
+      "forms": [
+        "eyes"
+      ],
+      "examples": [
+        {
+          "en": "She has blue eyes.",
+          "ru": "У неё голубые глаза."
+        }
+      ]
+    },
+    {
+      "id": "a1-d07-04",
+      "en": "ear",
+      "ru": [
+        "ухо"
+      ],
+      "pos": "noun",
+      "forms": [
+        "ears"
+      ],
+      "examples": [
+        {
+          "en": "The dog has big ears.",
+          "ru": "У собаки большие уши."
+        }
+      ]
+    },
+    {
+      "id": "a1-d07-05",
+      "en": "nose",
+      "ru": [
+        "нос"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The clown has a red nose.",
+          "ru": "У клоуна красный нос."
+        }
+      ]
+    },
+    {
+      "id": "a1-d07-06",
+      "en": "mouth",
+      "ru": [
+        "рот"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Open your mouth, please.",
+          "ru": "Открой рот, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a1-d07-07",
+      "en": "hand",
+      "ru": [
+        "рука",
+        "кисть"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Give me your hand.",
+          "ru": "Дай мне руку."
+        }
+      ]
+    },
+    {
+      "id": "a1-d07-08",
+      "en": "arm",
+      "ru": [
+        "рука (от плеча)"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He broke his arm.",
+          "ru": "Он сломал руку."
+        }
+      ]
+    },
+    {
+      "id": "a1-d07-09",
+      "en": "leg",
+      "ru": [
+        "нога"
+      ],
+      "pos": "noun",
+      "forms": [
+        "legs"
+      ],
+      "examples": [
+        {
+          "en": "A dog has four legs.",
+          "ru": "У собаки четыре ноги."
+        }
+      ]
+    },
+    {
+      "id": "a1-d07-10",
+      "en": "foot",
+      "ru": [
+        "ступня",
+        "нога"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My foot is cold.",
+          "ru": "У меня замёрзла нога."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "id": "a1-d17",
+  "level": "A1",
+  "day": 17,
+  "island": 2,
+  "title": "I can do it!",
+  "topic": "verbs 1",
+  "words": [
+    {
+      "id": "a1-d17-01",
+      "en": "go",
+      "ru": [
+        "идти",
+        "ехать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I go to school every day.",
+          "ru": "Я хожу в школу каждый день."
+        }
+      ]
+    },
+    {
+      "id": "a1-d17-02",
+      "en": "come",
+      "ru": [
+        "приходить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Come here, please.",
+          "ru": "Иди сюда, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a1-d17-03",
+      "en": "see",
+      "ru": [
+        "видеть"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I can see the sea.",
+          "ru": "Я вижу море."
+        }
+      ]
+    },
+    {
+      "id": "a1-d17-04",
+      "en": "look",
+      "ru": [
+        "смотреть"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Look at the picture.",
+          "ru": "Посмотри на картинку."
+        }
+      ]
+    },
+    {
+      "id": "a1-d17-05",
+      "en": "listen",
+      "ru": [
+        "слушать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Listen to the music.",
+          "ru": "Послушай музыку."
+        }
+      ]
+    },
+    {
+      "id": "a1-d17-06",
+      "en": "speak",
+      "ru": [
+        "говорить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I speak English.",
+          "ru": "Я говорю по-английски."
+        }
+      ]
+    },
+    {
+      "id": "a1-d17-07",
+      "en": "live",
+      "ru": [
+        "жить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We live in Moscow.",
+          "ru": "Мы живём в Москве."
+        }
+      ]
+    },
+    {
+      "id": "a1-d17-08",
+      "en": "work",
+      "ru": [
+        "работать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "works"
+      ],
+      "examples": [
+        {
+          "en": "My dad works in an office.",
+          "ru": "Мой папа работает в офисе."
+        }
+      ]
+    },
+    {
+      "id": "a1-d17-09",
+      "en": "play",
+      "ru": [
+        "играть"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "The children play in the park.",
+          "ru": "Дети играют в парке."
+        }
+      ]
+    },
+    {
+      "id": "a1-d17-10",
+      "en": "like",
+      "ru": [
+        "нравиться",
+        "любить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I like cats.",
+          "ru": "Мне нравятся кошки."
+        }
+      ]
+    }
+  ]
+}

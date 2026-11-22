@@ -1,0 +1,156 @@
+{
+  "id": "a1-d18",
+  "level": "A1",
+  "day": 18,
+  "island": 2,
+  "title": "More actions",
+  "topic": "verbs 2",
+  "words": [
+    {
+      "id": "a1-d18-01",
+      "en": "want",
+      "ru": [
+        "хотеть"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I want a cup of tea.",
+          "ru": "Я хочу чашку чая."
+        }
+      ]
+    },
+    {
+      "id": "a1-d18-02",
+      "en": "have",
+      "ru": [
+        "иметь"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I have a sister.",
+          "ru": "У меня есть сестра."
+        }
+      ]
+    },
+    {
+      "id": "a1-d18-03",
+      "en": "sleep",
+      "ru": [
+        "спать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "sleeps"
+      ],
+      "examples": [
+        {
+          "en": "The baby sleeps a lot.",
+          "ru": "Малыш много спит."
+        }
+      ]
+    },
+    {
+      "id": "a1-d18-04",
+      "en": "sit",
+      "ru": [
+        "сидеть",
+        "садиться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Sit down, please.",
+          "ru": "Садитесь, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a1-d18-05",
+      "en": "stand",
+      "ru": [
+        "стоять"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Please stand here.",
+          "ru": "Пожалуйста, встаньте здесь."
+        }
+      ]
+    },
+    {
+      "id": "a1-d18-06",
+      "en": "run",
+      "ru": [
+        "бегать",
+        "бежать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I run in the park.",
+          "ru": "Я бегаю в парке."
+        }
+      ]
+    },
+    {
+      "id": "a1-d18-07",
+      "en": "walk",
+      "ru": [
+        "гулять",
+        "ходить пешком"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We walk to school.",
+          "ru": "Мы ходим в школу пешком."
+        }
+      ]
+    },
+    {
+      "id": "a1-d18-08",
+      "en": "open",
+      "ru": [
+        "открывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Open the door, please.",
+          "ru": "Открой дверь, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a1-d18-09",
+      "en": "help",
+      "ru": [
+        "помогать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Can you help me?",
+          "ru": "Можешь мне помочь?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d18-10",
+      "en": "know",
+      "ru": [
+        "знать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I know his name.",
+          "ru": "Я знаю его имя."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "id": "a1-d23",
+  "level": "A1",
+  "day": 23,
+  "island": 3,
+  "title": "How do you feel?",
+  "topic": "feelings",
+  "words": [
+    {
+      "id": "a1-d23-01",
+      "en": "love",
+      "ru": [
+        "любить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I love my dog.",
+          "ru": "Я люблю свою собаку."
+        }
+      ]
+    },
+    {
+      "id": "a1-d23-02",
+      "en": "hate",
+      "ru": [
+        "ненавидеть"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I hate rainy days.",
+          "ru": "Я ненавижу дождливые дни."
+        }
+      ]
+    },
+    {
+      "id": "a1-d23-03",
+      "en": "well",
+      "ru": [
+        "хорошо",
+        "здоров"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "I'm very well, thank you.",
+          "ru": "У меня всё хорошо, спасибо."
+        }
+      ]
+    },
+    {
+      "id": "a1-d23-04",
+      "en": "great",
+      "ru": [
+        "отличный",
+        "замечательный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "That's a great idea!",
+          "ru": "Это отличная идея!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d23-05",
+      "en": "feel",
+      "ru": [
+        "чувствовать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I feel good today.",
+          "ru": "Сегодня я чувствую себя хорошо."
+        }
+      ]
+    },
+    {
+      "id": "a1-d23-06",
+      "en": "cry",
+      "ru": [
+        "плакать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "crying"
+      ],
+      "examples": [
+        {
+          "en": "Why is the baby crying?",
+          "ru": "Почему малыш плачет?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d23-07",
+      "en": "hug",
+      "ru": [
+        "обнимать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Come here, let me hug you.",
+          "ru": "Иди сюда, я тебя обниму."
+        }
+      ]
+    },
+    {
+      "id": "a1-d23-08",
+      "en": "kiss",
+      "ru": [
+        "целовать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "kissed"
+      ],
+      "examples": [
+        {
+          "en": "She kissed her son.",
+          "ru": "Она поцеловала сына."
+        }
+      ]
+    },
+    {
+      "id": "a1-d23-09",
+      "en": "sleepy",
+      "ru": [
+        "сонный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I'm sleepy, I want to go to bed.",
+          "ru": "Я сонный, хочу спать."
+        }
+      ]
+    },
+    {
+      "id": "a1-d23-10",
+      "en": "glad",
+      "ru": [
+        "радый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I'm glad to see you.",
+          "ru": "Я рад тебя видеть."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "a1-d02",
+  "level": "A1",
+  "day": 2,
+  "island": 1,
+  "title": "Numbers 1–10",
+  "topic": "numbers",
+  "words": [
+    {
+      "id": "a1-d02-01",
+      "en": "one",
+      "ru": [
+        "один"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "I have one brother.",
+          "ru": "У меня один брат."
+        }
+      ]
+    },
+    {
+      "id": "a1-d02-02",
+      "en": "two",
+      "ru": [
+        "два"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "I have two cats.",
+          "ru": "У меня две кошки."
+        }
+      ]
+    },
+    {
+      "id": "a1-d02-03",
+      "en": "three",
+      "ru": [
+        "три"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "She has three sisters.",
+          "ru": "У неё три сестры."
+        }
+      ]
+    },
+    {
+      "id": "a1-d02-04",
+      "en": "four",
+      "ru": [
+        "четыре"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "We need four chairs.",
+          "ru": "Нам нужно четыре стула."
+        }
+      ]
+    },
+    {
+      "id": "a1-d02-05",
+      "en": "five",
+      "ru": [
+        "пять"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "I get up at five.",
+          "ru": "Я встаю в пять."
+        }
+      ]
+    },
+    {
+      "id": "a1-d02-06",
+      "en": "six",
+      "ru": [
+        "шесть"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "There are six eggs.",
+          "ru": "Здесь шесть яиц."
+        }
+      ]
+    },
+    {
+      "id": "a1-d02-07",
+      "en": "seven",
+      "ru": [
+        "семь"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "A week has seven days.",
+          "ru": "В неделе семь дней."
+        }
+      ]
+    },
+    {
+      "id": "a1-d02-08",
+      "en": "eight",
+      "ru": [
+        "восемь"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "School starts at eight.",
+          "ru": "Школа начинается в восемь."
+        }
+      ]
+    },
+    {
+      "id": "a1-d02-09",
+      "en": "nine",
+      "ru": [
+        "девять"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "He is nine years old.",
+          "ru": "Ему девять лет."
+        }
+      ]
+    },
+    {
+      "id": "a1-d02-10",
+      "en": "ten",
+      "ru": [
+        "десять"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "I can count to ten.",
+          "ru": "Я умею считать до десяти."
+        }
+      ]
+    }
+  ]
+}

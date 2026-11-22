@@ -1,0 +1,152 @@
+{
+  "id": "a1-d10",
+  "level": "A1",
+  "day": 10,
+  "island": 1,
+  "title": "Eat and drink",
+  "topic": "drinks",
+  "words": [
+    {
+      "id": "a1-d10-01",
+      "en": "water",
+      "ru": [
+        "вода"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Can I have some water?",
+          "ru": "Можно мне воды?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d10-02",
+      "en": "milk",
+      "ru": [
+        "молоко"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The baby drinks milk.",
+          "ru": "Малыш пьёт молоко."
+        }
+      ]
+    },
+    {
+      "id": "a1-d10-03",
+      "en": "tea",
+      "ru": [
+        "чай"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Do you want some tea?",
+          "ru": "Хочешь чаю?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d10-04",
+      "en": "coffee",
+      "ru": [
+        "кофе"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I drink coffee in the morning.",
+          "ru": "Утром я пью кофе."
+        }
+      ]
+    },
+    {
+      "id": "a1-d10-05",
+      "en": "juice",
+      "ru": [
+        "сок"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I like orange juice.",
+          "ru": "Я люблю апельсиновый сок."
+        }
+      ]
+    },
+    {
+      "id": "a1-d10-06",
+      "en": "food",
+      "ru": [
+        "еда"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The food here is good.",
+          "ru": "Еда здесь хорошая."
+        }
+      ]
+    },
+    {
+      "id": "a1-d10-07",
+      "en": "eat",
+      "ru": [
+        "есть",
+        "кушать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We eat at six.",
+          "ru": "Мы едим в шесть."
+        }
+      ]
+    },
+    {
+      "id": "a1-d10-08",
+      "en": "drink",
+      "ru": [
+        "пить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Drink some water.",
+          "ru": "Выпей воды."
+        }
+      ]
+    },
+    {
+      "id": "a1-d10-09",
+      "en": "ice cream",
+      "ru": [
+        "мороженое"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Children love ice cream.",
+          "ru": "Дети обожают мороженое."
+        }
+      ]
+    },
+    {
+      "id": "a1-d10-10",
+      "en": "sandwich",
+      "ru": [
+        "бутерброд",
+        "сэндвич"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I have a sandwich for lunch.",
+          "ru": "На обед у меня бутерброд."
+        }
+      ]
+    }
+  ]
+}

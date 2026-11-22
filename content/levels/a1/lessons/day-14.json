@@ -1,0 +1,157 @@
+{
+  "id": "a1-d14",
+  "level": "A1",
+  "day": 14,
+  "island": 2,
+  "title": "What time is it?",
+  "topic": "time",
+  "words": [
+    {
+      "id": "a1-d14-01",
+      "en": "morning",
+      "ru": [
+        "утро"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Good morning!",
+          "ru": "Доброе утро!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d14-02",
+      "en": "afternoon",
+      "ru": [
+        "день",
+        "послеобеденное время"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I play tennis in the afternoon.",
+          "ru": "Днём я играю в теннис."
+        }
+      ]
+    },
+    {
+      "id": "a1-d14-03",
+      "en": "evening",
+      "ru": [
+        "вечер"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Good evening!",
+          "ru": "Добрый вечер!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d14-04",
+      "en": "night",
+      "ru": [
+        "ночь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Good night!",
+          "ru": "Спокойной ночи!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d14-05",
+      "en": "hour",
+      "ru": [
+        "час"
+      ],
+      "pos": "noun",
+      "forms": [
+        "hours"
+      ],
+      "examples": [
+        {
+          "en": "The film is two hours long.",
+          "ru": "Фильм длится два часа."
+        }
+      ]
+    },
+    {
+      "id": "a1-d14-06",
+      "en": "minute",
+      "ru": [
+        "минута"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Wait a minute, please.",
+          "ru": "Подожди минутку, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a1-d14-07",
+      "en": "year",
+      "ru": [
+        "год"
+      ],
+      "pos": "noun",
+      "forms": [
+        "years"
+      ],
+      "examples": [
+        {
+          "en": "I am twenty years old.",
+          "ru": "Мне двадцать лет."
+        }
+      ]
+    },
+    {
+      "id": "a1-d14-08",
+      "en": "time",
+      "ru": [
+        "время"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What time is it?",
+          "ru": "Который час?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d14-09",
+      "en": "o'clock",
+      "ru": [
+        "ровно (о времени)"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "It's three o'clock.",
+          "ru": "Сейчас три часа."
+        }
+      ]
+    },
+    {
+      "id": "a1-d14-10",
+      "en": "now",
+      "ru": [
+        "сейчас"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "I'm busy now.",
+          "ru": "Я сейчас занят."
+        }
+      ]
+    }
+  ]
+}

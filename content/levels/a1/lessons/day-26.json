@@ -1,0 +1,154 @@
+{
+  "id": "a1-d26",
+  "level": "A1",
+  "day": 26,
+  "island": 3,
+  "title": "Where is it?",
+  "topic": "prepositions",
+  "words": [
+    {
+      "id": "a1-d26-01",
+      "en": "in",
+      "ru": [
+        "в"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "The cat is in the box.",
+          "ru": "Кошка в коробке."
+        }
+      ]
+    },
+    {
+      "id": "a1-d26-02",
+      "en": "on",
+      "ru": [
+        "на"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "The book is on the table.",
+          "ru": "Книга на столе."
+        }
+      ]
+    },
+    {
+      "id": "a1-d26-03",
+      "en": "under",
+      "ru": [
+        "под"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "The dog is under the bed.",
+          "ru": "Собака под кроватью."
+        }
+      ]
+    },
+    {
+      "id": "a1-d26-04",
+      "en": "next to",
+      "ru": [
+        "рядом с"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "I sit next to Anna.",
+          "ru": "Я сижу рядом с Анной."
+        }
+      ]
+    },
+    {
+      "id": "a1-d26-05",
+      "en": "near",
+      "ru": [
+        "около",
+        "рядом"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "We live near the sea.",
+          "ru": "Мы живём у моря."
+        }
+      ]
+    },
+    {
+      "id": "a1-d26-06",
+      "en": "in front of",
+      "ru": [
+        "перед"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "The car is in front of the house.",
+          "ru": "Машина перед домом."
+        }
+      ]
+    },
+    {
+      "id": "a1-d26-07",
+      "en": "here",
+      "ru": [
+        "здесь",
+        "сюда"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Come here!",
+          "ru": "Иди сюда!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d26-08",
+      "en": "there",
+      "ru": [
+        "там",
+        "туда"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Put it there.",
+          "ru": "Положи это туда."
+        }
+      ]
+    },
+    {
+      "id": "a1-d26-09",
+      "en": "up",
+      "ru": [
+        "вверх",
+        "наверх"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Look up!",
+          "ru": "Посмотри наверх!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d26-10",
+      "en": "down",
+      "ru": [
+        "вниз"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Sit down, please.",
+          "ru": "Садись, пожалуйста."
+        }
+      ]
+    }
+  ]
+}

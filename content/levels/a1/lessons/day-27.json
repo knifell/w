@@ -1,0 +1,154 @@
+{
+  "id": "a1-d27",
+  "level": "A1",
+  "day": 27,
+  "island": 3,
+  "title": "Give and take",
+  "topic": "verbs 3",
+  "words": [
+    {
+      "id": "a1-d27-01",
+      "en": "buy",
+      "ru": [
+        "покупать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I want to buy a new bag.",
+          "ru": "Я хочу купить новую сумку."
+        }
+      ]
+    },
+    {
+      "id": "a1-d27-02",
+      "en": "sell",
+      "ru": [
+        "продавать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "They sell fruit here.",
+          "ru": "Здесь продают фрукты."
+        }
+      ]
+    },
+    {
+      "id": "a1-d27-03",
+      "en": "give",
+      "ru": [
+        "давать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Give me the book, please.",
+          "ru": "Дай мне книгу, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a1-d27-04",
+      "en": "take",
+      "ru": [
+        "брать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Take an apple.",
+          "ru": "Возьми яблоко."
+        }
+      ]
+    },
+    {
+      "id": "a1-d27-05",
+      "en": "put",
+      "ru": [
+        "класть",
+        "ставить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Put your bag here.",
+          "ru": "Положи сумку сюда."
+        }
+      ]
+    },
+    {
+      "id": "a1-d27-06",
+      "en": "get",
+      "ru": [
+        "получать",
+        "доставать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I get a lot of messages.",
+          "ru": "Я получаю много сообщений."
+        }
+      ]
+    },
+    {
+      "id": "a1-d27-07",
+      "en": "make",
+      "ru": [
+        "делать",
+        "готовить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Let's make a cake.",
+          "ru": "Давай испечём торт."
+        }
+      ]
+    },
+    {
+      "id": "a1-d27-08",
+      "en": "need",
+      "ru": [
+        "нуждаться",
+        "нужно"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I need help.",
+          "ru": "Мне нужна помощь."
+        }
+      ]
+    },
+    {
+      "id": "a1-d27-09",
+      "en": "use",
+      "ru": [
+        "использовать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Can I use your phone?",
+          "ru": "Можно воспользоваться твоим телефоном?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d27-10",
+      "en": "show",
+      "ru": [
+        "показывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Show me your picture.",
+          "ru": "Покажи мне свой рисунок."
+        }
+      ]
+    }
+  ]
+}

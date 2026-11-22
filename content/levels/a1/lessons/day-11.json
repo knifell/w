@@ -1,0 +1,151 @@
+{
+  "id": "a1-d11",
+  "level": "A1",
+  "day": 11,
+  "island": 2,
+  "title": "My house",
+  "topic": "house",
+  "words": [
+    {
+      "id": "a1-d11-01",
+      "en": "house",
+      "ru": [
+        "дом"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Our house is big.",
+          "ru": "Наш дом большой."
+        }
+      ]
+    },
+    {
+      "id": "a1-d11-02",
+      "en": "flat",
+      "ru": [
+        "квартира"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We live in a small flat.",
+          "ru": "Мы живём в маленькой квартире."
+        }
+      ]
+    },
+    {
+      "id": "a1-d11-03",
+      "en": "door",
+      "ru": [
+        "дверь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Close the door, please.",
+          "ru": "Закрой дверь, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a1-d11-04",
+      "en": "window",
+      "ru": [
+        "окно"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Open the window.",
+          "ru": "Открой окно."
+        }
+      ]
+    },
+    {
+      "id": "a1-d11-05",
+      "en": "bed",
+      "ru": [
+        "кровать"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My bed is very soft.",
+          "ru": "Моя кровать очень мягкая."
+        }
+      ]
+    },
+    {
+      "id": "a1-d11-06",
+      "en": "chair",
+      "ru": [
+        "стул"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Sit on the chair.",
+          "ru": "Садись на стул."
+        }
+      ]
+    },
+    {
+      "id": "a1-d11-07",
+      "en": "bathroom",
+      "ru": [
+        "ванная"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The bathroom is upstairs.",
+          "ru": "Ванная наверху."
+        }
+      ]
+    },
+    {
+      "id": "a1-d11-08",
+      "en": "toilet",
+      "ru": [
+        "туалет"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Where is the toilet?",
+          "ru": "Где туалет?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d11-09",
+      "en": "home",
+      "ru": [
+        "дом",
+        "домой"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I'm at home.",
+          "ru": "Я дома."
+        }
+      ]
+    },
+    {
+      "id": "a1-d11-10",
+      "en": "garage",
+      "ru": [
+        "гараж"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The car is in the garage.",
+          "ru": "Машина в гараже."
+        }
+      ]
+    }
+  ]
+}

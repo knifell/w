@@ -1,0 +1,151 @@
+{
+  "id": "a1-d04",
+  "level": "A1",
+  "day": 4,
+  "island": 1,
+  "title": "Colours",
+  "topic": "colours",
+  "words": [
+    {
+      "id": "a1-d04-01",
+      "en": "red",
+      "ru": [
+        "красный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I have a red bag.",
+          "ru": "У меня красная сумка."
+        }
+      ]
+    },
+    {
+      "id": "a1-d04-02",
+      "en": "blue",
+      "ru": [
+        "синий",
+        "голубой"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The sea is blue.",
+          "ru": "Море синее."
+        }
+      ]
+    },
+    {
+      "id": "a1-d04-03",
+      "en": "green",
+      "ru": [
+        "зелёный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The grass is green.",
+          "ru": "Трава зелёная."
+        }
+      ]
+    },
+    {
+      "id": "a1-d04-04",
+      "en": "yellow",
+      "ru": [
+        "жёлтый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The sun is yellow.",
+          "ru": "Солнце жёлтое."
+        }
+      ]
+    },
+    {
+      "id": "a1-d04-05",
+      "en": "black",
+      "ru": [
+        "чёрный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "My cat is black.",
+          "ru": "Моя кошка чёрная."
+        }
+      ]
+    },
+    {
+      "id": "a1-d04-06",
+      "en": "white",
+      "ru": [
+        "белый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Snow is white.",
+          "ru": "Снег белый."
+        }
+      ]
+    },
+    {
+      "id": "a1-d04-07",
+      "en": "brown",
+      "ru": [
+        "коричневый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He has brown eyes.",
+          "ru": "У него карие глаза."
+        }
+      ]
+    },
+    {
+      "id": "a1-d04-08",
+      "en": "pink",
+      "ru": [
+        "розовый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She likes pink flowers.",
+          "ru": "Она любит розовые цветы."
+        }
+      ]
+    },
+    {
+      "id": "a1-d04-09",
+      "en": "purple",
+      "ru": [
+        "фиолетовый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I have a purple pen.",
+          "ru": "У меня фиолетовая ручка."
+        }
+      ]
+    },
+    {
+      "id": "a1-d04-10",
+      "en": "colour",
+      "ru": [
+        "цвет"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What is your favourite colour?",
+          "ru": "Какой твой любимый цвет?"
+        }
+      ]
+    }
+  ]
+}

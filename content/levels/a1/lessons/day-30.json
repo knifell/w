@@ -1,0 +1,154 @@
+{
+  "id": "a1-d30",
+  "level": "A1",
+  "day": 30,
+  "island": 3,
+  "title": "Little words",
+  "topic": "small words",
+  "words": [
+    {
+      "id": "a1-d30-01",
+      "en": "and",
+      "ru": [
+        "и"
+      ],
+      "pos": "conjunction",
+      "examples": [
+        {
+          "en": "I like tea and coffee.",
+          "ru": "Я люблю чай и кофе."
+        }
+      ]
+    },
+    {
+      "id": "a1-d30-02",
+      "en": "but",
+      "ru": [
+        "но"
+      ],
+      "pos": "conjunction",
+      "examples": [
+        {
+          "en": "It's small but nice.",
+          "ru": "Он маленький, но милый."
+        }
+      ]
+    },
+    {
+      "id": "a1-d30-03",
+      "en": "or",
+      "ru": [
+        "или"
+      ],
+      "pos": "conjunction",
+      "examples": [
+        {
+          "en": "Tea or coffee?",
+          "ru": "Чай или кофе?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d30-04",
+      "en": "because",
+      "ru": [
+        "потому что"
+      ],
+      "pos": "conjunction",
+      "examples": [
+        {
+          "en": "I'm happy because it's Friday.",
+          "ru": "Я рад, потому что сегодня пятница."
+        }
+      ]
+    },
+    {
+      "id": "a1-d30-05",
+      "en": "very",
+      "ru": [
+        "очень"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "It's very cold today.",
+          "ru": "Сегодня очень холодно."
+        }
+      ]
+    },
+    {
+      "id": "a1-d30-06",
+      "en": "too",
+      "ru": [
+        "тоже",
+        "слишком"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "I like it too.",
+          "ru": "Мне это тоже нравится."
+        }
+      ]
+    },
+    {
+      "id": "a1-d30-07",
+      "en": "also",
+      "ru": [
+        "также",
+        "тоже"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "She also speaks French.",
+          "ru": "Она также говорит по-французски."
+        }
+      ]
+    },
+    {
+      "id": "a1-d30-08",
+      "en": "again",
+      "ru": [
+        "снова",
+        "ещё раз"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Say it again, please.",
+          "ru": "Скажи это ещё раз, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a1-d30-09",
+      "en": "only",
+      "ru": [
+        "только"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "I have only one sister.",
+          "ru": "У меня только одна сестра."
+        }
+      ]
+    },
+    {
+      "id": "a1-d30-10",
+      "en": "about",
+      "ru": [
+        "о",
+        "про"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "This book is about a cat.",
+          "ru": "Эта книга про кошку."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "id": "a1-d24",
+  "level": "A1",
+  "day": 24,
+  "island": 3,
+  "title": "My day",
+  "topic": "daily routine",
+  "words": [
+    {
+      "id": "a1-d24-01",
+      "en": "get up",
+      "ru": [
+        "вставать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I get up at seven.",
+          "ru": "Я встаю в семь."
+        }
+      ]
+    },
+    {
+      "id": "a1-d24-02",
+      "en": "go to bed",
+      "ru": [
+        "ложиться спать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I go to bed at ten.",
+          "ru": "Я ложусь спать в десять."
+        }
+      ]
+    },
+    {
+      "id": "a1-d24-03",
+      "en": "wash",
+      "ru": [
+        "мыть",
+        "умываться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Wash your hands, please.",
+          "ru": "Помой руки, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a1-d24-04",
+      "en": "watch TV",
+      "ru": [
+        "смотреть телевизор"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We watch TV in the evening.",
+          "ru": "Вечером мы смотрим телевизор."
+        }
+      ]
+    },
+    {
+      "id": "a1-d24-05",
+      "en": "come home",
+      "ru": [
+        "приходить домой"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I come home at five.",
+          "ru": "Я прихожу домой в пять."
+        }
+      ]
+    },
+    {
+      "id": "a1-d24-06",
+      "en": "every day",
+      "ru": [
+        "каждый день"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "I read every day.",
+          "ru": "Я читаю каждый день."
+        }
+      ]
+    },
+    {
+      "id": "a1-d24-07",
+      "en": "sometimes",
+      "ru": [
+        "иногда"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Sometimes I walk to work.",
+          "ru": "Иногда я хожу на работу пешком."
+        }
+      ]
+    },
+    {
+      "id": "a1-d24-08",
+      "en": "always",
+      "ru": [
+        "всегда"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "She always drinks tea.",
+          "ru": "Она всегда пьёт чай."
+        }
+      ]
+    },
+    {
+      "id": "a1-d24-09",
+      "en": "never",
+      "ru": [
+        "никогда"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "I never eat meat.",
+          "ru": "Я никогда не ем мясо."
+        }
+      ]
+    },
+    {
+      "id": "a1-d24-10",
+      "en": "often",
+      "ru": [
+        "часто"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "We often go to the park.",
+          "ru": "Мы часто ходим в парк."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "id": "a1-d15",
+  "level": "A1",
+  "day": 15,
+  "island": 2,
+  "title": "At school",
+  "topic": "school",
+  "words": [
+    {
+      "id": "a1-d15-01",
+      "en": "school",
+      "ru": [
+        "школа"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I go to school by bus.",
+          "ru": "Я езжу в школу на автобусе."
+        }
+      ]
+    },
+    {
+      "id": "a1-d15-02",
+      "en": "book",
+      "ru": [
+        "книга"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This book is very good.",
+          "ru": "Эта книга очень хорошая."
+        }
+      ]
+    },
+    {
+      "id": "a1-d15-03",
+      "en": "pen",
+      "ru": [
+        "ручка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Can I have a pen?",
+          "ru": "Можно мне ручку?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d15-04",
+      "en": "pencil",
+      "ru": [
+        "карандаш"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Write with a pencil.",
+          "ru": "Пиши карандашом."
+        }
+      ]
+    },
+    {
+      "id": "a1-d15-05",
+      "en": "desk",
+      "ru": [
+        "парта",
+        "письменный стол"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My bag is under the desk.",
+          "ru": "Мой рюкзак под партой."
+        }
+      ]
+    },
+    {
+      "id": "a1-d15-06",
+      "en": "classroom",
+      "ru": [
+        "класс",
+        "классная комната"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Our classroom is on the first floor.",
+          "ru": "Наш класс на первом этаже."
+        }
+      ]
+    },
+    {
+      "id": "a1-d15-07",
+      "en": "read",
+      "ru": [
+        "читать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I read every evening.",
+          "ru": "Я читаю каждый вечер."
+        }
+      ]
+    },
+    {
+      "id": "a1-d15-08",
+      "en": "write",
+      "ru": [
+        "писать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Write your name here.",
+          "ru": "Напиши здесь своё имя."
+        }
+      ]
+    },
+    {
+      "id": "a1-d15-09",
+      "en": "notebook",
+      "ru": [
+        "тетрадь",
+        "блокнот"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Open your notebook.",
+          "ru": "Открой тетрадь."
+        }
+      ]
+    },
+    {
+      "id": "a1-d15-10",
+      "en": "word",
+      "ru": [
+        "слово"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What does this word mean?",
+          "ru": "Что значит это слово?"
+        }
+      ]
+    }
+  ]
+}

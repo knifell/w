@@ -1,0 +1,154 @@
+{
+  "id": "a1-d09",
+  "level": "A1",
+  "day": 9,
+  "island": 1,
+  "title": "Food",
+  "topic": "food",
+  "words": [
+    {
+      "id": "a1-d09-01",
+      "en": "apple",
+      "ru": [
+        "яблоко"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I eat an apple every day.",
+          "ru": "Я ем яблоко каждый день."
+        }
+      ]
+    },
+    {
+      "id": "a1-d09-02",
+      "en": "banana",
+      "ru": [
+        "банан"
+      ],
+      "pos": "noun",
+      "forms": [
+        "bananas"
+      ],
+      "examples": [
+        {
+          "en": "Monkeys like bananas.",
+          "ru": "Обезьяны любят бананы."
+        }
+      ]
+    },
+    {
+      "id": "a1-d09-03",
+      "en": "orange",
+      "ru": [
+        "апельсин"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Can I have an orange?",
+          "ru": "Можно мне апельсин?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d09-04",
+      "en": "egg",
+      "ru": [
+        "яйцо"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I have an egg for lunch.",
+          "ru": "На обед у меня яйцо."
+        }
+      ]
+    },
+    {
+      "id": "a1-d09-05",
+      "en": "rice",
+      "ru": [
+        "рис"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We eat rice with fish.",
+          "ru": "Мы едим рис с рыбой."
+        }
+      ]
+    },
+    {
+      "id": "a1-d09-06",
+      "en": "fish",
+      "ru": [
+        "рыба"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Cats love fish.",
+          "ru": "Кошки любят рыбу."
+        }
+      ]
+    },
+    {
+      "id": "a1-d09-07",
+      "en": "chicken",
+      "ru": [
+        "курица"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The chicken is very good.",
+          "ru": "Курица очень вкусная."
+        }
+      ]
+    },
+    {
+      "id": "a1-d09-08",
+      "en": "soup",
+      "ru": [
+        "суп"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The soup is hot.",
+          "ru": "Суп горячий."
+        }
+      ]
+    },
+    {
+      "id": "a1-d09-09",
+      "en": "cake",
+      "ru": [
+        "торт",
+        "пирог"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I love chocolate cake.",
+          "ru": "Я обожаю шоколадный торт."
+        }
+      ]
+    },
+    {
+      "id": "a1-d09-10",
+      "en": "pizza",
+      "ru": [
+        "пицца"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Let's order a pizza.",
+          "ru": "Давай закажем пиццу."
+        }
+      ]
+    }
+  ]
+}

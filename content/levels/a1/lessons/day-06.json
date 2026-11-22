@@ -1,0 +1,152 @@
+{
+  "id": "a1-d06",
+  "level": "A1",
+  "day": 6,
+  "island": 1,
+  "title": "People",
+  "topic": "people",
+  "words": [
+    {
+      "id": "a1-d06-01",
+      "en": "man",
+      "ru": [
+        "мужчина"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "That man is my teacher.",
+          "ru": "Тот мужчина — мой учитель."
+        }
+      ]
+    },
+    {
+      "id": "a1-d06-02",
+      "en": "woman",
+      "ru": [
+        "женщина"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The woman has a dog.",
+          "ru": "У женщины есть собака."
+        }
+      ]
+    },
+    {
+      "id": "a1-d06-03",
+      "en": "boy",
+      "ru": [
+        "мальчик"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The boy is playing football.",
+          "ru": "Мальчик играет в футбол."
+        }
+      ]
+    },
+    {
+      "id": "a1-d06-04",
+      "en": "girl",
+      "ru": [
+        "девочка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The girl has long hair.",
+          "ru": "У девочки длинные волосы."
+        }
+      ]
+    },
+    {
+      "id": "a1-d06-05",
+      "en": "people",
+      "ru": [
+        "люди"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There are many people here.",
+          "ru": "Здесь много людей."
+        }
+      ]
+    },
+    {
+      "id": "a1-d06-06",
+      "en": "teacher",
+      "ru": [
+        "учитель"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Our teacher is very nice.",
+          "ru": "Наш учитель очень милый."
+        }
+      ]
+    },
+    {
+      "id": "a1-d06-07",
+      "en": "student",
+      "ru": [
+        "студент",
+        "ученик"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I am a student.",
+          "ru": "Я студент."
+        }
+      ]
+    },
+    {
+      "id": "a1-d06-08",
+      "en": "doctor",
+      "ru": [
+        "врач",
+        "доктор"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My aunt is a doctor.",
+          "ru": "Моя тётя — врач."
+        }
+      ]
+    },
+    {
+      "id": "a1-d06-09",
+      "en": "person",
+      "ru": [
+        "человек"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He is a good person.",
+          "ru": "Он хороший человек."
+        }
+      ]
+    },
+    {
+      "id": "a1-d06-10",
+      "en": "mum",
+      "ru": [
+        "мама"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I love you, Mum!",
+          "ru": "Я люблю тебя, мама!"
+        }
+      ]
+    }
+  ]
+}

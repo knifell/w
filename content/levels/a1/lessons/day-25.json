@@ -1,0 +1,154 @@
+{
+  "id": "a1-d25",
+  "level": "A1",
+  "day": 25,
+  "island": 3,
+  "title": "Questions",
+  "topic": "question words",
+  "words": [
+    {
+      "id": "a1-d25-01",
+      "en": "what",
+      "ru": [
+        "что",
+        "какой"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "What is your name?",
+          "ru": "Как тебя зовут?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d25-02",
+      "en": "where",
+      "ru": [
+        "где",
+        "куда"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Where do you live?",
+          "ru": "Где ты живёшь?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d25-03",
+      "en": "when",
+      "ru": [
+        "когда"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "When is your birthday?",
+          "ru": "Когда у тебя день рождения?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d25-04",
+      "en": "who",
+      "ru": [
+        "кто"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "Who is that girl?",
+          "ru": "Кто эта девочка?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d25-05",
+      "en": "why",
+      "ru": [
+        "почему",
+        "зачем"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Why are you sad?",
+          "ru": "Почему ты грустишь?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d25-06",
+      "en": "how",
+      "ru": [
+        "как"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "How are you?",
+          "ru": "Как дела?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d25-07",
+      "en": "which",
+      "ru": [
+        "который",
+        "какой"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "Which colour do you like?",
+          "ru": "Какой цвет тебе нравится?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d25-08",
+      "en": "how much",
+      "ru": [
+        "сколько (стоит)"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "How much is this?",
+          "ru": "Сколько это стоит?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d25-09",
+      "en": "how old",
+      "ru": [
+        "сколько лет"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "How old are you?",
+          "ru": "Сколько тебе лет?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d25-10",
+      "en": "whose",
+      "ru": [
+        "чей"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "Whose bag is this?",
+          "ru": "Чья это сумка?"
+        }
+      ]
+    }
+  ]
+}

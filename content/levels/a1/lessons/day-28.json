@@ -1,0 +1,156 @@
+{
+  "id": "a1-d28",
+  "level": "A1",
+  "day": 28,
+  "island": 3,
+  "title": "Opposites",
+  "topic": "opposites",
+  "words": [
+    {
+      "id": "a1-d28-01",
+      "en": "long",
+      "ru": [
+        "длинный",
+        "долгий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She has long hair.",
+          "ru": "У неё длинные волосы."
+        }
+      ]
+    },
+    {
+      "id": "a1-d28-02",
+      "en": "fast",
+      "ru": [
+        "быстрый",
+        "быстро"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This car is very fast.",
+          "ru": "Эта машина очень быстрая."
+        }
+      ]
+    },
+    {
+      "id": "a1-d28-03",
+      "en": "slow",
+      "ru": [
+        "медленный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The bus is slow.",
+          "ru": "Автобус медленный."
+        }
+      ]
+    },
+    {
+      "id": "a1-d28-04",
+      "en": "easy",
+      "ru": [
+        "лёгкий",
+        "простой"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This test is easy.",
+          "ru": "Этот тест лёгкий."
+        }
+      ]
+    },
+    {
+      "id": "a1-d28-05",
+      "en": "difficult",
+      "ru": [
+        "трудный",
+        "сложный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "English is not difficult.",
+          "ru": "Английский — несложный."
+        }
+      ]
+    },
+    {
+      "id": "a1-d28-06",
+      "en": "right",
+      "ru": [
+        "правильный",
+        "верный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "That's right!",
+          "ru": "Правильно!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d28-07",
+      "en": "wrong",
+      "ru": [
+        "неправильный",
+        "неверный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Sorry, that's wrong.",
+          "ru": "Извините, это неверно."
+        }
+      ]
+    },
+    {
+      "id": "a1-d28-08",
+      "en": "clean",
+      "ru": [
+        "чистый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "My room is clean.",
+          "ru": "Моя комната чистая."
+        }
+      ]
+    },
+    {
+      "id": "a1-d28-09",
+      "en": "rich",
+      "ru": [
+        "богатый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He is a rich man.",
+          "ru": "Он богатый человек."
+        }
+      ]
+    },
+    {
+      "id": "a1-d28-10",
+      "en": "poor",
+      "ru": [
+        "бедный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The family is very poor.",
+          "ru": "Семья очень бедная."
+        }
+      ]
+    }
+  ]
+}

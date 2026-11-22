@@ -1,0 +1,151 @@
+{
+  "id": "a1-d22",
+  "level": "A1",
+  "day": 22,
+  "island": 3,
+  "title": "Fun time",
+  "topic": "hobbies",
+  "words": [
+    {
+      "id": "a1-d22-01",
+      "en": "music",
+      "ru": [
+        "музыка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I listen to music every day.",
+          "ru": "Я слушаю музыку каждый день."
+        }
+      ]
+    },
+    {
+      "id": "a1-d22-02",
+      "en": "film",
+      "ru": [
+        "фильм"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Let's watch a film.",
+          "ru": "Давай посмотрим фильм."
+        }
+      ]
+    },
+    {
+      "id": "a1-d22-03",
+      "en": "game",
+      "ru": [
+        "игра"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This game is fun.",
+          "ru": "Эта игра весёлая."
+        }
+      ]
+    },
+    {
+      "id": "a1-d22-04",
+      "en": "football",
+      "ru": [
+        "футбол"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Boys play football after school.",
+          "ru": "Мальчики играют в футбол после школы."
+        }
+      ]
+    },
+    {
+      "id": "a1-d22-05",
+      "en": "tennis",
+      "ru": [
+        "теннис"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Do you play tennis?",
+          "ru": "Ты играешь в теннис?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d22-06",
+      "en": "sport",
+      "ru": [
+        "спорт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What is your favourite sport?",
+          "ru": "Какой твой любимый вид спорта?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d22-07",
+      "en": "draw",
+      "ru": [
+        "рисовать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I like to draw animals.",
+          "ru": "Я люблю рисовать животных."
+        }
+      ]
+    },
+    {
+      "id": "a1-d22-08",
+      "en": "photo",
+      "ru": [
+        "фото",
+        "фотография"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Look at this photo.",
+          "ru": "Посмотри на это фото."
+        }
+      ]
+    },
+    {
+      "id": "a1-d22-09",
+      "en": "piano",
+      "ru": [
+        "пианино"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She plays the piano.",
+          "ru": "Она играет на пианино."
+        }
+      ]
+    },
+    {
+      "id": "a1-d22-10",
+      "en": "favourite",
+      "ru": [
+        "любимый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Pizza is my favourite food.",
+          "ru": "Пицца — моя любимая еда."
+        }
+      ]
+    }
+  ]
+}

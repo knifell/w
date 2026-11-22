@@ -1,0 +1,150 @@
+{
+  "id": "a1-d19",
+  "level": "A1",
+  "day": 19,
+  "island": 2,
+  "title": "In town",
+  "topic": "places",
+  "words": [
+    {
+      "id": "a1-d19-01",
+      "en": "shop",
+      "ru": [
+        "магазин"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The shop is open.",
+          "ru": "Магазин открыт."
+        }
+      ]
+    },
+    {
+      "id": "a1-d19-02",
+      "en": "zoo",
+      "ru": [
+        "зоопарк"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Let's go to the zoo.",
+          "ru": "Пойдём в зоопарк."
+        }
+      ]
+    },
+    {
+      "id": "a1-d19-03",
+      "en": "street",
+      "ru": [
+        "улица"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I live on this street.",
+          "ru": "Я живу на этой улице."
+        }
+      ]
+    },
+    {
+      "id": "a1-d19-04",
+      "en": "city",
+      "ru": [
+        "город"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "London is a big city.",
+          "ru": "Лондон — большой город."
+        }
+      ]
+    },
+    {
+      "id": "a1-d19-05",
+      "en": "country",
+      "ru": [
+        "страна"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What country are you from?",
+          "ru": "Из какой ты страны?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d19-06",
+      "en": "hospital",
+      "ru": [
+        "больница"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My mum works in a hospital.",
+          "ru": "Моя мама работает в больнице."
+        }
+      ]
+    },
+    {
+      "id": "a1-d19-07",
+      "en": "restaurant",
+      "ru": [
+        "ресторан"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Let's eat in a restaurant.",
+          "ru": "Давай поедим в ресторане."
+        }
+      ]
+    },
+    {
+      "id": "a1-d19-08",
+      "en": "supermarket",
+      "ru": [
+        "супермаркет"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I buy food at the supermarket.",
+          "ru": "Я покупаю еду в супермаркете."
+        }
+      ]
+    },
+    {
+      "id": "a1-d19-09",
+      "en": "airport",
+      "ru": [
+        "аэропорт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The airport is far from here.",
+          "ru": "Аэропорт далеко отсюда."
+        }
+      ]
+    },
+    {
+      "id": "a1-d19-10",
+      "en": "village",
+      "ru": [
+        "деревня"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My grandfather lives in a village.",
+          "ru": "Мой дедушка живёт в деревне."
+        }
+      ]
+    }
+  ]
+}

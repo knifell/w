@@ -1,0 +1,152 @@
+{
+  "id": "a1-d20",
+  "level": "A1",
+  "day": 20,
+  "island": 2,
+  "title": "Outside",
+  "topic": "outdoors",
+  "words": [
+    {
+      "id": "a1-d20-01",
+      "en": "sun",
+      "ru": [
+        "солнце"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The sun is hot today.",
+          "ru": "Сегодня солнце жаркое."
+        }
+      ]
+    },
+    {
+      "id": "a1-d20-02",
+      "en": "moon",
+      "ru": [
+        "луна"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The moon is big tonight.",
+          "ru": "Сегодня большая луна."
+        }
+      ]
+    },
+    {
+      "id": "a1-d20-03",
+      "en": "tree",
+      "ru": [
+        "дерево"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There is a bird in the tree.",
+          "ru": "На дереве птица."
+        }
+      ]
+    },
+    {
+      "id": "a1-d20-04",
+      "en": "flower",
+      "ru": [
+        "цветок"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This flower is red.",
+          "ru": "Этот цветок красный."
+        }
+      ]
+    },
+    {
+      "id": "a1-d20-05",
+      "en": "sea",
+      "ru": [
+        "море"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I love swimming in the sea.",
+          "ru": "Я люблю плавать в море."
+        }
+      ]
+    },
+    {
+      "id": "a1-d20-06",
+      "en": "wind",
+      "ru": [
+        "ветер"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The wind is cold.",
+          "ru": "Ветер холодный."
+        }
+      ]
+    },
+    {
+      "id": "a1-d20-07",
+      "en": "cloud",
+      "ru": [
+        "облако"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There is a big cloud in the sky.",
+          "ru": "В небе большое облако."
+        }
+      ]
+    },
+    {
+      "id": "a1-d20-08",
+      "en": "grass",
+      "ru": [
+        "трава"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Don't walk on the grass.",
+          "ru": "Не ходи по траве."
+        }
+      ]
+    },
+    {
+      "id": "a1-d20-09",
+      "en": "outside",
+      "ru": [
+        "снаружи",
+        "на улице"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Let's play outside.",
+          "ru": "Давай поиграем на улице."
+        }
+      ]
+    },
+    {
+      "id": "a1-d20-10",
+      "en": "inside",
+      "ru": [
+        "внутри",
+        "в доме"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "It's warm inside.",
+          "ru": "Внутри тепло."
+        }
+      ]
+    }
+  ]
+}

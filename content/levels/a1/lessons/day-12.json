@@ -1,0 +1,151 @@
+{
+  "id": "a1-d12",
+  "level": "A1",
+  "day": 12,
+  "island": 2,
+  "title": "Animals",
+  "topic": "animals",
+  "words": [
+    {
+      "id": "a1-d12-01",
+      "en": "cat",
+      "ru": [
+        "кошка",
+        "кот"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I have a black cat.",
+          "ru": "У меня чёрная кошка."
+        }
+      ]
+    },
+    {
+      "id": "a1-d12-02",
+      "en": "dog",
+      "ru": [
+        "собака"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The dog is in the garden.",
+          "ru": "Собака в саду."
+        }
+      ]
+    },
+    {
+      "id": "a1-d12-03",
+      "en": "cow",
+      "ru": [
+        "корова"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The cow gives milk.",
+          "ru": "Корова даёт молоко."
+        }
+      ]
+    },
+    {
+      "id": "a1-d12-04",
+      "en": "pig",
+      "ru": [
+        "свинья"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The pig is pink.",
+          "ru": "Свинья розовая."
+        }
+      ]
+    },
+    {
+      "id": "a1-d12-05",
+      "en": "duck",
+      "ru": [
+        "утка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A duck is on the water.",
+          "ru": "На воде утка."
+        }
+      ]
+    },
+    {
+      "id": "a1-d12-06",
+      "en": "lion",
+      "ru": [
+        "лев"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The lion is big and strong.",
+          "ru": "Лев большой и сильный."
+        }
+      ]
+    },
+    {
+      "id": "a1-d12-07",
+      "en": "elephant",
+      "ru": [
+        "слон"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "An elephant has big ears.",
+          "ru": "У слона большие уши."
+        }
+      ]
+    },
+    {
+      "id": "a1-d12-08",
+      "en": "monkey",
+      "ru": [
+        "обезьяна"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The monkey is eating a banana.",
+          "ru": "Обезьяна ест банан."
+        }
+      ]
+    },
+    {
+      "id": "a1-d12-09",
+      "en": "bear",
+      "ru": [
+        "медведь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The bear lives in the forest.",
+          "ru": "Медведь живёт в лесу."
+        }
+      ]
+    },
+    {
+      "id": "a1-d12-10",
+      "en": "animal",
+      "ru": [
+        "животное"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What is your favourite animal?",
+          "ru": "Какое твоё любимое животное?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "id": "a1-d21",
+  "level": "A1",
+  "day": 21,
+  "island": 3,
+  "title": "Things around us",
+  "topic": "things",
+  "words": [
+    {
+      "id": "a1-d21-01",
+      "en": "phone",
+      "ru": [
+        "телефон"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Where is my phone?",
+          "ru": "Где мой телефон?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d21-02",
+      "en": "computer",
+      "ru": [
+        "компьютер"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I play games on the computer.",
+          "ru": "Я играю в игры на компьютере."
+        }
+      ]
+    },
+    {
+      "id": "a1-d21-03",
+      "en": "car",
+      "ru": [
+        "машина",
+        "автомобиль"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My dad has a red car.",
+          "ru": "У моего папы красная машина."
+        }
+      ]
+    },
+    {
+      "id": "a1-d21-04",
+      "en": "bike",
+      "ru": [
+        "велосипед"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I go to school by bike.",
+          "ru": "Я езжу в школу на велосипеде."
+        }
+      ]
+    },
+    {
+      "id": "a1-d21-05",
+      "en": "bus",
+      "ru": [
+        "автобус"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The bus is late.",
+          "ru": "Автобус опаздывает."
+        }
+      ]
+    },
+    {
+      "id": "a1-d21-06",
+      "en": "train",
+      "ru": [
+        "поезд"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The train is fast.",
+          "ru": "Поезд быстрый."
+        }
+      ]
+    },
+    {
+      "id": "a1-d21-07",
+      "en": "plane",
+      "ru": [
+        "самолёт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We go to Spain by plane.",
+          "ru": "Мы летим в Испанию на самолёте."
+        }
+      ]
+    },
+    {
+      "id": "a1-d21-08",
+      "en": "TV",
+      "ru": [
+        "телевизор"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The TV is in the living room.",
+          "ru": "Телевизор в гостиной."
+        }
+      ]
+    },
+    {
+      "id": "a1-d21-09",
+      "en": "watch",
+      "ru": [
+        "часы (наручные)"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I have a new watch.",
+          "ru": "У меня новые часы."
+        }
+      ]
+    },
+    {
+      "id": "a1-d21-10",
+      "en": "picture",
+      "ru": [
+        "картинка",
+        "картина"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Look at this picture.",
+          "ru": "Посмотри на эту картинку."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "id": "a1-d16",
+  "level": "A1",
+  "day": 16,
+  "island": 2,
+  "title": "Big and small",
+  "topic": "adjectives",
+  "words": [
+    {
+      "id": "a1-d16-01",
+      "en": "big",
+      "ru": [
+        "большой"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "They have a big dog.",
+          "ru": "У них большая собака."
+        }
+      ]
+    },
+    {
+      "id": "a1-d16-02",
+      "en": "small",
+      "ru": [
+        "маленький"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I have a small room.",
+          "ru": "У меня маленькая комната."
+        }
+      ]
+    },
+    {
+      "id": "a1-d16-03",
+      "en": "good",
+      "ru": [
+        "хороший"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This is a good film.",
+          "ru": "Это хороший фильм."
+        }
+      ]
+    },
+    {
+      "id": "a1-d16-04",
+      "en": "bad",
+      "ru": [
+        "плохой"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The weather is bad today.",
+          "ru": "Сегодня плохая погода."
+        }
+      ]
+    },
+    {
+      "id": "a1-d16-05",
+      "en": "new",
+      "ru": [
+        "новый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I have a new phone.",
+          "ru": "У меня новый телефон."
+        }
+      ]
+    },
+    {
+      "id": "a1-d16-06",
+      "en": "old",
+      "ru": [
+        "старый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This is an old house.",
+          "ru": "Это старый дом."
+        }
+      ]
+    },
+    {
+      "id": "a1-d16-07",
+      "en": "hot",
+      "ru": [
+        "горячий",
+        "жаркий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The tea is very hot.",
+          "ru": "Чай очень горячий."
+        }
+      ]
+    },
+    {
+      "id": "a1-d16-08",
+      "en": "cold",
+      "ru": [
+        "холодный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The water is cold.",
+          "ru": "Вода холодная."
+        }
+      ]
+    },
+    {
+      "id": "a1-d16-09",
+      "en": "young",
+      "ru": [
+        "молодой"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "My teacher is young.",
+          "ru": "Мой учитель молодой."
+        }
+      ]
+    },
+    {
+      "id": "a1-d16-10",
+      "en": "beautiful",
+      "ru": [
+        "красивый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "What a beautiful day!",
+          "ru": "Какой прекрасный день!"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "a1-d13",
+  "level": "A1",
+  "day": 13,
+  "island": 2,
+  "title": "Days of the week",
+  "topic": "days",
+  "words": [
+    {
+      "id": "a1-d13-01",
+      "en": "Monday",
+      "ru": [
+        "понедельник"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I work on Monday.",
+          "ru": "Я работаю в понедельник."
+        }
+      ]
+    },
+    {
+      "id": "a1-d13-02",
+      "en": "Tuesday",
+      "ru": [
+        "вторник"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We have English on Tuesday.",
+          "ru": "Во вторник у нас английский."
+        }
+      ]
+    },
+    {
+      "id": "a1-d13-03",
+      "en": "Wednesday",
+      "ru": [
+        "среда"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "See you on Wednesday.",
+          "ru": "Увидимся в среду."
+        }
+      ]
+    },
+    {
+      "id": "a1-d13-04",
+      "en": "Thursday",
+      "ru": [
+        "четверг"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Thursday is a busy day.",
+          "ru": "Четверг — напряжённый день."
+        }
+      ]
+    },
+    {
+      "id": "a1-d13-05",
+      "en": "Friday",
+      "ru": [
+        "пятница"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I love Friday!",
+          "ru": "Я обожаю пятницу!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d13-06",
+      "en": "Saturday",
+      "ru": [
+        "суббота"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "On Saturday we go to the park.",
+          "ru": "В субботу мы идём в парк."
+        }
+      ]
+    },
+    {
+      "id": "a1-d13-07",
+      "en": "Sunday",
+      "ru": [
+        "воскресенье"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Sunday is a quiet day.",
+          "ru": "Воскресенье — спокойный день."
+        }
+      ]
+    },
+    {
+      "id": "a1-d13-08",
+      "en": "day",
+      "ru": [
+        "день"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Have a nice day!",
+          "ru": "Хорошего дня!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d13-09",
+      "en": "week",
+      "ru": [
+        "неделя"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I go to the gym three times a week.",
+          "ru": "Я хожу в спортзал три раза в неделю."
+        }
+      ]
+    },
+    {
+      "id": "a1-d13-10",
+      "en": "today",
+      "ru": [
+        "сегодня"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Today is Monday.",
+          "ru": "Сегодня понедельник."
+        }
+      ]
+    }
+  ]
+}

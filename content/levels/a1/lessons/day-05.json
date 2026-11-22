@@ -1,0 +1,153 @@
+{
+  "id": "a1-d05",
+  "level": "A1",
+  "day": 5,
+  "island": 1,
+  "title": "My family",
+  "topic": "family",
+  "words": [
+    {
+      "id": "a1-d05-01",
+      "en": "mother",
+      "ru": [
+        "мама",
+        "мать"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My mother is a teacher.",
+          "ru": "Моя мама — учительница."
+        }
+      ]
+    },
+    {
+      "id": "a1-d05-02",
+      "en": "father",
+      "ru": [
+        "папа",
+        "отец"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My father works in a shop.",
+          "ru": "Мой папа работает в магазине."
+        }
+      ]
+    },
+    {
+      "id": "a1-d05-03",
+      "en": "brother",
+      "ru": [
+        "брат"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My brother is ten.",
+          "ru": "Моему брату десять."
+        }
+      ]
+    },
+    {
+      "id": "a1-d05-04",
+      "en": "sister",
+      "ru": [
+        "сестра"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My sister likes music.",
+          "ru": "Моя сестра любит музыку."
+        }
+      ]
+    },
+    {
+      "id": "a1-d05-05",
+      "en": "son",
+      "ru": [
+        "сын"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "They have one son.",
+          "ru": "У них один сын."
+        }
+      ]
+    },
+    {
+      "id": "a1-d05-06",
+      "en": "daughter",
+      "ru": [
+        "дочь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Their daughter is a doctor.",
+          "ru": "Их дочь — врач."
+        }
+      ]
+    },
+    {
+      "id": "a1-d05-07",
+      "en": "baby",
+      "ru": [
+        "малыш",
+        "младенец"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The baby is sleeping.",
+          "ru": "Малыш спит."
+        }
+      ]
+    },
+    {
+      "id": "a1-d05-08",
+      "en": "family",
+      "ru": [
+        "семья"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I love my family.",
+          "ru": "Я люблю свою семью."
+        }
+      ]
+    },
+    {
+      "id": "a1-d05-09",
+      "en": "grandfather",
+      "ru": [
+        "дедушка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My grandfather is eighty.",
+          "ru": "Моему дедушке восемьдесят."
+        }
+      ]
+    },
+    {
+      "id": "a1-d05-10",
+      "en": "child",
+      "ru": [
+        "ребёнок"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She is only a child.",
+          "ru": "Она всего лишь ребёнок."
+        }
+      ]
+    }
+  ]
+}

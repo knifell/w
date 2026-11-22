@@ -3,6 +3,7 @@ import type { Exercise } from '../../engine/generators';
 export interface Submit {
   ok: boolean;
   typo?: boolean;
+  typoLimit?: boolean; // опечатка в этом слове уже не первый раз — не засчитана
   correct: string;   // что показать как правильный ответ
   input?: string;    // что ввёл игрок (для «Я ответил верно»)
   wrongIds?: string[]; // слова с ошибками (для пар)

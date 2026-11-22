@@ -98,9 +98,10 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
         <div class={'sheet ' + (fb.ok ? 'ok' : 'bad')}>
           <div class="fb-head" role="status">
             <span class="fb-mark"><Icon name={fb.ok ? 'check' : 'close'} size={24} stroke={3} /></span>
-            {fb.ok ? (fb.typo ? 'Почти! Есть опечатка' : 'Верно!') : 'Не совсем'}
+            {fb.ok ? (fb.typo ? 'Засчитано, но есть опечатка' : 'Верно!') : fb.typoLimit ? 'Снова та же опечатка' : 'Не совсем'}
           </div>
-          {(!fb.ok || fb.typo) && <div class="fb-answer">Правильно: <b>{fb.correct}</b></div>}
+          {(!fb.ok || fb.typo) && <div class="fb-answer">Правильно: <b>{fb.correct}</b>{fb.input && fb.input.trim().toLowerCase() !== fb.correct.toLowerCase() && <> · у тебя: <s>{fb.input.trim()}</s></>}</div>}
+          {fb.typoLimit && <div class="hint">В этом слове опечатка уже не первый раз — теперь засчитывается только точное написание.</div>}
           {example && (
             <div class="ex-sent" onClick={() => speak(example.en)}>
               <span class="speak sm" aria-hidden="true"><Icon name="speaker" size={18} /></span>

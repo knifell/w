@@ -25,6 +25,7 @@ export interface LocalState {
   unlocks: Record<string, number>;         // "A2-2" -> день открытия острова
   storySeen: string[];
   reports: { wordId: string; input: string; at: number }[];
+  typos: Record<string, number>;           // wordId -> сколько раз подряд прощена опечатка
   updatedAt: number;                       // когда состояние менялось (для синхронизации)
 }
 
@@ -33,7 +34,7 @@ export const emptyState = (): LocalState => ({
   level: null, onboarded: false, premium: false, xp: 0, coins: 0,
   energy: ENERGY.max, energyAt: nowMs(), inventory: {}, boosts: {}, done: {}, mem: {},
   streak: { cur: 0, best: 0, last: 0 }, rescue: null, emberWeek: 0, stickers: {}, counters: {},
-  trialsToday: { day: 0, n: 0 }, unlocks: {}, storySeen: [], reports: [], updatedAt: 0,
+  trialsToday: { day: 0, n: 0 }, unlocks: {}, storySeen: [], reports: [], typos: {}, updatedAt: 0,
 });
 
 export function loadState(): LocalState {

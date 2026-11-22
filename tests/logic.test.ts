@@ -11,9 +11,10 @@ import { commitUnlocks, islandState, unlockGap, nextSteps } from '../app/src/gam
 import { refundEnergy, spendEnergy } from '../app/src/game/energy';
 import { nowMs, resetClock, setTrustedStart } from '../app/src/game/clock';
 import { pack as packState, unpack, pushState, pullState, chooseOnStart, startCloudSync, type KV } from '../app/src/api/cloud';
-import { saveState, setSaveListener } from '../app/src/game/local';
+import { saveState, loadState, setSaveListener } from '../app/src/game/local';
 import { ENERGY } from '../app/src/game/config';
-import { checkTyped } from '../app/src/engine/check';
+import { checkTyped, setDictionary } from '../app/src/engine/check';
+import { noteTyping, typoAllowed, TYPO_LIMIT } from '../app/src/game/typos';
 import { buildLesson, buildReview, buildTrial, tokenize } from '../app/src/engine/generators';
 import { vocabOf, knownSentence } from '../app/src/engine/vocab';
 import { canBuy } from '../app/src/game/shop';
@@ -36,11 +37,12 @@ await t('проверка ввода', () => {
   assert.equal(checkTyped('Boarding Pass', ['boarding pass']), 'exact');
   assert.equal(checkTyped('the umbrella', ['umbrella']), 'exact');
   assert.equal(checkTyped('umbrela', ['umbrella']), 'typo');
-  assert.equal(checkTyped('snw', ['snow']), 'wrong');
+  assert.equal(checkTyped('snw', ['snow']), 'typo');     // одна буква — прощаем и в коротких словах
+  assert.equal(checkTyped('sn', ['snow']), 'wrong');
   assert.equal(checkTyped('', ['snow']), 'wrong');
   assert.equal(checkTyped('cafe', ['café']), 'exact');
   assert.equal(checkTyped('привет', ['привет']), 'exact');
-  assert.equal(checkTyped('мой', ['мои']), 'wrong'); // й не превращается в и
+  assert.notEqual(checkTyped('мой', ['мои']), 'exact'); // й не превращается в и
 });
 
 await t('интервалы: бесплатно 11 дней до закрепления, Premium 7', () => {
@@ -308,6 +310,23 @@ await t('облако: не висит без ответа, записи не п
   assert.equal(maxParallel, 1);
   assert.equal((await pullState(slow))?.xp, 2);
   setSaveListener(null);
+});
+
+await t('опечатки: одна буква прощается, но не в 1–2-буквенных словах, не другим словом и не больше 2 раз подряд', () => {
+  setDictionary(['car', 'cat', 'go', 'do', 'house']);
+  assert.equal(checkTyped('hous', ['house']), 'typo');
+  assert.equal(checkTyped('cat', ['car']), 'wrong');          // это другое слово
+  assert.equal(checkTyped('og', ['go']), 'wrong');            // слово из 2 букв — только точно
+  assert.equal(checkTyped('hous', ['house'], false), 'wrong'); // лимит опечаток исчерпан
+  const mem = new Map<string, string>();
+  (globalThis as any).localStorage ??= { getItem: (k: string) => mem.get(k) ?? null, setItem: (k: string, v: string) => mem.set(k, v), removeItem: (k: string) => mem.delete(k) };
+  saveState(emptyState());
+  const id = 'a1-d01-01';
+  for (let i = 0; i < TYPO_LIMIT; i++) { assert.ok(typoAllowed(loadState(), id)); noteTyping(id, 'typo'); }
+  assert.ok(!typoAllowed(loadState(), id));                   // третья опечатка уже не засчитается
+  noteTyping(id, 'exact');
+  assert.ok(typoAllowed(loadState(), id));                    // написал точно — снова можно ошибиться на букву
+  setDictionary([]);
 });
 
 console.log(`\n${n} проверок пройдено`);

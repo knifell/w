@@ -82,3 +82,19 @@ export function buildLesson(lesson: Lesson, levelPool: Word[], seed = Date.now()
 }
 
 export const exerciseWords = (e: Exercise): Word[] => (e.kind === 'pairs' ? e.words : [e.word]);
+
+/** Повторение: по 1 заданию на слово (выбор/ввод чередуются) + пары, если слов ≥5. */
+export function buildReview(words: Word[], pool: Word[], seed = Date.now()): Exercise[] {
+  const r = mulberry32(seed);
+  const ws = shuffle(words, r);
+  const out: Exercise[] = ws.map((w, i) =>
+    i % 3 === 2 ? typeEx(w) : choice(w, pool, r, i % 3 === 0 ? 'ru-en' : 'en-ru'));
+  if (ws.length >= 5) out.splice(Math.min(4, out.length), 0, pairs(shuffle(ws, r).slice(0, 5), r, `rev-${seed}`));
+  return out;
+}
+
+/** Тест уровня: n вопросов «выбери перевод» из случайных слов уровня. */
+export function placementQuestions(pool: Word[], n: number, seed = Date.now()): Exercise[] {
+  const r = mulberry32(seed);
+  return shuffle(pool, r).slice(0, n).map((w, i) => choice(w, pool, r, i % 2 ? 'ru-en' : 'en-ru'));
+}

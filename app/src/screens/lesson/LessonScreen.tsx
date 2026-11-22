@@ -1,24 +1,25 @@
 import { useMemo, useState } from 'preact/hooks';
-import type { Lesson, Word } from '../../types';
-import { buildLesson, exerciseWords, type Exercise } from '../../engine/generators';
+import type { Word } from '../../types';
+import { exerciseWords, type Exercise } from '../../engine/generators';
 import { ask, haptic } from '../../tg/telegram';
 import { speak } from '../../lib/speech';
-import { recordLesson, reportAnswer, type Reward } from '../../game/local';
+import { reportAnswer } from '../../game/local';
 import type { Submit } from './types';
 import { ChoiceView } from './ChoiceView';
 import { PairsView } from './PairsView';
 import { TypeView } from './TypeView';
 import { BuildView } from './BuildView';
 
+export interface SessionOutcome { accuracy: number; seen: Word[]; wrong: Word[] }
 interface Props {
-  lesson: Lesson;
-  pool: Word[];
+  build: () => Exercise[];
   onExit: () => void;
-  onDone: (r: Reward & { accuracy: number; wrongWords: Word[] }) => void;
+  onDone: (o: SessionOutcome) => void;
 }
 
-export function LessonScreen({ lesson, pool, onExit, onDone }: Props) {
-  const initial = useMemo(() => buildLesson(lesson, pool), [lesson]);
+/** Общий экран сессии: урок или повторение. */
+export function LessonScreen({ build, onExit, onDone }: Props) {
+  const initial = useMemo(build, []);
   const [queue, setQueue] = useState<Exercise[]>(initial);
   const [pos, setPos] = useState(0);
   const [solved, setSolved] = useState(0);
@@ -56,9 +57,8 @@ export function LessonScreen({ lesson, pool, onExit, onDone }: Props) {
 
   const finish = () => {
     const accuracy = Math.round((stats.correct / Math.max(1, stats.answers)) * 100);
-    const wrong = [...stats.wrong];
-    const reward = recordLesson({ lessonId: lesson.id, accuracy, seen: lesson.words.map((w) => w.id), wrong });
-    onDone({ ...reward, accuracy, wrongWords: lesson.words.filter((w) => stats.wrong.has(w.id)) });
+    const seen = [...new Map(initial.flatMap(exerciseWords).map((w) => [w.id, w])).values()];
+    onDone({ accuracy, seen, wrong: seen.filter((w) => stats.wrong.has(w.id)) });
   };
 
   const key = `${ex.id}#${pos}`;

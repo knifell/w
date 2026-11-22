@@ -1,0 +1,156 @@
+{
+  "id": "b1-d02",
+  "level": "B1",
+  "day": 2,
+  "island": 1,
+  "title": "At work",
+  "topic": "work",
+  "words": [
+    {
+      "id": "b1-d02-01",
+      "en": "deadline",
+      "ru": [
+        "крайний срок",
+        "дедлайн"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The deadline for the report is Friday.",
+          "ru": "Крайний срок сдачи отчёта — пятница."
+        }
+      ]
+    },
+    {
+      "id": "b1-d02-02",
+      "en": "colleague",
+      "ru": [
+        "коллега"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My colleague helped me with the project.",
+          "ru": "Коллега помог мне с проектом."
+        }
+      ]
+    },
+    {
+      "id": "b1-d02-03",
+      "en": "salary",
+      "ru": [
+        "зарплата"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He asked for a higher salary.",
+          "ru": "Он попросил зарплату повыше."
+        }
+      ]
+    },
+    {
+      "id": "b1-d02-04",
+      "en": "apply",
+      "ru": [
+        "подавать заявление",
+        "подать заявку"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "She decided to apply for the job.",
+          "ru": "Она решила подать заявку на эту работу."
+        }
+      ]
+    },
+    {
+      "id": "b1-d02-05",
+      "en": "experience",
+      "ru": [
+        "опыт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Do you have any experience in sales?",
+          "ru": "У вас есть опыт в продажах?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d02-06",
+      "en": "skill",
+      "ru": [
+        "навык",
+        "умение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Communication is an important skill.",
+          "ru": "Общение — важный навык."
+        }
+      ]
+    },
+    {
+      "id": "b1-d02-07",
+      "en": "interview",
+      "ru": [
+        "собеседование",
+        "интервью"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I have a job interview tomorrow.",
+          "ru": "Завтра у меня собеседование."
+        }
+      ]
+    },
+    {
+      "id": "b1-d02-08",
+      "en": "manage",
+      "ru": [
+        "справляться",
+        "управлять"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Can you manage without help?",
+          "ru": "Ты справишься без помощи?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d02-09",
+      "en": "responsible",
+      "ru": [
+        "ответственный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Who is responsible for this task?",
+          "ru": "Кто отвечает за эту задачу?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d02-10",
+      "en": "quit",
+      "ru": [
+        "уволиться",
+        "бросить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "He quit his job last month.",
+          "ru": "Он уволился в прошлом месяце."
+        }
+      ]
+    }
+  ]
+}

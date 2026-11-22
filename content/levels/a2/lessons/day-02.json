@@ -1,0 +1,153 @@
+{
+  "id": "a2-d02",
+  "level": "A2",
+  "day": 2,
+  "island": 1,
+  "title": "At the shop",
+  "topic": "shopping",
+  "words": [
+    {
+      "id": "a2-d02-01",
+      "en": "price",
+      "ru": [
+        "цена"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The price of this jacket is too high.",
+          "ru": "Цена этой куртки слишком высокая."
+        }
+      ]
+    },
+    {
+      "id": "a2-d02-02",
+      "en": "cheap",
+      "ru": [
+        "дешёвый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "These shoes are cheap but good.",
+          "ru": "Эти туфли дешёвые, но хорошие."
+        }
+      ]
+    },
+    {
+      "id": "a2-d02-03",
+      "en": "expensive",
+      "ru": [
+        "дорогой"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The restaurant is very expensive.",
+          "ru": "Этот ресторан очень дорогой."
+        }
+      ]
+    },
+    {
+      "id": "a2-d02-04",
+      "en": "cash",
+      "ru": [
+        "наличные"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Can I pay in cash?",
+          "ru": "Можно заплатить наличными?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d02-05",
+      "en": "receipt",
+      "ru": [
+        "чек"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Please keep your receipt.",
+          "ru": "Пожалуйста, сохраните чек."
+        }
+      ]
+    },
+    {
+      "id": "a2-d02-06",
+      "en": "size",
+      "ru": [
+        "размер"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Do you have this shirt in a bigger size?",
+          "ru": "У вас есть эта рубашка большего размера?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d02-07",
+      "en": "try on",
+      "ru": [
+        "примерять",
+        "примерить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Can I try on these jeans?",
+          "ru": "Можно примерить эти джинсы?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d02-08",
+      "en": "customer",
+      "ru": [
+        "покупатель",
+        "клиент"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The customer asked for help.",
+          "ru": "Покупатель попросил о помощи."
+        }
+      ]
+    },
+    {
+      "id": "a2-d02-09",
+      "en": "sale",
+      "ru": [
+        "распродажа"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Everything is half price in the sale.",
+          "ru": "На распродаже всё за полцены."
+        }
+      ]
+    },
+    {
+      "id": "a2-d02-10",
+      "en": "bag",
+      "ru": [
+        "сумка",
+        "пакет"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Do you need a bag?",
+          "ru": "Вам нужен пакет?"
+        }
+      ]
+    }
+  ]
+}

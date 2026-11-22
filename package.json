@@ -1,0 +1,20 @@
+{
+  "name": "ostrov-slov",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-content.mjs",
+    "content": "node scripts/build-content.mjs",
+    "dev": "npm run content && vite app",
+    "build": "npm run validate && npm run content && vite build app",
+    "typecheck": "tsc -p app --noEmit"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.6",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21"
+  },
+  "dependencies": {
+    "preact": "^10.29.8"
+  }
+}

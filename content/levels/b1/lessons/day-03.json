@@ -1,0 +1,152 @@
+{
+  "id": "b1-d03",
+  "level": "B1",
+  "day": 3,
+  "island": 1,
+  "title": "How do you feel?",
+  "topic": "feelings",
+  "words": [
+    {
+      "id": "b1-d03-01",
+      "en": "annoyed",
+      "ru": [
+        "раздражённый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I was annoyed by the noise.",
+          "ru": "Меня раздражал шум."
+        }
+      ]
+    },
+    {
+      "id": "b1-d03-02",
+      "en": "confident",
+      "ru": [
+        "уверенный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She feels confident before exams.",
+          "ru": "Перед экзаменами она чувствует себя уверенно."
+        }
+      ]
+    },
+    {
+      "id": "b1-d03-03",
+      "en": "disappointed",
+      "ru": [
+        "разочарованный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We were disappointed with the film.",
+          "ru": "Мы были разочарованы фильмом."
+        }
+      ]
+    },
+    {
+      "id": "b1-d03-04",
+      "en": "embarrassed",
+      "ru": [
+        "смущённый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He was embarrassed when he forgot her name.",
+          "ru": "Ему было неловко, когда он забыл её имя."
+        }
+      ]
+    },
+    {
+      "id": "b1-d03-05",
+      "en": "relieved",
+      "ru": [
+        "испытывающий облегчение"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I was relieved to hear the news.",
+          "ru": "Я с облегчением услышал новости."
+        }
+      ]
+    },
+    {
+      "id": "b1-d03-06",
+      "en": "anxious",
+      "ru": [
+        "тревожный",
+        "обеспокоенный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She gets anxious before flights.",
+          "ru": "Она тревожится перед полётами."
+        }
+      ]
+    },
+    {
+      "id": "b1-d03-07",
+      "en": "grateful",
+      "ru": [
+        "благодарный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I am grateful for your help.",
+          "ru": "Я благодарен за твою помощь."
+        }
+      ]
+    },
+    {
+      "id": "b1-d03-08",
+      "en": "upset",
+      "ru": [
+        "расстроенный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Don't be upset, it's not your fault.",
+          "ru": "Не расстраивайся, это не твоя вина."
+        }
+      ]
+    },
+    {
+      "id": "b1-d03-09",
+      "en": "proud",
+      "ru": [
+        "гордый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Her parents are proud of her.",
+          "ru": "Родители гордятся ею."
+        }
+      ]
+    },
+    {
+      "id": "b1-d03-10",
+      "en": "jealous",
+      "ru": [
+        "ревнивый",
+        "завидующий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He was jealous of his brother's success.",
+          "ru": "Он завидовал успеху брата."
+        }
+      ]
+    }
+  ]
+}

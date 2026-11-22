@@ -1,0 +1,156 @@
+{
+  "id": "b1-d01",
+  "level": "B1",
+  "day": 1,
+  "island": 1,
+  "title": "At the airport",
+  "topic": "travel",
+  "words": [
+    {
+      "id": "b1-d01-01",
+      "en": "boarding pass",
+      "ru": [
+        "посадочный талон"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Please show your boarding pass at the gate.",
+          "ru": "Пожалуйста, покажите посадочный талон у выхода."
+        }
+      ]
+    },
+    {
+      "id": "b1-d01-02",
+      "en": "delay",
+      "ru": [
+        "задержка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There was a two-hour delay because of fog.",
+          "ru": "Из-за тумана была задержка на два часа."
+        }
+      ]
+    },
+    {
+      "id": "b1-d01-03",
+      "en": "luggage",
+      "ru": [
+        "багаж"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My luggage was lost in Paris.",
+          "ru": "Мой багаж потерялся в Париже."
+        }
+      ]
+    },
+    {
+      "id": "b1-d01-04",
+      "en": "departure",
+      "ru": [
+        "отправление",
+        "вылет"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The departure time has changed.",
+          "ru": "Время вылета изменилось."
+        }
+      ]
+    },
+    {
+      "id": "b1-d01-05",
+      "en": "destination",
+      "ru": [
+        "пункт назначения",
+        "место назначения"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Rome is a popular destination in summer.",
+          "ru": "Рим — популярное направление летом."
+        }
+      ]
+    },
+    {
+      "id": "b1-d01-06",
+      "en": "reservation",
+      "ru": [
+        "бронирование",
+        "бронь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I have a reservation for two nights.",
+          "ru": "У меня бронь на две ночи."
+        }
+      ]
+    },
+    {
+      "id": "b1-d01-07",
+      "en": "customs",
+      "ru": [
+        "таможня"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We waited at customs for an hour.",
+          "ru": "Мы ждали на таможне час."
+        }
+      ]
+    },
+    {
+      "id": "b1-d01-08",
+      "en": "journey",
+      "ru": [
+        "поездка",
+        "путешествие"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The journey took six hours.",
+          "ru": "Поездка заняла шесть часов."
+        }
+      ]
+    },
+    {
+      "id": "b1-d01-09",
+      "en": "abroad",
+      "ru": [
+        "за границей",
+        "за границу"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "She wants to study abroad.",
+          "ru": "Она хочет учиться за границей."
+        }
+      ]
+    },
+    {
+      "id": "b1-d01-10",
+      "en": "miss",
+      "ru": [
+        "опоздать на",
+        "пропустить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Hurry up or we will miss the flight.",
+          "ru": "Поторопись, или мы опоздаем на рейс."
+        }
+      ]
+    }
+  ]
+}

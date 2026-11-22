@@ -1,0 +1,156 @@
+{
+  "id": "a2-d03",
+  "level": "A2",
+  "day": 3,
+  "island": 1,
+  "title": "What's the weather like?",
+  "topic": "weather",
+  "words": [
+    {
+      "id": "a2-d03-01",
+      "en": "weather",
+      "ru": [
+        "погода"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The weather is nice today.",
+          "ru": "Сегодня хорошая погода."
+        }
+      ]
+    },
+    {
+      "id": "a2-d03-02",
+      "en": "sunny",
+      "ru": [
+        "солнечный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It was a sunny morning.",
+          "ru": "Было солнечное утро."
+        }
+      ]
+    },
+    {
+      "id": "a2-d03-03",
+      "en": "cloudy",
+      "ru": [
+        "облачный",
+        "пасмурный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It is cloudy and cold.",
+          "ru": "Пасмурно и холодно."
+        }
+      ]
+    },
+    {
+      "id": "a2-d03-04",
+      "en": "rain",
+      "ru": [
+        "дождь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Take an umbrella, there will be rain.",
+          "ru": "Возьми зонт, будет дождь."
+        }
+      ]
+    },
+    {
+      "id": "a2-d03-05",
+      "en": "umbrella",
+      "ru": [
+        "зонт",
+        "зонтик"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I forgot my umbrella at home.",
+          "ru": "Я забыл зонт дома."
+        }
+      ]
+    },
+    {
+      "id": "a2-d03-06",
+      "en": "snow",
+      "ru": [
+        "снег"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The children love playing in the snow.",
+          "ru": "Дети любят играть в снегу."
+        }
+      ]
+    },
+    {
+      "id": "a2-d03-07",
+      "en": "windy",
+      "ru": [
+        "ветреный",
+        "ветрено"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It is too windy to ride a bike.",
+          "ru": "Слишком ветрено, чтобы кататься на велосипеде."
+        }
+      ]
+    },
+    {
+      "id": "a2-d03-08",
+      "en": "warm",
+      "ru": [
+        "тёплый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Wear a warm coat.",
+          "ru": "Надень тёплое пальто."
+        }
+      ]
+    },
+    {
+      "id": "a2-d03-09",
+      "en": "forecast",
+      "ru": [
+        "прогноз"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The forecast says it will be cold tomorrow.",
+          "ru": "Прогноз говорит, что завтра будет холодно."
+        }
+      ]
+    },
+    {
+      "id": "a2-d03-10",
+      "en": "degree",
+      "ru": [
+        "градус"
+      ],
+      "pos": "noun",
+      "forms": [
+        "degrees"
+      ],
+      "examples": [
+        {
+          "en": "It is twenty degrees outside.",
+          "ru": "На улице двадцать градусов."
+        }
+      ]
+    }
+  ]
+}

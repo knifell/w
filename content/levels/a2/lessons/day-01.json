@@ -1,0 +1,156 @@
+{
+  "id": "a2-d01",
+  "level": "A2",
+  "day": 1,
+  "island": 1,
+  "title": "Daily routine",
+  "topic": "routine",
+  "words": [
+    {
+      "id": "a2-d01-01",
+      "en": "wake up",
+      "ru": [
+        "просыпаться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I wake up at seven every day.",
+          "ru": "Я просыпаюсь в семь каждый день."
+        }
+      ]
+    },
+    {
+      "id": "a2-d01-02",
+      "en": "get dressed",
+      "ru": [
+        "одеваться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "gets dressed"
+      ],
+      "examples": [
+        {
+          "en": "She gets dressed quickly in the morning.",
+          "ru": "Утром она быстро одевается."
+        }
+      ]
+    },
+    {
+      "id": "a2-d01-03",
+      "en": "breakfast",
+      "ru": [
+        "завтрак"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We have breakfast in the kitchen.",
+          "ru": "Мы завтракаем на кухне."
+        }
+      ]
+    },
+    {
+      "id": "a2-d01-04",
+      "en": "usually",
+      "ru": [
+        "обычно"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "I usually take the bus to work.",
+          "ru": "Обычно я езжу на работу на автобусе."
+        }
+      ]
+    },
+    {
+      "id": "a2-d01-05",
+      "en": "shower",
+      "ru": [
+        "душ"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He takes a shower after the gym.",
+          "ru": "Он принимает душ после спортзала."
+        }
+      ]
+    },
+    {
+      "id": "a2-d01-06",
+      "en": "early",
+      "ru": [
+        "рано"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "My father gets up early.",
+          "ru": "Мой отец встаёт рано."
+        }
+      ]
+    },
+    {
+      "id": "a2-d01-07",
+      "en": "late",
+      "ru": [
+        "поздно",
+        "опоздавший"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Don't be late for school!",
+          "ru": "Не опаздывай в школу!"
+        }
+      ]
+    },
+    {
+      "id": "a2-d01-08",
+      "en": "tired",
+      "ru": [
+        "уставший",
+        "усталый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I am tired after a long day.",
+          "ru": "Я устал после долгого дня."
+        }
+      ]
+    },
+    {
+      "id": "a2-d01-09",
+      "en": "hurry",
+      "ru": [
+        "спешить",
+        "торопиться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We need to hurry, the train leaves soon.",
+          "ru": "Нам нужно спешить, поезд скоро уходит."
+        }
+      ]
+    },
+    {
+      "id": "a2-d01-10",
+      "en": "lunch",
+      "ru": [
+        "обед"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Let's have lunch together.",
+          "ru": "Давай пообедаем вместе."
+        }
+      ]
+    }
+  ]
+}

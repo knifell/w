@@ -3,147 +3,150 @@
   "level": "A1",
   "day": 32,
   "island": 4,
-  "title": "On the table",
-  "topic": "tableware",
+  "title": "Jobs",
+  "topic": "jobs",
   "words": [
     {
       "id": "a1-d32-01",
-      "en": "plate",
+      "en": "pilot",
       "ru": [
-        "тарелка"
+        "пилот",
+        "лётчик"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Put the cake on a plate.",
-          "ru": "Положи торт на тарелку."
+          "en": "My father is a pilot.",
+          "ru": "Мой папа — пилот."
         }
       ]
     },
     {
       "id": "a1-d32-02",
-      "en": "cup",
+      "en": "singer",
       "ru": [
-        "чашка"
+        "певец",
+        "певица"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Can I have a cup of tea?",
-          "ru": "Можно чашку чая?"
+          "en": "She is a good singer.",
+          "ru": "Она хорошая певица."
         }
       ]
     },
     {
       "id": "a1-d32-03",
-      "en": "spoon",
+      "en": "artist",
       "ru": [
-        "ложка"
+        "художник"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I need a spoon for my soup.",
-          "ru": "Мне нужна ложка для супа."
+          "en": "The artist draws the sea.",
+          "ru": "Художник рисует море."
         }
       ]
     },
     {
       "id": "a1-d32-04",
-      "en": "fork",
+      "en": "worker",
       "ru": [
-        "вилка"
+        "рабочий",
+        "работник"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Eat with a fork.",
-          "ru": "Ешь вилкой."
+          "en": "He is a good worker.",
+          "ru": "Он хороший работник."
         }
       ]
     },
     {
       "id": "a1-d32-05",
-      "en": "knife",
+      "en": "factory",
       "ru": [
-        "нож"
+        "фабрика",
+        "завод"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "This knife is sharp.",
-          "ru": "Этот нож острый."
+          "en": "My father works in a factory.",
+          "ru": "Мой папа работает на заводе."
         }
       ]
     },
     {
       "id": "a1-d32-06",
-      "en": "bowl",
+      "en": "farm",
       "ru": [
-        "миска"
+        "ферма"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "A bowl of rice, please.",
-          "ru": "Миску риса, пожалуйста."
+          "en": "They live on a farm.",
+          "ru": "Они живут на ферме."
         }
       ]
     },
     {
       "id": "a1-d32-07",
-      "en": "bottle",
+      "en": "police officer",
       "ru": [
-        "бутылка"
+        "полицейский"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "A bottle of water, please.",
-          "ru": "Бутылку воды, пожалуйста."
+          "en": "The police officer helped me.",
+          "ru": "Полицейский мне помог."
         }
       ]
     },
     {
       "id": "a1-d32-08",
-      "en": "butter",
+      "en": "hairdresser",
       "ru": [
-        "сливочное масло"
+        "парикмахер"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I like bread with butter.",
-          "ru": "Я люблю хлеб с маслом."
+          "en": "My mum is a hairdresser.",
+          "ru": "Моя мама — парикмахер."
         }
       ]
     },
     {
       "id": "a1-d32-09",
-      "en": "jam",
+      "en": "postman",
       "ru": [
-        "варенье",
-        "джем"
+        "почтальон"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "My grandma makes jam.",
-          "ru": "Бабушка варит варенье."
+          "en": "The postman comes at nine.",
+          "ru": "Почтальон приходит в девять."
         }
       ]
     },
     {
       "id": "a1-d32-10",
-      "en": "honey",
+      "en": "businessman",
       "ru": [
-        "мёд"
+        "бизнесмен"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Bears love honey.",
-          "ru": "Медведи любят мёд."
+          "en": "He is a rich businessman.",
+          "ru": "Он богатый бизнесмен."
         }
       ]
     }

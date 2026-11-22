@@ -3,147 +3,146 @@
   "level": "A1",
   "day": 37,
   "island": 4,
-  "title": "Transport",
-  "topic": "transport",
+  "title": "Months 1",
+  "topic": "months",
   "words": [
     {
       "id": "a1-d37-01",
-      "en": "taxi",
+      "en": "January",
       "ru": [
-        "такси"
+        "январь"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Let's take a taxi.",
-          "ru": "Давай возьмём такси."
+          "en": "It's cold in January.",
+          "ru": "В январе холодно."
         }
       ]
     },
     {
       "id": "a1-d37-02",
-      "en": "motorbike",
+      "en": "February",
       "ru": [
-        "мотоцикл"
+        "февраль"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "My uncle has a motorbike.",
-          "ru": "У моего дяди есть мотоцикл."
+          "en": "February is cold.",
+          "ru": "В феврале холодно."
         }
       ]
     },
     {
       "id": "a1-d37-03",
-      "en": "tram",
+      "en": "March",
       "ru": [
-        "трамвай"
+        "март"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I go to work by tram.",
-          "ru": "Я езжу на работу на трамвае."
+          "en": "We go to the zoo in March.",
+          "ru": "В марте мы идём в зоопарк."
         }
       ]
     },
     {
       "id": "a1-d37-04",
-      "en": "lorry",
+      "en": "April",
       "ru": [
-        "грузовик"
+        "апрель"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "A big lorry is on the road.",
-          "ru": "На дороге большой грузовик."
+          "en": "April is often rainy.",
+          "ru": "В апреле часто идут дожди."
         }
       ]
     },
     {
       "id": "a1-d37-05",
-      "en": "helicopter",
+      "en": "May",
       "ru": [
-        "вертолёт"
+        "май"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "A helicopter is in the sky.",
-          "ru": "В небе вертолёт."
+          "en": "There are many flowers in May.",
+          "ru": "В мае много цветов."
         }
       ]
     },
     {
       "id": "a1-d37-06",
-      "en": "scooter",
+      "en": "June",
       "ru": [
-        "самокат",
-        "скутер"
+        "июнь"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The boy has a red scooter.",
-          "ru": "У мальчика красный самокат."
+          "en": "We have no school in June.",
+          "ru": "В июне у нас нет школы."
         }
       ]
     },
     {
       "id": "a1-d37-07",
-      "en": "ride",
+      "en": "July",
       "ru": [
-        "ездить (верхом, на велосипеде)"
+        "июль"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "I ride my bike every day.",
-          "ru": "Я катаюсь на велосипеде каждый день."
+          "en": "July is very hot.",
+          "ru": "Июль очень жаркий."
         }
       ]
     },
     {
       "id": "a1-d37-08",
-      "en": "drive",
+      "en": "August",
       "ru": [
-        "водить (машину)"
+        "август"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "My mum can drive.",
-          "ru": "Моя мама умеет водить."
+          "en": "We go to the sea in August.",
+          "ru": "В августе мы едем на море."
         }
       ]
     },
     {
       "id": "a1-d37-09",
-      "en": "fly",
+      "en": "September",
       "ru": [
-        "летать"
+        "сентябрь"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Birds can fly.",
-          "ru": "Птицы умеют летать."
+          "en": "We go to school in September.",
+          "ru": "В сентябре мы идём в школу."
         }
       ]
     },
     {
       "id": "a1-d37-10",
-      "en": "road",
+      "en": "October",
       "ru": [
-        "дорога"
+        "октябрь"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Be careful on the road.",
-          "ru": "Будь осторожен на дороге."
+          "en": "The trees are yellow in October.",
+          "ru": "В октябре деревья жёлтые."
         }
       ]
     }

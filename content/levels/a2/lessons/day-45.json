@@ -43,8 +43,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "A triangle has three sides.",
-          "ru": "У треугольника три стороны."
+          "en": "Draw a triangle.",
+          "ru": "Нарисуй треугольник."
         }
       ]
     },
@@ -131,8 +131,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "The kitten is tiny.",
-          "ru": "Котёнок крошечный."
+          "en": "The mouse is tiny.",
+          "ru": "Мышка крошечная."
         }
       ]
     },

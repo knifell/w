@@ -3,154 +3,177 @@
   "level": "A1",
   "day": 23,
   "island": 3,
-  "title": "How do you feel?",
-  "topic": "feelings",
+  "title": "Outside",
+  "topic": "outdoors",
   "words": [
     {
       "id": "a1-d23-01",
-      "en": "love",
+      "en": "sun",
       "ru": [
-        "любить"
+        "солнце"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "I love my dog.",
-          "ru": "Я люблю свою собаку."
+          "en": "The sun is hot today.",
+          "ru": "Сегодня солнце жаркое."
         }
       ]
     },
     {
       "id": "a1-d23-02",
-      "en": "hate",
+      "en": "moon",
       "ru": [
-        "ненавидеть"
+        "луна"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "I hate rainy days.",
-          "ru": "Я ненавижу дождливые дни."
+          "en": "The moon is big at night.",
+          "ru": "Ночью луна большая."
         }
       ]
     },
     {
       "id": "a1-d23-03",
-      "en": "well",
+      "en": "tree",
       "ru": [
-        "хорошо",
-        "здоров"
+        "дерево"
       ],
-      "pos": "adverb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "I'm very well, thank you.",
-          "ru": "У меня всё хорошо, спасибо."
+          "en": "There is a cat in the tree.",
+          "ru": "На дереве кошка."
         }
       ]
     },
     {
       "id": "a1-d23-04",
-      "en": "great",
+      "en": "flower",
       "ru": [
-        "отличный",
-        "замечательный"
+        "цветок"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "That's a great idea!",
-          "ru": "Это отличная идея!"
+          "en": "This flower is red.",
+          "ru": "Этот цветок красный."
         }
       ]
     },
     {
       "id": "a1-d23-05",
-      "en": "feel",
+      "en": "sea",
       "ru": [
-        "чувствовать"
+        "море"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "I feel good today.",
-          "ru": "Сегодня я чувствую себя хорошо."
+          "en": "I love the sea.",
+          "ru": "Я обожаю море."
         }
       ]
     },
     {
       "id": "a1-d23-06",
-      "en": "cry",
+      "en": "wind",
       "ru": [
-        "плакать"
+        "ветер"
       ],
-      "pos": "verb",
-      "forms": [
-        "crying"
-      ],
+      "pos": "noun",
       "examples": [
         {
-          "en": "Why is the baby crying?",
-          "ru": "Почему малыш плачет?"
+          "en": "The wind is cold.",
+          "ru": "Ветер холодный."
         }
       ]
     },
     {
       "id": "a1-d23-07",
-      "en": "hug",
+      "en": "cloud",
       "ru": [
-        "обнимать"
+        "облако"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Come here, let me hug you.",
-          "ru": "Иди сюда, я тебя обниму."
+          "en": "There is a big white cloud.",
+          "ru": "Вон большое белое облако."
         }
       ]
     },
     {
       "id": "a1-d23-08",
-      "en": "kiss",
+      "en": "grass",
       "ru": [
-        "целовать"
+        "трава"
       ],
-      "pos": "verb",
-      "forms": [
-        "kissed"
-      ],
+      "pos": "noun",
       "examples": [
         {
-          "en": "She kissed her son.",
-          "ru": "Она поцеловала сына."
+          "en": "Don't walk on the grass.",
+          "ru": "Не ходи по траве."
         }
       ]
     },
     {
       "id": "a1-d23-09",
-      "en": "sleepy",
+      "en": "outside",
       "ru": [
-        "сонный"
+        "снаружи",
+        "на улице"
       ],
-      "pos": "adjective",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "I'm sleepy, I want to go to bed.",
-          "ru": "Я сонный, хочу спать."
+          "en": "Let's play outside.",
+          "ru": "Давай поиграем на улице."
         }
       ]
     },
     {
       "id": "a1-d23-10",
-      "en": "glad",
+      "en": "inside",
       "ru": [
-        "радый"
+        "внутри",
+        "в доме"
       ],
-      "pos": "adjective",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "I'm glad to see you.",
-          "ru": "Я рад тебя видеть."
+          "en": "It is cold outside, but hot inside.",
+          "ru": "Снаружи холодно, а внутри жарко."
+        }
+      ]
+    },
+    {
+      "id": "a1-d23-11",
+      "en": "seaside",
+      "ru": [
+        "морское побережье",
+        "взморье"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Let's go to the seaside!",
+          "ru": "Поехали на море!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d23-12",
+      "en": "shell",
+      "ru": [
+        "ракушка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Look, a beautiful shell!",
+          "ru": "Смотри, красивая ракушка!"
         }
       ]
     }

@@ -3,147 +3,184 @@
   "level": "A1",
   "day": 3,
   "island": 1,
-  "title": "More numbers",
-  "topic": "numbers 2",
+  "title": "This and that",
+  "topic": "this and that",
   "words": [
     {
       "id": "a1-d03-01",
-      "en": "eleven",
+      "en": "please",
       "ru": [
-        "одиннадцать"
+        "пожалуйста"
       ],
-      "pos": "other",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "My son is eleven.",
-          "ru": "Моему сыну одиннадцать."
+          "en": "Tom, please!",
+          "ru": "Том, пожалуйста!"
         }
       ]
     },
     {
       "id": "a1-d03-02",
-      "en": "twelve",
+      "en": "thank you",
       "ru": [
-        "двенадцать"
+        "спасибо"
       ],
-      "pos": "other",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "Lunch is at twelve.",
-          "ru": "Обед в двенадцать."
+          "en": "Thank you, Anna!",
+          "ru": "Спасибо, Анна!"
         }
       ]
     },
     {
       "id": "a1-d03-03",
-      "en": "twenty",
+      "en": "sorry",
       "ru": [
-        "двадцать"
+        "извините",
+        "простите"
       ],
-      "pos": "other",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "I have twenty books.",
-          "ru": "У меня двадцать книг."
+          "en": "Sorry, I am not Max.",
+          "ru": "Извините, я не Макс."
         }
       ]
     },
     {
       "id": "a1-d03-04",
-      "en": "thirty",
+      "en": "this",
       "ru": [
-        "тридцать"
+        "этот",
+        "это"
       ],
-      "pos": "other",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "My mother is thirty.",
-          "ru": "Моей маме тридцать."
+          "en": "This is my friend Max.",
+          "ru": "Это мой друг Макс."
         }
       ]
     },
     {
       "id": "a1-d03-05",
-      "en": "hundred",
+      "en": "that",
       "ru": [
-        "сто"
+        "тот",
+        "то"
       ],
-      "pos": "other",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "A hundred people came.",
-          "ru": "Пришло сто человек."
+          "en": "That is my friend.",
+          "ru": "Это мой друг."
         }
       ]
     },
     {
       "id": "a1-d03-06",
-      "en": "number",
+      "en": "what",
       "ru": [
-        "номер",
-        "число"
+        "что",
+        "какой"
       ],
-      "pos": "noun",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "What is your phone number?",
-          "ru": "Какой у тебя номер телефона?"
+          "en": "What is your name?",
+          "ru": "Как тебя зовут?"
         }
       ]
     },
     {
       "id": "a1-d03-07",
-      "en": "first",
+      "en": "it",
       "ru": [
-        "первый"
+        "оно"
       ],
-      "pos": "adjective",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "This is my first day here.",
-          "ru": "Это мой первый день здесь."
+          "en": "What is it?",
+          "ru": "Что это?"
         }
       ]
     },
     {
       "id": "a1-d03-08",
-      "en": "second",
+      "en": "the",
       "ru": [
-        "второй"
+        "определённый артикль (этот самый)"
       ],
-      "pos": "adjective",
+      "pos": "other",
       "examples": [
         {
-          "en": "We live on the second floor.",
-          "ru": "Мы живём на втором этаже."
+          "en": "The man is my friend.",
+          "ru": "Этот мужчина — мой друг."
         }
       ]
     },
     {
       "id": "a1-d03-09",
-      "en": "third",
+      "en": "man",
       "ru": [
-        "третий"
+        "мужчина"
       ],
-      "pos": "adjective",
+      "pos": "noun",
+      "forms": [
+        "men"
+      ],
       "examples": [
         {
-          "en": "It's her third visit.",
-          "ru": "Это её третий визит."
+          "en": "That man is Tom.",
+          "ru": "Тот мужчина — Том."
         }
       ]
     },
     {
       "id": "a1-d03-10",
-      "en": "how many",
+      "en": "woman",
       "ru": [
-        "сколько"
+        "женщина"
       ],
-      "pos": "phrase",
+      "pos": "noun",
+      "forms": [
+        "women"
+      ],
       "examples": [
         {
-          "en": "How many brothers do you have?",
-          "ru": "Сколько у тебя братьев?"
+          "en": "This woman is nice.",
+          "ru": "Эта женщина милая."
+        }
+      ]
+    },
+    {
+      "id": "a1-d03-11",
+      "en": "boy",
+      "ru": [
+        "мальчик"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The boy is Ben.",
+          "ru": "Этот мальчик — Бен."
+        }
+      ]
+    },
+    {
+      "id": "a1-d03-12",
+      "en": "girl",
+      "ru": [
+        "девочка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Is that girl your friend?",
+          "ru": "Та девочка — твоя подруга?"
         }
       ]
     }

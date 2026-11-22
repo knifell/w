@@ -3,148 +3,182 @@
   "level": "A1",
   "day": 40,
   "island": 4,
-  "title": "Describing things",
-  "topic": "adjectives 2",
+  "title": "Let's play!",
+  "topic": "sports",
   "words": [
     {
       "id": "a1-d40-01",
-      "en": "thin",
+      "en": "basketball",
       "ru": [
-        "худой",
-        "тонкий"
+        "баскетбол"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "The cat is very thin.",
-          "ru": "Кошка очень худая."
+          "en": "He plays basketball at school.",
+          "ru": "Он играет в баскетбол в школе."
         }
       ]
     },
     {
       "id": "a1-d40-02",
-      "en": "strong",
+      "en": "volleyball",
       "ru": [
-        "сильный"
+        "волейбол"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "My dad is very strong.",
-          "ru": "Мой папа очень сильный."
+          "en": "We play volleyball at the seaside.",
+          "ru": "Мы играем в волейбол на море."
         }
       ]
     },
     {
       "id": "a1-d40-03",
-      "en": "weak",
+      "en": "ski",
       "ru": [
-        "слабый"
+        "кататься на лыжах"
       ],
-      "pos": "adjective",
+      "pos": "verb",
       "examples": [
         {
-          "en": "I feel weak today.",
-          "ru": "Сегодня я чувствую слабость."
+          "en": "Can you ski?",
+          "ru": "Ты умеешь кататься на лыжах?"
         }
       ]
     },
     {
       "id": "a1-d40-04",
-      "en": "cute",
+      "en": "skate",
       "ru": [
-        "милый",
-        "симпатичный"
+        "кататься на коньках"
       ],
-      "pos": "adjective",
+      "pos": "verb",
       "examples": [
         {
-          "en": "What a cute puppy!",
-          "ru": "Какой милый щенок!"
+          "en": "Can you skate?",
+          "ru": "Ты умеешь кататься на коньках?"
         }
       ]
     },
     {
       "id": "a1-d40-05",
-      "en": "dangerous",
+      "en": "jump",
       "ru": [
-        "опасный"
+        "прыгать"
       ],
-      "pos": "adjective",
+      "pos": "verb",
       "examples": [
         {
-          "en": "Sharks are dangerous.",
-          "ru": "Акулы опасны."
+          "en": "Dogs love to jump.",
+          "ru": "Собаки любят прыгать."
         }
       ]
     },
     {
       "id": "a1-d40-06",
-      "en": "safe",
+      "en": "throw",
       "ru": [
-        "безопасный"
+        "бросать"
       ],
-      "pos": "adjective",
+      "pos": "verb",
+      "forms": [
+        "threw"
+      ],
       "examples": [
         {
-          "en": "This park is safe for children.",
-          "ru": "Этот парк безопасен для детей."
+          "en": "Throw the ball to me.",
+          "ru": "Брось мне мяч."
         }
       ]
     },
     {
       "id": "a1-d40-07",
-      "en": "sweet",
+      "en": "catch",
       "ru": [
-        "сладкий"
+        "ловить"
       ],
-      "pos": "adjective",
+      "pos": "verb",
+      "forms": [
+        "caught"
+      ],
       "examples": [
         {
-          "en": "This cake is too sweet.",
-          "ru": "Этот торт слишком сладкий."
+          "en": "Catch the ball!",
+          "ru": "Лови мяч!"
         }
       ]
     },
     {
       "id": "a1-d40-08",
-      "en": "sour",
+      "en": "kick",
       "ru": [
-        "кислый"
+        "пинать",
+        "бить ногой"
       ],
-      "pos": "adjective",
+      "pos": "verb",
       "examples": [
         {
-          "en": "Lemons are sour.",
-          "ru": "Лимоны кислые."
+          "en": "Kick the ball to me!",
+          "ru": "Пни мне мяч!"
         }
       ]
     },
     {
       "id": "a1-d40-09",
-      "en": "salty",
+      "en": "hockey",
       "ru": [
-        "солёный"
+        "хоккей"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "The soup is too salty.",
-          "ru": "Суп слишком солёный."
+          "en": "My brother plays hockey in Canada.",
+          "ru": "Мой брат играет в хоккей в Канаде."
         }
       ]
     },
     {
       "id": "a1-d40-10",
-      "en": "sick",
+      "en": "bat",
       "ru": [
-        "больной"
+        "бита",
+        "летучая мышь"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "I feel sick.",
-          "ru": "Мне плохо."
+          "en": "I play with a bat and a ball.",
+          "ru": "Я играю битой и мячом."
+        }
+      ]
+    },
+    {
+      "id": "a1-d40-11",
+      "en": "kite",
+      "ru": [
+        "воздушный змей"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Let's fly a kite.",
+          "ru": "Давай запустим воздушного змея."
+        }
+      ]
+    },
+    {
+      "id": "a1-d40-12",
+      "en": "swing",
+      "ru": [
+        "качели"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The girl is on the swing.",
+          "ru": "Девочка на качелях."
         }
       ]
     }

@@ -3,148 +3,149 @@
   "level": "A1",
   "day": 56,
   "island": 6,
-  "title": "Who works where?",
-  "topic": "jobs 2",
+  "title": "How is it?",
+  "topic": "adjectives 3",
   "words": [
     {
       "id": "a1-d56-01",
-      "en": "vet",
+      "en": "interesting",
       "ru": [
-        "ветеринар"
+        "интересный"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "The vet helped my cat.",
-          "ru": "Ветеринар помог моей кошке."
+          "en": "This book is interesting.",
+          "ru": "Эта книга интересная."
         }
       ]
     },
     {
       "id": "a1-d56-02",
-      "en": "dancer",
+      "en": "boring",
       "ru": [
-        "танцор",
-        "танцовщица"
+        "скучный"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "She wants to be a dancer.",
-          "ru": "Она хочет стать танцовщицей."
+          "en": "The film was boring.",
+          "ru": "Фильм был скучный."
         }
       ]
     },
     {
       "id": "a1-d56-03",
-      "en": "baker",
+      "en": "amazing",
       "ru": [
-        "пекарь"
+        "потрясающий"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "The baker makes bread.",
-          "ru": "Пекарь печёт хлеб."
+          "en": "The film is amazing!",
+          "ru": "Фильм потрясающий!"
         }
       ]
     },
     {
       "id": "a1-d56-04",
-      "en": "builder",
+      "en": "terrible",
       "ru": [
-        "строитель"
+        "ужасный"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "My uncle is a builder.",
-          "ru": "Мой дядя — строитель."
+          "en": "The food here is terrible.",
+          "ru": "Еда здесь ужасная."
         }
       ]
     },
     {
       "id": "a1-d56-05",
-      "en": "cleaner",
+      "en": "lovely",
       "ru": [
-        "уборщик"
+        "прекрасный",
+        "милый"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "The cleaner comes on Fridays.",
-          "ru": "Уборщица приходит по пятницам."
+          "en": "What a lovely day!",
+          "ru": "Какой прекрасный день!"
         }
       ]
     },
     {
       "id": "a1-d56-06",
-      "en": "manager",
+      "en": "horrible",
       "ru": [
-        "менеджер",
-        "управляющий"
+        "отвратительный"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "I want to speak to the manager.",
-          "ru": "Я хочу поговорить с управляющим."
+          "en": "This soup is horrible.",
+          "ru": "Этот суп отвратительный."
         }
       ]
     },
     {
       "id": "a1-d56-07",
-      "en": "secretary",
+      "en": "fantastic",
       "ru": [
-        "секретарь"
+        "фантастический",
+        "отличный"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "The secretary answers the phone.",
-          "ru": "Секретарь отвечает на звонки."
+          "en": "You look fantastic!",
+          "ru": "Ты отлично выглядишь!"
         }
       ]
     },
     {
       "id": "a1-d56-08",
-      "en": "mechanic",
+      "en": "perfect",
       "ru": [
-        "механик"
+        "идеальный"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "The mechanic fixed our car.",
-          "ru": "Механик починил нашу машину."
+          "en": "This is the perfect day!",
+          "ru": "Это идеальный день!"
         }
       ]
     },
     {
       "id": "a1-d56-09",
-      "en": "writer",
+      "en": "important",
       "ru": [
-        "писатель"
+        "важный"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "She is a famous writer.",
-          "ru": "Она известная писательница."
+          "en": "This is very important.",
+          "ru": "Это очень важно."
         }
       ]
     },
     {
       "id": "a1-d56-10",
-      "en": "photographer",
+      "en": "different",
       "ru": [
-        "фотограф"
+        "другой",
+        "разный"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "The photographer took our picture.",
-          "ru": "Фотограф сфотографировал нас."
+          "en": "We are very different.",
+          "ru": "Мы очень разные."
         }
       ]
     }

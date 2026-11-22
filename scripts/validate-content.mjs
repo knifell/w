@@ -4,6 +4,7 @@
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { CORE, NAMES, tokens, knownToken } from '../app/src/engine/vocab.ts';
 
 const ROOT = process.env.CONTENT_DIR || join(dirname(fileURLToPath(import.meta.url)), '..', 'content', 'levels');
 const LEVELS = ['A1', 'A2', 'B1', 'B2'];
@@ -21,6 +22,24 @@ const read = (f) => {
 };
 
 const allIds = new Map();     // id -> file
+const allExamples = new Map(); // норм. текст примера -> id
+
+// Словарь «изучено к уроку»: служебные слова (CORE), которые курс нигде не проходит отдельным словом,
+// имена, а также слова всех предыдущих уроков (этого уровня и ниже) и текущего урока, с формами.
+const lessonFiles = (dir) => {
+  const d = join(ROOT, dir, 'lessons');
+  return existsSync(d) ? readdirSync(d).filter((f) => /^day-\d+\.json$/.test(f)).sort().map((f) => join(d, f)) : [];
+};
+const taughtSingles = new Set();
+for (const dir of readdirSync(ROOT).sort()) for (const f of lessonFiles(dir)) {
+  try {
+    for (const w of JSON.parse(readFileSync(f, 'utf8')).words ?? []) {
+      const t = tokens(w.en ?? '');
+      if (t.length === 1) taughtSingles.add(t[0]);
+    }
+  } catch { /* ошибку JSON покажет основной проход */ }
+}
+const known = new Set([...[...CORE].filter((w) => !taughtSingles.has(w)), ...NAMES]);
 const enByLevel = new Map();  // норм. en -> {level, file}
 
 for (const dir of readdirSync(ROOT).sort()) {
@@ -68,6 +87,8 @@ for (const dir of readdirSync(ROOT).sort()) {
       else if (ls.island !== isl.n) err(f, `island ${ls.island}, по level.json должен быть ${isl.n}`);
     }
     if (!Array.isArray(ls.words)) { err(f, 'нет words'); continue; }
+    for (const w of ls.words) for (const t of [w?.en, ...(w?.forms ?? [])]) if (str(t)) tokens(t).forEach((x) => known.add(x));
+    const ruInLesson = new Map(); // перевод -> слово
     if (ls.words.length < MIN_WORDS || ls.words.length > MAX_WORDS)
       err(f, `слов ${ls.words.length}, нужно ${MIN_WORDS}–${MAX_WORDS}`);
 
@@ -83,11 +104,21 @@ for (const dir of readdirSync(ROOT).sort()) {
       if (!str(w.en)) err(at, 'пустой en');
       if (!Array.isArray(w.ru) || !w.ru.length || !w.ru.every(str)) err(at, 'ru должен быть непустым массивом строк');
       else if (new Set(w.ru.map(norm)).size !== w.ru.length) err(at, 'дубли в ru');
+      else for (const r of w.ru) {
+        const k = norm(r).replace(/ё/g, 'е');
+        if (ruInLesson.has(k)) err(at, `перевод «${r}» совпадает со словом «${ruInLesson.get(k)}» в этом уроке`);
+        else ruInLesson.set(k, w.en);
+      }
       if (!POS.includes(w.pos)) err(at, `pos "${w.pos}" не из списка`);
       if (w.forms !== undefined && (!Array.isArray(w.forms) || !w.forms.every(str))) err(at, 'forms должен быть массивом строк');
       if (!Array.isArray(w.examples) || w.examples.length < 1 || w.examples.length > 2) err(at, 'нужно 1–2 примера');
       else w.examples.forEach((ex, j) => {
         if (!str(ex?.en) || !str(ex?.ru)) return err(at, `пример ${j + 1}: пустое en/ru`);
+        const unknown = tokens(ex.en).filter((t) => !knownToken(t, known));
+        if (unknown.length) err(at, `пример ${j + 1}: неизученные слова: ${[...new Set(unknown)].join(', ')}`);
+        const key = norm(ex.en).replace(/[^a-z' ]/g, '');
+        if (allExamples.has(key)) err(at, `пример ${j + 1} повторяет пример ${allExamples.get(key)}`);
+        else allExamples.set(key, w.id);
         const variants = [w.en, ...(w.forms || [])].map(norm);
         if (str(w.en) && !variants.some((v) => norm(ex.en).includes(v)))
           warn(at, `пример ${j + 1} не содержит слово (добавь forms)`);

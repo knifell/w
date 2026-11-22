@@ -45,8 +45,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "She made a compelling case.",
-          "ru": "Она привела убедительные доводы."
+          "en": "She made a compelling argument.",
+          "ru": "Она привела убедительный довод."
         }
       ]
     },
@@ -73,7 +73,7 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "\"It's a bit cold\" was an understatement.",
+          "en": "\"It's a little cold\" was an understatement.",
           "ru": "«Немного холодно» — это было мягко сказано."
         }
       ]

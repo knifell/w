@@ -3,147 +3,153 @@
   "level": "A1",
   "day": 33,
   "island": 4,
-  "title": "In my room",
-  "topic": "my room",
+  "title": "Fruit and vegetables",
+  "topic": "fruit",
   "words": [
     {
       "id": "a1-d33-01",
-      "en": "toy",
+      "en": "tomato",
       "ru": [
-        "игрушка"
+        "помидор"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "This is my favourite toy.",
-          "ru": "Это моя любимая игрушка."
+          "en": "I put a tomato in the salad.",
+          "ru": "Я положил помидор в салат."
         }
       ]
     },
     {
       "id": "a1-d33-02",
-      "en": "ball",
+      "en": "carrot",
       "ru": [
-        "мяч"
+        "морковь"
       ],
       "pos": "noun",
+      "forms": [
+        "carrots"
+      ],
       "examples": [
         {
-          "en": "Throw me the ball!",
-          "ru": "Кинь мне мяч!"
+          "en": "Do you like carrots?",
+          "ru": "Ты любишь морковку?"
         }
       ]
     },
     {
       "id": "a1-d33-03",
-      "en": "box",
+      "en": "grape",
       "ru": [
-        "коробка"
+        "виноград"
       ],
       "pos": "noun",
+      "forms": [
+        "grapes"
+      ],
       "examples": [
         {
-          "en": "The cat is in the box.",
-          "ru": "Кошка в коробке."
+          "en": "These grapes are very good.",
+          "ru": "Этот виноград очень вкусный."
         }
       ]
     },
     {
       "id": "a1-d33-04",
-      "en": "clock",
+      "en": "lemon",
       "ru": [
-        "часы (настенные)"
+        "лимон"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The clock is on the wall.",
-          "ru": "Часы висят на стене."
+          "en": "I drink tea with lemon.",
+          "ru": "Я пью чай с лимоном."
         }
       ]
     },
     {
       "id": "a1-d33-05",
-      "en": "doll",
+      "en": "strawberry",
       "ru": [
-        "кукла"
+        "клубника"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "My sister has a new doll.",
-          "ru": "У моей сестры новая кукла."
+          "en": "I love strawberry ice cream.",
+          "ru": "Я обожаю клубничное мороженое."
         }
       ]
     },
     {
       "id": "a1-d33-06",
-      "en": "teddy bear",
+      "en": "pear",
       "ru": [
-        "плюшевый мишка"
+        "груша"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The baby sleeps with a teddy bear.",
-          "ru": "Малыш спит с плюшевым мишкой."
+          "en": "This pear is very big.",
+          "ru": "Эта груша очень большая."
         }
       ]
     },
     {
       "id": "a1-d33-07",
-      "en": "poster",
+      "en": "cucumber",
       "ru": [
-        "плакат",
-        "постер"
+        "огурец"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I have a poster on my wall.",
-          "ru": "У меня на стене постер."
+          "en": "I want a cucumber and a tomato.",
+          "ru": "Я хочу огурец и помидор."
         }
       ]
     },
     {
       "id": "a1-d33-08",
-      "en": "wardrobe",
+      "en": "cherry",
       "ru": [
-        "шкаф для одежды"
+        "вишня",
+        "черешня"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "My clothes are in the wardrobe.",
-          "ru": "Моя одежда в шкафу."
+          "en": "There is a cherry on the cake.",
+          "ru": "На торте вишенка."
         }
       ]
     },
     {
       "id": "a1-d33-09",
-      "en": "armchair",
+      "en": "watermelon",
       "ru": [
-        "кресло"
+        "арбуз"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Grandpa sits in his armchair.",
-          "ru": "Дедушка сидит в своём кресле."
+          "en": "The watermelon is big and green.",
+          "ru": "Арбуз большой и зелёный."
         }
       ]
     },
     {
       "id": "a1-d33-10",
-      "en": "bookcase",
+      "en": "salad",
       "ru": [
-        "книжный шкаф"
+        "салат"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The bookcase is full of books.",
-          "ru": "Книжный шкаф полон книг."
+          "en": "I want a green salad.",
+          "ru": "Я хочу зелёный салат."
         }
       ]
     }

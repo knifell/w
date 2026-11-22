@@ -57,8 +57,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "My birthday is next month.",
-          "ru": "Мой день рождения в следующем месяце."
+          "en": "My cousin comes home next month.",
+          "ru": "Мой двоюродный брат приезжает домой в следующем месяце."
         }
       ]
     },
@@ -70,10 +70,13 @@
         "столетие"
       ],
       "pos": "noun",
+      "forms": [
+        "centuries"
+      ],
       "examples": [
         {
-          "en": "This church is from the 15th century.",
-          "ru": "Эта церковь пятнадцатого века."
+          "en": "This church is three centuries old.",
+          "ru": "Этой церкви три века."
         }
       ]
     },
@@ -143,8 +146,36 @@
       "pos": "adverb",
       "examples": [
         {
-          "en": "I moved here two years ago.",
-          "ru": "Я переехал сюда два года назад."
+          "en": "I came here two years ago.",
+          "ru": "Я приехал сюда два года назад."
+        }
+      ]
+    },
+    {
+      "id": "a2-d18-11",
+      "en": "until",
+      "ru": [
+        "до (какого-то времени)"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "I am here until Friday.",
+          "ru": "Я здесь до пятницы."
+        }
+      ]
+    },
+    {
+      "id": "a2-d18-12",
+      "en": "during",
+      "ru": [
+        "во время"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "Don't use your phone during dinner.",
+          "ru": "Не пользуйся телефоном во время ужина."
         }
       ]
     }

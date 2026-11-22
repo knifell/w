@@ -3,151 +3,151 @@
   "level": "A1",
   "day": 47,
   "island": 5,
-  "title": "Free time",
-  "topic": "hobbies 2",
+  "title": "Yummy food",
+  "topic": "food 3",
   "words": [
     {
       "id": "a1-d47-01",
-      "en": "fishing",
+      "en": "pasta",
       "ru": [
-        "рыбалка"
+        "паста",
+        "макароны"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "My grandpa loves fishing.",
-          "ru": "Мой дедушка обожает рыбалку."
+          "en": "I make pasta for my family.",
+          "ru": "Я готовлю пасту для семьи."
         }
       ]
     },
     {
       "id": "a1-d47-02",
-      "en": "camping",
+      "en": "burger",
       "ru": [
-        "поход с палатками",
-        "кемпинг"
+        "бургер"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "We go camping in summer.",
-          "ru": "Летом мы ходим в поход."
+          "en": "Can I have a burger, please?",
+          "ru": "Можно бургер, пожалуйста?"
         }
       ]
     },
     {
       "id": "a1-d47-03",
-      "en": "cycling",
+      "en": "chips",
       "ru": [
-        "езда на велосипеде"
+        "картофель фри"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Cycling is good for you.",
-          "ru": "Езда на велосипеде полезна."
+          "en": "I want fish and chips.",
+          "ru": "Я хочу рыбу с картошкой фри."
         }
       ]
     },
     {
       "id": "a1-d47-04",
-      "en": "chess",
+      "en": "chocolate",
       "ru": [
-        "шахматы"
+        "шоколад"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Do you play chess?",
-          "ru": "Ты играешь в шахматы?"
+          "en": "I love chocolate.",
+          "ru": "Я обожаю шоколад."
         }
       ]
     },
     {
       "id": "a1-d47-05",
-      "en": "puzzle",
+      "en": "biscuit",
       "ru": [
-        "пазл",
-        "головоломка"
+        "печенье"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Let's do a puzzle.",
-          "ru": "Давай соберём пазл."
+          "en": "Do you want a biscuit?",
+          "ru": "Хочешь печенье?"
         }
       ]
     },
     {
       "id": "a1-d47-06",
-      "en": "drums",
+      "en": "sweets",
       "ru": [
-        "барабаны"
+        "конфеты"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "He plays the drums.",
-          "ru": "Он играет на барабанах."
+          "en": "Children love sweets.",
+          "ru": "Дети любят конфеты."
         }
       ]
     },
     {
       "id": "a1-d47-07",
-      "en": "violin",
+      "en": "popcorn",
       "ru": [
-        "скрипка"
+        "попкорн"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "She plays the violin.",
-          "ru": "Она играет на скрипке."
+          "en": "We eat popcorn and watch a film.",
+          "ru": "Мы едим попкорн и смотрим фильм."
         }
       ]
     },
     {
       "id": "a1-d47-08",
-      "en": "video game",
+      "en": "yoghurt",
       "ru": [
-        "видеоигра"
+        "йогурт"
       ],
       "pos": "noun",
-      "forms": [
-        "video games"
-      ],
       "examples": [
         {
-          "en": "My brother plays video games.",
-          "ru": "Мой брат играет в видеоигры."
+          "en": "I have yoghurt in the morning.",
+          "ru": "Утром я ем йогурт."
         }
       ]
     },
     {
       "id": "a1-d47-09",
-      "en": "cards",
+      "en": "cereal",
       "ru": [
-        "карты (игральные)"
+        "хлопья"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Let's play cards.",
-          "ru": "Давай сыграем в карты."
+          "en": "I eat cereal with milk.",
+          "ru": "Я ем хлопья с молоком."
         }
       ]
     },
     {
       "id": "a1-d47-10",
-      "en": "hobby club",
+      "en": "pancake",
       "ru": [
-        "кружок"
+        "блин",
+        "оладья"
       ],
       "pos": "noun",
+      "forms": [
+        "pancakes"
+      ],
       "examples": [
         {
-          "en": "I go to a hobby club after school.",
-          "ru": "После школы я хожу в кружок."
+          "en": "Grandma makes pancakes.",
+          "ru": "Бабушка печёт блины."
         }
       ]
     }

@@ -50,8 +50,8 @@
       ],
       "examples": [
         {
-          "en": "My phone updates automatically.",
-          "ru": "Мой телефон обновляется автоматически."
+          "en": "My phone updates every week.",
+          "ru": "Мой телефон обновляется каждую неделю."
         }
       ]
     },
@@ -121,8 +121,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "I sent the file as an attachment.",
-          "ru": "Я отправил файл вложением."
+          "en": "I sent the photo as an attachment.",
+          "ru": "Я отправил фото вложением."
         }
       ]
     },
@@ -151,6 +151,35 @@
         {
           "en": "This laptop is very reliable.",
           "ru": "Этот ноутбук очень надёжный."
+        }
+      ]
+    },
+    {
+      "id": "b1-d14-11",
+      "en": "technology",
+      "ru": [
+        "технология",
+        "техника"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Technology changes very fast.",
+          "ru": "Технологии меняются очень быстро."
+        }
+      ]
+    },
+    {
+      "id": "b1-d14-12",
+      "en": "internet",
+      "ru": [
+        "интернет"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I read the news on the internet.",
+          "ru": "Я читаю новости в интернете."
         }
       ]
     }

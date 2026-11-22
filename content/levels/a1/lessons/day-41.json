@@ -3,148 +3,157 @@
   "level": "A1",
   "day": 41,
   "island": 5,
-  "title": "In class",
-  "topic": "classroom",
+  "title": "Actions",
+  "topic": "verbs 4",
   "words": [
     {
       "id": "a1-d41-01",
-      "en": "board",
+      "en": "climb",
       "ru": [
-        "доска"
+        "лезть",
+        "взбираться"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "Look at the board, please.",
-          "ru": "Посмотрите на доску, пожалуйста."
+          "en": "The cat can climb trees.",
+          "ru": "Кошка умеет лазить по деревьям."
         }
       ]
     },
     {
       "id": "a1-d41-02",
-      "en": "question",
+      "en": "fall",
       "ru": [
-        "вопрос"
+        "падать"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "fell",
+        "fallen"
+      ],
       "examples": [
         {
-          "en": "Can I ask a question?",
-          "ru": "Можно задать вопрос?"
+          "en": "Don't fall!",
+          "ru": "Не упади!"
         }
       ]
     },
     {
       "id": "a1-d41-03",
-      "en": "test",
+      "en": "push",
       "ru": [
-        "контрольная",
-        "тест"
+        "толкать"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "We have a test on Friday.",
-          "ru": "В пятницу у нас контрольная."
+          "en": "Push the door.",
+          "ru": "Толкни дверь."
         }
       ]
     },
     {
       "id": "a1-d41-04",
-      "en": "rubber",
+      "en": "pull",
       "ru": [
-        "ластик"
+        "тянуть"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "Can I have your rubber?",
-          "ru": "Дашь мне свой ластик?"
+          "en": "Pull the door to open it.",
+          "ru": "Потяни дверь, чтобы открыть."
         }
       ]
     },
     {
       "id": "a1-d41-05",
-      "en": "ruler",
+      "en": "drop",
       "ru": [
-        "линейка"
+        "ронять"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "Draw a line with a ruler.",
-          "ru": "Нарисуй линию по линейке."
+          "en": "Don't drop the plate!",
+          "ru": "Не урони тарелку!"
         }
       ]
     },
     {
       "id": "a1-d41-06",
-      "en": "class",
+      "en": "pick up",
       "ru": [
-        "урок",
-        "класс"
+        "поднимать"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "Our class starts at nine.",
-          "ru": "Наш урок начинается в девять."
+          "en": "Pick up your toys, please.",
+          "ru": "Подними свои игрушки, пожалуйста."
         }
       ]
     },
     {
       "id": "a1-d41-07",
-      "en": "example",
+      "en": "turn on",
       "ru": [
-        "пример"
+        "включать"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "Give me an example.",
-          "ru": "Приведи пример."
+          "en": "Turn on the TV.",
+          "ru": "Включи телевизор."
         }
       ]
     },
     {
       "id": "a1-d41-08",
-      "en": "correct",
+      "en": "turn off",
       "ru": [
-        "правильный"
+        "выключать"
       ],
-      "pos": "adjective",
+      "pos": "verb",
       "examples": [
         {
-          "en": "Your answer is correct.",
-          "ru": "Твой ответ правильный."
+          "en": "Turn off the TV, please.",
+          "ru": "Выключи телевизор, пожалуйста."
         }
       ]
     },
     {
       "id": "a1-d41-09",
-      "en": "alphabet",
+      "en": "look for",
       "ru": [
-        "алфавит"
+        "искать"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "looking for"
+      ],
       "examples": [
         {
-          "en": "The English alphabet has 26 letters.",
-          "ru": "В английском алфавите 26 букв."
+          "en": "I'm looking for my phone.",
+          "ru": "Я ищу свой телефон."
         }
       ]
     },
     {
       "id": "a1-d41-10",
-      "en": "count",
+      "en": "hold",
       "ru": [
-        "считать"
+        "держать"
       ],
       "pos": "verb",
+      "forms": [
+        "held"
+      ],
       "examples": [
         {
-          "en": "Count from one to ten.",
-          "ru": "Посчитай от одного до десяти."
+          "en": "Hold my hand.",
+          "ru": "Держи меня за руку."
         }
       ]
     }

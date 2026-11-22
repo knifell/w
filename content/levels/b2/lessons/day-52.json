@@ -61,8 +61,8 @@
       ],
       "examples": [
         {
-          "en": "The star is ten light years away.",
-          "ru": "Звезда находится в десяти световых годах отсюда."
+          "en": "The star is ten light years from Earth.",
+          "ru": "Звезда находится в десяти световых годах от Земли."
         }
       ]
     },
@@ -103,8 +103,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The spacecraft landed on Mars.",
-          "ru": "Космический корабль сел на Марс."
+          "en": "The spacecraft arrived on Mars.",
+          "ru": "Космический корабль долетел до Марса."
         }
       ]
     },
@@ -145,7 +145,7 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "We watched the solar eclipse.",
+          "en": "We watched the eclipse of the sun.",
           "ru": "Мы смотрели солнечное затмение."
         }
       ]

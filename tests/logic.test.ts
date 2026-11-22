@@ -1,6 +1,9 @@
 // Быстрые проверки игровой логики без браузера: npm test
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readFileSync, mkdtempSync, cpSync, writeFileSync } from 'node:fs';
+import { spawnSync } from 'node:child_process';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { applyAnswer } from '../app/src/engine/../game/srs';
 import { emptyState } from '../app/src/game/local';
 import { settleStreak, bumpStreak, liveStreak } from '../app/src/game/streak';
@@ -140,9 +143,9 @@ t('пары: подписи по-русски не повторяются, у к
 t('ввод: синоним с тем же переводом засчитывается', () => {
   const a1 = JSON.parse(readFileSync('app/public/content/a1.json', 'utf8')) as LevelPack;
   const pool = a1.lessons.flatMap((l) => l.words);
-  const leg = pool.find((w) => w.en === 'foot')!;
-  const ex = buildTrial([leg], pool, 1);
-  assert.ok(ex[0].kind === 'type' && checkTyped('leg', ex[0].answers) === 'exact');
+  const begin = pool.find((w) => w.en === 'begin')!; // «начинать», как и start
+  const ex = buildTrial([begin], pool, 1);
+  assert.ok(ex[0].kind === 'type' && checkTyped('start', ex[0].answers) === 'exact');
 });
 
 t('сборка предложения: без плиток-знаков и только из знакомых слов', () => {
@@ -165,6 +168,31 @@ t('лавка: масло не продаётся, когда фонарь по�
   const s = emptyState();
   s.coins = 1000; s.energy = 10;
   assert.equal(canBuy(s, ITEMS.find((i) => i.id === 'oil')!), 'Фонарь и так полон');
+});
+
+t('проверка контента: неизученные слова, повторы примеров, одинаковые переводы', () => {
+  const ok = spawnSync('node', ['scripts/validate-content.mjs'], { encoding: 'utf8' });
+  assert.equal(ok.status, 0, ok.stdout + ok.stderr);
+  const dir = mkdtempSync(join(tmpdir(), 'content-'));
+  cpSync('content/levels', dir, { recursive: true });
+  const f = join(dir, 'a1', 'lessons', 'day-02.json');
+  const d = JSON.parse(readFileSync(f, 'utf8'));
+  d.words[0].examples[0].en = 'Hello! I love pizza.';       // love и pizza ещё не изучены
+  d.words[1].examples[0].en = d.words[2].examples[0].en;     // повтор примера
+  d.words[5].ru = [...d.words[6].ru];                        // одинаковый перевод в уроке
+  writeFileSync(f, JSON.stringify(d));
+  const bad = spawnSync('node', ['scripts/validate-content.mjs'], { encoding: 'utf8', env: { ...process.env, CONTENT_DIR: dir } });
+  assert.equal(bad.status, 1);
+  assert.match(bad.stderr, /неизученные слова: love, pizza/);
+  assert.match(bad.stderr, /повторяет пример/);
+  assert.match(bad.stderr, /совпадает со словом/);
+});
+
+t('словарь: формы и простые окончания засчитываются, неправильные формы — только через forms', () => {
+  const v = vocabOf([{ id: 'x', en: 'go', ru: ['идти'], pos: 'verb', forms: ['went'], examples: [] }, { id: 'y', en: 'cat', ru: ['кошка'], pos: 'noun', examples: [] }]);
+  assert.ok(knownSentence('He goes, she went, the cats are going.', v));
+  assert.ok(!knownSentence('He bought a cat.', v));
+  assert.ok(knownSentence('Anna and Tom.', v)); // имена
 });
 
 console.log(`\n${n} проверок пройдено`);

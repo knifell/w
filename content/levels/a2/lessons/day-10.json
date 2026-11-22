@@ -58,8 +58,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Take this medicine twice a day.",
-          "ru": "Принимай это лекарство два раза в день."
+          "en": "Take this medicine after breakfast.",
+          "ru": "Принимай это лекарство после завтрака."
         }
       ]
     },
@@ -73,8 +73,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "I'm afraid of the dentist.",
-          "ru": "Я боюсь стоматолога."
+          "en": "I go to the dentist on Monday.",
+          "ru": "В понедельник я иду к стоматологу."
         }
       ]
     },
@@ -119,8 +119,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "Fruit is healthy food.",
-          "ru": "Фрукты — здоровая еда."
+          "en": "Vegetables are healthy food.",
+          "ru": "Овощи — здоровая еда."
         }
       ]
     },
@@ -150,6 +150,34 @@
         {
           "en": "You should rest at home.",
           "ru": "Тебе стоит отдохнуть дома."
+        }
+      ]
+    },
+    {
+      "id": "a2-d10-11",
+      "en": "without",
+      "ru": [
+        "без"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "I drink tea without sugar.",
+          "ru": "Я пью чай без сахара."
+        }
+      ]
+    },
+    {
+      "id": "a2-d10-12",
+      "en": "each",
+      "ru": [
+        "каждый (из)"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "Take this medicine each morning.",
+          "ru": "Принимай это лекарство каждое утро."
         }
       ]
     }

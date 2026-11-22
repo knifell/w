@@ -18,7 +18,7 @@
       ],
       "examples": [
         {
-          "en": "The kids played with balloons.",
+          "en": "The children played with balloons.",
           "ru": "Дети играли с воздушными шариками."
         }
       ]
@@ -35,8 +35,8 @@
       ],
       "examples": [
         {
-          "en": "Blow out the candles!",
-          "ru": "Задуй свечи!"
+          "en": "There are ten candles on the cake.",
+          "ru": "На торте десять свечей."
         }
       ]
     },
@@ -49,8 +49,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "He wore a pirate costume.",
-          "ru": "Он был в костюме пирата."
+          "en": "He wore a monkey costume.",
+          "ru": "Он был в костюме обезьяны."
         }
       ]
     },
@@ -133,12 +133,13 @@
       ],
       "pos": "verb",
       "forms": [
-        "sings"
+        "sings",
+        "sang"
       ],
       "examples": [
         {
-          "en": "She sings in a band.",
-          "ru": "Она поёт в группе."
+          "en": "She sings very well.",
+          "ru": "Она очень хорошо поёт."
         }
       ]
     },

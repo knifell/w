@@ -3,150 +3,151 @@
   "level": "A1",
   "day": 25,
   "island": 3,
-  "title": "Questions",
-  "topic": "question words",
+  "title": "Fun time",
+  "topic": "hobbies",
   "words": [
     {
       "id": "a1-d25-01",
-      "en": "what",
+      "en": "music",
       "ru": [
-        "что",
-        "какой"
+        "музыка"
       ],
-      "pos": "pronoun",
+      "pos": "noun",
       "examples": [
         {
-          "en": "What is your name?",
-          "ru": "Как тебя зовут?"
+          "en": "I listen to music in the evening.",
+          "ru": "Вечером я слушаю музыку."
         }
       ]
     },
     {
       "id": "a1-d25-02",
-      "en": "where",
+      "en": "film",
       "ru": [
-        "где",
-        "куда"
+        "фильм"
       ],
-      "pos": "adverb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Where do you live?",
-          "ru": "Где ты живёшь?"
+          "en": "Let's watch a film.",
+          "ru": "Давай посмотрим фильм."
         }
       ]
     },
     {
       "id": "a1-d25-03",
-      "en": "when",
+      "en": "game",
       "ru": [
-        "когда"
+        "игра"
       ],
-      "pos": "adverb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "When is your birthday?",
-          "ru": "Когда у тебя день рождения?"
+          "en": "This game is very good.",
+          "ru": "Эта игра очень хорошая."
         }
       ]
     },
     {
       "id": "a1-d25-04",
-      "en": "who",
+      "en": "football",
       "ru": [
-        "кто"
+        "футбол"
       ],
-      "pos": "pronoun",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Who is that girl?",
-          "ru": "Кто эта девочка?"
+          "en": "The boys play football at school.",
+          "ru": "Мальчики играют в футбол в школе."
         }
       ]
     },
     {
       "id": "a1-d25-05",
-      "en": "why",
+      "en": "tennis",
       "ru": [
-        "почему",
-        "зачем"
+        "теннис"
       ],
-      "pos": "adverb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Why are you sad?",
-          "ru": "Почему ты грустишь?"
+          "en": "Do you play tennis?",
+          "ru": "Ты играешь в теннис?"
         }
       ]
     },
     {
       "id": "a1-d25-06",
-      "en": "how",
+      "en": "sport",
       "ru": [
-        "как"
+        "спорт"
       ],
-      "pos": "adverb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "How are you?",
-          "ru": "Как дела?"
+          "en": "What is your favourite sport?",
+          "ru": "Какой твой любимый вид спорта?"
         }
       ]
     },
     {
       "id": "a1-d25-07",
-      "en": "which",
+      "en": "draw",
       "ru": [
-        "который",
-        "какой"
+        "рисовать"
       ],
-      "pos": "pronoun",
+      "pos": "verb",
+      "forms": [
+        "drew"
+      ],
       "examples": [
         {
-          "en": "Which colour do you like?",
-          "ru": "Какой цвет тебе нравится?"
+          "en": "I like to draw animals.",
+          "ru": "Я люблю рисовать животных."
         }
       ]
     },
     {
       "id": "a1-d25-08",
-      "en": "how much",
+      "en": "photo",
       "ru": [
-        "сколько (стоит)"
+        "фото",
+        "фотография"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "How much is this?",
-          "ru": "Сколько это стоит?"
+          "en": "Look at this photo.",
+          "ru": "Посмотри на это фото."
         }
       ]
     },
     {
       "id": "a1-d25-09",
-      "en": "how old",
+      "en": "piano",
       "ru": [
-        "сколько лет"
+        "пианино"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "How old are you?",
-          "ru": "Сколько тебе лет?"
+          "en": "She plays the piano.",
+          "ru": "Она играет на пианино."
         }
       ]
     },
     {
       "id": "a1-d25-10",
-      "en": "whose",
+      "en": "too",
       "ru": [
-        "чей"
+        "слишком",
+        "тоже"
       ],
-      "pos": "pronoun",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "Whose bag is this?",
-          "ru": "Чья это сумка?"
+          "en": "I like it too.",
+          "ru": "Мне это тоже нравится."
         }
       ]
     }

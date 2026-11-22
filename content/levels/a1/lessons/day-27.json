@@ -3,150 +3,147 @@
   "level": "A1",
   "day": 27,
   "island": 3,
-  "title": "Give and take",
-  "topic": "verbs 3",
+  "title": "My day",
+  "topic": "daily routine",
   "words": [
     {
       "id": "a1-d27-01",
-      "en": "buy",
+      "en": "get up",
       "ru": [
-        "покупать"
+        "вставать"
       ],
       "pos": "verb",
       "examples": [
         {
-          "en": "I want to buy a new bag.",
-          "ru": "Я хочу купить новую сумку."
+          "en": "I get up at seven.",
+          "ru": "Я встаю в семь."
         }
       ]
     },
     {
       "id": "a1-d27-02",
-      "en": "sell",
+      "en": "go to bed",
       "ru": [
-        "продавать"
+        "ложиться спать"
       ],
       "pos": "verb",
       "examples": [
         {
-          "en": "They sell fruit here.",
-          "ru": "Здесь продают фрукты."
+          "en": "I go to bed at ten.",
+          "ru": "Я ложусь спать в десять."
         }
       ]
     },
     {
       "id": "a1-d27-03",
-      "en": "give",
+      "en": "wash",
       "ru": [
-        "давать"
+        "мыть",
+        "умываться"
       ],
       "pos": "verb",
       "examples": [
         {
-          "en": "Give me the book, please.",
-          "ru": "Дай мне книгу, пожалуйста."
+          "en": "Wash your hands, please.",
+          "ru": "Помой руки, пожалуйста."
         }
       ]
     },
     {
       "id": "a1-d27-04",
-      "en": "take",
+      "en": "watch TV",
       "ru": [
-        "брать"
+        "смотреть телевизор"
       ],
       "pos": "verb",
       "examples": [
         {
-          "en": "Take an apple.",
-          "ru": "Возьми яблоко."
+          "en": "We watch TV in the evening.",
+          "ru": "Вечером мы смотрим телевизор."
         }
       ]
     },
     {
       "id": "a1-d27-05",
-      "en": "put",
+      "en": "come home",
       "ru": [
-        "класть",
-        "ставить"
+        "приходить домой"
       ],
       "pos": "verb",
       "examples": [
         {
-          "en": "Put your bag here.",
-          "ru": "Положи сумку сюда."
+          "en": "I come home at five.",
+          "ru": "Я прихожу домой в пять."
         }
       ]
     },
     {
       "id": "a1-d27-06",
-      "en": "get",
+      "en": "every day",
       "ru": [
-        "получать",
-        "доставать"
+        "каждый день"
       ],
-      "pos": "verb",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "I get a lot of messages.",
-          "ru": "Я получаю много сообщений."
+          "en": "I read every day.",
+          "ru": "Я читаю каждый день."
         }
       ]
     },
     {
       "id": "a1-d27-07",
-      "en": "make",
+      "en": "sometimes",
       "ru": [
-        "делать",
-        "готовить"
+        "иногда"
       ],
-      "pos": "verb",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "Let's make a cake.",
-          "ru": "Давай испечём торт."
+          "en": "Sometimes I walk to work.",
+          "ru": "Иногда я хожу на работу пешком."
         }
       ]
     },
     {
       "id": "a1-d27-08",
-      "en": "need",
+      "en": "always",
       "ru": [
-        "нуждаться",
-        "нужно"
+        "всегда"
       ],
-      "pos": "verb",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "I need help.",
-          "ru": "Мне нужна помощь."
+          "en": "She always drinks tea.",
+          "ru": "Она всегда пьёт чай."
         }
       ]
     },
     {
       "id": "a1-d27-09",
-      "en": "use",
+      "en": "never",
       "ru": [
-        "использовать"
+        "никогда"
       ],
-      "pos": "verb",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "Can I use your phone?",
-          "ru": "Можно воспользоваться твоим телефоном?"
+          "en": "I never eat pizza.",
+          "ru": "Я никогда не ем пиццу."
         }
       ]
     },
     {
       "id": "a1-d27-10",
-      "en": "show",
+      "en": "often",
       "ru": [
-        "показывать"
+        "часто"
       ],
-      "pos": "verb",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "Show me your picture.",
-          "ru": "Покажи мне свой рисунок."
+          "en": "We often go to the zoo.",
+          "ru": "Мы часто ходим в зоопарк."
         }
       ]
     }

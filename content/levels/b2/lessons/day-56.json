@@ -18,8 +18,8 @@
       ],
       "examples": [
         {
-          "en": "She aspires to be a surgeon.",
-          "ru": "Она стремится стать хирургом."
+          "en": "She aspires to be a doctor.",
+          "ru": "Она стремится стать врачом."
         }
       ]
     },
@@ -32,8 +32,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "He was a pioneer of aviation.",
-          "ru": "Он был первопроходцем авиации."
+          "en": "He was a pioneer of space travel.",
+          "ru": "Он был первопроходцем космических полётов."
         }
       ]
     },
@@ -41,14 +41,13 @@
       "id": "b2-d56-03",
       "en": "trailblazer",
       "ru": [
-        "новатор",
-        "первопроходец"
+        "новатор"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "She was a trailblazer for women in science.",
-          "ru": "Она проложила путь женщинам в науке."
+          "en": "She was a trailblazer for women in medicine.",
+          "ru": "Она проложила путь женщинам в медицине."
         }
       ]
     },
@@ -134,8 +133,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Winning the prize was the pinnacle of his career.",
-          "ru": "Премия стала вершиной его карьеры."
+          "en": "Winning the medal was the pinnacle of his career.",
+          "ru": "Медаль стала вершиной его карьеры."
         }
       ]
     },

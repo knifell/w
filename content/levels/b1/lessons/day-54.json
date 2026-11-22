@@ -61,8 +61,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "Weigh up the pros and cons.",
-          "ru": "Взвесь все за и против."
+          "en": "Weigh up all the options.",
+          "ru": "Взвесь все варианты."
         }
       ]
     },
@@ -149,8 +149,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "Select a file to upload.",
-          "ru": "Выберите файл для загрузки."
+          "en": "Select a photo.",
+          "ru": "Выберите фото."
         }
       ]
     }

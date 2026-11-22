@@ -117,8 +117,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The minimum wage has gone up.",
-          "ru": "Минимальная зарплата повысилась."
+          "en": "The wage for this job has gone up.",
+          "ru": "Зарплата на этой работе выросла."
         }
       ]
     },
@@ -146,7 +146,7 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The transaction was completed.",
+          "en": "The transaction is finished.",
           "ru": "Транзакция завершена."
         }
       ]

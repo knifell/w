@@ -16,8 +16,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Knowledge is power.",
-          "ru": "Знание — сила."
+          "en": "Knowledge is important.",
+          "ru": "Знания важны."
         }
       ]
     },
@@ -151,6 +151,34 @@
         {
           "en": "This method works well.",
           "ru": "Этот метод хорошо работает."
+        }
+      ]
+    },
+    {
+      "id": "b1-d57-11",
+      "en": "prefer",
+      "ru": [
+        "предпочитать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I prefer to study in the morning.",
+          "ru": "Я предпочитаю учиться утром."
+        }
+      ]
+    },
+    {
+      "id": "b1-d57-12",
+      "en": "quickly",
+      "ru": [
+        "быстро"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "She learns very quickly.",
+          "ru": "Она учится очень быстро."
         }
       ]
     }

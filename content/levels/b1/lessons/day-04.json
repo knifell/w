@@ -16,7 +16,7 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The price includes accommodation and meals.",
+          "en": "The price is for accommodation and meals.",
           "ru": "Цена включает проживание и питание."
         }
       ]
@@ -46,8 +46,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "You must check out by noon.",
-          "ru": "Выехать нужно до полудня."
+          "en": "You must check out before twelve.",
+          "ru": "Выехать нужно до двенадцати."
         }
       ]
     },
@@ -61,7 +61,7 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The hotel has excellent facilities.",
+          "en": "The hotel has great facilities.",
           "ru": "В отеле отличные удобства."
         }
       ]

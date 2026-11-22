@@ -72,8 +72,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "We had an argument about politics.",
-          "ru": "Мы поспорили о политике."
+          "en": "We had an argument about money.",
+          "ru": "Мы поспорили из-за денег."
         }
       ]
     },
@@ -118,8 +118,8 @@
       "pos": "phrase",
       "examples": [
         {
-          "en": "On the other hand, it's very convenient.",
-          "ru": "С другой стороны, это очень удобно."
+          "en": "On the other hand, it's very cheap.",
+          "ru": "С другой стороны, это очень дёшево."
         }
       ]
     },
@@ -132,8 +132,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The main advantage is the price.",
-          "ru": "Главное преимущество — цена."
+          "en": "The big advantage is the price.",
+          "ru": "Большое преимущество — цена."
         }
       ]
     },
@@ -148,6 +148,35 @@
         {
           "en": "The only disadvantage is the noise.",
           "ru": "Единственный недостаток — шум."
+        }
+      ]
+    },
+    {
+      "id": "b1-d24-11",
+      "en": "clear",
+      "ru": [
+        "ясный",
+        "понятный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Is that clear?",
+          "ru": "Это понятно?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d24-12",
+      "en": "simple",
+      "ru": [
+        "простой"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The answer is simple.",
+          "ru": "Ответ простой."
         }
       ]
     }

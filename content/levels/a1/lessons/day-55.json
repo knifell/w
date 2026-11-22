@@ -3,151 +3,171 @@
   "level": "A1",
   "day": 55,
   "island": 6,
-  "title": "Our house",
-  "topic": "house 2",
+  "title": "Talking",
+  "topic": "verbs 5",
   "words": [
     {
       "id": "a1-d55-01",
-      "en": "bath",
+      "en": "ask",
       "ru": [
-        "ванна"
+        "спрашивать",
+        "просить"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "I have a bath every evening.",
-          "ru": "Каждый вечер я принимаю ванну."
+          "en": "Can I ask you something?",
+          "ru": "Можно тебя кое о чём спросить?"
         }
       ]
     },
     {
       "id": "a1-d55-02",
-      "en": "washbasin",
+      "en": "say",
       "ru": [
-        "раковина",
-        "умывальник"
+        "говорить",
+        "сказать"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "said"
+      ],
       "examples": [
         {
-          "en": "Wash your hands in the washbasin.",
-          "ru": "Помой руки над раковиной."
+          "en": "What did you say?",
+          "ru": "Что ты сказал?"
         }
       ]
     },
     {
       "id": "a1-d55-03",
-      "en": "cooker",
+      "en": "tell",
       "ru": [
-        "плита"
+        "рассказывать",
+        "сообщать"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "told"
+      ],
       "examples": [
         {
-          "en": "The soup is on the cooker.",
-          "ru": "Суп на плите."
+          "en": "Tell me about your day.",
+          "ru": "Расскажи мне о своём дне."
         }
       ]
     },
     {
       "id": "a1-d55-04",
-      "en": "roof",
+      "en": "talk",
       "ru": [
-        "крыша"
+        "разговаривать"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "There is a cat on the roof.",
-          "ru": "На крыше кошка."
+          "en": "We talk every day.",
+          "ru": "Мы разговариваем каждый день."
         }
       ]
     },
     {
       "id": "a1-d55-05",
-      "en": "gate",
+      "en": "think",
       "ru": [
-        "калитка",
-        "ворота"
+        "думать"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "thought"
+      ],
       "examples": [
         {
-          "en": "Close the gate, please.",
-          "ru": "Закрой калитку, пожалуйста."
+          "en": "I think she is right.",
+          "ru": "Я думаю, она права."
         }
       ]
     },
     {
       "id": "a1-d55-06",
-      "en": "fence",
+      "en": "understand",
       "ru": [
-        "забор"
+        "понимать"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "understood"
+      ],
       "examples": [
         {
-          "en": "There is a dog behind the fence.",
-          "ru": "За забором собака."
+          "en": "I don't understand.",
+          "ru": "Я не понимаю."
         }
       ]
     },
     {
       "id": "a1-d55-07",
-      "en": "balcony",
+      "en": "finish",
       "ru": [
-        "балкон"
+        "заканчивать"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "We have breakfast on the balcony.",
-          "ru": "Мы завтракаем на балконе."
+          "en": "Finish your soup, please.",
+          "ru": "Доешь суп, пожалуйста."
         }
       ]
     },
     {
       "id": "a1-d55-08",
-      "en": "upstairs",
+      "en": "try",
       "ru": [
-        "наверху",
-        "наверх"
+        "пробовать",
+        "стараться"
       ],
-      "pos": "adverb",
+      "pos": "verb",
       "examples": [
         {
-          "en": "My room is upstairs.",
-          "ru": "Моя комната наверху."
+          "en": "Try again!",
+          "ru": "Попробуй ещё раз!"
         }
       ]
     },
     {
       "id": "a1-d55-09",
-      "en": "downstairs",
+      "en": "begin",
       "ru": [
-        "внизу",
-        "вниз"
+        "начинать"
       ],
-      "pos": "adverb",
+      "pos": "verb",
+      "forms": [
+        "begins",
+        "began"
+      ],
       "examples": [
         {
-          "en": "The kitchen is downstairs.",
-          "ru": "Кухня внизу."
+          "en": "The class begins at nine.",
+          "ru": "Урок начинается в девять."
         }
       ]
     },
     {
       "id": "a1-d55-10",
-      "en": "hall",
+      "en": "leave",
       "ru": [
-        "прихожая",
-        "коридор"
+        "уходить",
+        "уезжать"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "leaves",
+        "left"
+      ],
       "examples": [
         {
-          "en": "Leave your shoes in the hall.",
-          "ru": "Оставь обувь в прихожей."
+          "en": "The train leaves at six.",
+          "ru": "Поезд уходит в шесть."
         }
       ]
     }

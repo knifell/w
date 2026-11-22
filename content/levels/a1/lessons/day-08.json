@@ -3,147 +3,177 @@
   "level": "A1",
   "day": 8,
   "island": 1,
-  "title": "Clothes",
-  "topic": "clothes",
+  "title": "Where? Who? How?",
+  "topic": "questions",
   "words": [
     {
       "id": "a1-d08-01",
-      "en": "shirt",
+      "en": "where",
       "ru": [
-        "рубашка"
+        "где",
+        "куда"
       ],
-      "pos": "noun",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "He wears a white shirt.",
-          "ru": "Он носит белую рубашку."
+          "en": "Where is my cat?",
+          "ru": "Где моя кошка?"
         }
       ]
     },
     {
       "id": "a1-d08-02",
-      "en": "T-shirt",
+      "en": "who",
       "ru": [
-        "футболка"
+        "кто"
       ],
-      "pos": "noun",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "I have a new T-shirt.",
-          "ru": "У меня новая футболка."
+          "en": "Who is that boy?",
+          "ru": "Кто тот мальчик?"
         }
       ]
     },
     {
       "id": "a1-d08-03",
-      "en": "shoes",
+      "en": "how",
       "ru": [
-        "туфли",
-        "обувь"
+        "как"
       ],
-      "pos": "noun",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "My shoes are black.",
-          "ru": "Мои туфли чёрные."
+          "en": "How are you?",
+          "ru": "Как дела?"
         }
       ]
     },
     {
       "id": "a1-d08-04",
-      "en": "skirt",
+      "en": "how old",
       "ru": [
-        "юбка"
+        "сколько лет"
       ],
-      "pos": "noun",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "She has a long skirt.",
-          "ru": "У неё длинная юбка."
+          "en": "How old are you?",
+          "ru": "Сколько тебе лет?"
         }
       ]
     },
     {
       "id": "a1-d08-05",
-      "en": "socks",
+      "en": "how many",
       "ru": [
-        "носки"
+        "сколько"
       ],
-      "pos": "noun",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "Where are my socks?",
-          "ru": "Где мои носки?"
+          "en": "How many brothers have you?",
+          "ru": "Сколько у тебя братьев?"
         }
       ]
     },
     {
       "id": "a1-d08-06",
-      "en": "coat",
+      "en": "here",
       "ru": [
-        "пальто"
+        "здесь",
+        "сюда"
       ],
-      "pos": "noun",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "It's cold, take your coat.",
-          "ru": "Холодно, возьми пальто."
+          "en": "My dog is here.",
+          "ru": "Моя собака здесь."
         }
       ]
     },
     {
       "id": "a1-d08-07",
-      "en": "jeans",
+      "en": "there",
       "ru": [
-        "джинсы"
+        "там",
+        "туда"
       ],
-      "pos": "noun",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "I like blue jeans.",
-          "ru": "Мне нравятся синие джинсы."
+          "en": "Your cat is there.",
+          "ru": "Твоя кошка там."
         }
       ]
     },
     {
       "id": "a1-d08-08",
-      "en": "sweater",
+      "en": "in",
       "ru": [
-        "свитер"
+        "в"
       ],
-      "pos": "noun",
+      "pos": "preposition",
       "examples": [
         {
-          "en": "This sweater is warm.",
-          "ru": "Этот свитер тёплый."
+          "en": "Who is in there?",
+          "ru": "Кто там внутри?"
         }
       ]
     },
     {
       "id": "a1-d08-09",
-      "en": "clothes",
+      "en": "on",
       "ru": [
-        "одежда"
+        "на"
       ],
-      "pos": "noun",
+      "pos": "preposition",
       "examples": [
         {
-          "en": "I need new clothes.",
-          "ru": "Мне нужна новая одежда."
+          "en": "The cat is on the dog!",
+          "ru": "Кошка сидит на собаке!"
         }
       ]
     },
     {
       "id": "a1-d08-10",
-      "en": "scarf",
+      "en": "very",
       "ru": [
-        "шарф"
+        "очень"
       ],
-      "pos": "noun",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "Take a scarf, it's cold.",
-          "ru": "Возьми шарф, холодно."
+          "en": "The cat is very small.",
+          "ru": "Кошка очень маленькая."
+        }
+      ]
+    },
+    {
+      "id": "a1-d08-11",
+      "en": "these",
+      "ru": [
+        "эти"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "These are my cats.",
+          "ru": "Это мои кошки."
+        }
+      ]
+    },
+    {
+      "id": "a1-d08-12",
+      "en": "those",
+      "ru": [
+        "те"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "Those dogs are big.",
+          "ru": "Те собаки большие."
         }
       ]
     }

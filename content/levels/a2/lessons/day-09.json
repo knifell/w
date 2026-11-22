@@ -16,8 +16,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "My hobby is photography.",
-          "ru": "Моё хобби — фотография."
+          "en": "My hobby is music.",
+          "ru": "Моё хобби — музыка."
         }
       ]
     },
@@ -48,8 +48,8 @@
       ],
       "examples": [
         {
-          "en": "He collects old coins.",
-          "ru": "Он собирает старые монеты."
+          "en": "He collects old toys.",
+          "ru": "Он собирает старые игрушки."
         }
       ]
     },
@@ -62,8 +62,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "I'm learning to play the guitar.",
-          "ru": "Я учусь играть на гитаре."
+          "en": "I can play the guitar.",
+          "ru": "Я умею играть на гитаре."
         }
       ]
     },
@@ -151,6 +151,20 @@
         {
           "en": "We played a board game last night.",
           "ru": "Вчера вечером мы играли в настольную игру."
+        }
+      ]
+    },
+    {
+      "id": "a2-d09-11",
+      "en": "idea",
+      "ru": [
+        "идея"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "That's a great idea!",
+          "ru": "Это отличная идея!"
         }
       ]
     }

@@ -10,8 +10,7 @@
       "id": "b2-d54-01",
       "en": "hazard",
       "ru": [
-        "опасность",
-        "угроза"
+        "опасность"
       ],
       "pos": "noun",
       "examples": [
@@ -91,8 +90,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Pollution is a threat to wildlife.",
-          "ru": "Загрязнение — угроза дикой природе."
+          "en": "Pollution is a threat to wild animals.",
+          "ru": "Загрязнение — угроза диким животным."
         }
       ]
     },
@@ -120,8 +119,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "Due to unforeseen circumstances, the event is cancelled.",
-          "ru": "Из-за непредвиденных обстоятельств мероприятие отменено."
+          "en": "Because of unforeseen problems, the event is cancelled.",
+          "ru": "Из-за непредвиденных проблем мероприятие отменено."
         }
       ]
     },

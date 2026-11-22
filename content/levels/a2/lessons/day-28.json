@@ -101,8 +101,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Our office is on the fifth floor.",
-          "ru": "Наш офис на пятом этаже."
+          "en": "Our office is on the second floor.",
+          "ru": "Наш офис на втором этаже."
         }
       ]
     },
@@ -147,6 +147,35 @@
         {
           "en": "Pilots wear a uniform.",
           "ru": "Пилоты носят форму."
+        }
+      ]
+    },
+    {
+      "id": "a2-d28-11",
+      "en": "own",
+      "ru": [
+        "собственный",
+        "свой"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She has her own office.",
+          "ru": "У неё свой кабинет."
+        }
+      ]
+    },
+    {
+      "id": "a2-d28-12",
+      "en": "nobody",
+      "ru": [
+        "никто"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "Nobody is in the office.",
+          "ru": "В офисе никого нет."
         }
       ]
     }

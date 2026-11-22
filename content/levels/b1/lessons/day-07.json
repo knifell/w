@@ -44,8 +44,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Contact your embassy if you lose your passport.",
-          "ru": "Обратитесь в посольство, если потеряли паспорт."
+          "en": "Call your embassy if you lose your passport.",
+          "ru": "Позвоните в посольство, если потеряете паспорт."
         }
       ]
     },
@@ -72,8 +72,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "We had a breakdown on the motorway.",
-          "ru": "У нас сломалась машина на трассе."
+          "en": "We had a breakdown on the road.",
+          "ru": "У нас сломалась машина в дороге."
         }
       ]
     },
@@ -129,8 +129,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "Can you translate this sign for me?",
-          "ru": "Можешь перевести мне эту табличку?"
+          "en": "Can you translate this word for me?",
+          "ru": "Можешь перевести мне это слово?"
         }
       ]
     },
@@ -143,8 +143,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "You can't always rely on public transport.",
-          "ru": "На общественный транспорт не всегда можно положиться."
+          "en": "You can't always rely on the buses.",
+          "ru": "На автобусы не всегда можно положиться."
         }
       ]
     }

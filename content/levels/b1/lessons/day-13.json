@@ -76,8 +76,8 @@
       ],
       "examples": [
         {
-          "en": "She pointed out a mistake in the report.",
-          "ru": "Она указала на ошибку в отчёте."
+          "en": "She pointed out a mistake in my email.",
+          "ru": "Она указала на ошибку в моём письме."
         }
       ]
     },
@@ -91,8 +91,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Here's a short summary of the results.",
-          "ru": "Вот краткая сводка результатов."
+          "en": "Here's a short summary of the meeting.",
+          "ru": "Вот краткая сводка совещания."
         }
       ]
     },
@@ -155,6 +155,21 @@
         {
           "en": "We need to discuss the budget.",
           "ru": "Нам нужно обсудить бюджет."
+        }
+      ]
+    },
+    {
+      "id": "b1-d13-11",
+      "en": "event",
+      "ru": [
+        "мероприятие",
+        "событие"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The event starts at six.",
+          "ru": "Мероприятие начинается в шесть."
         }
       ]
     }

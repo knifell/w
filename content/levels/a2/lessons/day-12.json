@@ -29,8 +29,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The waiter brought our drinks.",
-          "ru": "Официант принёс наши напитки."
+          "en": "The waiter gave us the menu.",
+          "ru": "Официант дал нам меню."
         }
       ]
     },
@@ -43,8 +43,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "Are you ready to order?",
-          "ru": "Вы готовы сделать заказ?"
+          "en": "What do you want to order?",
+          "ru": "Что вы хотите заказать?"
         }
       ]
     },
@@ -99,8 +99,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "We shared a starter.",
-          "ru": "Мы разделили одну закуску."
+          "en": "We want a starter.",
+          "ru": "Мы хотим закуску."
         }
       ]
     },
@@ -142,8 +142,23 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "Do you have vegetarian dishes?",
-          "ru": "У вас есть вегетарианские блюда?"
+          "en": "Do you have vegetarian food?",
+          "ru": "У вас есть вегетарианская еда?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d12-11",
+      "en": "meal",
+      "ru": [
+        "приём пищи",
+        "еда (обед, ужин)"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The meal was delicious.",
+          "ru": "Еда была очень вкусной."
         }
       ]
     }

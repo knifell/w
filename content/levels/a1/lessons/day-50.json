@@ -3,148 +3,178 @@
   "level": "A1",
   "day": 50,
   "island": 5,
-  "title": "Polite words",
-  "topic": "polite phrases",
+  "title": "Nature around us",
+  "topic": "nature 2",
   "words": [
     {
       "id": "a1-d50-01",
-      "en": "excuse me",
+      "en": "rock",
       "ru": [
-        "извините (привлечь внимание)"
+        "скала",
+        "камень"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Excuse me, where is the station?",
-          "ru": "Извините, где вокзал?"
+          "en": "There is a big rock in the sea.",
+          "ru": "В море большая скала."
         }
       ]
     },
     {
       "id": "a1-d50-02",
-      "en": "you're welcome",
+      "en": "sand",
       "ru": [
-        "пожалуйста (в ответ на спасибо)"
+        "песок"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Thank you! — You're welcome.",
-          "ru": "Спасибо! — Пожалуйста."
+          "en": "The sand is hot.",
+          "ru": "Песок горячий."
         }
       ]
     },
     {
       "id": "a1-d50-03",
-      "en": "no problem",
+      "en": "leaf",
       "ru": [
-        "без проблем"
+        "лист (дерева)"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "No problem, I can help.",
-          "ru": "Без проблем, я могу помочь."
+          "en": "This leaf is yellow.",
+          "ru": "Этот лист жёлтый."
         }
       ]
     },
     {
       "id": "a1-d50-04",
-      "en": "see you",
+      "en": "plant",
       "ru": [
-        "увидимся",
-        "пока"
+        "растение"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "See you on Monday!",
-          "ru": "Увидимся в понедельник!"
+          "en": "Water the plant, please.",
+          "ru": "Полей растение, пожалуйста."
         }
       ]
     },
     {
       "id": "a1-d50-05",
-      "en": "good luck",
+      "en": "bee",
       "ru": [
-        "удачи"
+        "пчела"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Good luck with your test!",
-          "ru": "Удачи на контрольной!"
+          "en": "A bee is on the flower.",
+          "ru": "На цветке пчела."
         }
       ]
     },
     {
       "id": "a1-d50-06",
-      "en": "well done",
+      "en": "butterfly",
       "ru": [
-        "молодец",
-        "отлично"
+        "бабочка"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Well done! Great work!",
-          "ru": "Молодец! Отличная работа!"
+          "en": "What a beautiful butterfly!",
+          "ru": "Какая красивая бабочка!"
         }
       ]
     },
     {
       "id": "a1-d50-07",
-      "en": "never mind",
+      "en": "world",
       "ru": [
-        "ничего страшного"
+        "мир",
+        "свет"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Never mind, try again.",
-          "ru": "Ничего страшного, попробуй ещё раз."
+          "en": "I want to see the world.",
+          "ru": "Я хочу увидеть мир."
         }
       ]
     },
     {
       "id": "a1-d50-08",
-      "en": "welcome",
+      "en": "earth",
       "ru": [
-        "добро пожаловать"
+        "земля",
+        "планета Земля"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Welcome to our school!",
-          "ru": "Добро пожаловать в нашу школу!"
+          "en": "We live on the Earth.",
+          "ru": "Мы живём на Земле."
         }
       ]
     },
     {
       "id": "a1-d50-09",
-      "en": "bless you",
+      "en": "desert",
       "ru": [
-        "будь здоров (при чихании)"
+        "пустыня"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Bless you!",
-          "ru": "Будь здоров!"
+          "en": "It's very hot in the desert.",
+          "ru": "В пустыне очень жарко."
         }
       ]
     },
     {
       "id": "a1-d50-10",
-      "en": "congratulations",
+      "en": "jungle",
       "ru": [
-        "поздравляю"
+        "джунгли"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Congratulations on your new job!",
-          "ru": "Поздравляю с новой работой!"
+          "en": "Monkeys live in the jungle.",
+          "ru": "Обезьяны живут в джунглях."
+        }
+      ]
+    },
+    {
+      "id": "a1-d50-11",
+      "en": "sandcastle",
+      "ru": [
+        "замок из песка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Let's make a sandcastle!",
+          "ru": "Давай построим замок из песка!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d50-12",
+      "en": "bucket",
+      "ru": [
+        "ведёрко",
+        "ведро"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Put sand in the bucket.",
+          "ru": "Насыпь песок в ведёрко."
         }
       ]
     }

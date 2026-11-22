@@ -15,8 +15,8 @@
       "pos": "adverb",
       "examples": [
         {
-          "en": "It was risky. Nevertheless, we tried.",
-          "ru": "Это было рискованно. Тем не менее мы попробовали."
+          "en": "It was dangerous. Nevertheless, we tried.",
+          "ru": "Это было опасно. Тем не менее мы попробовали."
         }
       ]
     },
@@ -24,7 +24,7 @@
       "id": "b2-d24-02",
       "en": "consequently",
       "ru": [
-        "следовательно",
+        "как следствие",
         "в результате"
       ],
       "pos": "adverb",
@@ -111,13 +111,14 @@
       "id": "b2-d24-08",
       "en": "on the contrary",
       "ru": [
-        "напротив"
+        "напротив",
+        "наоборот"
       ],
       "pos": "phrase",
       "examples": [
         {
-          "en": "It's not boring. On the contrary, it's fascinating.",
-          "ru": "Это не скучно. Напротив, это захватывающе."
+          "en": "It's not boring. On the contrary, it's very interesting.",
+          "ru": "Это не скучно. Напротив, очень интересно."
         }
       ]
     },
@@ -126,7 +127,7 @@
       "en": "by contrast",
       "ru": [
         "для сравнения",
-        "напротив"
+        "по контрасту"
       ],
       "pos": "phrase",
       "examples": [

@@ -59,8 +59,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "It's hard to convey emotions in text.",
-          "ru": "Трудно передать эмоции в тексте."
+          "en": "It's hard to convey your mood in a message.",
+          "ru": "Трудно передать настроение в сообщении."
         }
       ]
     },
@@ -73,7 +73,7 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "She can articulate complex ideas.",
+          "en": "She can articulate difficult ideas.",
           "ru": "Она умеет ясно излагать сложные идеи."
         }
       ]

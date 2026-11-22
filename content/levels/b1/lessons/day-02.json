@@ -16,8 +16,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The deadline for the report is Friday.",
-          "ru": "Крайний срок сдачи отчёта — пятница."
+          "en": "The deadline is on Friday.",
+          "ru": "Крайний срок — в пятницу."
         }
       ]
     },
@@ -30,8 +30,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "My colleague helped me with the project.",
-          "ru": "Коллега помог мне с проектом."
+          "en": "My colleague helped me with my work.",
+          "ru": "Коллега помог мне с работой."
         }
       ]
     },
@@ -88,8 +88,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Communication is an important skill.",
-          "ru": "Общение — важный навык."
+          "en": "Speaking English is an important skill.",
+          "ru": "Говорить по-английски — важный навык."
         }
       ]
     },
@@ -132,8 +132,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "Who is responsible for this task?",
-          "ru": "Кто отвечает за эту задачу?"
+          "en": "Who is responsible for this?",
+          "ru": "Кто за это отвечает?"
         }
       ]
     },
@@ -149,6 +149,20 @@
         {
           "en": "He quit his job last month.",
           "ru": "Он уволился в прошлом месяце."
+        }
+      ]
+    },
+    {
+      "id": "b1-d02-11",
+      "en": "project",
+      "ru": [
+        "проект"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We are working on a new project.",
+          "ru": "Мы работаем над новым проектом."
         }
       ]
     }

@@ -16,8 +16,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "Let me introduce my friend Tom.",
-          "ru": "Позволь представить моего друга Тома."
+          "en": "I want to introduce my friend Tom.",
+          "ru": "Я хочу представить своего друга Тома."
         }
       ]
     },
@@ -44,8 +44,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "He is tall for his age.",
-          "ru": "Он высокий для своего возраста."
+          "en": "What is your age?",
+          "ru": "Сколько тебе лет?"
         }
       ]
     },

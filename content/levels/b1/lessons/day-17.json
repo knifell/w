@@ -72,7 +72,7 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "This coat was a real bargain.",
+          "en": "This coat was a great bargain.",
           "ru": "Это пальто — очень выгодная покупка."
         }
       ]
@@ -100,8 +100,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Delivery is free on orders over 50 pounds.",
-          "ru": "Доставка бесплатна при заказе от 50 фунтов."
+          "en": "Delivery is free if you spend 50 pounds.",
+          "ru": "Доставка бесплатна, если потратить 50 фунтов."
         }
       ]
     },
@@ -114,8 +114,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "Is this model in stock?",
-          "ru": "Эта модель есть в наличии?"
+          "en": "Are these shoes in stock?",
+          "ru": "Эти туфли есть в наличии?"
         }
       ]
     },
@@ -142,8 +142,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The quality of this coat is excellent.",
-          "ru": "Качество этого пальто отличное."
+          "en": "The quality of this bag is great.",
+          "ru": "Качество этой сумки отличное."
         }
       ]
     }

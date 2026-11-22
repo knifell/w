@@ -3,146 +3,148 @@
   "level": "A1",
   "day": 42,
   "island": 5,
-  "title": "My big family",
-  "topic": "family 2",
+  "title": "Describing things",
+  "topic": "adjectives 2",
   "words": [
     {
       "id": "a1-d42-01",
-      "en": "dad",
+      "en": "thin",
       "ru": [
-        "папа"
+        "худой",
+        "тонкий"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "My dad is a pilot.",
-          "ru": "Мой папа — пилот."
+          "en": "The cat is very thin.",
+          "ru": "Кошка очень худая."
         }
       ]
     },
     {
       "id": "a1-d42-02",
-      "en": "grandma",
+      "en": "strong",
       "ru": [
-        "бабушка"
+        "сильный"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "I visit my grandma on Sundays.",
-          "ru": "По воскресеньям я навещаю бабушку."
+          "en": "My dad is very strong.",
+          "ru": "Мой папа очень сильный."
         }
       ]
     },
     {
       "id": "a1-d42-03",
-      "en": "grandpa",
+      "en": "weak",
       "ru": [
-        "дедушка"
+        "слабый"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "My grandpa tells funny stories.",
-          "ru": "Дедушка рассказывает смешные истории."
+          "en": "I feel weak today.",
+          "ru": "Сегодня я чувствую слабость."
         }
       ]
     },
     {
       "id": "a1-d42-04",
-      "en": "grandparents",
+      "en": "cute",
       "ru": [
-        "бабушка и дедушка"
+        "милый",
+        "симпатичный"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "My grandparents live in a village.",
-          "ru": "Мои бабушка и дедушка живут в деревне."
+          "en": "What a cute dog!",
+          "ru": "Какая милая собака!"
         }
       ]
     },
     {
       "id": "a1-d42-05",
-      "en": "grandson",
+      "en": "dangerous",
       "ru": [
-        "внук"
+        "опасный"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "Their grandson is five.",
-          "ru": "Их внуку пять лет."
+          "en": "Bears are dangerous.",
+          "ru": "Медведи опасны."
         }
       ]
     },
     {
       "id": "a1-d42-06",
-      "en": "granddaughter",
+      "en": "safe",
       "ru": [
-        "внучка"
+        "безопасный"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "She has one granddaughter.",
-          "ru": "У неё одна внучка."
+          "en": "This street is safe for children.",
+          "ru": "Эта улица безопасна для детей."
         }
       ]
     },
     {
       "id": "a1-d42-07",
-      "en": "niece",
+      "en": "sweet",
       "ru": [
-        "племянница"
+        "сладкий"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "My niece is a student.",
-          "ru": "Моя племянница — студентка."
+          "en": "This cake is too sweet.",
+          "ru": "Этот торт слишком сладкий."
         }
       ]
     },
     {
       "id": "a1-d42-08",
-      "en": "nephew",
+      "en": "sour",
       "ru": [
-        "племянник"
+        "кислый"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "My nephew likes football.",
-          "ru": "Мой племянник любит футбол."
+          "en": "Lemons are sour.",
+          "ru": "Лимоны кислые."
         }
       ]
     },
     {
       "id": "a1-d42-09",
-      "en": "boyfriend",
+      "en": "salty",
       "ru": [
-        "парень (молодой человек)"
+        "солёный"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "Her boyfriend is from Spain.",
-          "ru": "Её парень из Испании."
+          "en": "The soup is too salty.",
+          "ru": "Суп слишком солёный."
         }
       ]
     },
     {
       "id": "a1-d42-10",
-      "en": "girlfriend",
+      "en": "sick",
       "ru": [
-        "девушка (подруга)"
+        "больной"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "His girlfriend is a doctor.",
-          "ru": "Его девушка — врач."
+          "en": "I feel sick.",
+          "ru": "Мне плохо."
         }
       ]
     }

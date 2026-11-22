@@ -18,8 +18,8 @@
       ],
       "examples": [
         {
-          "en": "Who invented the telephone?",
-          "ru": "Кто изобрёл телефон?"
+          "en": "Who invented the computer?",
+          "ru": "Кто изобрёл компьютер?"
         }
       ]
     },
@@ -66,8 +66,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "This is very advanced technology.",
-          "ru": "Это очень передовая технология."
+          "en": "This is a very advanced computer.",
+          "ru": "Это очень продвинутый компьютер."
         }
       ]
     },
@@ -95,8 +95,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "This heater is very efficient.",
-          "ru": "Этот обогреватель очень эффективный."
+          "en": "This car is very efficient.",
+          "ru": "Эта машина очень экономичная."
         }
       ]
     },

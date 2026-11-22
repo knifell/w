@@ -63,7 +63,7 @@
       "pos": "adverb",
       "examples": [
         {
-          "en": "We finally arrived home.",
+          "en": "We finally got home.",
           "ru": "Мы наконец добрались до дома."
         }
       ]
@@ -105,7 +105,7 @@
       "pos": "phrase",
       "examples": [
         {
-          "en": "In the end, everything was fine.",
+          "en": "In the end, everything was good.",
           "ru": "В конце концов всё было хорошо."
         }
       ]
@@ -119,8 +119,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "I missed the beginning of the film.",
-          "ru": "Я пропустил начало фильма."
+          "en": "I didn't see the beginning of the film.",
+          "ru": "Я не видел начало фильма."
         }
       ]
     },

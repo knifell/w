@@ -3,146 +3,148 @@
   "level": "A1",
   "day": 52,
   "island": 6,
-  "title": "Big numbers",
-  "topic": "numbers 3",
+  "title": "Polite words",
+  "topic": "polite phrases",
   "words": [
     {
       "id": "a1-d52-01",
-      "en": "forty",
+      "en": "excuse me",
       "ru": [
-        "сорок"
+        "извините (привлечь внимание)"
       ],
-      "pos": "other",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "My dad is forty.",
-          "ru": "Моему папе сорок."
+          "en": "Excuse me, where is the station?",
+          "ru": "Извините, где вокзал?"
         }
       ]
     },
     {
       "id": "a1-d52-02",
-      "en": "fifty",
+      "en": "you're welcome",
       "ru": [
-        "пятьдесят"
+        "пожалуйста (в ответ на спасибо)"
       ],
-      "pos": "other",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "There are fifty students.",
-          "ru": "Здесь пятьдесят учеников."
+          "en": "Thank you! — You're welcome.",
+          "ru": "Спасибо! — Пожалуйста."
         }
       ]
     },
     {
       "id": "a1-d52-03",
-      "en": "sixty",
+      "en": "no problem",
       "ru": [
-        "шестьдесят"
+        "без проблем"
       ],
-      "pos": "other",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "An hour has sixty minutes.",
-          "ru": "В часе шестьдесят минут."
+          "en": "No problem, I can help.",
+          "ru": "Без проблем, я могу помочь."
         }
       ]
     },
     {
       "id": "a1-d52-04",
-      "en": "seventy",
+      "en": "see you",
       "ru": [
-        "семьдесят"
+        "увидимся",
+        "пока"
       ],
-      "pos": "other",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "My grandma is seventy.",
-          "ru": "Моей бабушке семьдесят."
+          "en": "See you on Monday!",
+          "ru": "Увидимся в понедельник!"
         }
       ]
     },
     {
       "id": "a1-d52-05",
-      "en": "eighty",
+      "en": "good luck",
       "ru": [
-        "восемьдесят"
+        "удачи"
       ],
-      "pos": "other",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "The book has eighty pages.",
-          "ru": "В книге восемьдесят страниц."
+          "en": "Good luck with your test!",
+          "ru": "Удачи на контрольной!"
         }
       ]
     },
     {
       "id": "a1-d52-06",
-      "en": "ninety",
+      "en": "well done",
       "ru": [
-        "девяносто"
+        "молодец",
+        "отлично"
       ],
-      "pos": "other",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "He lived to ninety.",
-          "ru": "Он дожил до девяноста."
+          "en": "Well done! Great work!",
+          "ru": "Молодец! Отличная работа!"
         }
       ]
     },
     {
       "id": "a1-d52-07",
-      "en": "thousand",
+      "en": "never mind",
       "ru": [
-        "тысяча"
+        "ничего страшного"
       ],
-      "pos": "other",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "A thousand people came to the concert.",
-          "ru": "На концерт пришла тысяча человек."
+          "en": "Never mind, everything is good.",
+          "ru": "Ничего страшного, всё хорошо."
         }
       ]
     },
     {
       "id": "a1-d52-08",
-      "en": "million",
+      "en": "welcome",
       "ru": [
-        "миллион"
+        "добро пожаловать"
       ],
-      "pos": "other",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "The city has a million people.",
-          "ru": "В городе миллион жителей."
+          "en": "Welcome to our school!",
+          "ru": "Добро пожаловать в нашу школу!"
         }
       ]
     },
     {
       "id": "a1-d52-09",
-      "en": "half",
+      "en": "bless you",
       "ru": [
-        "половина"
+        "будь здоров (при чихании)"
       ],
-      "pos": "noun",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "Half of the cake is for you.",
-          "ru": "Половина торта — тебе."
+          "en": "Bless you!",
+          "ru": "Будь здоров!"
         }
       ]
     },
     {
       "id": "a1-d52-10",
-      "en": "zero",
+      "en": "congratulations",
       "ru": [
-        "ноль"
+        "поздравляю"
       ],
-      "pos": "other",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "The temperature is zero.",
-          "ru": "Температура — ноль."
+          "en": "Congratulations on your new house!",
+          "ru": "Поздравляю с новым домом!"
         }
       ]
     }

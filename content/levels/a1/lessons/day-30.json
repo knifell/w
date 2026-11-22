@@ -3,140 +3,157 @@
   "level": "A1",
   "day": 30,
   "island": 3,
-  "title": "Little words",
-  "topic": "small words",
+  "title": "Opposites",
+  "topic": "opposites",
   "words": [
     {
       "id": "a1-d30-01",
-      "en": "and",
+      "en": "long",
       "ru": [
-        "и"
+        "длинный",
+        "долгий"
       ],
-      "pos": "conjunction",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "I like tea and coffee.",
-          "ru": "Я люблю чай и кофе."
+          "en": "The train is very long.",
+          "ru": "Поезд очень длинный."
         }
       ]
     },
     {
       "id": "a1-d30-02",
-      "en": "but",
+      "en": "fast",
       "ru": [
-        "но"
+        "быстрый",
+        "быстро"
       ],
-      "pos": "conjunction",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "It's small but nice.",
-          "ru": "Он маленький, но милый."
+          "en": "This car is very fast.",
+          "ru": "Эта машина очень быстрая."
         }
       ]
     },
     {
       "id": "a1-d30-03",
-      "en": "or",
+      "en": "slow",
       "ru": [
-        "или"
+        "медленный"
       ],
-      "pos": "conjunction",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "Tea or coffee?",
-          "ru": "Чай или кофе?"
+          "en": "The bus is slow.",
+          "ru": "Автобус медленный."
         }
       ]
     },
     {
       "id": "a1-d30-04",
-      "en": "because",
+      "en": "easy",
       "ru": [
-        "потому что"
+        "лёгкий",
+        "простой"
       ],
-      "pos": "conjunction",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "I'm happy because it's Friday.",
-          "ru": "Я рад, потому что сегодня пятница."
+          "en": "This test is easy.",
+          "ru": "Этот тест лёгкий."
         }
       ]
     },
     {
       "id": "a1-d30-05",
-      "en": "very",
+      "en": "difficult",
       "ru": [
-        "очень"
+        "трудный",
+        "сложный"
       ],
-      "pos": "adverb",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "It's very cold today.",
-          "ru": "Сегодня очень холодно."
+          "en": "This word is not difficult.",
+          "ru": "Это слово несложное."
         }
       ]
     },
     {
       "id": "a1-d30-06",
-      "en": "too",
+      "en": "right",
       "ru": [
-        "тоже",
-        "слишком"
+        "правильный",
+        "верный"
       ],
-      "pos": "adverb",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "I like it too.",
-          "ru": "Мне это тоже нравится."
+          "en": "That's right!",
+          "ru": "Правильно!"
         }
       ]
     },
     {
       "id": "a1-d30-07",
-      "en": "also",
+      "en": "wrong",
       "ru": [
-        "также",
-        "тоже"
+        "неправильный",
+        "неверный"
       ],
-      "pos": "adverb",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "She also speaks French.",
-          "ru": "Она также говорит по-французски."
+          "en": "Sorry, that's wrong.",
+          "ru": "Извините, это неверно."
         }
       ]
     },
     {
       "id": "a1-d30-08",
-      "en": "again",
+      "en": "clean",
       "ru": [
-        "снова",
-        "ещё раз"
+        "чистый"
       ],
-      "pos": "adverb",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "Say it again, please.",
-          "ru": "Скажи это ещё раз, пожалуйста."
+          "en": "My house is clean.",
+          "ru": "Мой дом чистый."
         }
       ]
     },
     {
       "id": "a1-d30-09",
-      "en": "only",
+      "en": "rich",
       "ru": [
-        "только"
+        "богатый"
       ],
-      "pos": "adverb",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "I have only one sister.",
-          "ru": "У меня только одна сестра."
+          "en": "He is a rich man.",
+          "ru": "Он богатый человек."
         }
       ]
     },
     {
       "id": "a1-d30-10",
+      "en": "poor",
+      "ru": [
+        "бедный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The family is very poor.",
+          "ru": "Семья очень бедная."
+        }
+      ]
+    },
+    {
+      "id": "a1-d30-11",
       "en": "about",
       "ru": [
         "о",

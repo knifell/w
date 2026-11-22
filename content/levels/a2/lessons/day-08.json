@@ -30,7 +30,7 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The station is ten minutes away.",
+          "en": "The station is ten minutes from here.",
           "ru": "Вокзал в десяти минутах отсюда."
         }
       ]
@@ -147,6 +147,21 @@
         {
           "en": "You can't park here.",
           "ru": "Здесь нельзя парковаться."
+        }
+      ]
+    },
+    {
+      "id": "a2-d08-11",
+      "en": "must",
+      "ru": [
+        "должен",
+        "обязан"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "You must buy a ticket.",
+          "ru": "Ты должен купить билет."
         }
       ]
     }

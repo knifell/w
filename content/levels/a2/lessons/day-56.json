@@ -44,12 +44,13 @@
       ],
       "pos": "verb",
       "forms": [
-        "stole"
+        "stole",
+        "stolen"
       ],
       "examples": [
         {
-          "en": "Someone stole my bike.",
-          "ru": "Кто-то украл мой велосипед."
+          "en": "A thief stole my bike.",
+          "ru": "Вор украл мой велосипед."
         }
       ]
     },
@@ -60,6 +61,9 @@
         "вор"
       ],
       "pos": "noun",
+      "forms": [
+        "thieves"
+      ],
       "examples": [
         {
           "en": "The police caught the thief.",
@@ -77,8 +81,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "It's still a mystery.",
-          "ru": "Это до сих пор загадка."
+          "en": "It's a big mystery.",
+          "ru": "Это большая загадка."
         }
       ]
     },
@@ -90,6 +94,10 @@
         "прятаться"
       ],
       "pos": "verb",
+      "forms": [
+        "hid",
+        "hidden"
+      ],
       "examples": [
         {
           "en": "Where did you hide the keys?",

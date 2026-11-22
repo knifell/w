@@ -43,8 +43,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "Workers need to upskill regularly.",
-          "ru": "Работникам нужно регулярно повышать квалификацию."
+          "en": "Workers need to upskill every year.",
+          "ru": "Работникам нужно каждый год повышать квалификацию."
         }
       ]
     },
@@ -117,7 +117,7 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "We work in a hybrid model.",
+          "en": "We work in a hybrid way.",
           "ru": "Мы работаем в гибридном формате."
         }
       ]

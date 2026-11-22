@@ -15,8 +15,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "We reached a compromise.",
-          "ru": "Мы пришли к компромиссу."
+          "en": "We found a compromise.",
+          "ru": "Мы нашли компромисс."
         }
       ]
     },
@@ -30,8 +30,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The two countries signed an agreement.",
-          "ru": "Две страны подписали соглашение."
+          "en": "The two countries have an agreement.",
+          "ru": "У двух стран есть соглашение."
         }
       ]
     },
@@ -44,8 +44,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "There's a conflict between the two groups.",
-          "ru": "Между двумя группами конфликт."
+          "en": "There's a conflict between the two teams.",
+          "ru": "Между двумя командами конфликт."
         }
       ]
     },

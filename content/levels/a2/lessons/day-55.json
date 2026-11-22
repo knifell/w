@@ -15,8 +15,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The ship sailed across the ocean.",
-          "ru": "Корабль переплыл океан."
+          "en": "The ship sailed across the sea.",
+          "ru": "Корабль переплыл море."
         }
       ]
     },
@@ -133,7 +133,7 @@
       ],
       "examples": [
         {
-          "en": "We sailed along the coast.",
+          "en": "We sailed along the shore.",
           "ru": "Мы плыли вдоль берега."
         }
       ]

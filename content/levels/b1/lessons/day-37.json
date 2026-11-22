@@ -15,8 +15,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "They moved to a rural area.",
-          "ru": "Они переехали в сельскую местность."
+          "en": "They moved to a quiet rural village.",
+          "ru": "Они переехали в тихую сельскую деревню."
         }
       ]
     },
@@ -152,6 +152,21 @@
         {
           "en": "The development of the city was fast.",
           "ru": "Город развивался быстро."
+        }
+      ]
+    },
+    {
+      "id": "b1-d37-11",
+      "en": "area",
+      "ru": [
+        "район",
+        "область"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We live in a quiet area.",
+          "ru": "Мы живём в тихом районе."
         }
       ]
     }

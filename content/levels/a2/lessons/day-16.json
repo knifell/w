@@ -30,8 +30,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "My laptop is very light.",
-          "ru": "Мой ноутбук очень лёгкий."
+          "en": "My bag is very light.",
+          "ru": "Моя сумка очень лёгкая."
         }
       ]
     },
@@ -72,8 +72,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "The fridge is empty.",
-          "ru": "Холодильник пустой."
+          "en": "The box is empty.",
+          "ru": "Коробка пустая."
         }
       ]
     },
@@ -86,8 +86,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "The glass is full of water.",
-          "ru": "Стакан полон воды."
+          "en": "The bottle is full of water.",
+          "ru": "Бутылка полна воды."
         }
       ]
     },
@@ -114,8 +114,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "The river is very wide here.",
-          "ru": "Здесь река очень широкая."
+          "en": "The street is very wide here.",
+          "ru": "Здесь улица очень широкая."
         }
       ]
     },
@@ -144,6 +144,34 @@
         {
           "en": "Your shoes are dirty.",
           "ru": "Твои ботинки грязные."
+        }
+      ]
+    },
+    {
+      "id": "a2-d16-11",
+      "en": "high",
+      "ru": [
+        "высокий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The wall is very high.",
+          "ru": "Стена очень высокая."
+        }
+      ]
+    },
+    {
+      "id": "a2-d16-12",
+      "en": "low",
+      "ru": [
+        "низкий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This chair is too low for me.",
+          "ru": "Этот стул слишком низкий для меня."
         }
       ]
     }

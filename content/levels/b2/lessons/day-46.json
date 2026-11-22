@@ -15,8 +15,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Coding is now part of the curriculum.",
-          "ru": "Программирование теперь входит в учебную программу."
+          "en": "IT is now part of the curriculum.",
+          "ru": "IT теперь входит в учебную программу."
         }
       ]
     },
@@ -30,8 +30,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The final assessment is in June.",
-          "ru": "Итоговая аттестация в июне."
+          "en": "The last assessment is in June.",
+          "ru": "Последняя аттестация в июне."
         }
       ]
     },
@@ -54,7 +54,6 @@
       "id": "b2-d46-04",
       "en": "dissertation",
       "ru": [
-        "диссертация",
         "дипломная работа"
       ],
       "pos": "noun",
@@ -69,8 +68,8 @@
       "id": "b2-d46-05",
       "en": "thesis",
       "ru": [
-        "тезис",
-        "диссертация"
+        "диссертация",
+        "тезис"
       ],
       "pos": "noun",
       "examples": [
@@ -125,8 +124,8 @@
       ],
       "examples": [
         {
-          "en": "Postgraduates often teach classes.",
-          "ru": "Магистранты часто ведут занятия."
+          "en": "Postgraduates often give seminars.",
+          "ru": "Магистранты часто ведут семинары."
         }
       ]
     },

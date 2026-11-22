@@ -85,8 +85,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "Old people are vulnerable in the heat.",
-          "ru": "Пожилые люди уязвимы в жару."
+          "en": "Old people are vulnerable when it's very hot.",
+          "ru": "Пожилые люди уязвимы в сильную жару."
         }
       ]
     },
@@ -112,6 +112,9 @@
         "предвидеть"
       ],
       "pos": "verb",
+      "forms": [
+        "foresaw"
+      ],
       "examples": [
         {
           "en": "Nobody could foresee the crisis.",
@@ -143,7 +146,7 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Learning is a lifelong endeavour.",
+          "en": "Learning is an endeavour for all your life.",
           "ru": "Учёба — дело всей жизни."
         }
       ]

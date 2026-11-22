@@ -3,151 +3,155 @@
   "level": "A1",
   "day": 51,
   "island": 6,
-  "title": "Which way?",
-  "topic": "directions",
+  "title": "At the shop",
+  "topic": "shopping phrases",
   "words": [
     {
       "id": "a1-d51-01",
-      "en": "left",
+      "en": "pound",
       "ru": [
-        "левый",
-        "налево"
+        "фунт"
       ],
-      "pos": "adverb",
+      "pos": "noun",
+      "forms": [
+        "pounds"
+      ],
       "examples": [
         {
-          "en": "Turn left here.",
-          "ru": "Поверни здесь налево."
+          "en": "This book is five pounds.",
+          "ru": "Эта книга стоит пять фунтов."
         }
       ]
     },
     {
       "id": "a1-d51-02",
-      "en": "on the right",
+      "en": "dollar",
       "ru": [
-        "справа"
+        "доллар"
       ],
-      "pos": "phrase",
+      "pos": "noun",
+      "forms": [
+        "dollars"
+      ],
       "examples": [
         {
-          "en": "The bank is on the right.",
-          "ru": "Банк справа."
+          "en": "It's ten dollars.",
+          "ru": "Это стоит десять долларов."
         }
       ]
     },
     {
       "id": "a1-d51-03",
-      "en": "stop",
+      "en": "euro",
       "ru": [
-        "останавливаться",
-        "остановка"
+        "евро"
       ],
-      "pos": "verb",
+      "pos": "noun",
+      "forms": [
+        "euros"
+      ],
       "examples": [
         {
-          "en": "Stop! The light is red.",
-          "ru": "Стой! Горит красный."
+          "en": "The cake is two euros.",
+          "ru": "Торт стоит два евро."
         }
       ]
     },
     {
       "id": "a1-d51-04",
-      "en": "start",
+      "en": "closed",
       "ru": [
-        "начинать"
+        "закрытый"
       ],
-      "pos": "verb",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "Let's start the game.",
-          "ru": "Давай начнём игру."
+          "en": "The shop is closed on Sunday.",
+          "ru": "В воскресенье магазин закрыт."
         }
       ]
     },
     {
       "id": "a1-d51-05",
-      "en": "go back",
+      "en": "here you are",
       "ru": [
-        "возвращаться"
+        "вот, пожалуйста"
       ],
-      "pos": "verb",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "Let's go back home.",
-          "ru": "Давай вернёмся домой."
+          "en": "Here you are, your coffee.",
+          "ru": "Вот, пожалуйста, ваш кофе."
         }
       ]
     },
     {
       "id": "a1-d51-06",
-      "en": "way",
+      "en": "anything else",
       "ru": [
-        "путь",
-        "дорога"
+        "что-нибудь ещё"
       ],
-      "pos": "noun",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "Is this the way to the park?",
-          "ru": "Это дорога к парку?"
+          "en": "Anything else?",
+          "ru": "Что-нибудь ещё?"
         }
       ]
     },
     {
       "id": "a1-d51-07",
-      "en": "traffic lights",
+      "en": "that's all",
       "ru": [
-        "светофор"
+        "это всё"
       ],
-      "pos": "noun",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "Turn right at the traffic lights.",
-          "ru": "На светофоре поверни направо."
+          "en": "No, that's all, thanks.",
+          "ru": "Нет, это всё, спасибо."
         }
       ]
     },
     {
       "id": "a1-d51-08",
-      "en": "across",
+      "en": "how about",
       "ru": [
-        "через",
-        "на другую сторону"
+        "как насчёт"
       ],
-      "pos": "preposition",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "Walk across the bridge.",
-          "ru": "Перейди через мост."
+          "en": "How about a cup of tea?",
+          "ru": "Как насчёт чашки чая?"
         }
       ]
     },
     {
       "id": "a1-d51-09",
-      "en": "along",
+      "en": "I'd like",
       "ru": [
-        "вдоль",
-        "по"
+        "я бы хотел"
       ],
-      "pos": "preposition",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "Walk along this street.",
-          "ru": "Иди по этой улице."
+          "en": "I'd like an apple, please.",
+          "ru": "Я бы хотел яблоко, пожалуйста."
         }
       ]
     },
     {
       "id": "a1-d51-10",
-      "en": "around",
+      "en": "of course",
       "ru": [
-        "вокруг"
+        "конечно"
       ],
-      "pos": "preposition",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "We walked around the lake.",
-          "ru": "Мы обошли вокруг озера."
+          "en": "Of course you can!",
+          "ru": "Конечно, можно!"
         }
       ]
     }

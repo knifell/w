@@ -3,153 +3,162 @@
   "level": "A1",
   "day": 31,
   "island": 4,
-  "title": "Fruit and vegetables",
-  "topic": "fruit",
+  "title": "More numbers",
+  "topic": "numbers 2",
   "words": [
     {
       "id": "a1-d31-01",
-      "en": "tomato",
+      "en": "eleven",
       "ru": [
-        "помидор"
+        "одиннадцать"
       ],
-      "pos": "noun",
+      "pos": "other",
       "examples": [
         {
-          "en": "I put a tomato in the salad.",
-          "ru": "Я положил помидор в салат."
+          "en": "My son is eleven.",
+          "ru": "Моему сыну одиннадцать."
         }
       ]
     },
     {
       "id": "a1-d31-02",
-      "en": "carrot",
+      "en": "twelve",
       "ru": [
-        "морковь"
+        "двенадцать"
       ],
-      "pos": "noun",
-      "forms": [
-        "carrots"
-      ],
+      "pos": "other",
       "examples": [
         {
-          "en": "Rabbits like carrots.",
-          "ru": "Кролики любят морковку."
+          "en": "I have twelve pencils.",
+          "ru": "У меня двенадцать карандашей."
         }
       ]
     },
     {
       "id": "a1-d31-03",
-      "en": "grape",
+      "en": "twenty",
       "ru": [
-        "виноград"
+        "двадцать"
       ],
-      "pos": "noun",
-      "forms": [
-        "grapes"
-      ],
+      "pos": "other",
       "examples": [
         {
-          "en": "These grapes are sweet.",
-          "ru": "Этот виноград сладкий."
+          "en": "I have twenty books.",
+          "ru": "У меня двадцать книг."
         }
       ]
     },
     {
       "id": "a1-d31-04",
-      "en": "lemon",
+      "en": "thirty",
       "ru": [
-        "лимон"
+        "тридцать"
       ],
-      "pos": "noun",
+      "pos": "other",
       "examples": [
         {
-          "en": "I drink tea with lemon.",
-          "ru": "Я пью чай с лимоном."
+          "en": "My mother is thirty.",
+          "ru": "Моей маме тридцать."
         }
       ]
     },
     {
       "id": "a1-d31-05",
-      "en": "strawberry",
+      "en": "hundred",
       "ru": [
-        "клубника"
+        "сто"
       ],
-      "pos": "noun",
+      "pos": "other",
       "examples": [
         {
-          "en": "I love strawberry ice cream.",
-          "ru": "Я обожаю клубничное мороженое."
+          "en": "A hundred people came.",
+          "ru": "Пришло сто человек."
         }
       ]
     },
     {
       "id": "a1-d31-06",
-      "en": "pear",
+      "en": "number",
       "ru": [
-        "груша"
+        "номер",
+        "число"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "This pear is very big.",
-          "ru": "Эта груша очень большая."
+          "en": "What is your phone number?",
+          "ru": "Какой у тебя номер телефона?"
         }
       ]
     },
     {
       "id": "a1-d31-07",
-      "en": "cucumber",
+      "en": "first",
       "ru": [
-        "огурец"
+        "первый"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "Cut the cucumber, please.",
-          "ru": "Нарежь огурец, пожалуйста."
+          "en": "This is my first day here.",
+          "ru": "Это мой первый день здесь."
         }
       ]
     },
     {
       "id": "a1-d31-08",
-      "en": "cherry",
+      "en": "second",
       "ru": [
-        "вишня",
-        "черешня"
+        "второй"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "There is a cherry on the cake.",
-          "ru": "На торте вишенка."
+          "en": "This is my second day at school.",
+          "ru": "Это мой второй день в школе."
         }
       ]
     },
     {
       "id": "a1-d31-09",
-      "en": "watermelon",
+      "en": "third",
       "ru": [
-        "арбуз"
+        "третий"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "We eat watermelon in summer.",
-          "ru": "Летом мы едим арбуз."
+          "en": "This is my third coffee today!",
+          "ru": "Это мой третий кофе за сегодня!"
         }
       ]
     },
     {
       "id": "a1-d31-10",
-      "en": "salad",
+      "en": "something",
       "ru": [
-        "салат"
+        "что-то",
+        "что-нибудь"
       ],
-      "pos": "noun",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "I want a green salad.",
-          "ru": "Я хочу зелёный салат."
+          "en": "I want something to eat.",
+          "ru": "Я хочу что-нибудь поесть."
+        }
+      ]
+    },
+    {
+      "id": "a1-d31-11",
+      "en": "nothing",
+      "ru": [
+        "ничего"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "There is nothing on the desk.",
+          "ru": "На парте ничего нет."
         }
       ]
     }

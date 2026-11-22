@@ -13,6 +13,10 @@
         "забывать"
       ],
       "pos": "verb",
+      "forms": [
+        "forgot",
+        "forgotten"
+      ],
       "examples": [
         {
           "en": "Don't forget your keys.",
@@ -27,6 +31,9 @@
         "находить"
       ],
       "pos": "verb",
+      "forms": [
+        "found"
+      ],
       "examples": [
         {
           "en": "I can't find my phone.",
@@ -57,6 +64,9 @@
         "приводить"
       ],
       "pos": "verb",
+      "forms": [
+        "brought"
+      ],
       "examples": [
         {
           "en": "Bring your friends to the party.",
@@ -71,6 +81,9 @@
         "строить"
       ],
       "pos": "verb",
+      "forms": [
+        "built"
+      ],
       "examples": [
         {
           "en": "They want to build a new school.",
@@ -86,10 +99,14 @@
         "разбивать"
       ],
       "pos": "verb",
+      "forms": [
+        "broke",
+        "broken"
+      ],
       "examples": [
         {
-          "en": "Be careful, don't break the glass.",
-          "ru": "Осторожно, не разбей стакан."
+          "en": "Don't break the plate!",
+          "ru": "Не разбей тарелку!"
         }
       ]
     },

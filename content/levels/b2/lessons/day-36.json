@@ -24,7 +24,6 @@
       "id": "b2-d36-02",
       "en": "disclose",
       "ru": [
-        "раскрывать",
         "разглашать"
       ],
       "pos": "verb",
@@ -44,8 +43,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "The donor wished to remain anonymous.",
-          "ru": "Даритель пожелал остаться анонимным."
+          "en": "The writer wants to stay anonymous.",
+          "ru": "Автор хочет остаться анонимным."
         }
       ]
     },
@@ -134,8 +133,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "He tried to conceal his feelings.",
-          "ru": "Он пытался скрыть свои чувства."
+          "en": "He tried to conceal his fear.",
+          "ru": "Он пытался скрыть свой страх."
         }
       ]
     },
@@ -143,8 +142,7 @@
       "id": "b2-d36-10",
       "en": "expose",
       "ru": [
-        "разоблачать",
-        "раскрывать"
+        "разоблачать"
       ],
       "pos": "verb",
       "forms": [

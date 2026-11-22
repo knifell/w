@@ -60,8 +60,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "My sister is afraid of spiders.",
-          "ru": "Моя сестра боится пауков."
+          "en": "My sister is afraid of dogs.",
+          "ru": "Моя сестра боится собак."
         }
       ]
     },
@@ -74,8 +74,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "I'm bored, let's go out.",
-          "ru": "Мне скучно, пойдём погуляем."
+          "en": "I'm bored, let's play a game.",
+          "ru": "Мне скучно, давай сыграем в игру."
         }
       ]
     },
@@ -89,7 +89,7 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "The kids are excited about the trip.",
+          "en": "The children are excited about the trip.",
           "ru": "Дети в восторге от поездки."
         }
       ]

@@ -76,8 +76,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The treatment was successful.",
-          "ru": "Лечение прошло успешно."
+          "en": "The treatment was very good.",
+          "ru": "Лечение было очень хорошим."
         }
       ]
     },
@@ -104,8 +104,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "The injection was painful.",
-          "ru": "Укол был болезненным."
+          "en": "My leg is very painful.",
+          "ru": "Нога очень болит."
         }
       ]
     },
@@ -149,6 +149,34 @@
         {
           "en": "I have a sore throat.",
           "ru": "У меня болит горло."
+        }
+      ]
+    },
+    {
+      "id": "b1-d09-11",
+      "en": "pain",
+      "ru": [
+        "боль"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I have a pain in my leg.",
+          "ru": "У меня болит нога."
+        }
+      ]
+    },
+    {
+      "id": "b1-d09-12",
+      "en": "disease",
+      "ru": [
+        "болезнь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This disease is very dangerous.",
+          "ru": "Эта болезнь очень опасна."
         }
       ]
     }

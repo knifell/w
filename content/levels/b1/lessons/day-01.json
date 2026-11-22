@@ -29,8 +29,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "There was a two-hour delay because of fog.",
-          "ru": "Из-за тумана была задержка на два часа."
+          "en": "There was a two-hour delay because of the snow.",
+          "ru": "Из-за снега была задержка на два часа."
         }
       ]
     },
@@ -73,8 +73,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Rome is a popular destination in summer.",
-          "ru": "Рим — популярное направление летом."
+          "en": "Rome is a famous destination in summer.",
+          "ru": "Рим — известное направление летом."
         }
       ]
     },

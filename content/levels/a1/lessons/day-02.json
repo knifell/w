@@ -3,146 +3,165 @@
   "level": "A1",
   "day": 2,
   "island": 1,
-  "title": "Numbers 1–10",
-  "topic": "numbers",
+  "title": "Hello!",
+  "topic": "greetings",
   "words": [
     {
       "id": "a1-d02-01",
-      "en": "one",
+      "en": "hello",
       "ru": [
-        "один"
+        "привет",
+        "здравствуйте"
       ],
-      "pos": "other",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "I have one brother.",
-          "ru": "У меня один брат."
+          "en": "Hello! I am Anna.",
+          "ru": "Привет! Я Анна."
         }
       ]
     },
     {
       "id": "a1-d02-02",
-      "en": "two",
+      "en": "goodbye",
       "ru": [
-        "два"
+        "до свидания",
+        "пока"
       ],
-      "pos": "other",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "I have two cats.",
-          "ru": "У меня две кошки."
+          "en": "Goodbye, Tom!",
+          "ru": "До свидания, Том!"
         }
       ]
     },
     {
       "id": "a1-d02-03",
-      "en": "three",
+      "en": "yes",
       "ru": [
-        "три"
+        "да"
       ],
-      "pos": "other",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "She has three sisters.",
-          "ru": "У неё три сестры."
+          "en": "Yes, I am Max.",
+          "ru": "Да, я Макс."
         }
       ]
     },
     {
       "id": "a1-d02-04",
-      "en": "four",
+      "en": "no",
       "ru": [
-        "четыре"
+        "нет"
       ],
-      "pos": "other",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "We need four chairs.",
-          "ru": "Нам нужно четыре стула."
+          "en": "No, I am not Tom.",
+          "ru": "Нет, я не Том."
         }
       ]
     },
     {
       "id": "a1-d02-05",
-      "en": "five",
+      "en": "not",
       "ru": [
-        "пять"
+        "не"
       ],
-      "pos": "other",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "I get up at five.",
-          "ru": "Я встаю в пять."
+          "en": "She is not Kate.",
+          "ru": "Она не Кейт."
         }
       ]
     },
     {
       "id": "a1-d02-06",
-      "en": "six",
+      "en": "name",
       "ru": [
-        "шесть"
+        "имя"
       ],
-      "pos": "other",
+      "pos": "noun",
       "examples": [
         {
-          "en": "There are six eggs.",
-          "ru": "Здесь шесть яиц."
+          "en": "My name is Anna.",
+          "ru": "Меня зовут Анна."
         }
       ]
     },
     {
       "id": "a1-d02-07",
-      "en": "seven",
+      "en": "my",
       "ru": [
-        "семь"
+        "мой"
       ],
-      "pos": "other",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "A week has seven days.",
-          "ru": "В неделе семь дней."
+          "en": "Max is my friend.",
+          "ru": "Макс — мой друг."
         }
       ]
     },
     {
       "id": "a1-d02-08",
-      "en": "eight",
+      "en": "your",
       "ru": [
-        "восемь"
+        "твой",
+        "ваш"
       ],
-      "pos": "other",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "School starts at eight.",
-          "ru": "Школа начинается в восемь."
+          "en": "Is your name Tom?",
+          "ru": "Тебя зовут Том?"
         }
       ]
     },
     {
       "id": "a1-d02-09",
-      "en": "nine",
+      "en": "friend",
       "ru": [
-        "девять"
+        "друг",
+        "подруга"
       ],
-      "pos": "other",
+      "pos": "noun",
       "examples": [
         {
-          "en": "He is nine years old.",
-          "ru": "Ему девять лет."
+          "en": "You are a nice friend.",
+          "ru": "Ты хороший друг."
         }
       ]
     },
     {
       "id": "a1-d02-10",
-      "en": "ten",
+      "en": "nice",
       "ru": [
-        "десять"
+        "приятный",
+        "милый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Ben is nice.",
+          "ru": "Бен милый."
+        }
+      ]
+    },
+    {
+      "id": "a1-d02-11",
+      "en": "a",
+      "ru": [
+        "артикль (один, какой-то)"
       ],
       "pos": "other",
       "examples": [
         {
-          "en": "I can count to ten.",
-          "ru": "Я умею считать до десяти."
+          "en": "He is a friend.",
+          "ru": "Он друг."
         }
       ]
     }

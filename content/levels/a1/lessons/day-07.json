@@ -3,157 +3,161 @@
   "level": "A1",
   "day": 7,
   "island": 1,
-  "title": "My body",
-  "topic": "body",
+  "title": "Pets and farm animals",
+  "topic": "animals",
   "words": [
     {
       "id": "a1-d07-01",
-      "en": "head",
+      "en": "cat",
       "ru": [
-        "голова"
+        "кошка",
+        "кот"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "My head hurts.",
-          "ru": "У меня болит голова."
+          "en": "My cat is black.",
+          "ru": "Моя кошка чёрная."
         }
       ]
     },
     {
       "id": "a1-d07-02",
-      "en": "face",
+      "en": "dog",
       "ru": [
-        "лицо"
+        "собака"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Wash your face.",
-          "ru": "Умой лицо."
+          "en": "The dog is big and brown.",
+          "ru": "Собака большая и коричневая."
         }
       ]
     },
     {
       "id": "a1-d07-03",
-      "en": "eye",
+      "en": "fish",
       "ru": [
-        "глаз"
+        "рыба"
       ],
       "pos": "noun",
-      "forms": [
-        "eyes"
-      ],
       "examples": [
         {
-          "en": "She has blue eyes.",
-          "ru": "У неё голубые глаза."
+          "en": "The fish is red and yellow.",
+          "ru": "Рыбка красно-жёлтая."
         }
       ]
     },
     {
       "id": "a1-d07-04",
-      "en": "ear",
+      "en": "cow",
       "ru": [
-        "ухо"
+        "корова"
       ],
       "pos": "noun",
-      "forms": [
-        "ears"
-      ],
       "examples": [
         {
-          "en": "The dog has big ears.",
-          "ru": "У собаки большие уши."
+          "en": "The cow is black and white.",
+          "ru": "Корова чёрно-белая."
         }
       ]
     },
     {
       "id": "a1-d07-05",
-      "en": "nose",
+      "en": "pig",
       "ru": [
-        "нос"
+        "свинья"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The clown has a red nose.",
-          "ru": "У клоуна красный нос."
+          "en": "The pig is pink.",
+          "ru": "Свинья розовая."
         }
       ]
     },
     {
       "id": "a1-d07-06",
-      "en": "mouth",
+      "en": "duck",
       "ru": [
-        "рот"
+        "утка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Open your mouth, please.",
-          "ru": "Открой рот, пожалуйста."
+          "en": "This duck is white.",
+          "ru": "Эта утка белая."
         }
       ]
     },
     {
       "id": "a1-d07-07",
-      "en": "hand",
+      "en": "animal",
       "ru": [
-        "рука",
-        "кисть"
+        "животное"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Give me your hand.",
-          "ru": "Дай мне руку."
+          "en": "What is your favourite animal?",
+          "ru": "Какое твоё любимое животное?"
         }
       ]
     },
     {
       "id": "a1-d07-08",
-      "en": "arm",
+      "en": "big",
       "ru": [
-        "рука (от плеча)"
+        "большой"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "He broke his arm.",
-          "ru": "Он сломал руку."
+          "en": "The bear is big.",
+          "ru": "Медведь большой."
         }
       ]
     },
     {
       "id": "a1-d07-09",
-      "en": "leg",
+      "en": "small",
       "ru": [
-        "нога"
+        "маленький"
       ],
-      "pos": "noun",
-      "forms": [
-        "legs"
-      ],
+      "pos": "adjective",
       "examples": [
         {
-          "en": "A dog has four legs.",
-          "ru": "У собаки четыре ноги."
+          "en": "I have a small dog.",
+          "ru": "У меня маленькая собака."
         }
       ]
     },
     {
       "id": "a1-d07-10",
-      "en": "foot",
+      "en": "monkey",
       "ru": [
-        "ступня",
-        "нога"
+        "обезьяна"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "My foot is cold.",
-          "ru": "У меня замёрзла нога."
+          "en": "The monkey is brown.",
+          "ru": "Обезьяна коричневая."
+        }
+      ]
+    },
+    {
+      "id": "a1-d07-11",
+      "en": "bear",
+      "ru": [
+        "медведь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A bear is a big animal.",
+          "ru": "Медведь — большое животное."
         }
       ]
     }

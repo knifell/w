@@ -61,8 +61,8 @@
       ],
       "examples": [
         {
-          "en": "Shoplifters will be prosecuted.",
-          "ru": "Магазинных воров будут привлекать к суду."
+          "en": "Thieves will be prosecuted.",
+          "ru": "Воров будут привлекать к суду."
         }
       ]
     },
@@ -75,8 +75,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The jury reached a verdict.",
-          "ru": "Присяжные вынесли вердикт."
+          "en": "The judge gave the verdict.",
+          "ru": "Судья вынес вердикт."
         }
       ]
     },
@@ -107,8 +107,8 @@
       ],
       "examples": [
         {
-          "en": "She was convicted of theft.",
-          "ru": "Её признали виновной в краже."
+          "en": "She was convicted of robbery.",
+          "ru": "Её признали виновной в ограблении."
         }
       ]
     },
@@ -121,7 +121,7 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "They filed a lawsuit against the company.",
+          "en": "They started a lawsuit against the company.",
           "ru": "Они подали иск против компании."
         }
       ]
@@ -150,8 +150,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The penalty for speeding is high.",
-          "ru": "Наказание за превышение скорости суровое."
+          "en": "The penalty for this offence is high.",
+          "ru": "Наказание за это правонарушение суровое."
         }
       ]
     }

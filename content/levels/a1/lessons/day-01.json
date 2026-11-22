@@ -3,151 +3,150 @@
   "level": "A1",
   "day": 1,
   "island": 1,
-  "title": "Hello!",
-  "topic": "greetings",
+  "title": "I am Anna",
+  "topic": "pronouns",
   "words": [
     {
       "id": "a1-d01-01",
-      "en": "hello",
+      "en": "I",
       "ru": [
-        "привет",
-        "здравствуйте"
+        "я"
       ],
-      "pos": "phrase",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "Hello! How are you?",
-          "ru": "Привет! Как дела?"
+          "en": "I am Anna.",
+          "ru": "Я Анна."
         }
       ]
     },
     {
       "id": "a1-d01-02",
-      "en": "goodbye",
+      "en": "you",
       "ru": [
-        "до свидания",
-        "пока"
+        "ты",
+        "вы"
       ],
-      "pos": "phrase",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "Goodbye, see you soon!",
-          "ru": "До свидания, до скорой встречи!"
+          "en": "You are Tom.",
+          "ru": "Ты Том."
         }
       ]
     },
     {
       "id": "a1-d01-03",
-      "en": "please",
+      "en": "he",
       "ru": [
-        "пожалуйста"
+        "он"
       ],
-      "pos": "adverb",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "A glass of water, please.",
-          "ru": "Стакан воды, пожалуйста."
+          "en": "He is Max.",
+          "ru": "Он Макс."
         }
       ]
     },
     {
       "id": "a1-d01-04",
-      "en": "thank you",
+      "en": "she",
       "ru": [
-        "спасибо"
+        "она"
       ],
-      "pos": "phrase",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "Thank you very much!",
-          "ru": "Большое спасибо!"
+          "en": "She is Kate.",
+          "ru": "Она Кейт."
         }
       ]
     },
     {
       "id": "a1-d01-05",
-      "en": "yes",
+      "en": "we",
       "ru": [
-        "да"
+        "мы"
       ],
-      "pos": "adverb",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "Yes, I like it.",
-          "ru": "Да, мне нравится."
+          "en": "We are Anna and Tom.",
+          "ru": "Мы Анна и Том."
         }
       ]
     },
     {
       "id": "a1-d01-06",
-      "en": "no",
+      "en": "they",
       "ru": [
-        "нет"
+        "они"
       ],
-      "pos": "adverb",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "No, thanks.",
-          "ru": "Нет, спасибо."
+          "en": "They are Ben and Mia.",
+          "ru": "Они Бен и Миа."
         }
       ]
     },
     {
       "id": "a1-d01-07",
-      "en": "sorry",
+      "en": "am",
       "ru": [
-        "извините",
-        "простите"
+        "есть (я)",
+        "являюсь"
       ],
-      "pos": "adjective",
+      "pos": "verb",
       "examples": [
         {
-          "en": "Sorry, I'm late.",
-          "ru": "Извините, я опоздал."
+          "en": "I am Ben.",
+          "ru": "Я Бен."
         }
       ]
     },
     {
       "id": "a1-d01-08",
-      "en": "name",
+      "en": "is",
       "ru": [
-        "имя"
+        "есть (он, она, оно)",
+        "является"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "My name is Anna.",
-          "ru": "Меня зовут Анна."
+          "en": "She is Mia.",
+          "ru": "Она Миа."
         }
       ]
     },
     {
       "id": "a1-d01-09",
-      "en": "nice",
+      "en": "are",
       "ru": [
-        "приятный",
-        "милый"
+        "есть (мы, вы, они)",
+        "являются"
       ],
-      "pos": "adjective",
+      "pos": "verb",
       "examples": [
         {
-          "en": "Nice to meet you.",
-          "ru": "Приятно познакомиться."
+          "en": "Are you Kate?",
+          "ru": "Ты Кейт?"
         }
       ]
     },
     {
       "id": "a1-d01-10",
-      "en": "friend",
+      "en": "and",
       "ru": [
-        "друг",
-        "подруга"
+        "и"
       ],
-      "pos": "noun",
+      "pos": "conjunction",
       "examples": [
         {
-          "en": "This is my friend Max.",
-          "ru": "Это мой друг Макс."
+          "en": "I am Kate and you are Ben.",
+          "ru": "Я Кейт, а ты Бен."
         }
       ]
     }

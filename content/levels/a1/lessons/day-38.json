@@ -3,148 +3,150 @@
   "level": "A1",
   "day": 38,
   "island": 4,
-  "title": "Let's play!",
-  "topic": "sports",
+  "title": "Months and time",
+  "topic": "time 2",
   "words": [
     {
       "id": "a1-d38-01",
-      "en": "basketball",
+      "en": "November",
       "ru": [
-        "баскетбол"
+        "ноябрь"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "He plays basketball at school.",
-          "ru": "Он играет в баскетбол в школе."
+          "en": "November is cold and wet.",
+          "ru": "Ноябрь холодный и сырой."
         }
       ]
     },
     {
       "id": "a1-d38-02",
-      "en": "volleyball",
+      "en": "December",
       "ru": [
-        "волейбол"
+        "декабрь"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "We play volleyball on the beach.",
-          "ru": "Мы играем в волейбол на пляже."
+          "en": "It is very cold in December.",
+          "ru": "В декабре очень холодно."
         }
       ]
     },
     {
       "id": "a1-d38-03",
-      "en": "ski",
+      "en": "half past",
       "ru": [
-        "кататься на лыжах"
+        "половина (о времени)"
       ],
-      "pos": "verb",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "Can you ski?",
-          "ru": "Ты умеешь кататься на лыжах?"
+          "en": "It's half past six.",
+          "ru": "Сейчас половина седьмого."
         }
       ]
     },
     {
       "id": "a1-d38-04",
-      "en": "skate",
+      "en": "quarter",
       "ru": [
-        "кататься на коньках"
+        "четверть"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "We skate in winter.",
-          "ru": "Зимой мы катаемся на коньках."
+          "en": "It's a quarter to five.",
+          "ru": "Сейчас без четверти пять."
         }
       ]
     },
     {
       "id": "a1-d38-05",
-      "en": "jump",
+      "en": "midnight",
       "ru": [
-        "прыгать"
+        "полночь"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "The cat can jump very high.",
-          "ru": "Кошка умеет прыгать очень высоко."
+          "en": "I go to bed at midnight.",
+          "ru": "Я ложусь спать в полночь."
         }
       ]
     },
     {
       "id": "a1-d38-06",
-      "en": "throw",
+      "en": "midday",
       "ru": [
-        "бросать"
+        "полдень"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Throw the ball to me.",
-          "ru": "Брось мне мяч."
+          "en": "We eat at midday.",
+          "ru": "Мы едим в полдень."
         }
       ]
     },
     {
       "id": "a1-d38-07",
-      "en": "catch",
+      "en": "next",
       "ru": [
-        "ловить"
+        "следующий"
       ],
-      "pos": "verb",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "Catch the ball!",
-          "ru": "Лови мяч!"
+          "en": "See you next week!",
+          "ru": "Увидимся на следующей неделе!"
         }
       ]
     },
     {
       "id": "a1-d38-08",
-      "en": "kick",
+      "en": "last",
       "ru": [
-        "пинать",
-        "бить ногой"
+        "прошлый",
+        "последний"
       ],
-      "pos": "verb",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "Kick the ball into the goal.",
-          "ru": "Забей мяч в ворота."
+          "en": "I was at the zoo last week.",
+          "ru": "На прошлой неделе я был в зоопарке."
         }
       ]
     },
     {
       "id": "a1-d38-09",
-      "en": "hockey",
+      "en": "tonight",
       "ru": [
-        "хоккей"
+        "сегодня вечером"
       ],
-      "pos": "noun",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "Hockey is popular in Canada.",
-          "ru": "Хоккей популярен в Канаде."
+          "en": "What are you doing tonight?",
+          "ru": "Что ты делаешь сегодня вечером?"
         }
       ]
     },
     {
       "id": "a1-d38-10",
-      "en": "bat",
+      "en": "weekday",
       "ru": [
-        "бита",
-        "летучая мышь"
+        "будний день"
       ],
       "pos": "noun",
+      "forms": [
+        "weekdays"
+      ],
       "examples": [
         {
-          "en": "He hit the ball with a bat.",
-          "ru": "Он отбил мяч битой."
+          "en": "I work on weekdays.",
+          "ru": "Я работаю по будням."
         }
       ]
     }

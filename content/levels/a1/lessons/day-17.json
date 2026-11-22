@@ -3,151 +3,147 @@
   "level": "A1",
   "day": 17,
   "island": 2,
-  "title": "I can do it!",
-  "topic": "verbs 1",
+  "title": "Good and bad",
+  "topic": "adjectives",
   "words": [
     {
       "id": "a1-d17-01",
-      "en": "go",
+      "en": "good",
       "ru": [
-        "идти",
-        "ехать"
+        "хороший"
       ],
-      "pos": "verb",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "I go to school every day.",
-          "ru": "Я хожу в школу каждый день."
+          "en": "Good morning!",
+          "ru": "Доброе утро!"
         }
       ]
     },
     {
       "id": "a1-d17-02",
-      "en": "come",
+      "en": "bad",
       "ru": [
-        "приходить"
+        "плохой"
       ],
-      "pos": "verb",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "Come here, please.",
-          "ru": "Иди сюда, пожалуйста."
+          "en": "This coffee is bad.",
+          "ru": "Этот кофе плохой."
         }
       ]
     },
     {
       "id": "a1-d17-03",
-      "en": "see",
+      "en": "new",
       "ru": [
-        "видеть"
+        "новый"
       ],
-      "pos": "verb",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "I can see the sea.",
-          "ru": "Я вижу море."
+          "en": "I have a new book.",
+          "ru": "У меня новая книга."
         }
       ]
     },
     {
       "id": "a1-d17-04",
-      "en": "look",
+      "en": "old",
       "ru": [
-        "смотреть"
+        "старый"
       ],
-      "pos": "verb",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "Look at the picture.",
-          "ru": "Посмотри на картинку."
+          "en": "Our house is very old.",
+          "ru": "Наш дом очень старый."
         }
       ]
     },
     {
       "id": "a1-d17-05",
-      "en": "listen",
+      "en": "hot",
       "ru": [
-        "слушать"
+        "горячий",
+        "жаркий"
       ],
-      "pos": "verb",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "Listen to the music.",
-          "ru": "Послушай музыку."
+          "en": "The soup is hot.",
+          "ru": "Суп горячий."
         }
       ]
     },
     {
       "id": "a1-d17-06",
-      "en": "speak",
+      "en": "cold",
       "ru": [
-        "говорить"
+        "холодный"
       ],
-      "pos": "verb",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "I speak English.",
-          "ru": "Я говорю по-английски."
+          "en": "The water is cold.",
+          "ru": "Вода холодная."
         }
       ]
     },
     {
       "id": "a1-d17-07",
-      "en": "live",
+      "en": "young",
       "ru": [
-        "жить"
+        "молодой"
       ],
-      "pos": "verb",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "We live in Moscow.",
-          "ru": "Мы живём в Москве."
+          "en": "My teacher is young.",
+          "ru": "Мой учитель молодой."
         }
       ]
     },
     {
       "id": "a1-d17-08",
-      "en": "work",
+      "en": "beautiful",
       "ru": [
-        "работать"
+        "красивый"
       ],
-      "pos": "verb",
-      "forms": [
-        "works"
-      ],
+      "pos": "adjective",
       "examples": [
         {
-          "en": "My dad works in an office.",
-          "ru": "Мой папа работает в офисе."
+          "en": "What a beautiful cat!",
+          "ru": "Какая красивая кошка!"
         }
       ]
     },
     {
       "id": "a1-d17-09",
-      "en": "play",
+      "en": "but",
       "ru": [
-        "играть"
+        "но"
       ],
-      "pos": "verb",
+      "pos": "conjunction",
       "examples": [
         {
-          "en": "The children play in the park.",
-          "ru": "Дети играют в парке."
+          "en": "The house is old but beautiful.",
+          "ru": "Дом старый, но красивый."
         }
       ]
     },
     {
       "id": "a1-d17-10",
-      "en": "like",
+      "en": "or",
       "ru": [
-        "нравиться",
-        "любить"
+        "или"
       ],
-      "pos": "verb",
+      "pos": "conjunction",
       "examples": [
         {
-          "en": "I like cats.",
-          "ru": "Мне нравятся кошки."
+          "en": "Tea or coffee?",
+          "ru": "Чай или кофе?"
         }
       ]
     }

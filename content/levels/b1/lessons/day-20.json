@@ -34,8 +34,8 @@
       ],
       "examples": [
         {
-          "en": "Who discovered penicillin?",
-          "ru": "Кто открыл пенициллин?"
+          "en": "Who discovered this island?",
+          "ru": "Кто открыл этот остров?"
         }
       ]
     },
@@ -48,8 +48,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The scientist won a prize.",
-          "ru": "Учёный получил премию."
+          "en": "The scientist works in a laboratory.",
+          "ru": "Учёный работает в лаборатории."
         }
       ]
     },
@@ -119,8 +119,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "He dreams of travelling to space.",
-          "ru": "Он мечтает полететь в космос."
+          "en": "He wants to travel to space.",
+          "ru": "Он хочет полететь в космос."
         }
       ]
     },

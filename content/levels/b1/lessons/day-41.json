@@ -93,8 +93,8 @@
       ],
       "examples": [
         {
-          "en": "The report revealed the truth.",
-          "ru": "Отчёт раскрыл правду."
+          "en": "The report revealed the facts.",
+          "ru": "Отчёт раскрыл факты."
         }
       ]
     },
@@ -138,8 +138,8 @@
       ],
       "examples": [
         {
-          "en": "The police are investigating the case.",
-          "ru": "Полиция расследует дело."
+          "en": "The police are investigating the accident.",
+          "ru": "Полиция расследует аварию."
         }
       ]
     },
@@ -152,8 +152,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The scandal was in all the papers.",
-          "ru": "Скандал был во всех газетах."
+          "en": "The scandal was in all the news.",
+          "ru": "Скандал был во всех новостях."
         }
       ]
     }

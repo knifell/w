@@ -3,146 +3,178 @@
   "level": "A1",
   "day": 19,
   "island": 2,
-  "title": "In town",
-  "topic": "places",
+  "title": "Let's go!",
+  "topic": "verbs 2",
   "words": [
     {
       "id": "a1-d19-01",
-      "en": "shop",
+      "en": "sit",
       "ru": [
-        "магазин"
+        "сидеть",
+        "садиться"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "sat"
+      ],
       "examples": [
         {
-          "en": "The shop is open.",
-          "ru": "Магазин открыт."
+          "en": "Sit here, please.",
+          "ru": "Садись сюда, пожалуйста."
         }
       ]
     },
     {
       "id": "a1-d19-02",
-      "en": "zoo",
+      "en": "stand",
       "ru": [
-        "зоопарк"
+        "стоять"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "stood"
+      ],
       "examples": [
         {
-          "en": "Let's go to the zoo.",
-          "ru": "Пойдём в зоопарк."
+          "en": "Please stand here.",
+          "ru": "Пожалуйста, встаньте здесь."
         }
       ]
     },
     {
       "id": "a1-d19-03",
-      "en": "street",
+      "en": "run",
       "ru": [
-        "улица"
+        "бегать",
+        "бежать"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "ran"
+      ],
       "examples": [
         {
-          "en": "I live on this street.",
-          "ru": "Я живу на этой улице."
+          "en": "Dogs like to run.",
+          "ru": "Собаки любят бегать."
         }
       ]
     },
     {
       "id": "a1-d19-04",
-      "en": "city",
+      "en": "walk",
       "ru": [
-        "город"
+        "гулять",
+        "ходить пешком"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "London is a big city.",
-          "ru": "Лондон — большой город."
+          "en": "We walk to school.",
+          "ru": "Мы ходим в школу пешком."
         }
       ]
     },
     {
       "id": "a1-d19-05",
-      "en": "country",
+      "en": "open",
       "ru": [
-        "страна"
+        "открывать"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "What country are you from?",
-          "ru": "Из какой ты страны?"
+          "en": "Open the window, please.",
+          "ru": "Открой окно, пожалуйста."
         }
       ]
     },
     {
       "id": "a1-d19-06",
-      "en": "hospital",
+      "en": "help",
       "ru": [
-        "больница"
+        "помогать"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "My mum works in a hospital.",
-          "ru": "Моя мама работает в больнице."
+          "en": "Can you help me?",
+          "ru": "Можешь мне помочь?"
         }
       ]
     },
     {
       "id": "a1-d19-07",
-      "en": "restaurant",
+      "en": "know",
       "ru": [
-        "ресторан"
+        "знать"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "knew"
+      ],
       "examples": [
         {
-          "en": "Let's eat in a restaurant.",
-          "ru": "Давай поедим в ресторане."
+          "en": "I know his name.",
+          "ru": "Я знаю его имя."
         }
       ]
     },
     {
       "id": "a1-d19-08",
-      "en": "supermarket",
+      "en": "let's",
       "ru": [
-        "супермаркет"
+        "давай",
+        "давайте"
       ],
-      "pos": "noun",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "I buy food at the supermarket.",
-          "ru": "Я покупаю еду в супермаркете."
+          "en": "Let's go home.",
+          "ru": "Пойдём домой."
         }
       ]
     },
     {
       "id": "a1-d19-09",
-      "en": "airport",
+      "en": "was",
       "ru": [
-        "аэропорт"
+        "был",
+        "была",
+        "было"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "The airport is far from here.",
-          "ru": "Аэропорт далеко отсюда."
+          "en": "It was cold today.",
+          "ru": "Сегодня было холодно."
         }
       ]
     },
     {
       "id": "a1-d19-10",
-      "en": "village",
+      "en": "were",
       "ru": [
-        "деревня"
+        "были"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "My grandfather lives in a village.",
-          "ru": "Мой дедушка живёт в деревне."
+          "en": "We were at home.",
+          "ru": "Мы были дома."
+        }
+      ]
+    },
+    {
+      "id": "a1-d19-11",
+      "en": "be",
+      "ru": [
+        "быть"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I want to be a teacher.",
+          "ru": "Я хочу быть учителем."
         }
       ]
     }

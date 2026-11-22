@@ -3,148 +3,152 @@
   "level": "A1",
   "day": 20,
   "island": 2,
-  "title": "Outside",
-  "topic": "outdoors",
+  "title": "People",
+  "topic": "people",
   "words": [
     {
       "id": "a1-d20-01",
-      "en": "sun",
+      "en": "people",
       "ru": [
-        "солнце"
+        "люди"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The sun is hot today.",
-          "ru": "Сегодня солнце жаркое."
+          "en": "There are many people here.",
+          "ru": "Здесь много людей."
         }
       ]
     },
     {
       "id": "a1-d20-02",
-      "en": "moon",
+      "en": "doctor",
       "ru": [
-        "луна"
+        "врач",
+        "доктор"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The moon is big tonight.",
-          "ru": "Сегодня большая луна."
+          "en": "My mother is a doctor.",
+          "ru": "Моя мама — врач."
         }
       ]
     },
     {
       "id": "a1-d20-03",
-      "en": "tree",
+      "en": "person",
       "ru": [
-        "дерево"
+        "человек"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "There is a bird in the tree.",
-          "ru": "На дереве птица."
+          "en": "He is a good person.",
+          "ru": "Он хороший человек."
         }
       ]
     },
     {
       "id": "a1-d20-04",
-      "en": "flower",
+      "en": "child",
       "ru": [
-        "цветок"
+        "ребёнок"
       ],
       "pos": "noun",
+      "forms": [
+        "children"
+      ],
       "examples": [
         {
-          "en": "This flower is red.",
-          "ru": "Этот цветок красный."
+          "en": "The child is sleeping.",
+          "ru": "Ребёнок спит."
         }
       ]
     },
     {
       "id": "a1-d20-05",
-      "en": "sea",
+      "en": "baby",
       "ru": [
-        "море"
+        "малыш",
+        "младенец"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I love swimming in the sea.",
-          "ru": "Я люблю плавать в море."
+          "en": "The baby wants milk.",
+          "ru": "Малыш хочет молока."
         }
       ]
     },
     {
       "id": "a1-d20-06",
-      "en": "wind",
+      "en": "son",
       "ru": [
-        "ветер"
+        "сын"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The wind is cold.",
-          "ru": "Ветер холодный."
+          "en": "They have one son.",
+          "ru": "У них один сын."
         }
       ]
     },
     {
       "id": "a1-d20-07",
-      "en": "cloud",
+      "en": "daughter",
       "ru": [
-        "облако"
+        "дочь"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "There is a big cloud in the sky.",
-          "ru": "В небе большое облако."
+          "en": "Their daughter is a doctor.",
+          "ru": "Их дочь — врач."
         }
       ]
     },
     {
       "id": "a1-d20-08",
-      "en": "grass",
+      "en": "grandfather",
       "ru": [
-        "трава"
+        "дедушка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Don't walk on the grass.",
-          "ru": "Не ходи по траве."
+          "en": "My grandfather is old.",
+          "ru": "Мой дедушка старый."
         }
       ]
     },
     {
       "id": "a1-d20-09",
-      "en": "outside",
+      "en": "why",
       "ru": [
-        "снаружи",
-        "на улице"
+        "почему",
+        "зачем"
       ],
       "pos": "adverb",
       "examples": [
         {
-          "en": "Let's play outside.",
-          "ru": "Давай поиграем на улице."
+          "en": "Why are you at home?",
+          "ru": "Почему ты дома?"
         }
       ]
     },
     {
       "id": "a1-d20-10",
-      "en": "inside",
+      "en": "because",
       "ru": [
-        "внутри",
-        "в доме"
+        "потому что"
       ],
-      "pos": "adverb",
+      "pos": "conjunction",
       "examples": [
         {
-          "en": "It's warm inside.",
-          "ru": "Внутри тепло."
+          "en": "I am at home because it is cold.",
+          "ru": "Я дома, потому что холодно."
         }
       ]
     }

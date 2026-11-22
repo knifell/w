@@ -3,147 +3,148 @@
   "level": "A1",
   "day": 24,
   "island": 3,
-  "title": "My day",
-  "topic": "daily routine",
+  "title": "Things around us",
+  "topic": "things",
   "words": [
     {
       "id": "a1-d24-01",
-      "en": "get up",
+      "en": "phone",
       "ru": [
-        "вставать"
+        "телефон"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "I get up at seven.",
-          "ru": "Я встаю в семь."
+          "en": "Where is my phone?",
+          "ru": "Где мой телефон?"
         }
       ]
     },
     {
       "id": "a1-d24-02",
-      "en": "go to bed",
+      "en": "computer",
       "ru": [
-        "ложиться спать"
+        "компьютер"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "I go to bed at ten.",
-          "ru": "Я ложусь спать в десять."
+          "en": "I have a new computer.",
+          "ru": "У меня новый компьютер."
         }
       ]
     },
     {
       "id": "a1-d24-03",
-      "en": "wash",
+      "en": "car",
       "ru": [
-        "мыть",
-        "умываться"
+        "машина",
+        "автомобиль"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Wash your hands, please.",
-          "ru": "Помой руки, пожалуйста."
+          "en": "My dad has a red car.",
+          "ru": "У моего папы красная машина."
         }
       ]
     },
     {
       "id": "a1-d24-04",
-      "en": "watch TV",
+      "en": "bike",
       "ru": [
-        "смотреть телевизор"
+        "велосипед"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "We watch TV in the evening.",
-          "ru": "Вечером мы смотрим телевизор."
+          "en": "I go to school by bike.",
+          "ru": "Я езжу в школу на велосипеде."
         }
       ]
     },
     {
       "id": "a1-d24-05",
-      "en": "come home",
+      "en": "bus",
       "ru": [
-        "приходить домой"
+        "автобус"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "I come home at five.",
-          "ru": "Я прихожу домой в пять."
+          "en": "The bus is here.",
+          "ru": "Автобус уже здесь."
         }
       ]
     },
     {
       "id": "a1-d24-06",
-      "en": "every day",
+      "en": "train",
       "ru": [
-        "каждый день"
+        "поезд"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "I read every day.",
-          "ru": "Я читаю каждый день."
+          "en": "Our train is at ten o'clock.",
+          "ru": "Наш поезд в десять часов."
         }
       ]
     },
     {
       "id": "a1-d24-07",
-      "en": "sometimes",
+      "en": "plane",
       "ru": [
-        "иногда"
+        "самолёт"
       ],
-      "pos": "adverb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Sometimes I walk to work.",
-          "ru": "Иногда я хожу на работу пешком."
+          "en": "We go to Spain by plane.",
+          "ru": "Мы летим в Испанию на самолёте."
         }
       ]
     },
     {
       "id": "a1-d24-08",
-      "en": "always",
+      "en": "TV",
       "ru": [
-        "всегда"
+        "телевизор"
       ],
-      "pos": "adverb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "She always drinks tea.",
-          "ru": "Она всегда пьёт чай."
+          "en": "There is a TV in the house.",
+          "ru": "В доме есть телевизор."
         }
       ]
     },
     {
       "id": "a1-d24-09",
-      "en": "never",
+      "en": "watch",
       "ru": [
-        "никогда"
+        "часы (наручные)"
       ],
-      "pos": "adverb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "I never eat meat.",
-          "ru": "Я никогда не ем мясо."
+          "en": "I have a new watch.",
+          "ru": "У меня новые часы."
         }
       ]
     },
     {
       "id": "a1-d24-10",
-      "en": "often",
+      "en": "picture",
       "ru": [
-        "часто"
+        "картинка",
+        "картина"
       ],
-      "pos": "adverb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "We often go to the park.",
-          "ru": "Мы часто ходим в парк."
+          "en": "Look at this picture.",
+          "ru": "Посмотри на эту картинку."
         }
       ]
     }

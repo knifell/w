@@ -15,8 +15,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "I like modern art.",
-          "ru": "Мне нравится современное искусство."
+          "en": "I like modern music.",
+          "ru": "Мне нравится современная музыка."
         }
       ]
     },
@@ -86,8 +86,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "I'm interested in Japanese culture.",
-          "ru": "Мне интересна японская культура."
+          "en": "I'm interested in Italian culture.",
+          "ru": "Мне интересна итальянская культура."
         }
       ]
     },
@@ -101,8 +101,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "Unemployment is a social problem.",
-          "ru": "Безработица — социальная проблема."
+          "en": "Poverty is a social problem.",
+          "ru": "Бедность — социальная проблема."
         }
       ]
     },
@@ -147,8 +147,22 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "Urban areas are often crowded.",
-          "ru": "Городские районы часто переполнены."
+          "en": "Urban streets are often crowded.",
+          "ru": "Городские улицы часто переполнены."
+        }
+      ]
+    },
+    {
+      "id": "b1-d36-11",
+      "en": "life",
+      "ru": [
+        "жизнь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Life in the city is expensive.",
+          "ru": "Жизнь в городе дорогая."
         }
       ]
     }

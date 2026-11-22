@@ -3,147 +3,160 @@
   "level": "A1",
   "day": 4,
   "island": 1,
-  "title": "Colours",
-  "topic": "colours",
+  "title": "My family",
+  "topic": "family",
   "words": [
     {
       "id": "a1-d04-01",
-      "en": "red",
+      "en": "mother",
       "ru": [
-        "красный"
+        "мать"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "I have a red bag.",
-          "ru": "У меня красная сумка."
+          "en": "This is my mother.",
+          "ru": "Это моя мама."
         }
       ]
     },
     {
       "id": "a1-d04-02",
-      "en": "blue",
+      "en": "father",
       "ru": [
-        "синий",
-        "голубой"
+        "отец"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "The sea is blue.",
-          "ru": "Море синее."
+          "en": "His father is nice.",
+          "ru": "Его папа милый."
         }
       ]
     },
     {
       "id": "a1-d04-03",
-      "en": "green",
+      "en": "brother",
       "ru": [
-        "зелёный"
+        "брат"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "The grass is green.",
-          "ru": "Трава зелёная."
+          "en": "Tom is my brother.",
+          "ru": "Том — мой брат."
         }
       ]
     },
     {
       "id": "a1-d04-04",
-      "en": "yellow",
+      "en": "sister",
       "ru": [
-        "жёлтый"
+        "сестра"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "The sun is yellow.",
-          "ru": "Солнце жёлтое."
+          "en": "Is that your sister?",
+          "ru": "Это твоя сестра?"
         }
       ]
     },
     {
       "id": "a1-d04-05",
-      "en": "black",
+      "en": "family",
       "ru": [
-        "чёрный"
+        "семья"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "My cat is black.",
-          "ru": "Моя кошка чёрная."
+          "en": "This is my family.",
+          "ru": "Это моя семья."
         }
       ]
     },
     {
       "id": "a1-d04-06",
-      "en": "white",
+      "en": "our",
       "ru": [
-        "белый"
+        "наш"
       ],
-      "pos": "adjective",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "Snow is white.",
-          "ru": "Снег белый."
+          "en": "This is our mother.",
+          "ru": "Это наша мама."
         }
       ]
     },
     {
       "id": "a1-d04-07",
-      "en": "brown",
+      "en": "his",
       "ru": [
-        "коричневый"
+        "его"
       ],
-      "pos": "adjective",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "He has brown eyes.",
-          "ru": "У него карие глаза."
+          "en": "His name is Ben.",
+          "ru": "Его зовут Бен."
         }
       ]
     },
     {
       "id": "a1-d04-08",
-      "en": "pink",
+      "en": "her",
       "ru": [
-        "розовый"
+        "её"
       ],
-      "pos": "adjective",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "She likes pink flowers.",
-          "ru": "Она любит розовые цветы."
+          "en": "Her name is Kate.",
+          "ru": "Её зовут Кейт."
         }
       ]
     },
     {
       "id": "a1-d04-09",
-      "en": "purple",
+      "en": "their",
       "ru": [
-        "фиолетовый"
+        "их"
       ],
-      "pos": "adjective",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "I have a purple pen.",
-          "ru": "У меня фиолетовая ручка."
+          "en": "This is their father.",
+          "ru": "Это их папа."
         }
       ]
     },
     {
       "id": "a1-d04-10",
-      "en": "colour",
+      "en": "mum",
       "ru": [
-        "цвет"
+        "мама"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "What is your favourite colour?",
-          "ru": "Какой твой любимый цвет?"
+          "en": "Mum, this is my friend Anna.",
+          "ru": "Мама, это моя подруга Анна."
+        }
+      ]
+    },
+    {
+      "id": "a1-d04-11",
+      "en": "dad",
+      "ru": [
+        "папа"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My dad is nice.",
+          "ru": "Мой папа хороший."
         }
       ]
     }

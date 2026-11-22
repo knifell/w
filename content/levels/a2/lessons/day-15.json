@@ -57,10 +57,13 @@
         "резать"
       ],
       "pos": "verb",
+      "forms": [
+        "cuts"
+      ],
       "examples": [
         {
-          "en": "Cut the cheese into small pieces.",
-          "ru": "Нарежь сыр маленькими кусочками."
+          "en": "Cut the cheese, please.",
+          "ru": "Нарежь сыр, пожалуйста."
         }
       ]
     },
@@ -89,8 +92,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "Pour the milk into a glass.",
-          "ru": "Налей молоко в стакан."
+          "en": "Pour the milk in the cup.",
+          "ru": "Налей молоко в чашку."
         }
       ]
     },
@@ -146,8 +149,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "Taste the soup before you add salt.",
-          "ru": "Попробуй суп, прежде чем солить."
+          "en": "Taste the soup, it's delicious.",
+          "ru": "Попробуй суп, он очень вкусный."
         }
       ]
     }

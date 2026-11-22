@@ -3,150 +3,151 @@
   "level": "A1",
   "day": 57,
   "island": 6,
-  "title": "How much?",
-  "topic": "quantities",
+  "title": "Our house",
+  "topic": "house 2",
   "words": [
     {
       "id": "a1-d57-01",
-      "en": "some",
+      "en": "bath",
       "ru": [
-        "немного",
-        "несколько"
+        "ванна"
       ],
-      "pos": "other",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Can I have some water?",
-          "ru": "Можно немного воды?"
+          "en": "I have a bath every evening.",
+          "ru": "Каждый вечер я принимаю ванну."
         }
       ]
     },
     {
       "id": "a1-d57-02",
-      "en": "any",
+      "en": "washbasin",
       "ru": [
-        "какой-нибудь",
-        "сколько-нибудь"
+        "раковина",
+        "умывальник"
       ],
-      "pos": "other",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Do you have any milk?",
-          "ru": "У тебя есть молоко?"
+          "en": "Wash your hands in the washbasin.",
+          "ru": "Помой руки над раковиной."
         }
       ]
     },
     {
       "id": "a1-d57-03",
-      "en": "a lot of",
+      "en": "cooker",
       "ru": [
-        "много"
+        "плита"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "There are a lot of people here.",
-          "ru": "Здесь много людей."
+          "en": "The soup is on the cooker.",
+          "ru": "Суп на плите."
         }
       ]
     },
     {
       "id": "a1-d57-04",
-      "en": "a little",
+      "en": "roof",
       "ru": [
-        "немного"
+        "крыша"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "I speak a little English.",
-          "ru": "Я немного говорю по-английски."
+          "en": "There is a cat on the roof.",
+          "ru": "На крыше кошка."
         }
       ]
     },
     {
       "id": "a1-d57-05",
-      "en": "a few",
+      "en": "gate",
       "ru": [
-        "несколько"
+        "калитка",
+        "ворота"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "I have a few friends here.",
-          "ru": "У меня здесь несколько друзей."
+          "en": "Please open the gate.",
+          "ru": "Пожалуйста, открой калитку."
         }
       ]
     },
     {
       "id": "a1-d57-06",
-      "en": "piece",
+      "en": "fence",
       "ru": [
-        "кусок",
-        "кусочек"
+        "забор"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Can I have a piece of cake?",
-          "ru": "Можно кусочек торта?"
+          "en": "There is a cat on the fence.",
+          "ru": "На заборе кошка."
         }
       ]
     },
     {
       "id": "a1-d57-07",
-      "en": "slice",
+      "en": "balcony",
       "ru": [
-        "ломтик"
+        "балкон"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "A slice of bread, please.",
-          "ru": "Ломтик хлеба, пожалуйста."
+          "en": "We sit on the balcony in the evening.",
+          "ru": "Вечером мы сидим на балконе."
         }
       ]
     },
     {
       "id": "a1-d57-08",
-      "en": "jar",
+      "en": "upstairs",
       "ru": [
-        "банка"
+        "наверху",
+        "наверх"
       ],
-      "pos": "noun",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "A jar of honey, please.",
-          "ru": "Банку мёда, пожалуйста."
+          "en": "The bathroom is upstairs.",
+          "ru": "Ванная наверху."
         }
       ]
     },
     {
       "id": "a1-d57-09",
-      "en": "more",
+      "en": "downstairs",
       "ru": [
-        "больше",
-        "ещё"
+        "внизу",
+        "вниз"
       ],
-      "pos": "other",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "Can I have more juice?",
-          "ru": "Можно ещё сока?"
+          "en": "The TV is downstairs.",
+          "ru": "Телевизор внизу."
         }
       ]
     },
     {
       "id": "a1-d57-10",
-      "en": "enough",
+      "en": "hall",
       "ru": [
-        "достаточно"
+        "прихожая",
+        "коридор"
       ],
-      "pos": "other",
+      "pos": "noun",
       "examples": [
         {
-          "en": "I have enough money.",
-          "ru": "У меня достаточно денег."
+          "en": "Leave your shoes in the hall.",
+          "ru": "Оставь обувь в прихожей."
         }
       ]
     }

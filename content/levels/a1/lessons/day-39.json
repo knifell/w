@@ -3,150 +3,156 @@
   "level": "A1",
   "day": 39,
   "island": 4,
-  "title": "Actions",
-  "topic": "verbs 4",
+  "title": "Transport",
+  "topic": "transport",
   "words": [
     {
       "id": "a1-d39-01",
-      "en": "climb",
+      "en": "taxi",
       "ru": [
-        "лезть",
-        "взбираться"
+        "такси"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "The cat can climb trees.",
-          "ru": "Кошка умеет лазить по деревьям."
+          "en": "Let's take a taxi.",
+          "ru": "Давай возьмём такси."
         }
       ]
     },
     {
       "id": "a1-d39-02",
-      "en": "fall",
+      "en": "motorbike",
       "ru": [
-        "падать"
+        "мотоцикл"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Be careful, don't fall!",
-          "ru": "Осторожно, не упади!"
+          "en": "My dad has a motorbike.",
+          "ru": "У моего папы есть мотоцикл."
         }
       ]
     },
     {
       "id": "a1-d39-03",
-      "en": "push",
+      "en": "tram",
       "ru": [
-        "толкать"
+        "трамвай"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Push the door.",
-          "ru": "Толкни дверь."
+          "en": "I go to work by tram.",
+          "ru": "Я езжу на работу на трамвае."
         }
       ]
     },
     {
       "id": "a1-d39-04",
-      "en": "pull",
+      "en": "lorry",
       "ru": [
-        "тянуть"
+        "грузовик"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Pull the door to open it.",
-          "ru": "Потяни дверь, чтобы открыть."
+          "en": "A big lorry is on the road.",
+          "ru": "На дороге большой грузовик."
         }
       ]
     },
     {
       "id": "a1-d39-05",
-      "en": "drop",
+      "en": "helicopter",
       "ru": [
-        "ронять"
+        "вертолёт"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Don't drop the plate!",
-          "ru": "Не урони тарелку!"
+          "en": "Look, a helicopter!",
+          "ru": "Смотри, вертолёт!"
         }
       ]
     },
     {
       "id": "a1-d39-06",
-      "en": "pick up",
+      "en": "scooter",
       "ru": [
-        "поднимать"
+        "самокат",
+        "скутер"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Pick up your toys, please.",
-          "ru": "Подними свои игрушки, пожалуйста."
+          "en": "The boy has a red scooter.",
+          "ru": "У мальчика красный самокат."
         }
       ]
     },
     {
       "id": "a1-d39-07",
-      "en": "turn on",
+      "en": "ride",
       "ru": [
-        "включать"
+        "ездить (верхом, на велосипеде)"
       ],
       "pos": "verb",
+      "forms": [
+        "rode"
+      ],
       "examples": [
         {
-          "en": "Turn on the TV.",
-          "ru": "Включи телевизор."
+          "en": "I ride my bike every day.",
+          "ru": "Я катаюсь на велосипеде каждый день."
         }
       ]
     },
     {
       "id": "a1-d39-08",
-      "en": "turn off",
+      "en": "drive",
       "ru": [
-        "выключать"
+        "водить (машину)"
       ],
       "pos": "verb",
+      "forms": [
+        "drove"
+      ],
       "examples": [
         {
-          "en": "Turn off the light, please.",
-          "ru": "Выключи свет, пожалуйста."
+          "en": "My mum can drive.",
+          "ru": "Моя мама умеет водить."
         }
       ]
     },
     {
       "id": "a1-d39-09",
-      "en": "look for",
+      "en": "fly",
       "ru": [
-        "искать"
+        "летать"
       ],
       "pos": "verb",
       "forms": [
-        "looking for"
+        "flew"
       ],
       "examples": [
         {
-          "en": "I'm looking for my keys.",
-          "ru": "Я ищу свои ключи."
+          "en": "Planes fly very fast.",
+          "ru": "Самолёты летают очень быстро."
         }
       ]
     },
     {
       "id": "a1-d39-10",
-      "en": "hold",
+      "en": "road",
       "ru": [
-        "держать"
+        "дорога"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Hold my hand.",
-          "ru": "Держи меня за руку."
+          "en": "Don't play on the road.",
+          "ru": "Не играй на дороге."
         }
       ]
     }

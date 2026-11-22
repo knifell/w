@@ -15,8 +15,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "I borrow books from the library.",
-          "ru": "Я беру книги в библиотеке."
+          "en": "I read books in the library.",
+          "ru": "Я читаю книги в библиотеке."
         }
       ]
     },
@@ -71,8 +71,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "You can buy medicine at the pharmacy.",
-          "ru": "Лекарство можно купить в аптеке."
+          "en": "The pharmacy is next to the bank.",
+          "ru": "Аптека рядом с банком."
         }
       ]
     },
@@ -85,8 +85,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Let's meet in the main square.",
-          "ru": "Давай встретимся на главной площади."
+          "en": "There is a big tree in the square.",
+          "ru": "На площади растёт большое дерево."
         }
       ]
     },
@@ -142,8 +142,38 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "The city centre is very noisy.",
-          "ru": "Центр города очень шумный."
+          "en": "The city is very noisy.",
+          "ru": "Город очень шумный."
+        }
+      ]
+    },
+    {
+      "id": "a2-d07-11",
+      "en": "town",
+      "ru": [
+        "городок",
+        "небольшой город"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I live in a small town.",
+          "ru": "Я живу в маленьком городке."
+        }
+      ]
+    },
+    {
+      "id": "a2-d07-12",
+      "en": "famous",
+      "ru": [
+        "знаменитый",
+        "известный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This museum is very famous.",
+          "ru": "Этот музей очень знаменит."
         }
       ]
     }

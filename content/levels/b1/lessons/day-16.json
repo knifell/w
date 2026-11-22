@@ -154,6 +154,35 @@
           "ru": "Будь осторожен с фейковыми новостями."
         }
       ]
+    },
+    {
+      "id": "b1-d16-11",
+      "en": "information",
+      "ru": [
+        "информация"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The article has a lot of information.",
+          "ru": "В статье много информации."
+        }
+      ]
+    },
+    {
+      "id": "b1-d16-12",
+      "en": "speech",
+      "ru": [
+        "речь",
+        "выступление"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He gave a short speech.",
+          "ru": "Он произнёс короткую речь."
+        }
+      ]
     }
   ]
 }

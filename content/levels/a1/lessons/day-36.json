@@ -3,150 +3,147 @@
   "level": "A1",
   "day": 36,
   "island": 4,
-  "title": "Months and time",
-  "topic": "time 2",
+  "title": "What's the weather?",
+  "topic": "weather",
   "words": [
     {
       "id": "a1-d36-01",
-      "en": "November",
+      "en": "rainy",
       "ru": [
-        "ноябрь"
+        "дождливый"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "November is grey and wet.",
-          "ru": "Ноябрь серый и сырой."
+          "en": "It's a rainy day.",
+          "ru": "Сегодня дождливый день."
         }
       ]
     },
     {
       "id": "a1-d36-02",
-      "en": "December",
+      "en": "foggy",
       "ru": [
-        "декабрь"
+        "туманный"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "We have a party in December.",
-          "ru": "В декабре у нас праздник."
+          "en": "It's foggy this morning.",
+          "ru": "Сегодня утром туман."
         }
       ]
     },
     {
       "id": "a1-d36-03",
-      "en": "half past",
+      "en": "ice",
       "ru": [
-        "половина (о времени)"
+        "лёд"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "It's half past six.",
-          "ru": "Сейчас половина седьмого."
+          "en": "There is ice on the water.",
+          "ru": "На воде лёд."
         }
       ]
     },
     {
       "id": "a1-d36-04",
-      "en": "quarter",
+      "en": "cool",
       "ru": [
-        "четверть"
+        "прохладный"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "It's a quarter to five.",
-          "ru": "Сейчас без четверти пять."
+          "en": "It's cool in the evening.",
+          "ru": "Вечером прохладно."
         }
       ]
     },
     {
       "id": "a1-d36-05",
-      "en": "midnight",
+      "en": "rainbow",
       "ru": [
-        "полночь"
+        "радуга"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I go to bed at midnight.",
-          "ru": "Я ложусь спать в полночь."
+          "en": "Look, a rainbow!",
+          "ru": "Смотри, радуга!"
         }
       ]
     },
     {
       "id": "a1-d36-06",
-      "en": "midday",
+      "en": "temperature",
       "ru": [
-        "полдень"
+        "температура"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "We have lunch at midday.",
-          "ru": "Мы обедаем в полдень."
+          "en": "What is the temperature today?",
+          "ru": "Какая сегодня температура?"
         }
       ]
     },
     {
       "id": "a1-d36-07",
-      "en": "next",
+      "en": "wet",
       "ru": [
-        "следующий"
+        "мокрый"
       ],
       "pos": "adjective",
       "examples": [
         {
-          "en": "See you next week!",
-          "ru": "Увидимся на следующей неделе!"
+          "en": "My shoes are wet.",
+          "ru": "Мои туфли мокрые."
         }
       ]
     },
     {
       "id": "a1-d36-08",
-      "en": "last",
+      "en": "dry",
       "ru": [
-        "прошлый",
-        "последний"
+        "сухой"
       ],
       "pos": "adjective",
       "examples": [
         {
-          "en": "I saw him last week.",
-          "ru": "Я видел его на прошлой неделе."
+          "en": "Is your coat dry now?",
+          "ru": "Твоё пальто уже сухое?"
         }
       ]
     },
     {
       "id": "a1-d36-09",
-      "en": "tonight",
+      "en": "freezing",
       "ru": [
-        "сегодня вечером"
+        "морозный",
+        "очень холодный"
       ],
-      "pos": "adverb",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "What are you doing tonight?",
-          "ru": "Что ты делаешь сегодня вечером?"
+          "en": "It's freezing outside!",
+          "ru": "На улице мороз!"
         }
       ]
     },
     {
       "id": "a1-d36-10",
-      "en": "weekday",
+      "en": "sunshine",
       "ru": [
-        "будний день"
+        "солнечный свет"
       ],
       "pos": "noun",
-      "forms": [
-        "weekdays"
-      ],
       "examples": [
         {
-          "en": "I work on weekdays.",
-          "ru": "Я работаю по будням."
+          "en": "I love the sunshine.",
+          "ru": "Я люблю солнечный свет."
         }
       ]
     }

@@ -32,8 +32,8 @@
       ],
       "examples": [
         {
-          "en": "She gets dressed quickly in the morning.",
-          "ru": "Утром она быстро одевается."
+          "en": "She gets dressed in the morning.",
+          "ru": "Утром она одевается."
         }
       ]
     },
@@ -46,8 +46,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "We have breakfast in the kitchen.",
-          "ru": "Мы завтракаем на кухне."
+          "en": "We have breakfast at seven.",
+          "ru": "Мы завтракаем в семь."
         }
       ]
     },
@@ -74,8 +74,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "He takes a shower after the gym.",
-          "ru": "Он принимает душ после спортзала."
+          "en": "He takes a shower in the evening.",
+          "ru": "Он принимает душ вечером."
         }
       ]
     },
@@ -133,8 +133,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "We need to hurry, the train leaves soon.",
-          "ru": "Нам нужно спешить, поезд скоро уходит."
+          "en": "We need to hurry, the train is at eight.",
+          "ru": "Нам нужно спешить, поезд в восемь."
         }
       ]
     },
@@ -147,8 +147,37 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Let's have lunch together.",
-          "ru": "Давай пообедаем вместе."
+          "en": "Let's have lunch at one o'clock.",
+          "ru": "Давай пообедаем в час."
+        }
+      ]
+    },
+    {
+      "id": "a2-d01-11",
+      "en": "after",
+      "ru": [
+        "после"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "I have a shower after breakfast.",
+          "ru": "После завтрака я принимаю душ."
+        }
+      ]
+    },
+    {
+      "id": "a2-d01-12",
+      "en": "before",
+      "ru": [
+        "до",
+        "перед"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "I wake up before seven.",
+          "ru": "Я просыпаюсь до семи."
         }
       ]
     }

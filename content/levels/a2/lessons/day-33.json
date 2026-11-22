@@ -30,8 +30,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "My classmate helped me with maths.",
-          "ru": "Одноклассник помог мне с математикой."
+          "en": "My classmate helped me with my homework.",
+          "ru": "Одноклассник помог мне с домашним заданием."
         }
       ]
     },
@@ -146,8 +146,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "I want to get to know you better.",
-          "ru": "Я хочу узнать тебя получше."
+          "en": "I want to get to know you.",
+          "ru": "Я хочу узнать тебя поближе."
         }
       ]
     }

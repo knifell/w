@@ -15,8 +15,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "A bird is singing outside.",
-          "ru": "На улице поёт птица."
+          "en": "There is a bird in the tree.",
+          "ru": "На дереве сидит птица."
         }
       ]
     },
@@ -128,8 +128,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "Don't forget to feed the cat.",
-          "ru": "Не забудь покормить кота."
+          "en": "Can you feed the cat, please?",
+          "ru": "Можешь покормить кошку, пожалуйста?"
         }
       ]
     },
@@ -142,8 +142,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The dog is wagging its tail.",
-          "ru": "Собака виляет хвостом."
+          "en": "The dog has a long tail.",
+          "ru": "У собаки длинный хвост."
         }
       ]
     }

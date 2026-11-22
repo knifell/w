@@ -73,7 +73,7 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "We need to stay within our budget.",
+          "en": "We must keep to our budget.",
           "ru": "Нам нужно уложиться в бюджет."
         }
       ]
@@ -85,6 +85,9 @@
         "снимать деньги"
       ],
       "pos": "verb",
+      "forms": [
+        "withdrew"
+      ],
       "examples": [
         {
           "en": "I need to withdraw some money.",
@@ -102,8 +105,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The bank charges high interest.",
-          "ru": "Банк берёт высокие проценты."
+          "en": "This bank has high interest.",
+          "ru": "У этого банка высокие проценты."
         }
       ]
     },

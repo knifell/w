@@ -100,8 +100,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The vertical farm grows food indoors.",
-          "ru": "Вертикальная ферма выращивает еду в помещении."
+          "en": "The vertical farm grows food inside a building.",
+          "ru": "Вертикальная ферма выращивает еду в здании."
         }
       ]
     },
@@ -148,8 +148,8 @@
       ],
       "examples": [
         {
-          "en": "They retrofitted old buildings with solar panels.",
-          "ru": "Старые здания оснастили солнечными панелями."
+          "en": "They retrofitted old houses to use less energy.",
+          "ru": "Старые дома модернизировали, чтобы они тратили меньше энергии."
         }
       ]
     }

@@ -30,8 +30,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "She wore a red dress to the party.",
-          "ru": "Она надела красное платье на вечеринку."
+          "en": "She wore a red dress.",
+          "ru": "Она надела красное платье."
         }
       ]
     },
@@ -59,8 +59,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "I need warm boots for winter.",
-          "ru": "Мне нужны тёплые ботинки на зиму."
+          "en": "I need warm boots for the snow.",
+          "ru": "Мне нужны тёплые ботинки для снега."
         }
       ]
     },
@@ -74,8 +74,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Don't forget your hat.",
-          "ru": "Не забудь шапку."
+          "en": "Take your hat, it's cold.",
+          "ru": "Возьми шапку, холодно."
         }
       ]
     },
@@ -102,8 +102,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "I keep my keys in my pocket.",
-          "ru": "Я держу ключи в кармане."
+          "en": "I keep my phone in my pocket.",
+          "ru": "Я ношу телефон в кармане."
         }
       ]
     },
@@ -115,7 +115,8 @@
       ],
       "pos": "verb",
       "forms": [
-        "wears"
+        "wears",
+        "wore"
       ],
       "examples": [
         {

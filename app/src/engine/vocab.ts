@@ -8,7 +8,13 @@ this that these those a an the is am are was were be been isn't aren't wasn't we
 do does did don't doesn't didn't can can't not and or but to of in on at for with from by about
 here there very too so what who where when how why which yes no let's`.split(/\s+/));
 
-const split = (s: string) => s.toLowerCase().replace(/[’`]/g, "'").split(/[^a-z']+/).map((t) => t.replace(/^'+|'+$/g, '')).filter(Boolean);
+/** Имена людей и географические названия: в примерах их не нужно изучать. */
+export const NAMES = new Set(`anna tom max kate ben mia london paris moscow spain france rome italy japan canada england scotland
+berlin egypt mars africa asia europe pacific arctic india dubai seoul new york everest oxford orion milky way victorian roman
+earth moon`.split(/\s+/));
+
+/** Разбивает текст на слова (нижний регистр, апострофы внутри слова сохраняются). */
+export const tokens = (s: string) => s.toLowerCase().replace(/[’`]/g, "'").split(/[^a-z']+/).map((t) => t.replace(/^'+|'+$/g, '')).filter(Boolean);
 
 /** Возможные основы словоформы: cats→cat, liked→like, going→go, it's→it, don't→do. */
 const stems = (t: string) => [
@@ -17,13 +23,14 @@ const stems = (t: string) => [
   t.replace(/ed$/, ''), t.replace(/d$/, ''), t.replace(/(.)\1ed$/, '$1'),
   t.replace(/ing$/, ''), t.replace(/ing$/, 'e'), t.replace(/(.)\1ing$/, '$1'),
   t.replace(/er$/, ''), t.replace(/r$/, ''), t.replace(/est$/, ''), t.replace(/st$/, ''), t.replace(/ly$/, ''),
+  t.replace(/(.)\1er$/, '$1'), t.replace(/(.)\1est$/, '$1'), t.replace(/ier$/, 'y'), t.replace(/iest$/, 'y'), t.replace(/ily$/, 'y'),
 ];
 
 export function vocabOf(words: Iterable<Word>): Set<string> {
-  const v = new Set(CORE);
-  for (const w of words) for (const s of [w.en, ...(w.forms ?? [])]) split(s).forEach((t) => v.add(t));
+  const v = new Set([...CORE, ...NAMES]);
+  for (const w of words) for (const s of [w.en, ...(w.forms ?? [])]) tokens(s).forEach((t) => v.add(t));
   return v;
 }
 
 export const knownToken = (t: string, v: Set<string>) => stems(t.toLowerCase()).some((s) => v.has(s));
-export const knownSentence = (s: string, v: Set<string>) => split(s).every((t) => knownToken(t, v));
+export const knownSentence = (s: string, v: Set<string>) => tokens(s).every((t) => knownToken(t, v));

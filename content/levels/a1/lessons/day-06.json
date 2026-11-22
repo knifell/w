@@ -3,148 +3,161 @@
   "level": "A1",
   "day": 6,
   "island": 1,
-  "title": "People",
-  "topic": "people",
+  "title": "Colours",
+  "topic": "colours",
   "words": [
     {
       "id": "a1-d06-01",
-      "en": "man",
+      "en": "red",
       "ru": [
-        "мужчина"
+        "красный"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "That man is my teacher.",
-          "ru": "Тот мужчина — мой учитель."
+          "en": "It is red, not green.",
+          "ru": "Оно красное, а не зелёное."
         }
       ]
     },
     {
       "id": "a1-d06-02",
-      "en": "woman",
+      "en": "blue",
       "ru": [
-        "женщина"
+        "синий",
+        "голубой"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "The woman has a dog.",
-          "ru": "У женщины есть собака."
+          "en": "My favourite colour is blue.",
+          "ru": "Мой любимый цвет — синий."
         }
       ]
     },
     {
       "id": "a1-d06-03",
-      "en": "boy",
+      "en": "green",
       "ru": [
-        "мальчик"
+        "зелёный"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "The boy is playing football.",
-          "ru": "Мальчик играет в футбол."
+          "en": "It is green.",
+          "ru": "Оно зелёное."
         }
       ]
     },
     {
       "id": "a1-d06-04",
-      "en": "girl",
+      "en": "yellow",
       "ru": [
-        "девочка"
+        "жёлтый"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "The girl has long hair.",
-          "ru": "У девочки длинные волосы."
+          "en": "Is it yellow?",
+          "ru": "Оно жёлтое?"
         }
       ]
     },
     {
       "id": "a1-d06-05",
-      "en": "people",
+      "en": "black",
       "ru": [
-        "люди"
+        "чёрный"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "There are many people here.",
-          "ru": "Здесь много людей."
+          "en": "This is black and that is white.",
+          "ru": "Это чёрное, а то белое."
         }
       ]
     },
     {
       "id": "a1-d06-06",
-      "en": "teacher",
+      "en": "white",
       "ru": [
-        "учитель"
+        "белый"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "Our teacher is very nice.",
-          "ru": "Наш учитель очень милый."
+          "en": "Her favourite colour is white.",
+          "ru": "Её любимый цвет — белый."
         }
       ]
     },
     {
       "id": "a1-d06-07",
-      "en": "student",
+      "en": "brown",
       "ru": [
-        "студент",
-        "ученик"
+        "коричневый"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "I am a student.",
-          "ru": "Я студент."
+          "en": "That is brown and this is pink.",
+          "ru": "То коричневое, а это розовое."
         }
       ]
     },
     {
       "id": "a1-d06-08",
-      "en": "doctor",
+      "en": "pink",
       "ru": [
-        "врач",
-        "доктор"
+        "розовый"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "My aunt is a doctor.",
-          "ru": "Моя тётя — врач."
+          "en": "Pink is her favourite colour.",
+          "ru": "Розовый — её любимый цвет."
         }
       ]
     },
     {
       "id": "a1-d06-09",
-      "en": "person",
+      "en": "purple",
       "ru": [
-        "человек"
+        "фиолетовый"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "He is a good person.",
-          "ru": "Он хороший человек."
+          "en": "Is purple your favourite colour?",
+          "ru": "Фиолетовый — твой любимый цвет?"
         }
       ]
     },
     {
       "id": "a1-d06-10",
-      "en": "mum",
+      "en": "colour",
       "ru": [
-        "мама"
+        "цвет"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I love you, Mum!",
-          "ru": "Я люблю тебя, мама!"
+          "en": "What colour is it?",
+          "ru": "Какого это цвета?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d06-11",
+      "en": "favourite",
+      "ru": [
+        "любимый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Red is my favourite colour.",
+          "ru": "Красный — мой любимый цвет."
         }
       ]
     }

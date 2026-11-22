@@ -3,147 +3,148 @@
   "level": "A1",
   "day": 43,
   "island": 5,
-  "title": "Around town",
-  "topic": "places 2",
+  "title": "In class",
+  "topic": "classroom",
   "words": [
     {
       "id": "a1-d43-01",
-      "en": "church",
+      "en": "board",
       "ru": [
-        "церковь"
+        "доска"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "There is an old church in the village.",
-          "ru": "В деревне есть старая церковь."
+          "en": "Look at the board, please.",
+          "ru": "Посмотрите на доску, пожалуйста."
         }
       ]
     },
     {
       "id": "a1-d43-02",
-      "en": "café",
+      "en": "question",
       "ru": [
-        "кафе"
+        "вопрос"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Let's meet at the café.",
-          "ru": "Давай встретимся в кафе."
+          "en": "I have a question.",
+          "ru": "У меня есть вопрос."
         }
       ]
     },
     {
       "id": "a1-d43-03",
-      "en": "theatre",
+      "en": "test",
       "ru": [
-        "театр"
+        "контрольная",
+        "тест"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "We went to the theatre last night.",
-          "ru": "Вчера вечером мы ходили в театр."
+          "en": "We have a test on Friday.",
+          "ru": "В пятницу у нас контрольная."
         }
       ]
     },
     {
       "id": "a1-d43-04",
-      "en": "swimming pool",
+      "en": "rubber",
       "ru": [
-        "бассейн"
+        "ластик"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I swim in the swimming pool.",
-          "ru": "Я плаваю в бассейне."
+          "en": "Can I have your rubber?",
+          "ru": "Дашь мне свой ластик?"
         }
       ]
     },
     {
       "id": "a1-d43-05",
-      "en": "playground",
+      "en": "ruler",
       "ru": [
-        "детская площадка"
+        "линейка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The children are at the playground.",
-          "ru": "Дети на детской площадке."
+          "en": "Can I use your ruler?",
+          "ru": "Можно воспользоваться твоей линейкой?"
         }
       ]
     },
     {
       "id": "a1-d43-06",
-      "en": "police station",
+      "en": "class",
       "ru": [
-        "полицейский участок"
+        "урок",
+        "класс"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The police station is near the bank.",
-          "ru": "Полицейский участок рядом с банком."
+          "en": "Our class is at nine.",
+          "ru": "Наш урок в девять."
         }
       ]
     },
     {
       "id": "a1-d43-07",
-      "en": "bus stop",
+      "en": "example",
       "ru": [
-        "автобусная остановка"
+        "пример"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I'm waiting at the bus stop.",
-          "ru": "Я жду на автобусной остановке."
+          "en": "Give me an example.",
+          "ru": "Приведи пример."
         }
       ]
     },
     {
       "id": "a1-d43-08",
-      "en": "petrol station",
+      "en": "correct",
       "ru": [
-        "заправка"
+        "правильный"
       ],
-      "pos": "noun",
+      "pos": "adjective",
       "examples": [
         {
-          "en": "We need a petrol station.",
-          "ru": "Нам нужна заправка."
+          "en": "That is correct!",
+          "ru": "Правильно!"
         }
       ]
     },
     {
       "id": "a1-d43-09",
-      "en": "car park",
+      "en": "alphabet",
       "ru": [
-        "парковка",
-        "стоянка"
+        "алфавит"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The car park is full.",
-          "ru": "Парковка заполнена."
+          "en": "Do you know the alphabet?",
+          "ru": "Ты знаешь алфавит?"
         }
       ]
     },
     {
       "id": "a1-d43-10",
-      "en": "toy shop",
+      "en": "count",
       "ru": [
-        "магазин игрушек"
+        "считать"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "Let's go to the toy shop.",
-          "ru": "Пойдём в магазин игрушек."
+          "en": "Count from one to ten.",
+          "ru": "Посчитай от одного до десяти."
         }
       ]
     }

@@ -40,7 +40,7 @@
       "en": "effect",
       "ru": [
         "эффект",
-        "последствие"
+        "действие"
       ],
       "pos": "noun",
       "examples": [
@@ -62,8 +62,8 @@
       ],
       "examples": [
         {
-          "en": "Every action has consequences.",
-          "ru": "У каждого поступка есть последствия."
+          "en": "Every decision has consequences.",
+          "ru": "У каждого решения есть последствия."
         }
       ]
     },
@@ -90,8 +90,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "Washing your hands can prevent illness.",
-          "ru": "Мытьё рук помогает предотвратить болезни."
+          "en": "A healthy diet can prevent many problems.",
+          "ru": "Здоровое питание может предотвратить много проблем."
         }
       ]
     },
@@ -155,8 +155,23 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Social media has a big impact on teenagers.",
-          "ru": "Соцсети сильно влияют на подростков."
+          "en": "Phones have a big impact on children.",
+          "ru": "Телефоны сильно влияют на детей."
+        }
+      ]
+    },
+    {
+      "id": "b1-d33-11",
+      "en": "common",
+      "ru": [
+        "распространённый",
+        "обычный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This is a common problem.",
+          "ru": "Это распространённая проблема."
         }
       ]
     }

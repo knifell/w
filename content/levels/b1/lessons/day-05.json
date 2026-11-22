@@ -86,7 +86,7 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Avoid driving in the rush hour.",
+          "en": "Don't drive in the rush hour.",
           "ru": "Не езди за рулём в час пик."
         }
       ]
@@ -103,8 +103,8 @@
       ],
       "examples": [
         {
-          "en": "No vehicles are allowed in the centre.",
-          "ru": "Въезд транспорта в центр запрещён."
+          "en": "This street is closed to vehicles.",
+          "ru": "Эта улица закрыта для транспорта."
         }
       ]
     },
@@ -149,8 +149,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Take the second exit at the roundabout.",
-          "ru": "На кольце сверни на второй съезд."
+          "en": "Turn left at the roundabout.",
+          "ru": "На кольце поверни налево."
         }
       ]
     }

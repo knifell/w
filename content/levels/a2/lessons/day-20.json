@@ -58,8 +58,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "I hope to pass the test.",
-          "ru": "Надеюсь сдать тест."
+          "en": "I want to pass the test.",
+          "ru": "Я хочу сдать тест."
         }
       ]
     },
@@ -153,6 +153,35 @@
         {
           "en": "Look it up in the dictionary.",
           "ru": "Посмотри в словаре."
+        }
+      ]
+    },
+    {
+      "id": "a2-d20-11",
+      "en": "study",
+      "ru": [
+        "учиться",
+        "изучать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I study English every day.",
+          "ru": "Я учу английский каждый день."
+        }
+      ]
+    },
+    {
+      "id": "a2-d20-12",
+      "en": "better",
+      "ru": [
+        "лучше"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Your English is better now.",
+          "ru": "Твой английский теперь лучше."
         }
       ]
     }

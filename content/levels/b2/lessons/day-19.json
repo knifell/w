@@ -56,7 +56,7 @@
       "en": "amenities",
       "ru": [
         "удобства",
-        "инфраструктура"
+        "объекты быта"
       ],
       "pos": "noun",
       "examples": [
@@ -76,8 +76,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Traffic congestion is getting worse.",
-          "ru": "Пробки становятся всё хуже."
+          "en": "Traffic congestion is a big problem here.",
+          "ru": "Пробки здесь — большая проблема."
         }
       ]
     },
@@ -133,7 +133,7 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Gentrification changed the old district.",
+          "en": "Gentrification changed the old area.",
           "ru": "Джентрификация изменила старый район."
         }
       ]

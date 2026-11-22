@@ -73,8 +73,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "I forgot my umbrella at home.",
-          "ru": "Я забыл зонт дома."
+          "en": "Where is my umbrella?",
+          "ru": "Где мой зонт?"
         }
       ]
     },
@@ -116,8 +116,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "Wear a warm coat.",
-          "ru": "Надень тёплое пальто."
+          "en": "Take a warm coat.",
+          "ru": "Возьми тёплое пальто."
         }
       ]
     },
@@ -130,8 +130,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The forecast says it will be cold tomorrow.",
-          "ru": "Прогноз говорит, что завтра будет холодно."
+          "en": "The forecast says it will be sunny.",
+          "ru": "Прогноз обещает солнце."
         }
       ]
     },
@@ -149,6 +149,35 @@
         {
           "en": "It is twenty degrees outside.",
           "ru": "На улице двадцать градусов."
+        }
+      ]
+    },
+    {
+      "id": "a2-d03-11",
+      "en": "if",
+      "ru": [
+        "если"
+      ],
+      "pos": "conjunction",
+      "examples": [
+        {
+          "en": "If it rains, take an umbrella.",
+          "ru": "Если пойдёт дождь, возьми зонт."
+        }
+      ]
+    },
+    {
+      "id": "a2-d03-12",
+      "en": "could",
+      "ru": [
+        "не могли бы",
+        "мог бы"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Could you help me, please?",
+          "ru": "Не могли бы вы мне помочь?"
         }
       ]
     }

@@ -49,8 +49,8 @@
       ],
       "examples": [
         {
-          "en": "Smoking is not allowed here.",
-          "ru": "Здесь курить запрещено."
+          "en": "Phones are not allowed here.",
+          "ru": "Здесь нельзя пользоваться телефонами."
         }
       ]
     },
@@ -62,7 +62,8 @@
       ],
       "pos": "verb",
       "forms": [
-        "forbids"
+        "forbids",
+        "forbade"
       ],
       "examples": [
         {
@@ -80,8 +81,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "He had to pay a fine for speeding.",
-          "ru": "Ему пришлось заплатить штраф за превышение скорости."
+          "en": "He had to pay a fine for parking here.",
+          "ru": "Ему пришлось заплатить штраф за парковку здесь."
         }
       ]
     },
@@ -108,7 +109,7 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Was there a witness to the crash?",
+          "en": "Was there a witness to the accident?",
           "ru": "Был ли свидетель аварии?"
         }
       ]

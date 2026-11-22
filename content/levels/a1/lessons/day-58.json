@@ -3,148 +3,148 @@
   "level": "A1",
   "day": 58,
   "island": 6,
-  "title": "Mine and yours",
-  "topic": "pronouns",
+  "title": "Who works where?",
+  "topic": "jobs 2",
   "words": [
     {
       "id": "a1-d58-01",
-      "en": "my",
+      "en": "vet",
       "ru": [
-        "мой"
+        "ветеринар"
       ],
-      "pos": "pronoun",
+      "pos": "noun",
       "examples": [
         {
-          "en": "This is my book.",
-          "ru": "Это моя книга."
+          "en": "The vet helped my cat.",
+          "ru": "Ветеринар помог моей кошке."
         }
       ]
     },
     {
       "id": "a1-d58-02",
-      "en": "your",
+      "en": "dancer",
       "ru": [
-        "твой",
-        "ваш"
+        "танцор",
+        "танцовщица"
       ],
-      "pos": "pronoun",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Is this your bag?",
-          "ru": "Это твоя сумка?"
+          "en": "She wants to be a dancer.",
+          "ru": "Она хочет стать танцовщицей."
         }
       ]
     },
     {
       "id": "a1-d58-03",
-      "en": "his",
+      "en": "baker",
       "ru": [
-        "его"
+        "пекарь"
       ],
-      "pos": "pronoun",
+      "pos": "noun",
       "examples": [
         {
-          "en": "His name is Tom.",
-          "ru": "Его зовут Том."
+          "en": "The baker makes cakes.",
+          "ru": "Пекарь печёт торты."
         }
       ]
     },
     {
       "id": "a1-d58-04",
-      "en": "her",
+      "en": "builder",
       "ru": [
-        "её"
+        "строитель"
       ],
-      "pos": "pronoun",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Her cat is white.",
-          "ru": "Её кошка белая."
+          "en": "My dad is a builder.",
+          "ru": "Мой папа — строитель."
         }
       ]
     },
     {
       "id": "a1-d58-05",
-      "en": "our",
+      "en": "cleaner",
       "ru": [
-        "наш"
+        "уборщик"
       ],
-      "pos": "pronoun",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Our house is small.",
-          "ru": "Наш дом маленький."
+          "en": "The cleaner comes on Fridays.",
+          "ru": "Уборщица приходит по пятницам."
         }
       ]
     },
     {
       "id": "a1-d58-06",
-      "en": "their",
+      "en": "manager",
       "ru": [
-        "их"
+        "менеджер",
+        "управляющий"
       ],
-      "pos": "pronoun",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Their car is red.",
-          "ru": "Их машина красная."
+          "en": "I want to speak to the manager.",
+          "ru": "Я хочу поговорить с управляющим."
         }
       ]
     },
     {
       "id": "a1-d58-07",
-      "en": "everybody",
+      "en": "secretary",
       "ru": [
-        "все"
+        "секретарь"
       ],
-      "pos": "pronoun",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Hello, everybody!",
-          "ru": "Всем привет!"
+          "en": "The secretary is on the phone.",
+          "ru": "Секретарь разговаривает по телефону."
         }
       ]
     },
     {
       "id": "a1-d58-08",
-      "en": "something",
+      "en": "mechanic",
       "ru": [
-        "что-то",
-        "что-нибудь"
+        "механик"
       ],
-      "pos": "pronoun",
+      "pos": "noun",
       "examples": [
         {
-          "en": "I want something to eat.",
-          "ru": "Я хочу что-нибудь поесть."
+          "en": "The mechanic can help with our car.",
+          "ru": "Механик может помочь с нашей машиной."
         }
       ]
     },
     {
       "id": "a1-d58-09",
-      "en": "nothing",
+      "en": "writer",
       "ru": [
-        "ничего"
+        "писатель"
       ],
-      "pos": "pronoun",
+      "pos": "noun",
       "examples": [
         {
-          "en": "There is nothing in the box.",
-          "ru": "В коробке ничего нет."
+          "en": "She is a writer of books for children.",
+          "ru": "Она пишет книги для детей."
         }
       ]
     },
     {
       "id": "a1-d58-10",
-      "en": "everything",
+      "en": "photographer",
       "ru": [
-        "всё"
+        "фотограф"
       ],
-      "pos": "pronoun",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Everything is OK.",
-          "ru": "Всё в порядке."
+          "en": "The photographer takes a photo of us.",
+          "ru": "Фотограф нас фотографирует."
         }
       ]
     }

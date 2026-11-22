@@ -57,7 +57,7 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The country gained independence in 1991.",
+          "en": "The country got independence in 1991.",
           "ru": "Страна получила независимость в 1991 году."
         }
       ]
@@ -119,8 +119,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "There's a monument in the main square.",
-          "ru": "На главной площади стоит памятник."
+          "en": "There's a monument in the city square.",
+          "ru": "На городской площади стоит памятник."
         }
       ]
     },

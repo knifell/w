@@ -3,152 +3,178 @@
   "level": "A1",
   "day": 28,
   "island": 3,
-  "title": "Opposites",
-  "topic": "opposites",
+  "title": "Where is it?",
+  "topic": "prepositions",
   "words": [
     {
       "id": "a1-d28-01",
-      "en": "long",
+      "en": "under",
       "ru": [
-        "длинный",
-        "долгий"
+        "под"
       ],
-      "pos": "adjective",
+      "pos": "preposition",
       "examples": [
         {
-          "en": "She has long hair.",
-          "ru": "У неё длинные волосы."
+          "en": "The dog is under the bed.",
+          "ru": "Собака под кроватью."
         }
       ]
     },
     {
       "id": "a1-d28-02",
-      "en": "fast",
+      "en": "next to",
       "ru": [
-        "быстрый",
-        "быстро"
+        "рядом с"
       ],
-      "pos": "adjective",
+      "pos": "preposition",
       "examples": [
         {
-          "en": "This car is very fast.",
-          "ru": "Эта машина очень быстрая."
+          "en": "I sit next to Anna.",
+          "ru": "Я сижу рядом с Анной."
         }
       ]
     },
     {
       "id": "a1-d28-03",
-      "en": "slow",
+      "en": "near",
       "ru": [
-        "медленный"
+        "около",
+        "рядом"
       ],
-      "pos": "adjective",
+      "pos": "preposition",
       "examples": [
         {
-          "en": "The bus is slow.",
-          "ru": "Автобус медленный."
+          "en": "We live near the sea.",
+          "ru": "Мы живём у моря."
         }
       ]
     },
     {
       "id": "a1-d28-04",
-      "en": "easy",
+      "en": "in front of",
       "ru": [
-        "лёгкий",
-        "простой"
+        "перед"
       ],
-      "pos": "adjective",
+      "pos": "preposition",
       "examples": [
         {
-          "en": "This test is easy.",
-          "ru": "Этот тест лёгкий."
+          "en": "The car is in front of the house.",
+          "ru": "Машина перед домом."
         }
       ]
     },
     {
       "id": "a1-d28-05",
-      "en": "difficult",
+      "en": "up",
       "ru": [
-        "трудный",
-        "сложный"
+        "вверх",
+        "наверх"
       ],
-      "pos": "adjective",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "English is not difficult.",
-          "ru": "Английский — несложный."
+          "en": "Look up!",
+          "ru": "Посмотри наверх!"
         }
       ]
     },
     {
       "id": "a1-d28-06",
-      "en": "right",
+      "en": "down",
       "ru": [
-        "правильный",
-        "верный"
+        "вниз"
       ],
-      "pos": "adjective",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "That's right!",
-          "ru": "Правильно!"
+          "en": "Sit down, please.",
+          "ru": "Садись, пожалуйста."
         }
       ]
     },
     {
       "id": "a1-d28-07",
-      "en": "wrong",
+      "en": "which",
       "ru": [
-        "неправильный",
-        "неверный"
+        "который",
+        "какой из"
       ],
-      "pos": "adjective",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "Sorry, that's wrong.",
-          "ru": "Извините, это неверно."
+          "en": "Which colour do you like?",
+          "ru": "Какой цвет тебе нравится?"
         }
       ]
     },
     {
       "id": "a1-d28-08",
-      "en": "clean",
+      "en": "whose",
       "ru": [
-        "чистый"
+        "чей"
       ],
-      "pos": "adjective",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "My room is clean.",
-          "ru": "Моя комната чистая."
+          "en": "Whose book is this?",
+          "ru": "Чья это книга?"
         }
       ]
     },
     {
       "id": "a1-d28-09",
-      "en": "rich",
+      "en": "again",
       "ru": [
-        "богатый"
+        "снова",
+        "ещё раз"
       ],
-      "pos": "adjective",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "He is a rich man.",
-          "ru": "Он богатый человек."
+          "en": "Read it again, please.",
+          "ru": "Прочитай это ещё раз, пожалуйста."
         }
       ]
     },
     {
       "id": "a1-d28-10",
-      "en": "poor",
+      "en": "only",
       "ru": [
-        "бедный"
+        "только"
       ],
-      "pos": "adjective",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "The family is very poor.",
-          "ru": "Семья очень бедная."
+          "en": "I have only one sister.",
+          "ru": "У меня только одна сестра."
+        }
+      ]
+    },
+    {
+      "id": "a1-d28-11",
+      "en": "everybody",
+      "ru": [
+        "все люди"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "Hello, everybody!",
+          "ru": "Всем привет!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d28-12",
+      "en": "everything",
+      "ru": [
+        "всё"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "Everything is good.",
+          "ru": "Всё хорошо."
         }
       ]
     }

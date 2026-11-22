@@ -3,148 +3,150 @@
   "level": "A1",
   "day": 59,
   "island": 6,
-  "title": "At the seaside",
-  "topic": "seaside",
+  "title": "How much?",
+  "topic": "quantities",
   "words": [
     {
       "id": "a1-d59-01",
-      "en": "kite",
+      "en": "some",
       "ru": [
-        "воздушный змей"
+        "некоторое количество",
+        "какой-то"
       ],
-      "pos": "noun",
+      "pos": "other",
       "examples": [
         {
-          "en": "Let's fly a kite.",
-          "ru": "Давай запустим воздушного змея."
+          "en": "Can I have some water?",
+          "ru": "Можно немного воды?"
         }
       ]
     },
     {
       "id": "a1-d59-02",
-      "en": "sunglasses",
+      "en": "any",
       "ru": [
-        "солнечные очки"
+        "какой-нибудь",
+        "сколько-нибудь"
       ],
-      "pos": "noun",
+      "pos": "other",
       "examples": [
         {
-          "en": "Where are my sunglasses?",
-          "ru": "Где мои солнечные очки?"
+          "en": "Do you have any milk?",
+          "ru": "У тебя есть молоко?"
         }
       ]
     },
     {
       "id": "a1-d59-03",
-      "en": "sandcastle",
+      "en": "a lot of",
       "ru": [
-        "замок из песка"
+        "много"
       ],
-      "pos": "noun",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "We built a sandcastle.",
-          "ru": "Мы построили замок из песка."
+          "en": "There are a lot of people here.",
+          "ru": "Здесь много людей."
         }
       ]
     },
     {
       "id": "a1-d59-04",
-      "en": "shell",
+      "en": "a little",
       "ru": [
-        "ракушка"
+        "немного (чего-то)"
       ],
-      "pos": "noun",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "I found a pretty shell.",
-          "ru": "Я нашёл красивую ракушку."
+          "en": "Can I have a little milk?",
+          "ru": "Можно мне немного молока?"
         }
       ]
     },
     {
       "id": "a1-d59-05",
-      "en": "seaside",
+      "en": "a few",
       "ru": [
-        "морское побережье",
-        "взморье"
+        "несколько (штук)"
       ],
-      "pos": "noun",
+      "pos": "phrase",
       "examples": [
         {
-          "en": "We go to the seaside every summer.",
-          "ru": "Каждое лето мы ездим на море."
+          "en": "I have a few friends here.",
+          "ru": "У меня здесь несколько друзей."
         }
       ]
     },
     {
       "id": "a1-d59-06",
-      "en": "tent",
+      "en": "piece",
       "ru": [
-        "палатка"
+        "кусок",
+        "кусочек"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "We sleep in a tent.",
-          "ru": "Мы спим в палатке."
+          "en": "Can I have a piece of cake?",
+          "ru": "Можно кусочек торта?"
         }
       ]
     },
     {
       "id": "a1-d59-07",
-      "en": "bucket",
+      "en": "slice",
       "ru": [
-        "ведёрко",
-        "ведро"
+        "ломтик"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Fill the bucket with sand.",
-          "ru": "Насыпь в ведёрко песка."
+          "en": "A slice of cake, please.",
+          "ru": "Кусочек торта, пожалуйста."
         }
       ]
     },
     {
       "id": "a1-d59-08",
-      "en": "swing",
+      "en": "jar",
       "ru": [
-        "качели"
+        "банка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The girl is on the swing.",
-          "ru": "Девочка на качелях."
+          "en": "A jar of honey, please.",
+          "ru": "Банку мёда, пожалуйста."
         }
       ]
     },
     {
       "id": "a1-d59-09",
-      "en": "slide",
+      "en": "more",
       "ru": [
-        "горка"
+        "больше",
+        "ещё"
       ],
-      "pos": "noun",
+      "pos": "other",
       "examples": [
         {
-          "en": "The children love the slide.",
-          "ru": "Дети обожают горку."
+          "en": "Can I have more juice?",
+          "ru": "Можно ещё сока?"
         }
       ]
     },
     {
       "id": "a1-d59-10",
-      "en": "sun cream",
+      "en": "enough",
       "ru": [
-        "солнцезащитный крем"
+        "достаточно"
       ],
-      "pos": "noun",
+      "pos": "other",
       "examples": [
         {
-          "en": "Put on some sun cream.",
-          "ru": "Намажься солнцезащитным кремом."
+          "en": "I have enough food.",
+          "ru": "У меня достаточно еды."
         }
       ]
     }

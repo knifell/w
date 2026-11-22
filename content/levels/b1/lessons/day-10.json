@@ -29,8 +29,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Air pollution is a big problem in cities.",
-          "ru": "Загрязнение воздуха — большая проблема городов."
+          "en": "Pollution is a big problem in cities.",
+          "ru": "Загрязнение — большая проблема городов."
         }
       ]
     },
@@ -43,8 +43,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "We recycle paper and glass.",
-          "ru": "Мы сдаём на переработку бумагу и стекло."
+          "en": "We recycle bottles and glass.",
+          "ru": "Мы сдаём на переработку бутылки и стекло."
         }
       ]
     },
@@ -86,8 +86,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Solar energy is clean.",
-          "ru": "Солнечная энергия чистая."
+          "en": "Wind energy is clean.",
+          "ru": "Энергия ветра чистая."
         }
       ]
     },
@@ -130,8 +130,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "Trees protect the soil.",
-          "ru": "Деревья защищают почву."
+          "en": "We must protect the forest.",
+          "ru": "Мы должны беречь лес."
         }
       ]
     },
@@ -147,6 +147,21 @@
         {
           "en": "We need to reduce our energy use.",
           "ru": "Нам нужно сократить потребление энергии."
+        }
+      ]
+    },
+    {
+      "id": "b1-d10-11",
+      "en": "natural",
+      "ru": [
+        "природный",
+        "естественный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Natural food is healthy.",
+          "ru": "Натуральная еда полезна."
         }
       ]
     }

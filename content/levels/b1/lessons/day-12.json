@@ -58,8 +58,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "They advertise on social media.",
-          "ru": "Они рекламируются в соцсетях."
+          "en": "They advertise online.",
+          "ru": "Они рекламируются в интернете."
         }
       ]
     },
@@ -73,8 +73,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "There is a lot of competition in this market.",
-          "ru": "На этом рынке большая конкуренция."
+          "en": "There is a lot of competition between shops.",
+          "ru": "Между магазинами большая конкуренция."
         }
       ]
     },
@@ -133,8 +133,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "They invest in new technology.",
-          "ru": "Они вкладывают деньги в новые технологии."
+          "en": "They invest in new computers.",
+          "ru": "Они вкладывают деньги в новые компьютеры."
         }
       ]
     },
@@ -149,6 +149,21 @@
         {
           "en": "We changed our supplier.",
           "ru": "Мы сменили поставщика."
+        }
+      ]
+    },
+    {
+      "id": "b1-d12-11",
+      "en": "business",
+      "ru": [
+        "бизнес",
+        "дело"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My father has a small business.",
+          "ru": "У моего отца небольшой бизнес."
         }
       ]
     }

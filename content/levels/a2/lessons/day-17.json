@@ -86,8 +86,8 @@
       "pos": "preposition",
       "examples": [
         {
-          "en": "The car park is behind the hotel.",
-          "ru": "Парковка за гостиницей."
+          "en": "The car park is behind the school.",
+          "ru": "Парковка за школой."
         }
       ]
     },
@@ -147,6 +147,35 @@
         {
           "en": "Excuse me, I'm lost.",
           "ru": "Извините, я заблудился."
+        }
+      ]
+    },
+    {
+      "id": "a2-d17-11",
+      "en": "into",
+      "ru": [
+        "в (внутрь)"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "Turn left and go into the shop.",
+          "ru": "Поверни налево и зайди в магазин."
+        }
+      ]
+    },
+    {
+      "id": "a2-d17-12",
+      "en": "through",
+      "ru": [
+        "через",
+        "сквозь"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "Go through the park and turn right.",
+          "ru": "Пройди через парк и поверни направо."
         }
       ]
     }

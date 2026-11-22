@@ -3,147 +3,147 @@
   "level": "A1",
   "day": 34,
   "island": 4,
-  "title": "What's the weather?",
-  "topic": "weather",
+  "title": "On the table",
+  "topic": "tableware",
   "words": [
     {
       "id": "a1-d34-01",
-      "en": "rainy",
+      "en": "plate",
       "ru": [
-        "дождливый"
+        "тарелка"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "It's a rainy day.",
-          "ru": "Сегодня дождливый день."
+          "en": "Put the cake on a plate.",
+          "ru": "Положи торт на тарелку."
         }
       ]
     },
     {
       "id": "a1-d34-02",
-      "en": "foggy",
+      "en": "cup",
       "ru": [
-        "туманный"
+        "чашка"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "It's foggy this morning.",
-          "ru": "Сегодня утром туман."
+          "en": "Can I have a cup of tea?",
+          "ru": "Можно чашку чая?"
         }
       ]
     },
     {
       "id": "a1-d34-03",
-      "en": "ice",
+      "en": "spoon",
       "ru": [
-        "лёд"
+        "ложка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Be careful, there is ice on the road.",
-          "ru": "Осторожно, на дороге лёд."
+          "en": "I need a spoon for my soup.",
+          "ru": "Мне нужна ложка для супа."
         }
       ]
     },
     {
       "id": "a1-d34-04",
-      "en": "cool",
+      "en": "fork",
       "ru": [
-        "прохладный"
+        "вилка"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "It's cool in the evening.",
-          "ru": "Вечером прохладно."
+          "en": "Eat with a fork.",
+          "ru": "Ешь вилкой."
         }
       ]
     },
     {
       "id": "a1-d34-05",
-      "en": "rainbow",
+      "en": "knife",
       "ru": [
-        "радуга"
+        "нож"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Look, a rainbow!",
-          "ru": "Смотри, радуга!"
+          "en": "Where is my knife?",
+          "ru": "Где мой нож?"
         }
       ]
     },
     {
       "id": "a1-d34-06",
-      "en": "temperature",
+      "en": "bowl",
       "ru": [
-        "температура"
+        "миска"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The temperature is ten degrees.",
-          "ru": "Температура — десять градусов."
+          "en": "A bowl of rice, please.",
+          "ru": "Миску риса, пожалуйста."
         }
       ]
     },
     {
       "id": "a1-d34-07",
-      "en": "wet",
+      "en": "bottle",
       "ru": [
-        "мокрый"
+        "бутылка"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "My shoes are wet.",
-          "ru": "Мои туфли мокрые."
+          "en": "A bottle of water, please.",
+          "ru": "Бутылку воды, пожалуйста."
         }
       ]
     },
     {
       "id": "a1-d34-08",
-      "en": "dry",
+      "en": "butter",
       "ru": [
-        "сухой"
+        "сливочное масло"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Is the towel dry?",
-          "ru": "Полотенце сухое?"
+          "en": "I eat rice with butter.",
+          "ru": "Я ем рис со сливочным маслом."
         }
       ]
     },
     {
       "id": "a1-d34-09",
-      "en": "freezing",
+      "en": "jam",
       "ru": [
-        "морозный",
-        "очень холодный"
+        "варенье",
+        "джем"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "It's freezing outside!",
-          "ru": "На улице мороз!"
+          "en": "My mum makes jam.",
+          "ru": "Моя мама варит варенье."
         }
       ]
     },
     {
       "id": "a1-d34-10",
-      "en": "sunshine",
+      "en": "honey",
       "ru": [
-        "солнечный свет"
+        "мёд"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I love the sunshine.",
-          "ru": "Я люблю солнечный свет."
+          "en": "Bears love honey.",
+          "ru": "Медведи любят мёд."
         }
       ]
     }

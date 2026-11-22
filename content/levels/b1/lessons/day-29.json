@@ -28,10 +28,13 @@
         "узнавать"
       ],
       "pos": "verb",
+      "forms": [
+        "found out"
+      ],
       "examples": [
         {
-          "en": "I need to find out the truth.",
-          "ru": "Мне нужно узнать правду."
+          "en": "I need to find out his name.",
+          "ru": "Мне нужно узнать его имя."
         }
       ]
     },
@@ -63,8 +66,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "They set up a small business.",
-          "ru": "Они открыли небольшой бизнес."
+          "en": "They set up a small company.",
+          "ru": "Они открыли небольшую компанию."
         }
       ]
     },
@@ -89,6 +92,9 @@
         "заканчиваться"
       ],
       "pos": "verb",
+      "forms": [
+        "ran out of"
+      ],
       "examples": [
         {
           "en": "We've run out of milk.",
@@ -108,8 +114,8 @@
       ],
       "examples": [
         {
-          "en": "I took up yoga last year.",
-          "ru": "В прошлом году я занялся йогой."
+          "en": "I took up tennis last year.",
+          "ru": "В прошлом году я занялся теннисом."
         }
       ]
     },
@@ -138,6 +144,9 @@
         "иметь дело с"
       ],
       "pos": "verb",
+      "forms": [
+        "dealt with"
+      ],
       "examples": [
         {
           "en": "How do you deal with stress?",

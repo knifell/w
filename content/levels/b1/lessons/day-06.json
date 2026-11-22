@@ -30,8 +30,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The tower is the city's most famous landmark.",
-          "ru": "Башня — самая известная достопримечательность города."
+          "en": "The bridge is the city's most famous landmark.",
+          "ru": "Мост — самая известная достопримечательность города."
         }
       ]
     },
@@ -72,8 +72,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "We visited an ancient temple.",
-          "ru": "Мы посетили древний храм."
+          "en": "We visited an ancient castle.",
+          "ru": "Мы посетили древний замок."
         }
       ]
     },
@@ -114,8 +114,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "There is a statue in the middle of the square.",
-          "ru": "Посреди площади стоит статуя."
+          "en": "There is a statue in the square.",
+          "ru": "На площади стоит статуя."
         }
       ]
     },

@@ -3,151 +3,161 @@
   "level": "A1",
   "day": 45,
   "island": 5,
-  "title": "Yummy food",
-  "topic": "food 3",
+  "title": "Around town",
+  "topic": "places 2",
   "words": [
     {
       "id": "a1-d45-01",
-      "en": "pasta",
+      "en": "church",
       "ru": [
-        "паста",
-        "макароны"
+        "церковь"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I cook pasta for dinner.",
-          "ru": "Я готовлю пасту на ужин."
+          "en": "There is an old church in the village.",
+          "ru": "В деревне есть старая церковь."
         }
       ]
     },
     {
       "id": "a1-d45-02",
-      "en": "burger",
+      "en": "café",
       "ru": [
-        "бургер"
+        "кафе"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Can I have a burger, please?",
-          "ru": "Можно бургер, пожалуйста?"
+          "en": "Let's go to the café.",
+          "ru": "Пойдём в кафе."
         }
       ]
     },
     {
       "id": "a1-d45-03",
-      "en": "chips",
+      "en": "theatre",
       "ru": [
-        "картофель фри"
+        "театр"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I want fish and chips.",
-          "ru": "Я хочу рыбу с картошкой фри."
+          "en": "We went to the theatre last night.",
+          "ru": "Вчера вечером мы ходили в театр."
         }
       ]
     },
     {
       "id": "a1-d45-04",
-      "en": "chocolate",
+      "en": "swimming pool",
       "ru": [
-        "шоколад"
+        "бассейн"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I love chocolate.",
-          "ru": "Я обожаю шоколад."
+          "en": "There is a swimming pool at our school.",
+          "ru": "В нашей школе есть бассейн."
         }
       ]
     },
     {
       "id": "a1-d45-05",
-      "en": "biscuit",
+      "en": "playground",
       "ru": [
-        "печенье"
+        "детская площадка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Do you want a biscuit?",
-          "ru": "Хочешь печенье?"
+          "en": "The children are at the playground.",
+          "ru": "Дети на детской площадке."
         }
       ]
     },
     {
       "id": "a1-d45-06",
-      "en": "sweets",
+      "en": "police station",
       "ru": [
-        "конфеты"
+        "полицейский участок"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Children love sweets.",
-          "ru": "Дети любят конфеты."
+          "en": "The police station is near the hospital.",
+          "ru": "Полицейский участок рядом с больницей."
         }
       ]
     },
     {
       "id": "a1-d45-07",
-      "en": "popcorn",
+      "en": "bus stop",
       "ru": [
-        "попкорн"
+        "автобусная остановка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "We eat popcorn at the cinema.",
-          "ru": "В кино мы едим попкорн."
+          "en": "The bus stop is next to my house.",
+          "ru": "Остановка рядом с моим домом."
         }
       ]
     },
     {
       "id": "a1-d45-08",
-      "en": "yoghurt",
+      "en": "petrol station",
       "ru": [
-        "йогурт"
+        "заправка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I have yoghurt for breakfast.",
-          "ru": "На завтрак у меня йогурт."
+          "en": "We need a petrol station.",
+          "ru": "Нам нужна заправка."
         }
       ]
     },
     {
       "id": "a1-d45-09",
-      "en": "cereal",
+      "en": "car park",
       "ru": [
-        "хлопья"
+        "парковка",
+        "стоянка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I eat cereal with milk.",
-          "ru": "Я ем хлопья с молоком."
+          "en": "There are many cars in the car park.",
+          "ru": "На парковке много машин."
         }
       ]
     },
     {
       "id": "a1-d45-10",
-      "en": "pancake",
+      "en": "toy shop",
       "ru": [
-        "блин",
-        "оладья"
+        "магазин игрушек"
       ],
       "pos": "noun",
-      "forms": [
-        "pancakes"
-      ],
       "examples": [
         {
-          "en": "Grandma makes pancakes.",
-          "ru": "Бабушка печёт блины."
+          "en": "Let's go to the toy shop.",
+          "ru": "Пойдём в магазин игрушек."
+        }
+      ]
+    },
+    {
+      "id": "a1-d45-11",
+      "en": "slide",
+      "ru": [
+        "горка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The children love the slide.",
+          "ru": "Дети обожают горку."
         }
       ]
     }

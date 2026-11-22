@@ -15,8 +15,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The fruit at this market is fresh.",
-          "ru": "Фрукты на этом рынке свежие."
+          "en": "The fruit in this shop is fresh.",
+          "ru": "Фрукты в этом магазине свежие."
         }
       ]
     },
@@ -58,8 +58,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Cutting an onion makes me cry.",
-          "ru": "Когда я режу лук, я плачу."
+          "en": "I don't like onion in my soup.",
+          "ru": "Я не люблю лук в супе."
         }
       ]
     },
@@ -86,8 +86,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "These bananas are not ripe yet.",
-          "ru": "Эти бананы ещё не спелые."
+          "en": "These bananas are not ripe.",
+          "ru": "Эти бананы неспелые."
         }
       ]
     },
@@ -140,6 +140,9 @@
         "выбирать"
       ],
       "pos": "verb",
+      "forms": [
+        "chose"
+      ],
       "examples": [
         {
           "en": "Choose the biggest watermelon.",

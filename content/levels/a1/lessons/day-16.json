@@ -3,147 +3,167 @@
   "level": "A1",
   "day": 16,
   "island": 2,
-  "title": "Big and small",
-  "topic": "adjectives",
+  "title": "What time is it?",
+  "topic": "time",
   "words": [
     {
       "id": "a1-d16-01",
-      "en": "big",
+      "en": "morning",
       "ru": [
-        "большой"
+        "утро"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "They have a big dog.",
-          "ru": "У них большая собака."
+          "en": "I drink coffee in the morning.",
+          "ru": "Утром я пью кофе."
         }
       ]
     },
     {
       "id": "a1-d16-02",
-      "en": "small",
+      "en": "afternoon",
       "ru": [
-        "маленький"
+        "день",
+        "послеобеденное время"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "I have a small room.",
-          "ru": "У меня маленькая комната."
+          "en": "We are at school in the afternoon.",
+          "ru": "Днём мы в школе."
         }
       ]
     },
     {
       "id": "a1-d16-03",
-      "en": "good",
+      "en": "evening",
       "ru": [
-        "хороший"
+        "вечер"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "This is a good film.",
-          "ru": "Это хороший фильм."
+          "en": "I read in the evening.",
+          "ru": "Вечером я читаю."
         }
       ]
     },
     {
       "id": "a1-d16-04",
-      "en": "bad",
+      "en": "night",
       "ru": [
-        "плохой"
+        "ночь"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "The weather is bad today.",
-          "ru": "Сегодня плохая погода."
+          "en": "I read at night.",
+          "ru": "Я читаю ночью."
         }
       ]
     },
     {
       "id": "a1-d16-05",
-      "en": "new",
+      "en": "hour",
       "ru": [
-        "новый"
+        "час"
       ],
-      "pos": "adjective",
+      "pos": "noun",
+      "forms": [
+        "hours"
+      ],
       "examples": [
         {
-          "en": "I have a new phone.",
-          "ru": "У меня новый телефон."
+          "en": "I read for an hour.",
+          "ru": "Я читаю час."
         }
       ]
     },
     {
       "id": "a1-d16-06",
-      "en": "old",
+      "en": "minute",
       "ru": [
-        "старый"
+        "минута"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "This is an old house.",
-          "ru": "Это старый дом."
+          "en": "One minute, please.",
+          "ru": "Минутку, пожалуйста."
         }
       ]
     },
     {
       "id": "a1-d16-07",
-      "en": "hot",
+      "en": "year",
       "ru": [
-        "горячий",
-        "жаркий"
+        "год"
       ],
-      "pos": "adjective",
+      "pos": "noun",
+      "forms": [
+        "years"
+      ],
       "examples": [
         {
-          "en": "The tea is very hot.",
-          "ru": "Чай очень горячий."
+          "en": "This year I am at school.",
+          "ru": "В этом году я учусь в школе."
         }
       ]
     },
     {
       "id": "a1-d16-08",
-      "en": "cold",
+      "en": "time",
       "ru": [
-        "холодный"
+        "время"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "The water is cold.",
-          "ru": "Вода холодная."
+          "en": "What time is it?",
+          "ru": "Который час?"
         }
       ]
     },
     {
       "id": "a1-d16-09",
-      "en": "young",
+      "en": "o'clock",
       "ru": [
-        "молодой"
+        "ровно (о времени)"
       ],
-      "pos": "adjective",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "My teacher is young.",
-          "ru": "Мой учитель молодой."
+          "en": "It is three o'clock.",
+          "ru": "Сейчас три часа."
         }
       ]
     },
     {
       "id": "a1-d16-10",
-      "en": "beautiful",
+      "en": "now",
       "ru": [
-        "красивый"
+        "сейчас"
       ],
-      "pos": "adjective",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "What a beautiful day!",
-          "ru": "Какой прекрасный день!"
+          "en": "Where are you now?",
+          "ru": "Где ты сейчас?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d16-11",
+      "en": "when",
+      "ru": [
+        "когда"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "When do you read?",
+          "ru": "Когда ты читаешь?"
         }
       ]
     }

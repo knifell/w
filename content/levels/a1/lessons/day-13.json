@@ -3,146 +3,166 @@
   "level": "A1",
   "day": 13,
   "island": 2,
-  "title": "Days of the week",
-  "topic": "days",
+  "title": "My house",
+  "topic": "house",
   "words": [
     {
       "id": "a1-d13-01",
-      "en": "Monday",
+      "en": "house",
       "ru": [
-        "понедельник"
+        "дом",
+        "здание"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I work on Monday.",
-          "ru": "Я работаю в понедельник."
+          "en": "Our house is big.",
+          "ru": "Наш дом большой."
         }
       ]
     },
     {
       "id": "a1-d13-02",
-      "en": "Tuesday",
+      "en": "flat",
       "ru": [
-        "вторник"
+        "квартира"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "We have English on Tuesday.",
-          "ru": "Во вторник у нас английский."
+          "en": "We have a small flat.",
+          "ru": "У нас маленькая квартира."
         }
       ]
     },
     {
       "id": "a1-d13-03",
-      "en": "Wednesday",
+      "en": "door",
       "ru": [
-        "среда"
+        "дверь"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "See you on Wednesday.",
-          "ru": "Увидимся в среду."
+          "en": "The door is red.",
+          "ru": "Дверь красная."
         }
       ]
     },
     {
       "id": "a1-d13-04",
-      "en": "Thursday",
+      "en": "window",
       "ru": [
-        "четверг"
+        "окно"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Thursday is a busy day.",
-          "ru": "Четверг — напряжённый день."
+          "en": "The cat is in the window.",
+          "ru": "Кошка на окне."
         }
       ]
     },
     {
       "id": "a1-d13-05",
-      "en": "Friday",
+      "en": "bed",
       "ru": [
-        "пятница"
+        "кровать"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I love Friday!",
-          "ru": "Я обожаю пятницу!"
+          "en": "The dog is on my bed.",
+          "ru": "Собака на моей кровати."
         }
       ]
     },
     {
       "id": "a1-d13-06",
-      "en": "Saturday",
+      "en": "chair",
       "ru": [
-        "суббота"
+        "стул"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "On Saturday we go to the park.",
-          "ru": "В субботу мы идём в парк."
+          "en": "Is this chair for me?",
+          "ru": "Этот стул для меня?"
         }
       ]
     },
     {
       "id": "a1-d13-07",
-      "en": "Sunday",
+      "en": "bathroom",
       "ru": [
-        "воскресенье"
+        "ванная"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Sunday is a quiet day.",
-          "ru": "Воскресенье — спокойный день."
+          "en": "Where is the bathroom?",
+          "ru": "Где ванная?"
         }
       ]
     },
     {
       "id": "a1-d13-08",
-      "en": "day",
+      "en": "toilet",
       "ru": [
-        "день"
+        "туалет"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Have a nice day!",
-          "ru": "Хорошего дня!"
+          "en": "The toilet is there.",
+          "ru": "Туалет там."
         }
       ]
     },
     {
       "id": "a1-d13-09",
-      "en": "week",
+      "en": "home",
       "ru": [
-        "неделя"
+        "родной дом",
+        "дома"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I go to the gym three times a week.",
-          "ru": "Я хожу в спортзал три раза в неделю."
+          "en": "This is my home.",
+          "ru": "Это мой дом."
         }
       ]
     },
     {
       "id": "a1-d13-10",
-      "en": "today",
+      "en": "garage",
       "ru": [
-        "сегодня"
+        "гараж"
       ],
-      "pos": "adverb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Today is Monday.",
-          "ru": "Сегодня понедельник."
+          "en": "There is a cat in the garage.",
+          "ru": "В гараже кошка."
+        }
+      ]
+    },
+    {
+      "id": "a1-d13-11",
+      "en": "there is",
+      "ru": [
+        "есть",
+        "имеется"
+      ],
+      "pos": "phrase",
+      "forms": [
+        "there are"
+      ],
+      "examples": [
+        {
+          "en": "There is a dog in the house.",
+          "ru": "В доме собака."
         }
       ]
     }

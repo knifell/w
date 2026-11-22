@@ -15,8 +15,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "She suffers from chronic pain.",
-          "ru": "Она страдает от хронической боли."
+          "en": "She has chronic pain in her back.",
+          "ru": "У неё хроническая боль в спине."
         }
       ]
     },
@@ -29,8 +29,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The doctor made a quick diagnosis.",
-          "ru": "Врач быстро поставил диагноз."
+          "en": "The doctor made a diagnosis very quickly.",
+          "ru": "Врач очень быстро поставил диагноз."
         }
       ]
     },
@@ -43,8 +43,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The flu epidemic spread quickly.",
-          "ru": "Эпидемия гриппа быстро распространилась."
+          "en": "The epidemic moved quickly through the city.",
+          "ru": "Эпидемия быстро распространилась по городу."
         }
       ]
     },
@@ -148,8 +148,8 @@
       ],
       "examples": [
         {
-          "en": "The doctor prescribed antibiotics.",
-          "ru": "Врач назначил антибиотики."
+          "en": "The doctor prescribed some pills.",
+          "ru": "Врач назначил таблетки."
         }
       ]
     }

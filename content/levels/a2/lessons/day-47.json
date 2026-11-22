@@ -128,8 +128,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The printer has no paper.",
-          "ru": "В принтере нет бумаги."
+          "en": "The printer is in my office.",
+          "ru": "Принтер у меня в офисе."
         }
       ]
     },
@@ -142,8 +142,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Heat the soup in the microwave.",
-          "ru": "Разогрей суп в микроволновке."
+          "en": "Put the soup in the microwave.",
+          "ru": "Поставь суп в микроволновку."
         }
       ]
     }

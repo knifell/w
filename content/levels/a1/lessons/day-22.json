@@ -3,147 +3,146 @@
   "level": "A1",
   "day": 22,
   "island": 3,
-  "title": "Fun time",
-  "topic": "hobbies",
+  "title": "In town",
+  "topic": "places",
   "words": [
     {
       "id": "a1-d22-01",
-      "en": "music",
+      "en": "shop",
       "ru": [
-        "музыка"
+        "магазин"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I listen to music every day.",
-          "ru": "Я слушаю музыку каждый день."
+          "en": "The shop is open.",
+          "ru": "Магазин открыт."
         }
       ]
     },
     {
       "id": "a1-d22-02",
-      "en": "film",
+      "en": "zoo",
       "ru": [
-        "фильм"
+        "зоопарк"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Let's watch a film.",
-          "ru": "Давай посмотрим фильм."
+          "en": "Let's go to the zoo.",
+          "ru": "Пойдём в зоопарк."
         }
       ]
     },
     {
       "id": "a1-d22-03",
-      "en": "game",
+      "en": "street",
       "ru": [
-        "игра"
+        "улица"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "This game is fun.",
-          "ru": "Эта игра весёлая."
+          "en": "I live on this street.",
+          "ru": "Я живу на этой улице."
         }
       ]
     },
     {
       "id": "a1-d22-04",
-      "en": "football",
+      "en": "city",
       "ru": [
-        "футбол"
+        "город"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Boys play football after school.",
-          "ru": "Мальчики играют в футбол после школы."
+          "en": "London is a big city.",
+          "ru": "Лондон — большой город."
         }
       ]
     },
     {
       "id": "a1-d22-05",
-      "en": "tennis",
+      "en": "country",
       "ru": [
-        "теннис"
+        "страна"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Do you play tennis?",
-          "ru": "Ты играешь в теннис?"
+          "en": "What country are you from?",
+          "ru": "Из какой ты страны?"
         }
       ]
     },
     {
       "id": "a1-d22-06",
-      "en": "sport",
+      "en": "hospital",
       "ru": [
-        "спорт"
+        "больница"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "What is your favourite sport?",
-          "ru": "Какой твой любимый вид спорта?"
+          "en": "My mum works in a hospital.",
+          "ru": "Моя мама работает в больнице."
         }
       ]
     },
     {
       "id": "a1-d22-07",
-      "en": "draw",
+      "en": "restaurant",
       "ru": [
-        "рисовать"
+        "ресторан"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "I like to draw animals.",
-          "ru": "Я люблю рисовать животных."
+          "en": "Let's eat in a restaurant.",
+          "ru": "Давай поедим в ресторане."
         }
       ]
     },
     {
       "id": "a1-d22-08",
-      "en": "photo",
+      "en": "supermarket",
       "ru": [
-        "фото",
-        "фотография"
+        "супермаркет"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Look at this photo.",
-          "ru": "Посмотри на это фото."
+          "en": "There is a supermarket on our street.",
+          "ru": "На нашей улице есть супермаркет."
         }
       ]
     },
     {
       "id": "a1-d22-09",
-      "en": "piano",
+      "en": "airport",
       "ru": [
-        "пианино"
+        "аэропорт"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "She plays the piano.",
-          "ru": "Она играет на пианино."
+          "en": "The airport is not in the city.",
+          "ru": "Аэропорт не в городе."
         }
       ]
     },
     {
       "id": "a1-d22-10",
-      "en": "favourite",
+      "en": "village",
       "ru": [
-        "любимый"
+        "деревня"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Pizza is my favourite food.",
-          "ru": "Пицца — моя любимая еда."
+          "en": "My grandfather lives in a village.",
+          "ru": "Мой дедушка живёт в деревне."
         }
       ]
     }

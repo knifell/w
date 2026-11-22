@@ -3,153 +3,182 @@
   "level": "A1",
   "day": 14,
   "island": 2,
-  "title": "What time is it?",
-  "topic": "time",
+  "title": "At school",
+  "topic": "school",
   "words": [
     {
       "id": "a1-d14-01",
-      "en": "morning",
+      "en": "school",
       "ru": [
-        "утро"
+        "школа"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Good morning!",
-          "ru": "Доброе утро!"
+          "en": "This is my school.",
+          "ru": "Это моя школа."
         }
       ]
     },
     {
       "id": "a1-d14-02",
-      "en": "afternoon",
+      "en": "book",
       "ru": [
-        "день",
-        "послеобеденное время"
+        "книга"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I play tennis in the afternoon.",
-          "ru": "Днём я играю в теннис."
+          "en": "This book is very nice.",
+          "ru": "Эта книга очень хорошая."
         }
       ]
     },
     {
       "id": "a1-d14-03",
-      "en": "evening",
+      "en": "pen",
       "ru": [
-        "вечер"
+        "ручка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Good evening!",
-          "ru": "Добрый вечер!"
+          "en": "I have a blue pen.",
+          "ru": "У меня синяя ручка."
         }
       ]
     },
     {
       "id": "a1-d14-04",
-      "en": "night",
+      "en": "pencil",
       "ru": [
-        "ночь"
+        "карандаш"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Good night!",
-          "ru": "Спокойной ночи!"
+          "en": "Can I have a pencil?",
+          "ru": "Можно мне карандаш?"
         }
       ]
     },
     {
       "id": "a1-d14-05",
-      "en": "hour",
+      "en": "desk",
       "ru": [
-        "час"
+        "парта",
+        "письменный стол"
       ],
       "pos": "noun",
-      "forms": [
-        "hours"
-      ],
       "examples": [
         {
-          "en": "The film is two hours long.",
-          "ru": "Фильм длится два часа."
+          "en": "My book is on the desk.",
+          "ru": "Моя книга на парте."
         }
       ]
     },
     {
       "id": "a1-d14-06",
-      "en": "minute",
+      "en": "classroom",
       "ru": [
-        "минута"
+        "класс",
+        "классная комната"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Wait a minute, please.",
-          "ru": "Подожди минутку, пожалуйста."
+          "en": "Our classroom is big.",
+          "ru": "Наш класс большой."
         }
       ]
     },
     {
       "id": "a1-d14-07",
-      "en": "year",
+      "en": "read",
       "ru": [
-        "год"
+        "читать"
       ],
-      "pos": "noun",
-      "forms": [
-        "years"
-      ],
+      "pos": "verb",
       "examples": [
         {
-          "en": "I am twenty years old.",
-          "ru": "Мне двадцать лет."
+          "en": "I can read.",
+          "ru": "Я умею читать."
         }
       ]
     },
     {
       "id": "a1-d14-08",
-      "en": "time",
+      "en": "write",
       "ru": [
-        "время"
+        "писать"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "wrote",
+        "written"
+      ],
       "examples": [
         {
-          "en": "What time is it?",
-          "ru": "Который час?"
+          "en": "Write your name here.",
+          "ru": "Напиши здесь своё имя."
         }
       ]
     },
     {
       "id": "a1-d14-09",
-      "en": "o'clock",
+      "en": "notebook",
       "ru": [
-        "ровно (о времени)"
+        "тетрадь",
+        "блокнот"
       ],
-      "pos": "adverb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "It's three o'clock.",
-          "ru": "Сейчас три часа."
+          "en": "Where is my notebook?",
+          "ru": "Где моя тетрадь?"
         }
       ]
     },
     {
       "id": "a1-d14-10",
-      "en": "now",
+      "en": "word",
       "ru": [
-        "сейчас"
+        "слово"
       ],
-      "pos": "adverb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "I'm busy now.",
-          "ru": "Я сейчас занят."
+          "en": "What is this word?",
+          "ru": "Что это за слово?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d14-11",
+      "en": "teacher",
+      "ru": [
+        "учитель"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My mother is a teacher.",
+          "ru": "Моя мама — учительница."
+        }
+      ]
+    },
+    {
+      "id": "a1-d14-12",
+      "en": "student",
+      "ru": [
+        "студент",
+        "ученик"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I am a student.",
+          "ru": "Я студент."
         }
       ]
     }

@@ -30,8 +30,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The volcano erupted last year.",
-          "ru": "Вулкан извергался в прошлом году."
+          "en": "There is a big volcano on the island.",
+          "ru": "На острове есть большой вулкан."
         }
       ]
     },
@@ -58,8 +58,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The hurricane hit the coast.",
-          "ru": "Ураган обрушился на побережье."
+          "en": "The hurricane destroyed many houses.",
+          "ru": "Ураган разрушил много домов."
         }
       ]
     },
@@ -75,7 +75,7 @@
       ],
       "examples": [
         {
-          "en": "Everyone survived the crash.",
+          "en": "Everyone survived the accident.",
           "ru": "Все выжили в аварии."
         }
       ]
@@ -92,8 +92,8 @@
       ],
       "examples": [
         {
-          "en": "Rescuers are looking for survivors.",
-          "ru": "Спасатели ищут выживших."
+          "en": "They are looking for survivors.",
+          "ru": "Они ищут выживших."
         }
       ]
     },
@@ -156,8 +156,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The country needs international aid.",
-          "ru": "Стране нужна международная помощь."
+          "en": "The country needs aid.",
+          "ru": "Стране нужна помощь."
         }
       ]
     }

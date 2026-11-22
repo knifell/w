@@ -115,8 +115,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "That's a sensible choice.",
-          "ru": "Это разумный выбор."
+          "en": "That's a sensible idea.",
+          "ru": "Это разумная идея."
         }
       ]
     },
@@ -145,6 +145,20 @@
         {
           "en": "Don't be rude to the waiter.",
           "ru": "Не грубите официанту."
+        }
+      ]
+    },
+    {
+      "id": "b1-d21-11",
+      "en": "rare",
+      "ru": [
+        "редкий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Honest people are not rare.",
+          "ru": "Честные люди — не редкость."
         }
       ]
     }

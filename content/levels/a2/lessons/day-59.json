@@ -15,8 +15,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Did you hear the news?",
-          "ru": "Ты слышал новости?"
+          "en": "Did you see the news?",
+          "ru": "Ты видел новости?"
         }
       ]
     },
@@ -44,8 +44,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The flood destroyed many houses.",
-          "ru": "Наводнение разрушило много домов."
+          "en": "The flood damaged many houses.",
+          "ru": "Наводнение повредило много домов."
         }
       ]
     },
@@ -105,7 +105,7 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The storm caused a lot of damage.",
+          "en": "The storm did a lot of damage.",
           "ru": "Шторм нанёс большой ущерб."
         }
       ]
@@ -123,8 +123,8 @@
       ],
       "examples": [
         {
-          "en": "The bird escaped from its cage.",
-          "ru": "Птица улетела из клетки."
+          "en": "The bird escaped from the house.",
+          "ru": "Птица улетела из дома."
         }
       ]
     },

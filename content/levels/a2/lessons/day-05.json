@@ -57,8 +57,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Be careful on the stairs.",
-          "ru": "Осторожно на лестнице."
+          "en": "Don't run on the stairs.",
+          "ru": "Не бегай по лестнице."
         }
       ]
     },
@@ -129,8 +129,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "They rent a flat in the city centre.",
-          "ru": "Они снимают квартиру в центре города."
+          "en": "They rent a flat in the city.",
+          "ru": "Они снимают квартиру в городе."
         }
       ]
     },
@@ -145,6 +145,35 @@
         {
           "en": "My mother grows flowers in the garden.",
           "ru": "Мама выращивает цветы в саду."
+        }
+      ]
+    },
+    {
+      "id": "a2-d05-11",
+      "en": "thing",
+      "ru": [
+        "вещь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Put your things in the bedroom.",
+          "ru": "Положи свои вещи в спальню."
+        }
+      ]
+    },
+    {
+      "id": "a2-d05-12",
+      "en": "keep",
+      "ru": [
+        "хранить",
+        "держать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We keep our bikes in the garden.",
+          "ru": "Мы держим велосипеды в саду."
         }
       ]
     }

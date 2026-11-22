@@ -16,8 +16,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "My aim is to speak English fluently.",
-          "ru": "Моя цель — свободно говорить по-английски."
+          "en": "My aim is to speak English well.",
+          "ru": "Моя цель — хорошо говорить по-английски."
         }
       ]
     },
@@ -25,7 +25,7 @@
       "id": "b1-d53-02",
       "en": "purpose",
       "ru": [
-        "цель",
+        "назначение",
         "предназначение"
       ],
       "pos": "noun",
@@ -106,8 +106,8 @@
       ],
       "examples": [
         {
-          "en": "He committed himself to the project.",
-          "ru": "Он посвятил себя проекту."
+          "en": "She is committed to her work.",
+          "ru": "Она предана своей работе."
         }
       ]
     },

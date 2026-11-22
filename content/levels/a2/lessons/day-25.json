@@ -44,8 +44,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Don't forget your passport.",
-          "ru": "Не забудь паспорт."
+          "en": "Where is your passport?",
+          "ru": "Где твой паспорт?"
         }
       ]
     },
@@ -108,8 +108,8 @@
       ],
       "examples": [
         {
-          "en": "We visited an old castle.",
-          "ru": "Мы посетили старый замок."
+          "en": "We visited an old church.",
+          "ru": "Мы посетили старую церковь."
         }
       ]
     },
@@ -154,6 +154,35 @@
         {
           "en": "Our guide spoke good English.",
           "ru": "Наш гид хорошо говорил по-английски."
+        }
+      ]
+    },
+    {
+      "id": "a2-d25-11",
+      "en": "travel",
+      "ru": [
+        "путешествовать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I love to travel by train.",
+          "ru": "Я люблю путешествовать на поезде."
+        }
+      ]
+    },
+    {
+      "id": "a2-d25-12",
+      "en": "arrive",
+      "ru": [
+        "прибывать",
+        "приезжать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Our flight arrives at six.",
+          "ru": "Наш рейс прибывает в шесть."
         }
       ]
     }

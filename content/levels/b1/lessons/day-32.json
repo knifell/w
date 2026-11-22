@@ -15,8 +15,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The politician gave a long speech.",
-          "ru": "Политик произнёс длинную речь."
+          "en": "The politician talked for an hour.",
+          "ru": "Политик говорил целый час."
         }
       ]
     },
@@ -143,8 +143,23 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Freedom of speech is important.",
-          "ru": "Свобода слова важна."
+          "en": "Freedom is important to everyone.",
+          "ru": "Свобода важна для всех."
+        }
+      ]
+    },
+    {
+      "id": "b1-d32-11",
+      "en": "leader",
+      "ru": [
+        "лидер",
+        "руководитель"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The leader gave a speech.",
+          "ru": "Лидер выступил с речью."
         }
       ]
     }

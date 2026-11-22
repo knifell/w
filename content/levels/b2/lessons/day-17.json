@@ -16,8 +16,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Northern lights are a natural phenomenon.",
-          "ru": "Северное сияние — природное явление."
+          "en": "A rainbow is a natural phenomenon.",
+          "ru": "Радуга — природное явление."
         }
       ]
     },
@@ -59,8 +59,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The findings were published last month.",
-          "ru": "Результаты опубликовали в прошлом месяце."
+          "en": "The findings were in the news last month.",
+          "ru": "О результатах сообщили в новостях в прошлом месяце."
         }
       ]
     },
@@ -105,8 +105,8 @@
       ],
       "examples": [
         {
-          "en": "They conducted a survey.",
-          "ru": "Они провели опрос."
+          "en": "They conducted an experiment.",
+          "ru": "Они провели эксперимент."
         }
       ]
     },
@@ -143,7 +143,6 @@
       "id": "b2-d17-10",
       "en": "specimen",
       "ru": [
-        "образец",
         "экземпляр"
       ],
       "pos": "noun",

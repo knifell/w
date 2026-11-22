@@ -3,147 +3,165 @@
   "level": "A1",
   "day": 12,
   "island": 2,
-  "title": "Animals",
-  "topic": "animals",
+  "title": "Drinks",
+  "topic": "drinks",
   "words": [
     {
       "id": "a1-d12-01",
-      "en": "cat",
+      "en": "water",
       "ru": [
-        "кошка",
-        "кот"
+        "вода"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I have a black cat.",
-          "ru": "У меня чёрная кошка."
+          "en": "I want water, please.",
+          "ru": "Я хочу воды, пожалуйста."
         }
       ]
     },
     {
       "id": "a1-d12-02",
-      "en": "dog",
+      "en": "milk",
       "ru": [
-        "собака"
+        "молоко"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The dog is in the garden.",
-          "ru": "Собака в саду."
+          "en": "Cats like milk.",
+          "ru": "Кошки любят молоко."
         }
       ]
     },
     {
       "id": "a1-d12-03",
-      "en": "cow",
+      "en": "tea",
       "ru": [
-        "корова"
+        "чай"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The cow gives milk.",
-          "ru": "Корова даёт молоко."
+          "en": "Do you like tea?",
+          "ru": "Ты любишь чай?"
         }
       ]
     },
     {
       "id": "a1-d12-04",
-      "en": "pig",
+      "en": "coffee",
       "ru": [
-        "свинья"
+        "кофе"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The pig is pink.",
-          "ru": "Свинья розовая."
+          "en": "My mum likes coffee.",
+          "ru": "Моя мама любит кофе."
         }
       ]
     },
     {
       "id": "a1-d12-05",
-      "en": "duck",
+      "en": "juice",
       "ru": [
-        "утка"
+        "сок"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "A duck is on the water.",
-          "ru": "На воде утка."
+          "en": "I want orange juice.",
+          "ru": "Я хочу апельсиновый сок."
         }
       ]
     },
     {
       "id": "a1-d12-06",
-      "en": "lion",
+      "en": "drink",
       "ru": [
-        "лев"
+        "пить"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "drank"
+      ],
       "examples": [
         {
-          "en": "The lion is big and strong.",
-          "ru": "Лев большой и сильный."
+          "en": "I drink milk.",
+          "ru": "Я пью молоко."
         }
       ]
     },
     {
       "id": "a1-d12-07",
-      "en": "elephant",
+      "en": "ice cream",
       "ru": [
-        "слон"
+        "мороженое"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "An elephant has big ears.",
-          "ru": "У слона большие уши."
+          "en": "Can I have an ice cream?",
+          "ru": "Можно мне мороженое?"
         }
       ]
     },
     {
       "id": "a1-d12-08",
-      "en": "monkey",
+      "en": "sandwich",
       "ru": [
-        "обезьяна"
+        "бутерброд",
+        "сэндвич"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The monkey is eating a banana.",
-          "ru": "Обезьяна ест банан."
+          "en": "This sandwich is for you.",
+          "ru": "Этот бутерброд для тебя."
         }
       ]
     },
     {
       "id": "a1-d12-09",
-      "en": "bear",
+      "en": "of",
       "ru": [
-        "медведь"
+        "из",
+        "предлог родительного падежа"
       ],
-      "pos": "noun",
+      "pos": "preposition",
       "examples": [
         {
-          "en": "The bear lives in the forest.",
-          "ru": "Медведь живёт в лесу."
+          "en": "One of my friends is here.",
+          "ru": "Один из моих друзей здесь."
         }
       ]
     },
     {
       "id": "a1-d12-10",
-      "en": "animal",
+      "en": "an",
       "ru": [
-        "животное"
+        "артикль перед гласным звуком"
       ],
-      "pos": "noun",
+      "pos": "other",
       "examples": [
         {
-          "en": "What is your favourite animal?",
-          "ru": "Какое твоё любимое животное?"
+          "en": "I eat an apple.",
+          "ru": "Я ем яблоко."
+        }
+      ]
+    },
+    {
+      "id": "a1-d12-11",
+      "en": "for",
+      "ru": [
+        "для"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "This cake is for my mum.",
+          "ru": "Этот торт для моей мамы."
         }
       ]
     }

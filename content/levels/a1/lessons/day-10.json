@@ -3,148 +3,175 @@
   "level": "A1",
   "day": 10,
   "island": 1,
-  "title": "Eat and drink",
-  "topic": "drinks",
+  "title": "I can!",
+  "topic": "can and do",
   "words": [
     {
       "id": "a1-d10-01",
-      "en": "water",
+      "en": "can",
       "ru": [
-        "вода"
+        "мочь",
+        "уметь"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "Can I have some water?",
-          "ru": "Можно мне воды?"
+          "en": "I can see you.",
+          "ru": "Я тебя вижу."
         }
       ]
     },
     {
       "id": "a1-d10-02",
-      "en": "milk",
+      "en": "do",
       "ru": [
-        "молоко"
+        "делать"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "does",
+        "don't",
+        "doesn't",
+        "did"
+      ],
       "examples": [
         {
-          "en": "The baby drinks milk.",
-          "ru": "Малыш пьёт молоко."
+          "en": "Do you like cats?",
+          "ru": "Ты любишь кошек?"
         }
       ]
     },
     {
       "id": "a1-d10-03",
-      "en": "tea",
+      "en": "see",
       "ru": [
-        "чай"
+        "видеть"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "saw",
+        "seen"
+      ],
       "examples": [
         {
-          "en": "Do you want some tea?",
-          "ru": "Хочешь чаю?"
+          "en": "I can see a big bear.",
+          "ru": "Я вижу большого медведя."
         }
       ]
     },
     {
       "id": "a1-d10-04",
-      "en": "coffee",
+      "en": "look",
       "ru": [
-        "кофе"
+        "смотреть"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "I drink coffee in the morning.",
-          "ru": "Утром я пью кофе."
+          "en": "Look, a monkey!",
+          "ru": "Смотри, обезьяна!"
         }
       ]
     },
     {
       "id": "a1-d10-05",
-      "en": "juice",
+      "en": "like",
       "ru": [
-        "сок"
+        "нравиться"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "I like orange juice.",
-          "ru": "Я люблю апельсиновый сок."
+          "en": "I like dogs.",
+          "ru": "Мне нравятся собаки."
         }
       ]
     },
     {
       "id": "a1-d10-06",
-      "en": "food",
+      "en": "love",
       "ru": [
-        "еда"
+        "любить"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "The food here is good.",
-          "ru": "Еда здесь хорошая."
+          "en": "I love my family.",
+          "ru": "Я люблю свою семью."
         }
       ]
     },
     {
       "id": "a1-d10-07",
-      "en": "eat",
+      "en": "want",
       "ru": [
-        "есть",
-        "кушать"
+        "хотеть"
       ],
       "pos": "verb",
       "examples": [
         {
-          "en": "We eat at six.",
-          "ru": "Мы едим в шесть."
+          "en": "I want a dog.",
+          "ru": "Я хочу собаку."
         }
       ]
     },
     {
       "id": "a1-d10-08",
-      "en": "drink",
+      "en": "me",
       "ru": [
-        "пить"
+        "меня",
+        "мне"
       ],
-      "pos": "verb",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "Drink some water.",
-          "ru": "Выпей воды."
+          "en": "Can you see me?",
+          "ru": "Ты меня видишь?"
         }
       ]
     },
     {
       "id": "a1-d10-09",
-      "en": "ice cream",
+      "en": "him",
       "ru": [
-        "мороженое"
+        "его",
+        "ему"
       ],
-      "pos": "noun",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "Children love ice cream.",
-          "ru": "Дети обожают мороженое."
+          "en": "I like him.",
+          "ru": "Он мне нравится."
         }
       ]
     },
     {
       "id": "a1-d10-10",
-      "en": "sandwich",
+      "en": "us",
       "ru": [
-        "бутерброд",
-        "сэндвич"
+        "нас",
+        "нам"
       ],
-      "pos": "noun",
+      "pos": "pronoun",
       "examples": [
         {
-          "en": "I have a sandwich for lunch.",
-          "ru": "На обед у меня бутерброд."
+          "en": "Can you see us?",
+          "ru": "Вы нас видите?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d10-11",
+      "en": "them",
+      "ru": [
+        "их",
+        "им"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "I love them.",
+          "ru": "Я их люблю."
         }
       ]
     }

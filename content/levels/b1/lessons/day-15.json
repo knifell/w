@@ -19,8 +19,8 @@
       ],
       "examples": [
         {
-          "en": "She graduated from university in 2020.",
-          "ru": "Она окончила университет в 2020 году."
+          "en": "She graduated from school in 2020.",
+          "ru": "Она окончила школу в 2020 году."
         }
       ]
     },
@@ -47,8 +47,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Maths is my favourite subject.",
-          "ru": "Математика — мой любимый предмет."
+          "en": "English is my favourite subject.",
+          "ru": "Английский — мой любимый предмет."
         }
       ]
     },
@@ -152,8 +152,22 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "My tutor helps me with grammar.",
-          "ru": "Репетитор помогает мне с грамматикой."
+          "en": "My tutor helps me with English.",
+          "ru": "Репетитор помогает мне с английским."
+        }
+      ]
+    },
+    {
+      "id": "b1-d15-11",
+      "en": "university",
+      "ru": [
+        "университет"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She studies at university.",
+          "ru": "Она учится в университете."
         }
       ]
     }

@@ -71,8 +71,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Add a little salt to the soup.",
-          "ru": "Добавь немного соли в суп."
+          "en": "Put a little salt in the soup.",
+          "ru": "Положи немного соли в суп."
         }
       ]
     },
@@ -85,8 +85,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "I drink coffee without sugar.",
-          "ru": "Я пью кофе без сахара."
+          "en": "I drink coffee with sugar.",
+          "ru": "Я пью кофе с сахаром."
         }
       ]
     },
@@ -145,6 +145,36 @@
         {
           "en": "We have dinner at seven.",
           "ru": "Мы ужинаем в семь."
+        }
+      ]
+    },
+    {
+      "id": "a2-d06-11",
+      "en": "just",
+      "ru": [
+        "только что",
+        "просто"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "I just want some bread.",
+          "ru": "Я просто хочу хлеба."
+        }
+      ]
+    },
+    {
+      "id": "a2-d06-12",
+      "en": "really",
+      "ru": [
+        "действительно",
+        "по-настоящему"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "This soup is really delicious.",
+          "ru": "Этот суп действительно очень вкусный."
         }
       ]
     }

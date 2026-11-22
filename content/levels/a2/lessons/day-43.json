@@ -89,8 +89,8 @@
       ],
       "examples": [
         {
-          "en": "Close the curtains, it's dark.",
-          "ru": "Задёрни шторы, уже темно."
+          "en": "Close the curtains, please.",
+          "ru": "Задёрни шторы, пожалуйста."
         }
       ]
     },
@@ -132,8 +132,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The scissors are in the top drawer.",
-          "ru": "Ножницы в верхнем ящике."
+          "en": "The scissors are in the drawer.",
+          "ru": "Ножницы в ящике."
         }
       ]
     },

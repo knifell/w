@@ -3,146 +3,147 @@
   "level": "A1",
   "day": 35,
   "island": 4,
-  "title": "Months 1",
-  "topic": "months",
+  "title": "In my room",
+  "topic": "my room",
   "words": [
     {
       "id": "a1-d35-01",
-      "en": "January",
+      "en": "toy",
       "ru": [
-        "январь"
+        "игрушка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "It's cold in January.",
-          "ru": "В январе холодно."
+          "en": "This is my favourite toy.",
+          "ru": "Это моя любимая игрушка."
         }
       ]
     },
     {
       "id": "a1-d35-02",
-      "en": "February",
+      "en": "ball",
       "ru": [
-        "февраль"
+        "мяч"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "February is a short month.",
-          "ru": "Февраль — короткий месяц."
+          "en": "Give me the ball, please.",
+          "ru": "Дай мне мяч, пожалуйста."
         }
       ]
     },
     {
       "id": "a1-d35-03",
-      "en": "March",
+      "en": "box",
       "ru": [
-        "март"
+        "коробка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "My birthday is in March.",
-          "ru": "Мой день рождения в марте."
+          "en": "The cat is in the box.",
+          "ru": "Кошка в коробке."
         }
       ]
     },
     {
       "id": "a1-d35-04",
-      "en": "April",
+      "en": "clock",
       "ru": [
-        "апрель"
+        "часы (настенные)"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "It often rains in April.",
-          "ru": "В апреле часто идёт дождь."
+          "en": "The clock is very old.",
+          "ru": "Эти часы очень старые."
         }
       ]
     },
     {
       "id": "a1-d35-05",
-      "en": "May",
+      "en": "doll",
       "ru": [
-        "май"
+        "кукла"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The flowers come out in May.",
-          "ru": "В мае распускаются цветы."
+          "en": "My sister has a new doll.",
+          "ru": "У моей сестры новая кукла."
         }
       ]
     },
     {
       "id": "a1-d35-06",
-      "en": "June",
+      "en": "teddy bear",
       "ru": [
-        "июнь"
+        "плюшевый мишка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "School ends in June.",
-          "ru": "Школа заканчивается в июне."
+          "en": "The baby sleeps with a teddy bear.",
+          "ru": "Малыш спит с плюшевым мишкой."
         }
       ]
     },
     {
       "id": "a1-d35-07",
-      "en": "July",
+      "en": "poster",
       "ru": [
-        "июль"
+        "плакат",
+        "постер"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "July is very hot.",
-          "ru": "Июль очень жаркий."
+          "en": "I have a poster of my favourite singer.",
+          "ru": "У меня есть постер моей любимой певицы."
         }
       ]
     },
     {
       "id": "a1-d35-08",
-      "en": "August",
+      "en": "wardrobe",
       "ru": [
-        "август"
+        "шкаф для одежды"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "We go to the sea in August.",
-          "ru": "В августе мы едем на море."
+          "en": "My clothes are in the wardrobe.",
+          "ru": "Моя одежда в шкафу."
         }
       ]
     },
     {
       "id": "a1-d35-09",
-      "en": "September",
+      "en": "armchair",
       "ru": [
-        "сентябрь"
+        "кресло"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "School starts in September.",
-          "ru": "Школа начинается в сентябре."
+          "en": "My grandfather sits in his armchair.",
+          "ru": "Мой дедушка сидит в своём кресле."
         }
       ]
     },
     {
       "id": "a1-d35-10",
-      "en": "October",
+      "en": "bookcase",
       "ru": [
-        "октябрь"
+        "книжный шкаф"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The leaves are yellow in October.",
-          "ru": "В октябре листья жёлтые."
+          "en": "There are many books in the bookcase.",
+          "ru": "В книжном шкафу много книг."
         }
       ]
     }

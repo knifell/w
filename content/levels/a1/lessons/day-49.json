@@ -3,155 +3,165 @@
   "level": "A1",
   "day": 49,
   "island": 5,
-  "title": "At the shop",
-  "topic": "shopping phrases",
+  "title": "Free time",
+  "topic": "hobbies 2",
   "words": [
     {
       "id": "a1-d49-01",
-      "en": "pound",
+      "en": "fishing",
       "ru": [
-        "фунт"
+        "рыбалка"
       ],
       "pos": "noun",
-      "forms": [
-        "pounds"
-      ],
       "examples": [
         {
-          "en": "It costs five pounds.",
-          "ru": "Это стоит пять фунтов."
+          "en": "My grandpa loves fishing.",
+          "ru": "Мой дедушка обожает рыбалку."
         }
       ]
     },
     {
       "id": "a1-d49-02",
-      "en": "dollar",
+      "en": "camping",
       "ru": [
-        "доллар"
+        "поход с палатками",
+        "кемпинг"
       ],
       "pos": "noun",
-      "forms": [
-        "dollars"
-      ],
       "examples": [
         {
-          "en": "It's ten dollars.",
-          "ru": "Это стоит десять долларов."
+          "en": "We often go camping.",
+          "ru": "Мы часто ходим в походы."
         }
       ]
     },
     {
       "id": "a1-d49-03",
-      "en": "euro",
+      "en": "cycling",
       "ru": [
-        "евро"
+        "езда на велосипеде"
       ],
       "pos": "noun",
-      "forms": [
-        "euros"
-      ],
       "examples": [
         {
-          "en": "The ticket is twenty euros.",
-          "ru": "Билет стоит двадцать евро."
+          "en": "Cycling is good for you.",
+          "ru": "Езда на велосипеде полезна."
         }
       ]
     },
     {
       "id": "a1-d49-04",
-      "en": "closed",
+      "en": "chess",
       "ru": [
-        "закрытый"
+        "шахматы"
       ],
-      "pos": "adjective",
+      "pos": "noun",
       "examples": [
         {
-          "en": "The shop is closed on Sunday.",
-          "ru": "В воскресенье магазин закрыт."
+          "en": "Do you play chess?",
+          "ru": "Ты играешь в шахматы?"
         }
       ]
     },
     {
       "id": "a1-d49-05",
-      "en": "here you are",
+      "en": "puzzle",
       "ru": [
-        "вот, пожалуйста"
+        "пазл",
+        "головоломка"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Here you are, your coffee.",
-          "ru": "Вот, пожалуйста, ваш кофе."
+          "en": "Let's do a puzzle.",
+          "ru": "Давай соберём пазл."
         }
       ]
     },
     {
       "id": "a1-d49-06",
-      "en": "anything else",
+      "en": "drums",
       "ru": [
-        "что-нибудь ещё"
+        "барабаны"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Anything else?",
-          "ru": "Что-нибудь ещё?"
+          "en": "He plays the drums.",
+          "ru": "Он играет на барабанах."
         }
       ]
     },
     {
       "id": "a1-d49-07",
-      "en": "that's all",
+      "en": "violin",
       "ru": [
-        "это всё"
+        "скрипка"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "No, that's all, thanks.",
-          "ru": "Нет, это всё, спасибо."
+          "en": "She plays the violin.",
+          "ru": "Она играет на скрипке."
         }
       ]
     },
     {
       "id": "a1-d49-08",
-      "en": "how about",
+      "en": "video game",
       "ru": [
-        "как насчёт"
+        "видеоигра"
       ],
-      "pos": "phrase",
+      "pos": "noun",
+      "forms": [
+        "video games"
+      ],
       "examples": [
         {
-          "en": "How about a cup of tea?",
-          "ru": "Как насчёт чашки чая?"
+          "en": "My brother plays video games.",
+          "ru": "Мой брат играет в видеоигры."
         }
       ]
     },
     {
       "id": "a1-d49-09",
-      "en": "I'd like",
+      "en": "cards",
       "ru": [
-        "я бы хотел"
+        "карты (игральные)"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "I'd like an apple, please.",
-          "ru": "Я бы хотел яблоко, пожалуйста."
+          "en": "Let's play cards.",
+          "ru": "Давай сыграем в карты."
         }
       ]
     },
     {
       "id": "a1-d49-10",
-      "en": "of course",
+      "en": "hobby club",
       "ru": [
-        "конечно"
+        "кружок"
       ],
-      "pos": "phrase",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Of course you can!",
-          "ru": "Конечно, можно!"
+          "en": "I go to a hobby club on Fridays.",
+          "ru": "По пятницам я хожу в кружок."
+        }
+      ]
+    },
+    {
+      "id": "a1-d49-11",
+      "en": "tent",
+      "ru": [
+        "палатка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We sleep in a tent.",
+          "ru": "Мы спим в палатке."
         }
       ]
     }

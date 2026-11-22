@@ -3,148 +3,183 @@
   "level": "A1",
   "day": 46,
   "island": 5,
-  "title": "More clothes",
-  "topic": "clothes 2",
+  "title": "Wild animals",
+  "topic": "animals 2",
   "words": [
     {
       "id": "a1-d46-01",
-      "en": "shorts",
+      "en": "tiger",
       "ru": [
-        "шорты"
+        "тигр"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I wear shorts in summer.",
-          "ru": "Летом я ношу шорты."
+          "en": "The tiger is orange and black.",
+          "ru": "Тигр оранжево-чёрный."
         }
       ]
     },
     {
       "id": "a1-d46-02",
-      "en": "belt",
+      "en": "giraffe",
       "ru": [
-        "ремень",
-        "пояс"
+        "жираф"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "This belt is too long.",
-          "ru": "Этот ремень слишком длинный."
+          "en": "A giraffe has long legs.",
+          "ru": "У жирафа длинные ноги."
         }
       ]
     },
     {
       "id": "a1-d46-03",
-      "en": "cap",
+      "en": "zebra",
       "ru": [
-        "кепка"
+        "зебра"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "He wears a blue cap.",
-          "ru": "Он носит синюю кепку."
+          "en": "A zebra is black and white.",
+          "ru": "Зебра чёрно-белая."
         }
       ]
     },
     {
       "id": "a1-d46-04",
-      "en": "sandals",
+      "en": "snake",
       "ru": [
-        "сандалии"
+        "змея"
       ],
       "pos": "noun",
+      "forms": [
+        "snakes"
+      ],
       "examples": [
         {
-          "en": "I need new sandals.",
-          "ru": "Мне нужны новые сандалии."
+          "en": "I hate snakes.",
+          "ru": "Я ненавижу змей."
         }
       ]
     },
     {
       "id": "a1-d46-05",
-      "en": "trainers",
+      "en": "fox",
       "ru": [
-        "кроссовки"
+        "лиса"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "My trainers are white.",
-          "ru": "Мои кроссовки белые."
+          "en": "The fox lives in the forest.",
+          "ru": "Лиса живёт в лесу."
         }
       ]
     },
     {
       "id": "a1-d46-06",
-      "en": "pyjamas",
+      "en": "wolf",
       "ru": [
-        "пижама"
+        "волк"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Put on your pyjamas.",
-          "ru": "Надень пижаму."
+          "en": "The wolf is a dangerous animal.",
+          "ru": "Волк — опасное животное."
         }
       ]
     },
     {
       "id": "a1-d46-07",
-      "en": "swimsuit",
+      "en": "owl",
       "ru": [
-        "купальник"
+        "сова"
       ],
       "pos": "noun",
+      "forms": [
+        "owls"
+      ],
       "examples": [
         {
-          "en": "Don't forget your swimsuit.",
-          "ru": "Не забудь купальник."
+          "en": "Owls sleep in the day.",
+          "ru": "Совы спят днём."
         }
       ]
     },
     {
       "id": "a1-d46-08",
-      "en": "raincoat",
+      "en": "dolphin",
       "ru": [
-        "плащ",
-        "дождевик"
+        "дельфин"
       ],
       "pos": "noun",
+      "forms": [
+        "dolphins"
+      ],
       "examples": [
         {
-          "en": "Take your raincoat.",
-          "ru": "Возьми дождевик."
+          "en": "Dolphins love to play.",
+          "ru": "Дельфины любят играть."
         }
       ]
     },
     {
       "id": "a1-d46-09",
-      "en": "blouse",
+      "en": "whale",
       "ru": [
-        "блузка"
+        "кит"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "She has a pink blouse.",
-          "ru": "У неё розовая блузка."
+          "en": "A whale is very big.",
+          "ru": "Кит очень большой."
         }
       ]
     },
     {
       "id": "a1-d46-10",
-      "en": "suit",
+      "en": "shark",
       "ru": [
-        "костюм (деловой)"
+        "акула"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "My dad wears a suit to work.",
-          "ru": "Папа ходит на работу в костюме."
+          "en": "There is a shark in the sea!",
+          "ru": "В море акула!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d46-11",
+      "en": "lion",
+      "ru": [
+        "лев"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The lion is big and strong.",
+          "ru": "Лев большой и сильный."
+        }
+      ]
+    },
+    {
+      "id": "a1-d46-12",
+      "en": "elephant",
+      "ru": [
+        "слон"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "An elephant has big ears.",
+          "ru": "У слона большие уши."
         }
       ]
     }

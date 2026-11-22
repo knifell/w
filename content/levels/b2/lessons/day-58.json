@@ -30,8 +30,8 @@
       "pos": "adverb",
       "examples": [
         {
-          "en": "The job is inherently risky.",
-          "ru": "Эта работа по сути рискованная."
+          "en": "The job is inherently dangerous.",
+          "ru": "Эта работа по своей сути опасна."
         }
       ]
     },
@@ -58,8 +58,8 @@
       "pos": "adverb",
       "examples": [
         {
-          "en": "It's virtually impossible.",
-          "ru": "Это практически невозможно."
+          "en": "It's virtually too late now.",
+          "ru": "Сейчас уже практически слишком поздно."
         }
       ]
     },

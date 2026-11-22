@@ -3,155 +3,132 @@
   "level": "A1",
   "day": 44,
   "island": 5,
-  "title": "Wild animals",
-  "topic": "animals 2",
+  "title": "My big family",
+  "topic": "family 2",
   "words": [
     {
       "id": "a1-d44-01",
-      "en": "tiger",
+      "en": "grandma",
       "ru": [
-        "тигр"
+        "бабушка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The tiger is orange and black.",
-          "ru": "Тигр оранжево-чёрный."
+          "en": "I see my grandma on Sundays.",
+          "ru": "По воскресеньям я вижусь с бабушкой."
         }
       ]
     },
     {
       "id": "a1-d44-02",
-      "en": "giraffe",
+      "en": "grandpa",
       "ru": [
-        "жираф"
+        "дедушка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "A giraffe has a long neck.",
-          "ru": "У жирафа длинная шея."
+          "en": "My grandpa reads every day.",
+          "ru": "Мой дедушка читает каждый день."
         }
       ]
     },
     {
       "id": "a1-d44-03",
-      "en": "zebra",
+      "en": "grandparents",
       "ru": [
-        "зебра"
+        "бабушка и дедушка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "A zebra is black and white.",
-          "ru": "Зебра чёрно-белая."
+          "en": "My grandparents live in a village.",
+          "ru": "Мои бабушка и дедушка живут в деревне."
         }
       ]
     },
     {
       "id": "a1-d44-04",
-      "en": "snake",
+      "en": "grandson",
       "ru": [
-        "змея"
+        "внук"
       ],
       "pos": "noun",
-      "forms": [
-        "snakes"
-      ],
       "examples": [
         {
-          "en": "I'm afraid of snakes.",
-          "ru": "Я боюсь змей."
+          "en": "Their grandson is five.",
+          "ru": "Их внуку пять лет."
         }
       ]
     },
     {
       "id": "a1-d44-05",
-      "en": "fox",
+      "en": "granddaughter",
       "ru": [
-        "лиса"
+        "внучка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The fox lives in the forest.",
-          "ru": "Лиса живёт в лесу."
+          "en": "She has one granddaughter.",
+          "ru": "У неё одна внучка."
         }
       ]
     },
     {
       "id": "a1-d44-06",
-      "en": "wolf",
+      "en": "niece",
       "ru": [
-        "волк"
+        "племянница"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The wolf is grey.",
-          "ru": "Волк серый."
+          "en": "My niece is a student.",
+          "ru": "Моя племянница — студентка."
         }
       ]
     },
     {
       "id": "a1-d44-07",
-      "en": "owl",
+      "en": "nephew",
       "ru": [
-        "сова"
+        "племянник"
       ],
       "pos": "noun",
-      "forms": [
-        "owls"
-      ],
       "examples": [
         {
-          "en": "Owls sleep in the day.",
-          "ru": "Совы спят днём."
+          "en": "My nephew likes football.",
+          "ru": "Мой племянник любит футбол."
         }
       ]
     },
     {
       "id": "a1-d44-08",
-      "en": "dolphin",
+      "en": "boyfriend",
       "ru": [
-        "дельфин"
+        "парень (молодой человек)"
       ],
       "pos": "noun",
-      "forms": [
-        "dolphins"
-      ],
       "examples": [
         {
-          "en": "Dolphins are clever.",
-          "ru": "Дельфины умные."
+          "en": "Her boyfriend is from Spain.",
+          "ru": "Её парень из Испании."
         }
       ]
     },
     {
       "id": "a1-d44-09",
-      "en": "whale",
+      "en": "girlfriend",
       "ru": [
-        "кит"
+        "девушка (подруга)"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "A whale is very big.",
-          "ru": "Кит очень большой."
-        }
-      ]
-    },
-    {
-      "id": "a1-d44-10",
-      "en": "shark",
-      "ru": [
-        "акула"
-      ],
-      "pos": "noun",
-      "examples": [
-        {
-          "en": "There is a shark in the sea!",
-          "ru": "В море акула!"
+          "en": "His girlfriend is a doctor.",
+          "ru": "Его девушка — врач."
         }
       ]
     }

@@ -3,148 +3,147 @@
   "level": "A1",
   "day": 21,
   "island": 3,
-  "title": "Things around us",
-  "topic": "things",
+  "title": "Clothes",
+  "topic": "clothes",
   "words": [
     {
       "id": "a1-d21-01",
-      "en": "phone",
+      "en": "shirt",
       "ru": [
-        "телефон"
+        "рубашка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Where is my phone?",
-          "ru": "Где мой телефон?"
+          "en": "He has a white shirt.",
+          "ru": "У него белая рубашка."
         }
       ]
     },
     {
       "id": "a1-d21-02",
-      "en": "computer",
+      "en": "T-shirt",
       "ru": [
-        "компьютер"
+        "футболка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I play games on the computer.",
-          "ru": "Я играю в игры на компьютере."
+          "en": "I have a new T-shirt.",
+          "ru": "У меня новая футболка."
         }
       ]
     },
     {
       "id": "a1-d21-03",
-      "en": "car",
+      "en": "shoes",
       "ru": [
-        "машина",
-        "автомобиль"
+        "туфли",
+        "обувь"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "My dad has a red car.",
-          "ru": "У моего папы красная машина."
+          "en": "My shoes are black.",
+          "ru": "Мои туфли чёрные."
         }
       ]
     },
     {
       "id": "a1-d21-04",
-      "en": "bike",
+      "en": "skirt",
       "ru": [
-        "велосипед"
+        "юбка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I go to school by bike.",
-          "ru": "Я езжу в школу на велосипеде."
+          "en": "She has a pink skirt.",
+          "ru": "У неё розовая юбка."
         }
       ]
     },
     {
       "id": "a1-d21-05",
-      "en": "bus",
+      "en": "socks",
       "ru": [
-        "автобус"
+        "носки"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The bus is late.",
-          "ru": "Автобус опаздывает."
+          "en": "Where are my socks?",
+          "ru": "Где мои носки?"
         }
       ]
     },
     {
       "id": "a1-d21-06",
-      "en": "train",
+      "en": "coat",
       "ru": [
-        "поезд"
+        "пальто"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The train is fast.",
-          "ru": "Поезд быстрый."
+          "en": "It's cold. Where is your coat?",
+          "ru": "Холодно. Где твоё пальто?"
         }
       ]
     },
     {
       "id": "a1-d21-07",
-      "en": "plane",
+      "en": "jeans",
       "ru": [
-        "самолёт"
+        "джинсы"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "We go to Spain by plane.",
-          "ru": "Мы летим в Испанию на самолёте."
+          "en": "I like blue jeans.",
+          "ru": "Мне нравятся синие джинсы."
         }
       ]
     },
     {
       "id": "a1-d21-08",
-      "en": "TV",
+      "en": "sweater",
       "ru": [
-        "телевизор"
+        "свитер"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The TV is in the living room.",
-          "ru": "Телевизор в гостиной."
+          "en": "This sweater is very nice.",
+          "ru": "Этот свитер очень красивый."
         }
       ]
     },
     {
       "id": "a1-d21-09",
-      "en": "watch",
+      "en": "clothes",
       "ru": [
-        "часы (наручные)"
+        "одежда"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I have a new watch.",
-          "ru": "У меня новые часы."
+          "en": "I want new clothes.",
+          "ru": "Я хочу новую одежду."
         }
       ]
     },
     {
       "id": "a1-d21-10",
-      "en": "picture",
+      "en": "scarf",
       "ru": [
-        "картинка",
-        "картина"
+        "шарф"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Look at this picture.",
-          "ru": "Посмотри на эту картинку."
+          "en": "It's cold, I want my scarf.",
+          "ru": "Холодно, мне нужен мой шарф."
         }
       ]
     }

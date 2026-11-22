@@ -3,149 +3,161 @@
   "level": "A1",
   "day": 15,
   "island": 2,
-  "title": "At school",
-  "topic": "school",
+  "title": "Days of the week",
+  "topic": "days",
   "words": [
     {
       "id": "a1-d15-01",
-      "en": "school",
+      "en": "Monday",
       "ru": [
-        "школа"
+        "понедельник"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I go to school by bus.",
-          "ru": "Я езжу в школу на автобусе."
+          "en": "I have school on Monday.",
+          "ru": "В понедельник у меня школа."
         }
       ]
     },
     {
       "id": "a1-d15-02",
-      "en": "book",
+      "en": "Tuesday",
       "ru": [
-        "книга"
+        "вторник"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "This book is very good.",
-          "ru": "Эта книга очень хорошая."
+          "en": "Is it Tuesday today?",
+          "ru": "Сегодня вторник?"
         }
       ]
     },
     {
       "id": "a1-d15-03",
-      "en": "pen",
+      "en": "Wednesday",
       "ru": [
-        "ручка"
+        "среда"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Can I have a pen?",
-          "ru": "Можно мне ручку?"
+          "en": "See you on Wednesday.",
+          "ru": "Увидимся в среду."
         }
       ]
     },
     {
       "id": "a1-d15-04",
-      "en": "pencil",
+      "en": "Thursday",
       "ru": [
-        "карандаш"
+        "четверг"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Write with a pencil.",
-          "ru": "Пиши карандашом."
+          "en": "Thursday is my favourite day.",
+          "ru": "Четверг — мой любимый день."
         }
       ]
     },
     {
       "id": "a1-d15-05",
-      "en": "desk",
+      "en": "Friday",
       "ru": [
-        "парта",
-        "письменный стол"
+        "пятница"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "My bag is under the desk.",
-          "ru": "Мой рюкзак под партой."
+          "en": "I love Friday!",
+          "ru": "Я обожаю пятницу!"
         }
       ]
     },
     {
       "id": "a1-d15-06",
-      "en": "classroom",
+      "en": "Saturday",
       "ru": [
-        "класс",
-        "классная комната"
+        "суббота"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Our classroom is on the first floor.",
-          "ru": "Наш класс на первом этаже."
+          "en": "On Saturday we are at home.",
+          "ru": "В субботу мы дома."
         }
       ]
     },
     {
       "id": "a1-d15-07",
-      "en": "read",
+      "en": "Sunday",
       "ru": [
-        "читать"
+        "воскресенье"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "I read every evening.",
-          "ru": "Я читаю каждый вечер."
+          "en": "Sunday is a nice day.",
+          "ru": "Воскресенье — хороший день."
         }
       ]
     },
     {
       "id": "a1-d15-08",
-      "en": "write",
+      "en": "day",
       "ru": [
-        "писать"
+        "день"
       ],
-      "pos": "verb",
+      "pos": "noun",
       "examples": [
         {
-          "en": "Write your name here.",
-          "ru": "Напиши здесь своё имя."
+          "en": "Have a nice day!",
+          "ru": "Хорошего дня!"
         }
       ]
     },
     {
       "id": "a1-d15-09",
-      "en": "notebook",
+      "en": "week",
       "ru": [
-        "тетрадь",
-        "блокнот"
+        "неделя"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Open your notebook.",
-          "ru": "Открой тетрадь."
+          "en": "A week has seven days.",
+          "ru": "В неделе семь дней."
         }
       ]
     },
     {
       "id": "a1-d15-10",
-      "en": "word",
+      "en": "today",
       "ru": [
-        "слово"
+        "сегодня"
       ],
-      "pos": "noun",
+      "pos": "adverb",
       "examples": [
         {
-          "en": "What does this word mean?",
-          "ru": "Что значит это слово?"
+          "en": "What day is it today?",
+          "ru": "Какой сегодня день?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d15-11",
+      "en": "at",
+      "ru": [
+        "в",
+        "у (о месте и времени)"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "We are at school.",
+          "ru": "Мы в школе."
         }
       ]
     }

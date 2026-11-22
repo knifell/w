@@ -3,150 +3,187 @@
   "level": "A1",
   "day": 29,
   "island": 3,
-  "title": "Jobs",
-  "topic": "jobs",
+  "title": "Give and take",
+  "topic": "verbs 3",
   "words": [
     {
       "id": "a1-d29-01",
-      "en": "pilot",
+      "en": "buy",
       "ru": [
-        "пилот",
-        "лётчик"
+        "покупать"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "bought"
+      ],
       "examples": [
         {
-          "en": "My uncle is a pilot.",
-          "ru": "Мой дядя — пилот."
+          "en": "I want to buy a new phone.",
+          "ru": "Я хочу купить новый телефон."
         }
       ]
     },
     {
       "id": "a1-d29-02",
-      "en": "singer",
+      "en": "sell",
       "ru": [
-        "певец",
-        "певица"
+        "продавать"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "sold"
+      ],
       "examples": [
         {
-          "en": "She is a famous singer.",
-          "ru": "Она известная певица."
+          "en": "They sell food here.",
+          "ru": "Здесь продают еду."
         }
       ]
     },
     {
       "id": "a1-d29-03",
-      "en": "artist",
+      "en": "give",
       "ru": [
-        "художник"
+        "давать"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "gave",
+        "given"
+      ],
       "examples": [
         {
-          "en": "The artist paints the sea.",
-          "ru": "Художник рисует море."
+          "en": "Give me the book, please.",
+          "ru": "Дай мне книгу, пожалуйста."
         }
       ]
     },
     {
       "id": "a1-d29-04",
-      "en": "worker",
+      "en": "take",
       "ru": [
-        "рабочий",
-        "работник"
+        "брать"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "took",
+        "taken"
+      ],
       "examples": [
         {
-          "en": "He is a good worker.",
-          "ru": "Он хороший работник."
+          "en": "Take an apple.",
+          "ru": "Возьми яблоко."
         }
       ]
     },
     {
       "id": "a1-d29-05",
-      "en": "factory",
+      "en": "put",
       "ru": [
-        "фабрика",
-        "завод"
+        "класть",
+        "ставить"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "puts"
+      ],
       "examples": [
         {
-          "en": "My father works in a factory.",
-          "ru": "Мой папа работает на заводе."
+          "en": "Put your book here.",
+          "ru": "Положи сюда свою книгу."
         }
       ]
     },
     {
       "id": "a1-d29-06",
-      "en": "farm",
+      "en": "get",
       "ru": [
-        "ферма"
+        "получать",
+        "доставать"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "got"
+      ],
       "examples": [
         {
-          "en": "They live on a farm.",
-          "ru": "Они живут на ферме."
+          "en": "Can I get a coffee, please?",
+          "ru": "Можно мне кофе, пожалуйста?"
         }
       ]
     },
     {
       "id": "a1-d29-07",
-      "en": "police officer",
+      "en": "make",
       "ru": [
-        "полицейский"
+        "делать",
+        "готовить"
       ],
-      "pos": "noun",
+      "pos": "verb",
+      "forms": [
+        "made"
+      ],
       "examples": [
         {
-          "en": "The police officer helped me.",
-          "ru": "Полицейский мне помог."
+          "en": "Let's make a cake.",
+          "ru": "Давай испечём торт."
         }
       ]
     },
     {
       "id": "a1-d29-08",
-      "en": "hairdresser",
+      "en": "need",
       "ru": [
-        "парикмахер"
+        "нуждаться",
+        "нужно"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "My mum is a hairdresser.",
-          "ru": "Моя мама — парикмахер."
+          "en": "I need help.",
+          "ru": "Мне нужна помощь."
         }
       ]
     },
     {
       "id": "a1-d29-09",
-      "en": "postman",
+      "en": "use",
       "ru": [
-        "почтальон"
+        "использовать"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "The postman comes at nine.",
-          "ru": "Почтальон приходит в девять."
+          "en": "Can I use your phone?",
+          "ru": "Можно воспользоваться твоим телефоном?"
         }
       ]
     },
     {
       "id": "a1-d29-10",
-      "en": "businessman",
+      "en": "show",
       "ru": [
-        "бизнесмен"
+        "показывать"
       ],
-      "pos": "noun",
+      "pos": "verb",
       "examples": [
         {
-          "en": "He is a rich businessman.",
-          "ru": "Он богатый бизнесмен."
+          "en": "Show me your picture.",
+          "ru": "Покажи мне свой рисунок."
+        }
+      ]
+    },
+    {
+      "id": "a1-d29-11",
+      "en": "how much",
+      "ru": [
+        "сколько (стоит)"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "How much is this?",
+          "ru": "Сколько это стоит?"
         }
       ]
     }

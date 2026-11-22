@@ -114,8 +114,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "Don't be upset, it's not your fault.",
-          "ru": "Не расстраивайся, это не твоя вина."
+          "en": "Don't be upset, it's not your mistake.",
+          "ru": "Не расстраивайся, это не твоя ошибка."
         }
       ]
     },
@@ -143,8 +143,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "He was jealous of his brother's success.",
-          "ru": "Он завидовал успеху брата."
+          "en": "He was jealous of his brother's new car.",
+          "ru": "Он завидовал новой машине брата."
         }
       ]
     }

@@ -74,8 +74,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The lift is broken.",
-          "ru": "Лифт сломан."
+          "en": "The lift is on the left.",
+          "ru": "Лифт слева."
         }
       ]
     },
@@ -88,8 +88,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Can I have another towel?",
-          "ru": "Можно ещё одно полотенце?"
+          "en": "Can I have a clean towel?",
+          "ru": "Можно чистое полотенце?"
         }
       ]
     },

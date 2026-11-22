@@ -18,8 +18,8 @@
       ],
       "examples": [
         {
-          "en": "Both sides had to make concessions.",
-          "ru": "Обеим сторонам пришлось пойти на уступки."
+          "en": "Each side had to make concessions.",
+          "ru": "Каждой стороне пришлось пойти на уступки."
         }
       ]
     },
@@ -119,8 +119,8 @@
       "id": "b2-d04-08",
       "en": "concede",
       "ru": [
-        "признавать",
-        "уступать"
+        "уступать",
+        "неохотно признавать"
       ],
       "pos": "verb",
       "forms": [
@@ -156,7 +156,7 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "She has a good rapport with her clients.",
+          "en": "She has a good rapport with her customers.",
           "ru": "У неё хорошее взаимопонимание с клиентами."
         }
       ]

@@ -32,8 +32,8 @@
       "pos": "phrase",
       "examples": [
         {
-          "en": "You must take responsibility for your actions.",
-          "ru": "Ты должен отвечать за свои поступки."
+          "en": "You must take responsibility for your decisions.",
+          "ru": "Ты должен отвечать за свои решения."
         }
       ]
     },
@@ -74,8 +74,8 @@
       "pos": "phrase",
       "examples": [
         {
-          "en": "The committee will reach a decision soon.",
-          "ru": "Комитет скоро примет решение."
+          "en": "The council will reach a decision soon.",
+          "ru": "Совет скоро примет решение."
         }
       ]
     },
@@ -139,8 +139,8 @@
       ],
       "examples": [
         {
-          "en": "She came to terms with the loss.",
-          "ru": "Она смирилась с потерей."
+          "en": "She came to terms with the past.",
+          "ru": "Она смирилась с прошлым."
         }
       ]
     },

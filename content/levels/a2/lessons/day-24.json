@@ -42,10 +42,13 @@
         "выигрывать"
       ],
       "pos": "verb",
+      "forms": [
+        "won"
+      ],
       "examples": [
         {
-          "en": "I hope we win today.",
-          "ru": "Надеюсь, сегодня мы победим."
+          "en": "I think we will win today.",
+          "ru": "Думаю, сегодня мы победим."
         }
       ]
     },
@@ -57,6 +60,9 @@
         "терять"
       ],
       "pos": "verb",
+      "forms": [
+        "lost"
+      ],
       "examples": [
         {
           "en": "We didn't want to lose.",
@@ -105,8 +111,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Our coach is very strict.",
-          "ru": "Наш тренер очень строгий."
+          "en": "Our coach is very good.",
+          "ru": "Наш тренер очень хороший."
         }
       ]
     },
@@ -117,6 +123,9 @@
         "плавать"
       ],
       "pos": "verb",
+      "forms": [
+        "swam"
+      ],
       "examples": [
         {
           "en": "Can you swim?",
@@ -133,8 +142,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "I go to the gym twice a week.",
-          "ru": "Я хожу в спортзал два раза в неделю."
+          "en": "I go to the gym every day.",
+          "ru": "Я хожу в спортзал каждый день."
         }
       ]
     },
@@ -150,6 +159,20 @@
         {
           "en": "She won the race.",
           "ru": "Она выиграла забег."
+        }
+      ]
+    },
+    {
+      "id": "a2-d24-11",
+      "en": "than",
+      "ru": [
+        "чем"
+      ],
+      "pos": "conjunction",
+      "examples": [
+        {
+          "en": "Our team is better than your team.",
+          "ru": "Наша команда лучше вашей."
         }
       ]
     }

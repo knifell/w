@@ -15,8 +15,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The price of this jacket is too high.",
-          "ru": "Цена этой куртки слишком высокая."
+          "en": "What is the price of this bag?",
+          "ru": "Сколько стоит эта сумка?"
         }
       ]
     },
@@ -57,8 +57,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Can I pay in cash?",
-          "ru": "Можно заплатить наличными?"
+          "en": "Do you take cash?",
+          "ru": "Вы принимаете наличные?"
         }
       ]
     },
@@ -71,8 +71,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Please keep your receipt.",
-          "ru": "Пожалуйста, сохраните чек."
+          "en": "Here is your receipt.",
+          "ru": "Вот ваш чек."
         }
       ]
     },
@@ -146,6 +146,35 @@
         {
           "en": "Do you need a bag?",
           "ru": "Вам нужен пакет?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d02-11",
+      "en": "will",
+      "ru": [
+        "будет (о будущем)"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I will take this bag.",
+          "ru": "Я возьму эту сумку."
+        }
+      ]
+    },
+    {
+      "id": "a2-d02-12",
+      "en": "should",
+      "ru": [
+        "следует",
+        "стоит"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "You should try on the shoes.",
+          "ru": "Тебе стоит примерить туфли."
         }
       ]
     }

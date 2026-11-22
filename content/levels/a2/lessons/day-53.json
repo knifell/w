@@ -66,8 +66,7 @@
       "id": "a2-d53-05",
       "en": "series",
       "ru": [
-        "сериал",
-        "серия"
+        "сериал"
       ],
       "pos": "noun",
       "examples": [
@@ -147,8 +146,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "What's on the other channel?",
-          "ru": "Что идёт по другому каналу?"
+          "en": "What's on this channel?",
+          "ru": "Что идёт по этому каналу?"
         }
       ]
     }

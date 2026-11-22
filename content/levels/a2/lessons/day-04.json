@@ -15,8 +15,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "My parents live in a small town.",
-          "ru": "Мои родители живут в маленьком городе."
+          "en": "My parents live in a small village.",
+          "ru": "Мои родители живут в маленькой деревне."
         }
       ]
     },
@@ -43,8 +43,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "My uncle works in a bank.",
-          "ru": "Мой дядя работает в банке."
+          "en": "My uncle works in a hospital.",
+          "ru": "Мой дядя работает в больнице."
         }
       ]
     },
@@ -129,8 +129,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The twins look exactly the same.",
-          "ru": "Близнецы выглядят совершенно одинаково."
+          "en": "The twins are ten years old.",
+          "ru": "Близнецам десять лет."
         }
       ]
     },
@@ -149,6 +149,35 @@
         {
           "en": "I grew up near the sea.",
           "ru": "Я вырос у моря."
+        }
+      ]
+    },
+    {
+      "id": "a2-d04-11",
+      "en": "hair",
+      "ru": [
+        "волосы"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My cousin has long hair.",
+          "ru": "У моей двоюродной сестры длинные волосы."
+        }
+      ]
+    },
+    {
+      "id": "a2-d04-12",
+      "en": "everyone",
+      "ru": [
+        "каждый",
+        "все до одного"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "Everyone in my family likes music.",
+          "ru": "Все в моей семье любят музыку."
         }
       ]
     }

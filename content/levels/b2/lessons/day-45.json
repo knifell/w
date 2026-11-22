@@ -29,8 +29,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Practice improves fluency.",
-          "ru": "Практика улучшает беглость речи."
+          "en": "Speaking every day improves fluency.",
+          "ru": "Ежедневная разговорная практика улучшает беглость речи."
         }
       ]
     },
@@ -85,8 +85,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Teenagers use a lot of slang.",
-          "ru": "Подростки используют много сленга."
+          "en": "Young people use a lot of slang.",
+          "ru": "Молодые люди используют много сленга."
         }
       ]
     },
@@ -128,8 +128,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The report is full of technical jargon.",
-          "ru": "Отчёт полон технического жаргона."
+          "en": "The report is full of jargon.",
+          "ru": "Отчёт полон жаргона."
         }
       ]
     },
@@ -142,8 +142,8 @@
       "pos": "adjective",
       "examples": [
         {
-          "en": "This is a colloquial expression.",
-          "ru": "Это разговорное выражение."
+          "en": "This is a colloquial word.",
+          "ru": "Это разговорное слово."
         }
       ]
     }

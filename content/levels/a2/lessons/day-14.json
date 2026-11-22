@@ -29,8 +29,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "I found a coin on the street.",
-          "ru": "Я нашёл монету на улице."
+          "en": "I have a coin in my pocket.",
+          "ru": "У меня в кармане монета."
         }
       ]
     },
@@ -70,6 +70,9 @@
         "тратить"
       ],
       "pos": "verb",
+      "forms": [
+        "spent"
+      ],
       "examples": [
         {
           "en": "I spend too much on coffee.",
@@ -102,6 +105,9 @@
         "стоить"
       ],
       "pos": "verb",
+      "forms": [
+        "costs"
+      ],
       "examples": [
         {
           "en": "How much does this cost?",
@@ -116,6 +122,9 @@
         "платить"
       ],
       "pos": "verb",
+      "forms": [
+        "paid"
+      ],
       "examples": [
         {
           "en": "I'll pay for dinner.",
@@ -146,10 +155,42 @@
         "одалживать"
       ],
       "pos": "verb",
+      "forms": [
+        "lent"
+      ],
       "examples": [
         {
           "en": "Could you lend me your pen?",
           "ru": "Можешь одолжить мне ручку?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d14-11",
+      "en": "most",
+      "ru": [
+        "большинство",
+        "больше всего"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "I spend most of my money on food.",
+          "ru": "Большую часть денег я трачу на еду."
+        }
+      ]
+    },
+    {
+      "id": "a2-d14-12",
+      "en": "less",
+      "ru": [
+        "меньше"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "I want to spend less money.",
+          "ru": "Я хочу тратить меньше денег."
         }
       ]
     }

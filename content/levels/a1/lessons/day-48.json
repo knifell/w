@@ -3,149 +3,176 @@
   "level": "A1",
   "day": 48,
   "island": 5,
-  "title": "Nature around us",
-  "topic": "nature 2",
+  "title": "More clothes",
+  "topic": "clothes 2",
   "words": [
     {
       "id": "a1-d48-01",
-      "en": "rock",
+      "en": "shorts",
       "ru": [
-        "скала",
-        "камень"
+        "шорты"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "We sat on a big rock.",
-          "ru": "Мы сидели на большом камне."
+          "en": "These shorts are for football.",
+          "ru": "Эти шорты для футбола."
         }
       ]
     },
     {
       "id": "a1-d48-02",
-      "en": "sand",
+      "en": "belt",
       "ru": [
-        "песок"
+        "ремень",
+        "пояс"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The sand is hot.",
-          "ru": "Песок горячий."
+          "en": "This belt is too long.",
+          "ru": "Этот ремень слишком длинный."
         }
       ]
     },
     {
       "id": "a1-d48-03",
-      "en": "leaf",
+      "en": "cap",
       "ru": [
-        "лист (дерева)"
+        "кепка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "A leaf fell from the tree.",
-          "ru": "С дерева упал лист."
+          "en": "He has a blue cap.",
+          "ru": "У него синяя кепка."
         }
       ]
     },
     {
       "id": "a1-d48-04",
-      "en": "plant",
+      "en": "sandals",
       "ru": [
-        "растение"
+        "сандалии"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Water the plant, please.",
-          "ru": "Полей растение, пожалуйста."
+          "en": "I need new sandals.",
+          "ru": "Мне нужны новые сандалии."
         }
       ]
     },
     {
       "id": "a1-d48-05",
-      "en": "bee",
+      "en": "trainers",
       "ru": [
-        "пчела"
+        "кроссовки"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "A bee is on the flower.",
-          "ru": "На цветке пчела."
+          "en": "My trainers are white.",
+          "ru": "Мои кроссовки белые."
         }
       ]
     },
     {
       "id": "a1-d48-06",
-      "en": "butterfly",
+      "en": "pyjamas",
       "ru": [
-        "бабочка"
+        "пижама"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "What a beautiful butterfly!",
-          "ru": "Какая красивая бабочка!"
+          "en": "Put on your pyjamas.",
+          "ru": "Надень пижаму."
         }
       ]
     },
     {
       "id": "a1-d48-07",
-      "en": "world",
+      "en": "swimsuit",
       "ru": [
-        "мир",
-        "свет"
+        "купальник"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "I want to travel around the world.",
-          "ru": "Я хочу путешествовать по миру."
+          "en": "Take your swimsuit to the swimming pool.",
+          "ru": "Возьми купальник в бассейн."
         }
       ]
     },
     {
       "id": "a1-d48-08",
-      "en": "earth",
+      "en": "raincoat",
       "ru": [
-        "земля",
-        "планета Земля"
+        "плащ",
+        "дождевик"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "The Earth is round.",
-          "ru": "Земля круглая."
+          "en": "Take your raincoat.",
+          "ru": "Возьми дождевик."
         }
       ]
     },
     {
       "id": "a1-d48-09",
-      "en": "desert",
+      "en": "blouse",
       "ru": [
-        "пустыня"
+        "блузка"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "It's very hot in the desert.",
-          "ru": "В пустыне очень жарко."
+          "en": "She has a pink blouse.",
+          "ru": "У неё розовая блузка."
         }
       ]
     },
     {
       "id": "a1-d48-10",
-      "en": "jungle",
+      "en": "suit",
       "ru": [
-        "джунгли"
+        "костюм (деловой)"
       ],
       "pos": "noun",
       "examples": [
         {
-          "en": "Monkeys live in the jungle.",
-          "ru": "Обезьяны живут в джунглях."
+          "en": "My dad has a black suit.",
+          "ru": "У моего папы чёрный костюм."
+        }
+      ]
+    },
+    {
+      "id": "a1-d48-11",
+      "en": "sunglasses",
+      "ru": [
+        "солнечные очки"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Where are my sunglasses?",
+          "ru": "Где мои солнечные очки?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d48-12",
+      "en": "sun cream",
+      "ru": [
+        "солнцезащитный крем"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Put on sun cream at the seaside.",
+          "ru": "На море мажься солнцезащитным кремом."
         }
       ]
     }

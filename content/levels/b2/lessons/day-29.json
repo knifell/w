@@ -51,7 +51,7 @@
       ],
       "examples": [
         {
-          "en": "We had a few setbacks, but we kept going.",
+          "en": "We had a few setbacks, but we carried on.",
           "ru": "У нас были неудачи, но мы продолжили."
         }
       ]
@@ -80,7 +80,7 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Too much work can lead to burnout.",
+          "en": "Too much work can cause burnout.",
           "ru": "Слишком много работы может привести к выгоранию."
         }
       ]
@@ -94,7 +94,7 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Step out of your comfort zone.",
+          "en": "Get out of your comfort zone.",
           "ru": "Выйди из зоны комфорта."
         }
       ]
@@ -156,8 +156,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Praise can boost a child's self-esteem.",
-          "ru": "Похвала может повысить самооценку ребёнка."
+          "en": "Kind words can boost a child's self-esteem.",
+          "ru": "Добрые слова могут повысить самооценку ребёнка."
         }
       ]
     }

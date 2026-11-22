@@ -58,8 +58,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "Trade between the countries has grown.",
-          "ru": "Торговля между странами выросла."
+          "en": "Trade between the countries is growing.",
+          "ru": "Торговля между странами растёт."
         }
       ]
     },
@@ -91,8 +91,8 @@
       "pos": "verb",
       "examples": [
         {
-          "en": "We import most of our oil.",
-          "ru": "Мы импортируем большую часть нефти."
+          "en": "We import most of our coffee.",
+          "ru": "Мы импортируем большую часть кофе."
         }
       ]
     },
@@ -133,8 +133,8 @@
       "pos": "noun",
       "examples": [
         {
-          "en": "The country is in an economic crisis.",
-          "ru": "Страна в экономическом кризисе."
+          "en": "The country is in a crisis.",
+          "ru": "Страна в кризисе."
         }
       ]
     },

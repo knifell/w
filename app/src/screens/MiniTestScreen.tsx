@@ -3,7 +3,7 @@ import type { Level, LevelPack } from '../types';
 import { buildMiniTest } from '../engine/generators';
 import { ChoiceView } from './lesson/ChoiceView';
 import { TypeView } from './lesson/TypeView';
-import { haptic } from '../tg/telegram';
+import { haptic, useTgBack } from '../tg/telegram';
 import { Skipper } from '../components/Skipper';
 import { Icon } from '../components/Icon';
 
@@ -12,6 +12,7 @@ const ORDER: Level[] = ['A1', 'A2', 'B1', 'B2'];
 interface Props { pack: LevelPack; packs: LevelPack[]; onDone: (l: Level) => void; onBack: () => void }
 
 export function MiniTestScreen({ pack, packs, onDone, onBack }: Props) {
+  useTgBack(onBack);
   const qs = useMemo(() => buildMiniTest(pack.lessons.flatMap((l) => l.words)), [pack]);
   const [i, setI] = useState(0);
   const [score, setScore] = useState(0);

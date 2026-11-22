@@ -14,9 +14,11 @@ import { applyStatus, applyFriendGift } from '../app/src/game/purchases';
 import { STAR_PACKS, REFERRAL } from '../app/src/game/config';
 import { signInitData, verifyInitData } from '../worker/src/auth';
 import worker, { catalogItem, handleUpdate, handleStatus, handleReferral, type Env } from '../worker/src/index';
-import { pack as packState, unpack, pushState, pullState, chooseOnStart, type KV } from '../app/src/api/cloud';
+import { pack as packState, unpack, pushState, pullState, chooseOnStart, startCloudSync, type KV } from '../app/src/api/cloud';
+import { saveState, loadState, setSaveListener } from '../app/src/game/local';
 import { ENERGY } from '../app/src/game/config';
-import { checkTyped } from '../app/src/engine/check';
+import { checkTyped, setDictionary } from '../app/src/engine/check';
+import { noteTyping, typoAllowed, TYPO_LIMIT } from '../app/src/game/typos';
 import { buildLesson, buildReview, buildTrial, tokenize } from '../app/src/engine/generators';
 import { vocabOf, knownSentence } from '../app/src/engine/vocab';
 import { canBuy } from '../app/src/game/shop';
@@ -39,11 +41,12 @@ await t('проверка ввода', () => {
   assert.equal(checkTyped('Boarding Pass', ['boarding pass']), 'exact');
   assert.equal(checkTyped('the umbrella', ['umbrella']), 'exact');
   assert.equal(checkTyped('umbrela', ['umbrella']), 'typo');
-  assert.equal(checkTyped('snw', ['snow']), 'wrong');
+  assert.equal(checkTyped('snw', ['snow']), 'typo');     // одна буква — прощаем и в коротких словах
+  assert.equal(checkTyped('sn', ['snow']), 'wrong');
   assert.equal(checkTyped('', ['snow']), 'wrong');
   assert.equal(checkTyped('cafe', ['café']), 'exact');
   assert.equal(checkTyped('привет', ['привет']), 'exact');
-  assert.equal(checkTyped('мой', ['мои']), 'wrong'); // й не превращается в и
+  assert.notEqual(checkTyped('мой', ['мои']), 'exact'); // й не превращается в и
 });
 
 await t('интервалы: бесплатно 11 дней до закрепления, Premium 7', () => {
@@ -172,6 +175,19 @@ await t('сборка предложения: без плиток-знаков �
   }
 });
 
+await t('урок: английские варианты ответа — только из пройденных слов', () => {
+  const a1 = JSON.parse(readFileSync('app/public/content/a1.json', 'utf8')) as LevelPack;
+  const pool = a1.lessons.flatMap((l) => l.words);
+  const learned = new Set<string>();
+  for (const l of a1.lessons) {
+    const okEn = new Set(pool.filter((w) => learned.has(w.id) || l.words.includes(w)).map((w) => w.en));
+    for (const seed of [1, 2, 3]) for (const e of buildLesson(l, pool, seed, learned)) {
+      if (e.kind === 'choice' && e.dir === 'ru-en') e.options.forEach((o) => assert.ok(okEn.has(o), `${l.id}: «${o}» ещё не пройдено`));
+    }
+    l.words.forEach((w) => learned.add(w.id));
+  }
+});
+
 await t('лавка: масло не продаётся, когда фонарь полон', () => {
   const s = emptyState();
   s.coins = 1000; s.energy = 10;
@@ -197,8 +213,10 @@ await t('проверка контента: неизученные слова, �
 });
 
 await t('словарь: формы и простые окончания засчитываются, неправильные формы — только через forms', () => {
-  const v = vocabOf([{ id: 'x', en: 'go', ru: ['идти'], pos: 'verb', forms: ['went'], examples: [] }, { id: 'y', en: 'cat', ru: ['кошка'], pos: 'noun', examples: [] }]);
+  const w = (en: string, forms?: string[]) => ({ id: en, en, ru: [en], pos: 'other', forms, examples: [] });
+  const v = vocabOf([w('go', ['went']), w('cat'), w('he'), w('she'), w('the'), w('are'), w('a'), w('and')]);
   assert.ok(knownSentence('He goes, she went, the cats are going.', v));
+  assert.ok(!knownSentence('Why are the cats here?', v)); // служебные слова тоже нужно пройти
   assert.ok(!knownSentence('He bought a cat.', v));
   assert.ok(knownSentence('Anna and Tom.', v)); // имена
 });
@@ -229,16 +247,18 @@ await t('что дальше: бесплатный игрок после дву�
   commitUnlocks(s, [a1]);
 });
 
-await t('часы: назад не идут, в Telegram не убегают вперёд', () => {
+await t('часы: назад не идут, в Telegram при запуске не убегают вперёд, ночью идут', () => {
   resetClock();
   const t0 = nowMs();
   fakeDay -= 3;                                  // часы отвели на 3 дня назад
   assert.equal(nowMs(), t0);
   fakeDay += 3;
-  setTrustedStart(Math.floor(t0 / 1000));        // Telegram: приложение открыто сейчас
-  fakeDay += 30;                                 // часы перевели на месяц вперёд
+  fakeDay += 30;                                 // часы перевели на месяц вперёд и открыли приложение
+  setTrustedStart(Math.floor(t0 / 1000));        // а Telegram подписал запуск «сейчас»
   assert.ok(nowMs() - t0 < 11 * 60000);
-  fakeDay -= 30;
+  fakeDay += 1;                                  // приложение свёрнуто на ночь, телефон спал
+  assert.ok(nowMs() - t0 >= 86400000 - 11 * 60000, 'время идёт, пока телефон спит');
+  fakeDay -= 31;
   resetClock();
 });
 
@@ -360,6 +380,48 @@ await t('сервер: бонус за друга — только новичк�
   await handleStatus(env, 8);                                        // игрок 8 уже играл
   assert.equal((await handleReferral(env, 8, 'ref_5')).ok, false);
   assert.equal((await handleStatus(env, 5)).referrals.length, 1);
+});
+
+await t('облако: не висит без ответа, записи не перемешиваются, последняя версия доходит', async () => {
+  const mem = new Map<string, string>();
+  (globalThis as any).localStorage ??= { getItem: (k: string) => mem.get(k) ?? null, setItem: (k: string, v: string) => mem.set(k, v), removeItem: (k: string) => mem.delete(k) };
+  const RealST = globalThis.setTimeout;
+  // облако, которое никогда не отвечает: запуск не должен зависнуть
+  const dead: KV = { get: () => new Promise(() => {}), set: () => new Promise(() => {}) };
+  assert.equal(await startCloudSync(dead, 20), false);
+  // медленное облако: запись идёт долго, а игрок за это время сохраняет ещё дважды
+  const store = new Map<string, string>();
+  let writing = 0, maxParallel = 0;
+  const slow: KV = {
+    get: async (keys) => Object.fromEntries(keys.filter((k) => store.has(k)).map((k) => [k, store.get(k)!])),
+    set: async (k, v) => { writing++; maxParallel = Math.max(maxParallel, writing); await new Promise((r) => RealST(r, 1500)); store.set(k, v); writing--; },
+  };
+  await startCloudSync(slow, 1000);
+  const s = emptyState(); s.level = 'A1';
+  s.xp = 1; saveState(s);
+  await new Promise((r) => RealST(r, 2300));   // запись xp=1 уже идёт (каждый кусок ~1,5 с)
+  s.xp = 2; saveState(s);                      // через 2 с захочется писать снова — во время записи
+  await new Promise((r) => RealST(r, 9000));
+  assert.equal(maxParallel, 1);
+  assert.equal((await pullState(slow))?.xp, 2);
+  setSaveListener(null);
+});
+
+await t('опечатки: одна буква прощается, но не в 1–2-буквенных словах, не другим словом и не больше 2 раз подряд', () => {
+  setDictionary(['car', 'cat', 'go', 'do', 'house']);
+  assert.equal(checkTyped('hous', ['house']), 'typo');
+  assert.equal(checkTyped('cat', ['car']), 'wrong');          // это другое слово
+  assert.equal(checkTyped('og', ['go']), 'wrong');            // слово из 2 букв — только точно
+  assert.equal(checkTyped('hous', ['house'], false), 'wrong'); // лимит опечаток исчерпан
+  const mem = new Map<string, string>();
+  (globalThis as any).localStorage ??= { getItem: (k: string) => mem.get(k) ?? null, setItem: (k: string, v: string) => mem.set(k, v), removeItem: (k: string) => mem.delete(k) };
+  saveState(emptyState());
+  const id = 'a1-d01-01';
+  for (let i = 0; i < TYPO_LIMIT; i++) { assert.ok(typoAllowed(loadState(), id)); noteTyping(id, 'typo'); }
+  assert.ok(!typoAllowed(loadState(), id));                   // третья опечатка уже не засчитается
+  noteTyping(id, 'exact');
+  assert.ok(typoAllowed(loadState(), id));                    // написал точно — снова можно ошибиться на букву
+  setDictionary([]);
 });
 
 console.log(`\n${n} проверок пройдено`);

@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
-import { checkTyped } from '../../engine/check';
+import { checkTyped, isTypo } from '../../engine/check';
+import { loadState } from '../../game/local';
+import { noteTyping, typoAllowed } from '../../game/typos';
 import type { ViewProps } from './types';
 import { Skipper } from '../../components/Skipper';
 
@@ -9,8 +11,10 @@ export function TypeView({ ex, locked, onSubmit }: ViewProps<'type'>) {
   useEffect(() => { ref.current?.focus(); }, [ex]);
   const submit = () => {
     if (!v.trim() || locked) return;
-    const r = checkTyped(v, ex.answers);
-    onSubmit({ ok: r !== 'wrong', typo: r === 'typo', correct: ex.word.en, input: v });
+    const allow = typoAllowed(loadState(), ex.word.id);
+    const r = checkTyped(v, ex.answers, allow);
+    noteTyping(ex.word.id, r);
+    onSubmit({ ok: r !== 'wrong', typo: r === 'typo', typoLimit: !allow && isTypo(v, ex.answers), correct: ex.word.en, input: v });
   };
   return (
     <div class="ex">

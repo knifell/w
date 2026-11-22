@@ -80,25 +80,36 @@ export function telegramKV(): KV | null {
  * При запуске: подтянуть прогресс из облака (если он новее) и включить облачное сохранение.
  * Возвращает true, если состояние на телефоне заменено облачным.
  */
-export async function startCloudSync(kv: KV | null = telegramKV()): Promise<boolean> {
+export async function startCloudSync(kv: KV | null = telegramKV(), waitMs = 5000): Promise<boolean> {
   if (!kv) return false;
-  let replaced = false;
+  let replaced = false, gaveUp = false, pushNow = false;
+  // Облако не ответило за waitMs — запускаем игру с копией на телефоне, не держим экран загрузки.
+  const timeout = new Promise<null>((res) => setTimeout(() => { gaveUp = true; res(null); }, waitMs));
   try {
+    const remote = await Promise.race([pullState(kv), timeout]);
     const local = loadState();
-    const remote = await pullState(kv);
-    if (chooseOnStart(local, remote) === 'remote' && remote) { saveState(remote, true); replaced = true; }
-    else if (hasProgress(local)) await pushState(kv, local);
+    if (!gaveUp && chooseOnStart(local, remote) === 'remote' && remote) { saveState(remote, true); replaced = true; }
+    else if (!gaveUp && hasProgress(local)) pushNow = true; // на телефоне новее — обновим облако
   } catch { /* облако недоступно — играем с копией на телефоне */ }
+
+  // Сохраняем не чаще раза в 2 с и всегда по одной записи за раз (две параллельные записи перемешали бы куски).
+  // Если запись ещё идёт — допишем свежее состояние сразу после неё.
   let timer: ReturnType<typeof setTimeout> | undefined;
-  let busy = false;
-  setSaveListener(() => {
-    clearTimeout(timer);
-    timer = setTimeout(async () => {
-      if (busy) return;
-      busy = true;
+  let busy = false, again = false;
+  const flush = async () => {
+    if (busy) { again = true; return; }
+    busy = true;
+    do {
+      again = false;
       try { await pushState(kv, loadState()); } catch { /* повторим при следующем сохранении */ }
-      busy = false;
-    }, 2000);
+    } while (again);
+    busy = false;
+  };
+  setSaveListener(() => { clearTimeout(timer); timer = setTimeout(() => { timer = undefined; void flush(); }, 2000); });
+  // Свернули или закрывают приложение — сохраняем сразу, не дожидаясь паузы.
+  if (typeof document !== 'undefined') document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden' && timer !== undefined) { clearTimeout(timer); timer = undefined; void flush(); }
   });
+  if (pushNow) void flush();
   return replaced;
 }

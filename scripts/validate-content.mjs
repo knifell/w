@@ -4,7 +4,7 @@
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { CORE, NAMES, tokens, knownToken } from '../app/src/engine/vocab.ts';
+import { NAMES, tokens, knownToken } from '../app/src/engine/vocab.ts';
 
 const ROOT = process.env.CONTENT_DIR || join(dirname(fileURLToPath(import.meta.url)), '..', 'content', 'levels');
 const LEVELS = ['A1', 'A2', 'B1', 'B2'];
@@ -24,22 +24,9 @@ const read = (f) => {
 const allIds = new Map();     // id -> file
 const allExamples = new Map(); // норм. текст примера -> id
 
-// Словарь «изучено к уроку»: служебные слова (CORE), которые курс нигде не проходит отдельным словом,
-// имена, а также слова всех предыдущих уроков (этого уровня и ниже) и текущего урока, с формами.
-const lessonFiles = (dir) => {
-  const d = join(ROOT, dir, 'lessons');
-  return existsSync(d) ? readdirSync(d).filter((f) => /^day-\d+\.json$/.test(f)).sort().map((f) => join(d, f)) : [];
-};
-const taughtSingles = new Set();
-for (const dir of readdirSync(ROOT).sort()) for (const f of lessonFiles(dir)) {
-  try {
-    for (const w of JSON.parse(readFileSync(f, 'utf8')).words ?? []) {
-      const t = tokens(w.en ?? '');
-      if (t.length === 1) taughtSingles.add(t[0]);
-    }
-  } catch { /* ошибку JSON покажет основной проход */ }
-}
-const known = new Set([...[...CORE].filter((w) => !taughtSingles.has(w)), ...NAMES]);
+// Словарь «изучено к уроку»: имена и слова всех предыдущих уроков (этого уровня и ниже) и текущего урока, с формами.
+// Служебные слова (I, is, the…) тоже должны быть пройдены уроком — поблажек нет.
+const known = new Set(NAMES);
 const enByLevel = new Map();  // норм. en -> {level, file}
 
 for (const dir of readdirSync(ROOT).sort()) {

@@ -104,6 +104,9 @@
           "en": "Max is my friend.",
           "ru": "Макс — мой друг."
         }
+      ],
+      "forms": [
+        "mine"
       ]
     },
     {
@@ -119,6 +122,9 @@
           "en": "Is your name Tom?",
           "ru": "Тебя зовут Том?"
         }
+      ],
+      "forms": [
+        "yours"
       ]
     },
     {

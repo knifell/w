@@ -29,13 +29,19 @@ function distractors(w: Word, pool: Word[], n: number, r: Rng, f: 'en' | 'ru'): 
 export const tokenize = (s: string) =>
   s.replace(/[.,!?;:"«»“”()…]/g, '').split(/\s+/).filter((t) => /[\p{L}\p{N}]/u.test(t));
 
-function choice(w: Word, pool: Word[], r: Rng, dir: 'en-ru' | 'ru-en'): Exercise {
+/**
+ * Выбор перевода. Если варианты английские (ru-en) и передан familiar — ловушки берём из уже
+ * знакомых игроку слов, чтобы в задании не появлялись непройденные английские слова.
+ */
+function choice(w: Word, pool: Word[], r: Rng, dir: 'en-ru' | 'ru-en', familiar?: Word[]): Exercise {
   const f = dir === 'en-ru' ? 'ru' : 'en';
   const answer = val(w, f);
+  let wrong = dir === 'ru-en' && familiar ? distractors(w, familiar, 3, r, f) : [];
+  if (wrong.length < 3) wrong = [...wrong, ...distractors(w, pool, 3, r, f).filter((x) => !wrong.includes(x))].slice(0, 3);
   return {
     kind: 'choice', id: `c-${dir}-${w.id}`, dir, word: w,
     prompt: dir === 'en-ru' ? w.en : w.ru.join('; '),
-    answer, options: shuffle([answer, ...distractors(w, pool, 3, r, f)], r),
+    answer, options: shuffle([answer, ...wrong], r),
   };
 }
 
@@ -117,7 +123,8 @@ export function buildLesson(
   const po = old.length >= 3 ? pairs(shuffle(old, r).slice(0, 5), r, `${lesson.id}-o`) : null;
   if (po) out.push(po);
   const late = shuffle(ws, r);
-  late.slice(0, 3).forEach((w) => out.push(choice(w, pool, r, 'ru-en')));
+  const familiar = pool.filter((x) => known.has(x.id) || ws.some((y) => y.id === x.id));
+  late.slice(0, 3).forEach((w) => out.push(choice(w, pool, r, 'ru-en', familiar)));
   late.slice(3, 5).forEach((w) => out.push(typeEx(w, pool)));
   let built = 0;
   for (const w of late.slice(5)) {
@@ -141,11 +148,11 @@ const sameLevel = (w: Word, pool: Word[]) => {
 };
 
 /** Повторение: по 1 заданию на слово (выбор/ввод чередуются) + пары, если слов ≥5. */
-export function buildReview(words: Word[], pool: Word[], seed = Date.now()): Exercise[] {
+export function buildReview(words: Word[], pool: Word[], seed = Date.now(), familiar?: Word[]): Exercise[] {
   const r = mulberry32(seed);
   const ws = shuffle(words, r);
   const out: Exercise[] = ws.map((w, i) =>
-    i % 3 === 2 ? typeEx(w, words) : choice(w, sameLevel(w, pool), r, i % 3 === 0 ? 'ru-en' : 'en-ru'));
+    i % 3 === 2 ? typeEx(w, words) : choice(w, sameLevel(w, pool), r, i % 3 === 0 ? 'ru-en' : 'en-ru', familiar));
   const p = ws.length >= 5 ? pairs(shuffle(ws, r).slice(0, 5), r, `rev-${seed}`) : null;
   if (p) out.splice(Math.min(4, out.length), 0, p);
   return out;

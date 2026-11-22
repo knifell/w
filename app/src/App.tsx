@@ -17,6 +17,7 @@ import { today } from './game/time';
 import { REVIEW_MAX_WORDS } from './game/config';
 import { buildLesson, buildReview, buildTrial, type Exercise } from './engine/generators';
 import { vocabOf } from './engine/vocab';
+import { setDictionary } from './engine/check';
 import { OnboardingScreen } from './screens/OnboardingScreen';
 import { LevelPickScreen } from './screens/LevelPickScreen';
 import { MiniTestScreen } from './screens/MiniTestScreen';
@@ -95,7 +96,11 @@ export function App() {
     return a;
   }
 
-  const allWords = useMemo(() => new Map((packs ?? []).flatMap((p) => p.lessons.flatMap((l) => l.words)).map((w) => [w.id, w])), [packs]);
+  const allWords = useMemo(() => {
+    const m = new Map((packs ?? []).flatMap((p) => p.lessons.flatMap((l) => l.words)).map((w) => [w.id, w]));
+    setDictionary([...m.values()].flatMap((w) => [w.en, ...(w.forms ?? [])]));
+    return m;
+  }, [packs]);
 
   if (error) return <main class="card">Не удалось загрузить уроки. Проверь интернет и открой снова.<div class="hint">{error}</div></main>;
   if (!packs) return <main class="loading" aria-label="Загрузка"><Skipper size={120} /></main>;
@@ -137,7 +142,8 @@ export function App() {
     if (!shareInvite('Учу английский в игре «Остров слов» — присоединяйся, получишь подарок!'))
       setToast({ text: 'Приглашения заработают после запуска в Telegram.', err: true });
   };
-  const startReview = (words: Word[]) => go({ s: 'session', kind: 'review', build: () => buildReview(words, [...allWords.values()]) });
+  const startReview = (words: Word[]) => go({ s: 'session', kind: 'review', build: () => buildReview(words, [...allWords.values()], Date.now(),
+    Object.keys(st.mem).map((id) => allWords.get(id)).filter((w): w is Word => !!w)) });
 
   const startLesson = (l: Lesson) => {
     const start = () => {

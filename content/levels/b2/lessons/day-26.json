@@ -1,0 +1,163 @@
+{
+  "id": "b2-d26",
+  "level": "B2",
+  "day": 26,
+  "island": 3,
+  "title": "Strong collocations",
+  "topic": "collocations",
+  "words": [
+    {
+      "id": "b2-d26-01",
+      "en": "meet a deadline",
+      "ru": [
+        "уложиться в срок"
+      ],
+      "pos": "phrase",
+      "forms": [
+        "meet the deadline"
+      ],
+      "examples": [
+        {
+          "en": "We worked all night to meet the deadline.",
+          "ru": "Мы работали всю ночь, чтобы уложиться в срок."
+        }
+      ]
+    },
+    {
+      "id": "b2-d26-02",
+      "en": "take responsibility",
+      "ru": [
+        "брать ответственность"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "You must take responsibility for your actions.",
+          "ru": "Ты должен отвечать за свои поступки."
+        }
+      ]
+    },
+    {
+      "id": "b2-d26-03",
+      "en": "raise awareness",
+      "ru": [
+        "повышать осведомлённость"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "The campaign aims to raise awareness of the problem.",
+          "ru": "Кампания призвана привлечь внимание к проблеме."
+        }
+      ]
+    },
+    {
+      "id": "b2-d26-04",
+      "en": "draw a conclusion",
+      "ru": [
+        "делать вывод"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "It's too early to draw a conclusion.",
+          "ru": "Делать выводы ещё рано."
+        }
+      ]
+    },
+    {
+      "id": "b2-d26-05",
+      "en": "reach a decision",
+      "ru": [
+        "принять решение"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "The committee will reach a decision soon.",
+          "ru": "Комитет скоро примет решение."
+        }
+      ]
+    },
+    {
+      "id": "b2-d26-06",
+      "en": "pay attention",
+      "ru": [
+        "обращать внимание"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Please pay attention to the details.",
+          "ru": "Пожалуйста, обращайте внимание на детали."
+        }
+      ]
+    },
+    {
+      "id": "b2-d26-07",
+      "en": "make progress",
+      "ru": [
+        "делать успехи"
+      ],
+      "pos": "phrase",
+      "forms": [
+        "making great progress"
+      ],
+      "examples": [
+        {
+          "en": "You are making great progress.",
+          "ru": "Ты делаешь большие успехи."
+        }
+      ]
+    },
+    {
+      "id": "b2-d26-08",
+      "en": "take into account",
+      "ru": [
+        "принимать во внимание"
+      ],
+      "pos": "phrase",
+      "forms": [
+        "take the weather into account"
+      ],
+      "examples": [
+        {
+          "en": "We must take the weather into account.",
+          "ru": "Мы должны учитывать погоду."
+        }
+      ]
+    },
+    {
+      "id": "b2-d26-09",
+      "en": "come to terms with",
+      "ru": [
+        "смириться с"
+      ],
+      "pos": "phrase",
+      "forms": [
+        "came to terms with"
+      ],
+      "examples": [
+        {
+          "en": "She came to terms with the loss.",
+          "ru": "Она смирилась с потерей."
+        }
+      ]
+    },
+    {
+      "id": "b2-d26-10",
+      "en": "bear in mind",
+      "ru": [
+        "иметь в виду",
+        "учитывать"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Bear in mind that the shop closes at six.",
+          "ru": "Учти, что магазин закрывается в шесть."
+        }
+      ]
+    }
+  ]
+}

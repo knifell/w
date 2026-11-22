@@ -1,0 +1,159 @@
+{
+  "id": "b2-d20",
+  "level": "B2",
+  "day": 20,
+  "island": 2,
+  "title": "Art and culture",
+  "topic": "arts",
+  "words": [
+    {
+      "id": "b2-d20-01",
+      "en": "masterpiece",
+      "ru": [
+        "шедевр"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This painting is a masterpiece.",
+          "ru": "Эта картина — шедевр."
+        }
+      ]
+    },
+    {
+      "id": "b2-d20-02",
+      "en": "critic",
+      "ru": [
+        "критик"
+      ],
+      "pos": "noun",
+      "forms": [
+        "critics"
+      ],
+      "examples": [
+        {
+          "en": "The critics loved the film.",
+          "ru": "Критикам фильм понравился."
+        }
+      ]
+    },
+    {
+      "id": "b2-d20-03",
+      "en": "genre",
+      "ru": [
+        "жанр"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What's your favourite genre of music?",
+          "ru": "Какой твой любимый музыкальный жанр?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d20-04",
+      "en": "contemporary",
+      "ru": [
+        "современный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I prefer contemporary art.",
+          "ru": "Я предпочитаю современное искусство."
+        }
+      ]
+    },
+    {
+      "id": "b2-d20-05",
+      "en": "aesthetic",
+      "ru": [
+        "эстетичный",
+        "эстетика"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The design is very aesthetic.",
+          "ru": "Дизайн очень эстетичный."
+        }
+      ]
+    },
+    {
+      "id": "b2-d20-06",
+      "en": "portray",
+      "ru": [
+        "изображать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "portrays"
+      ],
+      "examples": [
+        {
+          "en": "The film portrays life in the 1920s.",
+          "ru": "Фильм изображает жизнь в 1920-х."
+        }
+      ]
+    },
+    {
+      "id": "b2-d20-07",
+      "en": "heritage",
+      "ru": [
+        "наследие"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The castle is part of our national heritage.",
+          "ru": "Замок — часть нашего национального наследия."
+        }
+      ]
+    },
+    {
+      "id": "b2-d20-08",
+      "en": "acclaim",
+      "ru": [
+        "признание",
+        "одобрение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The book received wide acclaim.",
+          "ru": "Книга получила широкое признание."
+        }
+      ]
+    },
+    {
+      "id": "b2-d20-09",
+      "en": "performance",
+      "ru": [
+        "выступление",
+        "исполнение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Her performance was brilliant.",
+          "ru": "Её выступление было блестящим."
+        }
+      ]
+    },
+    {
+      "id": "b2-d20-10",
+      "en": "masterclass",
+      "ru": [
+        "мастер-класс"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He gave a masterclass in cooking.",
+          "ru": "Он провёл мастер-класс по кулинарии."
+        }
+      ]
+    }
+  ]
+}

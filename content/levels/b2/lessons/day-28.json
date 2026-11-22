@@ -1,0 +1,160 @@
+{
+  "id": "b2-d28",
+  "level": "B2",
+  "day": 28,
+  "island": 3,
+  "title": "Reading the data",
+  "topic": "trends",
+  "words": [
+    {
+      "id": "b2-d28-01",
+      "en": "proportion",
+      "ru": [
+        "доля",
+        "пропорция"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A large proportion of students work part-time.",
+          "ru": "Большая доля студентов подрабатывает."
+        }
+      ]
+    },
+    {
+      "id": "b2-d28-02",
+      "en": "approximately",
+      "ru": [
+        "приблизительно"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "The trip takes approximately three hours.",
+          "ru": "Поездка занимает приблизительно три часа."
+        }
+      ]
+    },
+    {
+      "id": "b2-d28-03",
+      "en": "steadily",
+      "ru": [
+        "неуклонно",
+        "стабильно"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Sales rose steadily.",
+          "ru": "Продажи неуклонно росли."
+        }
+      ]
+    },
+    {
+      "id": "b2-d28-04",
+      "en": "peak",
+      "ru": [
+        "пик",
+        "достигать пика"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Traffic is at its peak at eight.",
+          "ru": "Пик пробок — в восемь."
+        }
+      ]
+    },
+    {
+      "id": "b2-d28-05",
+      "en": "decline",
+      "ru": [
+        "снижение",
+        "снижаться"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There has been a decline in sales.",
+          "ru": "Продажи снизились."
+        }
+      ]
+    },
+    {
+      "id": "b2-d28-06",
+      "en": "overall",
+      "ru": [
+        "в целом",
+        "общий"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Overall, the results were good.",
+          "ru": "В целом результаты были хорошими."
+        }
+      ]
+    },
+    {
+      "id": "b2-d28-07",
+      "en": "respectively",
+      "ru": [
+        "соответственно"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Tom and Anna are 10 and 12, respectively.",
+          "ru": "Тому и Анне 10 и 12 лет соответственно."
+        }
+      ]
+    },
+    {
+      "id": "b2-d28-08",
+      "en": "considerably",
+      "ru": [
+        "значительно"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Prices have risen considerably.",
+          "ru": "Цены значительно выросли."
+        }
+      ]
+    },
+    {
+      "id": "b2-d28-09",
+      "en": "marginally",
+      "ru": [
+        "незначительно",
+        "слегка"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Profits increased marginally.",
+          "ru": "Прибыль немного выросла."
+        }
+      ]
+    },
+    {
+      "id": "b2-d28-10",
+      "en": "figure",
+      "ru": [
+        "цифра",
+        "показатель"
+      ],
+      "pos": "noun",
+      "forms": [
+        "figures"
+      ],
+      "examples": [
+        {
+          "en": "The latest figures show strong growth.",
+          "ru": "Последние цифры показывают сильный рост."
+        }
+      ]
+    }
+  ]
+}

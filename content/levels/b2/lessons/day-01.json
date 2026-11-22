@@ -1,0 +1,162 @@
+{
+  "id": "b2-d01",
+  "level": "B2",
+  "day": 1,
+  "island": 1,
+  "title": "The modern workplace",
+  "topic": "workplace",
+  "words": [
+    {
+      "id": "b2-d01-01",
+      "en": "workload",
+      "ru": [
+        "рабочая нагрузка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My workload has doubled this month.",
+          "ru": "В этом месяце моя нагрузка удвоилась."
+        }
+      ]
+    },
+    {
+      "id": "b2-d01-02",
+      "en": "recruit",
+      "ru": [
+        "нанимать",
+        "набирать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We need to recruit more staff.",
+          "ru": "Нам нужно нанять больше сотрудников."
+        }
+      ]
+    },
+    {
+      "id": "b2-d01-03",
+      "en": "resign",
+      "ru": [
+        "уходить в отставку",
+        "увольняться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "resigned"
+      ],
+      "examples": [
+        {
+          "en": "She resigned after ten years.",
+          "ru": "Она уволилась через десять лет."
+        }
+      ]
+    },
+    {
+      "id": "b2-d01-04",
+      "en": "dismiss",
+      "ru": [
+        "увольнять",
+        "отклонять"
+      ],
+      "pos": "verb",
+      "forms": [
+        "dismissed"
+      ],
+      "examples": [
+        {
+          "en": "He was dismissed for being late.",
+          "ru": "Его уволили за опоздания."
+        }
+      ]
+    },
+    {
+      "id": "b2-d01-05",
+      "en": "redundant",
+      "ru": [
+        "сокращённый",
+        "лишний"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Fifty workers were made redundant.",
+          "ru": "Пятьдесят рабочих попали под сокращение."
+        }
+      ]
+    },
+    {
+      "id": "b2-d01-06",
+      "en": "freelance",
+      "ru": [
+        "фрилансовый",
+        "внештатный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She works as a freelance designer.",
+          "ru": "Она работает дизайнером-фрилансером."
+        }
+      ]
+    },
+    {
+      "id": "b2-d01-07",
+      "en": "entrepreneur",
+      "ru": [
+        "предприниматель"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He is a successful entrepreneur.",
+          "ru": "Он успешный предприниматель."
+        }
+      ]
+    },
+    {
+      "id": "b2-d01-08",
+      "en": "delegate",
+      "ru": [
+        "делегировать",
+        "поручать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "A good manager knows how to delegate.",
+          "ru": "Хороший руководитель умеет делегировать."
+        }
+      ]
+    },
+    {
+      "id": "b2-d01-09",
+      "en": "initiative",
+      "ru": [
+        "инициатива"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She showed great initiative.",
+          "ru": "Она проявила большую инициативу."
+        }
+      ]
+    },
+    {
+      "id": "b2-d01-10",
+      "en": "collaborate",
+      "ru": [
+        "сотрудничать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We collaborate with a team in Berlin.",
+          "ru": "Мы сотрудничаем с командой из Берлина."
+        }
+      ]
+    }
+  ]
+}

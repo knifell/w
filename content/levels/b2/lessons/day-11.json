@@ -1,0 +1,161 @@
+{
+  "id": "b2-d11",
+  "level": "B2",
+  "day": 11,
+  "island": 2,
+  "title": "Close bonds",
+  "topic": "relationships",
+  "words": [
+    {
+      "id": "b2-d11-01",
+      "en": "acquaintance",
+      "ru": [
+        "знакомый"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He's not a friend, just an acquaintance.",
+          "ru": "Он не друг, просто знакомый."
+        }
+      ]
+    },
+    {
+      "id": "b2-d11-02",
+      "en": "bond",
+      "ru": [
+        "связь",
+        "узы"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There is a strong bond between them.",
+          "ru": "Между ними крепкая связь."
+        }
+      ]
+    },
+    {
+      "id": "b2-d11-03",
+      "en": "loyal",
+      "ru": [
+        "преданный",
+        "верный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Dogs are very loyal.",
+          "ru": "Собаки очень преданные."
+        }
+      ]
+    },
+    {
+      "id": "b2-d11-04",
+      "en": "betray",
+      "ru": [
+        "предавать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "betrayed"
+      ],
+      "examples": [
+        {
+          "en": "He betrayed his best friend.",
+          "ru": "Он предал своего лучшего друга."
+        }
+      ]
+    },
+    {
+      "id": "b2-d11-05",
+      "en": "reconcile",
+      "ru": [
+        "мириться",
+        "примирять"
+      ],
+      "pos": "verb",
+      "forms": [
+        "reconciled"
+      ],
+      "examples": [
+        {
+          "en": "The brothers finally reconciled.",
+          "ru": "Братья наконец помирились."
+        }
+      ]
+    },
+    {
+      "id": "b2-d11-06",
+      "en": "rivalry",
+      "ru": [
+        "соперничество"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There's a long rivalry between the two teams.",
+          "ru": "Между двумя командами давнее соперничество."
+        }
+      ]
+    },
+    {
+      "id": "b2-d11-07",
+      "en": "mutual",
+      "ru": [
+        "взаимный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "They have mutual respect.",
+          "ru": "У них взаимное уважение."
+        }
+      ]
+    },
+    {
+      "id": "b2-d11-08",
+      "en": "cherish",
+      "ru": [
+        "дорожить",
+        "лелеять"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I cherish our time together.",
+          "ru": "Я дорожу временем, проведённым вместе."
+        }
+      ]
+    },
+    {
+      "id": "b2-d11-09",
+      "en": "devoted",
+      "ru": [
+        "преданный",
+        "любящий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She is a devoted mother.",
+          "ru": "Она любящая мать."
+        }
+      ]
+    },
+    {
+      "id": "b2-d11-10",
+      "en": "estranged",
+      "ru": [
+        "отчуждённый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He is estranged from his family.",
+          "ru": "Он отдалился от семьи."
+        }
+      ]
+    }
+  ]
+}

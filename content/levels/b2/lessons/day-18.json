@@ -1,0 +1,152 @@
+{
+  "id": "b2-d18",
+  "level": "B2",
+  "day": 18,
+  "island": 2,
+  "title": "Tech talk",
+  "topic": "technology",
+  "words": [
+    {
+      "id": "b2-d18-01",
+      "en": "algorithm",
+      "ru": [
+        "алгоритм"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The algorithm suggests new videos.",
+          "ru": "Алгоритм предлагает новые видео."
+        }
+      ]
+    },
+    {
+      "id": "b2-d18-02",
+      "en": "encryption",
+      "ru": [
+        "шифрование"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Encryption keeps your data safe.",
+          "ru": "Шифрование защищает ваши данные."
+        }
+      ]
+    },
+    {
+      "id": "b2-d18-03",
+      "en": "interface",
+      "ru": [
+        "интерфейс"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The app has a simple interface.",
+          "ru": "У приложения простой интерфейс."
+        }
+      ]
+    },
+    {
+      "id": "b2-d18-04",
+      "en": "malware",
+      "ru": [
+        "вредоносная программа"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Malware can steal your passwords.",
+          "ru": "Вредоносная программа может украсть пароли."
+        }
+      ]
+    },
+    {
+      "id": "b2-d18-05",
+      "en": "automation",
+      "ru": [
+        "автоматизация"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Automation is changing many jobs.",
+          "ru": "Автоматизация меняет многие профессии."
+        }
+      ]
+    },
+    {
+      "id": "b2-d18-06",
+      "en": "obsolete",
+      "ru": [
+        "устаревший"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This technology is now obsolete.",
+          "ru": "Эта технология уже устарела."
+        }
+      ]
+    },
+    {
+      "id": "b2-d18-07",
+      "en": "user-friendly",
+      "ru": [
+        "удобный для пользователя"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The website is very user-friendly.",
+          "ru": "Сайт очень удобный."
+        }
+      ]
+    },
+    {
+      "id": "b2-d18-08",
+      "en": "cutting-edge",
+      "ru": [
+        "передовой",
+        "новейший"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "They use cutting-edge technology.",
+          "ru": "Они используют новейшие технологии."
+        }
+      ]
+    },
+    {
+      "id": "b2-d18-09",
+      "en": "glitch",
+      "ru": [
+        "сбой",
+        "глюк"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A small glitch stopped the system.",
+          "ru": "Небольшой сбой остановил систему."
+        }
+      ]
+    },
+    {
+      "id": "b2-d18-10",
+      "en": "browse",
+      "ru": [
+        "просматривать (сайты)"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I like to browse online shops.",
+          "ru": "Я люблю просматривать интернет-магазины."
+        }
+      ]
+    }
+  ]
+}

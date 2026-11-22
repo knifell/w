@@ -1,0 +1,154 @@
+{
+  "id": "b2-d27",
+  "level": "B2",
+  "day": 27,
+  "island": 3,
+  "title": "Global issues",
+  "topic": "global issues",
+  "words": [
+    {
+      "id": "b2-d27-01",
+      "en": "globalisation",
+      "ru": [
+        "глобализация"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Globalisation connects markets.",
+          "ru": "Глобализация объединяет рынки."
+        }
+      ]
+    },
+    {
+      "id": "b2-d27-02",
+      "en": "refugee",
+      "ru": [
+        "беженец"
+      ],
+      "pos": "noun",
+      "forms": [
+        "refugees"
+      ],
+      "examples": [
+        {
+          "en": "The country accepted thousands of refugees.",
+          "ru": "Страна приняла тысячи беженцев."
+        }
+      ]
+    },
+    {
+      "id": "b2-d27-03",
+      "en": "humanitarian",
+      "ru": [
+        "гуманитарный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "They sent humanitarian aid.",
+          "ru": "Они отправили гуманитарную помощь."
+        }
+      ]
+    },
+    {
+      "id": "b2-d27-04",
+      "en": "discrimination",
+      "ru": [
+        "дискриминация"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Discrimination at work is illegal.",
+          "ru": "Дискриминация на работе незаконна."
+        }
+      ]
+    },
+    {
+      "id": "b2-d27-05",
+      "en": "diplomacy",
+      "ru": [
+        "дипломатия"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The conflict was solved through diplomacy.",
+          "ru": "Конфликт решили дипломатическим путём."
+        }
+      ]
+    },
+    {
+      "id": "b2-d27-06",
+      "en": "migration",
+      "ru": [
+        "миграция"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Bird migration happens every autumn.",
+          "ru": "Миграция птиц происходит каждую осень."
+        }
+      ]
+    },
+    {
+      "id": "b2-d27-07",
+      "en": "human rights",
+      "ru": [
+        "права человека"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We must protect human rights.",
+          "ru": "Мы должны защищать права человека."
+        }
+      ]
+    },
+    {
+      "id": "b2-d27-08",
+      "en": "corruption",
+      "ru": [
+        "коррупция"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The minister was accused of corruption.",
+          "ru": "Министра обвинили в коррупции."
+        }
+      ]
+    },
+    {
+      "id": "b2-d27-09",
+      "en": "prejudice",
+      "ru": [
+        "предрассудок",
+        "предубеждение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We must fight prejudice.",
+          "ru": "Мы должны бороться с предрассудками."
+        }
+      ]
+    },
+    {
+      "id": "b2-d27-10",
+      "en": "activist",
+      "ru": [
+        "активист"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She is an environmental activist.",
+          "ru": "Она экоактивистка."
+        }
+      ]
+    }
+  ]
+}

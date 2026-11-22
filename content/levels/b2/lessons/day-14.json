@@ -1,0 +1,157 @@
+{
+  "id": "b2-d14",
+  "level": "B2",
+  "day": 14,
+  "island": 2,
+  "title": "Medicine today",
+  "topic": "health",
+  "words": [
+    {
+      "id": "b2-d14-01",
+      "en": "chronic",
+      "ru": [
+        "хронический"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She suffers from chronic pain.",
+          "ru": "Она страдает от хронической боли."
+        }
+      ]
+    },
+    {
+      "id": "b2-d14-02",
+      "en": "diagnosis",
+      "ru": [
+        "диагноз"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The doctor made a quick diagnosis.",
+          "ru": "Врач быстро поставил диагноз."
+        }
+      ]
+    },
+    {
+      "id": "b2-d14-03",
+      "en": "epidemic",
+      "ru": [
+        "эпидемия"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The flu epidemic spread quickly.",
+          "ru": "Эпидемия гриппа быстро распространилась."
+        }
+      ]
+    },
+    {
+      "id": "b2-d14-04",
+      "en": "immune",
+      "ru": [
+        "невосприимчивый",
+        "иммунный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Sleep keeps your immune system strong.",
+          "ru": "Сон укрепляет иммунную систему."
+        }
+      ]
+    },
+    {
+      "id": "b2-d14-05",
+      "en": "therapy",
+      "ru": [
+        "терапия"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He is having therapy for his back.",
+          "ru": "Он проходит лечение спины."
+        }
+      ]
+    },
+    {
+      "id": "b2-d14-06",
+      "en": "side effect",
+      "ru": [
+        "побочный эффект"
+      ],
+      "pos": "noun",
+      "forms": [
+        "side effects"
+      ],
+      "examples": [
+        {
+          "en": "This medicine has no side effects.",
+          "ru": "У этого лекарства нет побочных эффектов."
+        }
+      ]
+    },
+    {
+      "id": "b2-d14-07",
+      "en": "contagious",
+      "ru": [
+        "заразный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Is the disease contagious?",
+          "ru": "Эта болезнь заразная?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d14-08",
+      "en": "vaccine",
+      "ru": [
+        "вакцина"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Scientists developed a new vaccine.",
+          "ru": "Учёные разработали новую вакцину."
+        }
+      ]
+    },
+    {
+      "id": "b2-d14-09",
+      "en": "wellbeing",
+      "ru": [
+        "благополучие"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Exercise is good for your wellbeing.",
+          "ru": "Спорт полезен для благополучия."
+        }
+      ]
+    },
+    {
+      "id": "b2-d14-10",
+      "en": "prescribe",
+      "ru": [
+        "назначать (лекарство)"
+      ],
+      "pos": "verb",
+      "forms": [
+        "prescribed"
+      ],
+      "examples": [
+        {
+          "en": "The doctor prescribed antibiotics.",
+          "ru": "Врач назначил антибиотики."
+        }
+      ]
+    }
+  ]
+}

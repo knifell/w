@@ -1,0 +1,167 @@
+{
+  "id": "b2-d25",
+  "level": "B2",
+  "day": 25,
+  "island": 3,
+  "title": "Verbs of change",
+  "topic": "change",
+  "words": [
+    {
+      "id": "b2-d25-01",
+      "en": "deteriorate",
+      "ru": [
+        "ухудшаться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "His health began to deteriorate.",
+          "ru": "Его здоровье начало ухудшаться."
+        }
+      ]
+    },
+    {
+      "id": "b2-d25-02",
+      "en": "enhance",
+      "ru": [
+        "улучшать",
+        "усиливать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Music can enhance your mood.",
+          "ru": "Музыка может улучшить настроение."
+        }
+      ]
+    },
+    {
+      "id": "b2-d25-03",
+      "en": "undermine",
+      "ru": [
+        "подрывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Lies undermine trust.",
+          "ru": "Ложь подрывает доверие."
+        }
+      ]
+    },
+    {
+      "id": "b2-d25-04",
+      "en": "boost",
+      "ru": [
+        "повышать",
+        "стимулировать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "The new park will boost tourism.",
+          "ru": "Новый парк поддержит туризм."
+        }
+      ]
+    },
+    {
+      "id": "b2-d25-05",
+      "en": "transform",
+      "ru": [
+        "преображать",
+        "превращать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "transformed"
+      ],
+      "examples": [
+        {
+          "en": "The internet transformed our lives.",
+          "ru": "Интернет преобразил нашу жизнь."
+        }
+      ]
+    },
+    {
+      "id": "b2-d25-06",
+      "en": "diminish",
+      "ru": [
+        "уменьшаться",
+        "ослабевать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "His interest began to diminish.",
+          "ru": "Его интерес начал угасать."
+        }
+      ]
+    },
+    {
+      "id": "b2-d25-07",
+      "en": "fluctuate",
+      "ru": [
+        "колебаться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Prices fluctuate during the year.",
+          "ru": "Цены колеблются в течение года."
+        }
+      ]
+    },
+    {
+      "id": "b2-d25-08",
+      "en": "soar",
+      "ru": [
+        "резко расти",
+        "взмывать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "soared"
+      ],
+      "examples": [
+        {
+          "en": "House prices soared last year.",
+          "ru": "Цены на жильё резко выросли в прошлом году."
+        }
+      ]
+    },
+    {
+      "id": "b2-d25-09",
+      "en": "plummet",
+      "ru": [
+        "резко падать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "plummeted"
+      ],
+      "examples": [
+        {
+          "en": "Temperatures plummeted overnight.",
+          "ru": "За ночь температура резко упала."
+        }
+      ]
+    },
+    {
+      "id": "b2-d25-10",
+      "en": "stabilise",
+      "ru": [
+        "стабилизироваться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "stabilised"
+      ],
+      "examples": [
+        {
+          "en": "The situation has stabilised.",
+          "ru": "Ситуация стабилизировалась."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "id": "b2-d02",
+  "level": "B2",
+  "day": 2,
+  "island": 1,
+  "title": "Business strategy",
+  "topic": "strategy",
+  "words": [
+    {
+      "id": "b2-d02-01",
+      "en": "revenue",
+      "ru": [
+        "выручка",
+        "доход"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Revenue rose by ten percent.",
+          "ru": "Выручка выросла на десять процентов."
+        }
+      ]
+    },
+    {
+      "id": "b2-d02-02",
+      "en": "stakeholder",
+      "ru": [
+        "заинтересованная сторона"
+      ],
+      "pos": "noun",
+      "forms": [
+        "stakeholders"
+      ],
+      "examples": [
+        {
+          "en": "We need to inform all stakeholders.",
+          "ru": "Нужно проинформировать все заинтересованные стороны."
+        }
+      ]
+    },
+    {
+      "id": "b2-d02-03",
+      "en": "merger",
+      "ru": [
+        "слияние"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The merger created a huge company.",
+          "ru": "Слияние создало огромную компанию."
+        }
+      ]
+    },
+    {
+      "id": "b2-d02-04",
+      "en": "strategy",
+      "ru": [
+        "стратегия"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We need a new marketing strategy.",
+          "ru": "Нам нужна новая маркетинговая стратегия."
+        }
+      ]
+    },
+    {
+      "id": "b2-d02-05",
+      "en": "objective",
+      "ru": [
+        "цель",
+        "задача"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Our main objective is growth.",
+          "ru": "Наша главная цель — рост."
+        }
+      ]
+    },
+    {
+      "id": "b2-d02-06",
+      "en": "expand",
+      "ru": [
+        "расширять",
+        "расширяться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "The company plans to expand abroad.",
+          "ru": "Компания планирует выйти на зарубежные рынки."
+        }
+      ]
+    },
+    {
+      "id": "b2-d02-07",
+      "en": "market share",
+      "ru": [
+        "доля рынка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "They lost market share last year.",
+          "ru": "В прошлом году они потеряли долю рынка."
+        }
+      ]
+    },
+    {
+      "id": "b2-d02-08",
+      "en": "outsource",
+      "ru": [
+        "передавать на аутсорсинг"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Many firms outsource their IT work.",
+          "ru": "Многие фирмы отдают IT-работы на аутсорсинг."
+        }
+      ]
+    },
+    {
+      "id": "b2-d02-09",
+      "en": "asset",
+      "ru": [
+        "актив",
+        "ценность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Our staff are our greatest asset.",
+          "ru": "Наши сотрудники — наш главный актив."
+        }
+      ]
+    },
+    {
+      "id": "b2-d02-10",
+      "en": "sector",
+      "ru": [
+        "сектор",
+        "отрасль"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She works in the public sector.",
+          "ru": "Она работает в государственном секторе."
+        }
+      ]
+    }
+  ]
+}

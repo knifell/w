@@ -1,0 +1,154 @@
+{
+  "id": "b2-d24",
+  "level": "B2",
+  "day": 24,
+  "island": 3,
+  "title": "Formal connectors",
+  "topic": "connectors",
+  "words": [
+    {
+      "id": "b2-d24-01",
+      "en": "nevertheless",
+      "ru": [
+        "тем не менее"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "It was risky. Nevertheless, we tried.",
+          "ru": "Это было рискованно. Тем не менее мы попробовали."
+        }
+      ]
+    },
+    {
+      "id": "b2-d24-02",
+      "en": "consequently",
+      "ru": [
+        "следовательно",
+        "в результате"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "He missed the bus and consequently was late.",
+          "ru": "Он опоздал на автобус и, как следствие, на работу."
+        }
+      ]
+    },
+    {
+      "id": "b2-d24-03",
+      "en": "whereas",
+      "ru": [
+        "тогда как",
+        "в то время как"
+      ],
+      "pos": "conjunction",
+      "examples": [
+        {
+          "en": "I like tea, whereas my wife prefers coffee.",
+          "ru": "Я люблю чай, а жена предпочитает кофе."
+        }
+      ]
+    },
+    {
+      "id": "b2-d24-04",
+      "en": "furthermore",
+      "ru": [
+        "более того"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Furthermore, the plan is too expensive.",
+          "ru": "Более того, план слишком дорогой."
+        }
+      ]
+    },
+    {
+      "id": "b2-d24-05",
+      "en": "hence",
+      "ru": [
+        "отсюда",
+        "следовательно"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "It's handmade, hence the high price.",
+          "ru": "Это ручная работа, отсюда и высокая цена."
+        }
+      ]
+    },
+    {
+      "id": "b2-d24-06",
+      "en": "provided that",
+      "ru": [
+        "при условии что"
+      ],
+      "pos": "conjunction",
+      "examples": [
+        {
+          "en": "You can go, provided that you finish your work.",
+          "ru": "Можешь идти, при условии что закончишь работу."
+        }
+      ]
+    },
+    {
+      "id": "b2-d24-07",
+      "en": "in spite of",
+      "ru": [
+        "несмотря на"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "We enjoyed the trip in spite of the rain.",
+          "ru": "Поездка нам понравилась, несмотря на дождь."
+        }
+      ]
+    },
+    {
+      "id": "b2-d24-08",
+      "en": "on the contrary",
+      "ru": [
+        "напротив"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "It's not boring. On the contrary, it's fascinating.",
+          "ru": "Это не скучно. Напротив, это захватывающе."
+        }
+      ]
+    },
+    {
+      "id": "b2-d24-09",
+      "en": "by contrast",
+      "ru": [
+        "для сравнения",
+        "напротив"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "By contrast, the north is cold and wet.",
+          "ru": "Север, напротив, холодный и влажный."
+        }
+      ]
+    },
+    {
+      "id": "b2-d24-10",
+      "en": "to some extent",
+      "ru": [
+        "в некоторой степени"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "I agree with you to some extent.",
+          "ru": "В некоторой степени я с тобой согласен."
+        }
+      ]
+    }
+  ]
+}

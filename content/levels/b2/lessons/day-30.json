@@ -1,0 +1,152 @@
+{
+  "id": "b2-d30",
+  "level": "B2",
+  "day": 30,
+  "island": 3,
+  "title": "Beyond the map",
+  "topic": "abstract ideas",
+  "words": [
+    {
+      "id": "b2-d30-01",
+      "en": "inevitable",
+      "ru": [
+        "неизбежный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Change is inevitable.",
+          "ru": "Перемены неизбежны."
+        }
+      ]
+    },
+    {
+      "id": "b2-d30-02",
+      "en": "unprecedented",
+      "ru": [
+        "беспрецедентный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The storm caused unprecedented damage.",
+          "ru": "Шторм нанёс беспрецедентный ущерб."
+        }
+      ]
+    },
+    {
+      "id": "b2-d30-03",
+      "en": "paradox",
+      "ru": [
+        "парадокс"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "It's a strange paradox.",
+          "ru": "Это странный парадокс."
+        }
+      ]
+    },
+    {
+      "id": "b2-d30-04",
+      "en": "ultimately",
+      "ru": [
+        "в конечном счёте"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Ultimately, the decision is yours.",
+          "ru": "В конечном счёте решение за тобой."
+        }
+      ]
+    },
+    {
+      "id": "b2-d30-05",
+      "en": "profound",
+      "ru": [
+        "глубокий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The book had a profound effect on me.",
+          "ru": "Книга глубоко на меня повлияла."
+        }
+      ]
+    },
+    {
+      "id": "b2-d30-06",
+      "en": "vulnerable",
+      "ru": [
+        "уязвимый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Old people are vulnerable in the heat.",
+          "ru": "Пожилые люди уязвимы в жару."
+        }
+      ]
+    },
+    {
+      "id": "b2-d30-07",
+      "en": "adapt",
+      "ru": [
+        "приспосабливаться",
+        "адаптироваться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Animals adapt to their environment.",
+          "ru": "Животные приспосабливаются к среде."
+        }
+      ]
+    },
+    {
+      "id": "b2-d30-08",
+      "en": "foresee",
+      "ru": [
+        "предвидеть"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Nobody could foresee the crisis.",
+          "ru": "Никто не мог предвидеть кризис."
+        }
+      ]
+    },
+    {
+      "id": "b2-d30-09",
+      "en": "envision",
+      "ru": [
+        "представлять себе"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I envision a better future.",
+          "ru": "Я представляю себе лучшее будущее."
+        }
+      ]
+    },
+    {
+      "id": "b2-d30-10",
+      "en": "endeavour",
+      "ru": [
+        "стремление",
+        "попытка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Learning is a lifelong endeavour.",
+          "ru": "Учёба — дело всей жизни."
+        }
+      ]
+    }
+  ]
+}

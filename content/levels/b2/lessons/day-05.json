@@ -1,0 +1,159 @@
+{
+  "id": "b2-d05",
+  "level": "B2",
+  "day": 5,
+  "island": 1,
+  "title": "Leadership",
+  "topic": "leadership",
+  "words": [
+    {
+      "id": "b2-d05-01",
+      "en": "leadership",
+      "ru": [
+        "лидерство",
+        "руководство"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She has strong leadership skills.",
+          "ru": "У неё сильные лидерские качества."
+        }
+      ]
+    },
+    {
+      "id": "b2-d05-02",
+      "en": "authority",
+      "ru": [
+        "власть",
+        "авторитет"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He has no authority to decide.",
+          "ru": "У него нет полномочий решать."
+        }
+      ]
+    },
+    {
+      "id": "b2-d05-03",
+      "en": "empower",
+      "ru": [
+        "давать возможности",
+        "наделять полномочиями"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Good leaders empower their teams.",
+          "ru": "Хорошие лидеры дают командам свободу действий."
+        }
+      ]
+    },
+    {
+      "id": "b2-d05-04",
+      "en": "vision",
+      "ru": [
+        "видение",
+        "представление"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The founder had a clear vision.",
+          "ru": "У основателя было чёткое видение."
+        }
+      ]
+    },
+    {
+      "id": "b2-d05-05",
+      "en": "mentor",
+      "ru": [
+        "наставник"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My mentor taught me a lot.",
+          "ru": "Мой наставник многому меня научил."
+        }
+      ]
+    },
+    {
+      "id": "b2-d05-06",
+      "en": "accountable",
+      "ru": [
+        "подотчётный",
+        "ответственный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Managers are accountable for results.",
+          "ru": "Руководители отвечают за результат."
+        }
+      ]
+    },
+    {
+      "id": "b2-d05-07",
+      "en": "decisive",
+      "ru": [
+        "решительный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We need a decisive leader.",
+          "ru": "Нам нужен решительный лидер."
+        }
+      ]
+    },
+    {
+      "id": "b2-d05-08",
+      "en": "hierarchy",
+      "ru": [
+        "иерархия"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The company has a strict hierarchy.",
+          "ru": "В компании строгая иерархия."
+        }
+      ]
+    },
+    {
+      "id": "b2-d05-09",
+      "en": "supervise",
+      "ru": [
+        "руководить",
+        "контролировать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "supervises"
+      ],
+      "examples": [
+        {
+          "en": "She supervises a team of ten.",
+          "ru": "Она руководит командой из десяти человек."
+        }
+      ]
+    },
+    {
+      "id": "b2-d05-10",
+      "en": "charisma",
+      "ru": [
+        "харизма"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He has a lot of charisma.",
+          "ru": "У него много харизмы."
+        }
+      ]
+    }
+  ]
+}

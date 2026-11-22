@@ -1,0 +1,154 @@
+{
+  "id": "b2-d12",
+  "level": "B2",
+  "day": 12,
+  "island": 2,
+  "title": "Strong emotions",
+  "topic": "emotions",
+  "words": [
+    {
+      "id": "b2-d12-01",
+      "en": "furious",
+      "ru": [
+        "разъярённый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She was furious with him.",
+          "ru": "Она была в ярости на него."
+        }
+      ]
+    },
+    {
+      "id": "b2-d12-02",
+      "en": "frustrated",
+      "ru": [
+        "раздосадованный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I feel frustrated with my progress.",
+          "ru": "Меня раздражает мой прогресс."
+        }
+      ]
+    },
+    {
+      "id": "b2-d12-03",
+      "en": "devastated",
+      "ru": [
+        "опустошённый",
+        "убитый горем"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He was devastated by the news.",
+          "ru": "Новость его потрясла."
+        }
+      ]
+    },
+    {
+      "id": "b2-d12-04",
+      "en": "bewildered",
+      "ru": [
+        "сбитый с толку"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She looked bewildered.",
+          "ru": "Она выглядела растерянной."
+        }
+      ]
+    },
+    {
+      "id": "b2-d12-05",
+      "en": "apprehensive",
+      "ru": [
+        "встревоженный",
+        "опасающийся"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I'm apprehensive about the interview.",
+          "ru": "Я побаиваюсь собеседования."
+        }
+      ]
+    },
+    {
+      "id": "b2-d12-06",
+      "en": "indifferent",
+      "ru": [
+        "равнодушный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He seems indifferent to politics.",
+          "ru": "Кажется, ему безразлична политика."
+        }
+      ]
+    },
+    {
+      "id": "b2-d12-07",
+      "en": "resentful",
+      "ru": [
+        "обиженный",
+        "возмущённый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She felt resentful about the decision.",
+          "ru": "Решение её обидело."
+        }
+      ]
+    },
+    {
+      "id": "b2-d12-08",
+      "en": "elated",
+      "ru": [
+        "ликующий",
+        "в восторге"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We were elated by the victory.",
+          "ru": "Мы ликовали после победы."
+        }
+      ]
+    },
+    {
+      "id": "b2-d12-09",
+      "en": "exhausted",
+      "ru": [
+        "измотанный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I'm exhausted after the trip.",
+          "ru": "Я вымотан после поездки."
+        }
+      ]
+    },
+    {
+      "id": "b2-d12-10",
+      "en": "envious",
+      "ru": [
+        "завистливый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She was envious of her friend's success.",
+          "ru": "Она завидовала успеху подруги."
+        }
+      ]
+    }
+  ]
+}

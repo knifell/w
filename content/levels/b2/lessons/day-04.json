@@ -1,0 +1,165 @@
+{
+  "id": "b2-d04",
+  "level": "B2",
+  "day": 4,
+  "island": 1,
+  "title": "Negotiation",
+  "topic": "negotiation",
+  "words": [
+    {
+      "id": "b2-d04-01",
+      "en": "concession",
+      "ru": [
+        "уступка"
+      ],
+      "pos": "noun",
+      "forms": [
+        "concessions"
+      ],
+      "examples": [
+        {
+          "en": "Both sides had to make concessions.",
+          "ru": "Обеим сторонам пришлось пойти на уступки."
+        }
+      ]
+    },
+    {
+      "id": "b2-d04-02",
+      "en": "deadlock",
+      "ru": [
+        "тупик (в переговорах)"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The talks ended in deadlock.",
+          "ru": "Переговоры зашли в тупик."
+        }
+      ]
+    },
+    {
+      "id": "b2-d04-03",
+      "en": "persuasive",
+      "ru": [
+        "убедительный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She made a persuasive argument.",
+          "ru": "Она привела убедительный аргумент."
+        }
+      ]
+    },
+    {
+      "id": "b2-d04-04",
+      "en": "emphasise",
+      "ru": [
+        "подчёркивать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I want to emphasise this point.",
+          "ru": "Я хочу подчеркнуть этот момент."
+        }
+      ]
+    },
+    {
+      "id": "b2-d04-05",
+      "en": "acknowledge",
+      "ru": [
+        "признавать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "acknowledged"
+      ],
+      "examples": [
+        {
+          "en": "He acknowledged his mistake.",
+          "ru": "Он признал свою ошибку."
+        }
+      ]
+    },
+    {
+      "id": "b2-d04-06",
+      "en": "clarify",
+      "ru": [
+        "уточнять",
+        "прояснять"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Could you clarify what you mean?",
+          "ru": "Не могли бы вы уточнить, что имеете в виду?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d04-07",
+      "en": "assert",
+      "ru": [
+        "утверждать",
+        "отстаивать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "asserted"
+      ],
+      "examples": [
+        {
+          "en": "She asserted her right to speak.",
+          "ru": "Она отстояла своё право высказаться."
+        }
+      ]
+    },
+    {
+      "id": "b2-d04-08",
+      "en": "concede",
+      "ru": [
+        "признавать",
+        "уступать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "conceded"
+      ],
+      "examples": [
+        {
+          "en": "He conceded that I was right.",
+          "ru": "Он признал, что я был прав."
+        }
+      ]
+    },
+    {
+      "id": "b2-d04-09",
+      "en": "stance",
+      "ru": [
+        "позиция"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What is your stance on this issue?",
+          "ru": "Какова ваша позиция по этому вопросу?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d04-10",
+      "en": "rapport",
+      "ru": [
+        "взаимопонимание"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She has a good rapport with her clients.",
+          "ru": "У неё хорошее взаимопонимание с клиентами."
+        }
+      ]
+    }
+  ]
+}

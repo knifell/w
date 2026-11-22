@@ -1,0 +1,155 @@
+{
+  "id": "b2-d03",
+  "level": "B2",
+  "day": 3,
+  "island": 1,
+  "title": "Personal finance",
+  "topic": "finance",
+  "words": [
+    {
+      "id": "b2-d03-01",
+      "en": "mortgage",
+      "ru": [
+        "ипотека"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "They took out a mortgage to buy a flat.",
+          "ru": "Они взяли ипотеку на покупку квартиры."
+        }
+      ]
+    },
+    {
+      "id": "b2-d03-02",
+      "en": "savings",
+      "ru": [
+        "сбережения"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He spent all his savings on a car.",
+          "ru": "Он потратил все сбережения на машину."
+        }
+      ]
+    },
+    {
+      "id": "b2-d03-03",
+      "en": "investment",
+      "ru": [
+        "инвестиция",
+        "вложение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Property is a good investment.",
+          "ru": "Недвижимость — хорошее вложение."
+        }
+      ]
+    },
+    {
+      "id": "b2-d03-04",
+      "en": "expenditure",
+      "ru": [
+        "расходы",
+        "затраты"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We need to reduce expenditure.",
+          "ru": "Нам нужно сократить расходы."
+        }
+      ]
+    },
+    {
+      "id": "b2-d03-05",
+      "en": "bankrupt",
+      "ru": [
+        "обанкротившийся"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The company went bankrupt.",
+          "ru": "Компания обанкротилась."
+        }
+      ]
+    },
+    {
+      "id": "b2-d03-06",
+      "en": "fund",
+      "ru": [
+        "фонд",
+        "финансировать"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "They set up a fund for the hospital.",
+          "ru": "Они создали фонд для больницы."
+        }
+      ]
+    },
+    {
+      "id": "b2-d03-07",
+      "en": "donation",
+      "ru": [
+        "пожертвование"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Thank you for your donation.",
+          "ru": "Спасибо за ваше пожертвование."
+        }
+      ]
+    },
+    {
+      "id": "b2-d03-08",
+      "en": "wage",
+      "ru": [
+        "заработная плата",
+        "зарплата"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The minimum wage has gone up.",
+          "ru": "Минимальная зарплата повысилась."
+        }
+      ]
+    },
+    {
+      "id": "b2-d03-09",
+      "en": "pension",
+      "ru": [
+        "пенсия"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My grandmother lives on her pension.",
+          "ru": "Бабушка живёт на пенсию."
+        }
+      ]
+    },
+    {
+      "id": "b2-d03-10",
+      "en": "transaction",
+      "ru": [
+        "транзакция",
+        "сделка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The transaction was completed.",
+          "ru": "Транзакция завершена."
+        }
+      ]
+    }
+  ]
+}

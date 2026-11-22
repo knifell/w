@@ -1,0 +1,153 @@
+{
+  "id": "b2-d07",
+  "level": "B2",
+  "day": 7,
+  "island": 1,
+  "title": "Academic language",
+  "topic": "academic",
+  "words": [
+    {
+      "id": "b2-d07-01",
+      "en": "analyse",
+      "ru": [
+        "анализировать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We need to analyse the results.",
+          "ru": "Нам нужно проанализировать результаты."
+        }
+      ]
+    },
+    {
+      "id": "b2-d07-02",
+      "en": "hypothesis",
+      "ru": [
+        "гипотеза"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The data supports our hypothesis.",
+          "ru": "Данные подтверждают нашу гипотезу."
+        }
+      ]
+    },
+    {
+      "id": "b2-d07-03",
+      "en": "significant",
+      "ru": [
+        "значительный",
+        "существенный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "There was a significant increase in sales.",
+          "ru": "Продажи значительно выросли."
+        }
+      ]
+    },
+    {
+      "id": "b2-d07-04",
+      "en": "approach",
+      "ru": [
+        "подход"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We need a different approach.",
+          "ru": "Нам нужен другой подход."
+        }
+      ]
+    },
+    {
+      "id": "b2-d07-05",
+      "en": "framework",
+      "ru": [
+        "структура",
+        "рамки"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This gives us a framework for discussion.",
+          "ru": "Это даёт нам рамки для обсуждения."
+        }
+      ]
+    },
+    {
+      "id": "b2-d07-06",
+      "en": "assess",
+      "ru": [
+        "оценивать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Teachers assess students every term.",
+          "ru": "Учителя оценивают учеников каждую четверть."
+        }
+      ]
+    },
+    {
+      "id": "b2-d07-07",
+      "en": "criteria",
+      "ru": [
+        "критерии"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What are the criteria for success?",
+          "ru": "Каковы критерии успеха?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d07-08",
+      "en": "interpret",
+      "ru": [
+        "интерпретировать",
+        "толковать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "How do you interpret this poem?",
+          "ru": "Как ты толкуешь это стихотворение?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d07-09",
+      "en": "evaluate",
+      "ru": [
+        "оценивать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We will evaluate the project next month.",
+          "ru": "Мы оценим проект в следующем месяце."
+        }
+      ]
+    },
+    {
+      "id": "b2-d07-10",
+      "en": "methodology",
+      "ru": [
+        "методология"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The methodology of the study is clear.",
+          "ru": "Методология исследования понятна."
+        }
+      ]
+    }
+  ]
+}

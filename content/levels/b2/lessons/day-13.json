@@ -1,0 +1,154 @@
+{
+  "id": "b2-d13",
+  "level": "B2",
+  "day": 13,
+  "island": 2,
+  "title": "Character traits",
+  "topic": "character",
+  "words": [
+    {
+      "id": "b2-d13-01",
+      "en": "arrogant",
+      "ru": [
+        "высокомерный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He is rude and arrogant.",
+          "ru": "Он груб и высокомерен."
+        }
+      ]
+    },
+    {
+      "id": "b2-d13-02",
+      "en": "modest",
+      "ru": [
+        "скромный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She is very modest about her success.",
+          "ru": "Она очень скромно говорит о своём успехе."
+        }
+      ]
+    },
+    {
+      "id": "b2-d13-03",
+      "en": "conscientious",
+      "ru": [
+        "добросовестный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He is a conscientious worker.",
+          "ru": "Он добросовестный работник."
+        }
+      ]
+    },
+    {
+      "id": "b2-d13-04",
+      "en": "outgoing",
+      "ru": [
+        "общительный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "My sister is very outgoing.",
+          "ru": "Моя сестра очень общительная."
+        }
+      ]
+    },
+    {
+      "id": "b2-d13-05",
+      "en": "introverted",
+      "ru": [
+        "интровертный",
+        "замкнутый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He is quiet and introverted.",
+          "ru": "Он тихий и замкнутый."
+        }
+      ]
+    },
+    {
+      "id": "b2-d13-06",
+      "en": "considerate",
+      "ru": [
+        "внимательный к другим",
+        "заботливый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It was considerate of you to call.",
+          "ru": "Очень заботливо с твоей стороны позвонить."
+        }
+      ]
+    },
+    {
+      "id": "b2-d13-07",
+      "en": "ruthless",
+      "ru": [
+        "безжалостный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He is a ruthless businessman.",
+          "ru": "Он безжалостный бизнесмен."
+        }
+      ]
+    },
+    {
+      "id": "b2-d13-08",
+      "en": "gullible",
+      "ru": [
+        "доверчивый",
+        "легковерный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Don't be so gullible.",
+          "ru": "Не будь таким доверчивым."
+        }
+      ]
+    },
+    {
+      "id": "b2-d13-09",
+      "en": "sincere",
+      "ru": [
+        "искренний"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Please accept my sincere apologies.",
+          "ru": "Примите мои искренние извинения."
+        }
+      ]
+    },
+    {
+      "id": "b2-d13-10",
+      "en": "bossy",
+      "ru": [
+        "властный",
+        "любящий командовать"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "My older sister is bossy.",
+          "ru": "Моя старшая сестра любит командовать."
+        }
+      ]
+    }
+  ]
+}

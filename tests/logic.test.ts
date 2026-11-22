@@ -95,8 +95,8 @@ t('остров открывается только после закрепле�
 });
 
 t('генератор: каждое слово урока встречается, повторение строится', () => {
-  const b1 = JSON.parse(readFileSync('app/public/content/b1.json', 'utf8')) as LevelPack;
-  for (const pk of [pack, b1]) for (const l of pk.lessons) {
+  const packs = ['a1', 'a2', 'b1', 'b2'].map((l) => JSON.parse(readFileSync(`app/public/content/${l}.json`, 'utf8')) as LevelPack);
+  for (const pk of packs) for (const l of pk.lessons) {
     const pool = pk.lessons.flatMap((x) => x.words);
     const ex = buildLesson(l, pool, 1);
     const seen = new Set(ex.flatMap((e) => (e.kind === 'pairs' ? e.words : [e.word])).map((w) => w.id));

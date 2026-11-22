@@ -1,0 +1,156 @@
+{
+  "id": "b2-d10",
+  "level": "B2",
+  "day": 10,
+  "island": 1,
+  "title": "The human mind",
+  "topic": "psychology",
+  "words": [
+    {
+      "id": "b2-d10-01",
+      "en": "subconscious",
+      "ru": [
+        "подсознание",
+        "подсознательный"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Dreams come from the subconscious.",
+          "ru": "Сны приходят из подсознания."
+        }
+      ]
+    },
+    {
+      "id": "b2-d10-02",
+      "en": "perception",
+      "ru": [
+        "восприятие"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Our perception of time changes with age.",
+          "ru": "С возрастом наше восприятие времени меняется."
+        }
+      ]
+    },
+    {
+      "id": "b2-d10-03",
+      "en": "cognitive",
+      "ru": [
+        "когнитивный",
+        "познавательный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Puzzles improve cognitive skills.",
+          "ru": "Головоломки развивают когнитивные навыки."
+        }
+      ]
+    },
+    {
+      "id": "b2-d10-04",
+      "en": "trait",
+      "ru": [
+        "черта (характера)"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Patience is a rare trait.",
+          "ru": "Терпение — редкая черта."
+        }
+      ]
+    },
+    {
+      "id": "b2-d10-05",
+      "en": "resilience",
+      "ru": [
+        "стойкость",
+        "жизнестойкость"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She showed great resilience.",
+          "ru": "Она проявила большую стойкость."
+        }
+      ]
+    },
+    {
+      "id": "b2-d10-06",
+      "en": "anxiety",
+      "ru": [
+        "тревога",
+        "тревожность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Exams cause a lot of anxiety.",
+          "ru": "Экзамены вызывают сильную тревогу."
+        }
+      ]
+    },
+    {
+      "id": "b2-d10-07",
+      "en": "empathy",
+      "ru": [
+        "эмпатия",
+        "сопереживание"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Good doctors have empathy.",
+          "ru": "Хорошие врачи умеют сопереживать."
+        }
+      ]
+    },
+    {
+      "id": "b2-d10-08",
+      "en": "intuition",
+      "ru": [
+        "интуиция"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My intuition told me to wait.",
+          "ru": "Интуиция подсказала мне подождать."
+        }
+      ]
+    },
+    {
+      "id": "b2-d10-09",
+      "en": "mindset",
+      "ru": [
+        "мышление",
+        "настрой"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Success starts with the right mindset.",
+          "ru": "Успех начинается с правильного настроя."
+        }
+      ]
+    },
+    {
+      "id": "b2-d10-10",
+      "en": "impulsive",
+      "ru": [
+        "импульсивный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Don't make impulsive decisions.",
+          "ru": "Не принимай импульсивных решений."
+        }
+      ]
+    }
+  ]
+}

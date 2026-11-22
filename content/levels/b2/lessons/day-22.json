@@ -1,0 +1,152 @@
+{
+  "id": "b2-d22",
+  "level": "B2",
+  "day": 22,
+  "island": 3,
+  "title": "Idioms",
+  "topic": "idioms",
+  "words": [
+    {
+      "id": "b2-d22-01",
+      "en": "break the ice",
+      "ru": [
+        "растопить лёд",
+        "начать разговор"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "A joke can help break the ice.",
+          "ru": "Шутка может помочь растопить лёд."
+        }
+      ]
+    },
+    {
+      "id": "b2-d22-02",
+      "en": "piece of cake",
+      "ru": [
+        "проще простого"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "The test was a piece of cake.",
+          "ru": "Тест был проще простого."
+        }
+      ]
+    },
+    {
+      "id": "b2-d22-03",
+      "en": "hit the nail on the head",
+      "ru": [
+        "попасть в точку"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "You hit the nail on the head.",
+          "ru": "Ты попал в точку."
+        }
+      ]
+    },
+    {
+      "id": "b2-d22-04",
+      "en": "under the weather",
+      "ru": [
+        "неважно себя чувствовать"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "I'm feeling a bit under the weather.",
+          "ru": "Я неважно себя чувствую."
+        }
+      ]
+    },
+    {
+      "id": "b2-d22-05",
+      "en": "once in a blue moon",
+      "ru": [
+        "очень редко"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "We eat out once in a blue moon.",
+          "ru": "Мы едим в ресторане очень редко."
+        }
+      ]
+    },
+    {
+      "id": "b2-d22-06",
+      "en": "cost an arm and a leg",
+      "ru": [
+        "стоить целое состояние"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "That car cost an arm and a leg.",
+          "ru": "Эта машина стоила целое состояние."
+        }
+      ]
+    },
+    {
+      "id": "b2-d22-07",
+      "en": "let the cat out of the bag",
+      "ru": [
+        "проболтаться"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Who let the cat out of the bag?",
+          "ru": "Кто проболтался?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d22-08",
+      "en": "on the same page",
+      "ru": [
+        "на одной волне",
+        "одинаково понимать"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Let's make sure we're on the same page.",
+          "ru": "Давай убедимся, что понимаем друг друга одинаково."
+        }
+      ]
+    },
+    {
+      "id": "b2-d22-09",
+      "en": "the last straw",
+      "ru": [
+        "последняя капля"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "That was the last straw.",
+          "ru": "Это была последняя капля."
+        }
+      ]
+    },
+    {
+      "id": "b2-d22-10",
+      "en": "bite off more than you can chew",
+      "ru": [
+        "взять на себя слишком много"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Don't bite off more than you can chew.",
+          "ru": "Не бери на себя слишком много."
+        }
+      ]
+    }
+  ]
+}

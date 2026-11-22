@@ -1,0 +1,159 @@
+{
+  "id": "b2-d15",
+  "level": "B2",
+  "day": 15,
+  "island": 2,
+  "title": "Law and order",
+  "topic": "law",
+  "words": [
+    {
+      "id": "b2-d15-01",
+      "en": "offence",
+      "ru": [
+        "правонарушение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Driving without a licence is an offence.",
+          "ru": "Вождение без прав — правонарушение."
+        }
+      ]
+    },
+    {
+      "id": "b2-d15-02",
+      "en": "sentence",
+      "ru": [
+        "приговор",
+        "приговаривать"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He received a two-year sentence.",
+          "ru": "Его приговорили к двум годам."
+        }
+      ]
+    },
+    {
+      "id": "b2-d15-03",
+      "en": "trial",
+      "ru": [
+        "судебный процесс"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The trial lasted three weeks.",
+          "ru": "Судебный процесс длился три недели."
+        }
+      ]
+    },
+    {
+      "id": "b2-d15-04",
+      "en": "prosecute",
+      "ru": [
+        "преследовать в судебном порядке"
+      ],
+      "pos": "verb",
+      "forms": [
+        "prosecuted"
+      ],
+      "examples": [
+        {
+          "en": "Shoplifters will be prosecuted.",
+          "ru": "Магазинных воров будут привлекать к суду."
+        }
+      ]
+    },
+    {
+      "id": "b2-d15-05",
+      "en": "verdict",
+      "ru": [
+        "вердикт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The jury reached a verdict.",
+          "ru": "Присяжные вынесли вердикт."
+        }
+      ]
+    },
+    {
+      "id": "b2-d15-06",
+      "en": "fraud",
+      "ru": [
+        "мошенничество"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He was arrested for fraud.",
+          "ru": "Его арестовали за мошенничество."
+        }
+      ]
+    },
+    {
+      "id": "b2-d15-07",
+      "en": "convict",
+      "ru": [
+        "осуждать",
+        "признавать виновным"
+      ],
+      "pos": "verb",
+      "forms": [
+        "convicted"
+      ],
+      "examples": [
+        {
+          "en": "She was convicted of theft.",
+          "ru": "Её признали виновной в краже."
+        }
+      ]
+    },
+    {
+      "id": "b2-d15-08",
+      "en": "lawsuit",
+      "ru": [
+        "судебный иск"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "They filed a lawsuit against the company.",
+          "ru": "Они подали иск против компании."
+        }
+      ]
+    },
+    {
+      "id": "b2-d15-09",
+      "en": "legislation",
+      "ru": [
+        "законодательство"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "New legislation protects workers.",
+          "ru": "Новый закон защищает работников."
+        }
+      ]
+    },
+    {
+      "id": "b2-d15-10",
+      "en": "penalty",
+      "ru": [
+        "наказание",
+        "штраф"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The penalty for speeding is high.",
+          "ru": "Наказание за превышение скорости суровое."
+        }
+      ]
+    }
+  ]
+}

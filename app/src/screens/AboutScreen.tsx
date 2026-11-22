@@ -16,8 +16,8 @@ export function AboutScreen({ index, onBack }: { index: ContentIndex | null; onB
       </div>
       <div class="card">
         <b>В планах</b>
-        <div class="row">• По 60 уроков на A2 и B1</div>
-        <div class="row">• Уровни A1 и B2</div>
+        <div class="row">• По 60 уроков на A1 и B2</div>
+        <div class="row">• Новые острова для всех уровней</div>
         <div class="row">• Недельные экспедиции и сезонные альбомы</div>
         <div class="row">• Новые главы истории Шкипера</div>
       </div>

@@ -1,0 +1,152 @@
+{
+  "id": "b2-d16",
+  "level": "B2",
+  "day": 16,
+  "island": 2,
+  "title": "Saving the planet",
+  "topic": "environment",
+  "words": [
+    {
+      "id": "b2-d16-01",
+      "en": "emissions",
+      "ru": [
+        "выбросы"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We must cut carbon emissions.",
+          "ru": "Мы должны сократить выбросы углерода."
+        }
+      ]
+    },
+    {
+      "id": "b2-d16-02",
+      "en": "carbon footprint",
+      "ru": [
+        "углеродный след"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Flying increases your carbon footprint.",
+          "ru": "Полёты увеличивают углеродный след."
+        }
+      ]
+    },
+    {
+      "id": "b2-d16-03",
+      "en": "deforestation",
+      "ru": [
+        "вырубка лесов"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Deforestation destroys animal homes.",
+          "ru": "Вырубка лесов разрушает дома животных."
+        }
+      ]
+    },
+    {
+      "id": "b2-d16-04",
+      "en": "biodiversity",
+      "ru": [
+        "биоразнообразие"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The island is rich in biodiversity.",
+          "ru": "Остров богат биоразнообразием."
+        }
+      ]
+    },
+    {
+      "id": "b2-d16-05",
+      "en": "sustainable",
+      "ru": [
+        "устойчивый",
+        "экологичный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We need sustainable energy.",
+          "ru": "Нам нужна экологичная энергия."
+        }
+      ]
+    },
+    {
+      "id": "b2-d16-06",
+      "en": "conservation",
+      "ru": [
+        "охрана природы",
+        "сохранение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She works in wildlife conservation.",
+          "ru": "Она занимается охраной дикой природы."
+        }
+      ]
+    },
+    {
+      "id": "b2-d16-07",
+      "en": "habitat",
+      "ru": [
+        "среда обитания"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The forest is their natural habitat.",
+          "ru": "Лес — их естественная среда обитания."
+        }
+      ]
+    },
+    {
+      "id": "b2-d16-08",
+      "en": "endangered",
+      "ru": [
+        "находящийся под угрозой исчезновения"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Tigers are an endangered species.",
+          "ru": "Тигры — вымирающий вид."
+        }
+      ]
+    },
+    {
+      "id": "b2-d16-09",
+      "en": "fossil fuels",
+      "ru": [
+        "ископаемое топливо"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We should use fewer fossil fuels.",
+          "ru": "Нам стоит использовать меньше ископаемого топлива."
+        }
+      ]
+    },
+    {
+      "id": "b2-d16-10",
+      "en": "greenhouse effect",
+      "ru": [
+        "парниковый эффект"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The greenhouse effect warms the planet.",
+          "ru": "Парниковый эффект нагревает планету."
+        }
+      ]
+    }
+  ]
+}

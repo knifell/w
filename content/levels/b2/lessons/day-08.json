@@ -1,0 +1,156 @@
+{
+  "id": "b2-d08",
+  "level": "B2",
+  "day": 8,
+  "island": 1,
+  "title": "Logic and reasoning",
+  "topic": "reasoning",
+  "words": [
+    {
+      "id": "b2-d08-01",
+      "en": "assumption",
+      "ru": [
+        "предположение",
+        "допущение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "That's a dangerous assumption.",
+          "ru": "Это опасное предположение."
+        }
+      ]
+    },
+    {
+      "id": "b2-d08-02",
+      "en": "valid",
+      "ru": [
+        "обоснованный",
+        "действительный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "That's a valid point.",
+          "ru": "Это обоснованное замечание."
+        }
+      ]
+    },
+    {
+      "id": "b2-d08-03",
+      "en": "flawed",
+      "ru": [
+        "ошибочный",
+        "с изъяном"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The plan is deeply flawed.",
+          "ru": "План глубоко ошибочен."
+        }
+      ]
+    },
+    {
+      "id": "b2-d08-04",
+      "en": "contradict",
+      "ru": [
+        "противоречить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "The results contradict the theory.",
+          "ru": "Результаты противоречат теории."
+        }
+      ]
+    },
+    {
+      "id": "b2-d08-05",
+      "en": "justify",
+      "ru": [
+        "оправдывать",
+        "обосновывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "How can you justify the cost?",
+          "ru": "Как вы обоснуете стоимость?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d08-06",
+      "en": "perspective",
+      "ru": [
+        "перспектива",
+        "точка зрения"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Try to see it from my perspective.",
+          "ru": "Попробуй взглянуть на это с моей точки зрения."
+        }
+      ]
+    },
+    {
+      "id": "b2-d08-07",
+      "en": "bias",
+      "ru": [
+        "предвзятость"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The article shows a clear bias.",
+          "ru": "Статья явно предвзята."
+        }
+      ]
+    },
+    {
+      "id": "b2-d08-08",
+      "en": "rational",
+      "ru": [
+        "рациональный",
+        "разумный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Let's make a rational decision.",
+          "ru": "Давай примем рациональное решение."
+        }
+      ]
+    },
+    {
+      "id": "b2-d08-09",
+      "en": "premise",
+      "ru": [
+        "предпосылка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The film has an interesting premise.",
+          "ru": "У фильма интересная завязка."
+        }
+      ]
+    },
+    {
+      "id": "b2-d08-10",
+      "en": "plausible",
+      "ru": [
+        "правдоподобный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "His story sounds plausible.",
+          "ru": "Его история звучит правдоподобно."
+        }
+      ]
+    }
+  ]
+}

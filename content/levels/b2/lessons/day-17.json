@@ -1,0 +1,158 @@
+{
+  "id": "b2-d17",
+  "level": "B2",
+  "day": 17,
+  "island": 2,
+  "title": "Scientific research",
+  "topic": "research",
+  "words": [
+    {
+      "id": "b2-d17-01",
+      "en": "phenomenon",
+      "ru": [
+        "явление",
+        "феномен"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Northern lights are a natural phenomenon.",
+          "ru": "Северное сияние — природное явление."
+        }
+      ]
+    },
+    {
+      "id": "b2-d17-02",
+      "en": "genetic",
+      "ru": [
+        "генетический"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The disease is genetic.",
+          "ru": "Это генетическое заболевание."
+        }
+      ]
+    },
+    {
+      "id": "b2-d17-03",
+      "en": "molecule",
+      "ru": [
+        "молекула"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A water molecule is very small.",
+          "ru": "Молекула воды очень маленькая."
+        }
+      ]
+    },
+    {
+      "id": "b2-d17-04",
+      "en": "findings",
+      "ru": [
+        "результаты исследования",
+        "выводы"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The findings were published last month.",
+          "ru": "Результаты опубликовали в прошлом месяце."
+        }
+      ]
+    },
+    {
+      "id": "b2-d17-05",
+      "en": "sample",
+      "ru": [
+        "образец",
+        "выборка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "They took a blood sample.",
+          "ru": "У них взяли образец крови."
+        }
+      ]
+    },
+    {
+      "id": "b2-d17-06",
+      "en": "variable",
+      "ru": [
+        "переменная"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We changed one variable at a time.",
+          "ru": "Мы меняли по одной переменной за раз."
+        }
+      ]
+    },
+    {
+      "id": "b2-d17-07",
+      "en": "conduct",
+      "ru": [
+        "проводить"
+      ],
+      "pos": "verb",
+      "forms": [
+        "conducted"
+      ],
+      "examples": [
+        {
+          "en": "They conducted a survey.",
+          "ru": "Они провели опрос."
+        }
+      ]
+    },
+    {
+      "id": "b2-d17-08",
+      "en": "observe",
+      "ru": [
+        "наблюдать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Scientists observe animals in the wild.",
+          "ru": "Учёные наблюдают за животными в дикой природе."
+        }
+      ]
+    },
+    {
+      "id": "b2-d17-09",
+      "en": "correlation",
+      "ru": [
+        "корреляция",
+        "взаимосвязь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There's a correlation between sleep and mood.",
+          "ru": "Между сном и настроением есть взаимосвязь."
+        }
+      ]
+    },
+    {
+      "id": "b2-d17-10",
+      "en": "specimen",
+      "ru": [
+        "образец",
+        "экземпляр"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The museum has a rare specimen.",
+          "ru": "В музее есть редкий экземпляр."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "id": "b2-d21",
+  "level": "B2",
+  "day": 21,
+  "island": 3,
+  "title": "Travel like a pro",
+  "topic": "travel",
+  "words": [
+    {
+      "id": "b2-d21-01",
+      "en": "itinerary",
+      "ru": [
+        "маршрут",
+        "план поездки"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Here is our itinerary for the week.",
+          "ru": "Вот наш маршрут на неделю."
+        }
+      ]
+    },
+    {
+      "id": "b2-d21-02",
+      "en": "layover",
+      "ru": [
+        "пересадка",
+        "стыковка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We had a six-hour layover in Dubai.",
+          "ru": "У нас была шестичасовая пересадка в Дубае."
+        }
+      ]
+    },
+    {
+      "id": "b2-d21-03",
+      "en": "jet lag",
+      "ru": [
+        "джетлаг",
+        "смена часовых поясов"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I always get jet lag after long flights.",
+          "ru": "После долгих перелётов у меня всегда джетлаг."
+        }
+      ]
+    },
+    {
+      "id": "b2-d21-04",
+      "en": "off the beaten track",
+      "ru": [
+        "вдали от туристических троп"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "We found a village off the beaten track.",
+          "ru": "Мы нашли деревню вдали от туристических троп."
+        }
+      ]
+    },
+    {
+      "id": "b2-d21-05",
+      "en": "picturesque",
+      "ru": [
+        "живописный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It's a picturesque fishing village.",
+          "ru": "Это живописная рыбацкая деревня."
+        }
+      ]
+    },
+    {
+      "id": "b2-d21-06",
+      "en": "breathtaking",
+      "ru": [
+        "захватывающий дух"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The view was breathtaking.",
+          "ru": "Вид захватывал дух."
+        }
+      ]
+    },
+    {
+      "id": "b2-d21-07",
+      "en": "backpacking",
+      "ru": [
+        "путешествие с рюкзаком"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He went backpacking in Asia.",
+          "ru": "Он путешествовал по Азии с рюкзаком."
+        }
+      ]
+    },
+    {
+      "id": "b2-d21-08",
+      "en": "hospitality",
+      "ru": [
+        "гостеприимство"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Thank you for your hospitality.",
+          "ru": "Спасибо за гостеприимство."
+        }
+      ]
+    },
+    {
+      "id": "b2-d21-09",
+      "en": "wanderlust",
+      "ru": [
+        "страсть к путешествиям"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Her wanderlust took her around the world.",
+          "ru": "Страсть к путешествиям провела её по всему миру."
+        }
+      ]
+    },
+    {
+      "id": "b2-d21-10",
+      "en": "excursion",
+      "ru": [
+        "экскурсия",
+        "поездка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We went on an excursion to the mountains.",
+          "ru": "Мы съездили на экскурсию в горы."
+        }
+      ]
+    }
+  ]
+}

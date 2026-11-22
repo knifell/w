@@ -1,0 +1,156 @@
+{
+  "id": "b2-d06",
+  "level": "B2",
+  "day": 6,
+  "island": 1,
+  "title": "Between the lines",
+  "topic": "communication",
+  "words": [
+    {
+      "id": "b2-d06-01",
+      "en": "imply",
+      "ru": [
+        "подразумевать",
+        "намекать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "What are you trying to imply?",
+          "ru": "На что ты намекаешь?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d06-02",
+      "en": "infer",
+      "ru": [
+        "делать вывод"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "What can we infer from the data?",
+          "ru": "Какой вывод можно сделать из данных?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d06-03",
+      "en": "ambiguous",
+      "ru": [
+        "двусмысленный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The message was ambiguous.",
+          "ru": "Сообщение было двусмысленным."
+        }
+      ]
+    },
+    {
+      "id": "b2-d06-04",
+      "en": "convey",
+      "ru": [
+        "передавать",
+        "выражать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "It's hard to convey emotions in text.",
+          "ru": "Трудно передать эмоции в тексте."
+        }
+      ]
+    },
+    {
+      "id": "b2-d06-05",
+      "en": "articulate",
+      "ru": [
+        "ясно выражать мысли"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "She can articulate complex ideas.",
+          "ru": "Она умеет ясно излагать сложные идеи."
+        }
+      ]
+    },
+    {
+      "id": "b2-d06-06",
+      "en": "eloquent",
+      "ru": [
+        "красноречивый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He gave an eloquent speech.",
+          "ru": "Он произнёс красноречивую речь."
+        }
+      ]
+    },
+    {
+      "id": "b2-d06-07",
+      "en": "blunt",
+      "ru": [
+        "прямолинейный",
+        "резкий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Sorry to be blunt, but it's bad.",
+          "ru": "Прости за прямоту, но это плохо."
+        }
+      ]
+    },
+    {
+      "id": "b2-d06-08",
+      "en": "tactful",
+      "ru": [
+        "тактичный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Try to be more tactful.",
+          "ru": "Постарайся быть тактичнее."
+        }
+      ]
+    },
+    {
+      "id": "b2-d06-09",
+      "en": "sarcastic",
+      "ru": [
+        "саркастичный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Are you being sarcastic?",
+          "ru": "Ты сейчас язвишь?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d06-10",
+      "en": "misinterpret",
+      "ru": [
+        "неверно истолковать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "misinterpreted"
+      ],
+      "examples": [
+        {
+          "en": "He misinterpreted my words.",
+          "ru": "Он неверно понял мои слова."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "id": "b2-d19",
+  "level": "B2",
+  "day": 19,
+  "island": 2,
+  "title": "Cities under pressure",
+  "topic": "urban issues",
+  "words": [
+    {
+      "id": "b2-d19-01",
+      "en": "infrastructure",
+      "ru": [
+        "инфраструктура"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The city needs better infrastructure.",
+          "ru": "Городу нужна лучшая инфраструктура."
+        }
+      ]
+    },
+    {
+      "id": "b2-d19-02",
+      "en": "overcrowding",
+      "ru": [
+        "перенаселённость"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Overcrowding is a problem in big cities.",
+          "ru": "Перенаселённость — проблема больших городов."
+        }
+      ]
+    },
+    {
+      "id": "b2-d19-03",
+      "en": "commuter",
+      "ru": [
+        "пассажир, ездящий на работу"
+      ],
+      "pos": "noun",
+      "forms": [
+        "commuters"
+      ],
+      "examples": [
+        {
+          "en": "The train was full of commuters.",
+          "ru": "Поезд был полон людей, едущих на работу."
+        }
+      ]
+    },
+    {
+      "id": "b2-d19-04",
+      "en": "amenities",
+      "ru": [
+        "удобства",
+        "инфраструктура"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The area has good local amenities.",
+          "ru": "В районе хорошая инфраструктура."
+        }
+      ]
+    },
+    {
+      "id": "b2-d19-05",
+      "en": "congestion",
+      "ru": [
+        "затор",
+        "перегруженность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Traffic congestion is getting worse.",
+          "ru": "Пробки становятся всё хуже."
+        }
+      ]
+    },
+    {
+      "id": "b2-d19-06",
+      "en": "affordable",
+      "ru": [
+        "доступный по цене"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We need more affordable housing.",
+          "ru": "Нам нужно больше доступного жилья."
+        }
+      ]
+    },
+    {
+      "id": "b2-d19-07",
+      "en": "inequality",
+      "ru": [
+        "неравенство"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Inequality is growing in many countries.",
+          "ru": "Во многих странах растёт неравенство."
+        }
+      ]
+    },
+    {
+      "id": "b2-d19-08",
+      "en": "welfare",
+      "ru": [
+        "социальное обеспечение",
+        "благосостояние"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The government spends a lot on welfare.",
+          "ru": "Правительство тратит много на соцобеспечение."
+        }
+      ]
+    },
+    {
+      "id": "b2-d19-09",
+      "en": "gentrification",
+      "ru": [
+        "джентрификация"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Gentrification changed the old district.",
+          "ru": "Джентрификация изменила старый район."
+        }
+      ]
+    },
+    {
+      "id": "b2-d19-10",
+      "en": "vandalism",
+      "ru": [
+        "вандализм"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Vandalism is a problem in the park.",
+          "ru": "В парке проблема с вандализмом."
+        }
+      ]
+    }
+  ]
+}

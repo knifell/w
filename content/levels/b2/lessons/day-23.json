@@ -1,0 +1,168 @@
+{
+  "id": "b2-d23",
+  "level": "B2",
+  "day": 23,
+  "island": 3,
+  "title": "Phrasal verbs 2",
+  "topic": "phrasal verbs",
+  "words": [
+    {
+      "id": "b2-d23-01",
+      "en": "bring up",
+      "ru": [
+        "воспитывать",
+        "поднимать (тему)"
+      ],
+      "pos": "verb",
+      "forms": [
+        "brought up"
+      ],
+      "examples": [
+        {
+          "en": "She was brought up by her aunt.",
+          "ru": "Её воспитала тётя."
+        }
+      ]
+    },
+    {
+      "id": "b2-d23-02",
+      "en": "put up with",
+      "ru": [
+        "терпеть",
+        "мириться с"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I can't put up with this noise.",
+          "ru": "Я не могу терпеть этот шум."
+        }
+      ]
+    },
+    {
+      "id": "b2-d23-03",
+      "en": "get over",
+      "ru": [
+        "оправиться",
+        "пережить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "It took him months to get over it.",
+          "ru": "Ему понадобились месяцы, чтобы это пережить."
+        }
+      ]
+    },
+    {
+      "id": "b2-d23-04",
+      "en": "look into",
+      "ru": [
+        "изучать",
+        "расследовать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We will look into the problem.",
+          "ru": "Мы разберёмся с проблемой."
+        }
+      ]
+    },
+    {
+      "id": "b2-d23-05",
+      "en": "rule out",
+      "ru": [
+        "исключать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We can't rule out this option.",
+          "ru": "Мы не можем исключать этот вариант."
+        }
+      ]
+    },
+    {
+      "id": "b2-d23-06",
+      "en": "back up",
+      "ru": [
+        "поддерживать",
+        "делать копию"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Always back up your files.",
+          "ru": "Всегда делай резервную копию файлов."
+        }
+      ]
+    },
+    {
+      "id": "b2-d23-07",
+      "en": "wear off",
+      "ru": [
+        "проходить",
+        "ослабевать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "The pain will wear off soon.",
+          "ru": "Боль скоро пройдёт."
+        }
+      ]
+    },
+    {
+      "id": "b2-d23-08",
+      "en": "come across",
+      "ru": [
+        "натыкаться",
+        "производить впечатление"
+      ],
+      "pos": "verb",
+      "forms": [
+        "came across"
+      ],
+      "examples": [
+        {
+          "en": "I came across an old photo.",
+          "ru": "Я наткнулся на старую фотографию."
+        }
+      ]
+    },
+    {
+      "id": "b2-d23-09",
+      "en": "figure out",
+      "ru": [
+        "разобраться",
+        "понять"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I can't figure out this puzzle.",
+          "ru": "Не могу разобраться с этой головоломкой."
+        }
+      ]
+    },
+    {
+      "id": "b2-d23-10",
+      "en": "fall through",
+      "ru": [
+        "сорваться",
+        "не состояться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "fell through"
+      ],
+      "examples": [
+        {
+          "en": "Our plans fell through.",
+          "ru": "Наши планы сорвались."
+        }
+      ]
+    }
+  ]
+}

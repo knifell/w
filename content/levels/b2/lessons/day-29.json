@@ -1,0 +1,165 @@
+{
+  "id": "b2-d29",
+  "level": "B2",
+  "day": 29,
+  "island": 3,
+  "title": "Growing as a person",
+  "topic": "personal growth",
+  "words": [
+    {
+      "id": "b2-d29-01",
+      "en": "procrastinate",
+      "ru": [
+        "откладывать на потом",
+        "прокрастинировать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "procrastinating"
+      ],
+      "examples": [
+        {
+          "en": "Stop procrastinating and start working.",
+          "ru": "Хватит откладывать, начинай работать."
+        }
+      ]
+    },
+    {
+      "id": "b2-d29-02",
+      "en": "self-discipline",
+      "ru": [
+        "самодисциплина"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Learning a language requires self-discipline.",
+          "ru": "Изучение языка требует самодисциплины."
+        }
+      ]
+    },
+    {
+      "id": "b2-d29-03",
+      "en": "setback",
+      "ru": [
+        "неудача",
+        "препятствие"
+      ],
+      "pos": "noun",
+      "forms": [
+        "setbacks"
+      ],
+      "examples": [
+        {
+          "en": "We had a few setbacks, but we kept going.",
+          "ru": "У нас были неудачи, но мы продолжили."
+        }
+      ]
+    },
+    {
+      "id": "b2-d29-04",
+      "en": "perseverance",
+      "ru": [
+        "упорство",
+        "настойчивость"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Success comes from perseverance.",
+          "ru": "Успех приходит благодаря упорству."
+        }
+      ]
+    },
+    {
+      "id": "b2-d29-05",
+      "en": "burnout",
+      "ru": [
+        "выгорание"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Too much work can lead to burnout.",
+          "ru": "Слишком много работы может привести к выгоранию."
+        }
+      ]
+    },
+    {
+      "id": "b2-d29-06",
+      "en": "comfort zone",
+      "ru": [
+        "зона комфорта"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Step out of your comfort zone.",
+          "ru": "Выйди из зоны комфорта."
+        }
+      ]
+    },
+    {
+      "id": "b2-d29-07",
+      "en": "fulfilment",
+      "ru": [
+        "удовлетворённость",
+        "реализация"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She finds fulfilment in her work.",
+          "ru": "Она находит удовлетворение в работе."
+        }
+      ]
+    },
+    {
+      "id": "b2-d29-08",
+      "en": "aspiration",
+      "ru": [
+        "стремление",
+        "чаяние"
+      ],
+      "pos": "noun",
+      "forms": [
+        "aspirations"
+      ],
+      "examples": [
+        {
+          "en": "What are your aspirations for the future?",
+          "ru": "Каковы твои стремления на будущее?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d29-09",
+      "en": "thrive",
+      "ru": [
+        "процветать",
+        "развиваться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Plants thrive in this climate.",
+          "ru": "Растения прекрасно растут в этом климате."
+        }
+      ]
+    },
+    {
+      "id": "b2-d29-10",
+      "en": "self-esteem",
+      "ru": [
+        "самооценка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Praise can boost a child's self-esteem.",
+          "ru": "Похвала может повысить самооценку ребёнка."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "id": "b2-d09",
+  "level": "B2",
+  "day": 9,
+  "island": 1,
+  "title": "Media literacy",
+  "topic": "media",
+  "words": [
+    {
+      "id": "b2-d09-01",
+      "en": "coverage",
+      "ru": [
+        "освещение (в СМИ)"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The event got a lot of media coverage.",
+          "ru": "Событие широко освещалось в СМИ."
+        }
+      ]
+    },
+    {
+      "id": "b2-d09-02",
+      "en": "censorship",
+      "ru": [
+        "цензура"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Censorship limits free speech.",
+          "ru": "Цензура ограничивает свободу слова."
+        }
+      ]
+    },
+    {
+      "id": "b2-d09-03",
+      "en": "propaganda",
+      "ru": [
+        "пропаганда"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The poster was pure propaganda.",
+          "ru": "Плакат был чистой пропагандой."
+        }
+      ]
+    },
+    {
+      "id": "b2-d09-04",
+      "en": "sensational",
+      "ru": [
+        "сенсационный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The newspaper printed a sensational story.",
+          "ru": "Газета напечатала сенсационную историю."
+        }
+      ]
+    },
+    {
+      "id": "b2-d09-05",
+      "en": "tabloid",
+      "ru": [
+        "бульварная газета"
+      ],
+      "pos": "noun",
+      "forms": [
+        "tabloids"
+      ],
+      "examples": [
+        {
+          "en": "I don't trust the tabloids.",
+          "ru": "Я не доверяю жёлтой прессе."
+        }
+      ]
+    },
+    {
+      "id": "b2-d09-06",
+      "en": "mainstream",
+      "ru": [
+        "массовый",
+        "основной"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The band became mainstream.",
+          "ru": "Группа стала мейнстримом."
+        }
+      ]
+    },
+    {
+      "id": "b2-d09-07",
+      "en": "editorial",
+      "ru": [
+        "редакционная статья"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Did you read today's editorial?",
+          "ru": "Ты читал сегодняшнюю редакционную статью?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d09-08",
+      "en": "viral",
+      "ru": [
+        "вирусный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The video went viral.",
+          "ru": "Видео стало вирусным."
+        }
+      ]
+    },
+    {
+      "id": "b2-d09-09",
+      "en": "misleading",
+      "ru": [
+        "вводящий в заблуждение"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The headline is misleading.",
+          "ru": "Заголовок вводит в заблуждение."
+        }
+      ]
+    },
+    {
+      "id": "b2-d09-10",
+      "en": "credibility",
+      "ru": [
+        "доверие",
+        "авторитет"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The scandal damaged his credibility.",
+          "ru": "Скандал подорвал доверие к нему."
+        }
+      ]
+    }
+  ]
+}

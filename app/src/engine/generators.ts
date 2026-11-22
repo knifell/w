@@ -2,11 +2,12 @@
 import type { Lesson, Word } from '../types';
 import { hashSeed, mulberry32, shuffle, type Rng } from './rng';
 import { norm } from './check';
+import { knownSentence, knownToken } from './vocab';
 
 export type Exercise =
   | { kind: 'learn'; id: string; word: Word; options: string[]; answer: string }
   | { kind: 'choice'; id: string; dir: 'en-ru' | 'ru-en'; word: Word; prompt: string; options: string[]; answer: string }
-  | { kind: 'pairs'; id: string; words: Word[]; left: number[]; right: number[] }
+  | { kind: 'pairs'; id: string; words: Word[]; labels: string[]; left: number[]; right: number[] }
   | { kind: 'type'; id: string; word: Word; prompt: string; answers: string[] }
   | { kind: 'build'; id: string; word: Word; prompt: string; answer: string; tokens: string[] };
 
@@ -25,7 +26,8 @@ function distractors(w: Word, pool: Word[], n: number, r: Rng, f: 'en' | 'ru'): 
   return out;
 }
 
-export const tokenize = (s: string) => s.replace(/[.,!?;:"«»]/g, '').split(/\s+/).filter(Boolean);
+export const tokenize = (s: string) =>
+  s.replace(/[.,!?;:"«»“”()…]/g, '').split(/\s+/).filter((t) => /[\p{L}\p{N}]/u.test(t));
 
 function choice(w: Word, pool: Word[], r: Rng, dir: 'en-ru' | 'ru-en'): Exercise {
   const f = dir === 'en-ru' ? 'ru' : 'en';
@@ -37,23 +39,41 @@ function choice(w: Word, pool: Word[], r: Rng, dir: 'en-ru' | 'ru-en'): Exercise
   };
 }
 
-const pairs = (ws: Word[], r: Rng, tag: string): Exercise => {
+/**
+ * Пары: у каждого слова должна быть своя подпись по-русски. Если перевод слова совпадает
+ * с переводом соседа (leg/foot → «нога»), берём другой вариант перевода, а если его нет — слово убираем.
+ */
+function pairs(group: Word[], r: Rng, tag: string): Exercise | null {
+  const ws: Word[] = [], labels: string[] = [];
+  for (const w of group) {
+    const others = group.filter((x) => x !== w).flatMap((x) => x.ru.map(norm));
+    const label = w.ru.find((t) => !others.includes(norm(t)) && !labels.some((l) => norm(l) === norm(t)));
+    if (label && !ws.some((x) => norm(x.en) === norm(w.en))) { ws.push(w); labels.push(label); }
+  }
+  if (ws.length < 3) return null;
   const idx = ws.map((_, i) => i);
-  return { kind: 'pairs', id: `p-${tag}`, words: ws, left: shuffle(idx, r), right: shuffle(idx, r) };
+  return { kind: 'pairs', id: `p-${tag}`, words: ws, labels, left: shuffle(idx, r), right: shuffle(idx, r) };
+}
+
+/** Ввод слова. Синонимы с тем же переводом (mother/mum на «мама») тоже засчитываются. */
+const typeEx = (w: Word, pool: Word[] = []): Exercise => {
+  const ru = new Set(w.ru.map(norm));
+  const alts = pool.filter((x) => x.id !== w.id && x.ru.some((t) => ru.has(norm(t)))).map((x) => x.en);
+  return { kind: 'type', id: `t-${w.id}`, word: w, prompt: w.ru.join(', '), answers: [w.en, ...(w.forms ?? []), ...alts] };
 };
 
-const typeEx = (w: Word): Exercise => ({
-  kind: 'type', id: `t-${w.id}`, word: w, prompt: w.ru.join(', '), answers: [w.en, ...(w.forms ?? [])],
-});
-
-function build(w: Word, pool: Word[], r: Rng): Exercise | null {
-  const ex = w.examples.find((e) => tokenize(e.en).length <= 10);
+/**
+ * Сборка предложения из примера. Если передан словарь игрока (vocab), берём только
+ * предложения из знакомых слов, и лишние плитки — тоже из знакомых слов.
+ */
+function build(w: Word, pool: Word[], r: Rng, vocab?: Set<string>): Exercise | null {
+  const ex = w.examples.find((e) => tokenize(e.en).length <= 10 && (!vocab || knownSentence(e.en, vocab)));
   if (!ex) return null;
   const toks = tokenize(ex.en);
   const inSent = new Set(toks.map((t) => t.toLowerCase()));
   const extra = shuffle(
     [...new Set(pool.flatMap((p) => p.examples.flatMap((e) => tokenize(e.en))).map((t) => t.toLowerCase()))]
-      .filter((t) => t.length >= 3 && !inSent.has(t)),
+      .filter((t) => t.length >= 3 && !inSent.has(t) && (!vocab || knownToken(t, vocab))),
     r,
   ).slice(0, 2);
   return { kind: 'build', id: `b-${w.id}`, word: w, prompt: ex.ru, answer: toks.join(' '), tokens: shuffle([...toks, ...extra], r) };
@@ -74,7 +94,9 @@ function chunks<T>(a: T[]): T[][] {
  * 2) знакомые слова: выбор перевода (+ пары);
  * 3) финал на всех словах урока: обратный перевод, ввод слова, сборка предложения.
  */
-export function buildLesson(lesson: Lesson, levelPool: Word[], seed = Date.now(), known: Set<string> = new Set()): Exercise[] {
+export function buildLesson(
+  lesson: Lesson, levelPool: Word[], seed = Date.now(), known: Set<string> = new Set(), vocab?: Set<string>,
+): Exercise[] {
   const r = mulberry32(hashSeed(lesson.id) ^ seed);
   const ws = lesson.words;
   const pool = levelPool.length >= 8 ? levelPool : ws;
@@ -86,31 +108,46 @@ export function buildLesson(lesson: Lesson, levelPool: Word[], seed = Date.now()
       const ch = choice(w, pool, r, 'en-ru');
       if (ch.kind === 'choice') out.push({ kind: 'learn', id: `l-${w.id}`, word: w, options: ch.options, answer: ch.answer });
     });
-    if (c.length >= 3) out.push(pairs(c, r, `${lesson.id}-n${i}`));
+    const p = c.length >= 3 ? pairs(c, r, `${lesson.id}-n${i}`) : null;
+    if (p) out.push(p);
+    // слова, не попавшие в пары (одинаковый перевод с соседом), закрепляем выбором перевода
+    c.filter((w) => !p || (p.kind === 'pairs' && !p.words.includes(w))).forEach((w) => out.push(choice(w, pool, r, 'en-ru')));
   });
   shuffle(old, r).forEach((w) => out.push(choice(w, pool, r, 'en-ru')));
-  if (old.length >= 3) out.push(pairs(shuffle(old, r).slice(0, 5), r, `${lesson.id}-o`));
+  const po = old.length >= 3 ? pairs(shuffle(old, r).slice(0, 5), r, `${lesson.id}-o`) : null;
+  if (po) out.push(po);
   const late = shuffle(ws, r);
   late.slice(0, 3).forEach((w) => out.push(choice(w, pool, r, 'ru-en')));
-  late.slice(3, 5).forEach((w) => out.push(typeEx(w)));
+  late.slice(3, 5).forEach((w) => out.push(typeEx(w, pool)));
   let built = 0;
   for (const w of late.slice(5)) {
     if (built === 2) break;
-    const e = build(w, pool, r);
+    const e = build(w, pool, r, vocab);
     if (e) { out.push(e); built++; }
   }
+  // нет подходящих предложений из знакомых слов — вместо сборки ввод слова
+  late.slice(5).filter((w) => !out.some((e) => e.kind === 'build' && e.word === w)).slice(0, 2 - built)
+    .forEach((w) => out.push(typeEx(w, pool)));
   return out;
 }
 
 export const exerciseWords = (e: Exercise): Word[] => (e.kind === 'pairs' ? e.words : [e.word]);
+
+/** Варианты-ловушки — из того же уровня, что и слово (id вида a1-d01-01), иначе A1-ученик видит слова B2. */
+const sameLevel = (w: Word, pool: Word[]) => {
+  const lv = w.id.split('-')[0];
+  const same = pool.filter((x) => x.id.split('-')[0] === lv);
+  return same.length >= 8 ? same : pool;
+};
 
 /** Повторение: по 1 заданию на слово (выбор/ввод чередуются) + пары, если слов ≥5. */
 export function buildReview(words: Word[], pool: Word[], seed = Date.now()): Exercise[] {
   const r = mulberry32(seed);
   const ws = shuffle(words, r);
   const out: Exercise[] = ws.map((w, i) =>
-    i % 3 === 2 ? typeEx(w) : choice(w, pool, r, i % 3 === 0 ? 'ru-en' : 'en-ru'));
-  if (ws.length >= 5) out.splice(Math.min(4, out.length), 0, pairs(shuffle(ws, r).slice(0, 5), r, `rev-${seed}`));
+    i % 3 === 2 ? typeEx(w, words) : choice(w, sameLevel(w, pool), r, i % 3 === 0 ? 'ru-en' : 'en-ru'));
+  const p = ws.length >= 5 ? pairs(shuffle(ws, r).slice(0, 5), r, `rev-${seed}`) : null;
+  if (p) out.splice(Math.min(4, out.length), 0, p);
   return out;
 }
 
@@ -118,17 +155,17 @@ export function buildReview(words: Word[], pool: Word[], seed = Date.now()): Exe
 export function buildMiniTest(pool: Word[], seed = Date.now()): Exercise[] {
   const r = mulberry32(seed);
   const ws = shuffle(pool, r).slice(0, 8);
-  return ws.map((w, i) => (i < 3 ? choice(w, pool, r, 'en-ru') : i < 6 ? choice(w, pool, r, 'ru-en') : typeEx(w)));
+  return ws.map((w, i) => (i < 3 ? choice(w, pool, r, 'en-ru') : i < 6 ? choice(w, pool, r, 'ru-en') : typeEx(w, pool)));
 }
 
 /** Испытание острова: только ввод и сборка предложений, без подсказок-вариантов. */
-export function buildTrial(words: Word[], pool: Word[], seed = Date.now()): Exercise[] {
+export function buildTrial(words: Word[], pool: Word[], seed = Date.now(), vocab?: Set<string>): Exercise[] {
   const r = mulberry32(seed);
   const ws = shuffle(words, r).slice(0, 10);
   const out: Exercise[] = [];
   ws.forEach((w, i) => {
-    const b = i % 2 ? build(w, pool, r) : null;
-    out.push(b ?? typeEx(w));
+    const b = i % 2 ? build(w, pool, r, vocab) : null;
+    out.push(b ?? typeEx(w, pool));
   });
   return out;
 }

@@ -35,6 +35,7 @@ export function MiniTestScreen({ pack, packs, onDone, onBack }: Props) {
         <h1>{score} из {qs.length}</h1>
         <p>{tooHard ? `Уровень ${pack.level} пока сложноват. Советуем начать с ${down}: там слова, на которых строится ${pack.level}.`
           : tooEasy ? `Похоже, ${pack.level} для тебя лёгкий. Можно сразу на ${up}.`
+          : score <= 3 ? `Уровень ${pack.level} — хороший старт: все эти слова ты выучишь в уроках.`
           : `Уровень ${pack.level} тебе подходит: часть слов знакома, остальное выучишь в уроках.`}</p>
         {tooHard && <button class="btn" onClick={() => onDone(down)}>Начать с {down}</button>}
         {tooEasy && <button class="btn" onClick={() => onDone(up)}>Перейти на {up}</button>}

@@ -9,6 +9,7 @@ import { isDue } from './game/srs';
 import { today } from './game/time';
 import { REVIEW_MAX_WORDS } from './game/config';
 import { buildLesson, buildReview, buildTrial, type Exercise } from './engine/generators';
+import { vocabOf } from './engine/vocab';
 import { OnboardingScreen } from './screens/OnboardingScreen';
 import { LevelPickScreen } from './screens/LevelPickScreen';
 import { MiniTestScreen } from './screens/MiniTestScreen';
@@ -65,19 +66,25 @@ export function App() {
     setStory({ isl, then });
     mutate((s) => { const k = `${pack.level}-${isl.n}`; if (!s.storySeen.includes(k)) s.storySeen.push(k); });
   };
+  /** Слова, которые игрок уже знает: выученные + все слова уровней ниже текущего. */
+  const vocab = (extra: Word[] = []) => {
+    const lower = packs.filter((p) => p.level < pack.level).flatMap((p) => p.lessons.flatMap((l) => l.words));
+    const learned = Object.keys(st.mem).map((id) => allWords.get(id)).filter((w): w is Word => !!w);
+    return vocabOf([...lower, ...learned, ...extra]);
+  };
   const startReview = (words: Word[]) => go({ s: 'session', kind: 'review', build: () => buildReview(words, [...allWords.values()]) });
 
   const startLesson = (l: Lesson) => {
     const start = () => {
       if (!mutate(spendEnergy)) return setEnergySheet(true);
-      go({ s: 'session', kind: 'lesson', lessonId: l.id, build: () => buildLesson(l, pool, Date.now(), new Set(Object.keys(st.mem))) });
+      go({ s: 'session', kind: 'lesson', lessonId: l.id, build: () => buildLesson(l, pool, Date.now(), new Set(Object.keys(st.mem)), vocab(l.words)) });
     };
     if (!st.storySeen.includes(`${pack.level}-${l.island}`)) return openStory(pack.islands[l.island - 1], start);
     start();
   };
   const startTrial = (isl: Island) => {
     const ws = pack.lessons.filter((l) => l.island === isl.n && st.done[l.id]).flatMap((l) => l.words);
-    go({ s: 'session', kind: 'trial', build: () => buildTrial(ws, pool) });
+    go({ s: 'session', kind: 'trial', build: () => buildTrial(ws, pool, Date.now(), vocab(ws)) });
   };
   const finish = (kind: SessionKind, lessonId: string | undefined, o: SessionOutcome) => {
     const reward = recordSession({ kind, lessonId, accuracy: o.accuracy, seen: o.seen.map((w) => w.id), wrong: o.wrong.map((w) => w.id) }, packs);
@@ -87,7 +94,8 @@ export function App() {
 
   switch (r.s) {
     case 'onboarding': return <OnboardingScreen onNext={() => go({ s: 'pick' })} />;
-    case 'pick': return <LevelPickScreen packs={packs} current={st.level} onPick={(level) => go({ s: 'minitest', level })} />;
+    case 'pick': return <LevelPickScreen packs={packs} current={st.level} onPick={(level) => go({ s: 'minitest', level })}
+      onBack={st.level ? () => toMap() : undefined} />;
     case 'minitest':
       return <MiniTestScreen pack={packs.find((p) => p.level === r.level)!} packs={packs}
         onDone={(l) => setLevel(l)} onBack={() => go({ s: 'pick' })} />;

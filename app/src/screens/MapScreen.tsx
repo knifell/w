@@ -4,7 +4,7 @@ import { islandState, lessonOpen, type IslandState } from '../game/progress';
 import { RESCUE_SESSIONS } from '../game/streak';
 import { today } from '../game/time';
 import { REVIEW_MAX_WORDS } from '../game/config';
-import { days, words } from '../lib/format';
+import { days, plural, words } from '../lib/format';
 import { Flame, Icon } from '../components/Icon';
 import { FogArt, IslandArt } from '../components/IslandArt';
 
@@ -43,7 +43,7 @@ export function MapScreen({ pack, st, due, onLesson, onReview, onTrial, onStory,
       {st.rescue?.day === day && (
         <div class="card banner rescue">
           <span class="banner-ico"><Flame size={24} /></span>
-          <div><b>Костёр гаснет!</b><div class="hint">Позанимайся ещё {RESCUE_SESSIONS - st.rescue.count} раз(а) сегодня, чтобы сохранить серию {days(st.streak.cur)}.</div></div>
+          <div><b>Костёр гаснет!</b><div class="hint">Позанимайся ещё {RESCUE_SESSIONS - st.rescue.count} {plural(RESCUE_SESSIONS - st.rescue.count, ['раз', 'раза', 'раз'])} сегодня, чтобы сохранить серию {days(st.streak.cur)}.</div></div>
         </div>
       )}
       <div class="card review">

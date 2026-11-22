@@ -1,6 +1,6 @@
-// Нормализация и проверка ответов: регистр, ё/е, пунктуация, артикли, 1 опечатка.
+// Нормализация и проверка ответов: регистр, ё/е, café=cafe, пунктуация, артикли, 1 опечатка.
 export const norm = (s: string) =>
-  s.toLowerCase().replace(/ё/g, 'е').replace(/[’`]/g, "'")
+  s.toLowerCase().replace(/ё/g, 'е').normalize('NFD').replace(/(?<=[a-z])\p{M}+/gu, '').normalize('NFC').replace(/[’`]/g, "'")
     .replace(/[^\p{L}\p{N}' ]+/gu, ' ').replace(/\s+/g, ' ').trim();
 
 const core = (s: string) => norm(s).replace(/^(a|an|the|to) /, '');

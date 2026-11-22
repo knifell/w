@@ -14,7 +14,8 @@ interface TgWebApp {
   BackButton?: { show(): void; hide(): void; onClick(cb: () => void): void; offClick(cb: () => void): void };
 }
 
-export const tg: TgWebApp | undefined = (window as any).Telegram?.WebApp?.initData !== undefined
+// Вне Telegram скрипт тоже создаёт WebApp, но с пустым initData — считаем, что Telegram нет.
+export const tg: TgWebApp | undefined = (window as any).Telegram?.WebApp?.initData
   ? (window as any).Telegram.WebApp
   : undefined;
 

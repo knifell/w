@@ -40,7 +40,7 @@ export function PairsView({ ex, onSubmit }: ViewProps<'pairs'>) {
         ))}</div>
         <div>{ex.right.map((i) => (
           <button class={cls(i, 'r')} disabled={done.has(i) || !!bad}
-            onClick={() => { haptic.tap(); setRight(i); tryMatch(left, i); }}>{ex.words[i].ru[0]}</button>
+            onClick={() => { haptic.tap(); setRight(i); tryMatch(left, i); }}>{ex.labels[i]}</button>
         ))}</div>
       </div>
     </div>

@@ -6,7 +6,10 @@ import { emptyState } from '../app/src/game/local';
 import { settleStreak, bumpStreak, liveStreak } from '../app/src/game/streak';
 import { commitUnlocks, islandState, unlockGap } from '../app/src/game/progress';
 import { checkTyped } from '../app/src/engine/check';
-import { buildLesson, buildReview } from '../app/src/engine/generators';
+import { buildLesson, buildReview, buildTrial, tokenize } from '../app/src/engine/generators';
+import { vocabOf, knownSentence } from '../app/src/engine/vocab';
+import { canBuy } from '../app/src/game/shop';
+import { ITEMS } from '../app/src/game/config';
 import type { LevelPack } from '../app/src/types';
 
 let fakeDay = 20000;
@@ -27,6 +30,9 @@ t('проверка ввода', () => {
   assert.equal(checkTyped('umbrela', ['umbrella']), 'typo');
   assert.equal(checkTyped('snw', ['snow']), 'wrong');
   assert.equal(checkTyped('', ['snow']), 'wrong');
+  assert.equal(checkTyped('cafe', ['café']), 'exact');
+  assert.equal(checkTyped('привет', ['привет']), 'exact');
+  assert.equal(checkTyped('мой', ['мои']), 'wrong'); // й не превращается в и
 });
 
 t('интервалы: бесплатно 11 дней до закрепления, Premium 7', () => {
@@ -114,6 +120,51 @@ t('генератор: сначала карточки новых слов, ка
   assert.equal(again.filter((e) => e.kind === 'learn').length, 0); // знакомые слова — без карточек
   const pool = pool0;
   assert.ok(buildReview(pool.slice(0, 12), pool, 1).length >= 12);
+});
+
+t('пары: подписи по-русски не повторяются, у каждой — одно подходящее слово', () => {
+  const packs = ['a1', 'a2', 'b1', 'b2'].map((l) => JSON.parse(readFileSync(`app/public/content/${l}.json`, 'utf8')) as LevelPack);
+  const all = packs.flatMap((p) => p.lessons.flatMap((l) => l.words));
+  for (const pk of packs) {
+    const pool = pk.lessons.flatMap((x) => x.words);
+    for (const l of pk.lessons) for (const seed of [1, 2, 3]) {
+      for (const e of [...buildLesson(l, pool, seed), ...buildReview(l.words, all, seed)]) {
+        if (e.kind !== 'pairs') continue;
+        assert.equal(new Set(e.labels).size, e.labels.length, l.id);
+        e.words.forEach((a, i) => e.words.forEach((b) => a !== b && assert.ok(!b.ru.includes(e.labels[i]), `${l.id}: ${a.en}/${b.en}`)));
+      }
+    }
+  }
+});
+
+t('ввод: синоним с тем же переводом засчитывается', () => {
+  const a1 = JSON.parse(readFileSync('app/public/content/a1.json', 'utf8')) as LevelPack;
+  const pool = a1.lessons.flatMap((l) => l.words);
+  const leg = pool.find((w) => w.en === 'foot')!;
+  const ex = buildTrial([leg], pool, 1);
+  assert.ok(ex[0].kind === 'type' && checkTyped('leg', ex[0].answers) === 'exact');
+});
+
+t('сборка предложения: без плиток-знаков и только из знакомых слов', () => {
+  assert.deepEqual(tokenize('Thank you! — You\'re welcome.'), ['Thank', 'you', "You're", 'welcome']);
+  const a1 = JSON.parse(readFileSync('app/public/content/a1.json', 'utf8')) as LevelPack;
+  const pool = a1.lessons.flatMap((l) => l.words);
+  let learned = [] as typeof pool;
+  for (const l of a1.lessons) {
+    const v = vocabOf([...learned, ...l.words]);
+    for (const seed of [1, 2]) for (const e of buildLesson(l, pool, seed, new Set(learned.map((w) => w.id)), v)) {
+      if (e.kind !== 'build') continue;
+      assert.ok(knownSentence(e.answer, v), `${l.id}: ${e.answer}`);
+      e.tokens.forEach((t) => assert.ok(knownSentence(t, v), `${l.id}: лишняя плитка ${t}`));
+    }
+    learned = [...learned, ...l.words];
+  }
+});
+
+t('лавка: масло не продаётся, когда фонарь полон', () => {
+  const s = emptyState();
+  s.coins = 1000; s.energy = 10;
+  assert.equal(canBuy(s, ITEMS.find((i) => i.id === 'oil')!), 'Фонарь и так полон');
 });
 
 console.log(`\n${n} проверок пройдено`);

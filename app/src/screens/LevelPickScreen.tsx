@@ -8,9 +8,10 @@ const INFO: Record<Level, { title: string; text: string }> = {
   B2: { title: 'Уверенно говорю', text: 'Спорю, обсуждаю работу, читаю новости' },
 };
 
-export function LevelPickScreen({ packs, current, onPick }: { packs: LevelPack[]; current: Level | null; onPick: (l: Level) => void }) {
+export function LevelPickScreen({ packs, current, onPick, onBack }: { packs: LevelPack[]; current: Level | null; onPick: (l: Level) => void; onBack?: () => void }) {
   return (
     <main class="pick">
+      {onBack && <button class="link back" onClick={onBack}><Icon name="back" size={20} />Назад</button>}
       <h1>Какой у тебя уровень?</h1>
       <p class="hint">Выбери сам. Потом короткий тест из 8 вопросов подскажет, подходит ли уровень. Решать всё равно тебе.</p>
       {packs.map((p) => {

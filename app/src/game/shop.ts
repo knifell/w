@@ -1,12 +1,14 @@
 import type { LocalState } from './local';
 import { ITEMS, type ShopItem } from './config';
 import { addEnergy } from './energy';
+import { ENERGY } from './config';
 
 export const activeMult = (s: LocalState, now = Date.now()) =>
   ITEMS.reduce((m, it) => (it.effect.type === 'boost' && (s.boosts[it.id] ?? 0) > now ? m * it.effect.xpMult : m), 1);
 
 export function canBuy(s: LocalState, it: ShopItem): string | null {
   if (it.freeOnly && s.premium) return 'С Premium энергия безлимитна';
+  if (it.effect.type === 'energy' && s.energy >= ENERGY.bonusCap) return 'Фонарь и так полон';
   if (s.coins < it.price) return 'Не хватает ракушек';
   if (it.effect.type === 'shield' && (s.inventory[it.id] ?? 0) >= it.effect.max) return `Максимум ${it.effect.max}`;
   return null;

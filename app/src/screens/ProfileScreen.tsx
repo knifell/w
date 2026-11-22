@@ -6,13 +6,15 @@ import { conqueredCount } from '../game/progress';
 import { tg } from '../tg/telegram';
 import { Flame, Icon } from '../components/Icon';
 import { Skipper } from '../components/Skipper';
+import { REFERRAL } from '../game/config';
 
 interface Props {
   st: LocalState; packs: LevelPack[];
   onLevel: (l: Level) => void; onPremium: () => void; onAbout: () => void; onRetest: () => void;
+  onInvite: () => void;
 }
 
-export function ProfileScreen({ st, packs, onLevel, onPremium, onAbout, onRetest }: Props) {
+export function ProfileScreen({ st, packs, onLevel, onPremium, onAbout, onRetest, onInvite }: Props) {
   const [sound, setSound] = useState(() => { try { return localStorage.getItem('sound') !== 'off'; } catch { return true; } });
   const mastered = Object.values(st.mem).filter((m) => m.s >= MASTER_STAGE).length;
   const canSwitch = st.premium || Object.keys(st.done).length < 3;
@@ -45,6 +47,13 @@ export function ProfileScreen({ st, packs, onLevel, onPremium, onAbout, onRetest
         </div>
         <div class="hint">{st.premium ? 'С Premium открыты все уровни.' : canSwitch ? 'Пока пройдено меньше 3 уроков, уровень можно сменить бесплатно.' : 'Сменить уровень можно с Premium.'}</div>
         {canSwitch && <button class="link" onClick={onRetest}>Выбрать уровень и пройти мини-тест</button>}
+      </section>
+
+      <section class="card invite">
+        <b><Icon name="gift" />Позвать друга</b>
+        <div class="hint">Друг получит {REFERRAL.friendCoins} ракушек на старте. Ты — {REFERRAL.inviterCoins} ракушек и уголь, когда он начнёт играть (до {REFERRAL.maxRewardedFriends} друзей).</div>
+        {st.refRewarded.length > 0 && <div class="hint">Уже приплыли друзей: {st.refRewarded.length}</div>}
+        <button class="btn small alt" onClick={onInvite}>Поделиться ссылкой</button>
       </section>
 
       <section class="card settings">

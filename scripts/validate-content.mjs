@@ -149,6 +149,20 @@ if (shop) {
     if (!str(it.name) || !str(it.desc) || !(it.price > 0)) err(shopF, `${it.id}: пустое name/desc или цена ≤ 0`);
     if (!['boost', 'shield', 'energy'].includes(it.effect?.type)) err(shopF, `${it.id}: неизвестный effect`);
   }
+  // покупки за Telegram Stars: только подписка и ракушки, целые цены от 1 звезды
+  const st = shop.stars;
+  if (!st?.premium || !Array.isArray(st.packs)) err(shopF, 'нет раздела stars (premium, packs)');
+  else {
+    const sids = new Set();
+    for (const x of [st.premium, ...st.packs]) {
+      if (!str(x.id) || sids.has(x.id)) err(shopF, `stars: пустой или повторный id "${x.id}"`);
+      sids.add(x.id);
+      if (!str(x.title) || !str(x.desc)) err(shopF, `stars ${x.id}: пустое title/desc`);
+      if (!Number.isInteger(x.stars) || x.stars < 1 || x.stars > 10000) err(shopF, `stars ${x.id}: цена должна быть целой, 1–10000`);
+    }
+    for (const x of st.packs) if (!Number.isInteger(x.coins) || x.coins < 1) err(shopF, `stars ${x.id}: coins должно быть > 0`);
+    if (!(st.premium.periodDays > 0)) err(shopF, 'stars premium: periodDays > 0');
+  }
 }
 const st = existsSync(stF) ? read(stF) : null;
 if (st) {

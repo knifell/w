@@ -1,0 +1,17 @@
+# Сервер покупок «Острова слов» (Cloudflare Workers, бесплатный тариф).
+name = "ostrov-slov-api"
+main = "src/index.ts"
+compatibility_date = "2026-01-01"
+
+# KV-хранилище покупок. id появится после: npx wrangler kv namespace create DB
+[[kv_namespaces]]
+binding = "DB"
+id = "ВСТАВЬ_ID_KV"
+
+[vars]
+# Адрес мини-приложения на Cloudflare Pages
+APP_URL = "https://ostrov-slov.pages.dev"
+
+# Секреты задаются командами (в файл их не писать!):
+#   npx wrangler secret put BOT_TOKEN
+#   npx wrangler secret put WEBHOOK_SECRET

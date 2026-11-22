@@ -656,3 +656,11 @@ section.card > b:first-child { margin-bottom: 0; }
 .streak-tip { display: flex; gap: 6px; align-items: center; }
 .next-actions { display: flex; flex-wrap: wrap; gap: 8px; }
 .next-actions .btn { flex: 1 1 140px; }
+
+/* покупки за звёзды, приглашение, всплывающие сообщения */
+.shop-sub { margin: 20px 0 8px; font-size: 18px; }
+.star-pack .badge { margin-left: 8px; font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: var(--gold-soft, #ffe39a); color: #6b4a00; }
+.btn.price.stars { background: var(--gold, #f2b530); color: #3b2a00; }
+.invite { display: grid; gap: 8px; }
+.invite b { display: flex; gap: 8px; align-items: center; }
+.app-toast { box-shadow: 0 8px 24px rgb(0 0 0 / .18); position: fixed; left: 16px; right: 16px; bottom: calc(96px + env(safe-area-inset-bottom, 0px)); z-index: 30; max-width: 488px; margin: 0 auto; }

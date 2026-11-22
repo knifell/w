@@ -7,7 +7,7 @@
     "content": "node scripts/build-content.mjs",
     "dev": "npm run content && vite app",
     "build": "npm run validate && npm run content && vite build app",
-    "typecheck": "tsc -p app --noEmit",
+    "typecheck": "tsc -p app --noEmit && tsc -p worker --noEmit",
     "test": "npm run -s content && esbuild tests/logic.test.ts --bundle --platform=node --format=esm --outfile=node_modules/.tmp/logic.mjs --log-level=warning && node node_modules/.tmp/logic.mjs"
   },
   "devDependencies": {

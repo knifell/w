@@ -5,11 +5,15 @@ import { days, words } from '../lib/format';
 import { Flame, Icon, Shell } from '../components/Icon';
 import { Skipper } from '../components/Skipper';
 import { StampMark } from '../components/Stamp';
+import { useEffect } from 'preact/hooks';
+import { haptic } from '../tg/telegram';
 
 export type ResultData = Reward & { accuracy: number; wrongWords: Word[]; kind: SessionKind };
 const TITLE: Record<SessionKind, string> = { lesson: 'Урок пройден!', review: 'Повторение готово!', trial: 'Испытание пройдено!' };
 
 export function ResultScreen({ result: r, onNext }: { result: ResultData; onNext: () => void }) {
+  // Вибрация: штамп — сильнее, обычный итог — короткий «успех».
+  useEffect(() => { if (r.stickers.length) haptic.reward(); else haptic.ok(); }, []);
   return (
     <main class="result">
       <Skipper mood={r.perfect ? 'happy' : 'proud'} size={170} />

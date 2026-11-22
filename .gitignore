@@ -4,3 +4,4 @@ app/public/content/
 .env
 .env.*
 supabase/.temp/
+!.env.example

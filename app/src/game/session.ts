@@ -21,6 +21,7 @@ export interface Reward {
 /** Ежедневная «уборка» при запуске. */
 export function settleAll(packs: LevelPack[]): [LocalState, Sticker[]] {
   return update((s) => {
+    s.premium = Math.max(s.premiumUntil, s.devPremiumUntil) > nowMs(); // подписка закончилась — Premium выключается
     settleEnergy(s);
     settleStreak(s, today());
     commitUnlocks(s, packs);

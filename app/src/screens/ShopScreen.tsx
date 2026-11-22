@@ -1,12 +1,12 @@
 import { useState } from 'preact/hooks';
 import type { LocalState } from '../game/local';
-import { ITEMS } from '../game/config';
+import { ITEMS, STAR_PACKS } from '../game/config';
 import { canBuy } from '../game/shop';
 import { haptic } from '../tg/telegram';
 import { Icon, Shell } from '../components/Icon';
 import { ITEM_ICON } from '../components/Stamp';
 
-export function ShopScreen({ st, onBuy, onPremium }: { st: LocalState; onBuy: (id: string) => string | null; onPremium: () => void }) {
+export function ShopScreen({ st, onBuy, onBuyStars, onPremium }: { st: LocalState; onBuy: (id: string) => string | null; onBuyStars: (id: string) => void; onPremium: () => void }) {
   const [msg, setMsg] = useState('');
   return (
     <main>
@@ -28,6 +28,17 @@ export function ShopScreen({ st, onBuy, onPremium }: { st: LocalState; onBuy: (i
         );
       })}
       {msg && <div class={'toast' + (msg.endsWith('готово!') ? '' : ' err')} role="status"><Icon name={msg.endsWith('готово!') ? 'check' : 'info'} size={20} />{msg}</div>}
+      <h2 class="shop-sub">Ракушки за звёзды</h2>
+      {STAR_PACKS.map((p) => (
+        <div class="card item star-pack" key={p.id}>
+          <span class="item-ico shells"><Shell size={30} /></span>
+          <div class="item-txt"><b>{p.title}{p.badge && <span class="badge">{p.badge}</span>}</b><div class="hint">{p.desc}</div></div>
+          <button class="btn small price stars" aria-label={`Купить за ${p.stars} звёзд`} onClick={() => { haptic.tap(); onBuyStars(p.id); }}>
+            <Icon name="star" size={18} />{p.stars}
+          </button>
+        </div>
+      ))}
+      <div class="foot-note hint"><Icon name="info" size={20} />Оплата через Telegram Stars. Штампы и острова за звёзды не продаются — только за успехи в учёбе.</div>
       <div class="foot-note hint"><Icon name="gift" size={20} />Раз в неделю Шкипер дарит один уголь бесплатно (если у тебя меньше двух).</div>
       {!st.premium && <button class="btn gold" onClick={onPremium}><Icon name="crown" size={20} />Premium: ×2 ракушки и безлимитная энергия</button>}
     </main>

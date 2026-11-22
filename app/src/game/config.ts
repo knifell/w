@@ -13,7 +13,14 @@ export interface Sticker {
   cond: { type: string; n: number }; premium?: boolean; hidden?: boolean;
 }
 
+export interface StarPack { id: string; title: string; desc: string; coins: number; stars: number; badge?: string }
+export interface StarPremium { id: string; title: string; desc: string; stars: number; periodDays: number }
+
 export const ENERGY = shop.energy;
+/** Покупки за Telegram Stars: подписка и наборы ракушек. Штампы и острова за звёзды не продаются. */
+export const STAR_PREMIUM = shop.stars.premium as StarPremium;
+export const STAR_PACKS = shop.stars.packs as StarPack[];
+export const REFERRAL = shop.stars.referral;
 export const REWARDS = shop.rewards;
 export const ITEMS = shop.items as ShopItem[];
 export const ALBUMS = stickers.albums as { id: string; name: string; premium?: boolean }[];

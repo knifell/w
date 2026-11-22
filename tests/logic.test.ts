@@ -10,6 +10,10 @@ import { settleStreak, bumpStreak, liveStreak } from '../app/src/game/streak';
 import { commitUnlocks, islandState, unlockGap, nextSteps } from '../app/src/game/progress';
 import { refundEnergy, spendEnergy } from '../app/src/game/energy';
 import { nowMs, resetClock, setTrustedStart } from '../app/src/game/clock';
+import { applyStatus, applyFriendGift } from '../app/src/game/purchases';
+import { STAR_PACKS, REFERRAL } from '../app/src/game/config';
+import { signInitData, verifyInitData } from '../worker/src/auth';
+import worker, { catalogItem, handleUpdate, handleStatus, handleReferral, type Env } from '../worker/src/index';
 import { pack as packState, unpack, pushState, pullState, chooseOnStart, type KV } from '../app/src/api/cloud';
 import { ENERGY } from '../app/src/game/config';
 import { checkTyped } from '../app/src/engine/check';
@@ -265,6 +269,97 @@ await t('облако Telegram: прогресс целиком влезает �
   const fresh = { ...back!, updatedAt: 999 };
   assert.equal(chooseOnStart(fresh, back), 'local');           // на телефоне новее
   assert.equal(chooseOnStart(fresh, null), 'local');
+});
+
+await t('покупки: ракушки начисляются один раз, возврат снимает, подписка и друзья', () => {
+  const s = emptyState();
+  const pack = STAR_PACKS[0];
+  const st = { purchases: [{ id: 'c1', item: pack.id, at: 1 }], premiumUntil: 0, referrals: [] };
+  assert.equal(applyStatus(s, st).coins, pack.coins);
+  assert.equal(applyStatus(s, st).coins, 0);                         // повтор — без двойного начисления
+  assert.equal(s.coins, pack.coins);
+  s.coins -= 10;                                                     // часть потрачена
+  applyStatus(s, { ...st, purchases: [{ id: 'c1', item: pack.id, at: 1, refunded: true }] });
+  assert.equal(s.coins, 0);                                          // возврат: снято, но не ниже нуля
+  applyStatus(s, { purchases: [], premiumUntil: 5_000_000_000_000, referrals: [] });
+  assert.equal(s.premiumUntil, 5_000_000_000_000);
+  const friends = Array.from({ length: REFERRAL.maxRewardedFriends + 3 }, (_, i) => ({ id: String(i), at: 1 }));
+  const a = applyStatus(s, { purchases: [], premiumUntil: 0, referrals: friends });
+  assert.equal(a.friends, REFERRAL.maxRewardedFriends);              // бонус не больше лимита друзей
+  const g = emptyState();
+  assert.equal(applyFriendGift(g), REFERRAL.friendCoins);
+  assert.equal(applyFriendGift(g), 0);                               // подарок новичку — один раз
+});
+
+const BOT = '123456:TEST-token';
+function mockEnv() {
+  const kv = new Map<string, string>();
+  const calls: { method: string; body: any }[] = [];
+  const env: Env = { DB: { get: async (k) => kv.get(k) ?? null, put: async (k, v) => { kv.set(k, v); } }, BOT_TOKEN: BOT, WEBHOOK_SECRET: 'sec', APP_URL: 'https://x.pages.dev' };
+  globalThis.fetch = (async (url: string, init: any) => {
+    const method = String(url).split('/').pop()!;
+    const body = JSON.parse(init.body);
+    calls.push({ method, body });
+    return new Response(JSON.stringify({ ok: true, result: method === 'createInvoiceLink' ? 'https://t.me/$invoice' : true }));
+  }) as any;
+  return { env, kv, calls };
+}
+
+await t('сервер: подпись Telegram проверяется, поддельные и старые данные отклоняются', async () => {
+  const now = Math.floor(Date.now() / 1000);
+  const init = await signInitData({ auth_date: String(now), user: JSON.stringify({ id: 42, first_name: 'A' }) }, BOT);
+  assert.equal((await verifyInitData(init, BOT, now))?.id, 42);
+  assert.equal(await verifyInitData(init, '999:other', now), null);                  // другой бот
+  assert.equal(await verifyInitData(init.replace('42', '43'), BOT, now), null);       // подмена id
+  assert.equal(await verifyInitData(init, BOT, now + 2 * 86400), null);               // устарело
+});
+
+await t('сервер: цена только из каталога, платёж записывается без дублей, возврат', async () => {
+  const { env, kv, calls } = mockEnv();
+  const now = Math.floor(Date.now() / 1000);
+  const init = await signInitData({ auth_date: String(now), user: JSON.stringify({ id: 7 }) }, BOT);
+  const pack = STAR_PACKS[1];
+  const res = await worker.fetch(new Request('https://w/api/invoice', { method: 'POST', body: JSON.stringify({ initData: init, item: pack.id, stars: 1 }) }), env);
+  assert.equal((await res.json() as any).link, 'https://t.me/$invoice');
+  const inv = calls.find((c) => c.method === 'createInvoiceLink')!.body;
+  assert.equal(inv.prices[0].amount, pack.stars);                    // клиентская «цена» 1 проигнорирована
+  assert.equal(inv.currency, 'XTR');
+  const bad = await worker.fetch(new Request('https://w/api/status', { method: 'POST', body: JSON.stringify({ initData: 'user=%7B%22id%22%3A7%7D&hash=00' }) }), env);
+  assert.equal(bad.status, 401);
+  // проверка перед оплатой: неверная сумма отклоняется
+  const payload = JSON.stringify({ u: 7, i: pack.id });
+  await handleUpdate(env, { pre_checkout_query: { id: 'q1', from: { id: 7 }, currency: 'XTR', total_amount: 1, invoice_payload: payload } });
+  assert.equal(calls.at(-1)!.body.ok, false);
+  await handleUpdate(env, { pre_checkout_query: { id: 'q2', from: { id: 7 }, currency: 'XTR', total_amount: pack.stars, invoice_payload: payload } });
+  assert.equal(calls.at(-1)!.body.ok, true);
+  const paid = { message: { chat: { id: 7 }, successful_payment: { currency: 'XTR', total_amount: pack.stars, invoice_payload: payload, telegram_payment_charge_id: 'ch1' } } };
+  await handleUpdate(env, paid);
+  await handleUpdate(env, paid);                                     // Telegram прислал повторно
+  let st = await handleStatus(env, 7);
+  assert.equal(st.purchases.length, 1);
+  // подписка
+  const sub = { message: { chat: { id: 7 }, successful_payment: { currency: 'XTR', total_amount: catalogItem('premium_month')!.stars, invoice_payload: JSON.stringify({ u: 7, i: 'premium_month' }), telegram_payment_charge_id: 'ch2', subscription_expiration_date: now + 30 * 86400 } } };
+  await handleUpdate(env, sub);
+  st = await handleStatus(env, 7);
+  assert.equal(st.premiumUntil, (now + 30 * 86400) * 1000);
+  await handleUpdate(env, { message: { chat: { id: 7 }, refunded_payment: { invoice_payload: JSON.stringify({ u: 7, i: 'premium_month' }), telegram_payment_charge_id: 'ch2' } } });
+  st = await handleStatus(env, 7);
+  assert.ok(st.premiumUntil <= Date.now());
+  assert.ok(st.purchases.find((p) => p.id === 'ch2')!.refunded);
+  // вебхук без секрета — отказ
+  const hook = await worker.fetch(new Request('https://w/bot', { method: 'POST', body: '{}' }), env);
+  assert.equal(hook.status, 403);
+  assert.ok(kv.size > 0);
+});
+
+await t('сервер: бонус за друга — только новичку и не за самого себя', async () => {
+  const { env } = mockEnv();
+  assert.equal((await handleReferral(env, 5, 'ref_5')).ok, false);   // сам себя
+  assert.equal((await handleReferral(env, 6, 'ref_5')).ok, true);    // новичок
+  assert.equal((await handleReferral(env, 6, 'ref_5')).ok, false);   // второй раз
+  await handleStatus(env, 8);                                        // игрок 8 уже играл
+  assert.equal((await handleReferral(env, 8, 'ref_5')).ok, false);
+  assert.equal((await handleStatus(env, 5)).referrals.length, 1);
 });
 
 console.log(`\n${n} проверок пройдено`);

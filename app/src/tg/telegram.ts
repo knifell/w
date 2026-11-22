@@ -5,13 +5,15 @@ type HapticStyle = 'light' | 'medium' | 'heavy';
 type Notify = 'error' | 'success' | 'warning';
 interface TgWebApp {
   initData: string;
-  initDataUnsafe: { user?: { id: number; first_name: string; language_code?: string }; auth_date?: number };
+  initDataUnsafe: { user?: { id: number; first_name: string; language_code?: string }; auth_date?: number; start_param?: string };
   colorScheme: 'light' | 'dark';
   themeParams: Record<string, string>;
   ready(): void;
   expand(): void;
   onEvent(e: string, cb: () => void): void;
-  HapticFeedback?: { impactOccurred(s: HapticStyle): void; notificationOccurred(t: Notify): void };
+  HapticFeedback?: { impactOccurred(s: HapticStyle): void; notificationOccurred(t: Notify): void; selectionChanged?(): void };
+  openInvoice?(url: string, cb: (status: 'paid' | 'cancelled' | 'failed' | 'pending') => void): void;
+  openTelegramLink?(url: string): void;
   showConfirm?(msg: string, cb: (ok: boolean) => void): void;
   BackButton?: { show(): void; hide(): void; onClick(cb: () => void): void; offClick(cb: () => void): void };
 }
@@ -45,6 +47,8 @@ export const haptic = {
   tap: () => tg?.HapticFeedback?.impactOccurred('light'),
   ok: () => tg?.HapticFeedback?.notificationOccurred('success'),
   bad: () => tg?.HapticFeedback?.notificationOccurred('error'),
+  select: () => tg?.HapticFeedback?.selectionChanged?.(),
+  reward: () => tg?.HapticFeedback?.impactOccurred('heavy'),
 };
 
 export const ask = (msg: string) =>

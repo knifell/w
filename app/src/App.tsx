@@ -2,10 +2,16 @@ import { useEffect, useMemo, useState } from 'preact/hooks';
 import type { ContentIndex, Island, Lesson, Level, LevelPack, Word } from './types';
 import { loadIndex, loadLevel } from './api/content';
 import { startCloudSync } from './api/cloud';
+import { buy, claimReferral, fetchStatus, paymentsReady, shareInvite, startParam, waitForStatus } from './api/payments';
+import { applyFriendGift, applyStatus, type ServerStatus } from './game/purchases';
+import { hasProgress } from './game/local';
+import { STAR_PREMIUM } from './game/config';
+import { nowMs } from './game/clock';
+import { haptic } from './tg/telegram';
 import { emptyState, loadState, saveState, update, type LocalState } from './game/local';
 import { recordSession, settleAll, type SessionKind } from './game/session';
 import { refundEnergy, spendEnergy } from './game/energy';
-import { buy } from './game/shop';
+import { buy as buyItem } from './game/shop';
 import { isDue } from './game/srs';
 import { today } from './game/time';
 import { REVIEW_MAX_WORDS } from './game/config';
@@ -42,6 +48,8 @@ export function App() {
   const [r, go] = useState<Route>(() => (st.level ? { s: 'tab', tab: 'map' } : { s: 'onboarding' }));
   const [story, setStory] = useState<{ isl: Island; then?: () => void } | null>(null);
   const [energySheet, setEnergySheet] = useState(false);
+  const [toast, setToast] = useState<{ text: string; err?: boolean } | null>(null);
+  useEffect(() => { if (!toast) return; const t = setTimeout(() => setToast(null), 3500); return () => clearTimeout(t); }, [toast]);
 
   // Через полночь или после сна вкладки пересчитываем энергию, костёр и открытие островов.
   useEffect(() => {
@@ -62,8 +70,30 @@ export function App() {
       const s = settleAll(p)[0];
       setSt(s);
       if (fromCloud && s.level) go({ s: 'tab', tab: 'map' });
+      void syncPurchases(p);
     }, (e) => setError(String(e)));
   }, []);
+
+  /** Подарок по ссылке друга (до первого запроса статуса!) и начисление подтверждённых покупок. */
+  async function syncPurchases(p: LevelPack[]) {
+    if (!paymentsReady()) return;
+    const ref = startParam();
+    if (ref.startsWith('ref_') && !hasProgress(loadState()) && !loadState().refBonusTaken && (await claimReferral(ref))) {
+      const [, got] = update(applyFriendGift);
+      if (got) setToast({ text: `Подарок от друга: +${got} ракушек!` });
+    }
+    const status = await fetchStatus();
+    if (status) applyServer(status, p);
+  }
+  function applyServer(status: ServerStatus, p: LevelPack[]) {
+    const [, a] = update((s) => applyStatus(s, status));
+    setSt(settleAll(p)[0]);
+    if (a.coins > 0 || a.friends > 0) {
+      haptic.reward();
+      setToast({ text: a.friends > 0 ? `Друзья приплыли: +${a.friends}! Начислено ${a.coins} ракушек.` : `+${a.coins} ракушек!` });
+    }
+    return a;
+  }
 
   const allWords = useMemo(() => new Map((packs ?? []).flatMap((p) => p.lessons.flatMap((l) => l.words)).map((w) => [w.id, w])), [packs]);
 
@@ -90,6 +120,23 @@ export function App() {
     const learned = Object.keys(st.mem).map((id) => allWords.get(id)).filter((w): w is Word => !!w);
     return vocabOf([...lower, ...learned, ...extra]);
   };
+  const buyStars = async (id: string) => {
+    const res = await buy(id);
+    if (res === 'unavailable') return setToast({ text: 'Покупки за звёзды заработают после запуска в Telegram.', err: true });
+    if (res === 'cancelled') return;
+    if (res === 'failed') return setToast({ text: 'Не получилось открыть оплату. Попробуй ещё раз.', err: true });
+    const isPremium = id === STAR_PREMIUM.id;
+    const status = await waitForStatus((x) => isPremium
+      ? x.premiumUntil > nowMs()
+      : x.purchases.some((p) => p.item === id && !p.refunded && !loadState().claimed[p.id]));
+    const got = status ? applyServer(status, packs) : null;
+    if (isPremium && got && got.premiumUntil > nowMs()) { haptic.reward(); setToast({ text: 'Добро пожаловать в клуб капитанов!' }); }
+    else if (!got || (!isPremium && got.coins <= 0)) setToast({ text: 'Платёж обрабатывается — покупка появится в течение минуты.' });
+  };
+  const invite = () => {
+    if (!shareInvite('Учу английский в игре «Остров слов» — присоединяйся, получишь подарок!'))
+      setToast({ text: 'Приглашения заработают после запуска в Telegram.', err: true });
+  };
   const startReview = (words: Word[]) => go({ s: 'session', kind: 'review', build: () => buildReview(words, [...allWords.values()]) });
 
   const startLesson = (l: Lesson) => {
@@ -110,8 +157,10 @@ export function App() {
     go({ s: 'result', result: { ...reward, accuracy: o.accuracy, wrongWords: o.wrong, kind } });
   };
 
+  const toastEl = toast && <div class={'toast app-toast' + (toast.err ? ' err' : '')} role="status">{toast.text}</div>;
+
   switch (r.s) {
-    case 'onboarding': return <OnboardingScreen onNext={() => go({ s: 'pick' })} />;
+    case 'onboarding': return <><OnboardingScreen onNext={() => go({ s: 'pick' })} />{toastEl}</>;
     case 'pick': return <LevelPickScreen packs={packs} current={st.level} onPick={(level) => go({ s: 'minitest', level })}
       onBack={st.level ? () => toMap() : undefined} />;
     case 'minitest':
@@ -122,8 +171,10 @@ export function App() {
     case 'about': return <AboutScreen index={index} onBack={() => go({ s: 'tab', tab: 'profile' })}
       onReset={() => { saveState(emptyState()); setSt(loadState()); go({ s: 'onboarding' }); }} />;
     case 'premium':
-      return <PremiumScreen isPremium={st.premium} onBack={() => go({ s: 'tab', tab: r.from })}
-        onDevToggle={() => { mutate((s) => { s.premium = !s.premium; }); setSt(settleAll(packs)[0]); }} />;
+      return <><PremiumScreen isPremium={st.premium} until={st.premiumUntil} onBack={() => go({ s: 'tab', tab: r.from })}
+        onSubscribe={() => buyStars(STAR_PREMIUM.id)}
+        onDevToggle={() => { mutate((s) => { s.devPremiumUntil = s.premium ? 0 : nowMs() + 365 * 86400000; }); setSt(settleAll(packs)[0]); }} />
+        {toastEl}</>;
   }
 
   const tab = r.tab;
@@ -135,12 +186,13 @@ export function App() {
           onStory={(isl) => openStory(isl)} onRetest={() => go({ s: 'pick' })} onPremium={() => openPremium()} />
       )}
       {tab === 'passport' && <PassportScreen st={st} />}
-      {tab === 'shop' && <ShopScreen st={st} onBuy={(id) => mutate((s) => buy(s, id))} onPremium={() => openPremium()} />}
+      {tab === 'shop' && <ShopScreen st={st} onBuy={(id) => mutate((s) => buyItem(s, id))} onBuyStars={buyStars} onPremium={() => openPremium()} />}
       {tab === 'profile' && (
         <ProfileScreen st={st} packs={packs} onLevel={(l) => setLevel(l)} onPremium={() => openPremium()}
-          onAbout={() => go({ s: 'about' })} onRetest={() => go({ s: 'pick' })} />
+          onAbout={() => go({ s: 'about' })} onRetest={() => go({ s: 'pick' })} onInvite={invite} />
       )}
-      <TabBar tab={tab} onTab={(t) => go({ s: 'tab', tab: t })} />
+      {toastEl}
+      <TabBar tab={tab} onTab={(t) => { haptic.select(); go({ s: 'tab', tab: t }); }} />
       {story && <StorySheet island={story.isl} onClose={() => setStory(null)} onGo={() => { setStory(null); story.then?.(); }} />}
       {energySheet && (
         <EnergySheet st={st} onClose={() => setEnergySheet(false)}

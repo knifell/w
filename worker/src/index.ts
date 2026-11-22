@@ -24,7 +24,8 @@ interface StoredPurchase { id: string; item: string; at: number; stars: number; 
 
 const PREMIUM = shop.stars.premium;
 const PACKS = shop.stars.packs;
-const MAX_FRIENDS_STORED = 50;
+const REF = shop.stars.referral;
+const utcDay = (ms = Date.now()) => Math.floor(ms / 86400000);
 
 /** Товар из каталога: цена и описание берутся только отсюда, клиенту не доверяем. */
 export function catalogItem(id: string) {
@@ -65,8 +66,26 @@ async function markSeen(env: Env, uid: number) {
   if (!(await env.DB.get(`seen:${uid}`))) await env.DB.put(`seen:${uid}`, String(Date.now()));
 }
 
+/** Друг засчитывается пригласившему, только когда позанимался в REF.friendActiveDays разных дней. */
+async function trackFriend(env: Env, uid: number) {
+  const inviter = await env.DB.get(`refby:${uid}`);
+  if (!inviter || (await env.DB.get(`refq:${uid}`))) return;
+  const days = await readJson<number[]>(`rday:${uid}`, env.DB, []);
+  const today = utcDay();
+  if (days.includes(today)) return;
+  days.push(today);
+  if (days.length < REF.friendActiveDays) { await env.DB.put(`rday:${uid}`, JSON.stringify(days)); return; }
+  await env.DB.put(`refq:${uid}`, '1');
+  const list = await readJson<{ id: string; at: number }[]>(`refs:${inviter}`, env.DB, []);
+  if (list.length < REF.maxRewardedFriends && !list.some((x) => x.id === String(uid))) {
+    list.push({ id: String(uid), at: Date.now() });
+    await env.DB.put(`refs:${inviter}`, JSON.stringify(list));
+  }
+}
+
 export async function handleStatus(env: Env, uid: number) {
   await markSeen(env, uid);
+  await trackFriend(env, uid);
   const purchases = await readJson<StoredPurchase[]>(`pays:${uid}`, env.DB, []);
   const premiumUntil = Number(await env.DB.get(`prem:${uid}`)) || 0;
   const referrals = await readJson<{ id: string; at: number }[]>(`refs:${uid}`, env.DB, []);
@@ -95,11 +114,8 @@ export async function handleReferral(env: Env, uid: number, ref: string) {
   if (!inviter || inviter === String(uid)) return { ok: false };
   if (await env.DB.get(`seen:${uid}`)) return { ok: false }; // уже играл раньше — не новичок
   await env.DB.put(`seen:${uid}`, String(Date.now()));
-  const list = await readJson<{ id: string; at: number }[]>(`refs:${inviter}`, env.DB, []);
-  if (!list.some((x) => x.id === String(uid))) {
-    list.push({ id: String(uid), at: Date.now() });
-    await env.DB.put(`refs:${inviter}`, JSON.stringify(list.slice(-MAX_FRIENDS_STORED)));
-  }
+  await env.DB.put(`refby:${uid}`, inviter);                 // пригласившему — позже, когда друг позанимается 2 дня
+  await env.DB.put(`rday:${uid}`, JSON.stringify([utcDay()]));
   return { ok: true };
 }
 

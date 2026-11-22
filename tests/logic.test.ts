@@ -65,7 +65,7 @@ await t('повтор в тот же день не ускоряет', () => {
   assert.equal(m.s, 0);
 });
 
-await t('костёр: уголь спасает, без угля — спасение за 2 занятия', () => {
+await t('костёр: пропуск спасает только уголь, без угля серия сгорает', () => {
   const s = emptyState();
   const noGift = (d: number) => { s.emberWeek = Math.floor((d + 3) / 7); }; // отключаем недельный подарок
   bumpStreak(s, 100); bumpStreak(s, 101);
@@ -77,12 +77,15 @@ await t('костёр: уголь спасает, без угля — спасе
   bumpStreak(s, 103);
   assert.equal(s.streak.cur, 3);
   noGift(105); settleStreak(s, 105); // пропущен 104, угля нет
-  assert.ok(s.rescue);
-  assert.equal(bumpStreak(s, 105), false);
-  assert.equal(bumpStreak(s, 105), true);
-  assert.equal(s.streak.cur, 4);
-  noGift(108); settleStreak(s, 108); // пропущено 2 дня
   assert.equal(s.streak.cur, 0);
+  assert.equal(liveStreak(s, 105), 0);
+  assert.equal(bumpStreak(s, 105), true);
+  assert.equal(s.streak.cur, 1);                    // начинается заново
+  assert.equal(bumpStreak(s, 105), false);          // второе занятие в тот же день не растит серию
+  s.inventory.ember = 2;
+  noGift(108); settleStreak(s, 108);                // пропущено 2 дня — ушло 2 угля
+  assert.equal(s.streak.cur, 1);
+  assert.equal(s.inventory.ember, 0);
   const g = emptyState();
   settleStreak(g, 200);
   assert.equal(g.inventory.ember, 1); // недельный подарок
@@ -379,7 +382,17 @@ await t('сервер: бонус за друга — только новичк�
   assert.equal((await handleReferral(env, 6, 'ref_5')).ok, false);   // второй раз
   await handleStatus(env, 8);                                        // игрок 8 уже играл
   assert.equal((await handleReferral(env, 8, 'ref_5')).ok, false);
+  await handleStatus(env, 6); await handleStatus(env, 6);            // друг зашёл, но только в один день
+  assert.equal((await handleStatus(env, 5)).referrals.length, 0);    // пригласившему пока ничего
+  fakeDay += 1;
+  await handleStatus(env, 6);                                        // второй день занятий
   assert.equal((await handleStatus(env, 5)).referrals.length, 1);
+  // не больше 5 друзей, даже если пригласить 20 «аккаунтов»
+  for (let id = 100; id < 120; id++) { await handleReferral(env, id, 'ref_5'); await handleStatus(env, id); }
+  fakeDay += 1;
+  for (let id = 100; id < 120; id++) await handleStatus(env, id);
+  assert.equal((await handleStatus(env, 5)).referrals.length, REFERRAL.maxRewardedFriends);
+  fakeDay -= 2;
 });
 
 await t('облако: не висит без ответа, записи не перемешиваются, последняя версия доходит', async () => {

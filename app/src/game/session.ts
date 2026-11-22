@@ -4,7 +4,7 @@ import type { LevelPack } from '../types';
 import { update, type LocalState } from './local';
 import { REWARDS, type Sticker } from './config';
 import { applyAnswer } from './srs';
-import { bumpStreak, settleStreak, RESCUE_SESSIONS } from './streak';
+import { bumpStreak, settleStreak } from './streak';
 import { activeMult } from './shop';
 import { awardStickers } from './stickers';
 import { commitUnlocks } from './progress';
@@ -15,7 +15,7 @@ export type SessionKind = 'lesson' | 'review' | 'trial';
 export interface SessionResult { kind: SessionKind; lessonId?: string; accuracy: number; seen: string[]; wrong: string[] }
 export interface Reward {
   xp: number; coins: number; mult: number; perfect: boolean; grown: number;
-  streak: number; streakUp: boolean; rescueLeft: number; stickers: Sticker[]; capped: boolean;
+  streak: number; streakUp: boolean; stickers: Sticker[]; capped: boolean;
 }
 
 /** Ежедневная «уборка» при запуске. */
@@ -63,7 +63,6 @@ export function recordSession(res: SessionResult, packs: LevelPack[]): Reward {
     const streakUp = bumpStreak(s, day);
     commitUnlocks(s, packs);
     const stickers = awardStickers(s);
-    const rescueLeft = s.rescue?.day === day ? RESCUE_SESSIONS - s.rescue.count : 0;
-    return { xp, coins, mult, perfect, grown, streak: s.streak.cur, streakUp, rescueLeft, stickers, capped };
+    return { xp, coins, mult, perfect, grown, streak: s.streak.cur, streakUp, stickers, capped };
   })[1];
 }

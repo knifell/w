@@ -31,7 +31,6 @@ export function ResultScreen({ result: r, onNext }: { result: ResultData; onNext
         </div>
       ))}
       {r.streakUp && <div class="card event"><span class="event-ico fire"><Flame size={26} /></span><b>Костёр горит: {days(r.streak)} подряд</b></div>}
-      {r.rescueLeft > 0 && <div class="card event"><span class="event-ico fire"><Flame size={26} /></span><b>Ещё {r.rescueLeft} занятие — и костёр спасён!</b></div>}
       {r.grown > 0 && <div class="card event"><span class="event-ico"><Icon name="anchor" /></span><b>Закрепляются: {words(r.grown)}</b></div>}
       {r.wrongWords.length > 0 && (
         <div class="card result-list">

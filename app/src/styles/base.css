@@ -189,7 +189,6 @@ b { font-weight: 700; }
   background: var(--sea-tint); color: var(--sea-text);
 }
 .banner .hint { margin-top: 2px; }
-.rescue .banner-ico { background: color-mix(in srgb, var(--fire) 16%, var(--surface)); }
 
 /* ---------- карта ---------- */
 .review { display: flex; align-items: center; gap: 12px; }

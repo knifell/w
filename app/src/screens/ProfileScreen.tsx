@@ -51,7 +51,7 @@ export function ProfileScreen({ st, packs, onLevel, onPremium, onAbout, onRetest
 
       <section class="card invite">
         <b><Icon name="gift" />Позвать друга</b>
-        <div class="hint">Друг получит {REFERRAL.friendCoins} ракушек на старте. Ты — {REFERRAL.inviterCoins} ракушек и уголь, когда он начнёт играть (до {REFERRAL.maxRewardedFriends} друзей).</div>
+        <div class="hint">Друг получит {REFERRAL.friendCoins} ракушек на старте. Ты — {REFERRAL.inviterCoins} ракушек и уголь, когда он позанимается {REFERRAL.friendActiveDays} разных дня (до {REFERRAL.maxRewardedFriends} друзей).</div>
         {st.refRewarded.length > 0 && <div class="hint">Уже приплыли друзей: {st.refRewarded.length}</div>}
         <button class="btn small alt" onClick={onInvite}>Поделиться ссылкой</button>
       </section>

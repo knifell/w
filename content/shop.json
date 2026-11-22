@@ -99,7 +99,8 @@
       "friendCoins": 150,
       "inviterCoins": 150,
       "inviterEmber": 1,
-      "maxRewardedFriends": 10
+      "maxRewardedFriends": 5,
+      "friendActiveDays": 2
     }
   }
 }

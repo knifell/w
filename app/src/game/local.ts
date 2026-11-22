@@ -17,7 +17,6 @@ export interface LocalState {
   done: Record<string, { best: number; at: number }>;
   mem: Record<string, WordMem>;
   streak: { cur: number; best: number; last: number };
-  rescue: { day: number; count: number } | null; // спасение костра в течение дня
   emberWeek: number;
   stickers: Record<string, number>;
   counters: Record<string, number>;        // lessons, perfect, reviews, trials, night, early
@@ -38,7 +37,7 @@ const KEY = 'os.v3';
 export const emptyState = (): LocalState => ({
   level: null, onboarded: false, premium: false, xp: 0, coins: 0,
   energy: ENERGY.max, energyAt: nowMs(), inventory: {}, boosts: {}, done: {}, mem: {},
-  streak: { cur: 0, best: 0, last: 0 }, rescue: null, emberWeek: 0, stickers: {}, counters: {},
+  streak: { cur: 0, best: 0, last: 0 }, emberWeek: 0, stickers: {}, counters: {},
   trialsToday: { day: 0, n: 0 }, unlocks: {}, storySeen: [], reports: [], typos: {}, updatedAt: 0,
   premiumUntil: 0, devPremiumUntil: 0, claimed: {}, refRewarded: [], refBonusTaken: false,
 });

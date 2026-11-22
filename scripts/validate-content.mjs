@@ -149,6 +149,9 @@ if (shop) {
     }
     for (const x of st.packs) if (!Number.isInteger(x.coins) || x.coins < 1) err(shopF, `stars ${x.id}: coins должно быть > 0`);
     if (!(st.premium.periodDays > 0)) err(shopF, 'stars premium: periodDays > 0');
+    const r = st.referral;
+    if (!r || !(r.maxRewardedFriends > 0 && r.maxRewardedFriends <= 10) || !(r.friendActiveDays >= 2))
+      err(shopF, 'stars referral: maxRewardedFriends 1–10, friendActiveDays ≥ 2 (защита от накрутки)');
   }
 }
 const st = existsSync(stF) ? read(stF) : null;

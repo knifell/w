@@ -1,7 +1,6 @@
 import type { Island, Lesson, LevelPack, Word } from '../types';
 import type { LocalState } from '../game/local';
 import { islandState, lessonOpen, nextSteps, type IslandState } from '../game/progress';
-import { RESCUE_SESSIONS } from '../game/streak';
 import { today } from '../game/time';
 import { REVIEW_MAX_WORDS } from '../game/config';
 import { days, plural, words } from '../lib/format';
@@ -43,12 +42,6 @@ export function MapScreen({ pack, st, due, onLesson, onReview, onTrial, onStory,
 
   return (
     <main class="map">
-      {st.rescue?.day === day && (
-        <div class="card banner rescue">
-          <span class="banner-ico"><Flame size={24} /></span>
-          <div><b>Костёр гаснет!</b><div class="hint">Позанимайся ещё {RESCUE_SESSIONS - st.rescue.count} {plural(RESCUE_SESSIONS - st.rescue.count, ['раз', 'раза', 'раз'])} сегодня, чтобы сохранить серию {days(st.streak.cur)}.</div></div>
-        </div>
-      )}
       <div class="card review">
         <span class="banner-ico"><Icon name="refresh" /></span>
         {due.length ? (

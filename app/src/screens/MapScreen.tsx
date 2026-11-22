@@ -6,8 +6,23 @@ import { REVIEW_MAX_WORDS } from '../game/config';
 import { days, plural, words } from '../lib/format';
 import { Flame, Icon } from '../components/Icon';
 import { FogArt, IslandArt } from '../components/IslandArt';
+import { ResidentArt } from '../components/Residents';
 
 const ROW = 88;
+
+/** Кораблик Шкипера у текущего урока. */
+function Boat({ left }: { left: boolean }) {
+  return (
+    <svg class={'boat' + (left ? ' l' : '')} viewBox="0 0 44 40" aria-hidden="true">
+      <path d="M21 4v24" stroke="#6e4826" stroke-width="2.5" stroke-linecap="round" />
+      <path d="M23 6l14 18H23z" fill="#fff" stroke="#14263a" stroke-width="2" stroke-linejoin="round" />
+      <path d="M19 10 8 24h11z" fill="#ffc83d" stroke="#14263a" stroke-width="2" stroke-linejoin="round" />
+      <path d="M21 4l7 3-7 3z" fill="#ff6b4a" />
+      <path d="M4 28h36l-6 8H10z" fill="#ff6b4a" stroke="#14263a" stroke-width="2" stroke-linejoin="round" />
+      <path d="M2 38c4-2 8-2 12 0s8 2 12 0 8-2 12 0" fill="none" stroke="#7fd0f5" stroke-width="2" stroke-linecap="round" />
+    </svg>
+  );
+}
 const xAt = (i: number) => 50 + Math.sin(i * 1.1) * 28;
 
 /** Пунктир маршрута между уроками острова. */
@@ -92,6 +107,7 @@ export function MapScreen({ pack, st, due, onLesson, onReview, onTrial, onStory,
           <section class={`island ${s.kind}`} key={isl.n}>
             <button class="island-head" onClick={() => (s.kind === 'premium' ? onPremium() : onStory(isl))}
               aria-label={s.kind === 'premium' ? `${isl.name}: доступен с Premium` : `${isl.name}: глава сюжета`}>
+              <ResidentArt island={isl.n} size={44} />
               <div><div class="hint">Остров {isl.n}</div><h3>{isl.name}</h3></div>
               <span class="island-badge"><Icon name={s.kind === 'open' ? 'book' : s.kind === 'premium' ? 'crown' : 'lock'} /></span>
             </button>
@@ -105,6 +121,7 @@ export function MapScreen({ pack, st, due, onLesson, onReview, onTrial, onStory,
                 const cur = l.id === current && open;
                 return (
                   <div class="stop" key={l.id} style={{ '--x': `${xAt(i)}%` }}>
+                    {cur && <Boat left={xAt(i) > 55} />}
                     {cur && <span class="node-tag">{st.done[pack.lessons[0].id] ? 'Дальше' : 'Начать'}</span>}
                     <button class={'node' + (done ? ' done' : '') + (cur ? ' cur' : '')}
                       disabled={!open} onClick={() => onLesson(l)} title={l.title}

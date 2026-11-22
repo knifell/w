@@ -671,3 +671,27 @@ section.card > b:first-child { margin-bottom: 0; }
 .play-big:active { transform: translateY(3px); box-shadow: 0 3px 0 color-mix(in srgb, var(--sea-500, #1f8a8a) 70%, #000); }
 .play-slow { border: 2px solid var(--edge, #ccc); background: var(--surface, #fff); color: var(--ink, inherit); border-radius: 999px;
   padding: 6px 14px; font: 600 14px inherit; font-family: inherit; cursor: pointer; }
+
+/* жители островов */
+.resident { flex: none; display: block; }
+.island-head { gap: 10px; }
+.island.locked .island-head .resident, .island.premium .island-head .resident { filter: grayscale(.8); opacity: .7; }
+.resident-row { display: flex; gap: 12px; align-items: flex-end; margin: 4px 0 8px; }
+.resident-say { position: relative; flex: 1; min-width: 0; display: grid; gap: 2px; padding: 10px 12px; border-radius: var(--r-m);
+  background: var(--sea-tint, #e6f3f6); font-size: 15px; line-height: 1.35; }
+.resident-say b { font-size: 13px; color: var(--sea-text, inherit); }
+.resident-say::before { content: ""; position: absolute; left: -7px; bottom: 14px; border: 7px solid transparent; border-right-color: var(--sea-tint, #e6f3f6); border-left: 0; }
+
+/* живая карта: острова покачиваются, кораблик у текущего урока */
+@media (prefers-reduced-motion: no-preference) {
+  .island.open .island-art { animation: float 5.5s ease-in-out infinite; transform-origin: 50% 80%; }
+  .island:nth-of-type(2n) .island-art { animation-delay: -2.5s; }
+  .island-head .resident { animation: sway 4s ease-in-out infinite; transform-origin: 50% 100%; }
+  .fog-art { animation: drift 14s ease-in-out infinite alternate; }
+  .stop .boat { animation: float 2.6s ease-in-out infinite; }
+}
+@keyframes float { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-5px) } }
+@keyframes sway { 0%, 100% { transform: rotate(-3deg) } 50% { transform: rotate(3deg) } }
+@keyframes drift { from { transform: translateX(-6px) } to { transform: translateX(6px) } }
+.stop .boat { position: absolute; top: 22px; left: calc(var(--x) + 40px); width: 44px; height: 40px; pointer-events: none; }
+.stop .boat.l { left: calc(var(--x) - 84px); }

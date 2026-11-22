@@ -24,6 +24,7 @@ Telegram Mini App: игра для изучения английского (ру
 - `app/src/engine/` — генерация упражнений (`generators.ts`), проверка ввода/опечаток (`check.ts`), словарь «изучено» (`vocab.ts`: CORE, NAMES, формы).
 - `app/src/game/` — логика: `local.ts` (состояние), `session.ts` (награды), `srs.ts` (интервалы), `progress.ts` (острова, «что дальше»), `streak.ts` (костёр), `energy.ts`, `shop.ts`, `stickers.ts`, `purchases.ts` (начисление Stars/друзей), `clock.ts` (защита от подкрутки часов), `time.ts`.
 - `app/src/api/` — `content.ts`, `cloud.ts` (копия прогресса в Telegram CloudStorage), `payments.ts` (покупки, приглашения).
+- Звуки: `lib/sfx.ts` (Web Audio), голос: `lib/speech.ts` (только английский), жители островов: `components/Residents.tsx`.
 - `app/src/screens/`, `components/`, `styles/base.css` — интерфейс (дизайн готов, не переделывать без просьбы).
 - `worker/` — сервер оплаты на Cloudflare Workers (подпись initData, счета, вебхук, возвраты, друзья). README там.
 - `tests/logic.test.ts` — все тесты (esbuild → node).
@@ -38,5 +39,6 @@ Telegram Mini App: игра для изучения английского (ру
 - Telegram-бот, деплой Pages/Worker — самый последний шаг (пользователь скажет).
 
 ## Что осталось
+- Мини-истории в конце острова (текст из выученных слов + вопросы) — не сделано, нужен авторский контент на 24 острова.
 - Решение по темпу (Premium сейчас ~4,7 мес. минимум; варианты растянуть до ~7) — ждёт ответа пользователя.
 - Последний шаг: бот @BotFather, Pages, Worker, `VITE_API_URL`/`VITE_APP_LINK`, проверка в настоящем Telegram.

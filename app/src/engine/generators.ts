@@ -98,3 +98,15 @@ export function placementQuestions(pool: Word[], n: number, seed = Date.now()): 
   const r = mulberry32(seed);
   return shuffle(pool, r).slice(0, n).map((w, i) => choice(w, pool, r, i % 2 ? 'ru-en' : 'en-ru'));
 }
+
+/** Испытание острова: только ввод и сборка предложений, без подсказок-вариантов. */
+export function buildTrial(words: Word[], pool: Word[], seed = Date.now()): Exercise[] {
+  const r = mulberry32(seed);
+  const ws = shuffle(words, r).slice(0, 10);
+  const out: Exercise[] = [];
+  ws.forEach((w, i) => {
+    const b = i % 2 ? build(w, pool, r) : null;
+    out.push(b ?? typeEx(w));
+  });
+  return out;
+}

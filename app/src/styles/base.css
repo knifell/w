@@ -130,3 +130,49 @@ section h3 { margin: 16px 0 8px; }
 .overlay { position: fixed; inset: 0; background: rgb(0 0 0 / .4); display: flex; align-items: flex-end; z-index: 10; }
 .sheet.story { background: var(--tg-bg); position: relative; width: 100%; }
 .streak { font-weight: 600; }
+
+/* этап 5 */
+#app { padding-bottom: calc(84px + env(safe-area-inset-bottom)); }
+.topbar { position: sticky; top: 0; z-index: 5; background: var(--tg-bg); padding: 8px 0; flex-wrap: wrap; gap: 6px; }
+.stats-row { display: flex; gap: 14px; align-items: center; margin-left: auto; }
+.energy { border: 0; background: var(--tg-bg2); color: inherit; font: 600 15px system-ui, sans-serif; border-radius: 10px; padding: 4px 10px; cursor: pointer; }
+.boost-pill { width: 100%; text-align: center; font-size: 13px; font-weight: 600; background: color-mix(in srgb, var(--sea) 20%, transparent); border-radius: 10px; padding: 4px; }
+.tabbar {
+  position: fixed; left: 0; right: 0; bottom: 0; display: grid; grid-template-columns: repeat(4, 1fr); z-index: 6;
+  background: var(--tg-bg2); border-top: 1px solid rgb(127 127 127 / .15); padding: 6px 0 calc(6px + env(safe-area-inset-bottom));
+}
+.tabbar button { background: none; border: 0; color: var(--tg-hint); font: 500 11px system-ui, sans-serif; display: grid; gap: 2px; justify-items: center; cursor: pointer; }
+.tabbar button span { font-size: 22px; filter: grayscale(.8); }
+.tabbar button.on { color: var(--tg-accent); }
+.tabbar button.on span { filter: none; }
+.btn.alt { background: var(--tg-bg2); color: var(--tg-text); border: 2px solid rgb(127 127 127 / .2); }
+.btn.gold { background: linear-gradient(90deg, #f2b84b, #f08a3c); color: #3b2200; }
+.sheet .btn + .btn { margin-top: 4px; }
+.trial { margin-top: 14px; }
+.rescue { border-left-color: var(--coral); }
+.album-head { display: flex; justify-content: space-between; margin-bottom: 10px; }
+.stamps { display: grid; grid-template-columns: repeat(auto-fill, minmax(62px, 1fr)); gap: 10px; }
+.stamp {
+  position: relative; aspect-ratio: 1; border-radius: 16px; border: 2px dashed rgb(127 127 127 / .35); background: transparent;
+  font-size: 30px; display: grid; place-items: center; overflow: hidden; cursor: pointer; padding: 0;
+}
+.stamp span { filter: grayscale(1) opacity(.35); }
+.stamp.got { border-style: solid; background: var(--tg-bg); }
+.stamp.got span { filter: none; }
+.stamp i { position: absolute; left: 0; bottom: 0; height: 4px; background: var(--sea); }
+.stamp.got.r-rare { border-color: #4a90e2; } .stamp.got.r-epic { border-color: #9b59b6; } .stamp.got.r-legendary { border-color: #f2b84b; box-shadow: 0 0 12px #f2b84b88; }
+.stamp.big { width: 110px; font-size: 56px; margin: 0 auto 8px; }
+.item { display: flex; align-items: center; gap: 12px; }
+.item-ico { font-size: 34px; }
+.item-txt { flex: 1; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 14px 0; }
+.grid2 .stat { text-align: center; }
+.levels { display: flex; gap: 8px; margin: 10px 0; }
+.chip-btn { border: 2px solid rgb(127 127 127 / .3); background: none; color: inherit; border-radius: 10px; padding: 8px 14px; font: 700 15px system-ui, sans-serif; cursor: pointer; }
+.chip-btn.on { background: var(--tg-accent); color: var(--tg-accent-text); border-color: transparent; }
+.settings label { display: flex; justify-content: space-between; align-items: center; }
+.back { width: auto; text-align: left; margin: 0 0 8px; padding: 0; }
+.premium { text-align: center; display: grid; gap: 12px; }
+.premium .card { text-align: left; }
+.new-stamp { border-left: 4px solid #9b59b6; }
+.lesson ~ .tabbar { display: none; }

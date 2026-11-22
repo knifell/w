@@ -1,0 +1,369 @@
+{
+  "albums": [
+    {
+      "id": "steps",
+      "name": "Первые шаги"
+    },
+    {
+      "id": "fire",
+      "name": "Костёр"
+    },
+    {
+      "id": "memory",
+      "name": "Память"
+    },
+    {
+      "id": "islands",
+      "name": "Острова"
+    },
+    {
+      "id": "time",
+      "name": "Время суток"
+    },
+    {
+      "id": "club",
+      "name": "Клуб капитанов",
+      "premium": true
+    }
+  ],
+  "stickers": [
+    {
+      "id": "first-sail",
+      "name": "Первое плавание",
+      "emoji": "⛵",
+      "rarity": "common",
+      "album": "steps",
+      "cond": {
+        "type": "lessons",
+        "n": 1
+      }
+    },
+    {
+      "id": "ten-lessons",
+      "name": "Опытный юнга",
+      "emoji": "🧭",
+      "rarity": "common",
+      "album": "steps",
+      "cond": {
+        "type": "lessons",
+        "n": 10
+      }
+    },
+    {
+      "id": "fifty-lessons",
+      "name": "Штурман",
+      "emoji": "🗺️",
+      "rarity": "rare",
+      "album": "steps",
+      "cond": {
+        "type": "lessons",
+        "n": 50
+      }
+    },
+    {
+      "id": "hundred-lessons",
+      "name": "Капитан дальнего плавания",
+      "emoji": "⚓",
+      "rarity": "epic",
+      "album": "steps",
+      "cond": {
+        "type": "lessons",
+        "n": 100
+      }
+    },
+    {
+      "id": "clean-1",
+      "name": "Чистый курс",
+      "emoji": "✨",
+      "rarity": "common",
+      "album": "steps",
+      "cond": {
+        "type": "perfect",
+        "n": 1
+      }
+    },
+    {
+      "id": "clean-10",
+      "name": "Без единой пробоины",
+      "emoji": "💎",
+      "rarity": "rare",
+      "album": "steps",
+      "cond": {
+        "type": "perfect",
+        "n": 10
+      }
+    },
+    {
+      "id": "clean-50",
+      "name": "Безупречный экипаж",
+      "emoji": "👑",
+      "rarity": "legendary",
+      "album": "steps",
+      "cond": {
+        "type": "perfect",
+        "n": 50
+      }
+    },
+    {
+      "id": "fire-3",
+      "name": "Искра",
+      "emoji": "🔥",
+      "rarity": "common",
+      "album": "fire",
+      "cond": {
+        "type": "streak",
+        "n": 3
+      }
+    },
+    {
+      "id": "fire-7",
+      "name": "Неделя у костра",
+      "emoji": "🏕️",
+      "rarity": "common",
+      "album": "fire",
+      "cond": {
+        "type": "streak",
+        "n": 7
+      }
+    },
+    {
+      "id": "fire-30",
+      "name": "Вечный огонь",
+      "emoji": "🌋",
+      "rarity": "rare",
+      "album": "fire",
+      "cond": {
+        "type": "streak",
+        "n": 30
+      }
+    },
+    {
+      "id": "fire-100",
+      "name": "Хранитель пламени",
+      "emoji": "☄️",
+      "rarity": "epic",
+      "album": "fire",
+      "cond": {
+        "type": "streak",
+        "n": 100
+      }
+    },
+    {
+      "id": "fire-200",
+      "name": "Маяк, что не гаснет",
+      "emoji": "🗼",
+      "rarity": "legendary",
+      "album": "fire",
+      "cond": {
+        "type": "streak",
+        "n": 200
+      },
+      "hidden": true
+    },
+    {
+      "id": "mem-25",
+      "name": "Крепкая память",
+      "emoji": "🧠",
+      "rarity": "common",
+      "album": "memory",
+      "cond": {
+        "type": "mastered",
+        "n": 25
+      }
+    },
+    {
+      "id": "mem-100",
+      "name": "Сотня якорей",
+      "emoji": "🪝",
+      "rarity": "rare",
+      "album": "memory",
+      "cond": {
+        "type": "mastered",
+        "n": 100
+      }
+    },
+    {
+      "id": "mem-300",
+      "name": "Живой словарь",
+      "emoji": "📚",
+      "rarity": "epic",
+      "album": "memory",
+      "cond": {
+        "type": "mastered",
+        "n": 300
+      }
+    },
+    {
+      "id": "mem-1000",
+      "name": "Библиотека архипелага",
+      "emoji": "🏛️",
+      "rarity": "legendary",
+      "album": "memory",
+      "cond": {
+        "type": "mastered",
+        "n": 1000
+      },
+      "hidden": true
+    },
+    {
+      "id": "rev-10",
+      "name": "Возвращение",
+      "emoji": "🔁",
+      "rarity": "common",
+      "album": "memory",
+      "cond": {
+        "type": "reviews",
+        "n": 10
+      }
+    },
+    {
+      "id": "rev-100",
+      "name": "Мастер повторений",
+      "emoji": "🌀",
+      "rarity": "rare",
+      "album": "memory",
+      "cond": {
+        "type": "reviews",
+        "n": 100
+      }
+    },
+    {
+      "id": "island-1",
+      "name": "Первая земля",
+      "emoji": "🏝️",
+      "rarity": "common",
+      "album": "islands",
+      "cond": {
+        "type": "islands",
+        "n": 1
+      }
+    },
+    {
+      "id": "island-6",
+      "name": "Весь архипелаг",
+      "emoji": "🌐",
+      "rarity": "epic",
+      "album": "islands",
+      "cond": {
+        "type": "islands",
+        "n": 6
+      }
+    },
+    {
+      "id": "island-12",
+      "name": "Два океана",
+      "emoji": "🌊",
+      "rarity": "legendary",
+      "album": "islands",
+      "cond": {
+        "type": "islands",
+        "n": 12
+      },
+      "hidden": true
+    },
+    {
+      "id": "trial-5",
+      "name": "Испытатель",
+      "emoji": "⚔️",
+      "rarity": "common",
+      "album": "islands",
+      "cond": {
+        "type": "trials",
+        "n": 5
+      }
+    },
+    {
+      "id": "trial-50",
+      "name": "Гроза испытаний",
+      "emoji": "🛡️",
+      "rarity": "rare",
+      "album": "islands",
+      "cond": {
+        "type": "trials",
+        "n": 50
+      }
+    },
+    {
+      "id": "night-1",
+      "name": "Ночная вахта",
+      "emoji": "🦉",
+      "rarity": "rare",
+      "album": "time",
+      "cond": {
+        "type": "night",
+        "n": 1
+      }
+    },
+    {
+      "id": "night-10",
+      "name": "Звёздный штурман",
+      "emoji": "🌌",
+      "rarity": "epic",
+      "album": "time",
+      "cond": {
+        "type": "night",
+        "n": 10
+      },
+      "hidden": true
+    },
+    {
+      "id": "early-1",
+      "name": "Рассветный бриз",
+      "emoji": "🌅",
+      "rarity": "rare",
+      "album": "time",
+      "cond": {
+        "type": "early",
+        "n": 1
+      }
+    },
+    {
+      "id": "early-10",
+      "name": "Встречающий солнце",
+      "emoji": "🌞",
+      "rarity": "epic",
+      "album": "time",
+      "cond": {
+        "type": "early",
+        "n": 10
+      },
+      "hidden": true
+    },
+    {
+      "id": "club-join",
+      "name": "Флаг клуба капитанов",
+      "emoji": "🏴",
+      "rarity": "rare",
+      "album": "club",
+      "cond": {
+        "type": "premium",
+        "n": 1
+      },
+      "premium": true
+    },
+    {
+      "id": "club-30",
+      "name": "Золотой компас",
+      "emoji": "🧿",
+      "rarity": "epic",
+      "album": "club",
+      "cond": {
+        "type": "lessons",
+        "n": 30
+      },
+      "premium": true
+    },
+    {
+      "id": "club-fire",
+      "name": "Королевский костёр",
+      "emoji": "🎇",
+      "rarity": "legendary",
+      "album": "club",
+      "cond": {
+        "type": "streak",
+        "n": 60
+      },
+      "premium": true
+    }
+  ]
+}

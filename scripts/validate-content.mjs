@@ -106,6 +106,35 @@ for (const dir of readdirSync(ROOT).sort()) {
   for (let d = 1; d <= max; d++) if (!days.has(d)) err(base, `пропущен день ${d}`);
 }
 
+// лавка и штампы
+const CONTENT = join(ROOT, '..');
+const shopF = join(CONTENT, 'shop.json'), stF = join(CONTENT, 'stickers.json');
+const shop = existsSync(shopF) ? read(shopF) : null;
+if (shop) {
+  const ids = new Set();
+  for (const it of shop.items ?? []) {
+    if (!str(it.id) || ids.has(it.id)) err(shopF, `пустой или повторный id "${it.id}"`);
+    ids.add(it.id);
+    if (!str(it.name) || !str(it.desc) || !(it.price > 0)) err(shopF, `${it.id}: пустое name/desc или цена ≤ 0`);
+    if (!['boost', 'shield', 'energy'].includes(it.effect?.type)) err(shopF, `${it.id}: неизвестный effect`);
+  }
+}
+const st = existsSync(stF) ? read(stF) : null;
+if (st) {
+  const albums = new Set((st.albums ?? []).map((a) => a.id));
+  const ids = new Set();
+  const COND = ['lessons', 'perfect', 'streak', 'mastered', 'reviews', 'islands', 'trials', 'night', 'early', 'premium'];
+  for (const x of st.stickers ?? []) {
+    if (!str(x.id) || ids.has(x.id)) err(stF, `пустой или повторный id "${x.id}"`);
+    ids.add(x.id);
+    if (!str(x.name) || !str(x.emoji)) err(stF, `${x.id}: пустое name/emoji`);
+    if (!albums.has(x.album)) err(stF, `${x.id}: нет альбома "${x.album}"`);
+    if (!['common', 'rare', 'epic', 'legendary'].includes(x.rarity)) err(stF, `${x.id}: rarity "${x.rarity}"`);
+    if (!COND.includes(x.cond?.type) || !(x.cond?.n > 0)) err(stF, `${x.id}: неверное условие`);
+    if ('price' in x) err(stF, `${x.id}: штампы нельзя продавать (уберите price)`);
+  }
+}
+
 warns.forEach((m) => console.warn(m));
 errors.forEach((m) => console.error(m));
 console.log(`\nСлов: ${allIds.size}. Ошибок: ${errors.length}. Предупреждений: ${warns.length}.`);

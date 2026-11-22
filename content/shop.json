@@ -1,0 +1,16 @@
+{
+  "energy": { "max": 5, "regenMinutes": 30, "lessonCost": 1, "bonusCap": 10 },
+  "rewards": {
+    "lesson": { "xp": 10, "coins": 5 },
+    "perfect": { "xp": 5, "coins": 5 },
+    "review": { "xp": 8, "coins": 4 },
+    "trial": { "xp": 12, "coins": 3 },
+    "trialDailyRewarded": 5,
+    "premiumCoinMult": 2
+  },
+  "items": [
+    { "id": "wind", "name": "Попутный ветер", "emoji": "🌬️", "desc": "Двойной опыт 15 минут", "price": 100, "effect": { "type": "boost", "minutes": 15, "xpMult": 2 } },
+    { "id": "ember", "name": "Тлеющий уголь", "emoji": "🪵", "desc": "Сохранит костёр, если пропустишь день. Можно держать 2", "price": 200, "effect": { "type": "shield", "max": 2 } },
+    { "id": "oil", "name": "Флакон масла", "emoji": "🫙", "desc": "+3 энергии для фонаря", "price": 60, "effect": { "type": "energy", "amount": 3 }, "freeOnly": true }
+  ]
+}

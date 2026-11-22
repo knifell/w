@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import type { ContentIndex, Island, Lesson, Level, LevelPack, Word } from './types';
 import { loadIndex, loadLevel } from './api/content';
-import { loadState, update, type LocalState } from './game/local';
+import { emptyState, loadState, saveState, update, type LocalState } from './game/local';
 import { recordSession, settleAll, type SessionKind } from './game/session';
 import { spendEnergy } from './game/energy';
 import { buy } from './game/shop';
@@ -91,7 +91,8 @@ export function App() {
         onDone={(l) => setLevel(l)} onBack={() => go({ s: 'pick' })} />;
     case 'session': return <LessonScreen build={r.build} onExit={() => toMap()} onDone={(o) => finish(r.kind, r.lessonId, o)} />;
     case 'result': return <ResultScreen result={r.result} onNext={() => toMap()} />;
-    case 'about': return <AboutScreen index={index} onBack={() => go({ s: 'tab', tab: 'profile' })} />;
+    case 'about': return <AboutScreen index={index} onBack={() => go({ s: 'tab', tab: 'profile' })}
+      onReset={() => { saveState(emptyState()); setSt(loadState()); go({ s: 'onboarding' }); }} />;
     case 'premium':
       return <PremiumScreen isPremium={st.premium} onBack={() => toMap()}
         onDevToggle={() => { mutate((s) => { s.premium = !s.premium; }); setSt(settleAll(packs)[0]); }} />;

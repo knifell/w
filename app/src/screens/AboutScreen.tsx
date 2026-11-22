@@ -1,6 +1,8 @@
+import { useState } from 'preact/hooks';
 import type { ContentIndex } from '../types';
 
-export function AboutScreen({ index, onBack }: { index: ContentIndex | null; onBack: () => void }) {
+export function AboutScreen({ index, onBack, onReset }: { index: ContentIndex | null; onBack: () => void; onReset: () => void }) {
+  const [sure, setSure] = useState(false);
   return (
     <main>
       <button class="link back" onClick={onBack}>← Назад</button>
@@ -22,6 +24,14 @@ export function AboutScreen({ index, onBack }: { index: ContentIndex | null; onB
         <div class="row">• Новые главы истории Шкипера</div>
       </div>
       <div class="hint">Нашёл ошибку в слове? Нажми «Я ответил верно» в уроке — мы проверим.</div>
+      {sure ? (
+        <div class="card">
+          <b>Стереть весь прогресс?</b>
+          <div class="hint">Опыт, ракушки, штампы и выученные слова удалятся. Это нельзя отменить.</div>
+          <button class="btn alt" onClick={onReset}>Да, начать заново</button>
+          <button class="link" onClick={() => setSure(false)}>Отмена</button>
+        </div>
+      ) : <button class="link" onClick={() => setSure(true)}>Начать заново</button>}
     </main>
   );
 }

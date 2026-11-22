@@ -39,6 +39,7 @@ interface Props {
   pack: LevelPack;
   st: LocalState;
   due: Word[];
+  hard: Word[];
   onLesson: (l: Lesson) => void;
   onReview: (words: Word[]) => void;
   onTrial: (island: Island) => void;
@@ -47,13 +48,17 @@ interface Props {
   onPremium: () => void;
 }
 
-export function MapScreen({ pack, st, due, onLesson, onReview, onTrial, onStory, onRetest, onPremium }: Props) {
+export function MapScreen({ pack, st, due, hard, onLesson, onReview, onTrial, onStory, onRetest, onPremium }: Props) {
   const day = today();
   const nextDue = Math.min(...Object.values(st.mem).map((m) => m.due));
   const current = pack.lessons.find((l) => !st.done[l.id])?.id;
   const steps = nextSteps(pack, st);
   const anyDone = pack.lessons.some((l) => st.done[l.id]);
   const streakToday = st.streak.last === day;
+  // «Трудные слова»: где игрок ошибался чаще всего. Скромная ссылка, чтобы не перегружать карту.
+  const hardLink = hard.length >= 3 && (
+    <button class="link hard-link" onClick={() => onReview(hard)}>Трудные слова: {hard.length} — потренировать</button>
+  );
 
   return (
     <main class="map">
@@ -61,13 +66,13 @@ export function MapScreen({ pack, st, due, onLesson, onReview, onTrial, onStory,
         <span class="banner-ico"><Icon name="refresh" /></span>
         {due.length ? (
           <>
-            <div class="review-txt"><b>Повторение готово</b><div class="hint">{words(due.length)} · без энергии</div></div>
+            <div class="review-txt"><b>Повторение готово</b><div class="hint">{words(due.length)} · без энергии</div>{hardLink}</div>
             <button class="btn small" onClick={() => onReview(due.slice(0, REVIEW_MAX_WORDS))}>Повторить</button>
           </>
         ) : (
           <div class="review-txt"><b>Повторений пока нет</b><div class="hint">
             {Number.isFinite(nextDue) ? `Следующие слова созреют ${nextDue - day <= 1 ? 'завтра' : `через ${days(nextDue - day)}`}` : 'Пройди первый урок — слова появятся здесь'}
-          </div></div>
+          </div>{hardLink}</div>
         )}
       </div>
 

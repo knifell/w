@@ -695,3 +695,18 @@ section.card > b:first-child { margin-bottom: 0; }
 @keyframes drift { from { transform: translateX(-6px) } to { transform: translateX(6px) } }
 .stop .boat { position: absolute; top: 22px; left: calc(var(--x) + 40px); width: 44px; height: 40px; pointer-events: none; }
 .stop .boat.l { left: calc(var(--x) - 84px); }
+.hard-link { width: auto; text-align: left; padding: 0; margin: 4px 0 0; font-size: 14px; font-weight: 600; color: var(--sea-text, var(--tg-accent)); }
+
+/* анимация наград в итоге урока */
+@media (prefers-reduced-motion: no-preference) {
+  .result .stat { animation: pop-in .5s var(--ease-pop) both; }
+  .result .stat:nth-child(2) { animation-delay: .12s; }
+  .result .stat:nth-child(3) { animation-delay: .24s; }
+  .result .stat .ico, .result .stat svg { animation: shine 1.2s ease-out .5s both; }
+  .result .new-stamp { animation: slam .55s var(--ease-pop) .45s both; }
+  .result .new-stamp svg { animation: slam-rot .55s var(--ease-pop) .45s both; }
+}
+@keyframes pop-in { from { opacity: 0; transform: translateY(14px) scale(.85); } to { opacity: 1; transform: none; } }
+@keyframes shine { 0% { transform: scale(1); } 40% { transform: scale(1.35) rotate(-8deg); } 100% { transform: scale(1); } }
+@keyframes slam { 0% { opacity: 0; transform: scale(1.6); } 60% { opacity: 1; transform: scale(.94); } 100% { transform: scale(1); } }
+@keyframes slam-rot { from { transform: rotate(-25deg); } to { transform: rotate(0); } }

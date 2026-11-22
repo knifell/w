@@ -112,6 +112,9 @@ export function App() {
   const day = today();
   const due = Object.entries(st.mem).filter(([id, m]) => isDue(m, day) && allWords.has(id))
     .sort((a, b) => a[1].due - b[1].due || b[1].wrong - a[1].wrong).map(([id]) => allWords.get(id)!);
+  /** Слова, в которых ошибались 2+ раза (чаще всего — первыми), до 12 штук. */
+  const hard = Object.entries(st.mem).filter(([id, m]) => m.wrong >= 2 && allWords.has(id))
+    .sort((a, b) => b[1].wrong - a[1].wrong).slice(0, REVIEW_MAX_WORDS).map(([id]) => allWords.get(id)!);
 
   const mutate = <T,>(fn: (s: LocalState) => T): T => { const [s, res] = update(fn); setSt(s); return res; };
   const toMap = () => go({ s: 'tab', tab: 'map' });
@@ -190,7 +193,7 @@ export function App() {
     <>
       <TopBar st={st} level={tab === 'map' ? pack.level : undefined} onEnergy={() => setEnergySheet(true)} />
       {tab === 'map' && (
-        <MapScreen pack={pack} st={st} due={due} onLesson={startLesson} onReview={startReview} onTrial={startTrial}
+        <MapScreen pack={pack} st={st} due={due} hard={hard} onLesson={startLesson} onReview={startReview} onTrial={startTrial}
           onStory={(isl) => openStory(isl)} onRetest={() => go({ s: 'pick' })} onPremium={() => openPremium()} />
       )}
       {tab === 'passport' && <PassportScreen st={st} />}

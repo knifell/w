@@ -1,3 +1,4 @@
+import { sfx } from '../../lib/sfx';
 import { useEffect, useState } from 'preact/hooks';
 import { speak } from '../../lib/speech';
 import { haptic } from '../../tg/telegram';
@@ -34,7 +35,7 @@ export function LearnCard({ ex, locked, onSubmit }: ViewProps<'learn'>) {
     if (sel || locked) return;
     setSel(o);
     const ok = o === ex.answer;
-    ok ? haptic.ok() : haptic.bad();
+    if (ok) { haptic.ok(); sfx.ok(); } else { haptic.bad(); sfx.bad(); }
     setShown(true);
     setTimeout(() => onSubmit({ ok, correct: ex.answer, learn: true }), ok ? 650 : 250);
   };

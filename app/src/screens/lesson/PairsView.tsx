@@ -1,3 +1,4 @@
+import { sfx } from '../../lib/sfx';
 import { useState } from 'preact/hooks';
 import { haptic } from '../../tg/telegram';
 import { speak } from '../../lib/speech';
@@ -13,13 +14,13 @@ export function PairsView({ ex, onSubmit }: ViewProps<'pairs'>) {
   const tryMatch = (l: number | null, r: number | null) => {
     if (l === null || r === null) return;
     if (l === r) {
-      haptic.ok();
+      haptic.ok(); sfx.tick();
       const d = new Set(done).add(l);
       setDone(d); setLeft(null); setRight(null);
       if (d.size === ex.words.length)
         setTimeout(() => onSubmit({ ok: true, correct: '', wrongIds: [...wrong] }), 250);
     } else {
-      haptic.bad();
+      haptic.bad(); sfx.bad();
       wrong.add(ex.words[l].id);
       setBad([l, r]);
       setTimeout(() => { setBad(null); setLeft(null); setRight(null); }, 450);

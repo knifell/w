@@ -1,3 +1,4 @@
+import { sfx, sfxOn, setSfx } from '../lib/sfx';
 import { useState } from 'preact/hooks';
 import type { Level, LevelPack } from '../types';
 import type { LocalState } from '../game/local';
@@ -19,6 +20,8 @@ export function ProfileScreen({ st, packs, onLevel, onPremium, onAbout, onRetest
   const mastered = Object.values(st.mem).filter((m) => m.s >= MASTER_STAGE).length;
   const canSwitch = st.premium || Object.keys(st.done).length < 3;
   const name = tg?.initDataUnsafe.user?.first_name ?? 'Путешественник';
+  const [fx, setFx] = useState(sfxOn);
+  const toggleFx = () => { const v = !fx; setFx(v); setSfx(v); if (v) sfx.ok(); };
   const toggleSound = () => { const v = !sound; setSound(v); try { localStorage.setItem('sound', v ? 'on' : 'off'); } catch { /* */ } };
   return (
     <main>
@@ -58,6 +61,7 @@ export function ProfileScreen({ st, packs, onLevel, onPremium, onAbout, onRetest
 
       <section class="card settings">
         <label><span><Icon name="speaker" />Произношение слов</span><input class="switch" type="checkbox" role="switch" checked={sound} onChange={toggleSound} /></label>
+        <label><span><Icon name="sparkle" />Звуки игры</span><input class="switch" type="checkbox" role="switch" checked={fx} onChange={toggleFx} /></label>
       </section>
 
       {!st.premium && <button class="btn gold" onClick={onPremium}><Icon name="crown" size={20} />Узнать о Premium</button>}

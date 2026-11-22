@@ -1,3 +1,4 @@
+import { sfx } from '../../lib/sfx';
 import { useMemo, useState } from 'preact/hooks';
 import type { Word } from '../../types';
 import { exerciseWords, type Exercise } from '../../engine/generators';
@@ -40,7 +41,7 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
       return setFb(s);
     }
     stats.answers++;
-    if (s.ok) { stats.correct++; haptic.ok(); } else haptic.bad();
+    if (s.ok) { stats.correct++; haptic.ok(); sfx.ok(); } else { haptic.bad(); sfx.bad(); }
     s.wrongIds?.forEach((id) => stats.wrong.add(id));
     if (!s.ok) exerciseWords(ex).forEach((w) => stats.wrong.add(w.id));
     if (s.ok && ex.kind !== 'pairs' && ex.kind !== 'choice') speak(s.correct);

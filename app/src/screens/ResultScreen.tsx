@@ -1,3 +1,4 @@
+import { sfx } from '../lib/sfx';
 import type { Word } from '../types';
 import type { Reward, SessionKind } from '../game/session';
 import { speak } from '../lib/speech';
@@ -13,7 +14,7 @@ const TITLE: Record<SessionKind, string> = { lesson: 'Урок пройден!',
 
 export function ResultScreen({ result: r, onNext }: { result: ResultData; onNext: () => void }) {
   // Вибрация: штамп — сильнее, обычный итог — короткий «успех».
-  useEffect(() => { if (r.stickers.length) haptic.reward(); else haptic.ok(); }, []);
+  useEffect(() => { sfx.win(); if (r.stickers.length) { haptic.reward(); setTimeout(sfx.coin, 600); } else haptic.ok(); }, []);
   return (
     <main class="result">
       <Skipper mood={r.perfect ? 'happy' : 'proud'} size={170} />

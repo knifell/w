@@ -1,3 +1,4 @@
+import { sfx } from '../lib/sfx';
 import { useState } from 'preact/hooks';
 import type { LocalState } from '../game/local';
 import { ITEMS, STAR_PACKS } from '../game/config';
@@ -21,7 +22,7 @@ export function ShopScreen({ st, onBuy, onBuyStars, onPremium }: { st: LocalStat
             <div class="item-txt"><b>{it.name}</b><div class="hint">{it.desc}{own ? ` · у тебя: ${own}` : ''}</div>
               {why && <div class="why">{why}</div>}</div>
             <button class="btn small price" disabled={!!why} aria-label={`Купить за ${it.price} ракушек`}
-              onClick={() => { const e = onBuy(it.id); e ? haptic.bad() : haptic.ok(); setMsg(e ?? `${it.name} — готово!`); }}>
+              onClick={() => { const e = onBuy(it.id); if (e) haptic.bad(); else { haptic.ok(); sfx.coin(); } setMsg(e ?? `${it.name} — готово!`); }}>
               <Shell size={18} />{it.price}
             </button>
           </div>

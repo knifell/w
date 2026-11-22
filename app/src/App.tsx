@@ -9,6 +9,7 @@ import { STAR_PREMIUM } from './game/config';
 import { nowMs } from './game/clock';
 import { haptic } from './tg/telegram';
 import { canListen } from './lib/speech';
+import { sfx } from './lib/sfx';
 import { emptyState, loadState, saveState, update, type LocalState } from './game/local';
 import { recordSession, settleAll, type SessionKind } from './game/session';
 import { refundEnergy, spendEnergy } from './game/energy';
@@ -91,7 +92,7 @@ export function App() {
     const [, a] = update((s) => applyStatus(s, status));
     setSt(settleAll(p)[0]);
     if (a.coins > 0 || a.friends > 0) {
-      haptic.reward();
+      haptic.reward(); sfx.coin();
       setToast({ text: a.friends > 0 ? `Друзья приплыли: +${a.friends}! Начислено ${a.coins} ракушек.` : `+${a.coins} ракушек!` });
     }
     return a;

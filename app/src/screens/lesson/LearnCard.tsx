@@ -51,7 +51,7 @@ export function LearnCard({ ex, locked, onSubmit }: ViewProps<'learn'>) {
         </button>
         <div class="pos">{POS[w.pos] ?? w.pos}</div>
         {shown
-          ? <div class="learn-ru">{w.ru.join(', ')}</div>
+          ? <div class="learn-ru">{w.ru.join('; ')}</div>
           : <button class="peek" onClick={reveal}><Icon name="eye" size={20} />Показать перевод</button>}
         {w.examples.map((e) => (
           <div class="learn-ex" onClick={() => speak(e.en)}>

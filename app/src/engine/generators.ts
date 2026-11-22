@@ -34,7 +34,7 @@ function choice(w: Word, pool: Word[], r: Rng, dir: 'en-ru' | 'ru-en'): Exercise
   const answer = val(w, f);
   return {
     kind: 'choice', id: `c-${dir}-${w.id}`, dir, word: w,
-    prompt: dir === 'en-ru' ? w.en : w.ru.join(', '),
+    prompt: dir === 'en-ru' ? w.en : w.ru.join('; '),
     answer, options: shuffle([answer, ...distractors(w, pool, 3, r, f)], r),
   };
 }
@@ -59,7 +59,7 @@ function pairs(group: Word[], r: Rng, tag: string): Exercise | null {
 const typeEx = (w: Word, pool: Word[] = []): Exercise => {
   const ru = new Set(w.ru.map(norm));
   const alts = pool.filter((x) => x.id !== w.id && x.ru.some((t) => ru.has(norm(t)))).map((x) => x.en);
-  return { kind: 'type', id: `t-${w.id}`, word: w, prompt: w.ru.join(', '), answers: [w.en, ...(w.forms ?? []), ...alts] };
+  return { kind: 'type', id: `t-${w.id}`, word: w, prompt: w.ru.join('; '), answers: [w.en, ...(w.forms ?? []), ...alts] };
 };
 
 /**

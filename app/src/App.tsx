@@ -10,7 +10,8 @@ import { today } from './game/time';
 import { REVIEW_MAX_WORDS } from './game/config';
 import { buildLesson, buildReview, buildTrial, type Exercise } from './engine/generators';
 import { OnboardingScreen } from './screens/OnboardingScreen';
-import { PlacementScreen } from './screens/PlacementScreen';
+import { LevelPickScreen } from './screens/LevelPickScreen';
+import { MiniTestScreen } from './screens/MiniTestScreen';
 import { MapScreen } from './screens/MapScreen';
 import { StorySheet } from './screens/StorySheet';
 import { LessonScreen, type SessionOutcome } from './screens/lesson/LessonScreen';
@@ -25,7 +26,7 @@ import { TopBar } from './components/TopBar';
 import { EnergySheet } from './components/EnergySheet';
 
 type Route =
-  | { s: 'onboarding' } | { s: 'placement' } | { s: 'tab'; tab: Tab; note?: string }
+  | { s: 'onboarding' } | { s: 'pick' } | { s: 'minitest'; level: Level } | { s: 'tab'; tab: Tab; note?: string }
   | { s: 'about' } | { s: 'premium' }
   | { s: 'session'; kind: SessionKind; lessonId?: string; build: () => Exercise[] }
   | { s: 'result'; result: ResultData };
@@ -67,7 +68,7 @@ export function App() {
   const startLesson = (l: Lesson) => {
     const start = () => {
       if (!mutate(spendEnergy)) return setEnergySheet(true);
-      go({ s: 'session', kind: 'lesson', lessonId: l.id, build: () => buildLesson(l, pool) });
+      go({ s: 'session', kind: 'lesson', lessonId: l.id, build: () => buildLesson(l, pool, Date.now(), new Set(Object.keys(st.mem))) });
     };
     if (!st.storySeen.includes(`${pack.level}-${l.island}`)) return openStory(pack.islands[l.island - 1], start);
     start();
@@ -83,8 +84,11 @@ export function App() {
   };
 
   switch (r.s) {
-    case 'onboarding': return <OnboardingScreen onTest={() => go({ s: 'placement' })} onSkip={() => setLevel('A2')} />;
-    case 'placement': return <PlacementScreen packs={packs} onDone={setLevel} />;
+    case 'onboarding': return <OnboardingScreen onNext={() => go({ s: 'pick' })} />;
+    case 'pick': return <LevelPickScreen packs={packs} current={st.level} onPick={(level) => go({ s: 'minitest', level })} />;
+    case 'minitest':
+      return <MiniTestScreen pack={packs.find((p) => p.level === r.level)!} packs={packs}
+        onDone={(l) => setLevel(l)} onBack={() => go({ s: 'pick' })} />;
     case 'session': return <LessonScreen build={r.build} onExit={() => toMap()} onDone={(o) => finish(r.kind, r.lessonId, o)} />;
     case 'result': return <ResultScreen result={r.result} onNext={() => toMap()} />;
     case 'about': return <AboutScreen index={index} onBack={() => go({ s: 'tab', tab: 'profile' })} />;
@@ -100,13 +104,13 @@ export function App() {
       {r.note && <div class="card banner">{r.note}</div>}
       {tab === 'map' && (
         <MapScreen pack={pack} st={st} due={due} onLesson={startLesson} onReview={startReview} onTrial={startTrial}
-          onStory={(isl) => openStory(isl)} onRetest={() => go({ s: 'placement' })} onPremium={() => go({ s: 'premium' })} />
+          onStory={(isl) => openStory(isl)} onRetest={() => go({ s: 'pick' })} onPremium={() => go({ s: 'premium' })} />
       )}
       {tab === 'passport' && <PassportScreen st={st} />}
       {tab === 'shop' && <ShopScreen st={st} onBuy={(id) => mutate((s) => buy(s, id))} onPremium={() => go({ s: 'premium' })} />}
       {tab === 'profile' && (
         <ProfileScreen st={st} packs={packs} onLevel={(l) => setLevel(l)} onPremium={() => go({ s: 'premium' })}
-          onAbout={() => go({ s: 'about' })} onRetest={() => go({ s: 'placement' })} />
+          onAbout={() => go({ s: 'about' })} onRetest={() => go({ s: 'pick' })} />
       )}
       <TabBar tab={tab} onTab={(t) => go({ s: 'tab', tab: t })} />
       {story && <StorySheet island={story.isl} onClose={() => { setStory(null); story.then?.(); }} />}

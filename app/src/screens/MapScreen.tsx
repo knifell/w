@@ -85,7 +85,7 @@ export function MapScreen({ pack, st, due, onLesson, onReview, onTrial, onStory,
       })}
 
       <GrowingBanner />
-      {Object.keys(st.done).length < 3 && <button class="link" onClick={onRetest}>Не тот уровень? Пройти тест заново</button>}
+      {Object.keys(st.done).length < 3 && <button class="link" onClick={onRetest}>Не тот уровень? Выбрать другой</button>}
     </main>
   );
 }

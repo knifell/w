@@ -37,7 +37,7 @@ export function ProfileScreen({ st, packs, onLevel, onPremium, onAbout, onRetest
           ))}
         </div>
         <div class="hint">{st.premium ? 'С Premium открыты все уровни.' : canSwitch ? 'Пока пройдено меньше 3 уроков, уровень можно сменить бесплатно.' : 'Сменить уровень можно с Premium.'}</div>
-        {canSwitch && <button class="link" onClick={onRetest}>Пройти тест уровня заново</button>}
+        {canSwitch && <button class="link" onClick={onRetest}>Выбрать уровень и пройти мини-тест</button>}
       </section>
 
       <section class="card settings">

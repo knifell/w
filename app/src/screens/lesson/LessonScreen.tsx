@@ -9,6 +9,7 @@ import { ChoiceView } from './ChoiceView';
 import { PairsView } from './PairsView';
 import { TypeView } from './TypeView';
 import { BuildView } from './BuildView';
+import { LearnCard } from './LearnCard';
 
 export interface SessionOutcome { accuracy: number; seen: Word[]; wrong: Word[] }
 interface Props {
@@ -31,6 +32,7 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
   const progress = solved / initial.length;
 
   const submit = (s: Submit) => {
+    if (s.learn) return next(true); // карточка слова не оценивается
     stats.answers++;
     if (s.ok) { stats.correct++; haptic.ok(); } else haptic.bad();
     s.wrongIds?.forEach((id) => stats.wrong.add(id));
@@ -64,7 +66,7 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
 
   const key = `${ex.id}#${pos}`;
   const props = { locked: !!fb, onSubmit: submit };
-  const example = ex.kind !== 'pairs' ? ex.word.examples[0] : null;
+  const example = ex.kind !== 'pairs' && ex.kind !== 'learn' ? ex.word.examples[0] : null;
 
   return (
     <div class="lesson">
@@ -72,6 +74,7 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
         <button class="x" aria-label="Выйти" onClick={() => setAskExit(true)}>✕</button>
         <div class="bar"><div style={{ width: `${progress * 100}%` }} /></div>
       </div>
+      {ex.kind === 'learn' && <LearnCard key={key} ex={ex} {...props} />}
       {ex.kind === 'choice' && <ChoiceView key={key} ex={ex} {...props} />}
       {ex.kind === 'pairs' && <PairsView key={key} ex={ex} {...props} />}
       {ex.kind === 'type' && <TypeView key={key} ex={ex} {...props} />}

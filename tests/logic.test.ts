@@ -94,16 +94,25 @@ t('остров открывается только после закрепле�
   assert.equal(islandState(other, other.islands[1], s).kind, 'open');
 });
 
-t('генератор: каждое слово урока встречается, повторение строится', () => {
+t('генератор: сначала карточки новых слов, каждое слово встречается, повторение строится', () => {
+  const pool0 = pack.lessons.flatMap((l) => l.words);
   const packs = ['a1', 'a2', 'b1', 'b2'].map((l) => JSON.parse(readFileSync(`app/public/content/${l}.json`, 'utf8')) as LevelPack);
   for (const pk of packs) for (const l of pk.lessons) {
     const pool = pk.lessons.flatMap((x) => x.words);
     const ex = buildLesson(l, pool, 1);
-    const seen = new Set(ex.flatMap((e) => (e.kind === 'pairs' ? e.words : [e.word])).map((w) => w.id));
+    const seen = new Set(ex.filter((e) => e.kind !== 'learn').flatMap((e) => (e.kind === 'pairs' ? e.words : [e.word])).map((w) => w.id));
     l.words.forEach((w) => assert.ok(seen.has(w.id), w.en));
     ex.filter((e) => e.kind === 'choice').forEach((e) => e.kind === 'choice' && assert.equal(new Set(e.options).size, 4));
   }
-  const pool = pack.lessons.flatMap((l) => l.words);
+  const l0 = pack.lessons[0];
+  const fresh = buildLesson(l0, pool0, 1);
+  assert.equal(fresh.filter((e) => e.kind === 'learn').length, l0.words.length); // все слова новые → карточки
+  const firstChoice = fresh.findIndex((e) => e.kind === 'choice');
+  assert.equal(fresh[0].kind, 'learn'); // сначала учим, потом проверяем
+  assert.ok(firstChoice > 0);
+  const again = buildLesson(l0, pool0, 1, new Set(l0.words.map((w) => w.id)));
+  assert.equal(again.filter((e) => e.kind === 'learn').length, 0); // знакомые слова — без карточек
+  const pool = pool0;
   assert.ok(buildReview(pool.slice(0, 12), pool, 1).length >= 12);
 });
 

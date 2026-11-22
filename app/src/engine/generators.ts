@@ -4,6 +4,7 @@ import { hashSeed, mulberry32, shuffle, type Rng } from './rng';
 import { norm } from './check';
 
 export type Exercise =
+  | { kind: 'learn'; id: string; word: Word }
   | { kind: 'choice'; id: string; dir: 'en-ru' | 'ru-en'; word: Word; prompt: string; options: string[]; answer: string }
   | { kind: 'pairs'; id: string; words: Word[]; left: number[]; right: number[] }
   | { kind: 'type'; id: string; word: Word; prompt: string; answers: string[] }
@@ -58,22 +59,39 @@ function build(w: Word, pool: Word[], r: Rng): Exercise | null {
   return { kind: 'build', id: `b-${w.id}`, word: w, prompt: ex.ru, answer: toks.join(' '), tokens: shuffle([...toks, ...extra], r) };
 }
 
-/** Урок ≈16 заданий: каждое слово встречается минимум 1 раз, типы чередуются по сложности. */
-export function buildLesson(lesson: Lesson, levelPool: Word[], seed = Date.now()): Exercise[] {
+/** Делит новые слова на группы по 3–4: выучил группу → закрепил → следующая. */
+function chunks<T>(a: T[]): T[][] {
+  const n = Math.ceil(a.length / 4);
+  const out: T[][] = Array.from({ length: n }, () => []);
+  a.forEach((x, i) => out[Math.floor((i * n) / a.length)].push(x));
+  return out;
+}
+
+/**
+ * Урок по шагам:
+ * 1) новые слова группами по 3–4: карточка слова → выбор перевода → пары;
+ * 2) знакомые слова: выбор перевода (+ пары);
+ * 3) финал на всех словах урока: обратный перевод, ввод слова, сборка предложения.
+ */
+export function buildLesson(lesson: Lesson, levelPool: Word[], seed = Date.now(), known: Set<string> = new Set()): Exercise[] {
   const r = mulberry32(hashSeed(lesson.id) ^ seed);
   const ws = lesson.words;
   const pool = levelPool.length >= 8 ? levelPool : ws;
-  const half = Math.ceil(ws.length / 2);
-  const a = ws.slice(0, half), b = ws.slice(half);
+  const fresh = ws.filter((w) => !known.has(w.id));
+  const old = ws.filter((w) => known.has(w.id));
   const out: Exercise[] = [];
-  a.forEach((w) => out.push(choice(w, pool, r, 'en-ru')));
-  if (a.length >= 3) out.push(pairs(a.slice(0, 5), r, `${lesson.id}-a`));
-  b.forEach((w) => out.push(choice(w, pool, r, 'ru-en')));
-  if (b.length >= 3) out.push(pairs(b.slice(0, 5), r, `${lesson.id}-b`));
+  chunks(fresh).forEach((c, i) => {
+    c.forEach((w) => out.push({ kind: 'learn', id: `l-${w.id}`, word: w }));
+    shuffle(c, r).forEach((w) => out.push(choice(w, pool, r, 'en-ru')));
+    if (c.length >= 3) out.push(pairs(c, r, `${lesson.id}-n${i}`));
+  });
+  shuffle(old, r).forEach((w) => out.push(choice(w, pool, r, 'en-ru')));
+  if (old.length >= 3) out.push(pairs(shuffle(old, r).slice(0, 5), r, `${lesson.id}-o`));
   const late = shuffle(ws, r);
-  late.slice(0, 2).forEach((w) => out.push(typeEx(w)));
+  late.slice(0, 3).forEach((w) => out.push(choice(w, pool, r, 'ru-en')));
+  late.slice(3, 5).forEach((w) => out.push(typeEx(w)));
   let built = 0;
-  for (const w of late.slice(2)) {
+  for (const w of late.slice(5)) {
     if (built === 2) break;
     const e = build(w, pool, r);
     if (e) { out.push(e); built++; }
@@ -93,10 +111,11 @@ export function buildReview(words: Word[], pool: Word[], seed = Date.now()): Exe
   return out;
 }
 
-/** Тест уровня: n вопросов «выбери перевод» из случайных слов уровня. */
-export function placementQuestions(pool: Word[], n: number, seed = Date.now()): Exercise[] {
+/** Мини-тест выбранного уровня: 3 выбора EN→RU, 3 выбора RU→EN, 2 ввода слова. */
+export function buildMiniTest(pool: Word[], seed = Date.now()): Exercise[] {
   const r = mulberry32(seed);
-  return shuffle(pool, r).slice(0, n).map((w, i) => choice(w, pool, r, i % 2 ? 'ru-en' : 'en-ru'));
+  const ws = shuffle(pool, r).slice(0, 8);
+  return ws.map((w, i) => (i < 3 ? choice(w, pool, r, 'en-ru') : i < 6 ? choice(w, pool, r, 'ru-en') : typeEx(w)));
 }
 
 /** Испытание острова: только ввод и сборка предложений, без подсказок-вариантов. */

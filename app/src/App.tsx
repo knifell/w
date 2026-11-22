@@ -8,6 +8,7 @@ import { hasProgress } from './game/local';
 import { STAR_PREMIUM } from './game/config';
 import { nowMs } from './game/clock';
 import { haptic } from './tg/telegram';
+import { canListen } from './lib/speech';
 import { emptyState, loadState, saveState, update, type LocalState } from './game/local';
 import { recordSession, settleAll, type SessionKind } from './game/session';
 import { refundEnergy, spendEnergy } from './game/energy';
@@ -143,19 +144,19 @@ export function App() {
       setToast({ text: 'Приглашения заработают после запуска в Telegram.', err: true });
   };
   const startReview = (words: Word[]) => go({ s: 'session', kind: 'review', build: () => buildReview(words, [...allWords.values()], Date.now(),
-    Object.keys(st.mem).map((id) => allWords.get(id)).filter((w): w is Word => !!w)) });
+    Object.keys(st.mem).map((id) => allWords.get(id)).filter((w): w is Word => !!w), canListen()) });
 
   const startLesson = (l: Lesson) => {
     const start = () => {
       if (!mutate(spendEnergy)) return setEnergySheet(true);
-      go({ s: 'session', kind: 'lesson', lessonId: l.id, build: () => buildLesson(l, pool, Date.now(), new Set(Object.keys(st.mem)), vocab(l.words)) });
+      go({ s: 'session', kind: 'lesson', lessonId: l.id, build: () => buildLesson(l, pool, Date.now(), new Set(Object.keys(st.mem)), vocab(l.words), canListen()) });
     };
     if (!st.storySeen.includes(`${pack.level}-${l.island}`)) return openStory(pack.islands[l.island - 1], start);
     start();
   };
   const startTrial = (isl: Island) => {
     const ws = pack.lessons.filter((l) => l.island === isl.n && st.done[l.id]).flatMap((l) => l.words);
-    go({ s: 'session', kind: 'trial', build: () => buildTrial(ws, pool, Date.now(), vocab(ws)) });
+    go({ s: 'session', kind: 'trial', build: () => buildTrial(ws, pool, Date.now(), vocab(ws), canListen()) });
   };
   const finish = (kind: SessionKind, lessonId: string | undefined, o: SessionOutcome) => {
     const reward = recordSession({ kind, lessonId, accuracy: o.accuracy, seen: o.seen.map((w) => w.id), wrong: o.wrong.map((w) => w.id) }, packs);

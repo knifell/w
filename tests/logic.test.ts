@@ -437,4 +437,19 @@ await t('опечатки: одна буква прощается, но не в 
   setDictionary([]);
 });
 
+await t('на слух: 2 задания в уроке со звуком, без звука — ни одного; ответы корректны', () => {
+  const a1 = JSON.parse(readFileSync('app/public/content/a1.json', 'utf8')) as LevelPack;
+  const pool = a1.lessons.flatMap((l) => l.words);
+  for (const l of a1.lessons.slice(0, 20)) {
+    const on = buildLesson(l, pool, 3, new Set(), undefined, true).filter((e) => e.kind === 'listen');
+    assert.equal(on.length, 2, l.id);
+    for (const e of on) if (e.kind === 'listen') {
+      if (e.mode === 'choose') { assert.equal(new Set(e.options).size, 4); assert.ok(e.options.includes(e.answer)); }
+      else assert.ok(e.answers.includes(e.word.en));
+    }
+    assert.equal(buildLesson(l, pool, 3).filter((e) => e.kind === 'listen').length, 0);
+  }
+  assert.ok(buildReview(pool.slice(0, 12), pool, 1, undefined, true).some((e) => e.kind === 'listen'));
+});
+
 console.log(`\n${n} проверок пройдено`);

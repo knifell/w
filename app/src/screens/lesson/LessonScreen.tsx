@@ -10,6 +10,7 @@ import { PairsView } from './PairsView';
 import { TypeView } from './TypeView';
 import { BuildView } from './BuildView';
 import { LearnCard } from './LearnCard';
+import { ListenView } from './ListenView';
 import { Icon } from '../../components/Icon';
 
 export interface SessionOutcome { accuracy: number; seen: Word[]; wrong: Word[] }
@@ -83,6 +84,7 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
       {ex.kind === 'choice' && <ChoiceView key={key} ex={ex} {...props} />}
       {ex.kind === 'pairs' && <PairsView key={key} ex={ex} {...props} />}
       {ex.kind === 'type' && <TypeView key={key} ex={ex} {...props} />}
+      {ex.kind === 'listen' && <ListenView key={key} ex={ex} {...props} />}
       {ex.kind === 'build' && <BuildView key={key} ex={ex} {...props} />}
       {askExit && (
         <div class="overlay" onClick={() => setAskExit(false)}>

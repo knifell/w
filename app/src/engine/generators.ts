@@ -9,7 +9,9 @@ export type Exercise =
   | { kind: 'choice'; id: string; dir: 'en-ru' | 'ru-en'; word: Word; prompt: string; options: string[]; answer: string }
   | { kind: 'pairs'; id: string; words: Word[]; labels: string[]; left: number[]; right: number[] }
   | { kind: 'type'; id: string; word: Word; prompt: string; answers: string[] }
-  | { kind: 'build'; id: string; word: Word; prompt: string; answer: string; tokens: string[] };
+  | { kind: 'build'; id: string; word: Word; prompt: string; answer: string; tokens: string[] }
+  /** На слух: слово звучит (только английский). choose — выбрать перевод, write — написать по-английски. */
+  | { kind: 'listen'; id: string; mode: 'choose' | 'write'; word: Word; options: string[]; answer: string; answers: string[] };
 
 const val = (w: Word, f: 'en' | 'ru') => (f === 'en' ? w.en : w.ru[0]);
 
@@ -62,6 +64,16 @@ function pairs(group: Word[], r: Rng, tag: string): Exercise | null {
 }
 
 /** Ввод слова. Синонимы с тем же переводом (mother/mum на «мама») тоже засчитываются. */
+function listenEx(w: Word, pool: Word[], r: Rng, mode: 'choose' | 'write'): Exercise {
+  const ch = choice(w, pool, r, 'en-ru');
+  const t = typeEx(w, pool);
+  return {
+    kind: 'listen', id: `a-${mode}-${w.id}`, mode, word: w,
+    options: ch.kind === 'choice' ? ch.options : [], answer: ch.kind === 'choice' ? ch.answer : w.ru[0],
+    answers: t.kind === 'type' ? t.answers : [w.en],
+  };
+}
+
 const typeEx = (w: Word, pool: Word[] = []): Exercise => {
   const ru = new Set(w.ru.map(norm));
   const alts = pool.filter((x) => x.id !== w.id && x.ru.some((t) => ru.has(norm(t)))).map((x) => x.en);
@@ -101,7 +113,7 @@ function chunks<T>(a: T[]): T[][] {
  * 3) финал на всех словах урока: обратный перевод, ввод слова, сборка предложения.
  */
 export function buildLesson(
-  lesson: Lesson, levelPool: Word[], seed = Date.now(), known: Set<string> = new Set(), vocab?: Set<string>,
+  lesson: Lesson, levelPool: Word[], seed = Date.now(), known: Set<string> = new Set(), vocab?: Set<string>, audio = false,
 ): Exercise[] {
   const r = mulberry32(hashSeed(lesson.id) ^ seed);
   const ws = lesson.words;
@@ -126,6 +138,10 @@ export function buildLesson(
   const familiar = pool.filter((x) => known.has(x.id) || ws.some((y) => y.id === x.id));
   late.slice(0, 3).forEach((w) => out.push(choice(w, pool, r, 'ru-en', familiar)));
   late.slice(3, 5).forEach((w) => out.push(typeEx(w, pool)));
+  if (audio) { // на слух: одно слово выбрать по звуку, одно — записать
+    out.push(listenEx(late[late.length - 1], pool, r, 'choose'));
+    out.push(listenEx(late[late.length - 2], pool, r, 'write'));
+  }
   let built = 0;
   for (const w of late.slice(5)) {
     if (built === 2) break;
@@ -148,11 +164,12 @@ const sameLevel = (w: Word, pool: Word[]) => {
 };
 
 /** Повторение: по 1 заданию на слово (выбор/ввод чередуются) + пары, если слов ≥5. */
-export function buildReview(words: Word[], pool: Word[], seed = Date.now(), familiar?: Word[]): Exercise[] {
+export function buildReview(words: Word[], pool: Word[], seed = Date.now(), familiar?: Word[], audio = false): Exercise[] {
   const r = mulberry32(seed);
   const ws = shuffle(words, r);
   const out: Exercise[] = ws.map((w, i) =>
-    i % 3 === 2 ? typeEx(w, words) : choice(w, sameLevel(w, pool), r, i % 3 === 0 ? 'ru-en' : 'en-ru', familiar));
+    audio && i % 4 === 3 ? listenEx(w, sameLevel(w, pool), r, i % 8 === 7 ? 'write' : 'choose')
+      : i % 3 === 2 ? typeEx(w, words) : choice(w, sameLevel(w, pool), r, i % 3 === 0 ? 'ru-en' : 'en-ru', familiar));
   const p = ws.length >= 5 ? pairs(shuffle(ws, r).slice(0, 5), r, `rev-${seed}`) : null;
   if (p) out.splice(Math.min(4, out.length), 0, p);
   return out;
@@ -166,13 +183,13 @@ export function buildMiniTest(pool: Word[], seed = Date.now()): Exercise[] {
 }
 
 /** Испытание острова: только ввод и сборка предложений, без подсказок-вариантов. */
-export function buildTrial(words: Word[], pool: Word[], seed = Date.now(), vocab?: Set<string>): Exercise[] {
+export function buildTrial(words: Word[], pool: Word[], seed = Date.now(), vocab?: Set<string>, audio = false): Exercise[] {
   const r = mulberry32(seed);
   const ws = shuffle(words, r).slice(0, 10);
   const out: Exercise[] = [];
   ws.forEach((w, i) => {
     const b = i % 2 ? build(w, pool, r, vocab) : null;
-    out.push(b ?? typeEx(w, pool));
+    out.push(b ?? (audio && i % 4 === 2 ? listenEx(w, pool, r, 'write') : typeEx(w, pool)));
   });
   return out;
 }

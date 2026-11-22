@@ -663,3 +663,11 @@ section.card > b:first-child { margin-bottom: 0; }
 .invite { display: grid; gap: 8px; }
 .invite b { display: flex; gap: 8px; align-items: center; }
 .app-toast { box-shadow: 0 8px 24px rgb(0 0 0 / .18); position: fixed; left: 16px; right: 16px; bottom: calc(96px + env(safe-area-inset-bottom, 0px)); z-index: 30; max-width: 488px; margin: 0 auto; }
+
+/* задание на слух */
+.listen-play { display: flex; flex-direction: column; align-items: center; gap: 10px; margin: 6px 0 4px; }
+.play-big { width: 104px; height: 104px; border-radius: 50%; border: 0; cursor: pointer; display: grid; place-items: center;
+  background: var(--sea-500, var(--tg-accent)); color: #fff; box-shadow: 0 6px 0 color-mix(in srgb, var(--sea-500, #1f8a8a) 70%, #000); }
+.play-big:active { transform: translateY(3px); box-shadow: 0 3px 0 color-mix(in srgb, var(--sea-500, #1f8a8a) 70%, #000); }
+.play-slow { border: 2px solid var(--edge, #ccc); background: var(--surface, #fff); color: var(--ink, inherit); border-radius: 999px;
+  padding: 6px 14px; font: 600 14px inherit; font-family: inherit; cursor: pointer; }

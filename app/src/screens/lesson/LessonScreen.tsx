@@ -10,6 +10,7 @@ import { PairsView } from './PairsView';
 import { TypeView } from './TypeView';
 import { BuildView } from './BuildView';
 import { LearnCard } from './LearnCard';
+import { Icon } from '../../components/Icon';
 
 export interface SessionOutcome { accuracy: number; seen: Word[]; wrong: Word[] }
 interface Props {
@@ -74,7 +75,7 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
   return (
     <div class="lesson">
       <div class="lesson-top">
-        <button class="x" aria-label="Выйти" onClick={() => setAskExit(true)}>✕</button>
+        <button class="x" aria-label="Выйти" onClick={() => setAskExit(true)}><Icon name="close" size={26} stroke={2.4} /></button>
         <div class="bar"><div style={{ width: `${progress * 100}%` }} /></div>
       </div>
       {ex.kind === 'learn' && <LearnCard key={key} ex={ex} {...props} />}
@@ -94,10 +95,18 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
       )}
       {fb && (
         <div class={'sheet ' + (fb.ok ? 'ok' : 'bad')}>
-          <b>{fb.ok ? (fb.typo ? 'Почти! Есть опечатка' : 'Верно!') : 'Не совсем'}</b>
-          {(!fb.ok || fb.typo) && <div>Правильно: <b>{fb.correct}</b></div>}
-          {example && <div class="hint ex-sent" onClick={() => speak(example.en)}>🔊 {example.en}<br />{example.ru}</div>}
-          <button class="btn" onClick={() => next(fb.ok)}>Дальше</button>
+          <div class="fb-head" role="status">
+            <span class="fb-mark"><Icon name={fb.ok ? 'check' : 'close'} size={24} stroke={3} /></span>
+            {fb.ok ? (fb.typo ? 'Почти! Есть опечатка' : 'Верно!') : 'Не совсем'}
+          </div>
+          {(!fb.ok || fb.typo) && <div class="fb-answer">Правильно: <b>{fb.correct}</b></div>}
+          {example && (
+            <div class="ex-sent" onClick={() => speak(example.en)}>
+              <span class="speak sm" aria-hidden="true"><Icon name="speaker" size={18} /></span>
+              <div>{example.en}<div class="hint">{example.ru}</div></div>
+            </div>
+          )}
+          <button class={'btn ' + (fb.ok ? 'ok' : 'bad')} onClick={() => next(fb.ok)}>Дальше</button>
           {!fb.ok && ex.kind === 'type' && <button class="link" onClick={claimRight}>Я ответил верно</button>}
         </div>
       )}

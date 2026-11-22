@@ -24,6 +24,8 @@ import { PremiumScreen } from './screens/PremiumScreen';
 import { TabBar, type Tab } from './components/TabBar';
 import { TopBar } from './components/TopBar';
 import { EnergySheet } from './components/EnergySheet';
+import { Skipper } from './components/Skipper';
+import { Icon } from './components/Icon';
 
 type Route =
   | { s: 'onboarding' } | { s: 'pick' } | { s: 'minitest'; level: Level } | { s: 'tab'; tab: Tab; note?: string }
@@ -48,7 +50,7 @@ export function App() {
   const allWords = useMemo(() => new Map((packs ?? []).flatMap((p) => p.lessons.flatMap((l) => l.words)).map((w) => [w.id, w])), [packs]);
 
   if (error) return <main class="card">Не удалось загрузить уроки. Проверь интернет и открой снова.<div class="hint">{error}</div></main>;
-  if (!packs) return <main class="loading">🦀</main>;
+  if (!packs) return <main class="loading" aria-label="Загрузка"><Skipper size={120} /></main>;
 
   const pack = packs.find((p) => p.level === st.level) ?? packs[0];
   const pool = pack.lessons.flatMap((l) => l.words);
@@ -102,7 +104,7 @@ export function App() {
   return (
     <>
       <TopBar st={st} level={tab === 'map' ? pack.level : undefined} onEnergy={() => setEnergySheet(true)} />
-      {r.note && <div class="card banner">{r.note}</div>}
+      {r.note && <div class="card banner note-card"><span class="banner-ico"><Icon name="info" /></span><div>{r.note}</div></div>}
       {tab === 'map' && (
         <MapScreen pack={pack} st={st} due={due} onLesson={startLesson} onReview={startReview} onTrial={startTrial}
           onStory={(isl) => openStory(isl)} onRetest={() => go({ s: 'pick' })} onPremium={() => go({ s: 'premium' })} />

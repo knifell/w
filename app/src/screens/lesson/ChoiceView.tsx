@@ -2,6 +2,8 @@ import { useEffect, useState } from 'preact/hooks';
 import { haptic } from '../../tg/telegram';
 import { speak } from '../../lib/speech';
 import type { ViewProps } from './types';
+import { Icon } from '../../components/Icon';
+import { Skipper } from '../../components/Skipper';
 
 export function ChoiceView({ ex, locked, onSubmit }: ViewProps<'choice'>) {
   const [sel, setSel] = useState<string | null>(null);
@@ -11,8 +13,12 @@ export function ChoiceView({ ex, locked, onSubmit }: ViewProps<'choice'>) {
   return (
     <div class="ex">
       <div class="ex-title">{ex.dir === 'en-ru' ? 'Выбери перевод' : 'Как это по-английски?'}</div>
-      <div class="ex-prompt" onClick={() => ex.dir === 'en-ru' && speak(ex.word.en)}>
-        {ex.dir === 'en-ru' && <span class="speaker">🔊</span>}{ex.prompt}
+      <div class="prompt-row">
+        <Skipper size={78} />
+        <div class={'bubble' + (ex.dir === 'en-ru' ? ' tap' : '')} onClick={() => ex.dir === 'en-ru' && speak(ex.word.en)}>
+          {ex.dir === 'en-ru' && <span class="speak sm" aria-hidden="true"><Icon name="speaker" size={20} /></span>}
+          <span class="ex-prompt">{ex.prompt}</span>
+        </div>
       </div>
       <div class="opts">
         {ex.options.map((o) => (

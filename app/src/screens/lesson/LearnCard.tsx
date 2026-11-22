@@ -2,6 +2,7 @@ import { useEffect, useState } from 'preact/hooks';
 import { speak } from '../../lib/speech';
 import { haptic } from '../../tg/telegram';
 import type { ViewProps } from './types';
+import { Icon } from '../../components/Icon';
 
 const POS: Record<string, string> = {
   noun: 'существительное', verb: 'глагол', adjective: 'прилагательное', adverb: 'наречие',
@@ -44,11 +45,14 @@ export function LearnCard({ ex, locked, onSubmit }: ViewProps<'learn'>) {
     <div class="ex learn">
       <div class="ex-title">Новое слово</div>
       <div class="learn-card">
-        <button class="learn-word" onClick={reveal} title="Нажми, чтобы увидеть перевод">🔊 {w.en}</button>
-        <div class="hint">{POS[w.pos] ?? w.pos}</div>
+        <button class="learn-head" onClick={reveal} title="Нажми, чтобы увидеть перевод">
+          <span class="speak" aria-hidden="true"><Icon name="speaker" /></span>
+          <span class="learn-word">{w.en}</span>
+        </button>
+        <div class="pos">{POS[w.pos] ?? w.pos}</div>
         {shown
           ? <div class="learn-ru">{w.ru.join(', ')}</div>
-          : <button class="peek" onClick={reveal}>👀 Показать перевод</button>}
+          : <button class="peek" onClick={reveal}><Icon name="eye" size={20} />Показать перевод</button>}
         {w.examples.map((e) => (
           <div class="learn-ex" onClick={() => speak(e.en)}>
             <div>{highlight(e.en, [...(w.forms ?? []), w.en])}</div>
@@ -56,7 +60,7 @@ export function LearnCard({ ex, locked, onSubmit }: ViewProps<'learn'>) {
           </div>
         ))}
       </div>
-      <div class="hint">Выбери перевод. Не знаешь — нажми на слово.</div>
+      <div class="hint learn-tip">Выбери перевод. Не знаешь — нажми на слово.</div>
       <div class="opts">
         {ex.options.map((o) => <button class={cls(o)} disabled={!!sel || locked} onClick={() => pick(o)}>{o}</button>)}
       </div>

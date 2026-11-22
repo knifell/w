@@ -4,6 +4,8 @@ import { buildMiniTest } from '../engine/generators';
 import { ChoiceView } from './lesson/ChoiceView';
 import { TypeView } from './lesson/TypeView';
 import { haptic } from '../tg/telegram';
+import { Skipper } from '../components/Skipper';
+import { Icon } from '../components/Icon';
 
 const ORDER: Level[] = ['A1', 'A2', 'B1', 'B2'];
 
@@ -29,7 +31,7 @@ export function MiniTestScreen({ pack, packs, onDone, onBack }: Props) {
     const tooHard = score <= 3 && down && has(down);
     return (
       <main class="result">
-        <div class="mascot">{tooHard ? '🦀💦' : tooEasy ? '🦀🚀' : '🦀👍'}</div>
+        <Skipper mood={tooHard ? 'oops' : tooEasy ? 'happy' : 'proud'} size={170} />
         <h1>{score} из {qs.length}</h1>
         <p>{tooHard ? `Уровень ${pack.level} пока сложноват. Советуем начать с ${down}: там слова, на которых строится ${pack.level}.`
           : tooEasy ? `Похоже, ${pack.level} для тебя лёгкий. Можно сразу на ${up}.`
@@ -47,14 +49,16 @@ export function MiniTestScreen({ pack, packs, onDone, onBack }: Props) {
   return (
     <div class="lesson">
       <div class="lesson-top">
-        <button class="x" aria-label="Назад" onClick={onBack}>←</button>
+        <button class="x" aria-label="Назад" onClick={onBack}><Icon name="back" /></button>
         <div class="bar"><div style={{ width: `${(i / qs.length) * 100}%` }} /></div>
         <span class="hint">{pack.level}</span>
       </div>
       {ex.kind === 'choice' && <ChoiceView key={i} ex={ex} locked={locked} onSubmit={(s) => answer(s.ok)} />}
       {ex.kind === 'type' && <TypeView key={i} ex={ex} locked={locked} onSubmit={(s) => answer(s.ok)} />}
-      {!locked && <button class="link idk" onClick={() => answer(false)}>Не знаю</button>}
-      <button class="link skip" onClick={() => onDone(pack.level)}>Начать без теста</button>
+      <div class="test-links">
+        {!locked && <button class="link idk" onClick={() => answer(false)}>Не знаю</button>}
+        <button class="link skip" onClick={() => onDone(pack.level)}>Начать без теста</button>
+      </div>
     </div>
   );
 }

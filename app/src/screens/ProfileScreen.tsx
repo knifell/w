@@ -4,6 +4,8 @@ import type { LocalState } from '../game/local';
 import { MASTER_STAGE } from '../game/srs';
 import { conqueredCount } from '../game/progress';
 import { tg } from '../tg/telegram';
+import { Flame, Icon } from '../components/Icon';
+import { Skipper } from '../components/Skipper';
 
 interface Props {
   st: LocalState; packs: LevelPack[];
@@ -18,15 +20,20 @@ export function ProfileScreen({ st, packs, onLevel, onPremium, onAbout, onRetest
   const toggleSound = () => { const v = !sound; setSound(v); try { localStorage.setItem('sound', v ? 'on' : 'off'); } catch { /* */ } };
   return (
     <main>
-      <h1>🦀 {name}</h1>
-      <div class="hint">{st.premium ? '👑 Premium' : 'Бесплатный план'} · уровень {st.level}</div>
+      <header class="profile-head">
+        <span class="avatar"><Skipper size={62} /></span>
+        <div>
+          <h1>{name}</h1>
+          <span class="plan">{st.premium && <Icon name="crown" size={16} />}{st.premium ? 'Premium' : 'Бесплатный план'} · уровень {st.level}</span>
+        </div>
+      </header>
       <div class="grid2">
-        <div class="card stat"><b>{st.xp}</b><span>опыт</span></div>
-        <div class="card stat"><b>🔥 {st.streak.best}</b><span>лучший костёр</span></div>
-        <div class="card stat"><b>{mastered}</b><span>слов закреплено</span></div>
-        <div class="card stat"><b>{conqueredCount(st)}</b><span>островов покорено</span></div>
-        <div class="card stat"><b>{st.counters.lessons ?? 0}</b><span>уроков</span></div>
-        <div class="card stat"><b>🪵 {st.inventory.ember ?? 0}</b><span>угля</span></div>
+        <div class="stat"><Icon name="star" /><b>{st.xp}</b><span>опыт</span></div>
+        <div class="stat"><Flame size={24} /><b>{st.streak.best}</b><span>лучший костёр</span></div>
+        <div class="stat"><Icon name="anchor" /><b>{mastered}</b><span>слов закреплено</span></div>
+        <div class="stat"><Icon name="palm" /><b>{conqueredCount(st)}</b><span>островов покорено</span></div>
+        <div class="stat"><Icon name="book" /><b>{st.counters.lessons ?? 0}</b><span>уроков</span></div>
+        <div class="stat"><Icon name="ember" /><b>{st.inventory.ember ?? 0}</b><span>угля</span></div>
       </div>
 
       <section class="card">
@@ -41,10 +48,10 @@ export function ProfileScreen({ st, packs, onLevel, onPremium, onAbout, onRetest
       </section>
 
       <section class="card settings">
-        <label><span>🔊 Произношение слов</span><input type="checkbox" checked={sound} onChange={toggleSound} /></label>
+        <label><span><Icon name="speaker" />Произношение слов</span><input class="switch" type="checkbox" role="switch" checked={sound} onChange={toggleSound} /></label>
       </section>
 
-      {!st.premium && <button class="btn gold" onClick={onPremium}>👑 Узнать о Premium</button>}
+      {!st.premium && <button class="btn gold" onClick={onPremium}><Icon name="crown" size={20} />Узнать о Premium</button>}
       <button class="link" onClick={onAbout}>О проекте и контенте</button>
     </main>
   );

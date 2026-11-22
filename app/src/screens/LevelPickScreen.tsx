@@ -1,3 +1,4 @@
+import { useTgBack } from '../tg/telegram';
 import type { Level, LevelPack } from '../types';
 import { Icon } from '../components/Icon';
 
@@ -9,6 +10,7 @@ const INFO: Record<Level, { title: string; text: string }> = {
 };
 
 export function LevelPickScreen({ packs, current, onPick, onBack }: { packs: LevelPack[]; current: Level | null; onPick: (l: Level) => void; onBack?: () => void }) {
+  useTgBack(onBack);
   return (
     <main class="pick">
       {onBack && <button class="link back" onClick={onBack}><Icon name="back" size={20} />Назад</button>}

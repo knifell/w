@@ -26,3 +26,10 @@ export function spendEnergy(s: LocalState): boolean {
 }
 
 export const addEnergy = (s: LocalState, n: number) => { settleEnergy(s); s.energy = Math.min(ENERGY.bonusCap, s.energy + n); };
+
+/** Возвращает заряд за незавершённый урок. */
+export function refundEnergy(s: LocalState) {
+  if (s.premium) return;
+  settleEnergy(s);
+  s.energy = Math.min(ENERGY.bonusCap, s.energy + ENERGY.lessonCost);
+}

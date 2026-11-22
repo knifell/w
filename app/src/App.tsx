@@ -3,7 +3,7 @@ import type { ContentIndex, Island, Lesson, Level, LevelPack, Word } from './typ
 import { loadIndex, loadLevel } from './api/content';
 import { emptyState, loadState, saveState, update, type LocalState } from './game/local';
 import { recordSession, settleAll, type SessionKind } from './game/session';
-import { spendEnergy } from './game/energy';
+import { refundEnergy, spendEnergy } from './game/energy';
 import { buy } from './game/shop';
 import { isDue } from './game/srs';
 import { today } from './game/time';
@@ -99,7 +99,7 @@ export function App() {
     case 'minitest':
       return <MiniTestScreen pack={packs.find((p) => p.level === r.level)!} packs={packs}
         onDone={(l) => setLevel(l)} onBack={() => go({ s: 'pick' })} />;
-    case 'session': return <LessonScreen build={r.build} onExit={() => toMap()} onDone={(o) => finish(r.kind, r.lessonId, o)} />;
+    case 'session': return <LessonScreen build={r.build} onExit={() => { if (r.kind === 'lesson') mutate(refundEnergy); toMap(); }} onDone={(o) => finish(r.kind, r.lessonId, o)} />;
     case 'result': return <ResultScreen result={r.result} onNext={() => toMap()} />;
     case 'about': return <AboutScreen index={index} onBack={() => go({ s: 'tab', tab: 'profile' })}
       onReset={() => { saveState(emptyState()); setSt(loadState()); go({ s: 'onboarding' }); }} />;
@@ -124,7 +124,7 @@ export function App() {
           onAbout={() => go({ s: 'about' })} onRetest={() => go({ s: 'pick' })} />
       )}
       <TabBar tab={tab} onTab={(t) => go({ s: 'tab', tab: t })} />
-      {story && <StorySheet island={story.isl} onClose={() => { setStory(null); story.then?.(); }} />}
+      {story && <StorySheet island={story.isl} onClose={() => setStory(null)} onGo={() => { setStory(null); story.then?.(); }} />}
       {energySheet && (
         <EnergySheet st={st} onClose={() => setEnergySheet(false)}
           onShop={() => { setEnergySheet(false); go({ s: 'tab', tab: 'shop' }); }}

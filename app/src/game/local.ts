@@ -1,6 +1,7 @@
 // Локальное состояние игрока. Позже синхронизируется с сервером (сервер — источник истины).
 import type { Level } from '../types';
 import type { WordMem } from './srs';
+import { ENERGY } from './config';
 
 export interface LocalState {
   level: Level | null;
@@ -28,7 +29,7 @@ export interface LocalState {
 const KEY = 'os.v3';
 export const emptyState = (): LocalState => ({
   level: null, onboarded: false, premium: false, xp: 0, coins: 0,
-  energy: 5, energyAt: Date.now(), inventory: {}, boosts: {}, done: {}, mem: {},
+  energy: ENERGY.max, energyAt: Date.now(), inventory: {}, boosts: {}, done: {}, mem: {},
   streak: { cur: 0, best: 0, last: 0 }, rescue: null, emberWeek: 0, stickers: {}, counters: {},
   trialsToday: { day: 0, n: 0 }, unlocks: {}, storySeen: [], reports: [],
 });

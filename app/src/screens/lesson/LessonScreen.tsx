@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'preact/hooks';
 import type { Word } from '../../types';
 import { exerciseWords, type Exercise } from '../../engine/generators';
-import { haptic } from '../../tg/telegram';
+import { haptic, useTgBack } from '../../tg/telegram';
 import { speak } from '../../lib/speech';
 import { reportAnswer } from '../../game/local';
 import type { Submit } from './types';
@@ -27,6 +27,7 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
   const [solved, setSolved] = useState(0);
   const [fb, setFb] = useState<Submit | null>(null);
   const [askExit, setAskExit] = useState(false);
+  useTgBack(() => setAskExit(true));
   const [stats] = useState(() => ({ answers: 0, correct: 0, wrong: new Set<string>() }));
 
   const ex = queue[pos];
@@ -87,7 +88,7 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
         <div class="overlay" onClick={() => setAskExit(false)}>
           <div class="sheet story" onClick={(e) => e.stopPropagation()}>
             <h2>Выйти из урока?</h2>
-            <p class="hint">Прогресс этого урока не сохранится.</p>
+            <p class="hint">Прогресс этого урока не сохранится. Если это урок, заряд фонаря вернётся.</p>
             <button class="btn" onClick={() => setAskExit(false)}>Продолжить урок</button>
             <button class="link" onClick={onExit}>Выйти</button>
           </div>

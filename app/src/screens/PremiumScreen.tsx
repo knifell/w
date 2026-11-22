@@ -1,3 +1,4 @@
+import { useTgBack } from '../tg/telegram';
 import { tg } from '../tg/telegram';
 import { Icon } from '../components/Icon';
 import { Skipper } from '../components/Skipper';
@@ -13,6 +14,7 @@ const PERKS: [string, string, string?][] = [
 ];
 
 export function PremiumScreen({ isPremium, onBack, onDevToggle }: { isPremium: boolean; onBack: () => void; onDevToggle: () => void }) {
+  useTgBack(onBack);
   return (
     <main class="premium">
       <button class="link back" onClick={onBack}><Icon name="back" size={20} />Назад</button>

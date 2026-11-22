@@ -1,4 +1,5 @@
 // Тонкая обёртка над Telegram WebApp SDK. Работает и в обычном браузере (dev).
+import { useEffect } from 'preact/hooks';
 type HapticStyle = 'light' | 'medium' | 'heavy';
 type Notify = 'error' | 'success' | 'warning';
 interface TgWebApp {
@@ -46,3 +47,14 @@ export const haptic = {
 
 export const ask = (msg: string) =>
   new Promise<boolean>((res) => (tg?.showConfirm ? tg.showConfirm(msg, res) : res(confirm(msg))));
+
+/** Системная кнопка «Назад» Telegram: показывается, пока экран открыт и обработчик задан. */
+export function useTgBack(onBack?: () => void) {
+  useEffect(() => {
+    const bb = tg?.BackButton;
+    if (!bb || !onBack) return;
+    bb.onClick(onBack);
+    bb.show();
+    return () => { bb.offClick(onBack); bb.hide(); };
+  }, [onBack]);
+}

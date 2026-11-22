@@ -1,8 +1,10 @@
+import { useTgBack } from '../tg/telegram';
 import { useState } from 'preact/hooks';
 import type { ContentIndex } from '../types';
 import { Icon } from '../components/Icon';
 
 export function AboutScreen({ index, onBack, onReset }: { index: ContentIndex | null; onBack: () => void; onReset: () => void }) {
+  useTgBack(onBack);
   const [sure, setSure] = useState(false);
   return (
     <main class="about">
@@ -29,7 +31,7 @@ export function AboutScreen({ index, onBack, onReset }: { index: ContentIndex | 
         <div class="plan-row">Недельные экспедиции и сезонные альбомы</div>
         <div class="plan-row">Новые главы истории Шкипера</div>
       </div>
-      <div class="foot-note hint"><Icon name="info" size={20} />Нашёл ошибку в слове? Нажми «Я ответил верно» в уроке — мы проверим.</div>
+      <div class="foot-note hint"><Icon name="info" size={20} />Не согласен с проверкой ввода? Нажми «Я ответил верно» в уроке — ответ засчитается. Отправлять сообщения об ошибках пока нельзя.</div>
       {sure ? (
         <div class="card">
           <b>Стереть весь прогресс?</b>

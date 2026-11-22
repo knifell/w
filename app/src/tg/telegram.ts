@@ -1,10 +1,11 @@
 // Тонкая обёртка над Telegram WebApp SDK. Работает и в обычном браузере (dev).
 import { useEffect } from 'preact/hooks';
+import { setTrustedStart } from '../game/clock';
 type HapticStyle = 'light' | 'medium' | 'heavy';
 type Notify = 'error' | 'success' | 'warning';
 interface TgWebApp {
   initData: string;
-  initDataUnsafe: { user?: { id: number; first_name: string; language_code?: string } };
+  initDataUnsafe: { user?: { id: number; first_name: string; language_code?: string }; auth_date?: number };
   colorScheme: 'light' | 'dark';
   themeParams: Record<string, string>;
   ready(): void;
@@ -16,13 +17,14 @@ interface TgWebApp {
 }
 
 // Вне Telegram скрипт тоже создаёт WebApp, но с пустым initData — считаем, что Telegram нет.
-export const tg: TgWebApp | undefined = (window as any).Telegram?.WebApp?.initData
+export const tg: TgWebApp | undefined = typeof window !== 'undefined' && (window as any).Telegram?.WebApp?.initData
   ? (window as any).Telegram.WebApp
   : undefined;
 
 export function initTelegram() {
   applyTheme();
   if (!tg) return;
+  setTrustedStart(Number(tg.initDataUnsafe.auth_date) || 0);
   tg.ready();
   tg.expand();
   tg.onEvent('themeChanged', applyTheme);

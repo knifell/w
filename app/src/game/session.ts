@@ -1,4 +1,5 @@
 // Запись результата занятия: память слов, награды, костёр, штампы, открытие островов.
+import { nowMs } from './clock';
 import type { LevelPack } from '../types';
 import { update, type LocalState } from './local';
 import { REWARDS, type Sticker } from './config';
@@ -55,9 +56,9 @@ export function recordSession(res: SessionResult, packs: LevelPack[]): Reward {
     const inc = (k: string) => { c[k] = (c[k] ?? 0) + 1; };
     inc(res.kind === 'lesson' ? 'lessons' : res.kind === 'review' ? 'reviews' : 'trials');
     if (res.kind === 'lesson' && perfect) inc('perfect');
-    const h = new Date().getHours();
+    const h = new Date(nowMs()).getHours();
     if (h < 5) inc('night'); else if (h < 8) inc('early');
-    if (res.lessonId) s.done[res.lessonId] = { best: Math.max(res.accuracy, s.done[res.lessonId]?.best ?? 0), at: Date.now() };
+    if (res.lessonId) s.done[res.lessonId] = { best: Math.max(res.accuracy, s.done[res.lessonId]?.best ?? 0), at: nowMs() };
     const streakUp = bumpStreak(s, day);
     commitUnlocks(s, packs);
     const stickers = awardStickers(s);

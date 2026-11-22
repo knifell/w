@@ -1,4 +1,5 @@
-// Локальное состояние игрока. Позже синхронизируется с сервером (сервер — источник истины).
+// Состояние игрока. Хранится на телефоне (localStorage) и копируется в облако Telegram (api/cloud.ts).
+import { nowMs } from './clock';
 import type { Level } from '../types';
 import type { WordMem } from './srs';
 import { ENERGY } from './config';
@@ -24,23 +25,34 @@ export interface LocalState {
   unlocks: Record<string, number>;         // "A2-2" -> день открытия острова
   storySeen: string[];
   reports: { wordId: string; input: string; at: number }[];
+  updatedAt: number;                       // когда состояние менялось (для синхронизации)
 }
 
 const KEY = 'os.v3';
 export const emptyState = (): LocalState => ({
   level: null, onboarded: false, premium: false, xp: 0, coins: 0,
-  energy: ENERGY.max, energyAt: Date.now(), inventory: {}, boosts: {}, done: {}, mem: {},
+  energy: ENERGY.max, energyAt: nowMs(), inventory: {}, boosts: {}, done: {}, mem: {},
   streak: { cur: 0, best: 0, last: 0 }, rescue: null, emberWeek: 0, stickers: {}, counters: {},
-  trialsToday: { day: 0, n: 0 }, unlocks: {}, storySeen: [], reports: [],
+  trialsToday: { day: 0, n: 0 }, unlocks: {}, storySeen: [], reports: [], updatedAt: 0,
 });
 
 export function loadState(): LocalState {
   try { return { ...emptyState(), ...JSON.parse(localStorage.getItem(KEY) || '{}') }; }
   catch { return emptyState(); }
 }
-export function saveState(s: LocalState) {
+let onSave: ((s: LocalState) => void) | null = null;
+/** Подписка на сохранения (облачная копия). */
+export const setSaveListener = (fn: typeof onSave) => { onSave = fn; };
+
+/** Сохраняет изменения игрока. fromCloud — состояние пришло из облака, обратно его не отправляем. */
+export function saveState(s: LocalState, fromCloud = false) {
+  if (!fromCloud) s.updatedAt = nowMs();
   try { localStorage.setItem(KEY, JSON.stringify(s)); } catch { /* приватный режим */ }
+  if (!fromCloud) onSave?.(s);
 }
+
+/** Есть ли у игрока хоть какой-то прогресс. */
+export const hasProgress = (s: LocalState) => !!s.level || s.xp > 0 || Object.keys(s.done).length > 0;
 export function update<T = void>(fn: (s: LocalState) => T): [LocalState, T] {
   const s = loadState();
   const r = fn(s);
@@ -48,4 +60,4 @@ export function update<T = void>(fn: (s: LocalState) => T): [LocalState, T] {
   return [s, r];
 }
 export const reportAnswer = (wordId: string, input: string) =>
-  update((s) => { s.reports.push({ wordId, input, at: Date.now() }); });
+  update((s) => { s.reports.push({ wordId, input, at: nowMs() }); });

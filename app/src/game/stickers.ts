@@ -1,4 +1,5 @@
 // Штампы выдаются только за достижения — купить нельзя.
+import { nowMs } from './clock';
 import type { LocalState } from './local';
 import { STICKERS, type Sticker } from './config';
 import { MASTER_STAGE } from './srs';
@@ -20,7 +21,7 @@ export function awardStickers(s: LocalState): Sticker[] {
   const got: Sticker[] = [];
   for (const st of STICKERS) {
     if (s.stickers[st.id] || (st.premium && !s.premium)) continue;
-    if (metric(s, st.cond.type) >= st.cond.n) { s.stickers[st.id] = Date.now(); got.push(st); }
+    if (metric(s, st.cond.type) >= st.cond.n) { s.stickers[st.id] = nowMs(); got.push(st); }
   }
   return got;
 }

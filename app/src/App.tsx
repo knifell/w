@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import type { ContentIndex, Island, Lesson, Level, LevelPack, Word } from './types';
 import { loadIndex, loadLevel } from './api/content';
+import { startCloudSync } from './api/cloud';
 import { emptyState, loadState, saveState, update, type LocalState } from './game/local';
 import { recordSession, settleAll, type SessionKind } from './game/session';
 import { refundEnergy, spendEnergy } from './game/energy';
@@ -54,8 +55,14 @@ export function App() {
   }, [packs]);
 
   useEffect(() => {
-    loadIndex().then((i) => { setIndex(i); return Promise.all(i.levels.map((l) => loadLevel(l.level))); })
-      .then((p) => { setPacks(p); setSt(settleAll(p)[0]); }, (e) => setError(String(e)));
+    const content = loadIndex().then((i) => { setIndex(i); return Promise.all(i.levels.map((l) => loadLevel(l.level))); });
+    // Прогресс из облака Telegram подтягиваем до первого экрана, чтобы не начать игру «с нуля» на новом телефоне.
+    Promise.all([content, startCloudSync()]).then(([p, fromCloud]) => {
+      setPacks(p);
+      const s = settleAll(p)[0];
+      setSt(s);
+      if (fromCloud && s.level) go({ s: 'tab', tab: 'map' });
+    }, (e) => setError(String(e)));
   }, []);
 
   const allWords = useMemo(() => new Map((packs ?? []).flatMap((p) => p.lessons.flatMap((l) => l.words)).map((w) => [w.id, w])), [packs]);

@@ -9,6 +9,8 @@ import { emptyState } from '../app/src/game/local';
 import { settleStreak, bumpStreak, liveStreak } from '../app/src/game/streak';
 import { commitUnlocks, islandState, unlockGap, nextSteps } from '../app/src/game/progress';
 import { refundEnergy, spendEnergy } from '../app/src/game/energy';
+import { nowMs, resetClock, setTrustedStart } from '../app/src/game/clock';
+import { pack as packState, unpack, pushState, pullState, chooseOnStart, type KV } from '../app/src/api/cloud';
 import { ENERGY } from '../app/src/game/config';
 import { checkTyped } from '../app/src/engine/check';
 import { buildLesson, buildReview, buildTrial, tokenize } from '../app/src/engine/generators';
@@ -27,9 +29,9 @@ globalThis.Date = class extends RealDate {
 };
 
 let n = 0;
-const t = (name: string, fn: () => void) => { fn(); n++; console.log('✓', name); };
+const t = async (name: string, fn: () => void | Promise<void>) => { await fn(); n++; console.log('✓', name); };
 
-t('проверка ввода', () => {
+await t('проверка ввода', () => {
   assert.equal(checkTyped('Boarding Pass', ['boarding pass']), 'exact');
   assert.equal(checkTyped('the umbrella', ['umbrella']), 'exact');
   assert.equal(checkTyped('umbrela', ['umbrella']), 'typo');
@@ -40,7 +42,7 @@ t('проверка ввода', () => {
   assert.equal(checkTyped('мой', ['мои']), 'wrong'); // й не превращается в и
 });
 
-t('интервалы: бесплатно 11 дней до закрепления, Premium 7', () => {
+await t('интервалы: бесплатно 11 дней до закрепления, Premium 7', () => {
   for (const [premium, want] of [[false, 11], [true, 7]] as const) {
     let [m] = applyAnswer(undefined, true, 0, premium);
     let d = 0;
@@ -50,13 +52,13 @@ t('интервалы: бесплатно 11 дней до закреплени�
   }
 });
 
-t('повтор в тот же день не ускоряет', () => {
+await t('повтор в тот же день не ускоряет', () => {
   let [m] = applyAnswer(undefined, true, 0, false);
   for (let i = 0; i < 5; i++) [m] = applyAnswer(m, true, 0, false);
   assert.equal(m.s, 0);
 });
 
-t('костёр: уголь спасает, без угля — спасение за 2 занятия', () => {
+await t('костёр: уголь спасает, без угля — спасение за 2 занятия', () => {
   const s = emptyState();
   const noGift = (d: number) => { s.emberWeek = Math.floor((d + 3) / 7); }; // отключаем недельный подарок
   bumpStreak(s, 100); bumpStreak(s, 101);
@@ -82,7 +84,7 @@ t('костёр: уголь спасает, без угля — спасение
 const pack = JSON.parse(readFileSync('app/public/content/a2.json', 'utf8')) as LevelPack;
 const fake = pack;
 
-t('остров открывается только после закрепления 80% слов и паузы экспедиции', () => {
+await t('остров открывается только после закрепления 80% слов и паузы экспедиции', () => {
   const s = emptyState();
   s.premium = true; // остров 2 платный
   const isl2 = fake.islands[1];
@@ -105,7 +107,7 @@ t('остров открывается только после закрепле�
   assert.equal(islandState(other, other.islands[1], s).kind, 'open');
 });
 
-t('генератор: сначала карточки новых слов, каждое слово встречается, повторение строится', () => {
+await t('генератор: сначала карточки новых слов, каждое слово встречается, повторение строится', () => {
   const pool0 = pack.lessons.flatMap((l) => l.words);
   const packs = ['a1', 'a2', 'b1', 'b2'].map((l) => JSON.parse(readFileSync(`app/public/content/${l}.json`, 'utf8')) as LevelPack);
   for (const pk of packs) for (const l of pk.lessons) {
@@ -127,7 +129,7 @@ t('генератор: сначала карточки новых слов, ка
   assert.ok(buildReview(pool.slice(0, 12), pool, 1).length >= 12);
 });
 
-t('пары: подписи по-русски не повторяются, у каждой — одно подходящее слово', () => {
+await t('пары: подписи по-русски не повторяются, у каждой — одно подходящее слово', () => {
   const packs = ['a1', 'a2', 'b1', 'b2'].map((l) => JSON.parse(readFileSync(`app/public/content/${l}.json`, 'utf8')) as LevelPack);
   const all = packs.flatMap((p) => p.lessons.flatMap((l) => l.words));
   for (const pk of packs) {
@@ -142,7 +144,7 @@ t('пары: подписи по-русски не повторяются, у к
   }
 });
 
-t('ввод: синоним с тем же переводом засчитывается', () => {
+await t('ввод: синоним с тем же переводом засчитывается', () => {
   const a1 = JSON.parse(readFileSync('app/public/content/a1.json', 'utf8')) as LevelPack;
   const pool = a1.lessons.flatMap((l) => l.words);
   const begin = pool.find((w) => w.en === 'begin')!; // «начинать», как и start
@@ -150,7 +152,7 @@ t('ввод: синоним с тем же переводом засчитыва
   assert.ok(ex[0].kind === 'type' && checkTyped('start', ex[0].answers) === 'exact');
 });
 
-t('сборка предложения: без плиток-знаков и только из знакомых слов', () => {
+await t('сборка предложения: без плиток-знаков и только из знакомых слов', () => {
   assert.deepEqual(tokenize('Thank you! — You\'re welcome.'), ['Thank', 'you', "You're", 'welcome']);
   const a1 = JSON.parse(readFileSync('app/public/content/a1.json', 'utf8')) as LevelPack;
   const pool = a1.lessons.flatMap((l) => l.words);
@@ -166,13 +168,13 @@ t('сборка предложения: без плиток-знаков и то
   }
 });
 
-t('лавка: масло не продаётся, когда фонарь полон', () => {
+await t('лавка: масло не продаётся, когда фонарь полон', () => {
   const s = emptyState();
   s.coins = 1000; s.energy = 10;
   assert.equal(canBuy(s, ITEMS.find((i) => i.id === 'oil')!), 'Фонарь и так полон');
 });
 
-t('проверка контента: неизученные слова, повторы примеров, одинаковые переводы', () => {
+await t('проверка контента: неизученные слова, повторы примеров, одинаковые переводы', () => {
   const ok = spawnSync('node', ['scripts/validate-content.mjs'], { encoding: 'utf8' });
   assert.equal(ok.status, 0, ok.stdout + ok.stderr);
   const dir = mkdtempSync(join(tmpdir(), 'content-'));
@@ -190,14 +192,14 @@ t('проверка контента: неизученные слова, пов�
   assert.match(bad.stderr, /совпадает со словом/);
 });
 
-t('словарь: формы и простые окончания засчитываются, неправильные формы — только через forms', () => {
+await t('словарь: формы и простые окончания засчитываются, неправильные формы — только через forms', () => {
   const v = vocabOf([{ id: 'x', en: 'go', ru: ['идти'], pos: 'verb', forms: ['went'], examples: [] }, { id: 'y', en: 'cat', ru: ['кошка'], pos: 'noun', examples: [] }]);
   assert.ok(knownSentence('He goes, she went, the cats are going.', v));
   assert.ok(!knownSentence('He bought a cat.', v));
   assert.ok(knownSentence('Anna and Tom.', v)); // имена
 });
 
-t('энергия: старт из shop.json, заряд возвращается за брошенный урок', () => {
+await t('энергия: старт из shop.json, заряд возвращается за брошенный урок', () => {
   const s = emptyState();
   assert.equal(s.energy, ENERGY.max);
   assert.ok(spendEnergy(s));
@@ -208,7 +210,7 @@ t('энергия: старт из shop.json, заряд возвращаетс�
   assert.equal(p.energy, 0); // у Premium энергия не считается
 });
 
-t('что дальше: бесплатный игрок после двух островов не в тупике', () => {
+await t('что дальше: бесплатный игрок после двух островов не в тупике', () => {
   const a1 = JSON.parse(readFileSync('app/public/content/a1.json', 'utf8')) as LevelPack;
   const s = emptyState();
   assert.equal(nextSteps(a1, s).nextLesson?.day, 1);
@@ -221,6 +223,48 @@ t('что дальше: бесплатный игрок после двух ос
   assert.equal(steps.trialIsland?.n, 2);
   s.premium = true;
   commitUnlocks(s, [a1]);
+});
+
+await t('часы: назад не идут, в Telegram не убегают вперёд', () => {
+  resetClock();
+  const t0 = nowMs();
+  fakeDay -= 3;                                  // часы отвели на 3 дня назад
+  assert.equal(nowMs(), t0);
+  fakeDay += 3;
+  setTrustedStart(Math.floor(t0 / 1000));        // Telegram: приложение открыто сейчас
+  fakeDay += 30;                                 // часы перевели на месяц вперёд
+  assert.ok(nowMs() - t0 < 11 * 60000);
+  fakeDay -= 30;
+  resetClock();
+});
+
+await t('облако Telegram: прогресс целиком влезает в лимиты и восстанавливается', async () => {
+  const store = new Map<string, string>();
+  const kv: KV = {
+    get: async (keys) => Object.fromEntries(keys.filter((k) => store.has(k)).map((k) => [k, store.get(k)!])),
+    set: async (k, v) => { assert.ok(v.length <= 4096 && /^[A-Za-z0-9_-]{1,128}$/.test(k)); store.set(k, v); },
+  };
+  const s = emptyState();
+  s.level = 'B1'; s.xp = 12345; s.updatedAt = 777;
+  const packs2 = ['a1', 'a2', 'b1', 'b2'].map((l) => JSON.parse(readFileSync(`app/public/content/${l}.json`, 'utf8')) as LevelPack);
+  for (const w of packs2.flatMap((p) => p.lessons.flatMap((l) => l.words))) s.mem[w.id] = { s: 3, due: 20100, seen: 7, wrong: 2 };
+  assert.deepEqual(unpack(packState(s)).mem, s.mem);
+  await pushState(kv, s);
+  assert.ok(store.size < 1024);
+  const back = await pullState(kv);
+  assert.equal(back?.xp, 12345);
+  assert.equal(Object.keys(back!.mem).length, Object.keys(s.mem).length);
+  assert.equal(back?.updatedAt, 777);
+  // вторая запись идёт в другой слот: недописанная копия не портит текущую
+  s.xp = 1; s.updatedAt = 778;
+  await pushState(kv, s);
+  assert.equal((await pullState(kv))?.xp, 1);
+  // выбор при запуске
+  const empty = emptyState();
+  assert.equal(chooseOnStart(empty, back), 'remote');          // новый телефон — берём облако
+  const fresh = { ...back!, updatedAt: 999 };
+  assert.equal(chooseOnStart(fresh, back), 'local');           // на телефоне новее
+  assert.equal(chooseOnStart(fresh, null), 'local');
 });
 
 console.log(`\n${n} проверок пройдено`);

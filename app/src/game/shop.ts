@@ -1,9 +1,10 @@
+import { nowMs } from './clock';
 import type { LocalState } from './local';
 import { ITEMS, type ShopItem } from './config';
 import { addEnergy } from './energy';
 import { ENERGY } from './config';
 
-export const activeMult = (s: LocalState, now = Date.now()) =>
+export const activeMult = (s: LocalState, now = nowMs()) =>
   ITEMS.reduce((m, it) => (it.effect.type === 'boost' && (s.boosts[it.id] ?? 0) > now ? m * it.effect.xpMult : m), 1);
 
 export function canBuy(s: LocalState, it: ShopItem): string | null {
@@ -22,7 +23,7 @@ export function buy(s: LocalState, id: string): string | null {
   if (why) return why;
   s.coins -= it.price;
   const e = it.effect;
-  if (e.type === 'boost') s.boosts[id] = Math.max(Date.now(), s.boosts[id] ?? 0) + e.minutes * 60000;
+  if (e.type === 'boost') s.boosts[id] = Math.max(nowMs(), s.boosts[id] ?? 0) + e.minutes * 60000;
   else if (e.type === 'energy') addEnergy(s, e.amount);
   else s.inventory[id] = (s.inventory[id] ?? 0) + 1;
   return null;

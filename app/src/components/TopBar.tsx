@@ -1,3 +1,4 @@
+import { nowMs } from '../game/clock';
 import { useEffect, useState } from 'preact/hooks';
 import type { LocalState } from '../game/local';
 import { liveStreak } from '../game/streak';
@@ -11,7 +12,7 @@ export function TopBar({ st, level, onEnergy }: { st: LocalState; level?: string
   const [, tick] = useState(0);
   useEffect(() => { const t = setInterval(() => tick((n) => n + 1), 1000); return () => clearInterval(t); }, []);
   const e = energyOf(st);
-  const boostLeft = Math.max(0, ...Object.values(st.boosts)) - Date.now();
+  const boostLeft = Math.max(0, ...Object.values(st.boosts)) - nowMs();
   const streak = liveStreak(st, today());
   return (
     <div class="topbar">

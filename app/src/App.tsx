@@ -26,11 +26,10 @@ import { TabBar, type Tab } from './components/TabBar';
 import { TopBar } from './components/TopBar';
 import { EnergySheet } from './components/EnergySheet';
 import { Skipper } from './components/Skipper';
-import { Icon } from './components/Icon';
 
 type Route =
-  | { s: 'onboarding' } | { s: 'pick' } | { s: 'minitest'; level: Level } | { s: 'tab'; tab: Tab; note?: string }
-  | { s: 'about' } | { s: 'premium' }
+  | { s: 'onboarding' } | { s: 'pick' } | { s: 'minitest'; level: Level } | { s: 'tab'; tab: Tab }
+  | { s: 'about' } | { s: 'premium'; from: Tab }
   | { s: 'session'; kind: SessionKind; lessonId?: string; build: () => Exercise[] }
   | { s: 'result'; result: ResultData };
 
@@ -42,6 +41,17 @@ export function App() {
   const [r, go] = useState<Route>(() => (st.level ? { s: 'tab', tab: 'map' } : { s: 'onboarding' }));
   const [story, setStory] = useState<{ isl: Island; then?: () => void } | null>(null);
   const [energySheet, setEnergySheet] = useState(false);
+
+  // Через полночь или после сна вкладки пересчитываем энергию, костёр и открытие островов.
+  useEffect(() => {
+    if (!packs) return;
+    let last = today();
+    const resettle = () => { last = today(); setSt(settleAll(packs)[0]); };
+    const onVis = () => { if (document.visibilityState === 'visible') resettle(); };
+    const timer = setInterval(() => { if (today() !== last) resettle(); }, 60000);
+    document.addEventListener('visibilitychange', onVis);
+    return () => { clearInterval(timer); document.removeEventListener('visibilitychange', onVis); };
+  }, [packs]);
 
   useEffect(() => {
     loadIndex().then((i) => { setIndex(i); return Promise.all(i.levels.map((l) => loadLevel(l.level))); })
@@ -60,8 +70,9 @@ export function App() {
     .sort((a, b) => a[1].due - b[1].due || b[1].wrong - a[1].wrong).map(([id]) => allWords.get(id)!);
 
   const mutate = <T,>(fn: (s: LocalState) => T): T => { const [s, res] = update(fn); setSt(s); return res; };
-  const toMap = (note?: string) => go({ s: 'tab', tab: 'map', note });
-  const setLevel = (level: Level, note?: string) => { mutate((s) => { s.level = level; s.onboarded = true; }); toMap(note); };
+  const toMap = () => go({ s: 'tab', tab: 'map' });
+  const setLevel = (level: Level) => { mutate((s) => { s.level = level; s.onboarded = true; }); toMap(); };
+  const openPremium = () => go({ s: 'premium', from: r.s === 'tab' ? r.tab : 'map' });
   const openStory = (isl: Island, then?: () => void) => {
     setStory({ isl, then });
     mutate((s) => { const k = `${pack.level}-${isl.n}`; if (!s.storySeen.includes(k)) s.storySeen.push(k); });
@@ -104,7 +115,7 @@ export function App() {
     case 'about': return <AboutScreen index={index} onBack={() => go({ s: 'tab', tab: 'profile' })}
       onReset={() => { saveState(emptyState()); setSt(loadState()); go({ s: 'onboarding' }); }} />;
     case 'premium':
-      return <PremiumScreen isPremium={st.premium} onBack={() => toMap()}
+      return <PremiumScreen isPremium={st.premium} onBack={() => go({ s: 'tab', tab: r.from })}
         onDevToggle={() => { mutate((s) => { s.premium = !s.premium; }); setSt(settleAll(packs)[0]); }} />;
   }
 
@@ -112,15 +123,14 @@ export function App() {
   return (
     <>
       <TopBar st={st} level={tab === 'map' ? pack.level : undefined} onEnergy={() => setEnergySheet(true)} />
-      {r.note && <div class="card banner note-card"><span class="banner-ico"><Icon name="info" /></span><div>{r.note}</div></div>}
       {tab === 'map' && (
         <MapScreen pack={pack} st={st} due={due} onLesson={startLesson} onReview={startReview} onTrial={startTrial}
-          onStory={(isl) => openStory(isl)} onRetest={() => go({ s: 'pick' })} onPremium={() => go({ s: 'premium' })} />
+          onStory={(isl) => openStory(isl)} onRetest={() => go({ s: 'pick' })} onPremium={() => openPremium()} />
       )}
       {tab === 'passport' && <PassportScreen st={st} />}
-      {tab === 'shop' && <ShopScreen st={st} onBuy={(id) => mutate((s) => buy(s, id))} onPremium={() => go({ s: 'premium' })} />}
+      {tab === 'shop' && <ShopScreen st={st} onBuy={(id) => mutate((s) => buy(s, id))} onPremium={() => openPremium()} />}
       {tab === 'profile' && (
-        <ProfileScreen st={st} packs={packs} onLevel={(l) => setLevel(l)} onPremium={() => go({ s: 'premium' })}
+        <ProfileScreen st={st} packs={packs} onLevel={(l) => setLevel(l)} onPremium={() => openPremium()}
           onAbout={() => go({ s: 'about' })} onRetest={() => go({ s: 'pick' })} />
       )}
       <TabBar tab={tab} onTab={(t) => go({ s: 'tab', tab: t })} />
@@ -128,7 +138,7 @@ export function App() {
       {energySheet && (
         <EnergySheet st={st} onClose={() => setEnergySheet(false)}
           onShop={() => { setEnergySheet(false); go({ s: 'tab', tab: 'shop' }); }}
-          onPremium={() => { setEnergySheet(false); go({ s: 'premium' }); }}
+          onPremium={() => { setEnergySheet(false); openPremium(); }}
           onReview={due.length ? () => { setEnergySheet(false); startReview(due.slice(0, REVIEW_MAX_WORDS)); } : undefined} />
       )}
     </>

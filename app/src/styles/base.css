@@ -190,7 +190,6 @@ b { font-weight: 700; }
 }
 .banner .hint { margin-top: 2px; }
 .rescue .banner-ico { background: color-mix(in srgb, var(--fire) 16%, var(--surface)); }
-.note-card { display: flex; gap: 12px; align-items: center; }
 
 /* ---------- карта ---------- */
 .review { display: flex; align-items: center; gap: 12px; }
@@ -650,3 +649,10 @@ section.card > b:first-child { margin-bottom: 0; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* лавка: причина недоступности; карта: что дальше */
+.why { margin-top: 4px; font-size: 13px; font-weight: 600; color: var(--coral, #d9534f); }
+.next-steps { display: grid; gap: 8px; }
+.streak-tip { display: flex; gap: 6px; align-items: center; }
+.next-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.next-actions .btn { flex: 1 1 140px; }

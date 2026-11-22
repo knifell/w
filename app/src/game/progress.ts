@@ -2,7 +2,7 @@
 // Уроки — по порядку внутри острова. Остров N+1 — когда пройдены уроки острова N и закреплено 80% его слов.
 // «Одна активная экспедиция»: новые острова (на любом уровне) открываются не чаще, чем раз в UNLOCK_GAP дней,
 // поэтому параллельная игра на нескольких архипелагах не ускоряет прохождение.
-import type { Island, LevelPack } from '../types';
+import type { Island, Lesson, LevelPack } from '../types';
 import type { LocalState } from './local';
 import { INTERVALS, MASTER_STAGE, daysToMaster, islandMastery } from './srs';
 import { today } from './time';
@@ -65,3 +65,20 @@ export function lessonOpen(pack: LevelPack, day: number, s: LocalState, isl: Isl
 }
 
 export const conqueredCount = (s: LocalState) => Object.keys(s.unlocks).length;
+
+export interface NextSteps {
+  nextLesson: Lesson | undefined;      // ближайший открытый непройденный урок
+  trialIsland: Island | undefined;     // последний открытый остров с пройденными уроками
+  blocked: 'premium' | 'locked' | 'end' | null; // почему дальше уроков нет
+}
+
+/** Что игрок может сделать сейчас: урок, а если уроков нет — испытание, повторение или Premium. */
+export function nextSteps(pack: LevelPack, s: LocalState): NextSteps {
+  const states = pack.islands.map((isl) => islandState(pack, isl, s));
+  const nextLesson = pack.lessons.find((l) => !s.done[l.id] && lessonOpen(pack, l.day, s, states[l.island - 1]));
+  const trialIsland = [...pack.islands].reverse().find((isl) =>
+    states[isl.n - 1].kind === 'open' && pack.lessons.some((l) => l.island === isl.n && s.done[l.id]));
+  const closed = states.find((x) => x.kind !== 'open');
+  const blocked = nextLesson ? null : !closed || closed.kind === 'fog' ? 'end' : closed.kind === 'premium' ? 'premium' : 'locked';
+  return { nextLesson, trialIsland, blocked };
+}

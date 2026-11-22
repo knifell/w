@@ -18,8 +18,9 @@ export function ShopScreen({ st, onBuy, onPremium }: { st: LocalState; onBuy: (i
         return (
           <div class="card item" key={it.id}>
             <span class={'item-ico ' + it.id}><Icon name={ITEM_ICON[it.id] ?? 'gift'} size={30} /></span>
-            <div class="item-txt"><b>{it.name}</b><div class="hint">{it.desc}{own ? ` · у тебя: ${own}` : ''}</div></div>
-            <button class="btn small price" disabled={!!why} title={why ?? ''} aria-label={`Купить за ${it.price} ракушек`}
+            <div class="item-txt"><b>{it.name}</b><div class="hint">{it.desc}{own ? ` · у тебя: ${own}` : ''}</div>
+              {why && <div class="why">{why}</div>}</div>
+            <button class="btn small price" disabled={!!why} aria-label={`Купить за ${it.price} ракушек`}
               onClick={() => { const e = onBuy(it.id); e ? haptic.bad() : haptic.ok(); setMsg(e ?? `${it.name} — готово!`); }}>
               <Shell size={18} />{it.price}
             </button>

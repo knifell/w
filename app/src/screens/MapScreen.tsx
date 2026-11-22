@@ -1,6 +1,6 @@
 import type { Island, Lesson, LevelPack, Word } from '../types';
 import type { LocalState } from '../game/local';
-import { islandState, lessonOpen, type IslandState } from '../game/progress';
+import { islandState, lessonOpen, nextSteps, type IslandState } from '../game/progress';
 import { RESCUE_SESSIONS } from '../game/streak';
 import { today } from '../game/time';
 import { REVIEW_MAX_WORDS } from '../game/config';
@@ -37,6 +37,9 @@ export function MapScreen({ pack, st, due, onLesson, onReview, onTrial, onStory,
   const day = today();
   const nextDue = Math.min(...Object.values(st.mem).map((m) => m.due));
   const current = pack.lessons.find((l) => !st.done[l.id])?.id;
+  const steps = nextSteps(pack, st);
+  const anyDone = pack.lessons.some((l) => st.done[l.id]);
+  const streakToday = st.streak.last === day;
 
   return (
     <main class="map">
@@ -60,6 +63,25 @@ export function MapScreen({ pack, st, due, onLesson, onReview, onTrial, onStory,
         )}
       </div>
 
+      {!steps.nextLesson && anyDone && (
+        <div class="card next-steps" role="region" aria-label="Что дальше">
+          <b>{steps.blocked === 'premium' ? 'Бесплатные острова пройдены!' : steps.blocked === 'end' ? 'Все уроки пройдены!' : 'Новых уроков пока нет'}</b>
+          <div class="hint">
+            {steps.blocked === 'premium' ? 'Дальше острова с Premium. А пока закрепляй слова: повторения и испытания бесплатны и без энергии.'
+              : steps.blocked === 'end' ? 'Новые острова появятся в обновлениях. Повторяй слова, чтобы они не забылись.'
+              : 'Следующий остров откроется, когда закрепятся слова. Повторяй их в разные дни.'}
+          </div>
+          {!due.length && !streakToday && steps.trialIsland && (
+            <div class="hint streak-tip"><Flame size={18} />Сегодня повторений нет — пройди испытание острова, и костёр не погаснет.</div>
+          )}
+          <div class="next-actions">
+            {due.length > 0 && <button class="btn small" onClick={() => onReview(due.slice(0, REVIEW_MAX_WORDS))}>Повторить слова</button>}
+            {steps.trialIsland && <button class="btn small alt" onClick={() => onTrial(steps.trialIsland!)}>Испытание острова</button>}
+            {!st.premium && steps.blocked === 'premium' && <button class="btn small gold" onClick={onPremium}>Открыть все острова</button>}
+          </div>
+        </div>
+      )}
+
       <h2 class="arch">{pack.title}</h2>
       {pack.islands.map((isl) => {
         const s = islandState(pack, isl, st);
@@ -72,7 +94,7 @@ export function MapScreen({ pack, st, due, onLesson, onReview, onTrial, onStory,
           );
         }
         const lessons = pack.lessons.filter((l) => l.island === isl.n);
-        const anyDone = lessons.some((l) => st.done[l.id]);
+        const islandDone = lessons.some((l) => st.done[l.id]);
         return (
           <section class={`island ${s.kind}`} key={isl.n}>
             <button class="island-head" onClick={() => (s.kind === 'premium' ? onPremium() : onStory(isl))}
@@ -100,7 +122,7 @@ export function MapScreen({ pack, st, due, onLesson, onReview, onTrial, onStory,
                 );
               })}
             </div>
-            {s.kind === 'open' && anyDone && (
+            {s.kind === 'open' && islandDone && (
               <button class="btn alt trial" onClick={() => onTrial(isl)}><Icon name="swords" size={20} />Испытание острова · без энергии</button>
             )}
           </section>

@@ -7,7 +7,9 @@ import { join } from 'node:path';
 import { applyAnswer } from '../app/src/engine/../game/srs';
 import { emptyState } from '../app/src/game/local';
 import { settleStreak, bumpStreak, liveStreak } from '../app/src/game/streak';
-import { commitUnlocks, islandState, unlockGap } from '../app/src/game/progress';
+import { commitUnlocks, islandState, unlockGap, nextSteps } from '../app/src/game/progress';
+import { refundEnergy, spendEnergy } from '../app/src/game/energy';
+import { ENERGY } from '../app/src/game/config';
 import { checkTyped } from '../app/src/engine/check';
 import { buildLesson, buildReview, buildTrial, tokenize } from '../app/src/engine/generators';
 import { vocabOf, knownSentence } from '../app/src/engine/vocab';
@@ -193,6 +195,32 @@ t('словарь: формы и простые окончания засчит�
   assert.ok(knownSentence('He goes, she went, the cats are going.', v));
   assert.ok(!knownSentence('He bought a cat.', v));
   assert.ok(knownSentence('Anna and Tom.', v)); // имена
+});
+
+t('энергия: старт из shop.json, заряд возвращается за брошенный урок', () => {
+  const s = emptyState();
+  assert.equal(s.energy, ENERGY.max);
+  assert.ok(spendEnergy(s));
+  assert.equal(s.energy, ENERGY.max - ENERGY.lessonCost);
+  refundEnergy(s);
+  assert.equal(s.energy, ENERGY.max);
+  const p = emptyState(); p.premium = true; p.energy = 0; refundEnergy(p);
+  assert.equal(p.energy, 0); // у Premium энергия не считается
+});
+
+t('что дальше: бесплатный игрок после двух островов не в тупике', () => {
+  const a1 = JSON.parse(readFileSync('app/public/content/a1.json', 'utf8')) as LevelPack;
+  const s = emptyState();
+  assert.equal(nextSteps(a1, s).nextLesson?.day, 1);
+  for (const l of a1.lessons.filter((l) => l.island <= 2)) s.done[l.id] = { best: 100, at: 0 };
+  for (const w of a1.lessons.filter((l) => l.island <= 2).flatMap((l) => l.words)) s.mem[w.id] = { s: 3, due: 0, seen: 4, wrong: 0 };
+  s.unlocks[`${a1.level}-2`] = 0;
+  const steps = nextSteps(a1, s);
+  assert.equal(steps.nextLesson, undefined);
+  assert.equal(steps.blocked, 'premium');
+  assert.equal(steps.trialIsland?.n, 2);
+  s.premium = true;
+  commitUnlocks(s, [a1]);
 });
 
 console.log(`\n${n} проверок пройдено`);

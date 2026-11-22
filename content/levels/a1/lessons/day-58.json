@@ -1,0 +1,152 @@
+{
+  "id": "a1-d58",
+  "level": "A1",
+  "day": 58,
+  "island": 6,
+  "title": "Mine and yours",
+  "topic": "pronouns",
+  "words": [
+    {
+      "id": "a1-d58-01",
+      "en": "my",
+      "ru": [
+        "мой"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "This is my book.",
+          "ru": "Это моя книга."
+        }
+      ]
+    },
+    {
+      "id": "a1-d58-02",
+      "en": "your",
+      "ru": [
+        "твой",
+        "ваш"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "Is this your bag?",
+          "ru": "Это твоя сумка?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d58-03",
+      "en": "his",
+      "ru": [
+        "его"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "His name is Tom.",
+          "ru": "Его зовут Том."
+        }
+      ]
+    },
+    {
+      "id": "a1-d58-04",
+      "en": "her",
+      "ru": [
+        "её"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "Her cat is white.",
+          "ru": "Её кошка белая."
+        }
+      ]
+    },
+    {
+      "id": "a1-d58-05",
+      "en": "our",
+      "ru": [
+        "наш"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "Our house is small.",
+          "ru": "Наш дом маленький."
+        }
+      ]
+    },
+    {
+      "id": "a1-d58-06",
+      "en": "their",
+      "ru": [
+        "их"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "Their car is red.",
+          "ru": "Их машина красная."
+        }
+      ]
+    },
+    {
+      "id": "a1-d58-07",
+      "en": "everybody",
+      "ru": [
+        "все"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "Hello, everybody!",
+          "ru": "Всем привет!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d58-08",
+      "en": "something",
+      "ru": [
+        "что-то",
+        "что-нибудь"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "I want something to eat.",
+          "ru": "Я хочу что-нибудь поесть."
+        }
+      ]
+    },
+    {
+      "id": "a1-d58-09",
+      "en": "nothing",
+      "ru": [
+        "ничего"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "There is nothing in the box.",
+          "ru": "В коробке ничего нет."
+        }
+      ]
+    },
+    {
+      "id": "a1-d58-10",
+      "en": "everything",
+      "ru": [
+        "всё"
+      ],
+      "pos": "pronoun",
+      "examples": [
+        {
+          "en": "Everything is OK.",
+          "ru": "Всё в порядке."
+        }
+      ]
+    }
+  ]
+}

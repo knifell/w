@@ -1,0 +1,155 @@
+{
+  "id": "a1-d47",
+  "level": "A1",
+  "day": 47,
+  "island": 5,
+  "title": "Free time",
+  "topic": "hobbies 2",
+  "words": [
+    {
+      "id": "a1-d47-01",
+      "en": "fishing",
+      "ru": [
+        "рыбалка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My grandpa loves fishing.",
+          "ru": "Мой дедушка обожает рыбалку."
+        }
+      ]
+    },
+    {
+      "id": "a1-d47-02",
+      "en": "camping",
+      "ru": [
+        "поход с палатками",
+        "кемпинг"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We go camping in summer.",
+          "ru": "Летом мы ходим в поход."
+        }
+      ]
+    },
+    {
+      "id": "a1-d47-03",
+      "en": "cycling",
+      "ru": [
+        "езда на велосипеде"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Cycling is good for you.",
+          "ru": "Езда на велосипеде полезна."
+        }
+      ]
+    },
+    {
+      "id": "a1-d47-04",
+      "en": "chess",
+      "ru": [
+        "шахматы"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Do you play chess?",
+          "ru": "Ты играешь в шахматы?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d47-05",
+      "en": "puzzle",
+      "ru": [
+        "пазл",
+        "головоломка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Let's do a puzzle.",
+          "ru": "Давай соберём пазл."
+        }
+      ]
+    },
+    {
+      "id": "a1-d47-06",
+      "en": "drums",
+      "ru": [
+        "барабаны"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He plays the drums.",
+          "ru": "Он играет на барабанах."
+        }
+      ]
+    },
+    {
+      "id": "a1-d47-07",
+      "en": "violin",
+      "ru": [
+        "скрипка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She plays the violin.",
+          "ru": "Она играет на скрипке."
+        }
+      ]
+    },
+    {
+      "id": "a1-d47-08",
+      "en": "video game",
+      "ru": [
+        "видеоигра"
+      ],
+      "pos": "noun",
+      "forms": [
+        "video games"
+      ],
+      "examples": [
+        {
+          "en": "My brother plays video games.",
+          "ru": "Мой брат играет в видеоигры."
+        }
+      ]
+    },
+    {
+      "id": "a1-d47-09",
+      "en": "cards",
+      "ru": [
+        "карты (игральные)"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Let's play cards.",
+          "ru": "Давай сыграем в карты."
+        }
+      ]
+    },
+    {
+      "id": "a1-d47-10",
+      "en": "hobby club",
+      "ru": [
+        "кружок"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I go to a hobby club after school.",
+          "ru": "После школы я хожу в кружок."
+        }
+      ]
+    }
+  ]
+}

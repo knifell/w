@@ -1,0 +1,155 @@
+{
+  "id": "a1-d55",
+  "level": "A1",
+  "day": 55,
+  "island": 6,
+  "title": "Our house",
+  "topic": "house 2",
+  "words": [
+    {
+      "id": "a1-d55-01",
+      "en": "bath",
+      "ru": [
+        "ванна"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I have a bath every evening.",
+          "ru": "Каждый вечер я принимаю ванну."
+        }
+      ]
+    },
+    {
+      "id": "a1-d55-02",
+      "en": "washbasin",
+      "ru": [
+        "раковина",
+        "умывальник"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Wash your hands in the washbasin.",
+          "ru": "Помой руки над раковиной."
+        }
+      ]
+    },
+    {
+      "id": "a1-d55-03",
+      "en": "cooker",
+      "ru": [
+        "плита"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The soup is on the cooker.",
+          "ru": "Суп на плите."
+        }
+      ]
+    },
+    {
+      "id": "a1-d55-04",
+      "en": "roof",
+      "ru": [
+        "крыша"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There is a cat on the roof.",
+          "ru": "На крыше кошка."
+        }
+      ]
+    },
+    {
+      "id": "a1-d55-05",
+      "en": "gate",
+      "ru": [
+        "калитка",
+        "ворота"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Close the gate, please.",
+          "ru": "Закрой калитку, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a1-d55-06",
+      "en": "fence",
+      "ru": [
+        "забор"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There is a dog behind the fence.",
+          "ru": "За забором собака."
+        }
+      ]
+    },
+    {
+      "id": "a1-d55-07",
+      "en": "balcony",
+      "ru": [
+        "балкон"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We have breakfast on the balcony.",
+          "ru": "Мы завтракаем на балконе."
+        }
+      ]
+    },
+    {
+      "id": "a1-d55-08",
+      "en": "upstairs",
+      "ru": [
+        "наверху",
+        "наверх"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "My room is upstairs.",
+          "ru": "Моя комната наверху."
+        }
+      ]
+    },
+    {
+      "id": "a1-d55-09",
+      "en": "downstairs",
+      "ru": [
+        "внизу",
+        "вниз"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "The kitchen is downstairs.",
+          "ru": "Кухня внизу."
+        }
+      ]
+    },
+    {
+      "id": "a1-d55-10",
+      "en": "hall",
+      "ru": [
+        "прихожая",
+        "коридор"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Leave your shoes in the hall.",
+          "ru": "Оставь обувь в прихожей."
+        }
+      ]
+    }
+  ]
+}

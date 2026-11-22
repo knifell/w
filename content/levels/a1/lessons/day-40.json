@@ -1,0 +1,152 @@
+{
+  "id": "a1-d40",
+  "level": "A1",
+  "day": 40,
+  "island": 4,
+  "title": "Describing things",
+  "topic": "adjectives 2",
+  "words": [
+    {
+      "id": "a1-d40-01",
+      "en": "thin",
+      "ru": [
+        "худой",
+        "тонкий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The cat is very thin.",
+          "ru": "Кошка очень худая."
+        }
+      ]
+    },
+    {
+      "id": "a1-d40-02",
+      "en": "strong",
+      "ru": [
+        "сильный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "My dad is very strong.",
+          "ru": "Мой папа очень сильный."
+        }
+      ]
+    },
+    {
+      "id": "a1-d40-03",
+      "en": "weak",
+      "ru": [
+        "слабый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I feel weak today.",
+          "ru": "Сегодня я чувствую слабость."
+        }
+      ]
+    },
+    {
+      "id": "a1-d40-04",
+      "en": "cute",
+      "ru": [
+        "милый",
+        "симпатичный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "What a cute puppy!",
+          "ru": "Какой милый щенок!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d40-05",
+      "en": "dangerous",
+      "ru": [
+        "опасный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Sharks are dangerous.",
+          "ru": "Акулы опасны."
+        }
+      ]
+    },
+    {
+      "id": "a1-d40-06",
+      "en": "safe",
+      "ru": [
+        "безопасный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This park is safe for children.",
+          "ru": "Этот парк безопасен для детей."
+        }
+      ]
+    },
+    {
+      "id": "a1-d40-07",
+      "en": "sweet",
+      "ru": [
+        "сладкий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This cake is too sweet.",
+          "ru": "Этот торт слишком сладкий."
+        }
+      ]
+    },
+    {
+      "id": "a1-d40-08",
+      "en": "sour",
+      "ru": [
+        "кислый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Lemons are sour.",
+          "ru": "Лимоны кислые."
+        }
+      ]
+    },
+    {
+      "id": "a1-d40-09",
+      "en": "salty",
+      "ru": [
+        "солёный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The soup is too salty.",
+          "ru": "Суп слишком солёный."
+        }
+      ]
+    },
+    {
+      "id": "a1-d40-10",
+      "en": "sick",
+      "ru": [
+        "больной"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I feel sick.",
+          "ru": "Мне плохо."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "a1-d52",
+  "level": "A1",
+  "day": 52,
+  "island": 6,
+  "title": "Big numbers",
+  "topic": "numbers 3",
+  "words": [
+    {
+      "id": "a1-d52-01",
+      "en": "forty",
+      "ru": [
+        "сорок"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "My dad is forty.",
+          "ru": "Моему папе сорок."
+        }
+      ]
+    },
+    {
+      "id": "a1-d52-02",
+      "en": "fifty",
+      "ru": [
+        "пятьдесят"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "There are fifty students.",
+          "ru": "Здесь пятьдесят учеников."
+        }
+      ]
+    },
+    {
+      "id": "a1-d52-03",
+      "en": "sixty",
+      "ru": [
+        "шестьдесят"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "An hour has sixty minutes.",
+          "ru": "В часе шестьдесят минут."
+        }
+      ]
+    },
+    {
+      "id": "a1-d52-04",
+      "en": "seventy",
+      "ru": [
+        "семьдесят"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "My grandma is seventy.",
+          "ru": "Моей бабушке семьдесят."
+        }
+      ]
+    },
+    {
+      "id": "a1-d52-05",
+      "en": "eighty",
+      "ru": [
+        "восемьдесят"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "The book has eighty pages.",
+          "ru": "В книге восемьдесят страниц."
+        }
+      ]
+    },
+    {
+      "id": "a1-d52-06",
+      "en": "ninety",
+      "ru": [
+        "девяносто"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "He lived to ninety.",
+          "ru": "Он дожил до девяноста."
+        }
+      ]
+    },
+    {
+      "id": "a1-d52-07",
+      "en": "thousand",
+      "ru": [
+        "тысяча"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "A thousand people came to the concert.",
+          "ru": "На концерт пришла тысяча человек."
+        }
+      ]
+    },
+    {
+      "id": "a1-d52-08",
+      "en": "million",
+      "ru": [
+        "миллион"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "The city has a million people.",
+          "ru": "В городе миллион жителей."
+        }
+      ]
+    },
+    {
+      "id": "a1-d52-09",
+      "en": "half",
+      "ru": [
+        "половина"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Half of the cake is for you.",
+          "ru": "Половина торта — тебе."
+        }
+      ]
+    },
+    {
+      "id": "a1-d52-10",
+      "en": "zero",
+      "ru": [
+        "ноль"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "The temperature is zero.",
+          "ru": "Температура — ноль."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "id": "a1-d45",
+  "level": "A1",
+  "day": 45,
+  "island": 5,
+  "title": "Yummy food",
+  "topic": "food 3",
+  "words": [
+    {
+      "id": "a1-d45-01",
+      "en": "pasta",
+      "ru": [
+        "паста",
+        "макароны"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I cook pasta for dinner.",
+          "ru": "Я готовлю пасту на ужин."
+        }
+      ]
+    },
+    {
+      "id": "a1-d45-02",
+      "en": "burger",
+      "ru": [
+        "бургер"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Can I have a burger, please?",
+          "ru": "Можно бургер, пожалуйста?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d45-03",
+      "en": "chips",
+      "ru": [
+        "картофель фри"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I want fish and chips.",
+          "ru": "Я хочу рыбу с картошкой фри."
+        }
+      ]
+    },
+    {
+      "id": "a1-d45-04",
+      "en": "chocolate",
+      "ru": [
+        "шоколад"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I love chocolate.",
+          "ru": "Я обожаю шоколад."
+        }
+      ]
+    },
+    {
+      "id": "a1-d45-05",
+      "en": "biscuit",
+      "ru": [
+        "печенье"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Do you want a biscuit?",
+          "ru": "Хочешь печенье?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d45-06",
+      "en": "sweets",
+      "ru": [
+        "конфеты"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Children love sweets.",
+          "ru": "Дети любят конфеты."
+        }
+      ]
+    },
+    {
+      "id": "a1-d45-07",
+      "en": "popcorn",
+      "ru": [
+        "попкорн"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We eat popcorn at the cinema.",
+          "ru": "В кино мы едим попкорн."
+        }
+      ]
+    },
+    {
+      "id": "a1-d45-08",
+      "en": "yoghurt",
+      "ru": [
+        "йогурт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I have yoghurt for breakfast.",
+          "ru": "На завтрак у меня йогурт."
+        }
+      ]
+    },
+    {
+      "id": "a1-d45-09",
+      "en": "cereal",
+      "ru": [
+        "хлопья"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I eat cereal with milk.",
+          "ru": "Я ем хлопья с молоком."
+        }
+      ]
+    },
+    {
+      "id": "a1-d45-10",
+      "en": "pancake",
+      "ru": [
+        "блин",
+        "оладья"
+      ],
+      "pos": "noun",
+      "forms": [
+        "pancakes"
+      ],
+      "examples": [
+        {
+          "en": "Grandma makes pancakes.",
+          "ru": "Бабушка печёт блины."
+        }
+      ]
+    }
+  ]
+}

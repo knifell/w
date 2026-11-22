@@ -1,0 +1,154 @@
+{
+  "id": "a1-d54",
+  "level": "A1",
+  "day": 54,
+  "island": 6,
+  "title": "How is it?",
+  "topic": "adjectives 3",
+  "words": [
+    {
+      "id": "a1-d54-01",
+      "en": "interesting",
+      "ru": [
+        "интересный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This book is interesting.",
+          "ru": "Эта книга интересная."
+        }
+      ]
+    },
+    {
+      "id": "a1-d54-02",
+      "en": "boring",
+      "ru": [
+        "скучный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The film was boring.",
+          "ru": "Фильм был скучный."
+        }
+      ]
+    },
+    {
+      "id": "a1-d54-03",
+      "en": "amazing",
+      "ru": [
+        "потрясающий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The view is amazing!",
+          "ru": "Вид потрясающий!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d54-04",
+      "en": "terrible",
+      "ru": [
+        "ужасный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The weather is terrible.",
+          "ru": "Погода ужасная."
+        }
+      ]
+    },
+    {
+      "id": "a1-d54-05",
+      "en": "lovely",
+      "ru": [
+        "прекрасный",
+        "милый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "What a lovely day!",
+          "ru": "Какой прекрасный день!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d54-06",
+      "en": "horrible",
+      "ru": [
+        "отвратительный",
+        "ужасный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This soup is horrible.",
+          "ru": "Этот суп отвратительный."
+        }
+      ]
+    },
+    {
+      "id": "a1-d54-07",
+      "en": "fantastic",
+      "ru": [
+        "фантастический",
+        "отличный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "You look fantastic!",
+          "ru": "Ты отлично выглядишь!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d54-08",
+      "en": "perfect",
+      "ru": [
+        "идеальный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This is the perfect present.",
+          "ru": "Это идеальный подарок."
+        }
+      ]
+    },
+    {
+      "id": "a1-d54-09",
+      "en": "important",
+      "ru": [
+        "важный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This is very important.",
+          "ru": "Это очень важно."
+        }
+      ]
+    },
+    {
+      "id": "a1-d54-10",
+      "en": "different",
+      "ru": [
+        "другой",
+        "разный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We are very different.",
+          "ru": "Мы очень разные."
+        }
+      ]
+    }
+  ]
+}

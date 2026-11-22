@@ -1,0 +1,152 @@
+{
+  "id": "a1-d50",
+  "level": "A1",
+  "day": 50,
+  "island": 5,
+  "title": "Polite words",
+  "topic": "polite phrases",
+  "words": [
+    {
+      "id": "a1-d50-01",
+      "en": "excuse me",
+      "ru": [
+        "извините (привлечь внимание)"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Excuse me, where is the station?",
+          "ru": "Извините, где вокзал?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d50-02",
+      "en": "you're welcome",
+      "ru": [
+        "пожалуйста (в ответ на спасибо)"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Thank you! — You're welcome.",
+          "ru": "Спасибо! — Пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a1-d50-03",
+      "en": "no problem",
+      "ru": [
+        "без проблем"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "No problem, I can help.",
+          "ru": "Без проблем, я могу помочь."
+        }
+      ]
+    },
+    {
+      "id": "a1-d50-04",
+      "en": "see you",
+      "ru": [
+        "увидимся",
+        "пока"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "See you on Monday!",
+          "ru": "Увидимся в понедельник!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d50-05",
+      "en": "good luck",
+      "ru": [
+        "удачи"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Good luck with your test!",
+          "ru": "Удачи на контрольной!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d50-06",
+      "en": "well done",
+      "ru": [
+        "молодец",
+        "отлично"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Well done! Great work!",
+          "ru": "Молодец! Отличная работа!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d50-07",
+      "en": "never mind",
+      "ru": [
+        "ничего страшного"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Never mind, try again.",
+          "ru": "Ничего страшного, попробуй ещё раз."
+        }
+      ]
+    },
+    {
+      "id": "a1-d50-08",
+      "en": "welcome",
+      "ru": [
+        "добро пожаловать"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Welcome to our school!",
+          "ru": "Добро пожаловать в нашу школу!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d50-09",
+      "en": "bless you",
+      "ru": [
+        "будь здоров (при чихании)"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Bless you!",
+          "ru": "Будь здоров!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d50-10",
+      "en": "congratulations",
+      "ru": [
+        "поздравляю"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Congratulations on your new job!",
+          "ru": "Поздравляю с новой работой!"
+        }
+      ]
+    }
+  ]
+}

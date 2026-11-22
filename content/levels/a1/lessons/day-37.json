@@ -1,0 +1,151 @@
+{
+  "id": "a1-d37",
+  "level": "A1",
+  "day": 37,
+  "island": 4,
+  "title": "Transport",
+  "topic": "transport",
+  "words": [
+    {
+      "id": "a1-d37-01",
+      "en": "taxi",
+      "ru": [
+        "такси"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Let's take a taxi.",
+          "ru": "Давай возьмём такси."
+        }
+      ]
+    },
+    {
+      "id": "a1-d37-02",
+      "en": "motorbike",
+      "ru": [
+        "мотоцикл"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My uncle has a motorbike.",
+          "ru": "У моего дяди есть мотоцикл."
+        }
+      ]
+    },
+    {
+      "id": "a1-d37-03",
+      "en": "tram",
+      "ru": [
+        "трамвай"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I go to work by tram.",
+          "ru": "Я езжу на работу на трамвае."
+        }
+      ]
+    },
+    {
+      "id": "a1-d37-04",
+      "en": "lorry",
+      "ru": [
+        "грузовик"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A big lorry is on the road.",
+          "ru": "На дороге большой грузовик."
+        }
+      ]
+    },
+    {
+      "id": "a1-d37-05",
+      "en": "helicopter",
+      "ru": [
+        "вертолёт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A helicopter is in the sky.",
+          "ru": "В небе вертолёт."
+        }
+      ]
+    },
+    {
+      "id": "a1-d37-06",
+      "en": "scooter",
+      "ru": [
+        "самокат",
+        "скутер"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The boy has a red scooter.",
+          "ru": "У мальчика красный самокат."
+        }
+      ]
+    },
+    {
+      "id": "a1-d37-07",
+      "en": "ride",
+      "ru": [
+        "ездить (верхом, на велосипеде)"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I ride my bike every day.",
+          "ru": "Я катаюсь на велосипеде каждый день."
+        }
+      ]
+    },
+    {
+      "id": "a1-d37-08",
+      "en": "drive",
+      "ru": [
+        "водить (машину)"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "My mum can drive.",
+          "ru": "Моя мама умеет водить."
+        }
+      ]
+    },
+    {
+      "id": "a1-d37-09",
+      "en": "fly",
+      "ru": [
+        "летать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Birds can fly.",
+          "ru": "Птицы умеют летать."
+        }
+      ]
+    },
+    {
+      "id": "a1-d37-10",
+      "en": "road",
+      "ru": [
+        "дорога"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Be careful on the road.",
+          "ru": "Будь осторожен на дороге."
+        }
+      ]
+    }
+  ]
+}

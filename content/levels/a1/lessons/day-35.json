@@ -1,0 +1,150 @@
+{
+  "id": "a1-d35",
+  "level": "A1",
+  "day": 35,
+  "island": 4,
+  "title": "Months 1",
+  "topic": "months",
+  "words": [
+    {
+      "id": "a1-d35-01",
+      "en": "January",
+      "ru": [
+        "январь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "It's cold in January.",
+          "ru": "В январе холодно."
+        }
+      ]
+    },
+    {
+      "id": "a1-d35-02",
+      "en": "February",
+      "ru": [
+        "февраль"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "February is a short month.",
+          "ru": "Февраль — короткий месяц."
+        }
+      ]
+    },
+    {
+      "id": "a1-d35-03",
+      "en": "March",
+      "ru": [
+        "март"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My birthday is in March.",
+          "ru": "Мой день рождения в марте."
+        }
+      ]
+    },
+    {
+      "id": "a1-d35-04",
+      "en": "April",
+      "ru": [
+        "апрель"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "It often rains in April.",
+          "ru": "В апреле часто идёт дождь."
+        }
+      ]
+    },
+    {
+      "id": "a1-d35-05",
+      "en": "May",
+      "ru": [
+        "май"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The flowers come out in May.",
+          "ru": "В мае распускаются цветы."
+        }
+      ]
+    },
+    {
+      "id": "a1-d35-06",
+      "en": "June",
+      "ru": [
+        "июнь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "School ends in June.",
+          "ru": "Школа заканчивается в июне."
+        }
+      ]
+    },
+    {
+      "id": "a1-d35-07",
+      "en": "July",
+      "ru": [
+        "июль"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "July is very hot.",
+          "ru": "Июль очень жаркий."
+        }
+      ]
+    },
+    {
+      "id": "a1-d35-08",
+      "en": "August",
+      "ru": [
+        "август"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We go to the sea in August.",
+          "ru": "В августе мы едем на море."
+        }
+      ]
+    },
+    {
+      "id": "a1-d35-09",
+      "en": "September",
+      "ru": [
+        "сентябрь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "School starts in September.",
+          "ru": "Школа начинается в сентябре."
+        }
+      ]
+    },
+    {
+      "id": "a1-d35-10",
+      "en": "October",
+      "ru": [
+        "октябрь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The leaves are yellow in October.",
+          "ru": "В октябре листья жёлтые."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "id": "a1-d56",
+  "level": "A1",
+  "day": 56,
+  "island": 6,
+  "title": "Who works where?",
+  "topic": "jobs 2",
+  "words": [
+    {
+      "id": "a1-d56-01",
+      "en": "vet",
+      "ru": [
+        "ветеринар"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The vet helped my cat.",
+          "ru": "Ветеринар помог моей кошке."
+        }
+      ]
+    },
+    {
+      "id": "a1-d56-02",
+      "en": "dancer",
+      "ru": [
+        "танцор",
+        "танцовщица"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She wants to be a dancer.",
+          "ru": "Она хочет стать танцовщицей."
+        }
+      ]
+    },
+    {
+      "id": "a1-d56-03",
+      "en": "baker",
+      "ru": [
+        "пекарь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The baker makes bread.",
+          "ru": "Пекарь печёт хлеб."
+        }
+      ]
+    },
+    {
+      "id": "a1-d56-04",
+      "en": "builder",
+      "ru": [
+        "строитель"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My uncle is a builder.",
+          "ru": "Мой дядя — строитель."
+        }
+      ]
+    },
+    {
+      "id": "a1-d56-05",
+      "en": "cleaner",
+      "ru": [
+        "уборщик"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The cleaner comes on Fridays.",
+          "ru": "Уборщица приходит по пятницам."
+        }
+      ]
+    },
+    {
+      "id": "a1-d56-06",
+      "en": "manager",
+      "ru": [
+        "менеджер",
+        "управляющий"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I want to speak to the manager.",
+          "ru": "Я хочу поговорить с управляющим."
+        }
+      ]
+    },
+    {
+      "id": "a1-d56-07",
+      "en": "secretary",
+      "ru": [
+        "секретарь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The secretary answers the phone.",
+          "ru": "Секретарь отвечает на звонки."
+        }
+      ]
+    },
+    {
+      "id": "a1-d56-08",
+      "en": "mechanic",
+      "ru": [
+        "механик"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The mechanic fixed our car.",
+          "ru": "Механик починил нашу машину."
+        }
+      ]
+    },
+    {
+      "id": "a1-d56-09",
+      "en": "writer",
+      "ru": [
+        "писатель"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She is a famous writer.",
+          "ru": "Она известная писательница."
+        }
+      ]
+    },
+    {
+      "id": "a1-d56-10",
+      "en": "photographer",
+      "ru": [
+        "фотограф"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The photographer took our picture.",
+          "ru": "Фотограф сфотографировал нас."
+        }
+      ]
+    }
+  ]
+}

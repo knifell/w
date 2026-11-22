@@ -1,0 +1,152 @@
+{
+  "id": "a1-d46",
+  "level": "A1",
+  "day": 46,
+  "island": 5,
+  "title": "More clothes",
+  "topic": "clothes 2",
+  "words": [
+    {
+      "id": "a1-d46-01",
+      "en": "shorts",
+      "ru": [
+        "шорты"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I wear shorts in summer.",
+          "ru": "Летом я ношу шорты."
+        }
+      ]
+    },
+    {
+      "id": "a1-d46-02",
+      "en": "belt",
+      "ru": [
+        "ремень",
+        "пояс"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This belt is too long.",
+          "ru": "Этот ремень слишком длинный."
+        }
+      ]
+    },
+    {
+      "id": "a1-d46-03",
+      "en": "cap",
+      "ru": [
+        "кепка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He wears a blue cap.",
+          "ru": "Он носит синюю кепку."
+        }
+      ]
+    },
+    {
+      "id": "a1-d46-04",
+      "en": "sandals",
+      "ru": [
+        "сандалии"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I need new sandals.",
+          "ru": "Мне нужны новые сандалии."
+        }
+      ]
+    },
+    {
+      "id": "a1-d46-05",
+      "en": "trainers",
+      "ru": [
+        "кроссовки"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My trainers are white.",
+          "ru": "Мои кроссовки белые."
+        }
+      ]
+    },
+    {
+      "id": "a1-d46-06",
+      "en": "pyjamas",
+      "ru": [
+        "пижама"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Put on your pyjamas.",
+          "ru": "Надень пижаму."
+        }
+      ]
+    },
+    {
+      "id": "a1-d46-07",
+      "en": "swimsuit",
+      "ru": [
+        "купальник"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Don't forget your swimsuit.",
+          "ru": "Не забудь купальник."
+        }
+      ]
+    },
+    {
+      "id": "a1-d46-08",
+      "en": "raincoat",
+      "ru": [
+        "плащ",
+        "дождевик"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Take your raincoat.",
+          "ru": "Возьми дождевик."
+        }
+      ]
+    },
+    {
+      "id": "a1-d46-09",
+      "en": "blouse",
+      "ru": [
+        "блузка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She has a pink blouse.",
+          "ru": "У неё розовая блузка."
+        }
+      ]
+    },
+    {
+      "id": "a1-d46-10",
+      "en": "suit",
+      "ru": [
+        "костюм (деловой)"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My dad wears a suit to work.",
+          "ru": "Папа ходит на работу в костюме."
+        }
+      ]
+    }
+  ]
+}

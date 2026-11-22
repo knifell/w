@@ -1,0 +1,155 @@
+{
+  "id": "a1-d51",
+  "level": "A1",
+  "day": 51,
+  "island": 6,
+  "title": "Which way?",
+  "topic": "directions",
+  "words": [
+    {
+      "id": "a1-d51-01",
+      "en": "left",
+      "ru": [
+        "левый",
+        "налево"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Turn left here.",
+          "ru": "Поверни здесь налево."
+        }
+      ]
+    },
+    {
+      "id": "a1-d51-02",
+      "en": "on the right",
+      "ru": [
+        "справа"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "The bank is on the right.",
+          "ru": "Банк справа."
+        }
+      ]
+    },
+    {
+      "id": "a1-d51-03",
+      "en": "stop",
+      "ru": [
+        "останавливаться",
+        "остановка"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Stop! The light is red.",
+          "ru": "Стой! Горит красный."
+        }
+      ]
+    },
+    {
+      "id": "a1-d51-04",
+      "en": "start",
+      "ru": [
+        "начинать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Let's start the game.",
+          "ru": "Давай начнём игру."
+        }
+      ]
+    },
+    {
+      "id": "a1-d51-05",
+      "en": "go back",
+      "ru": [
+        "возвращаться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Let's go back home.",
+          "ru": "Давай вернёмся домой."
+        }
+      ]
+    },
+    {
+      "id": "a1-d51-06",
+      "en": "way",
+      "ru": [
+        "путь",
+        "дорога"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Is this the way to the park?",
+          "ru": "Это дорога к парку?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d51-07",
+      "en": "traffic lights",
+      "ru": [
+        "светофор"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Turn right at the traffic lights.",
+          "ru": "На светофоре поверни направо."
+        }
+      ]
+    },
+    {
+      "id": "a1-d51-08",
+      "en": "across",
+      "ru": [
+        "через",
+        "на другую сторону"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "Walk across the bridge.",
+          "ru": "Перейди через мост."
+        }
+      ]
+    },
+    {
+      "id": "a1-d51-09",
+      "en": "along",
+      "ru": [
+        "вдоль",
+        "по"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "Walk along this street.",
+          "ru": "Иди по этой улице."
+        }
+      ]
+    },
+    {
+      "id": "a1-d51-10",
+      "en": "around",
+      "ru": [
+        "вокруг"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "We walked around the lake.",
+          "ru": "Мы обошли вокруг озера."
+        }
+      ]
+    }
+  ]
+}

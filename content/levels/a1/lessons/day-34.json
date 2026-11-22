@@ -1,0 +1,151 @@
+{
+  "id": "a1-d34",
+  "level": "A1",
+  "day": 34,
+  "island": 4,
+  "title": "What's the weather?",
+  "topic": "weather",
+  "words": [
+    {
+      "id": "a1-d34-01",
+      "en": "rainy",
+      "ru": [
+        "дождливый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It's a rainy day.",
+          "ru": "Сегодня дождливый день."
+        }
+      ]
+    },
+    {
+      "id": "a1-d34-02",
+      "en": "foggy",
+      "ru": [
+        "туманный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It's foggy this morning.",
+          "ru": "Сегодня утром туман."
+        }
+      ]
+    },
+    {
+      "id": "a1-d34-03",
+      "en": "ice",
+      "ru": [
+        "лёд"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Be careful, there is ice on the road.",
+          "ru": "Осторожно, на дороге лёд."
+        }
+      ]
+    },
+    {
+      "id": "a1-d34-04",
+      "en": "cool",
+      "ru": [
+        "прохладный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It's cool in the evening.",
+          "ru": "Вечером прохладно."
+        }
+      ]
+    },
+    {
+      "id": "a1-d34-05",
+      "en": "rainbow",
+      "ru": [
+        "радуга"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Look, a rainbow!",
+          "ru": "Смотри, радуга!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d34-06",
+      "en": "temperature",
+      "ru": [
+        "температура"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The temperature is ten degrees.",
+          "ru": "Температура — десять градусов."
+        }
+      ]
+    },
+    {
+      "id": "a1-d34-07",
+      "en": "wet",
+      "ru": [
+        "мокрый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "My shoes are wet.",
+          "ru": "Мои туфли мокрые."
+        }
+      ]
+    },
+    {
+      "id": "a1-d34-08",
+      "en": "dry",
+      "ru": [
+        "сухой"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Is the towel dry?",
+          "ru": "Полотенце сухое?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d34-09",
+      "en": "freezing",
+      "ru": [
+        "морозный",
+        "очень холодный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It's freezing outside!",
+          "ru": "На улице мороз!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d34-10",
+      "en": "sunshine",
+      "ru": [
+        "солнечный свет"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I love the sunshine.",
+          "ru": "Я люблю солнечный свет."
+        }
+      ]
+    }
+  ]
+}

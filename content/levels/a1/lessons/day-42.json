@@ -1,0 +1,150 @@
+{
+  "id": "a1-d42",
+  "level": "A1",
+  "day": 42,
+  "island": 5,
+  "title": "My big family",
+  "topic": "family 2",
+  "words": [
+    {
+      "id": "a1-d42-01",
+      "en": "dad",
+      "ru": [
+        "папа"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My dad is a pilot.",
+          "ru": "Мой папа — пилот."
+        }
+      ]
+    },
+    {
+      "id": "a1-d42-02",
+      "en": "grandma",
+      "ru": [
+        "бабушка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I visit my grandma on Sundays.",
+          "ru": "По воскресеньям я навещаю бабушку."
+        }
+      ]
+    },
+    {
+      "id": "a1-d42-03",
+      "en": "grandpa",
+      "ru": [
+        "дедушка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My grandpa tells funny stories.",
+          "ru": "Дедушка рассказывает смешные истории."
+        }
+      ]
+    },
+    {
+      "id": "a1-d42-04",
+      "en": "grandparents",
+      "ru": [
+        "бабушка и дедушка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My grandparents live in a village.",
+          "ru": "Мои бабушка и дедушка живут в деревне."
+        }
+      ]
+    },
+    {
+      "id": "a1-d42-05",
+      "en": "grandson",
+      "ru": [
+        "внук"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Their grandson is five.",
+          "ru": "Их внуку пять лет."
+        }
+      ]
+    },
+    {
+      "id": "a1-d42-06",
+      "en": "granddaughter",
+      "ru": [
+        "внучка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She has one granddaughter.",
+          "ru": "У неё одна внучка."
+        }
+      ]
+    },
+    {
+      "id": "a1-d42-07",
+      "en": "niece",
+      "ru": [
+        "племянница"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My niece is a student.",
+          "ru": "Моя племянница — студентка."
+        }
+      ]
+    },
+    {
+      "id": "a1-d42-08",
+      "en": "nephew",
+      "ru": [
+        "племянник"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My nephew likes football.",
+          "ru": "Мой племянник любит футбол."
+        }
+      ]
+    },
+    {
+      "id": "a1-d42-09",
+      "en": "boyfriend",
+      "ru": [
+        "парень (молодой человек)"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Her boyfriend is from Spain.",
+          "ru": "Её парень из Испании."
+        }
+      ]
+    },
+    {
+      "id": "a1-d42-10",
+      "en": "girlfriend",
+      "ru": [
+        "девушка (подруга)"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "His girlfriend is a doctor.",
+          "ru": "Его девушка — врач."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "id": "a1-d60",
+  "level": "A1",
+  "day": 60,
+  "island": 6,
+  "title": "Languages",
+  "topic": "languages",
+  "words": [
+    {
+      "id": "a1-d60-01",
+      "en": "language",
+      "ru": [
+        "язык"
+      ],
+      "pos": "noun",
+      "forms": [
+        "languages"
+      ],
+      "examples": [
+        {
+          "en": "How many languages do you speak?",
+          "ru": "На скольких языках ты говоришь?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d60-02",
+      "en": "English",
+      "ru": [
+        "английский язык",
+        "английский"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I'm learning English.",
+          "ru": "Я учу английский."
+        }
+      ]
+    },
+    {
+      "id": "a1-d60-03",
+      "en": "Russian",
+      "ru": [
+        "русский язык",
+        "русский"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I speak Russian.",
+          "ru": "Я говорю по-русски."
+        }
+      ]
+    },
+    {
+      "id": "a1-d60-04",
+      "en": "French",
+      "ru": [
+        "французский язык",
+        "французский"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She speaks French.",
+          "ru": "Она говорит по-французски."
+        }
+      ]
+    },
+    {
+      "id": "a1-d60-05",
+      "en": "German",
+      "ru": [
+        "немецкий язык",
+        "немецкий"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He is learning German.",
+          "ru": "Он учит немецкий."
+        }
+      ]
+    },
+    {
+      "id": "a1-d60-06",
+      "en": "Spanish",
+      "ru": [
+        "испанский язык",
+        "испанский"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Spanish is easy for me.",
+          "ru": "Испанский для меня лёгкий."
+        }
+      ]
+    },
+    {
+      "id": "a1-d60-07",
+      "en": "Chinese",
+      "ru": [
+        "китайский язык",
+        "китайский"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Chinese is difficult.",
+          "ru": "Китайский трудный."
+        }
+      ]
+    },
+    {
+      "id": "a1-d60-08",
+      "en": "Italian",
+      "ru": [
+        "итальянский язык",
+        "итальянский"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I love Italian food.",
+          "ru": "Я обожаю итальянскую еду."
+        }
+      ]
+    },
+    {
+      "id": "a1-d60-09",
+      "en": "British",
+      "ru": [
+        "британский"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He is British.",
+          "ru": "Он британец."
+        }
+      ]
+    },
+    {
+      "id": "a1-d60-10",
+      "en": "American",
+      "ru": [
+        "американский"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "My friend is American.",
+          "ru": "Мой друг — американец."
+        }
+      ]
+    }
+  ]
+}

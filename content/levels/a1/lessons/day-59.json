@@ -1,0 +1,152 @@
+{
+  "id": "a1-d59",
+  "level": "A1",
+  "day": 59,
+  "island": 6,
+  "title": "At the seaside",
+  "topic": "seaside",
+  "words": [
+    {
+      "id": "a1-d59-01",
+      "en": "kite",
+      "ru": [
+        "воздушный змей"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Let's fly a kite.",
+          "ru": "Давай запустим воздушного змея."
+        }
+      ]
+    },
+    {
+      "id": "a1-d59-02",
+      "en": "sunglasses",
+      "ru": [
+        "солнечные очки"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Where are my sunglasses?",
+          "ru": "Где мои солнечные очки?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d59-03",
+      "en": "sandcastle",
+      "ru": [
+        "замок из песка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We built a sandcastle.",
+          "ru": "Мы построили замок из песка."
+        }
+      ]
+    },
+    {
+      "id": "a1-d59-04",
+      "en": "shell",
+      "ru": [
+        "ракушка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I found a pretty shell.",
+          "ru": "Я нашёл красивую ракушку."
+        }
+      ]
+    },
+    {
+      "id": "a1-d59-05",
+      "en": "seaside",
+      "ru": [
+        "морское побережье",
+        "взморье"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We go to the seaside every summer.",
+          "ru": "Каждое лето мы ездим на море."
+        }
+      ]
+    },
+    {
+      "id": "a1-d59-06",
+      "en": "tent",
+      "ru": [
+        "палатка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We sleep in a tent.",
+          "ru": "Мы спим в палатке."
+        }
+      ]
+    },
+    {
+      "id": "a1-d59-07",
+      "en": "bucket",
+      "ru": [
+        "ведёрко",
+        "ведро"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Fill the bucket with sand.",
+          "ru": "Насыпь в ведёрко песка."
+        }
+      ]
+    },
+    {
+      "id": "a1-d59-08",
+      "en": "swing",
+      "ru": [
+        "качели"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The girl is on the swing.",
+          "ru": "Девочка на качелях."
+        }
+      ]
+    },
+    {
+      "id": "a1-d59-09",
+      "en": "slide",
+      "ru": [
+        "горка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The children love the slide.",
+          "ru": "Дети обожают горку."
+        }
+      ]
+    },
+    {
+      "id": "a1-d59-10",
+      "en": "sun cream",
+      "ru": [
+        "солнцезащитный крем"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Put on some sun cream.",
+          "ru": "Намажься солнцезащитным кремом."
+        }
+      ]
+    }
+  ]
+}

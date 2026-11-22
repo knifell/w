@@ -1,0 +1,152 @@
+{
+  "id": "a1-d38",
+  "level": "A1",
+  "day": 38,
+  "island": 4,
+  "title": "Let's play!",
+  "topic": "sports",
+  "words": [
+    {
+      "id": "a1-d38-01",
+      "en": "basketball",
+      "ru": [
+        "баскетбол"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He plays basketball at school.",
+          "ru": "Он играет в баскетбол в школе."
+        }
+      ]
+    },
+    {
+      "id": "a1-d38-02",
+      "en": "volleyball",
+      "ru": [
+        "волейбол"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We play volleyball on the beach.",
+          "ru": "Мы играем в волейбол на пляже."
+        }
+      ]
+    },
+    {
+      "id": "a1-d38-03",
+      "en": "ski",
+      "ru": [
+        "кататься на лыжах"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Can you ski?",
+          "ru": "Ты умеешь кататься на лыжах?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d38-04",
+      "en": "skate",
+      "ru": [
+        "кататься на коньках"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We skate in winter.",
+          "ru": "Зимой мы катаемся на коньках."
+        }
+      ]
+    },
+    {
+      "id": "a1-d38-05",
+      "en": "jump",
+      "ru": [
+        "прыгать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "The cat can jump very high.",
+          "ru": "Кошка умеет прыгать очень высоко."
+        }
+      ]
+    },
+    {
+      "id": "a1-d38-06",
+      "en": "throw",
+      "ru": [
+        "бросать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Throw the ball to me.",
+          "ru": "Брось мне мяч."
+        }
+      ]
+    },
+    {
+      "id": "a1-d38-07",
+      "en": "catch",
+      "ru": [
+        "ловить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Catch the ball!",
+          "ru": "Лови мяч!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d38-08",
+      "en": "kick",
+      "ru": [
+        "пинать",
+        "бить ногой"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Kick the ball into the goal.",
+          "ru": "Забей мяч в ворота."
+        }
+      ]
+    },
+    {
+      "id": "a1-d38-09",
+      "en": "hockey",
+      "ru": [
+        "хоккей"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Hockey is popular in Canada.",
+          "ru": "Хоккей популярен в Канаде."
+        }
+      ]
+    },
+    {
+      "id": "a1-d38-10",
+      "en": "bat",
+      "ru": [
+        "бита",
+        "летучая мышь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He hit the ball with a bat.",
+          "ru": "Он отбил мяч битой."
+        }
+      ]
+    }
+  ]
+}

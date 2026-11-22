@@ -1,0 +1,157 @@
+{
+  "id": "a1-d31",
+  "level": "A1",
+  "day": 31,
+  "island": 4,
+  "title": "Fruit and vegetables",
+  "topic": "fruit",
+  "words": [
+    {
+      "id": "a1-d31-01",
+      "en": "tomato",
+      "ru": [
+        "помидор"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I put a tomato in the salad.",
+          "ru": "Я положил помидор в салат."
+        }
+      ]
+    },
+    {
+      "id": "a1-d31-02",
+      "en": "carrot",
+      "ru": [
+        "морковь"
+      ],
+      "pos": "noun",
+      "forms": [
+        "carrots"
+      ],
+      "examples": [
+        {
+          "en": "Rabbits like carrots.",
+          "ru": "Кролики любят морковку."
+        }
+      ]
+    },
+    {
+      "id": "a1-d31-03",
+      "en": "grape",
+      "ru": [
+        "виноград"
+      ],
+      "pos": "noun",
+      "forms": [
+        "grapes"
+      ],
+      "examples": [
+        {
+          "en": "These grapes are sweet.",
+          "ru": "Этот виноград сладкий."
+        }
+      ]
+    },
+    {
+      "id": "a1-d31-04",
+      "en": "lemon",
+      "ru": [
+        "лимон"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I drink tea with lemon.",
+          "ru": "Я пью чай с лимоном."
+        }
+      ]
+    },
+    {
+      "id": "a1-d31-05",
+      "en": "strawberry",
+      "ru": [
+        "клубника"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I love strawberry ice cream.",
+          "ru": "Я обожаю клубничное мороженое."
+        }
+      ]
+    },
+    {
+      "id": "a1-d31-06",
+      "en": "pear",
+      "ru": [
+        "груша"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This pear is very big.",
+          "ru": "Эта груша очень большая."
+        }
+      ]
+    },
+    {
+      "id": "a1-d31-07",
+      "en": "cucumber",
+      "ru": [
+        "огурец"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Cut the cucumber, please.",
+          "ru": "Нарежь огурец, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a1-d31-08",
+      "en": "cherry",
+      "ru": [
+        "вишня",
+        "черешня"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There is a cherry on the cake.",
+          "ru": "На торте вишенка."
+        }
+      ]
+    },
+    {
+      "id": "a1-d31-09",
+      "en": "watermelon",
+      "ru": [
+        "арбуз"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We eat watermelon in summer.",
+          "ru": "Летом мы едим арбуз."
+        }
+      ]
+    },
+    {
+      "id": "a1-d31-10",
+      "en": "salad",
+      "ru": [
+        "салат"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I want a green salad.",
+          "ru": "Я хочу зелёный салат."
+        }
+      ]
+    }
+  ]
+}

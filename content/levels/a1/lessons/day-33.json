@@ -1,0 +1,151 @@
+{
+  "id": "a1-d33",
+  "level": "A1",
+  "day": 33,
+  "island": 4,
+  "title": "In my room",
+  "topic": "my room",
+  "words": [
+    {
+      "id": "a1-d33-01",
+      "en": "toy",
+      "ru": [
+        "игрушка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This is my favourite toy.",
+          "ru": "Это моя любимая игрушка."
+        }
+      ]
+    },
+    {
+      "id": "a1-d33-02",
+      "en": "ball",
+      "ru": [
+        "мяч"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Throw me the ball!",
+          "ru": "Кинь мне мяч!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d33-03",
+      "en": "box",
+      "ru": [
+        "коробка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The cat is in the box.",
+          "ru": "Кошка в коробке."
+        }
+      ]
+    },
+    {
+      "id": "a1-d33-04",
+      "en": "clock",
+      "ru": [
+        "часы (настенные)"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The clock is on the wall.",
+          "ru": "Часы висят на стене."
+        }
+      ]
+    },
+    {
+      "id": "a1-d33-05",
+      "en": "doll",
+      "ru": [
+        "кукла"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My sister has a new doll.",
+          "ru": "У моей сестры новая кукла."
+        }
+      ]
+    },
+    {
+      "id": "a1-d33-06",
+      "en": "teddy bear",
+      "ru": [
+        "плюшевый мишка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The baby sleeps with a teddy bear.",
+          "ru": "Малыш спит с плюшевым мишкой."
+        }
+      ]
+    },
+    {
+      "id": "a1-d33-07",
+      "en": "poster",
+      "ru": [
+        "плакат",
+        "постер"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I have a poster on my wall.",
+          "ru": "У меня на стене постер."
+        }
+      ]
+    },
+    {
+      "id": "a1-d33-08",
+      "en": "wardrobe",
+      "ru": [
+        "шкаф для одежды"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My clothes are in the wardrobe.",
+          "ru": "Моя одежда в шкафу."
+        }
+      ]
+    },
+    {
+      "id": "a1-d33-09",
+      "en": "armchair",
+      "ru": [
+        "кресло"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Grandpa sits in his armchair.",
+          "ru": "Дедушка сидит в своём кресле."
+        }
+      ]
+    },
+    {
+      "id": "a1-d33-10",
+      "en": "bookcase",
+      "ru": [
+        "книжный шкаф"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The bookcase is full of books.",
+          "ru": "Книжный шкаф полон книг."
+        }
+      ]
+    }
+  ]
+}

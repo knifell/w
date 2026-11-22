@@ -1,0 +1,152 @@
+{
+  "id": "a1-d41",
+  "level": "A1",
+  "day": 41,
+  "island": 5,
+  "title": "In class",
+  "topic": "classroom",
+  "words": [
+    {
+      "id": "a1-d41-01",
+      "en": "board",
+      "ru": [
+        "доска"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Look at the board, please.",
+          "ru": "Посмотрите на доску, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a1-d41-02",
+      "en": "question",
+      "ru": [
+        "вопрос"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Can I ask a question?",
+          "ru": "Можно задать вопрос?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d41-03",
+      "en": "test",
+      "ru": [
+        "контрольная",
+        "тест"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We have a test on Friday.",
+          "ru": "В пятницу у нас контрольная."
+        }
+      ]
+    },
+    {
+      "id": "a1-d41-04",
+      "en": "rubber",
+      "ru": [
+        "ластик"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Can I have your rubber?",
+          "ru": "Дашь мне свой ластик?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d41-05",
+      "en": "ruler",
+      "ru": [
+        "линейка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Draw a line with a ruler.",
+          "ru": "Нарисуй линию по линейке."
+        }
+      ]
+    },
+    {
+      "id": "a1-d41-06",
+      "en": "class",
+      "ru": [
+        "урок",
+        "класс"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Our class starts at nine.",
+          "ru": "Наш урок начинается в девять."
+        }
+      ]
+    },
+    {
+      "id": "a1-d41-07",
+      "en": "example",
+      "ru": [
+        "пример"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Give me an example.",
+          "ru": "Приведи пример."
+        }
+      ]
+    },
+    {
+      "id": "a1-d41-08",
+      "en": "correct",
+      "ru": [
+        "правильный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Your answer is correct.",
+          "ru": "Твой ответ правильный."
+        }
+      ]
+    },
+    {
+      "id": "a1-d41-09",
+      "en": "alphabet",
+      "ru": [
+        "алфавит"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The English alphabet has 26 letters.",
+          "ru": "В английском алфавите 26 букв."
+        }
+      ]
+    },
+    {
+      "id": "a1-d41-10",
+      "en": "count",
+      "ru": [
+        "считать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Count from one to ten.",
+          "ru": "Посчитай от одного до десяти."
+        }
+      ]
+    }
+  ]
+}

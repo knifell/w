@@ -1,0 +1,154 @@
+{
+  "id": "a1-d36",
+  "level": "A1",
+  "day": 36,
+  "island": 4,
+  "title": "Months and time",
+  "topic": "time 2",
+  "words": [
+    {
+      "id": "a1-d36-01",
+      "en": "November",
+      "ru": [
+        "ноябрь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "November is grey and wet.",
+          "ru": "Ноябрь серый и сырой."
+        }
+      ]
+    },
+    {
+      "id": "a1-d36-02",
+      "en": "December",
+      "ru": [
+        "декабрь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We have a party in December.",
+          "ru": "В декабре у нас праздник."
+        }
+      ]
+    },
+    {
+      "id": "a1-d36-03",
+      "en": "half past",
+      "ru": [
+        "половина (о времени)"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "It's half past six.",
+          "ru": "Сейчас половина седьмого."
+        }
+      ]
+    },
+    {
+      "id": "a1-d36-04",
+      "en": "quarter",
+      "ru": [
+        "четверть"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "It's a quarter to five.",
+          "ru": "Сейчас без четверти пять."
+        }
+      ]
+    },
+    {
+      "id": "a1-d36-05",
+      "en": "midnight",
+      "ru": [
+        "полночь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I go to bed at midnight.",
+          "ru": "Я ложусь спать в полночь."
+        }
+      ]
+    },
+    {
+      "id": "a1-d36-06",
+      "en": "midday",
+      "ru": [
+        "полдень"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We have lunch at midday.",
+          "ru": "Мы обедаем в полдень."
+        }
+      ]
+    },
+    {
+      "id": "a1-d36-07",
+      "en": "next",
+      "ru": [
+        "следующий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "See you next week!",
+          "ru": "Увидимся на следующей неделе!"
+        }
+      ]
+    },
+    {
+      "id": "a1-d36-08",
+      "en": "last",
+      "ru": [
+        "прошлый",
+        "последний"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I saw him last week.",
+          "ru": "Я видел его на прошлой неделе."
+        }
+      ]
+    },
+    {
+      "id": "a1-d36-09",
+      "en": "tonight",
+      "ru": [
+        "сегодня вечером"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "What are you doing tonight?",
+          "ru": "Что ты делаешь сегодня вечером?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d36-10",
+      "en": "weekday",
+      "ru": [
+        "будний день"
+      ],
+      "pos": "noun",
+      "forms": [
+        "weekdays"
+      ],
+      "examples": [
+        {
+          "en": "I work on weekdays.",
+          "ru": "Я работаю по будням."
+        }
+      ]
+    }
+  ]
+}

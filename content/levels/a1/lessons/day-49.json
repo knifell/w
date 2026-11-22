@@ -1,0 +1,159 @@
+{
+  "id": "a1-d49",
+  "level": "A1",
+  "day": 49,
+  "island": 5,
+  "title": "At the shop",
+  "topic": "shopping phrases",
+  "words": [
+    {
+      "id": "a1-d49-01",
+      "en": "pound",
+      "ru": [
+        "фунт"
+      ],
+      "pos": "noun",
+      "forms": [
+        "pounds"
+      ],
+      "examples": [
+        {
+          "en": "It costs five pounds.",
+          "ru": "Это стоит пять фунтов."
+        }
+      ]
+    },
+    {
+      "id": "a1-d49-02",
+      "en": "dollar",
+      "ru": [
+        "доллар"
+      ],
+      "pos": "noun",
+      "forms": [
+        "dollars"
+      ],
+      "examples": [
+        {
+          "en": "It's ten dollars.",
+          "ru": "Это стоит десять долларов."
+        }
+      ]
+    },
+    {
+      "id": "a1-d49-03",
+      "en": "euro",
+      "ru": [
+        "евро"
+      ],
+      "pos": "noun",
+      "forms": [
+        "euros"
+      ],
+      "examples": [
+        {
+          "en": "The ticket is twenty euros.",
+          "ru": "Билет стоит двадцать евро."
+        }
+      ]
+    },
+    {
+      "id": "a1-d49-04",
+      "en": "closed",
+      "ru": [
+        "закрытый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The shop is closed on Sunday.",
+          "ru": "В воскресенье магазин закрыт."
+        }
+      ]
+    },
+    {
+      "id": "a1-d49-05",
+      "en": "here you are",
+      "ru": [
+        "вот, пожалуйста"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Here you are, your coffee.",
+          "ru": "Вот, пожалуйста, ваш кофе."
+        }
+      ]
+    },
+    {
+      "id": "a1-d49-06",
+      "en": "anything else",
+      "ru": [
+        "что-нибудь ещё"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Anything else?",
+          "ru": "Что-нибудь ещё?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d49-07",
+      "en": "that's all",
+      "ru": [
+        "это всё"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "No, that's all, thanks.",
+          "ru": "Нет, это всё, спасибо."
+        }
+      ]
+    },
+    {
+      "id": "a1-d49-08",
+      "en": "how about",
+      "ru": [
+        "как насчёт"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "How about a cup of tea?",
+          "ru": "Как насчёт чашки чая?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d49-09",
+      "en": "I'd like",
+      "ru": [
+        "я бы хотел"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "I'd like an apple, please.",
+          "ru": "Я бы хотел яблоко, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a1-d49-10",
+      "en": "of course",
+      "ru": [
+        "конечно"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Of course you can!",
+          "ru": "Конечно, можно!"
+        }
+      ]
+    }
+  ]
+}

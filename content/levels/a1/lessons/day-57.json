@@ -1,0 +1,154 @@
+{
+  "id": "a1-d57",
+  "level": "A1",
+  "day": 57,
+  "island": 6,
+  "title": "How much?",
+  "topic": "quantities",
+  "words": [
+    {
+      "id": "a1-d57-01",
+      "en": "some",
+      "ru": [
+        "немного",
+        "несколько"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "Can I have some water?",
+          "ru": "Можно немного воды?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d57-02",
+      "en": "any",
+      "ru": [
+        "какой-нибудь",
+        "сколько-нибудь"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "Do you have any milk?",
+          "ru": "У тебя есть молоко?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d57-03",
+      "en": "a lot of",
+      "ru": [
+        "много"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "There are a lot of people here.",
+          "ru": "Здесь много людей."
+        }
+      ]
+    },
+    {
+      "id": "a1-d57-04",
+      "en": "a little",
+      "ru": [
+        "немного"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "I speak a little English.",
+          "ru": "Я немного говорю по-английски."
+        }
+      ]
+    },
+    {
+      "id": "a1-d57-05",
+      "en": "a few",
+      "ru": [
+        "несколько"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "I have a few friends here.",
+          "ru": "У меня здесь несколько друзей."
+        }
+      ]
+    },
+    {
+      "id": "a1-d57-06",
+      "en": "piece",
+      "ru": [
+        "кусок",
+        "кусочек"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Can I have a piece of cake?",
+          "ru": "Можно кусочек торта?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d57-07",
+      "en": "slice",
+      "ru": [
+        "ломтик"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A slice of bread, please.",
+          "ru": "Ломтик хлеба, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a1-d57-08",
+      "en": "jar",
+      "ru": [
+        "банка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A jar of honey, please.",
+          "ru": "Банку мёда, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a1-d57-09",
+      "en": "more",
+      "ru": [
+        "больше",
+        "ещё"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "Can I have more juice?",
+          "ru": "Можно ещё сока?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d57-10",
+      "en": "enough",
+      "ru": [
+        "достаточно"
+      ],
+      "pos": "other",
+      "examples": [
+        {
+          "en": "I have enough money.",
+          "ru": "У меня достаточно денег."
+        }
+      ]
+    }
+  ]
+}

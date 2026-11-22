@@ -1,0 +1,151 @@
+{
+  "id": "a1-d43",
+  "level": "A1",
+  "day": 43,
+  "island": 5,
+  "title": "Around town",
+  "topic": "places 2",
+  "words": [
+    {
+      "id": "a1-d43-01",
+      "en": "church",
+      "ru": [
+        "церковь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There is an old church in the village.",
+          "ru": "В деревне есть старая церковь."
+        }
+      ]
+    },
+    {
+      "id": "a1-d43-02",
+      "en": "café",
+      "ru": [
+        "кафе"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Let's meet at the café.",
+          "ru": "Давай встретимся в кафе."
+        }
+      ]
+    },
+    {
+      "id": "a1-d43-03",
+      "en": "theatre",
+      "ru": [
+        "театр"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We went to the theatre last night.",
+          "ru": "Вчера вечером мы ходили в театр."
+        }
+      ]
+    },
+    {
+      "id": "a1-d43-04",
+      "en": "swimming pool",
+      "ru": [
+        "бассейн"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I swim in the swimming pool.",
+          "ru": "Я плаваю в бассейне."
+        }
+      ]
+    },
+    {
+      "id": "a1-d43-05",
+      "en": "playground",
+      "ru": [
+        "детская площадка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The children are at the playground.",
+          "ru": "Дети на детской площадке."
+        }
+      ]
+    },
+    {
+      "id": "a1-d43-06",
+      "en": "police station",
+      "ru": [
+        "полицейский участок"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The police station is near the bank.",
+          "ru": "Полицейский участок рядом с банком."
+        }
+      ]
+    },
+    {
+      "id": "a1-d43-07",
+      "en": "bus stop",
+      "ru": [
+        "автобусная остановка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I'm waiting at the bus stop.",
+          "ru": "Я жду на автобусной остановке."
+        }
+      ]
+    },
+    {
+      "id": "a1-d43-08",
+      "en": "petrol station",
+      "ru": [
+        "заправка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We need a petrol station.",
+          "ru": "Нам нужна заправка."
+        }
+      ]
+    },
+    {
+      "id": "a1-d43-09",
+      "en": "car park",
+      "ru": [
+        "парковка",
+        "стоянка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The car park is full.",
+          "ru": "Парковка заполнена."
+        }
+      ]
+    },
+    {
+      "id": "a1-d43-10",
+      "en": "toy shop",
+      "ru": [
+        "магазин игрушек"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Let's go to the toy shop.",
+          "ru": "Пойдём в магазин игрушек."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "id": "a1-d32",
+  "level": "A1",
+  "day": 32,
+  "island": 4,
+  "title": "On the table",
+  "topic": "tableware",
+  "words": [
+    {
+      "id": "a1-d32-01",
+      "en": "plate",
+      "ru": [
+        "тарелка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Put the cake on a plate.",
+          "ru": "Положи торт на тарелку."
+        }
+      ]
+    },
+    {
+      "id": "a1-d32-02",
+      "en": "cup",
+      "ru": [
+        "чашка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Can I have a cup of tea?",
+          "ru": "Можно чашку чая?"
+        }
+      ]
+    },
+    {
+      "id": "a1-d32-03",
+      "en": "spoon",
+      "ru": [
+        "ложка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I need a spoon for my soup.",
+          "ru": "Мне нужна ложка для супа."
+        }
+      ]
+    },
+    {
+      "id": "a1-d32-04",
+      "en": "fork",
+      "ru": [
+        "вилка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Eat with a fork.",
+          "ru": "Ешь вилкой."
+        }
+      ]
+    },
+    {
+      "id": "a1-d32-05",
+      "en": "knife",
+      "ru": [
+        "нож"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This knife is sharp.",
+          "ru": "Этот нож острый."
+        }
+      ]
+    },
+    {
+      "id": "a1-d32-06",
+      "en": "bowl",
+      "ru": [
+        "миска"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A bowl of rice, please.",
+          "ru": "Миску риса, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a1-d32-07",
+      "en": "bottle",
+      "ru": [
+        "бутылка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A bottle of water, please.",
+          "ru": "Бутылку воды, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a1-d32-08",
+      "en": "butter",
+      "ru": [
+        "сливочное масло"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I like bread with butter.",
+          "ru": "Я люблю хлеб с маслом."
+        }
+      ]
+    },
+    {
+      "id": "a1-d32-09",
+      "en": "jam",
+      "ru": [
+        "варенье",
+        "джем"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My grandma makes jam.",
+          "ru": "Бабушка варит варенье."
+        }
+      ]
+    },
+    {
+      "id": "a1-d32-10",
+      "en": "honey",
+      "ru": [
+        "мёд"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Bears love honey.",
+          "ru": "Медведи любят мёд."
+        }
+      ]
+    }
+  ]
+}

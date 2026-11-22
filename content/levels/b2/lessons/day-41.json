@@ -1,0 +1,152 @@
+{
+  "id": "b2-d41",
+  "level": "B2",
+  "day": 41,
+  "island": 5,
+  "title": "Literature",
+  "topic": "literature",
+  "words": [
+    {
+      "id": "b2-d41-01",
+      "en": "narrative",
+      "ru": [
+        "повествование",
+        "рассказ"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The novel has a complex narrative.",
+          "ru": "У романа сложное повествование."
+        }
+      ]
+    },
+    {
+      "id": "b2-d41-02",
+      "en": "protagonist",
+      "ru": [
+        "главный герой"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The protagonist is a young doctor.",
+          "ru": "Главный герой — молодой врач."
+        }
+      ]
+    },
+    {
+      "id": "b2-d41-03",
+      "en": "plot",
+      "ru": [
+        "сюжет"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The plot is hard to follow.",
+          "ru": "За сюжетом трудно уследить."
+        }
+      ]
+    },
+    {
+      "id": "b2-d41-04",
+      "en": "metaphor",
+      "ru": [
+        "метафора"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "\"Time is money\" is a metaphor.",
+          "ru": "«Время — деньги» — это метафора."
+        }
+      ]
+    },
+    {
+      "id": "b2-d41-05",
+      "en": "symbolism",
+      "ru": [
+        "символизм"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The film is full of symbolism.",
+          "ru": "Фильм полон символизма."
+        }
+      ]
+    },
+    {
+      "id": "b2-d41-06",
+      "en": "prose",
+      "ru": [
+        "проза"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She writes beautiful prose.",
+          "ru": "Она пишет прекрасную прозу."
+        }
+      ]
+    },
+    {
+      "id": "b2-d41-07",
+      "en": "climax",
+      "ru": [
+        "кульминация"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The climax of the story is very exciting.",
+          "ru": "Кульминация истории очень захватывающая."
+        }
+      ]
+    },
+    {
+      "id": "b2-d41-08",
+      "en": "imagery",
+      "ru": [
+        "образность",
+        "образы"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The poem uses rich imagery.",
+          "ru": "В стихотворении богатые образы."
+        }
+      ]
+    },
+    {
+      "id": "b2-d41-09",
+      "en": "setting",
+      "ru": [
+        "место и время действия"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The setting of the novel is Victorian London.",
+          "ru": "Действие романа происходит в викторианском Лондоне."
+        }
+      ]
+    },
+    {
+      "id": "b2-d41-10",
+      "en": "foreshadowing",
+      "ru": [
+        "предзнаменование (в сюжете)"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The author uses foreshadowing in the first chapter.",
+          "ru": "Автор даёт намёки на будущее уже в первой главе."
+        }
+      ]
+    }
+  ]
+}

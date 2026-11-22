@@ -1,0 +1,155 @@
+{
+  "id": "b2-d44",
+  "level": "B2",
+  "day": 44,
+  "island": 5,
+  "title": "Big ideas",
+  "topic": "philosophy",
+  "words": [
+    {
+      "id": "b2-d44-01",
+      "en": "existence",
+      "ru": [
+        "существование"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Do you believe in the existence of ghosts?",
+          "ru": "Ты веришь в существование призраков?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d44-02",
+      "en": "consciousness",
+      "ru": [
+        "сознание"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He lost consciousness for a minute.",
+          "ru": "Он на минуту потерял сознание."
+        }
+      ]
+    },
+    {
+      "id": "b2-d44-03",
+      "en": "logic",
+      "ru": [
+        "логика"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There's no logic in his argument.",
+          "ru": "В его доводе нет логики."
+        }
+      ]
+    },
+    {
+      "id": "b2-d44-04",
+      "en": "notion",
+      "ru": [
+        "понятие",
+        "представление"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I have no notion of what he means.",
+          "ru": "Понятия не имею, что он имеет в виду."
+        }
+      ]
+    },
+    {
+      "id": "b2-d44-05",
+      "en": "concept",
+      "ru": [
+        "концепция",
+        "понятие"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The concept is simple.",
+          "ru": "Концепция простая."
+        }
+      ]
+    },
+    {
+      "id": "b2-d44-06",
+      "en": "abstract",
+      "ru": [
+        "абстрактный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It's a very abstract idea.",
+          "ru": "Это очень абстрактная идея."
+        }
+      ]
+    },
+    {
+      "id": "b2-d44-07",
+      "en": "truth",
+      "ru": [
+        "правда",
+        "истина"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Tell me the truth.",
+          "ru": "Скажи мне правду."
+        }
+      ]
+    },
+    {
+      "id": "b2-d44-08",
+      "en": "belief",
+      "ru": [
+        "убеждение",
+        "вера"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "It's my strong belief.",
+          "ru": "Это моё твёрдое убеждение."
+        }
+      ]
+    },
+    {
+      "id": "b2-d44-09",
+      "en": "free will",
+      "ru": [
+        "свобода воли"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Do we really have free will?",
+          "ru": "У нас действительно есть свобода воли?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d44-10",
+      "en": "enlightenment",
+      "ru": [
+        "просвещение",
+        "озарение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He travelled to India in search of enlightenment.",
+          "ru": "Он поехал в Индию в поисках просветления."
+        }
+      ]
+    }
+  ]
+}

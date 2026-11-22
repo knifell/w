@@ -1,0 +1,151 @@
+{
+  "id": "b2-d45",
+  "level": "B2",
+  "day": 45,
+  "island": 5,
+  "title": "Language about language",
+  "topic": "linguistics",
+  "words": [
+    {
+      "id": "b2-d45-01",
+      "en": "dialect",
+      "ru": [
+        "диалект"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "They speak a local dialect.",
+          "ru": "Они говорят на местном диалекте."
+        }
+      ]
+    },
+    {
+      "id": "b2-d45-02",
+      "en": "fluency",
+      "ru": [
+        "беглость речи"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Practice improves fluency.",
+          "ru": "Практика улучшает беглость речи."
+        }
+      ]
+    },
+    {
+      "id": "b2-d45-03",
+      "en": "vocabulary",
+      "ru": [
+        "словарный запас"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Reading helps build vocabulary.",
+          "ru": "Чтение помогает пополнять словарный запас."
+        }
+      ]
+    },
+    {
+      "id": "b2-d45-04",
+      "en": "grammar",
+      "ru": [
+        "грамматика"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "English grammar is not so hard.",
+          "ru": "Английская грамматика не такая уж сложная."
+        }
+      ]
+    },
+    {
+      "id": "b2-d45-05",
+      "en": "idiom",
+      "ru": [
+        "идиома"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "\"Break a leg\" is an idiom.",
+          "ru": "«Ни пуха ни пера» — это идиома."
+        }
+      ]
+    },
+    {
+      "id": "b2-d45-06",
+      "en": "slang",
+      "ru": [
+        "сленг"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Teenagers use a lot of slang.",
+          "ru": "Подростки используют много сленга."
+        }
+      ]
+    },
+    {
+      "id": "b2-d45-07",
+      "en": "bilingual",
+      "ru": [
+        "двуязычный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Their children are bilingual.",
+          "ru": "Их дети двуязычные."
+        }
+      ]
+    },
+    {
+      "id": "b2-d45-08",
+      "en": "mother tongue",
+      "ru": [
+        "родной язык"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My mother tongue is Russian.",
+          "ru": "Мой родной язык — русский."
+        }
+      ]
+    },
+    {
+      "id": "b2-d45-09",
+      "en": "jargon",
+      "ru": [
+        "жаргон",
+        "профессиональный язык"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The report is full of technical jargon.",
+          "ru": "Отчёт полон технического жаргона."
+        }
+      ]
+    },
+    {
+      "id": "b2-d45-10",
+      "en": "colloquial",
+      "ru": [
+        "разговорный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This is a colloquial expression.",
+          "ru": "Это разговорное выражение."
+        }
+      ]
+    }
+  ]
+}

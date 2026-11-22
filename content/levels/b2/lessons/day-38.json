@@ -1,0 +1,158 @@
+{
+  "id": "b2-d38",
+  "level": "B2",
+  "day": 38,
+  "island": 4,
+  "title": "Rhetoric",
+  "topic": "rhetoric",
+  "words": [
+    {
+      "id": "b2-d38-01",
+      "en": "rhetoric",
+      "ru": [
+        "риторика"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "His speech was full of empty rhetoric.",
+          "ru": "Его речь была полна пустой риторики."
+        }
+      ]
+    },
+    {
+      "id": "b2-d38-02",
+      "en": "emotive",
+      "ru": [
+        "эмоциональный",
+        "вызывающий эмоции"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It's a very emotive issue.",
+          "ru": "Это очень острый вопрос."
+        }
+      ]
+    },
+    {
+      "id": "b2-d38-03",
+      "en": "compelling",
+      "ru": [
+        "убедительный",
+        "захватывающий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She made a compelling case.",
+          "ru": "Она привела убедительные доводы."
+        }
+      ]
+    },
+    {
+      "id": "b2-d38-04",
+      "en": "exaggerate",
+      "ru": [
+        "преувеличивать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Don't exaggerate, it wasn't that bad.",
+          "ru": "Не преувеличивай, всё было не так плохо."
+        }
+      ]
+    },
+    {
+      "id": "b2-d38-05",
+      "en": "understatement",
+      "ru": [
+        "преуменьшение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "\"It's a bit cold\" was an understatement.",
+          "ru": "«Немного холодно» — это было мягко сказано."
+        }
+      ]
+    },
+    {
+      "id": "b2-d38-06",
+      "en": "anecdote",
+      "ru": [
+        "случай из жизни",
+        "анекдот"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He started his talk with a funny anecdote.",
+          "ru": "Он начал выступление со смешного случая."
+        }
+      ]
+    },
+    {
+      "id": "b2-d38-07",
+      "en": "refute",
+      "ru": [
+        "опровергать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "refuted"
+      ],
+      "examples": [
+        {
+          "en": "The scientist refuted the claim.",
+          "ru": "Учёный опроверг это утверждение."
+        }
+      ]
+    },
+    {
+      "id": "b2-d38-08",
+      "en": "concise",
+      "ru": [
+        "краткий",
+        "сжатый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Keep your answer concise.",
+          "ru": "Отвечай кратко."
+        }
+      ]
+    },
+    {
+      "id": "b2-d38-09",
+      "en": "verbose",
+      "ru": [
+        "многословный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The report is too verbose.",
+          "ru": "Отчёт слишком многословный."
+        }
+      ]
+    },
+    {
+      "id": "b2-d38-10",
+      "en": "coherent",
+      "ru": [
+        "связный",
+        "последовательный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Write a coherent argument.",
+          "ru": "Напиши связный аргумент."
+        }
+      ]
+    }
+  ]
+}

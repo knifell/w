@@ -1,0 +1,153 @@
+{
+  "id": "b2-d48",
+  "level": "B2",
+  "day": 48,
+  "island": 5,
+  "title": "Research skills",
+  "topic": "research",
+  "words": [
+    {
+      "id": "b2-d48-01",
+      "en": "database",
+      "ru": [
+        "база данных"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The library has a huge database.",
+          "ru": "У библиотеки огромная база данных."
+        }
+      ]
+    },
+    {
+      "id": "b2-d48-02",
+      "en": "credible",
+      "ru": [
+        "заслуживающий доверия"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Is this a credible source?",
+          "ru": "Этот источник заслуживает доверия?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d48-03",
+      "en": "verify",
+      "ru": [
+        "проверять",
+        "подтверждать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Please verify your email address.",
+          "ru": "Пожалуйста, подтвердите адрес почты."
+        }
+      ]
+    },
+    {
+      "id": "b2-d48-04",
+      "en": "peer review",
+      "ru": [
+        "рецензирование"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The article passed peer review.",
+          "ru": "Статья прошла рецензирование."
+        }
+      ]
+    },
+    {
+      "id": "b2-d48-05",
+      "en": "thorough",
+      "ru": [
+        "тщательный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The police did a thorough search.",
+          "ru": "Полиция провела тщательный обыск."
+        }
+      ]
+    },
+    {
+      "id": "b2-d48-06",
+      "en": "comprehensive",
+      "ru": [
+        "всесторонний",
+        "исчерпывающий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We need a comprehensive report.",
+          "ru": "Нам нужен исчерпывающий отчёт."
+        }
+      ]
+    },
+    {
+      "id": "b2-d48-07",
+      "en": "insight",
+      "ru": [
+        "понимание",
+        "проницательность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The book gives an insight into her life.",
+          "ru": "Книга помогает понять её жизнь."
+        }
+      ]
+    },
+    {
+      "id": "b2-d48-08",
+      "en": "bibliography",
+      "ru": [
+        "список литературы"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Add a bibliography at the end.",
+          "ru": "Добавь список литературы в конце."
+        }
+      ]
+    },
+    {
+      "id": "b2-d48-09",
+      "en": "primary source",
+      "ru": [
+        "первоисточник"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Letters are an important primary source.",
+          "ru": "Письма — важный первоисточник."
+        }
+      ]
+    },
+    {
+      "id": "b2-d48-10",
+      "en": "fact-check",
+      "ru": [
+        "проверять факты"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Journalists must fact-check their stories.",
+          "ru": "Журналисты должны проверять факты."
+        }
+      ]
+    }
+  ]
+}

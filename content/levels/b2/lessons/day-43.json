@@ -1,0 +1,156 @@
+{
+  "id": "b2-d43",
+  "level": "B2",
+  "day": 43,
+  "island": 5,
+  "title": "Dynasties and empires",
+  "topic": "history",
+  "words": [
+    {
+      "id": "b2-d43-01",
+      "en": "dynasty",
+      "ru": [
+        "династия"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The dynasty ruled for 300 years.",
+          "ru": "Династия правила 300 лет."
+        }
+      ]
+    },
+    {
+      "id": "b2-d43-02",
+      "en": "reign",
+      "ru": [
+        "правление",
+        "царствовать"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "During her reign, the country grew rich.",
+          "ru": "Во время её правления страна разбогатела."
+        }
+      ]
+    },
+    {
+      "id": "b2-d43-03",
+      "en": "conquest",
+      "ru": [
+        "завоевание"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The conquest of the city took years.",
+          "ru": "Завоевание города заняло годы."
+        }
+      ]
+    },
+    {
+      "id": "b2-d43-04",
+      "en": "treaty",
+      "ru": [
+        "договор (между странами)"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The two countries signed a peace treaty.",
+          "ru": "Две страны подписали мирный договор."
+        }
+      ]
+    },
+    {
+      "id": "b2-d43-05",
+      "en": "uprising",
+      "ru": [
+        "восстание"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The uprising was quickly stopped.",
+          "ru": "Восстание быстро подавили."
+        }
+      ]
+    },
+    {
+      "id": "b2-d43-06",
+      "en": "archaeology",
+      "ru": [
+        "археология"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She studied archaeology at university.",
+          "ru": "Она изучала археологию в университете."
+        }
+      ]
+    },
+    {
+      "id": "b2-d43-07",
+      "en": "artefact",
+      "ru": [
+        "артефакт"
+      ],
+      "pos": "noun",
+      "forms": [
+        "artefacts"
+      ],
+      "examples": [
+        {
+          "en": "The museum has many ancient artefacts.",
+          "ru": "В музее много древних артефактов."
+        }
+      ]
+    },
+    {
+      "id": "b2-d43-08",
+      "en": "chronicle",
+      "ru": [
+        "летопись",
+        "хроника"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The chronicle describes the war.",
+          "ru": "Летопись описывает войну."
+        }
+      ]
+    },
+    {
+      "id": "b2-d43-09",
+      "en": "era",
+      "ru": [
+        "эпоха",
+        "эра"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "It was the end of an era.",
+          "ru": "Это был конец эпохи."
+        }
+      ]
+    },
+    {
+      "id": "b2-d43-10",
+      "en": "heir",
+      "ru": [
+        "наследник"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He is the heir to the throne.",
+          "ru": "Он наследник престола."
+        }
+      ]
+    }
+  ]
+}

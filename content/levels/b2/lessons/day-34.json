@@ -1,0 +1,160 @@
+{
+  "id": "b2-d34",
+  "level": "B2",
+  "day": 34,
+  "island": 4,
+  "title": "Conflict at work",
+  "topic": "workplace conflict",
+  "words": [
+    {
+      "id": "b2-d34-01",
+      "en": "grievance",
+      "ru": [
+        "жалоба",
+        "обида"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Employees can raise a grievance with HR.",
+          "ru": "Сотрудники могут подать жалобу в отдел кадров."
+        }
+      ]
+    },
+    {
+      "id": "b2-d34-02",
+      "en": "dispute",
+      "ru": [
+        "спор",
+        "разногласие"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "They settled the dispute peacefully.",
+          "ru": "Они мирно урегулировали спор."
+        }
+      ]
+    },
+    {
+      "id": "b2-d34-03",
+      "en": "mediate",
+      "ru": [
+        "выступать посредником"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "A manager was asked to mediate.",
+          "ru": "Руководителя попросили выступить посредником."
+        }
+      ]
+    },
+    {
+      "id": "b2-d34-04",
+      "en": "escalate",
+      "ru": [
+        "обостряться",
+        "нарастать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "escalated"
+      ],
+      "examples": [
+        {
+          "en": "The argument quickly escalated.",
+          "ru": "Спор быстро обострился."
+        }
+      ]
+    },
+    {
+      "id": "b2-d34-05",
+      "en": "morale",
+      "ru": [
+        "боевой дух",
+        "моральный настрой"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Team morale is low.",
+          "ru": "Моральный дух команды низкий."
+        }
+      ]
+    },
+    {
+      "id": "b2-d34-06",
+      "en": "toxic",
+      "ru": [
+        "токсичный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It was a toxic work environment.",
+          "ru": "Обстановка на работе была токсичной."
+        }
+      ]
+    },
+    {
+      "id": "b2-d34-07",
+      "en": "harassment",
+      "ru": [
+        "домогательство",
+        "преследование"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Harassment at work is unacceptable.",
+          "ru": "Домогательства на работе недопустимы."
+        }
+      ]
+    },
+    {
+      "id": "b2-d34-08",
+      "en": "resolve",
+      "ru": [
+        "разрешать",
+        "урегулировать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We need to resolve this conflict.",
+          "ru": "Нам нужно разрешить этот конфликт."
+        }
+      ]
+    },
+    {
+      "id": "b2-d34-09",
+      "en": "confrontation",
+      "ru": [
+        "столкновение",
+        "конфронтация"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I want to avoid a confrontation.",
+          "ru": "Я хочу избежать столкновения."
+        }
+      ]
+    },
+    {
+      "id": "b2-d34-10",
+      "en": "scapegoat",
+      "ru": [
+        "козёл отпущения"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He was made the scapegoat for the failure.",
+          "ru": "Его сделали козлом отпущения за провал."
+        }
+      ]
+    }
+  ]
+}

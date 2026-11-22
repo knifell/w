@@ -1,0 +1,169 @@
+{
+  "id": "b2-d60",
+  "level": "B2",
+  "day": 60,
+  "island": 6,
+  "title": "Beyond the edge",
+  "topic": "farewell",
+  "words": [
+    {
+      "id": "b2-d60-01",
+      "en": "serendipity",
+      "ru": [
+        "счастливая случайность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We met by pure serendipity.",
+          "ru": "Мы встретились по чистой случайности."
+        }
+      ]
+    },
+    {
+      "id": "b2-d60-02",
+      "en": "odyssey",
+      "ru": [
+        "одиссея",
+        "долгое странствие"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The trip became a real odyssey.",
+          "ru": "Поездка превратилась в настоящую одиссею."
+        }
+      ]
+    },
+    {
+      "id": "b2-d60-03",
+      "en": "uncharted",
+      "ru": [
+        "неизведанный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We are in uncharted waters.",
+          "ru": "Мы в неизведанных водах."
+        }
+      ]
+    },
+    {
+      "id": "b2-d60-04",
+      "en": "transcend",
+      "ru": [
+        "выходить за пределы",
+        "превосходить"
+      ],
+      "pos": "verb",
+      "forms": [
+        "transcends"
+      ],
+      "examples": [
+        {
+          "en": "Music transcends language.",
+          "ru": "Музыка выходит за пределы языка."
+        }
+      ]
+    },
+    {
+      "id": "b2-d60-05",
+      "en": "embark",
+      "ru": [
+        "отправляться",
+        "начинать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "embarked"
+      ],
+      "examples": [
+        {
+          "en": "We embarked on a new adventure.",
+          "ru": "Мы отправились в новое приключение."
+        }
+      ]
+    },
+    {
+      "id": "b2-d60-06",
+      "en": "culminate",
+      "ru": [
+        "завершаться",
+        "достигать кульминации"
+      ],
+      "pos": "verb",
+      "forms": [
+        "culminates"
+      ],
+      "examples": [
+        {
+          "en": "The festival culminates in a parade.",
+          "ru": "Фестиваль завершается парадом."
+        }
+      ]
+    },
+    {
+      "id": "b2-d60-07",
+      "en": "enduring",
+      "ru": [
+        "прочный",
+        "непреходящий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It's an enduring friendship.",
+          "ru": "Это прочная дружба."
+        }
+      ]
+    },
+    {
+      "id": "b2-d60-08",
+      "en": "destiny",
+      "ru": [
+        "судьба"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He believes in destiny.",
+          "ru": "Он верит в судьбу."
+        }
+      ]
+    },
+    {
+      "id": "b2-d60-09",
+      "en": "fulfil",
+      "ru": [
+        "осуществлять",
+        "исполнять"
+      ],
+      "pos": "verb",
+      "forms": [
+        "fulfilled"
+      ],
+      "examples": [
+        {
+          "en": "She fulfilled her dream.",
+          "ru": "Она осуществила свою мечту."
+        }
+      ]
+    },
+    {
+      "id": "b2-d60-10",
+      "en": "farewell",
+      "ru": [
+        "прощание",
+        "прощальный"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We had a farewell party.",
+          "ru": "Мы устроили прощальную вечеринку."
+        }
+      ]
+    }
+  ]
+}

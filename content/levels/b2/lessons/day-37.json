@@ -1,0 +1,155 @@
+{
+  "id": "b2-d37",
+  "level": "B2",
+  "day": 37,
+  "island": 4,
+  "title": "Shades of feeling",
+  "topic": "subtle emotions",
+  "words": [
+    {
+      "id": "b2-d37-01",
+      "en": "wistful",
+      "ru": [
+        "задумчиво-грустный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She gave a wistful smile.",
+          "ru": "Она задумчиво улыбнулась."
+        }
+      ]
+    },
+    {
+      "id": "b2-d37-02",
+      "en": "melancholy",
+      "ru": [
+        "меланхолия",
+        "грусть"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Autumn fills me with melancholy.",
+          "ru": "Осень наполняет меня меланхолией."
+        }
+      ]
+    },
+    {
+      "id": "b2-d37-03",
+      "en": "ambivalent",
+      "ru": [
+        "двойственный",
+        "неоднозначный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I feel ambivalent about moving.",
+          "ru": "У меня двоякое отношение к переезду."
+        }
+      ]
+    },
+    {
+      "id": "b2-d37-04",
+      "en": "smug",
+      "ru": [
+        "самодовольный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He looked very smug after winning.",
+          "ru": "После победы он выглядел очень самодовольным."
+        }
+      ]
+    },
+    {
+      "id": "b2-d37-05",
+      "en": "sheepish",
+      "ru": [
+        "смущённый",
+        "виноватый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He gave me a sheepish look.",
+          "ru": "Он виновато посмотрел на меня."
+        }
+      ]
+    },
+    {
+      "id": "b2-d37-06",
+      "en": "irritable",
+      "ru": [
+        "раздражительный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I get irritable when I'm tired.",
+          "ru": "Когда устаю, я становлюсь раздражительным."
+        }
+      ]
+    },
+    {
+      "id": "b2-d37-07",
+      "en": "jaded",
+      "ru": [
+        "пресытившийся",
+        "уставший"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He felt jaded after years in the job.",
+          "ru": "После многих лет на этой работе он выдохся."
+        }
+      ]
+    },
+    {
+      "id": "b2-d37-08",
+      "en": "euphoric",
+      "ru": [
+        "в эйфории"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The fans were euphoric.",
+          "ru": "Болельщики были в эйфории."
+        }
+      ]
+    },
+    {
+      "id": "b2-d37-09",
+      "en": "poignant",
+      "ru": [
+        "трогательный",
+        "щемящий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It was a poignant moment.",
+          "ru": "Это был трогательный момент."
+        }
+      ]
+    },
+    {
+      "id": "b2-d37-10",
+      "en": "bittersweet",
+      "ru": [
+        "горько-сладкий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Leaving home was a bittersweet experience.",
+          "ru": "Уезжать из дома было и радостно, и грустно."
+        }
+      ]
+    }
+  ]
+}

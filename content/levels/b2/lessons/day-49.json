@@ -1,0 +1,158 @@
+{
+  "id": "b2-d49",
+  "level": "B2",
+  "day": 49,
+  "island": 5,
+  "title": "Critical thinking",
+  "topic": "critical thinking",
+  "words": [
+    {
+      "id": "b2-d49-01",
+      "en": "fallacy",
+      "ru": [
+        "заблуждение",
+        "логическая ошибка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "That's a common fallacy.",
+          "ru": "Это распространённое заблуждение."
+        }
+      ]
+    },
+    {
+      "id": "b2-d49-02",
+      "en": "nuanced",
+      "ru": [
+        "тонкий",
+        "учитывающий нюансы"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She gave a nuanced answer.",
+          "ru": "Она дала взвешенный ответ."
+        }
+      ]
+    },
+    {
+      "id": "b2-d49-03",
+      "en": "generalise",
+      "ru": [
+        "обобщать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Don't generalise about people.",
+          "ru": "Не обобщай, когда говоришь о людях."
+        }
+      ]
+    },
+    {
+      "id": "b2-d49-04",
+      "en": "oversimplify",
+      "ru": [
+        "чрезмерно упрощать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "oversimplifies"
+      ],
+      "examples": [
+        {
+          "en": "The article oversimplifies the problem.",
+          "ru": "Статья слишком упрощает проблему."
+        }
+      ]
+    },
+    {
+      "id": "b2-d49-05",
+      "en": "evidence-based",
+      "ru": [
+        "основанный на доказательствах"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We need evidence-based solutions.",
+          "ru": "Нам нужны решения, основанные на доказательствах."
+        }
+      ]
+    },
+    {
+      "id": "b2-d49-06",
+      "en": "scrutinise",
+      "ru": [
+        "тщательно изучать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "scrutinised"
+      ],
+      "examples": [
+        {
+          "en": "The plan will be scrutinised by experts.",
+          "ru": "План тщательно изучат эксперты."
+        }
+      ]
+    },
+    {
+      "id": "b2-d49-07",
+      "en": "sceptical",
+      "ru": [
+        "скептический"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I'm sceptical about his promises.",
+          "ru": "Я скептически отношусь к его обещаниям."
+        }
+      ]
+    },
+    {
+      "id": "b2-d49-08",
+      "en": "critique",
+      "ru": [
+        "критический разбор"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She wrote a critique of the film.",
+          "ru": "Она написала критический разбор фильма."
+        }
+      ]
+    },
+    {
+      "id": "b2-d49-09",
+      "en": "devil's advocate",
+      "ru": [
+        "адвокат дьявола"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Let me play devil's advocate.",
+          "ru": "Позволь мне побыть адвокатом дьявола."
+        }
+      ]
+    },
+    {
+      "id": "b2-d49-10",
+      "en": "objectively",
+      "ru": [
+        "объективно"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Try to look at it objectively.",
+          "ru": "Постарайся взглянуть на это объективно."
+        }
+      ]
+    }
+  ]
+}

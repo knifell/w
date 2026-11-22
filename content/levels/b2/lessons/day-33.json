@@ -1,0 +1,155 @@
+{
+  "id": "b2-d33",
+  "level": "B2",
+  "day": 33,
+  "island": 4,
+  "title": "Good manners",
+  "topic": "etiquette",
+  "words": [
+    {
+      "id": "b2-d33-01",
+      "en": "etiquette",
+      "ru": [
+        "этикет"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Table etiquette differs from country to country.",
+          "ru": "Застольный этикет в разных странах разный."
+        }
+      ]
+    },
+    {
+      "id": "b2-d33-02",
+      "en": "courteous",
+      "ru": [
+        "учтивый",
+        "вежливый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The staff were courteous and helpful.",
+          "ru": "Персонал был вежлив и услужлив."
+        }
+      ]
+    },
+    {
+      "id": "b2-d33-03",
+      "en": "faux pas",
+      "ru": [
+        "оплошность",
+        "бестактность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I made a terrible faux pas at dinner.",
+          "ru": "За ужином я совершил ужасную бестактность."
+        }
+      ]
+    },
+    {
+      "id": "b2-d33-04",
+      "en": "awkward",
+      "ru": [
+        "неловкий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "There was an awkward silence.",
+          "ru": "Повисло неловкое молчание."
+        }
+      ]
+    },
+    {
+      "id": "b2-d33-05",
+      "en": "offend",
+      "ru": [
+        "обижать",
+        "оскорблять"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I didn't mean to offend you.",
+          "ru": "Я не хотел тебя обидеть."
+        }
+      ]
+    },
+    {
+      "id": "b2-d33-06",
+      "en": "appropriate",
+      "ru": [
+        "уместный",
+        "подходящий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Jeans are not appropriate for the meeting.",
+          "ru": "Джинсы неуместны на этой встрече."
+        }
+      ]
+    },
+    {
+      "id": "b2-d33-07",
+      "en": "inappropriate",
+      "ru": [
+        "неуместный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "His joke was inappropriate.",
+          "ru": "Его шутка была неуместной."
+        }
+      ]
+    },
+    {
+      "id": "b2-d33-08",
+      "en": "taboo",
+      "ru": [
+        "табу",
+        "запретная тема"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Money is a taboo topic in some families.",
+          "ru": "В некоторых семьях деньги — запретная тема."
+        }
+      ]
+    },
+    {
+      "id": "b2-d33-09",
+      "en": "gesture",
+      "ru": [
+        "жест"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "It was a kind gesture.",
+          "ru": "Это был добрый жест."
+        }
+      ]
+    },
+    {
+      "id": "b2-d33-10",
+      "en": "formality",
+      "ru": [
+        "формальность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Signing the form is just a formality.",
+          "ru": "Подписать бланк — просто формальность."
+        }
+      ]
+    }
+  ]
+}

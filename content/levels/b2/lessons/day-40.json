@@ -1,0 +1,158 @@
+{
+  "id": "b2-d40",
+  "level": "B2",
+  "day": 40,
+  "island": 4,
+  "title": "Right and wrong",
+  "topic": "ethics",
+  "words": [
+    {
+      "id": "b2-d40-01",
+      "en": "integrity",
+      "ru": [
+        "честность",
+        "порядочность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She is a woman of integrity.",
+          "ru": "Она порядочный человек."
+        }
+      ]
+    },
+    {
+      "id": "b2-d40-02",
+      "en": "ethical",
+      "ru": [
+        "этичный",
+        "этический"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Is it ethical to test on animals?",
+          "ru": "Этично ли проводить опыты на животных?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d40-03",
+      "en": "dilemma",
+      "ru": [
+        "дилемма"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I'm facing a difficult dilemma.",
+          "ru": "Передо мной трудная дилемма."
+        }
+      ]
+    },
+    {
+      "id": "b2-d40-04",
+      "en": "transparency",
+      "ru": [
+        "прозрачность",
+        "открытость"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We need more transparency in government.",
+          "ru": "Правительству нужна большая открытость."
+        }
+      ]
+    },
+    {
+      "id": "b2-d40-05",
+      "en": "conscience",
+      "ru": [
+        "совесть"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My conscience is clear.",
+          "ru": "Моя совесть чиста."
+        }
+      ]
+    },
+    {
+      "id": "b2-d40-06",
+      "en": "moral",
+      "ru": [
+        "моральный",
+        "нравственный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It's a moral question.",
+          "ru": "Это моральный вопрос."
+        }
+      ]
+    },
+    {
+      "id": "b2-d40-07",
+      "en": "hypocrisy",
+      "ru": [
+        "лицемерие"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "That's pure hypocrisy.",
+          "ru": "Это чистое лицемерие."
+        }
+      ]
+    },
+    {
+      "id": "b2-d40-08",
+      "en": "principle",
+      "ru": [
+        "принцип"
+      ],
+      "pos": "noun",
+      "forms": [
+        "principles"
+      ],
+      "examples": [
+        {
+          "en": "It's against my principles.",
+          "ru": "Это противоречит моим принципам."
+        }
+      ]
+    },
+    {
+      "id": "b2-d40-09",
+      "en": "scruples",
+      "ru": [
+        "угрызения совести",
+        "щепетильность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He has no scruples about lying.",
+          "ru": "Он без угрызений совести лжёт."
+        }
+      ]
+    },
+    {
+      "id": "b2-d40-10",
+      "en": "virtue",
+      "ru": [
+        "добродетель"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Patience is a virtue.",
+          "ru": "Терпение — добродетель."
+        }
+      ]
+    }
+  ]
+}

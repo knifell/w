@@ -1,0 +1,153 @@
+{
+  "id": "b2-d50",
+  "level": "B2",
+  "day": 50,
+  "island": 5,
+  "title": "Wild weather",
+  "topic": "extreme weather",
+  "words": [
+    {
+      "id": "b2-d50-01",
+      "en": "blizzard",
+      "ru": [
+        "метель",
+        "буран"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The blizzard closed all the roads.",
+          "ru": "Метель перекрыла все дороги."
+        }
+      ]
+    },
+    {
+      "id": "b2-d50-02",
+      "en": "heatwave",
+      "ru": [
+        "аномальная жара"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Europe is having a heatwave.",
+          "ru": "В Европе аномальная жара."
+        }
+      ]
+    },
+    {
+      "id": "b2-d50-03",
+      "en": "monsoon",
+      "ru": [
+        "муссон"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The monsoon brings heavy rain.",
+          "ru": "Муссон приносит сильные дожди."
+        }
+      ]
+    },
+    {
+      "id": "b2-d50-04",
+      "en": "torrential",
+      "ru": [
+        "проливной"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "There was torrential rain all night.",
+          "ru": "Всю ночь шёл проливной дождь."
+        }
+      ]
+    },
+    {
+      "id": "b2-d50-05",
+      "en": "gale",
+      "ru": [
+        "шторм",
+        "сильный ветер"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A gale blew down the trees.",
+          "ru": "Сильный ветер повалил деревья."
+        }
+      ]
+    },
+    {
+      "id": "b2-d50-06",
+      "en": "flash flood",
+      "ru": [
+        "внезапный паводок"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A flash flood hit the town.",
+          "ru": "Город накрыл внезапный паводок."
+        }
+      ]
+    },
+    {
+      "id": "b2-d50-07",
+      "en": "meteorologist",
+      "ru": [
+        "метеоролог"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The meteorologist warned of storms.",
+          "ru": "Метеоролог предупредил о штормах."
+        }
+      ]
+    },
+    {
+      "id": "b2-d50-08",
+      "en": "tornado",
+      "ru": [
+        "торнадо",
+        "смерч"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The tornado destroyed several houses.",
+          "ru": "Торнадо разрушил несколько домов."
+        }
+      ]
+    },
+    {
+      "id": "b2-d50-09",
+      "en": "thunderstorm",
+      "ru": [
+        "гроза"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We got caught in a thunderstorm.",
+          "ru": "Мы попали в грозу."
+        }
+      ]
+    },
+    {
+      "id": "b2-d50-10",
+      "en": "humid",
+      "ru": [
+        "влажный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It's very humid in summer.",
+          "ru": "Летом очень влажно."
+        }
+      ]
+    }
+  ]
+}

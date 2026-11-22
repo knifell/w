@@ -1,0 +1,160 @@
+{
+  "id": "b2-d32",
+  "level": "B2",
+  "day": 32,
+  "island": 4,
+  "title": "Tricks and traps",
+  "topic": "manipulation",
+  "words": [
+    {
+      "id": "b2-d32-01",
+      "en": "manipulate",
+      "ru": [
+        "манипулировать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "He tried to manipulate his friends.",
+          "ru": "Он пытался манипулировать друзьями."
+        }
+      ]
+    },
+    {
+      "id": "b2-d32-02",
+      "en": "deceive",
+      "ru": [
+        "обманывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Don't try to deceive me.",
+          "ru": "Не пытайся меня обмануть."
+        }
+      ]
+    },
+    {
+      "id": "b2-d32-03",
+      "en": "exploit",
+      "ru": [
+        "эксплуатировать",
+        "использовать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "exploited"
+      ],
+      "examples": [
+        {
+          "en": "The company exploited its workers.",
+          "ru": "Компания эксплуатировала рабочих."
+        }
+      ]
+    },
+    {
+      "id": "b2-d32-04",
+      "en": "coerce",
+      "ru": [
+        "принуждать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "coerced"
+      ],
+      "examples": [
+        {
+          "en": "He was coerced into signing.",
+          "ru": "Его принудили подписать."
+        }
+      ]
+    },
+    {
+      "id": "b2-d32-05",
+      "en": "flatter",
+      "ru": [
+        "льстить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "You're trying to flatter me.",
+          "ru": "Ты пытаешься мне польстить."
+        }
+      ]
+    },
+    {
+      "id": "b2-d32-06",
+      "en": "scam",
+      "ru": [
+        "афера",
+        "мошенническая схема"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The email was a scam.",
+          "ru": "Это письмо было мошенничеством."
+        }
+      ]
+    },
+    {
+      "id": "b2-d32-07",
+      "en": "hoax",
+      "ru": [
+        "розыгрыш",
+        "мистификация"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The story turned out to be a hoax.",
+          "ru": "История оказалась мистификацией."
+        }
+      ]
+    },
+    {
+      "id": "b2-d32-08",
+      "en": "bribe",
+      "ru": [
+        "взятка",
+        "подкупать"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He refused to take a bribe.",
+          "ru": "Он отказался брать взятку."
+        }
+      ]
+    },
+    {
+      "id": "b2-d32-09",
+      "en": "cunning",
+      "ru": [
+        "хитрый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The fox is a cunning animal.",
+          "ru": "Лиса — хитрое животное."
+        }
+      ]
+    },
+    {
+      "id": "b2-d32-10",
+      "en": "naive",
+      "ru": [
+        "наивный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It was naive of me to trust him.",
+          "ru": "С моей стороны было наивно ему доверять."
+        }
+      ]
+    }
+  ]
+}

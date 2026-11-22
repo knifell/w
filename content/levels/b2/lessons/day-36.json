@@ -1,0 +1,161 @@
+{
+  "id": "b2-d36",
+  "level": "B2",
+  "day": 36,
+  "island": 4,
+  "title": "Secrets",
+  "topic": "privacy",
+  "words": [
+    {
+      "id": "b2-d36-01",
+      "en": "confidential",
+      "ru": [
+        "конфиденциальный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This information is confidential.",
+          "ru": "Эта информация конфиденциальна."
+        }
+      ]
+    },
+    {
+      "id": "b2-d36-02",
+      "en": "disclose",
+      "ru": [
+        "раскрывать",
+        "разглашать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "They refused to disclose the price.",
+          "ru": "Они отказались раскрыть цену."
+        }
+      ]
+    },
+    {
+      "id": "b2-d36-03",
+      "en": "anonymous",
+      "ru": [
+        "анонимный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The donor wished to remain anonymous.",
+          "ru": "Даритель пожелал остаться анонимным."
+        }
+      ]
+    },
+    {
+      "id": "b2-d36-04",
+      "en": "surveillance",
+      "ru": [
+        "наблюдение",
+        "слежка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The building is under surveillance.",
+          "ru": "Здание находится под наблюдением."
+        }
+      ]
+    },
+    {
+      "id": "b2-d36-05",
+      "en": "intrusive",
+      "ru": [
+        "навязчивый",
+        "вторгающийся"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The questions were very intrusive.",
+          "ru": "Вопросы были очень навязчивыми."
+        }
+      ]
+    },
+    {
+      "id": "b2-d36-06",
+      "en": "discreet",
+      "ru": [
+        "сдержанный",
+        "осмотрительный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Please be discreet about this.",
+          "ru": "Пожалуйста, не распространяйся об этом."
+        }
+      ]
+    },
+    {
+      "id": "b2-d36-07",
+      "en": "whistleblower",
+      "ru": [
+        "информатор",
+        "разоблачитель"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A whistleblower revealed the fraud.",
+          "ru": "Информатор раскрыл мошенничество."
+        }
+      ]
+    },
+    {
+      "id": "b2-d36-08",
+      "en": "classified",
+      "ru": [
+        "секретный",
+        "засекреченный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The documents are classified.",
+          "ru": "Документы засекречены."
+        }
+      ]
+    },
+    {
+      "id": "b2-d36-09",
+      "en": "conceal",
+      "ru": [
+        "скрывать",
+        "прятать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "He tried to conceal his feelings.",
+          "ru": "Он пытался скрыть свои чувства."
+        }
+      ]
+    },
+    {
+      "id": "b2-d36-10",
+      "en": "expose",
+      "ru": [
+        "разоблачать",
+        "раскрывать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "exposed"
+      ],
+      "examples": [
+        {
+          "en": "The journalist exposed the scandal.",
+          "ru": "Журналист раскрыл скандал."
+        }
+      ]
+    }
+  ]
+}

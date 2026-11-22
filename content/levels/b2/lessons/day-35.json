@@ -1,0 +1,158 @@
+{
+  "id": "b2-d35",
+  "level": "B2",
+  "day": 35,
+  "island": 4,
+  "title": "Reputation",
+  "topic": "reputation",
+  "words": [
+    {
+      "id": "b2-d35-01",
+      "en": "reputation",
+      "ru": [
+        "репутация"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The hotel has a good reputation.",
+          "ru": "У отеля хорошая репутация."
+        }
+      ]
+    },
+    {
+      "id": "b2-d35-02",
+      "en": "prestige",
+      "ru": [
+        "престиж"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The job brings a lot of prestige.",
+          "ru": "Эта работа очень престижна."
+        }
+      ]
+    },
+    {
+      "id": "b2-d35-03",
+      "en": "status",
+      "ru": [
+        "статус",
+        "положение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Money is not a sign of status for me.",
+          "ru": "Для меня деньги — не признак статуса."
+        }
+      ]
+    },
+    {
+      "id": "b2-d35-04",
+      "en": "renowned",
+      "ru": [
+        "прославленный",
+        "известный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She is a renowned scientist.",
+          "ru": "Она известный учёный."
+        }
+      ]
+    },
+    {
+      "id": "b2-d35-05",
+      "en": "notorious",
+      "ru": [
+        "печально известный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The area is notorious for crime.",
+          "ru": "Район печально известен преступностью."
+        }
+      ]
+    },
+    {
+      "id": "b2-d35-06",
+      "en": "recognition",
+      "ru": [
+        "признание"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He finally got recognition for his work.",
+          "ru": "Он наконец получил признание за свою работу."
+        }
+      ]
+    },
+    {
+      "id": "b2-d35-07",
+      "en": "publicity",
+      "ru": [
+        "огласка",
+        "реклама"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The scandal got a lot of publicity.",
+          "ru": "Скандал получил широкую огласку."
+        }
+      ]
+    },
+    {
+      "id": "b2-d35-08",
+      "en": "stigma",
+      "ru": [
+        "клеймо",
+        "стигма"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There is still a stigma around mental illness.",
+          "ru": "Вокруг психических болезней всё ещё есть стигма."
+        }
+      ]
+    },
+    {
+      "id": "b2-d35-09",
+      "en": "flattering",
+      "ru": [
+        "лестный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The photo is not very flattering.",
+          "ru": "Фото не очень удачное."
+        }
+      ]
+    },
+    {
+      "id": "b2-d35-10",
+      "en": "tarnish",
+      "ru": [
+        "запятнать",
+        "портить"
+      ],
+      "pos": "verb",
+      "forms": [
+        "tarnished"
+      ],
+      "examples": [
+        {
+          "en": "The scandal tarnished his image.",
+          "ru": "Скандал запятнал его репутацию."
+        }
+      ]
+    }
+  ]
+}

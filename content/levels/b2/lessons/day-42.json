@@ -1,0 +1,153 @@
+{
+  "id": "b2-d42",
+  "level": "B2",
+  "day": 42,
+  "island": 5,
+  "title": "Study skills",
+  "topic": "study skills",
+  "words": [
+    {
+      "id": "b2-d42-01",
+      "en": "skim",
+      "ru": [
+        "бегло просматривать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Skim the text first.",
+          "ru": "Сначала бегло просмотри текст."
+        }
+      ]
+    },
+    {
+      "id": "b2-d42-02",
+      "en": "scan",
+      "ru": [
+        "просматривать (в поисках)"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Scan the page for dates.",
+          "ru": "Просмотри страницу в поисках дат."
+        }
+      ]
+    },
+    {
+      "id": "b2-d42-03",
+      "en": "paraphrase",
+      "ru": [
+        "перефразировать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Can you paraphrase this sentence?",
+          "ru": "Можешь перефразировать это предложение?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d42-04",
+      "en": "summarise",
+      "ru": [
+        "кратко излагать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Summarise the article in three lines.",
+          "ru": "Изложи статью в трёх строках."
+        }
+      ]
+    },
+    {
+      "id": "b2-d42-05",
+      "en": "draft",
+      "ru": [
+        "черновик"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This is just the first draft.",
+          "ru": "Это только первый черновик."
+        }
+      ]
+    },
+    {
+      "id": "b2-d42-06",
+      "en": "proofread",
+      "ru": [
+        "вычитывать",
+        "проверять текст"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Always proofread your essay.",
+          "ru": "Всегда вычитывай своё эссе."
+        }
+      ]
+    },
+    {
+      "id": "b2-d42-07",
+      "en": "cite",
+      "ru": [
+        "цитировать",
+        "ссылаться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Cite your sources.",
+          "ru": "Указывай источники."
+        }
+      ]
+    },
+    {
+      "id": "b2-d42-08",
+      "en": "plagiarism",
+      "ru": [
+        "плагиат"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Plagiarism is taken seriously here.",
+          "ru": "Здесь к плагиату относятся серьёзно."
+        }
+      ]
+    },
+    {
+      "id": "b2-d42-09",
+      "en": "outline",
+      "ru": [
+        "план",
+        "набросок"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Write an outline before you start.",
+          "ru": "Составь план перед началом."
+        }
+      ]
+    },
+    {
+      "id": "b2-d42-10",
+      "en": "footnote",
+      "ru": [
+        "сноска"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The source is in the footnote.",
+          "ru": "Источник указан в сноске."
+        }
+      ]
+    }
+  ]
+}

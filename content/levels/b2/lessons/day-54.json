@@ -1,0 +1,158 @@
+{
+  "id": "b2-d54",
+  "level": "B2",
+  "day": 54,
+  "island": 6,
+  "title": "Risk",
+  "topic": "risk",
+  "words": [
+    {
+      "id": "b2-d54-01",
+      "en": "hazard",
+      "ru": [
+        "опасность",
+        "угроза"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Ice on the road is a hazard.",
+          "ru": "Лёд на дороге — опасность."
+        }
+      ]
+    },
+    {
+      "id": "b2-d54-02",
+      "en": "precaution",
+      "ru": [
+        "мера предосторожности"
+      ],
+      "pos": "noun",
+      "forms": [
+        "precautions"
+      ],
+      "examples": [
+        {
+          "en": "Take precautions against fire.",
+          "ru": "Примите меры против пожара."
+        }
+      ]
+    },
+    {
+      "id": "b2-d54-03",
+      "en": "contingency",
+      "ru": [
+        "непредвиденный случай"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We have a contingency plan.",
+          "ru": "У нас есть запасной план."
+        }
+      ]
+    },
+    {
+      "id": "b2-d54-04",
+      "en": "gamble",
+      "ru": [
+        "рискованное дело",
+        "играть на удачу"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Starting a business is a gamble.",
+          "ru": "Открыть бизнес — рискованное дело."
+        }
+      ]
+    },
+    {
+      "id": "b2-d54-05",
+      "en": "odds",
+      "ru": [
+        "шансы",
+        "вероятность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The odds of winning are low.",
+          "ru": "Шансы на победу невелики."
+        }
+      ]
+    },
+    {
+      "id": "b2-d54-06",
+      "en": "threat",
+      "ru": [
+        "угроза"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Pollution is a threat to wildlife.",
+          "ru": "Загрязнение — угроза дикой природе."
+        }
+      ]
+    },
+    {
+      "id": "b2-d54-07",
+      "en": "safeguard",
+      "ru": [
+        "защищать",
+        "гарантия"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We must safeguard our data.",
+          "ru": "Мы должны защищать свои данные."
+        }
+      ]
+    },
+    {
+      "id": "b2-d54-08",
+      "en": "unforeseen",
+      "ru": [
+        "непредвиденный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Due to unforeseen circumstances, the event is cancelled.",
+          "ru": "Из-за непредвиденных обстоятельств мероприятие отменено."
+        }
+      ]
+    },
+    {
+      "id": "b2-d54-09",
+      "en": "mitigate",
+      "ru": [
+        "смягчать",
+        "уменьшать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We can mitigate the risks.",
+          "ru": "Мы можем снизить риски."
+        }
+      ]
+    },
+    {
+      "id": "b2-d54-10",
+      "en": "worst-case scenario",
+      "ru": [
+        "худший сценарий"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "In the worst-case scenario, we lose everything.",
+          "ru": "В худшем случае мы потеряем всё."
+        }
+      ]
+    }
+  ]
+}

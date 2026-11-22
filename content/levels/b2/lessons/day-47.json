@@ -1,0 +1,161 @@
+{
+  "id": "b2-d47",
+  "level": "B2",
+  "day": 47,
+  "island": 5,
+  "title": "Memory",
+  "topic": "memory",
+  "words": [
+    {
+      "id": "b2-d47-01",
+      "en": "recall",
+      "ru": [
+        "вспоминать",
+        "припоминать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I can't recall his name.",
+          "ru": "Не могу вспомнить его имя."
+        }
+      ]
+    },
+    {
+      "id": "b2-d47-02",
+      "en": "retain",
+      "ru": [
+        "сохранять",
+        "удерживать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "It's hard to retain so much information.",
+          "ru": "Трудно удержать столько информации."
+        }
+      ]
+    },
+    {
+      "id": "b2-d47-03",
+      "en": "forgetful",
+      "ru": [
+        "забывчивый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Grandpa is getting forgetful.",
+          "ru": "Дедушка становится забывчивым."
+        }
+      ]
+    },
+    {
+      "id": "b2-d47-04",
+      "en": "vivid",
+      "ru": [
+        "яркий",
+        "живой"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I have a vivid memory of that day.",
+          "ru": "У меня яркое воспоминание о том дне."
+        }
+      ]
+    },
+    {
+      "id": "b2-d47-05",
+      "en": "trigger",
+      "ru": [
+        "вызывать",
+        "запускать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Certain smells trigger memories.",
+          "ru": "Некоторые запахи вызывают воспоминания."
+        }
+      ]
+    },
+    {
+      "id": "b2-d47-06",
+      "en": "reminisce",
+      "ru": [
+        "предаваться воспоминаниям"
+      ],
+      "pos": "verb",
+      "forms": [
+        "reminisced"
+      ],
+      "examples": [
+        {
+          "en": "We sat and reminisced about school.",
+          "ru": "Мы сидели и вспоминали школу."
+        }
+      ]
+    },
+    {
+      "id": "b2-d47-07",
+      "en": "short-term",
+      "ru": [
+        "краткосрочный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Stress affects short-term memory.",
+          "ru": "Стресс влияет на кратковременную память."
+        }
+      ]
+    },
+    {
+      "id": "b2-d47-08",
+      "en": "absent-minded",
+      "ru": [
+        "рассеянный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The professor is very absent-minded.",
+          "ru": "Профессор очень рассеянный."
+        }
+      ]
+    },
+    {
+      "id": "b2-d47-09",
+      "en": "nostalgia",
+      "ru": [
+        "ностальгия"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The song filled me with nostalgia.",
+          "ru": "Песня наполнила меня ностальгией."
+        }
+      ]
+    },
+    {
+      "id": "b2-d47-10",
+      "en": "flashback",
+      "ru": [
+        "воспоминание",
+        "флешбэк"
+      ],
+      "pos": "noun",
+      "forms": [
+        "flashbacks"
+      ],
+      "examples": [
+        {
+          "en": "The film has many flashbacks.",
+          "ru": "В фильме много флешбэков."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "id": "b2-d56",
+  "level": "B2",
+  "day": 56,
+  "island": 6,
+  "title": "Pioneers",
+  "topic": "pioneers",
+  "words": [
+    {
+      "id": "b2-d56-01",
+      "en": "aspire",
+      "ru": [
+        "стремиться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "aspires"
+      ],
+      "examples": [
+        {
+          "en": "She aspires to be a surgeon.",
+          "ru": "Она стремится стать хирургом."
+        }
+      ]
+    },
+    {
+      "id": "b2-d56-02",
+      "en": "pioneer",
+      "ru": [
+        "первопроходец"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He was a pioneer of aviation.",
+          "ru": "Он был первопроходцем авиации."
+        }
+      ]
+    },
+    {
+      "id": "b2-d56-03",
+      "en": "trailblazer",
+      "ru": [
+        "новатор",
+        "первопроходец"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She was a trailblazer for women in science.",
+          "ru": "Она проложила путь женщинам в науке."
+        }
+      ]
+    },
+    {
+      "id": "b2-d56-04",
+      "en": "visionary",
+      "ru": [
+        "провидец",
+        "дальновидный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He was a visionary leader.",
+          "ru": "Он был дальновидным лидером."
+        }
+      ]
+    },
+    {
+      "id": "b2-d56-05",
+      "en": "groundbreaking",
+      "ru": [
+        "новаторский"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It was groundbreaking research.",
+          "ru": "Это было новаторское исследование."
+        }
+      ]
+    },
+    {
+      "id": "b2-d56-06",
+      "en": "influential",
+      "ru": [
+        "влиятельный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She is one of the most influential writers.",
+          "ru": "Она одна из самых влиятельных писательниц."
+        }
+      ]
+    },
+    {
+      "id": "b2-d56-07",
+      "en": "ingenuity",
+      "ru": [
+        "изобретательность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The plan shows great ingenuity.",
+          "ru": "План демонстрирует большую изобретательность."
+        }
+      ]
+    },
+    {
+      "id": "b2-d56-08",
+      "en": "tenacity",
+      "ru": [
+        "упорство",
+        "цепкость"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Her tenacity helped her succeed.",
+          "ru": "Упорство помогло ей добиться успеха."
+        }
+      ]
+    },
+    {
+      "id": "b2-d56-09",
+      "en": "pinnacle",
+      "ru": [
+        "вершина",
+        "пик"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Winning the prize was the pinnacle of his career.",
+          "ru": "Премия стала вершиной его карьеры."
+        }
+      ]
+    },
+    {
+      "id": "b2-d56-10",
+      "en": "feat",
+      "ru": [
+        "подвиг",
+        "достижение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Climbing Everest is an amazing feat.",
+          "ru": "Восхождение на Эверест — удивительное достижение."
+        }
+      ]
+    }
+  ]
+}

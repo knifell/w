@@ -1,0 +1,154 @@
+{
+  "id": "b2-d51",
+  "level": "B2",
+  "day": 51,
+  "island": 6,
+  "title": "Work of the future",
+  "topic": "future of work",
+  "words": [
+    {
+      "id": "b2-d51-01",
+      "en": "remote work",
+      "ru": [
+        "удалённая работа"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Remote work is now very common.",
+          "ru": "Удалённая работа сейчас очень распространена."
+        }
+      ]
+    },
+    {
+      "id": "b2-d51-02",
+      "en": "gig economy",
+      "ru": [
+        "экономика подработок"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Many young people work in the gig economy.",
+          "ru": "Многие молодые люди работают на подработках."
+        }
+      ]
+    },
+    {
+      "id": "b2-d51-03",
+      "en": "upskill",
+      "ru": [
+        "повышать квалификацию"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Workers need to upskill regularly.",
+          "ru": "Работникам нужно регулярно повышать квалификацию."
+        }
+      ]
+    },
+    {
+      "id": "b2-d51-04",
+      "en": "workforce",
+      "ru": [
+        "рабочая сила",
+        "персонал"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Women make up half the workforce.",
+          "ru": "Женщины составляют половину рабочей силы."
+        }
+      ]
+    },
+    {
+      "id": "b2-d51-05",
+      "en": "flexible",
+      "ru": [
+        "гибкий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I have flexible working hours.",
+          "ru": "У меня гибкий график."
+        }
+      ]
+    },
+    {
+      "id": "b2-d51-06",
+      "en": "job security",
+      "ru": [
+        "гарантия занятости"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Job security is important to me.",
+          "ru": "Для меня важна стабильность работы."
+        }
+      ]
+    },
+    {
+      "id": "b2-d51-07",
+      "en": "retrain",
+      "ru": [
+        "переобучаться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "retrained"
+      ],
+      "examples": [
+        {
+          "en": "He retrained as a nurse.",
+          "ru": "Он переучился на медбрата."
+        }
+      ]
+    },
+    {
+      "id": "b2-d51-08",
+      "en": "hybrid",
+      "ru": [
+        "гибридный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We work in a hybrid model.",
+          "ru": "Мы работаем в гибридном формате."
+        }
+      ]
+    },
+    {
+      "id": "b2-d51-09",
+      "en": "four-day week",
+      "ru": [
+        "четырёхдневная рабочая неделя"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The company is testing a four-day week.",
+          "ru": "Компания тестирует четырёхдневную неделю."
+        }
+      ]
+    },
+    {
+      "id": "b2-d51-10",
+      "en": "productivity",
+      "ru": [
+        "производительность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Short breaks increase productivity.",
+          "ru": "Короткие перерывы повышают производительность."
+        }
+      ]
+    }
+  ]
+}

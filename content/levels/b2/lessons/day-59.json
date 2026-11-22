@@ -1,0 +1,159 @@
+{
+  "id": "b2-d59",
+  "level": "B2",
+  "day": 59,
+  "island": 6,
+  "title": "Idioms 2",
+  "topic": "idioms 2",
+  "words": [
+    {
+      "id": "b2-d59-01",
+      "en": "a blessing in disguise",
+      "ru": [
+        "не было бы счастья, да несчастье помогло"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Losing that job was a blessing in disguise.",
+          "ru": "Потеря той работы оказалась к лучшему."
+        }
+      ]
+    },
+    {
+      "id": "b2-d59-02",
+      "en": "cut corners",
+      "ru": [
+        "халтурить",
+        "экономить на качестве"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Don't cut corners on safety.",
+          "ru": "Не экономь на безопасности."
+        }
+      ]
+    },
+    {
+      "id": "b2-d59-03",
+      "en": "the tip of the iceberg",
+      "ru": [
+        "верхушка айсберга"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "These problems are just the tip of the iceberg.",
+          "ru": "Эти проблемы — лишь верхушка айсберга."
+        }
+      ]
+    },
+    {
+      "id": "b2-d59-04",
+      "en": "go the extra mile",
+      "ru": [
+        "сделать больше, чем нужно"
+      ],
+      "pos": "phrase",
+      "forms": [
+        "goes the extra mile"
+      ],
+      "examples": [
+        {
+          "en": "She always goes the extra mile.",
+          "ru": "Она всегда делает больше, чем нужно."
+        }
+      ]
+    },
+    {
+      "id": "b2-d59-05",
+      "en": "in the long run",
+      "ru": [
+        "в долгосрочной перспективе"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "It will save money in the long run.",
+          "ru": "В долгосрочной перспективе это сэкономит деньги."
+        }
+      ]
+    },
+    {
+      "id": "b2-d59-06",
+      "en": "a drop in the ocean",
+      "ru": [
+        "капля в море"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Our donation is a drop in the ocean.",
+          "ru": "Наше пожертвование — капля в море."
+        }
+      ]
+    },
+    {
+      "id": "b2-d59-07",
+      "en": "call it a day",
+      "ru": [
+        "закончить на сегодня"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Let's call it a day.",
+          "ru": "Давай на сегодня закончим."
+        }
+      ]
+    },
+    {
+      "id": "b2-d59-08",
+      "en": "beat around the bush",
+      "ru": [
+        "ходить вокруг да около"
+      ],
+      "pos": "phrase",
+      "forms": [
+        "beating around the bush"
+      ],
+      "examples": [
+        {
+          "en": "Stop beating around the bush.",
+          "ru": "Хватит ходить вокруг да около."
+        }
+      ]
+    },
+    {
+      "id": "b2-d59-09",
+      "en": "on thin ice",
+      "ru": [
+        "на тонком льду",
+        "в рискованном положении"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "You're on thin ice with the boss.",
+          "ru": "Ты в шатком положении у начальника."
+        }
+      ]
+    },
+    {
+      "id": "b2-d59-10",
+      "en": "spill the beans",
+      "ru": [
+        "проболтаться",
+        "выдать секрет"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Come on, spill the beans!",
+          "ru": "Ну давай, рассказывай!"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "id": "b2-d52",
+  "level": "B2",
+  "day": 52,
+  "island": 6,
+  "title": "The cosmos",
+  "topic": "cosmos",
+  "words": [
+    {
+      "id": "b2-d52-01",
+      "en": "cosmos",
+      "ru": [
+        "космос",
+        "вселенная"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We are a tiny part of the cosmos.",
+          "ru": "Мы — крошечная часть космоса."
+        }
+      ]
+    },
+    {
+      "id": "b2-d52-02",
+      "en": "asteroid",
+      "ru": [
+        "астероид"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "An asteroid passed close to Earth.",
+          "ru": "Астероид пролетел близко к Земле."
+        }
+      ]
+    },
+    {
+      "id": "b2-d52-03",
+      "en": "comet",
+      "ru": [
+        "комета"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "You can see the comet tonight.",
+          "ru": "Сегодня вечером можно увидеть комету."
+        }
+      ]
+    },
+    {
+      "id": "b2-d52-04",
+      "en": "light year",
+      "ru": [
+        "световой год"
+      ],
+      "pos": "noun",
+      "forms": [
+        "light years"
+      ],
+      "examples": [
+        {
+          "en": "The star is ten light years away.",
+          "ru": "Звезда находится в десяти световых годах отсюда."
+        }
+      ]
+    },
+    {
+      "id": "b2-d52-05",
+      "en": "black hole",
+      "ru": [
+        "чёрная дыра"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Nothing can escape a black hole.",
+          "ru": "Ничто не может вырваться из чёрной дыры."
+        }
+      ]
+    },
+    {
+      "id": "b2-d52-06",
+      "en": "constellation",
+      "ru": [
+        "созвездие"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Orion is a famous constellation.",
+          "ru": "Орион — известное созвездие."
+        }
+      ]
+    },
+    {
+      "id": "b2-d52-07",
+      "en": "spacecraft",
+      "ru": [
+        "космический корабль"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The spacecraft landed on Mars.",
+          "ru": "Космический корабль сел на Марс."
+        }
+      ]
+    },
+    {
+      "id": "b2-d52-08",
+      "en": "colonise",
+      "ru": [
+        "колонизировать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Will humans colonise Mars?",
+          "ru": "Колонизируют ли люди Марс?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d52-09",
+      "en": "extraterrestrial",
+      "ru": [
+        "внеземной"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Is there extraterrestrial life?",
+          "ru": "Существует ли внеземная жизнь?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d52-10",
+      "en": "eclipse",
+      "ru": [
+        "затмение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We watched the solar eclipse.",
+          "ru": "Мы смотрели солнечное затмение."
+        }
+      ]
+    }
+  ]
+}

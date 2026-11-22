@@ -1,0 +1,171 @@
+{
+  "id": "b2-d39",
+  "level": "B2",
+  "day": 39,
+  "island": 4,
+  "title": "Body language",
+  "topic": "body language",
+  "words": [
+    {
+      "id": "b2-d39-01",
+      "en": "posture",
+      "ru": [
+        "осанка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Good posture is important.",
+          "ru": "Хорошая осанка важна."
+        }
+      ]
+    },
+    {
+      "id": "b2-d39-02",
+      "en": "eye contact",
+      "ru": [
+        "зрительный контакт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He avoided eye contact.",
+          "ru": "Он избегал зрительного контакта."
+        }
+      ]
+    },
+    {
+      "id": "b2-d39-03",
+      "en": "frown",
+      "ru": [
+        "хмуриться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "frowning"
+      ],
+      "examples": [
+        {
+          "en": "Why are you frowning?",
+          "ru": "Почему ты хмуришься?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d39-04",
+      "en": "nod",
+      "ru": [
+        "кивать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "nodded"
+      ],
+      "examples": [
+        {
+          "en": "She nodded in agreement.",
+          "ru": "Она согласно кивнула."
+        }
+      ]
+    },
+    {
+      "id": "b2-d39-05",
+      "en": "shrug",
+      "ru": [
+        "пожимать плечами"
+      ],
+      "pos": "verb",
+      "forms": [
+        "shrugged"
+      ],
+      "examples": [
+        {
+          "en": "He just shrugged.",
+          "ru": "Он просто пожал плечами."
+        }
+      ]
+    },
+    {
+      "id": "b2-d39-06",
+      "en": "fidget",
+      "ru": [
+        "ёрзать",
+        "вертеться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "fidgeting"
+      ],
+      "examples": [
+        {
+          "en": "Stop fidgeting!",
+          "ru": "Перестань ёрзать!"
+        }
+      ]
+    },
+    {
+      "id": "b2-d39-07",
+      "en": "gaze",
+      "ru": [
+        "пристальный взгляд",
+        "смотреть"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She met his gaze.",
+          "ru": "Она встретила его взгляд."
+        }
+      ]
+    },
+    {
+      "id": "b2-d39-08",
+      "en": "grin",
+      "ru": [
+        "широкая улыбка",
+        "ухмыляться"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He had a big grin on his face.",
+          "ru": "У него на лице была широкая улыбка."
+        }
+      ]
+    },
+    {
+      "id": "b2-d39-09",
+      "en": "blush",
+      "ru": [
+        "краснеть"
+      ],
+      "pos": "verb",
+      "forms": [
+        "blushed"
+      ],
+      "examples": [
+        {
+          "en": "She blushed when he smiled at her.",
+          "ru": "Она покраснела, когда он ей улыбнулся."
+        }
+      ]
+    },
+    {
+      "id": "b2-d39-10",
+      "en": "wink",
+      "ru": [
+        "подмигивать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "winked"
+      ],
+      "examples": [
+        {
+          "en": "He winked at me.",
+          "ru": "Он мне подмигнул."
+        }
+      ]
+    }
+  ]
+}

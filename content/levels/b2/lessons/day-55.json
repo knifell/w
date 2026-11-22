@@ -1,0 +1,157 @@
+{
+  "id": "b2-d55",
+  "level": "B2",
+  "day": 55,
+  "island": 6,
+  "title": "Cities of tomorrow",
+  "topic": "future cities",
+  "words": [
+    {
+      "id": "b2-d55-01",
+      "en": "smart city",
+      "ru": [
+        "умный город"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Seoul is a famous smart city.",
+          "ru": "Сеул — известный умный город."
+        }
+      ]
+    },
+    {
+      "id": "b2-d55-02",
+      "en": "eco-friendly",
+      "ru": [
+        "экологичный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We use eco-friendly bags.",
+          "ru": "Мы пользуемся экологичными пакетами."
+        }
+      ]
+    },
+    {
+      "id": "b2-d55-03",
+      "en": "green space",
+      "ru": [
+        "зелёная зона"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The city needs more green space.",
+          "ru": "Городу нужно больше зелёных зон."
+        }
+      ]
+    },
+    {
+      "id": "b2-d55-04",
+      "en": "high-rise",
+      "ru": [
+        "многоэтажный",
+        "высотный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "They live in a high-rise building.",
+          "ru": "Они живут в высотном доме."
+        }
+      ]
+    },
+    {
+      "id": "b2-d55-05",
+      "en": "density",
+      "ru": [
+        "плотность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The population density is very high.",
+          "ru": "Плотность населения очень высокая."
+        }
+      ]
+    },
+    {
+      "id": "b2-d55-06",
+      "en": "zero-carbon",
+      "ru": [
+        "безуглеродный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The building is zero-carbon.",
+          "ru": "Здание не даёт выбросов углерода."
+        }
+      ]
+    },
+    {
+      "id": "b2-d55-07",
+      "en": "vertical farm",
+      "ru": [
+        "вертикальная ферма"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The vertical farm grows food indoors.",
+          "ru": "Вертикальная ферма выращивает еду в помещении."
+        }
+      ]
+    },
+    {
+      "id": "b2-d55-08",
+      "en": "car-free",
+      "ru": [
+        "без автомобилей"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The centre is now car-free.",
+          "ru": "Центр теперь закрыт для машин."
+        }
+      ]
+    },
+    {
+      "id": "b2-d55-09",
+      "en": "cycle lane",
+      "ru": [
+        "велодорожка"
+      ],
+      "pos": "noun",
+      "forms": [
+        "cycle lanes"
+      ],
+      "examples": [
+        {
+          "en": "The city built new cycle lanes.",
+          "ru": "Город построил новые велодорожки."
+        }
+      ]
+    },
+    {
+      "id": "b2-d55-10",
+      "en": "retrofit",
+      "ru": [
+        "модернизировать (здание)"
+      ],
+      "pos": "verb",
+      "forms": [
+        "retrofitted"
+      ],
+      "examples": [
+        {
+          "en": "They retrofitted old buildings with solar panels.",
+          "ru": "Старые здания оснастили солнечными панелями."
+        }
+      ]
+    }
+  ]
+}

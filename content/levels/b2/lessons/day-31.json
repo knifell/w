@@ -1,0 +1,158 @@
+{
+  "id": "b2-d31",
+  "level": "B2",
+  "day": 31,
+  "island": 4,
+  "title": "Hidden meanings",
+  "topic": "hidden meanings",
+  "words": [
+    {
+      "id": "b2-d31-01",
+      "en": "subtle",
+      "ru": [
+        "тонкий",
+        "едва заметный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "There is a subtle difference between the two words.",
+          "ru": "Между этими словами есть тонкая разница."
+        }
+      ]
+    },
+    {
+      "id": "b2-d31-02",
+      "en": "nuance",
+      "ru": [
+        "нюанс"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Translation loses some nuance.",
+          "ru": "При переводе теряются некоторые нюансы."
+        }
+      ]
+    },
+    {
+      "id": "b2-d31-03",
+      "en": "hint",
+      "ru": [
+        "намёк",
+        "подсказка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She dropped a hint about her birthday.",
+          "ru": "Она намекнула на свой день рождения."
+        }
+      ]
+    },
+    {
+      "id": "b2-d31-04",
+      "en": "irony",
+      "ru": [
+        "ирония"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The irony is that he hates flying.",
+          "ru": "Ирония в том, что он ненавидит летать."
+        }
+      ]
+    },
+    {
+      "id": "b2-d31-05",
+      "en": "euphemism",
+      "ru": [
+        "эвфемизм"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "\"Passed away\" is a euphemism for \"died\".",
+          "ru": "«Ушёл из жизни» — эвфемизм для «умер»."
+        }
+      ]
+    },
+    {
+      "id": "b2-d31-06",
+      "en": "connotation",
+      "ru": [
+        "коннотация",
+        "оттенок значения"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The word has a negative connotation.",
+          "ru": "У слова негативный оттенок."
+        }
+      ]
+    },
+    {
+      "id": "b2-d31-07",
+      "en": "undertone",
+      "ru": [
+        "подтекст",
+        "оттенок"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There was an undertone of anger in his voice.",
+          "ru": "В его голосе слышался оттенок гнева."
+        }
+      ]
+    },
+    {
+      "id": "b2-d31-08",
+      "en": "cryptic",
+      "ru": [
+        "загадочный",
+        "зашифрованный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He sent me a cryptic message.",
+          "ru": "Он прислал мне загадочное сообщение."
+        }
+      ]
+    },
+    {
+      "id": "b2-d31-09",
+      "en": "insinuate",
+      "ru": [
+        "намекать (неприятное)"
+      ],
+      "pos": "verb",
+      "forms": [
+        "insinuating"
+      ],
+      "examples": [
+        {
+          "en": "Are you insinuating that I lied?",
+          "ru": "Ты намекаешь, что я соврал?"
+        }
+      ]
+    },
+    {
+      "id": "b2-d31-10",
+      "en": "read between the lines",
+      "ru": [
+        "читать между строк"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "You have to read between the lines.",
+          "ru": "Нужно читать между строк."
+        }
+      ]
+    }
+  ]
+}

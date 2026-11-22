@@ -1,0 +1,158 @@
+{
+  "id": "b2-d57",
+  "level": "B2",
+  "day": 57,
+  "island": 6,
+  "title": "Times of change",
+  "topic": "transition",
+  "words": [
+    {
+      "id": "b2-d57-01",
+      "en": "transition",
+      "ru": [
+        "переход"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The transition to a new system was smooth.",
+          "ru": "Переход на новую систему прошёл гладко."
+        }
+      ]
+    },
+    {
+      "id": "b2-d57-02",
+      "en": "evolve",
+      "ru": [
+        "развиваться",
+        "эволюционировать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Languages evolve over time.",
+          "ru": "Языки развиваются со временем."
+        }
+      ]
+    },
+    {
+      "id": "b2-d57-03",
+      "en": "overhaul",
+      "ru": [
+        "капитальный ремонт",
+        "пересмотр"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The system needs a complete overhaul.",
+          "ru": "Систему нужно полностью переработать."
+        }
+      ]
+    },
+    {
+      "id": "b2-d57-04",
+      "en": "upheaval",
+      "ru": [
+        "потрясение",
+        "переворот"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Moving abroad was a big upheaval.",
+          "ru": "Переезд за границу стал большим потрясением."
+        }
+      ]
+    },
+    {
+      "id": "b2-d57-05",
+      "en": "reform",
+      "ru": [
+        "реформа"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The government announced tax reform.",
+          "ru": "Правительство объявило о налоговой реформе."
+        }
+      ]
+    },
+    {
+      "id": "b2-d57-06",
+      "en": "revolutionise",
+      "ru": [
+        "совершить переворот"
+      ],
+      "pos": "verb",
+      "forms": [
+        "revolutionised"
+      ],
+      "examples": [
+        {
+          "en": "The internet revolutionised communication.",
+          "ru": "Интернет произвёл переворот в общении."
+        }
+      ]
+    },
+    {
+      "id": "b2-d57-07",
+      "en": "radical",
+      "ru": [
+        "радикальный",
+        "коренной"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We need radical change.",
+          "ru": "Нам нужны коренные перемены."
+        }
+      ]
+    },
+    {
+      "id": "b2-d57-08",
+      "en": "adjustment",
+      "ru": [
+        "приспособление",
+        "корректировка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "It took time to make the adjustment.",
+          "ru": "На привыкание понадобилось время."
+        }
+      ]
+    },
+    {
+      "id": "b2-d57-09",
+      "en": "paradigm shift",
+      "ru": [
+        "смена парадигмы"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Electric cars are a paradigm shift.",
+          "ru": "Электромобили — это смена парадигмы."
+        }
+      ]
+    },
+    {
+      "id": "b2-d57-10",
+      "en": "turning point",
+      "ru": [
+        "поворотный момент"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "That meeting was a turning point in my life.",
+          "ru": "Та встреча стала поворотным моментом в моей жизни."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "id": "b2-d58",
+  "level": "B2",
+  "day": 58,
+  "island": 6,
+  "title": "Precise adverbs",
+  "topic": "adverbs",
+  "words": [
+    {
+      "id": "b2-d58-01",
+      "en": "arguably",
+      "ru": [
+        "пожалуй",
+        "возможно"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "She is arguably the best player.",
+          "ru": "Пожалуй, она лучший игрок."
+        }
+      ]
+    },
+    {
+      "id": "b2-d58-02",
+      "en": "inherently",
+      "ru": [
+        "по своей сути"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "The job is inherently risky.",
+          "ru": "Эта работа по сути рискованная."
+        }
+      ]
+    },
+    {
+      "id": "b2-d58-03",
+      "en": "predominantly",
+      "ru": [
+        "преимущественно"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "The area is predominantly rural.",
+          "ru": "Местность преимущественно сельская."
+        }
+      ]
+    },
+    {
+      "id": "b2-d58-04",
+      "en": "virtually",
+      "ru": [
+        "практически"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "It's virtually impossible.",
+          "ru": "Это практически невозможно."
+        }
+      ]
+    },
+    {
+      "id": "b2-d58-05",
+      "en": "seemingly",
+      "ru": [
+        "по-видимому",
+        "казалось бы"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "It was a seemingly simple task.",
+          "ru": "Задача казалась простой."
+        }
+      ]
+    },
+    {
+      "id": "b2-d58-06",
+      "en": "notably",
+      "ru": [
+        "особенно",
+        "в частности"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Many people, notably students, use the app.",
+          "ru": "Многие, особенно студенты, пользуются приложением."
+        }
+      ]
+    },
+    {
+      "id": "b2-d58-07",
+      "en": "invariably",
+      "ru": [
+        "неизменно"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "He is invariably late.",
+          "ru": "Он неизменно опаздывает."
+        }
+      ]
+    },
+    {
+      "id": "b2-d58-08",
+      "en": "presumably",
+      "ru": [
+        "предположительно",
+        "надо полагать"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Presumably, he forgot.",
+          "ru": "Надо полагать, он забыл."
+        }
+      ]
+    },
+    {
+      "id": "b2-d58-09",
+      "en": "admittedly",
+      "ru": [
+        "правда",
+        "надо признать"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Admittedly, I made a mistake.",
+          "ru": "Надо признать, я ошибся."
+        }
+      ]
+    },
+    {
+      "id": "b2-d58-10",
+      "en": "conversely",
+      "ru": [
+        "наоборот",
+        "и наоборот"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Conversely, some people prefer winter.",
+          "ru": "И наоборот, некоторые предпочитают зиму."
+        }
+      ]
+    }
+  ]
+}

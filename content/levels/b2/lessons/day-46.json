@@ -1,0 +1,163 @@
+{
+  "id": "b2-d46",
+  "level": "B2",
+  "day": 46,
+  "island": 5,
+  "title": "Higher education",
+  "topic": "university",
+  "words": [
+    {
+      "id": "b2-d46-01",
+      "en": "curriculum",
+      "ru": [
+        "учебная программа"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Coding is now part of the curriculum.",
+          "ru": "Программирование теперь входит в учебную программу."
+        }
+      ]
+    },
+    {
+      "id": "b2-d46-02",
+      "en": "assessment",
+      "ru": [
+        "оценивание",
+        "оценка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The final assessment is in June.",
+          "ru": "Итоговая аттестация в июне."
+        }
+      ]
+    },
+    {
+      "id": "b2-d46-03",
+      "en": "tuition",
+      "ru": [
+        "обучение",
+        "плата за обучение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Tuition is free in some countries.",
+          "ru": "В некоторых странах обучение бесплатное."
+        }
+      ]
+    },
+    {
+      "id": "b2-d46-04",
+      "en": "dissertation",
+      "ru": [
+        "диссертация",
+        "дипломная работа"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She is writing her dissertation.",
+          "ru": "Она пишет дипломную работу."
+        }
+      ]
+    },
+    {
+      "id": "b2-d46-05",
+      "en": "thesis",
+      "ru": [
+        "тезис",
+        "диссертация"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "His thesis is about climate change.",
+          "ru": "Его диссертация об изменении климата."
+        }
+      ]
+    },
+    {
+      "id": "b2-d46-06",
+      "en": "enrol",
+      "ru": [
+        "зачисляться",
+        "записываться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "enrolled"
+      ],
+      "examples": [
+        {
+          "en": "I enrolled on a Spanish course.",
+          "ru": "Я записался на курс испанского."
+        }
+      ]
+    },
+    {
+      "id": "b2-d46-07",
+      "en": "undergraduate",
+      "ru": [
+        "студент бакалавриата"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She is an undergraduate at Oxford.",
+          "ru": "Она студентка бакалавриата в Оксфорде."
+        }
+      ]
+    },
+    {
+      "id": "b2-d46-08",
+      "en": "postgraduate",
+      "ru": [
+        "аспирант",
+        "магистрант"
+      ],
+      "pos": "noun",
+      "forms": [
+        "Postgraduates"
+      ],
+      "examples": [
+        {
+          "en": "Postgraduates often teach classes.",
+          "ru": "Магистранты часто ведут занятия."
+        }
+      ]
+    },
+    {
+      "id": "b2-d46-09",
+      "en": "faculty",
+      "ru": [
+        "факультет",
+        "преподавательский состав"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He works in the Faculty of Law.",
+          "ru": "Он работает на юридическом факультете."
+        }
+      ]
+    },
+    {
+      "id": "b2-d46-10",
+      "en": "seminar",
+      "ru": [
+        "семинар"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We discussed the book in the seminar.",
+          "ru": "Мы обсудили книгу на семинаре."
+        }
+      ]
+    }
+  ]
+}

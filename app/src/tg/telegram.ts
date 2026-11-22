@@ -10,6 +10,7 @@ interface TgWebApp {
   expand(): void;
   onEvent(e: string, cb: () => void): void;
   HapticFeedback?: { impactOccurred(s: HapticStyle): void; notificationOccurred(t: Notify): void };
+  showConfirm?(msg: string, cb: (ok: boolean) => void): void;
   BackButton?: { show(): void; hide(): void; onClick(cb: () => void): void; offClick(cb: () => void): void };
 }
 
@@ -41,3 +42,6 @@ export const haptic = {
   ok: () => tg?.HapticFeedback?.notificationOccurred('success'),
   bad: () => tg?.HapticFeedback?.notificationOccurred('error'),
 };
+
+export const ask = (msg: string) =>
+  new Promise<boolean>((res) => (tg?.showConfirm ? tg.showConfirm(msg, res) : res(confirm(msg))));

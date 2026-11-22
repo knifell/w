@@ -1,26 +1,20 @@
-import { useEffect, useState } from 'preact/hooks';
-import { loadIndex } from './api/content';
-import type { ContentIndex } from './types';
-import { GrowingBanner } from './components/GrowingBanner';
+import { useState } from 'preact/hooks';
+import type { Lesson, LevelPack, Word } from './types';
+import type { Reward } from './game/local';
+import { HomeScreen } from './screens/HomeScreen';
+import { LessonScreen } from './screens/lesson/LessonScreen';
+import { ResultScreen } from './screens/ResultScreen';
 
-// Этап 1: каркас. Экраны (тест, карта, урок) появятся на этапах 2–3.
+type Route =
+  | { s: 'home' }
+  | { s: 'lesson'; lesson: Lesson; pool: Word[] }
+  | { s: 'result'; result: Reward & { accuracy: number; wrongWords: Word[] } };
+
 export function App() {
-  const [index, setIndex] = useState<ContentIndex | null>(null);
-  const [error, setError] = useState('');
-  useEffect(() => { loadIndex().then(setIndex, (e) => setError(String(e))); }, []);
-
-  return (
-    <main>
-      <h1>🦀 Остров слов</h1>
-      <p class="hint">Английский как морское путешествие.</p>
-      <GrowingBanner />
-      {error && <div class="card">Ошибка загрузки: {error}</div>}
-      {index?.levels.map((l) => (
-        <div class="card" key={l.level}>
-          <h3>{l.level} · {l.title}</h3>
-          <div class="hint">Уроков: {l.lessons} · Слов: {l.words}</div>
-        </div>
-      ))}
-    </main>
-  );
+  const [r, go] = useState<Route>({ s: 'home' });
+  const home = () => go({ s: 'home' });
+  if (r.s === 'lesson')
+    return <LessonScreen lesson={r.lesson} pool={r.pool} onExit={home} onDone={(result) => go({ s: 'result', result })} />;
+  if (r.s === 'result') return <ResultScreen result={r.result} onNext={home} />;
+  return <HomeScreen onStart={(lesson: Lesson, p: LevelPack) => go({ s: 'lesson', lesson, pool: p.lessons.flatMap((l) => l.words) })} />;
 }

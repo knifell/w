@@ -32,7 +32,10 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
   const progress = solved / initial.length;
 
   const submit = (s: Submit) => {
-    if (s.learn) return next(true); // карточка слова не оценивается
+    if (s.learn) { // новое слово: в точность не идёт; ошибка — показать ответ и вернуть слово позже
+      if (s.ok) return next(true);
+      return setFb(s);
+    }
     stats.answers++;
     if (s.ok) { stats.correct++; haptic.ok(); } else haptic.bad();
     s.wrongIds?.forEach((id) => stats.wrong.add(id));
@@ -66,7 +69,7 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
 
   const key = `${ex.id}#${pos}`;
   const props = { locked: !!fb, onSubmit: submit };
-  const example = ex.kind !== 'pairs' && ex.kind !== 'learn' ? ex.word.examples[0] : null;
+  const example = ex.kind !== 'pairs' ? ex.word.examples[0] : null;
 
   return (
     <div class="lesson">

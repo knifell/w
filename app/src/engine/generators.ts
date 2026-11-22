@@ -4,7 +4,7 @@ import { hashSeed, mulberry32, shuffle, type Rng } from './rng';
 import { norm } from './check';
 
 export type Exercise =
-  | { kind: 'learn'; id: string; word: Word }
+  | { kind: 'learn'; id: string; word: Word; options: string[]; answer: string }
   | { kind: 'choice'; id: string; dir: 'en-ru' | 'ru-en'; word: Word; prompt: string; options: string[]; answer: string }
   | { kind: 'pairs'; id: string; words: Word[]; left: number[]; right: number[] }
   | { kind: 'type'; id: string; word: Word; prompt: string; answers: string[] }
@@ -69,7 +69,8 @@ function chunks<T>(a: T[]): T[][] {
 
 /**
  * Урок по шагам:
- * 1) новые слова группами по 3–4: карточка слова → выбор перевода → пары;
+ * 1) новые слова группами по 3–4: слово с примером и вариантами перевода
+ *    (перевод можно подсмотреть, нажав на слово) → пары на эту группу;
  * 2) знакомые слова: выбор перевода (+ пары);
  * 3) финал на всех словах урока: обратный перевод, ввод слова, сборка предложения.
  */
@@ -81,8 +82,10 @@ export function buildLesson(lesson: Lesson, levelPool: Word[], seed = Date.now()
   const old = ws.filter((w) => known.has(w.id));
   const out: Exercise[] = [];
   chunks(fresh).forEach((c, i) => {
-    c.forEach((w) => out.push({ kind: 'learn', id: `l-${w.id}`, word: w }));
-    shuffle(c, r).forEach((w) => out.push(choice(w, pool, r, 'en-ru')));
+    c.forEach((w) => {
+      const ch = choice(w, pool, r, 'en-ru');
+      if (ch.kind === 'choice') out.push({ kind: 'learn', id: `l-${w.id}`, word: w, options: ch.options, answer: ch.answer });
+    });
     if (c.length >= 3) out.push(pairs(c, r, `${lesson.id}-n${i}`));
   });
   shuffle(old, r).forEach((w) => out.push(choice(w, pool, r, 'en-ru')));

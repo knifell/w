@@ -38,7 +38,7 @@ for (const dir of readdirSync(ROOT).sort()) {
       if (is.n !== i + 1) err(lvFile, `остров #${i + 1}: n=${is.n}`);
       if (!str(is.name) || !str(is.story)) err(lvFile, `остров ${i + 1}: пустое name/story`);
       if (!Array.isArray(is.days) || is.days.length !== 2) err(lvFile, `остров ${i + 1}: days должен быть [от, до]`);
-      if (is.free && i !== 0) err(lvFile, `остров ${i + 1}: free допустим только у первого`);
+      if (is.free && i > 0 && !lv.islands[i - 1].free) err(lvFile, `остров ${i + 1}: бесплатные острова должны идти подряд с первого`);
     });
   }
 

@@ -5,7 +5,6 @@ import { RESCUE_SESSIONS } from '../game/streak';
 import { today } from '../game/time';
 import { REVIEW_MAX_WORDS } from '../game/config';
 import { days, words } from '../lib/format';
-import { GrowingBanner } from '../components/GrowingBanner';
 import { Flame, Icon } from '../components/Icon';
 import { FogArt, IslandArt } from '../components/IslandArt';
 
@@ -66,16 +65,9 @@ export function MapScreen({ pack, st, due, onLesson, onReview, onTrial, onStory,
         const s = islandState(pack, isl, st);
         if (s.kind === 'fog') {
           if (isl.n > 1 && islandState(pack, pack.islands[isl.n - 2], st).kind === 'fog') return null;
-          const rest = pack.islands.slice(isl.n - 1);
           return (
-            <section class="island fog" key={isl.n}>
-              <div class="island-head"><div><div class="hint">Острова {isl.n}–{pack.islands.length}</div><h3>В тумане</h3></div>
-                <span class="island-badge"><Icon name="fog" /></span></div>
-              <FogArt />
-              <div class="note">
-                <div class="fog-list">{rest.map((i) => <span>{i.name}</span>)}</div>
-                <span class="hint">Строим уроки и главы сюжета — появятся в обновлениях.</span>
-              </div>
+            <section class="island fog" key={isl.n} aria-label={`Острова ${isl.n}–${pack.islands.length} скрыты в тумане`}>
+              <FogArt trail />
             </section>
           );
         }
@@ -115,7 +107,11 @@ export function MapScreen({ pack, st, due, onLesson, onReview, onTrial, onStory,
         );
       })}
 
-      <GrowingBanner />
+      {!pack.islands.some((isl) => islandState(pack, isl, st).kind === 'fog') && (
+        <section class="island fog" aria-label="Дальше карта скрыта в тумане">
+          <FogArt trail from={xAt(pack.lessons.filter((l) => l.island === pack.islands.length).length - 1)} />
+        </section>
+      )}
       {Object.keys(st.done).length < 3 && <button class="link" onClick={onRetest}>Не тот уровень? Выбрать другой</button>}
     </main>
   );

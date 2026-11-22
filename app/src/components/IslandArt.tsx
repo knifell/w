@@ -135,15 +135,35 @@ export function IslandArt({ n, class: cls }: { n: number; class?: string }) {
   );
 }
 
-/* Туман для неоткрытых островов. */
-export function FogArt() {
+/* Туман для неоткрытых островов: маршрут уходит в облака, за ними угадываются острова. */
+export function FogArt({ trail, from = 50 }: { trail?: boolean; from?: number }) {
+  const x = from * 3.2;
   return (
-    <svg class="island-art fog-art" viewBox="0 0 320 110" aria-hidden="true">
-      <path d="M60 96c10-14 40-22 70-22s58 8 66 22c-30 8-106 8-136 0z" fill="var(--i-sand)" opacity=".35" />
-      <path d="M190 98c8-10 26-16 46-16s38 6 44 16c-20 6-70 6-90 0z" fill="var(--i-sand)" opacity=".3" />
-      <g fill="var(--fog)">
-        <path d="M40 70h120a20 20 0 0 0 2-40 30 30 0 0 0-56-6 22 22 0 0 0-30 12 17 17 0 0 0-36 34z" />
-        <path d="M150 92h130a18 18 0 0 0 0-36 26 26 0 0 0-48-8 20 20 0 0 0-34 14 15 15 0 0 0-48 30z" opacity=".85" />
+    <svg class={'island-art fog-art' + (trail ? ' with-trail' : '')} viewBox="0 0 320 250" aria-hidden="true">
+      <defs>
+        <linearGradient id="fog-fade" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#fff" /><stop offset=".55" stop-color="#fff" /><stop offset=".85" stop-color="#fff" stop-opacity="0" />
+        </linearGradient>
+        <mask id="fog-trail-mask"><rect width="320" height="250" fill="url(#fog-fade)" /></mask>
+        <filter id="fog-soft" x="-20%" y="-40%" width="140%" height="180%"><feGaussianBlur stdDeviation="5" /></filter>
+      </defs>
+      <g opacity=".32">
+        <path d="M48 196c12-16 40-24 66-24s54 8 62 24c-28 9-100 9-128 0z" fill="var(--i-sand)" />
+        <path d="M188 172c9-12 28-18 48-18s40 6 46 18c-22 7-72 7-94 0z" fill="var(--i-sand)" />
+        <path d="M104 184c1-12 1-22 4-34" fill="none" stroke="var(--i-wood)" stroke-width="4" stroke-linecap="round" />
+        <path d="M108 150c-8-6-19-6-25 1 8-2 16-1 25-1zM108 150c8-6 19-6 25 1-8-2-16-1-25-1zM108 150c-4-8-14-12-22-10 8 2 16 5 22 10zM108 150c4-8 14-12 22-10-8 2-16 5-22 10z" fill="var(--i-leaf-deep)" />
+        <path d="M226 160 240 132l14 28z" fill="var(--i-rock)" />
+      </g>
+      {trail && (
+        <path class="fog-trail" mask="url(#fog-trail-mask)" d={`M${x} 0C${x} 40 ${(x + 186) / 2} 50 186 88s-44 46-36 86c4 18 14 30 22 44`} />
+      )}
+      <g class="fog-back" fill="var(--fog)" opacity=".78" filter="url(#fog-soft)">
+        <circle cx="30" cy="150" r="40" /><circle cx="92" cy="134" r="34" /><circle cx="170" cy="146" r="42" />
+        <circle cx="246" cy="128" r="36" /><circle cx="300" cy="150" r="40" /><rect x="-20" y="150" width="360" height="120" />
+      </g>
+      <g class="fog-front" fill="var(--fog)" filter="url(#fog-soft)">
+        <circle cx="0" cy="214" r="44" /><circle cx="70" cy="196" r="40" /><circle cx="140" cy="210" r="46" />
+        <circle cx="214" cy="192" r="42" /><circle cx="288" cy="208" r="46" /><rect x="-20" y="214" width="360" height="60" />
       </g>
     </svg>
   );

@@ -220,16 +220,23 @@ b { font-weight: 700; }
 .island.locked .island-badge { color: var(--muted); }
 .island-art { display: block; width: 100%; height: auto; margin: -4px 0 -10px; }
 .island.locked .island-art, .island.premium .island-art { filter: grayscale(.75); opacity: .75; }
-.island.fog { background: linear-gradient(180deg, color-mix(in srgb, var(--fog) 60%, var(--water)), var(--water)); }
-.island.fog::before { display: none; }
-.fog-art { margin: 0 0 -6px; }
+.island.fog { padding: 0; background: var(--wave) 0 0 / 120px 48px, var(--water-deep); }
+.island.fog::before {
+  opacity: 1;
+  background: linear-gradient(180deg,
+    color-mix(in srgb, var(--water-deep) calc((1 - var(--wave-o)) * 100%), transparent) 0%,
+    color-mix(in srgb, var(--fog) 55%, var(--water-deep)) 62%, var(--fog) 100%);
+}
+.fog-art { margin: 0 0 -44px; }
+.island:has(+ .island.fog) { margin-bottom: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0; padding-bottom: 0; }
+.island:has(+ .island.fog) .trial { margin-bottom: 18px; }
+.island + .island.fog { border-top-left-radius: 0; border-top-right-radius: 0; }
+.fog-trail { fill: none; stroke: var(--i-foam); stroke-width: 4; stroke-linecap: round; stroke-dasharray: .1 12; }
+.fog-back { animation: drift 9s ease-in-out infinite alternate; }
+.fog-front { animation: drift 7s ease-in-out infinite alternate-reverse; }
+@keyframes drift { from { transform: translateX(-8px) } to { transform: translateX(8px) } }
 .note { margin: 10px 18px 0; font-size: 15px; display: grid; gap: 8px; color: var(--ink); }
 .note .hint { font-size: 14px; }
-.fog-list { display: flex; flex-wrap: wrap; gap: 6px; }
-.fog-list span {
-  padding: 4px 10px; border-radius: 999px; font-size: 13px; font-weight: 600;
-  background: color-mix(in srgb, var(--surface) 70%, transparent); color: var(--muted);
-}
 .bar.thin { height: 10px; flex: none; background: color-mix(in srgb, var(--surface) 70%, transparent); }
 .path { position: relative; margin-top: 14px; }
 .route { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }

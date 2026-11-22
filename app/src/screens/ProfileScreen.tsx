@@ -11,7 +11,7 @@ interface Props {
 }
 
 export function ProfileScreen({ st, packs, onLevel, onPremium, onAbout, onRetest }: Props) {
-  const [sound, setSound] = useState(() => localStorage.getItem('sound') !== 'off');
+  const [sound, setSound] = useState(() => { try { return localStorage.getItem('sound') !== 'off'; } catch { return true; } });
   const mastered = Object.values(st.mem).filter((m) => m.s >= MASTER_STAGE).length;
   const canSwitch = st.premium || Object.keys(st.done).length < 3;
   const name = tg?.initDataUnsafe.user?.first_name ?? 'Путешественник';

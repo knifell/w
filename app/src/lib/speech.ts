@@ -6,7 +6,9 @@ synth?.addEventListener?.('voiceschanged', pickVoice);
 pickVoice();
 
 export function speak(text: string) {
-  if (!synth || localStorage.getItem('sound') === 'off') return;
+  let off = false;
+  try { off = localStorage.getItem('sound') === 'off'; } catch { /* нет доступа к хранилищу */ }
+  if (!synth || off) return;
   synth.cancel();
   const u = new SpeechSynthesisUtterance(text);
   u.lang = 'en-US'; u.rate = 0.9;

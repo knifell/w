@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'preact/hooks';
 import type { Word } from '../../types';
 import { exerciseWords, type Exercise } from '../../engine/generators';
-import { ask, haptic } from '../../tg/telegram';
+import { haptic } from '../../tg/telegram';
 import { speak } from '../../lib/speech';
 import { reportAnswer } from '../../game/local';
 import type { Submit } from './types';
@@ -24,6 +24,7 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
   const [pos, setPos] = useState(0);
   const [solved, setSolved] = useState(0);
   const [fb, setFb] = useState<Submit | null>(null);
+  const [askExit, setAskExit] = useState(false);
   const [stats] = useState(() => ({ answers: 0, correct: 0, wrong: new Set<string>() }));
 
   const ex = queue[pos];
@@ -68,13 +69,23 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
   return (
     <div class="lesson">
       <div class="lesson-top">
-        <button class="x" aria-label="Выйти" onClick={async () => (await ask('Выйти из урока? Прогресс урока не сохранится.')) && onExit()}>✕</button>
+        <button class="x" aria-label="Выйти" onClick={() => setAskExit(true)}>✕</button>
         <div class="bar"><div style={{ width: `${progress * 100}%` }} /></div>
       </div>
       {ex.kind === 'choice' && <ChoiceView key={key} ex={ex} {...props} />}
       {ex.kind === 'pairs' && <PairsView key={key} ex={ex} {...props} />}
       {ex.kind === 'type' && <TypeView key={key} ex={ex} {...props} />}
       {ex.kind === 'build' && <BuildView key={key} ex={ex} {...props} />}
+      {askExit && (
+        <div class="overlay" onClick={() => setAskExit(false)}>
+          <div class="sheet story" onClick={(e) => e.stopPropagation()}>
+            <h2>Выйти из урока?</h2>
+            <p class="hint">Прогресс этого урока не сохранится.</p>
+            <button class="btn" onClick={() => setAskExit(false)}>Продолжить урок</button>
+            <button class="link" onClick={onExit}>Выйти</button>
+          </div>
+        </div>
+      )}
       {fb && (
         <div class={'sheet ' + (fb.ok ? 'ok' : 'bad')}>
           <b>{fb.ok ? (fb.typo ? 'Почти! Есть опечатка' : 'Верно!') : 'Не совсем'}</b>

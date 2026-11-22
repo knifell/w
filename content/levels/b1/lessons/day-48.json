@@ -1,0 +1,156 @@
+{
+  "id": "b1-d48",
+  "level": "B1",
+  "day": 48,
+  "island": 5,
+  "title": "The economy",
+  "topic": "economy",
+  "words": [
+    {
+      "id": "b1-d48-01",
+      "en": "economy",
+      "ru": [
+        "экономика"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The economy is growing.",
+          "ru": "Экономика растёт."
+        }
+      ]
+    },
+    {
+      "id": "b1-d48-02",
+      "en": "inflation",
+      "ru": [
+        "инфляция"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Inflation makes everything more expensive.",
+          "ru": "Из-за инфляции всё дорожает."
+        }
+      ]
+    },
+    {
+      "id": "b1-d48-03",
+      "en": "industry",
+      "ru": [
+        "промышленность",
+        "отрасль"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He works in the car industry.",
+          "ru": "Он работает в автомобильной отрасли."
+        }
+      ]
+    },
+    {
+      "id": "b1-d48-04",
+      "en": "trade",
+      "ru": [
+        "торговля"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Trade between the countries has grown.",
+          "ru": "Торговля между странами выросла."
+        }
+      ]
+    },
+    {
+      "id": "b1-d48-05",
+      "en": "export",
+      "ru": [
+        "экспортировать",
+        "экспорт"
+      ],
+      "pos": "verb",
+      "forms": [
+        "exports"
+      ],
+      "examples": [
+        {
+          "en": "The country exports coffee.",
+          "ru": "Страна экспортирует кофе."
+        }
+      ]
+    },
+    {
+      "id": "b1-d48-06",
+      "en": "import",
+      "ru": [
+        "импортировать",
+        "импорт"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We import most of our oil.",
+          "ru": "Мы импортируем большую часть нефти."
+        }
+      ]
+    },
+    {
+      "id": "b1-d48-07",
+      "en": "market",
+      "ru": [
+        "рынок"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The market for phones is huge.",
+          "ru": "Рынок телефонов огромен."
+        }
+      ]
+    },
+    {
+      "id": "b1-d48-08",
+      "en": "wealth",
+      "ru": [
+        "богатство"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Money isn't the only kind of wealth.",
+          "ru": "Деньги — не единственное богатство."
+        }
+      ]
+    },
+    {
+      "id": "b1-d48-09",
+      "en": "crisis",
+      "ru": [
+        "кризис"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The country is in an economic crisis.",
+          "ru": "Страна в экономическом кризисе."
+        }
+      ]
+    },
+    {
+      "id": "b1-d48-10",
+      "en": "growth",
+      "ru": [
+        "рост"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The company has seen strong growth.",
+          "ru": "Компания показала сильный рост."
+        }
+      ]
+    }
+  ]
+}

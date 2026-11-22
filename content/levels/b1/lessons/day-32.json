@@ -1,0 +1,152 @@
+{
+  "id": "b1-d32",
+  "level": "B1",
+  "day": 32,
+  "island": 4,
+  "title": "Politics",
+  "topic": "politics",
+  "words": [
+    {
+      "id": "b1-d32-01",
+      "en": "politician",
+      "ru": [
+        "политик"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The politician gave a long speech.",
+          "ru": "Политик произнёс длинную речь."
+        }
+      ]
+    },
+    {
+      "id": "b1-d32-02",
+      "en": "policy",
+      "ru": [
+        "политика",
+        "курс"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The company changed its policy.",
+          "ru": "Компания изменила свою политику."
+        }
+      ]
+    },
+    {
+      "id": "b1-d32-03",
+      "en": "president",
+      "ru": [
+        "президент"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The president visited our town.",
+          "ru": "Президент посетил наш город."
+        }
+      ]
+    },
+    {
+      "id": "b1-d32-04",
+      "en": "minister",
+      "ru": [
+        "министр"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The minister answered questions.",
+          "ru": "Министр ответил на вопросы."
+        }
+      ]
+    },
+    {
+      "id": "b1-d32-05",
+      "en": "parliament",
+      "ru": [
+        "парламент"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Parliament passed the new law.",
+          "ru": "Парламент принял новый закон."
+        }
+      ]
+    },
+    {
+      "id": "b1-d32-06",
+      "en": "campaign",
+      "ru": [
+        "кампания"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The campaign starts next week.",
+          "ru": "Кампания начинается на следующей неделе."
+        }
+      ]
+    },
+    {
+      "id": "b1-d32-07",
+      "en": "citizen",
+      "ru": [
+        "гражданин"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Every citizen has the right to vote.",
+          "ru": "Каждый гражданин имеет право голоса."
+        }
+      ]
+    },
+    {
+      "id": "b1-d32-08",
+      "en": "democracy",
+      "ru": [
+        "демократия"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Free elections are part of democracy.",
+          "ru": "Свободные выборы — часть демократии."
+        }
+      ]
+    },
+    {
+      "id": "b1-d32-09",
+      "en": "protest",
+      "ru": [
+        "протест",
+        "протестовать"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Thousands joined the protest.",
+          "ru": "Тысячи людей присоединились к протесту."
+        }
+      ]
+    },
+    {
+      "id": "b1-d32-10",
+      "en": "freedom",
+      "ru": [
+        "свобода"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Freedom of speech is important.",
+          "ru": "Свобода слова важна."
+        }
+      ]
+    }
+  ]
+}

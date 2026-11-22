@@ -1,0 +1,151 @@
+{
+  "id": "b1-d40",
+  "level": "B1",
+  "day": 40,
+  "island": 4,
+  "title": "Making your case",
+  "topic": "linking words",
+  "words": [
+    {
+      "id": "b1-d40-01",
+      "en": "firstly",
+      "ru": [
+        "во-первых"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Firstly, it's too expensive.",
+          "ru": "Во-первых, это слишком дорого."
+        }
+      ]
+    },
+    {
+      "id": "b1-d40-02",
+      "en": "however",
+      "ru": [
+        "однако"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "It's cheap. However, it's not very good.",
+          "ru": "Это дёшево. Однако не очень качественно."
+        }
+      ]
+    },
+    {
+      "id": "b1-d40-03",
+      "en": "therefore",
+      "ru": [
+        "поэтому",
+        "следовательно"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "It was raining, therefore we stayed in.",
+          "ru": "Шёл дождь, поэтому мы остались дома."
+        }
+      ]
+    },
+    {
+      "id": "b1-d40-04",
+      "en": "although",
+      "ru": [
+        "хотя"
+      ],
+      "pos": "conjunction",
+      "examples": [
+        {
+          "en": "Although it was cold, we went out.",
+          "ru": "Хотя было холодно, мы пошли гулять."
+        }
+      ]
+    },
+    {
+      "id": "b1-d40-05",
+      "en": "in conclusion",
+      "ru": [
+        "в заключение"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "In conclusion, I think it's a good idea.",
+          "ru": "В заключение, я думаю, это хорошая идея."
+        }
+      ]
+    },
+    {
+      "id": "b1-d40-06",
+      "en": "for example",
+      "ru": [
+        "например"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "I like sports, for example tennis.",
+          "ru": "Я люблю спорт, например теннис."
+        }
+      ]
+    },
+    {
+      "id": "b1-d40-07",
+      "en": "despite",
+      "ru": [
+        "несмотря на"
+      ],
+      "pos": "preposition",
+      "examples": [
+        {
+          "en": "We went out despite the rain.",
+          "ru": "Мы вышли, несмотря на дождь."
+        }
+      ]
+    },
+    {
+      "id": "b1-d40-08",
+      "en": "unless",
+      "ru": [
+        "если не"
+      ],
+      "pos": "conjunction",
+      "examples": [
+        {
+          "en": "We'll be late unless we hurry.",
+          "ru": "Мы опоздаем, если не поторопимся."
+        }
+      ]
+    },
+    {
+      "id": "b1-d40-09",
+      "en": "as a result",
+      "ru": [
+        "в результате"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "As a result, the trip was cancelled.",
+          "ru": "В результате поездку отменили."
+        }
+      ]
+    },
+    {
+      "id": "b1-d40-10",
+      "en": "in addition",
+      "ru": [
+        "кроме того"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "In addition, the hotel has a pool.",
+          "ru": "Кроме того, в отеле есть бассейн."
+        }
+      ]
+    }
+  ]
+}

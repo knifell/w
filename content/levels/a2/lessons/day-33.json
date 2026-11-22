@@ -1,0 +1,155 @@
+{
+  "id": "a2-d33",
+  "level": "A2",
+  "day": 33,
+  "island": 4,
+  "title": "Friends",
+  "topic": "friends",
+  "words": [
+    {
+      "id": "a2-d33-01",
+      "en": "best friend",
+      "ru": [
+        "лучший друг",
+        "лучшая подруга"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Anna is my best friend.",
+          "ru": "Анна — моя лучшая подруга."
+        }
+      ]
+    },
+    {
+      "id": "a2-d33-02",
+      "en": "classmate",
+      "ru": [
+        "одноклассник"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My classmate helped me with maths.",
+          "ru": "Одноклассник помог мне с математикой."
+        }
+      ]
+    },
+    {
+      "id": "a2-d33-03",
+      "en": "hang out",
+      "ru": [
+        "проводить время",
+        "тусоваться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We hang out in the park after school.",
+          "ru": "После школы мы проводим время в парке."
+        }
+      ]
+    },
+    {
+      "id": "a2-d33-04",
+      "en": "chat",
+      "ru": [
+        "болтать",
+        "общаться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We chat online every evening.",
+          "ru": "Мы общаемся онлайн каждый вечер."
+        }
+      ]
+    },
+    {
+      "id": "a2-d33-05",
+      "en": "share",
+      "ru": [
+        "делиться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Let's share this pizza.",
+          "ru": "Давай поделим эту пиццу."
+        }
+      ]
+    },
+    {
+      "id": "a2-d33-06",
+      "en": "laugh",
+      "ru": [
+        "смеяться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "His jokes make me laugh.",
+          "ru": "Его шутки меня смешат."
+        }
+      ]
+    },
+    {
+      "id": "a2-d33-07",
+      "en": "joke",
+      "ru": [
+        "шутка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Tell me a joke!",
+          "ru": "Расскажи шутку!"
+        }
+      ]
+    },
+    {
+      "id": "a2-d33-08",
+      "en": "secret",
+      "ru": [
+        "секрет",
+        "тайна"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Can you keep a secret?",
+          "ru": "Ты умеешь хранить секреты?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d33-09",
+      "en": "fight",
+      "ru": [
+        "драться",
+        "ссориться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "My brothers often fight.",
+          "ru": "Мои братья часто дерутся."
+        }
+      ]
+    },
+    {
+      "id": "a2-d33-10",
+      "en": "get to know",
+      "ru": [
+        "узнавать поближе"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I want to get to know you better.",
+          "ru": "Я хочу узнать тебя получше."
+        }
+      ]
+    }
+  ]
+}

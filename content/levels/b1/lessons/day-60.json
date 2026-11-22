@@ -1,0 +1,163 @@
+{
+  "id": "b1-d60",
+  "level": "B1",
+  "day": 60,
+  "island": 6,
+  "title": "The final chapter",
+  "topic": "reflection",
+  "words": [
+    {
+      "id": "b1-d60-01",
+      "en": "reflect",
+      "ru": [
+        "размышлять"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Take time to reflect on your progress.",
+          "ru": "Найди время подумать о своих успехах."
+        }
+      ]
+    },
+    {
+      "id": "b1-d60-02",
+      "en": "meaningful",
+      "ru": [
+        "значимый",
+        "осмысленный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It was a meaningful conversation.",
+          "ru": "Это был значимый разговор."
+        }
+      ]
+    },
+    {
+      "id": "b1-d60-03",
+      "en": "unforgettable",
+      "ru": [
+        "незабываемый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It was an unforgettable trip.",
+          "ru": "Это была незабываемая поездка."
+        }
+      ]
+    },
+    {
+      "id": "b1-d60-04",
+      "en": "remarkable",
+      "ru": [
+        "замечательный",
+        "выдающийся"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She made remarkable progress.",
+          "ru": "Она добилась замечательных успехов."
+        }
+      ]
+    },
+    {
+      "id": "b1-d60-05",
+      "en": "inspire",
+      "ru": [
+        "вдохновлять"
+      ],
+      "pos": "verb",
+      "forms": [
+        "inspired"
+      ],
+      "examples": [
+        {
+          "en": "Her story inspired me.",
+          "ru": "Её история вдохновила меня."
+        }
+      ]
+    },
+    {
+      "id": "b1-d60-06",
+      "en": "milestone",
+      "ru": [
+        "важный этап",
+        "веха"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Finishing school is a big milestone.",
+          "ru": "Окончание школы — важный этап."
+        }
+      ]
+    },
+    {
+      "id": "b1-d60-07",
+      "en": "legacy",
+      "ru": [
+        "наследие"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He left a great legacy.",
+          "ru": "Он оставил большое наследие."
+        }
+      ]
+    },
+    {
+      "id": "b1-d60-08",
+      "en": "accomplish",
+      "ru": [
+        "выполнять",
+        "добиваться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "accomplished"
+      ],
+      "examples": [
+        {
+          "en": "We accomplished a lot this year.",
+          "ru": "В этом году мы многого добились."
+        }
+      ]
+    },
+    {
+      "id": "b1-d60-09",
+      "en": "overcome",
+      "ru": [
+        "преодолевать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "overcame"
+      ],
+      "examples": [
+        {
+          "en": "She overcame her fear of water.",
+          "ru": "Она преодолела страх воды."
+        }
+      ]
+    },
+    {
+      "id": "b1-d60-10",
+      "en": "appreciate",
+      "ru": [
+        "ценить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I appreciate your help.",
+          "ru": "Я ценю твою помощь."
+        }
+      ]
+    }
+  ]
+}

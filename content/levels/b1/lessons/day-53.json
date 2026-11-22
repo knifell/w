@@ -1,0 +1,158 @@
+{
+  "id": "b1-d53",
+  "level": "B1",
+  "day": 53,
+  "island": 6,
+  "title": "Aiming high",
+  "topic": "ambitions",
+  "words": [
+    {
+      "id": "b1-d53-01",
+      "en": "aim",
+      "ru": [
+        "цель",
+        "стремиться"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My aim is to speak English fluently.",
+          "ru": "Моя цель — свободно говорить по-английски."
+        }
+      ]
+    },
+    {
+      "id": "b1-d53-02",
+      "en": "purpose",
+      "ru": [
+        "цель",
+        "предназначение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What is the purpose of your visit?",
+          "ru": "Какова цель вашего визита?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d53-03",
+      "en": "motivation",
+      "ru": [
+        "мотивация"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I lost my motivation.",
+          "ru": "Я потерял мотивацию."
+        }
+      ]
+    },
+    {
+      "id": "b1-d53-04",
+      "en": "focus",
+      "ru": [
+        "сосредотачиваться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I can't focus on my work.",
+          "ru": "Я не могу сосредоточиться на работе."
+        }
+      ]
+    },
+    {
+      "id": "b1-d53-05",
+      "en": "succeed",
+      "ru": [
+        "преуспевать",
+        "добиваться успеха"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "If you try hard, you will succeed.",
+          "ru": "Если будешь стараться, ты добьёшься успеха."
+        }
+      ]
+    },
+    {
+      "id": "b1-d53-06",
+      "en": "priority",
+      "ru": [
+        "приоритет"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My family is my priority.",
+          "ru": "Моя семья — мой приоритет."
+        }
+      ]
+    },
+    {
+      "id": "b1-d53-07",
+      "en": "commit",
+      "ru": [
+        "посвящать себя",
+        "обязываться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "committed"
+      ],
+      "examples": [
+        {
+          "en": "He committed himself to the project.",
+          "ru": "Он посвятил себя проекту."
+        }
+      ]
+    },
+    {
+      "id": "b1-d53-08",
+      "en": "ambitious",
+      "ru": [
+        "амбициозный",
+        "целеустремлённый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She is very ambitious.",
+          "ru": "Она очень целеустремлённая."
+        }
+      ]
+    },
+    {
+      "id": "b1-d53-09",
+      "en": "potential",
+      "ru": [
+        "потенциал"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This student has great potential.",
+          "ru": "У этого ученика большой потенциал."
+        }
+      ]
+    },
+    {
+      "id": "b1-d53-10",
+      "en": "talent",
+      "ru": [
+        "талант"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She has a talent for music.",
+          "ru": "У неё талант к музыке."
+        }
+      ]
+    }
+  ]
+}

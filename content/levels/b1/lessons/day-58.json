@@ -1,0 +1,155 @@
+{
+  "id": "b1-d58",
+  "level": "B1",
+  "day": 58,
+  "island": 6,
+  "title": "Time talk",
+  "topic": "time expressions",
+  "words": [
+    {
+      "id": "b1-d58-01",
+      "en": "so far",
+      "ru": [
+        "пока что",
+        "до сих пор"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "So far, everything is going well.",
+          "ru": "Пока что всё идёт хорошо."
+        }
+      ]
+    },
+    {
+      "id": "b1-d58-02",
+      "en": "by the time",
+      "ru": [
+        "к тому времени как"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "By the time we arrived, the film had started.",
+          "ru": "К тому времени как мы приехали, фильм уже начался."
+        }
+      ]
+    },
+    {
+      "id": "b1-d58-03",
+      "en": "in time",
+      "ru": [
+        "вовремя",
+        "успеть"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "We got there just in time.",
+          "ru": "Мы успели туда как раз вовремя."
+        }
+      ]
+    },
+    {
+      "id": "b1-d58-04",
+      "en": "on time",
+      "ru": [
+        "вовремя",
+        "по расписанию"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "The train arrived on time.",
+          "ru": "Поезд прибыл по расписанию."
+        }
+      ]
+    },
+    {
+      "id": "b1-d58-05",
+      "en": "at the moment",
+      "ru": [
+        "в данный момент"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "I'm busy at the moment.",
+          "ru": "Сейчас я занят."
+        }
+      ]
+    },
+    {
+      "id": "b1-d58-06",
+      "en": "nowadays",
+      "ru": [
+        "в наши дни"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Nowadays everyone has a phone.",
+          "ru": "В наши дни у всех есть телефон."
+        }
+      ]
+    },
+    {
+      "id": "b1-d58-07",
+      "en": "in advance",
+      "ru": [
+        "заранее"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Book your tickets in advance.",
+          "ru": "Забронируй билеты заранее."
+        }
+      ]
+    },
+    {
+      "id": "b1-d58-08",
+      "en": "from now on",
+      "ru": [
+        "отныне",
+        "с этого момента"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "From now on, I'll get up early.",
+          "ru": "С этого момента я буду вставать рано."
+        }
+      ]
+    },
+    {
+      "id": "b1-d58-09",
+      "en": "for ages",
+      "ru": [
+        "целую вечность",
+        "очень долго"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "I haven't seen you for ages!",
+          "ru": "Сто лет тебя не видел!"
+        }
+      ]
+    },
+    {
+      "id": "b1-d58-10",
+      "en": "sooner or later",
+      "ru": [
+        "рано или поздно"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Sooner or later, you'll understand.",
+          "ru": "Рано или поздно ты поймёшь."
+        }
+      ]
+    }
+  ]
+}

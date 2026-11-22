@@ -1,0 +1,155 @@
+{
+  "id": "b1-d42",
+  "level": "B1",
+  "day": 42,
+  "island": 5,
+  "title": "Crime and justice",
+  "topic": "crime",
+  "words": [
+    {
+      "id": "b1-d42-01",
+      "en": "robbery",
+      "ru": [
+        "ограбление"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There was a robbery at the bank.",
+          "ru": "В банке произошло ограбление."
+        }
+      ]
+    },
+    {
+      "id": "b1-d42-02",
+      "en": "burglar",
+      "ru": [
+        "грабитель",
+        "взломщик"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A burglar broke into our house.",
+          "ru": "Грабитель залез в наш дом."
+        }
+      ]
+    },
+    {
+      "id": "b1-d42-03",
+      "en": "arrest",
+      "ru": [
+        "арестовывать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "arrested"
+      ],
+      "examples": [
+        {
+          "en": "The police arrested two men.",
+          "ru": "Полиция арестовала двух мужчин."
+        }
+      ]
+    },
+    {
+      "id": "b1-d42-04",
+      "en": "suspect",
+      "ru": [
+        "подозреваемый"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The suspect is still free.",
+          "ru": "Подозреваемый всё ещё на свободе."
+        }
+      ]
+    },
+    {
+      "id": "b1-d42-05",
+      "en": "guilty",
+      "ru": [
+        "виновный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He was found guilty.",
+          "ru": "Его признали виновным."
+        }
+      ]
+    },
+    {
+      "id": "b1-d42-06",
+      "en": "innocent",
+      "ru": [
+        "невиновный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She says she is innocent.",
+          "ru": "Она говорит, что невиновна."
+        }
+      ]
+    },
+    {
+      "id": "b1-d42-07",
+      "en": "prison",
+      "ru": [
+        "тюрьма"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He spent five years in prison.",
+          "ru": "Он провёл пять лет в тюрьме."
+        }
+      ]
+    },
+    {
+      "id": "b1-d42-08",
+      "en": "judge",
+      "ru": [
+        "судья"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The judge listened carefully.",
+          "ru": "Судья внимательно слушал."
+        }
+      ]
+    },
+    {
+      "id": "b1-d42-09",
+      "en": "court",
+      "ru": [
+        "суд"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The case will go to court.",
+          "ru": "Дело передадут в суд."
+        }
+      ]
+    },
+    {
+      "id": "b1-d42-10",
+      "en": "victim",
+      "ru": [
+        "жертва",
+        "пострадавший"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The victim was taken to hospital.",
+          "ru": "Пострадавшего доставили в больницу."
+        }
+      ]
+    }
+  ]
+}

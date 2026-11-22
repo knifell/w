@@ -1,0 +1,157 @@
+{
+  "id": "a2-d52",
+  "level": "A2",
+  "day": 52,
+  "island": 6,
+  "title": "Books",
+  "topic": "books",
+  "words": [
+    {
+      "id": "a2-d52-01",
+      "en": "novel",
+      "ru": [
+        "роман"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I'm reading a long novel.",
+          "ru": "Я читаю длинный роман."
+        }
+      ]
+    },
+    {
+      "id": "a2-d52-02",
+      "en": "author",
+      "ru": [
+        "автор"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Who is the author of this book?",
+          "ru": "Кто автор этой книги?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d52-03",
+      "en": "page",
+      "ru": [
+        "страница"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Open your books at page ten.",
+          "ru": "Откройте книги на странице десять."
+        }
+      ]
+    },
+    {
+      "id": "a2-d52-04",
+      "en": "chapter",
+      "ru": [
+        "глава"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I read one chapter every night.",
+          "ru": "Каждый вечер я читаю одну главу."
+        }
+      ]
+    },
+    {
+      "id": "a2-d52-05",
+      "en": "title",
+      "ru": [
+        "название",
+        "заголовок"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What's the title of the book?",
+          "ru": "Как называется книга?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d52-06",
+      "en": "poem",
+      "ru": [
+        "стихотворение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She wrote a poem for her mum.",
+          "ru": "Она написала стихотворение для мамы."
+        }
+      ]
+    },
+    {
+      "id": "a2-d52-07",
+      "en": "fairy tale",
+      "ru": [
+        "сказка"
+      ],
+      "pos": "noun",
+      "forms": [
+        "fairy tales"
+      ],
+      "examples": [
+        {
+          "en": "My grandmother told me fairy tales.",
+          "ru": "Бабушка рассказывала мне сказки."
+        }
+      ]
+    },
+    {
+      "id": "a2-d52-08",
+      "en": "magazine",
+      "ru": [
+        "журнал"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I buy this magazine every month.",
+          "ru": "Я покупаю этот журнал каждый месяц."
+        }
+      ]
+    },
+    {
+      "id": "a2-d52-09",
+      "en": "bookshop",
+      "ru": [
+        "книжный магазин"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There's a nice bookshop near here.",
+          "ru": "Рядом есть хороший книжный магазин."
+        }
+      ]
+    },
+    {
+      "id": "a2-d52-10",
+      "en": "comic",
+      "ru": [
+        "комикс"
+      ],
+      "pos": "noun",
+      "forms": [
+        "comics"
+      ],
+      "examples": [
+        {
+          "en": "My son loves reading comics.",
+          "ru": "Мой сын обожает читать комиксы."
+        }
+      ]
+    }
+  ]
+}

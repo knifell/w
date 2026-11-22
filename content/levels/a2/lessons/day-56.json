@@ -1,0 +1,163 @@
+{
+  "id": "a2-d56",
+  "level": "A2",
+  "day": 56,
+  "island": 6,
+  "title": "A mystery",
+  "topic": "mystery",
+  "words": [
+    {
+      "id": "a2-d56-01",
+      "en": "detective",
+      "ru": [
+        "сыщик",
+        "детектив"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The detective found the answer.",
+          "ru": "Сыщик нашёл ответ."
+        }
+      ]
+    },
+    {
+      "id": "a2-d56-02",
+      "en": "clue",
+      "ru": [
+        "подсказка",
+        "улика"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Here's a clue: it's red.",
+          "ru": "Подсказка: оно красное."
+        }
+      ]
+    },
+    {
+      "id": "a2-d56-03",
+      "en": "steal",
+      "ru": [
+        "красть"
+      ],
+      "pos": "verb",
+      "forms": [
+        "stole"
+      ],
+      "examples": [
+        {
+          "en": "Someone stole my bike.",
+          "ru": "Кто-то украл мой велосипед."
+        }
+      ]
+    },
+    {
+      "id": "a2-d56-04",
+      "en": "thief",
+      "ru": [
+        "вор"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The police caught the thief.",
+          "ru": "Полиция поймала вора."
+        }
+      ]
+    },
+    {
+      "id": "a2-d56-05",
+      "en": "mystery",
+      "ru": [
+        "загадка",
+        "тайна"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "It's still a mystery.",
+          "ru": "Это до сих пор загадка."
+        }
+      ]
+    },
+    {
+      "id": "a2-d56-06",
+      "en": "hide",
+      "ru": [
+        "прятать",
+        "прятаться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Where did you hide the keys?",
+          "ru": "Куда ты спрятал ключи?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d56-07",
+      "en": "follow",
+      "ru": [
+        "следовать",
+        "идти за"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Follow me, please.",
+          "ru": "Идите за мной, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a2-d56-08",
+      "en": "footprint",
+      "ru": [
+        "след"
+      ],
+      "pos": "noun",
+      "forms": [
+        "footprints"
+      ],
+      "examples": [
+        {
+          "en": "We saw footprints in the snow.",
+          "ru": "Мы увидели следы на снегу."
+        }
+      ]
+    },
+    {
+      "id": "a2-d56-09",
+      "en": "solve",
+      "ru": [
+        "решать",
+        "разгадывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Can you solve this puzzle?",
+          "ru": "Сможешь решить эту головоломку?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d56-10",
+      "en": "guess",
+      "ru": [
+        "угадывать",
+        "догадываться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Guess what happened!",
+          "ru": "Угадай, что случилось!"
+        }
+      ]
+    }
+  ]
+}

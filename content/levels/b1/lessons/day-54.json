@@ -1,0 +1,158 @@
+{
+  "id": "b1-d54",
+  "level": "B1",
+  "day": 54,
+  "island": 6,
+  "title": "Making choices",
+  "topic": "decisions",
+  "words": [
+    {
+      "id": "b1-d54-01",
+      "en": "choice",
+      "ru": [
+        "выбор"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "You have no choice.",
+          "ru": "У тебя нет выбора."
+        }
+      ]
+    },
+    {
+      "id": "b1-d54-02",
+      "en": "option",
+      "ru": [
+        "вариант"
+      ],
+      "pos": "noun",
+      "forms": [
+        "options"
+      ],
+      "examples": [
+        {
+          "en": "What are our options?",
+          "ru": "Какие у нас варианты?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d54-03",
+      "en": "alternative",
+      "ru": [
+        "альтернатива",
+        "другой вариант"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Is there an alternative?",
+          "ru": "Есть другой вариант?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d54-04",
+      "en": "weigh up",
+      "ru": [
+        "взвешивать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Weigh up the pros and cons.",
+          "ru": "Взвесь все за и против."
+        }
+      ]
+    },
+    {
+      "id": "b1-d54-05",
+      "en": "hesitate",
+      "ru": [
+        "колебаться",
+        "сомневаться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Don't hesitate to ask.",
+          "ru": "Не стесняйся спрашивать."
+        }
+      ]
+    },
+    {
+      "id": "b1-d54-06",
+      "en": "regret",
+      "ru": [
+        "сожалеть"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I regret saying that.",
+          "ru": "Я жалею, что сказал это."
+        }
+      ]
+    },
+    {
+      "id": "b1-d54-07",
+      "en": "make up your mind",
+      "ru": [
+        "принять решение"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Make up your mind, please!",
+          "ru": "Определись, пожалуйста!"
+        }
+      ]
+    },
+    {
+      "id": "b1-d54-08",
+      "en": "instinct",
+      "ru": [
+        "инстинкт",
+        "чутьё"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Trust your instinct.",
+          "ru": "Доверься своему чутью."
+        }
+      ]
+    },
+    {
+      "id": "b1-d54-09",
+      "en": "outcome",
+      "ru": [
+        "результат",
+        "исход"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We are waiting for the outcome.",
+          "ru": "Мы ждём результата."
+        }
+      ]
+    },
+    {
+      "id": "b1-d54-10",
+      "en": "select",
+      "ru": [
+        "выбирать",
+        "отбирать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Select a file to upload.",
+          "ru": "Выберите файл для загрузки."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "id": "b1-d33",
+  "level": "B1",
+  "day": 33,
+  "island": 4,
+  "title": "Causes and effects",
+  "topic": "problems and solutions",
+  "words": [
+    {
+      "id": "b1-d33-01",
+      "en": "solution",
+      "ru": [
+        "решение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We need to find a solution.",
+          "ru": "Нам нужно найти решение."
+        }
+      ]
+    },
+    {
+      "id": "b1-d33-02",
+      "en": "cause",
+      "ru": [
+        "причина",
+        "вызывать"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What was the cause of the fire?",
+          "ru": "Что стало причиной пожара?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d33-03",
+      "en": "effect",
+      "ru": [
+        "эффект",
+        "последствие"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The medicine had no effect.",
+          "ru": "Лекарство не подействовало."
+        }
+      ]
+    },
+    {
+      "id": "b1-d33-04",
+      "en": "consequence",
+      "ru": [
+        "последствие"
+      ],
+      "pos": "noun",
+      "forms": [
+        "consequences"
+      ],
+      "examples": [
+        {
+          "en": "Every action has consequences.",
+          "ru": "У каждого поступка есть последствия."
+        }
+      ]
+    },
+    {
+      "id": "b1-d33-05",
+      "en": "risk",
+      "ru": [
+        "риск"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There's a risk of rain later.",
+          "ru": "Позже возможен дождь."
+        }
+      ]
+    },
+    {
+      "id": "b1-d33-06",
+      "en": "prevent",
+      "ru": [
+        "предотвращать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Washing your hands can prevent illness.",
+          "ru": "Мытьё рук помогает предотвратить болезни."
+        }
+      ]
+    },
+    {
+      "id": "b1-d33-07",
+      "en": "increase",
+      "ru": [
+        "увеличиваться",
+        "рост"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Prices increase every year.",
+          "ru": "Цены растут каждый год."
+        }
+      ]
+    },
+    {
+      "id": "b1-d33-08",
+      "en": "decrease",
+      "ru": [
+        "уменьшаться",
+        "снижение"
+      ],
+      "pos": "verb",
+      "forms": [
+        "decreased"
+      ],
+      "examples": [
+        {
+          "en": "The number of tourists decreased.",
+          "ru": "Число туристов уменьшилось."
+        }
+      ]
+    },
+    {
+      "id": "b1-d33-09",
+      "en": "affect",
+      "ru": [
+        "влиять на"
+      ],
+      "pos": "verb",
+      "forms": [
+        "affects"
+      ],
+      "examples": [
+        {
+          "en": "The weather affects my mood.",
+          "ru": "Погода влияет на моё настроение."
+        }
+      ]
+    },
+    {
+      "id": "b1-d33-10",
+      "en": "impact",
+      "ru": [
+        "влияние",
+        "воздействие"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Social media has a big impact on teenagers.",
+          "ru": "Соцсети сильно влияют на подростков."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "id": "b1-d34",
+  "level": "B1",
+  "day": 34,
+  "island": 4,
+  "title": "Making demands",
+  "topic": "persuasion",
+  "words": [
+    {
+      "id": "b1-d34-01",
+      "en": "influence",
+      "ru": [
+        "влияние",
+        "влиять"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Her father had a big influence on her.",
+          "ru": "Отец оказал на неё большое влияние."
+        }
+      ]
+    },
+    {
+      "id": "b1-d34-02",
+      "en": "pressure",
+      "ru": [
+        "давление"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I work well under pressure.",
+          "ru": "Я хорошо работаю под давлением."
+        }
+      ]
+    },
+    {
+      "id": "b1-d34-03",
+      "en": "benefit",
+      "ru": [
+        "польза",
+        "выгода"
+      ],
+      "pos": "noun",
+      "forms": [
+        "benefits"
+      ],
+      "examples": [
+        {
+          "en": "Exercise has many benefits.",
+          "ru": "У спорта много пользы."
+        }
+      ]
+    },
+    {
+      "id": "b1-d34-04",
+      "en": "deserve",
+      "ru": [
+        "заслуживать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "You deserve a holiday.",
+          "ru": "Ты заслуживаешь отпуск."
+        }
+      ]
+    },
+    {
+      "id": "b1-d34-05",
+      "en": "demand",
+      "ru": [
+        "требовать",
+        "требование"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "The workers demand higher pay.",
+          "ru": "Рабочие требуют повышения зарплаты."
+        }
+      ]
+    },
+    {
+      "id": "b1-d34-06",
+      "en": "request",
+      "ru": [
+        "просьба",
+        "запрос"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We received your request.",
+          "ru": "Мы получили ваш запрос."
+        }
+      ]
+    },
+    {
+      "id": "b1-d34-07",
+      "en": "insist",
+      "ru": [
+        "настаивать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "insisted"
+      ],
+      "examples": [
+        {
+          "en": "She insisted on paying.",
+          "ru": "Она настояла на том, чтобы заплатить."
+        }
+      ]
+    },
+    {
+      "id": "b1-d34-08",
+      "en": "require",
+      "ru": [
+        "требовать",
+        "нуждаться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "requires"
+      ],
+      "examples": [
+        {
+          "en": "This job requires experience.",
+          "ru": "Эта работа требует опыта."
+        }
+      ]
+    },
+    {
+      "id": "b1-d34-09",
+      "en": "propose",
+      "ru": [
+        "предлагать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I propose a new plan.",
+          "ru": "Я предлагаю новый план."
+        }
+      ]
+    },
+    {
+      "id": "b1-d34-10",
+      "en": "reject",
+      "ru": [
+        "отвергать",
+        "отклонять"
+      ],
+      "pos": "verb",
+      "forms": [
+        "rejected"
+      ],
+      "examples": [
+        {
+          "en": "They rejected our offer.",
+          "ru": "Они отвергли наше предложение."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "id": "a2-d59",
+  "level": "A2",
+  "day": 59,
+  "island": 6,
+  "title": "In the news",
+  "topic": "news",
+  "words": [
+    {
+      "id": "a2-d59-01",
+      "en": "news",
+      "ru": [
+        "новости"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Did you hear the news?",
+          "ru": "Ты слышал новости?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d59-02",
+      "en": "fire",
+      "ru": [
+        "пожар",
+        "огонь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There was a fire in the old factory.",
+          "ru": "На старой фабрике был пожар."
+        }
+      ]
+    },
+    {
+      "id": "a2-d59-03",
+      "en": "flood",
+      "ru": [
+        "наводнение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The flood destroyed many houses.",
+          "ru": "Наводнение разрушило много домов."
+        }
+      ]
+    },
+    {
+      "id": "a2-d59-04",
+      "en": "earthquake",
+      "ru": [
+        "землетрясение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The earthquake happened at night.",
+          "ru": "Землетрясение случилось ночью."
+        }
+      ]
+    },
+    {
+      "id": "a2-d59-05",
+      "en": "rescue",
+      "ru": [
+        "спасать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "rescued"
+      ],
+      "examples": [
+        {
+          "en": "They rescued a cat from a tree.",
+          "ru": "Они спасли кошку с дерева."
+        }
+      ]
+    },
+    {
+      "id": "a2-d59-06",
+      "en": "injured",
+      "ru": [
+        "раненый",
+        "пострадавший"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Two people were injured.",
+          "ru": "Двое пострадали."
+        }
+      ]
+    },
+    {
+      "id": "a2-d59-07",
+      "en": "damage",
+      "ru": [
+        "ущерб",
+        "повреждение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The storm caused a lot of damage.",
+          "ru": "Шторм нанёс большой ущерб."
+        }
+      ]
+    },
+    {
+      "id": "a2-d59-08",
+      "en": "escape",
+      "ru": [
+        "сбегать",
+        "спасаться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "escaped"
+      ],
+      "examples": [
+        {
+          "en": "The bird escaped from its cage.",
+          "ru": "Птица улетела из клетки."
+        }
+      ]
+    },
+    {
+      "id": "a2-d59-09",
+      "en": "danger",
+      "ru": [
+        "опасность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "They were in great danger.",
+          "ru": "Они были в большой опасности."
+        }
+      ]
+    },
+    {
+      "id": "a2-d59-10",
+      "en": "firefighter",
+      "ru": [
+        "пожарный"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My uncle is a firefighter.",
+          "ru": "Мой дядя — пожарный."
+        }
+      ]
+    }
+  ]
+}

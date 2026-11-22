@@ -1,0 +1,160 @@
+{
+  "id": "b1-d50",
+  "level": "B1",
+  "day": 50,
+  "island": 5,
+  "title": "The lost ship",
+  "topic": "shipwreck",
+  "words": [
+    {
+      "id": "b1-d50-01",
+      "en": "shipwreck",
+      "ru": [
+        "кораблекрушение",
+        "затонувший корабль"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Divers found an old shipwreck.",
+          "ru": "Водолазы нашли старый затонувший корабль."
+        }
+      ]
+    },
+    {
+      "id": "b1-d50-02",
+      "en": "crew",
+      "ru": [
+        "экипаж",
+        "команда"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The crew worked all night.",
+          "ru": "Экипаж работал всю ночь."
+        }
+      ]
+    },
+    {
+      "id": "b1-d50-03",
+      "en": "voyage",
+      "ru": [
+        "плавание",
+        "путешествие"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The voyage took three months.",
+          "ru": "Плавание длилось три месяца."
+        }
+      ]
+    },
+    {
+      "id": "b1-d50-04",
+      "en": "cargo",
+      "ru": [
+        "груз"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The ship was carrying cargo.",
+          "ru": "Корабль перевозил груз."
+        }
+      ]
+    },
+    {
+      "id": "b1-d50-05",
+      "en": "sink",
+      "ru": [
+        "тонуть"
+      ],
+      "pos": "verb",
+      "forms": [
+        "sank"
+      ],
+      "examples": [
+        {
+          "en": "The ship sank in the storm.",
+          "ru": "Корабль затонул во время шторма."
+        }
+      ]
+    },
+    {
+      "id": "b1-d50-06",
+      "en": "coast",
+      "ru": [
+        "побережье"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We drove along the coast.",
+          "ru": "Мы ехали вдоль побережья."
+        }
+      ]
+    },
+    {
+      "id": "b1-d50-07",
+      "en": "harbour",
+      "ru": [
+        "гавань",
+        "порт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The boats are in the harbour.",
+          "ru": "Лодки стоят в гавани."
+        }
+      ]
+    },
+    {
+      "id": "b1-d50-08",
+      "en": "signal",
+      "ru": [
+        "сигнал"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There's no signal here.",
+          "ru": "Здесь нет сигнала."
+        }
+      ]
+    },
+    {
+      "id": "b1-d50-09",
+      "en": "vanish",
+      "ru": [
+        "исчезать бесследно"
+      ],
+      "pos": "verb",
+      "forms": [
+        "vanished"
+      ],
+      "examples": [
+        {
+          "en": "The ship vanished in 1872.",
+          "ru": "Корабль бесследно исчез в 1872 году."
+        }
+      ]
+    },
+    {
+      "id": "b1-d50-10",
+      "en": "anchor",
+      "ru": [
+        "якорь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "They dropped the anchor near the island.",
+          "ru": "Они бросили якорь у острова."
+        }
+      ]
+    }
+  ]
+}

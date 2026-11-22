@@ -1,0 +1,151 @@
+{
+  "id": "a2-d47",
+  "level": "A2",
+  "day": 47,
+  "island": 5,
+  "title": "Machines at home",
+  "topic": "appliances",
+  "words": [
+    {
+      "id": "a2-d47-01",
+      "en": "fridge",
+      "ru": [
+        "холодильник"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Put the milk in the fridge.",
+          "ru": "Поставь молоко в холодильник."
+        }
+      ]
+    },
+    {
+      "id": "a2-d47-02",
+      "en": "washing machine",
+      "ru": [
+        "стиральная машина"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The washing machine is broken.",
+          "ru": "Стиральная машина сломалась."
+        }
+      ]
+    },
+    {
+      "id": "a2-d47-03",
+      "en": "plug",
+      "ru": [
+        "вилка",
+        "розетка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Where is the plug for the laptop?",
+          "ru": "Где розетка для ноутбука?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d47-04",
+      "en": "switch on",
+      "ru": [
+        "включать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Switch on the light, please.",
+          "ru": "Включи свет, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a2-d47-05",
+      "en": "switch off",
+      "ru": [
+        "выключать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Don't forget to switch off the TV.",
+          "ru": "Не забудь выключить телевизор."
+        }
+      ]
+    },
+    {
+      "id": "a2-d47-06",
+      "en": "remote control",
+      "ru": [
+        "пульт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Where is the remote control?",
+          "ru": "Где пульт?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d47-07",
+      "en": "headphones",
+      "ru": [
+        "наушники"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I listen to music with headphones.",
+          "ru": "Я слушаю музыку в наушниках."
+        }
+      ]
+    },
+    {
+      "id": "a2-d47-08",
+      "en": "laptop",
+      "ru": [
+        "ноутбук"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I work on my laptop.",
+          "ru": "Я работаю на ноутбуке."
+        }
+      ]
+    },
+    {
+      "id": "a2-d47-09",
+      "en": "printer",
+      "ru": [
+        "принтер"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The printer has no paper.",
+          "ru": "В принтере нет бумаги."
+        }
+      ]
+    },
+    {
+      "id": "a2-d47-10",
+      "en": "microwave",
+      "ru": [
+        "микроволновка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Heat the soup in the microwave.",
+          "ru": "Разогрей суп в микроволновке."
+        }
+      ]
+    }
+  ]
+}

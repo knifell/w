@@ -1,0 +1,154 @@
+{
+  "id": "a2-d57",
+  "level": "A2",
+  "day": 57,
+  "island": 6,
+  "title": "Magic tales",
+  "topic": "fairy tales",
+  "words": [
+    {
+      "id": "a2-d57-01",
+      "en": "magic",
+      "ru": [
+        "волшебство",
+        "магия"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Do you believe in magic?",
+          "ru": "Ты веришь в волшебство?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d57-02",
+      "en": "witch",
+      "ru": [
+        "ведьма"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The witch lived in a dark forest.",
+          "ru": "Ведьма жила в тёмном лесу."
+        }
+      ]
+    },
+    {
+      "id": "a2-d57-03",
+      "en": "dragon",
+      "ru": [
+        "дракон"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The dragon guarded the gold.",
+          "ru": "Дракон охранял золото."
+        }
+      ]
+    },
+    {
+      "id": "a2-d57-04",
+      "en": "giant",
+      "ru": [
+        "великан"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The giant was as tall as a tree.",
+          "ru": "Великан был высотой с дерево."
+        }
+      ]
+    },
+    {
+      "id": "a2-d57-05",
+      "en": "monster",
+      "ru": [
+        "чудовище",
+        "монстр"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There's no monster under your bed.",
+          "ru": "Под твоей кроватью нет никакого чудовища."
+        }
+      ]
+    },
+    {
+      "id": "a2-d57-06",
+      "en": "ghost",
+      "ru": [
+        "привидение",
+        "призрак"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "They say this house has a ghost.",
+          "ru": "Говорят, в этом доме живёт привидение."
+        }
+      ]
+    },
+    {
+      "id": "a2-d57-07",
+      "en": "wizard",
+      "ru": [
+        "волшебник",
+        "колдун"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The wizard had a long white beard.",
+          "ru": "У волшебника была длинная белая борода."
+        }
+      ]
+    },
+    {
+      "id": "a2-d57-08",
+      "en": "fairy",
+      "ru": [
+        "фея"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The fairy gave her three wishes.",
+          "ru": "Фея исполнила три её желания."
+        }
+      ]
+    },
+    {
+      "id": "a2-d57-09",
+      "en": "frog",
+      "ru": [
+        "лягушка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The princess kissed the frog.",
+          "ru": "Принцесса поцеловала лягушку."
+        }
+      ]
+    },
+    {
+      "id": "a2-d57-10",
+      "en": "kingdom",
+      "ru": [
+        "королевство"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The kingdom was far away.",
+          "ru": "Королевство было далеко."
+        }
+      ]
+    }
+  ]
+}

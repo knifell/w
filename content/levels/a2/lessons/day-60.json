@@ -1,0 +1,153 @@
+{
+  "id": "a2-d60",
+  "level": "A2",
+  "day": 60,
+  "island": 6,
+  "title": "New horizons",
+  "topic": "future",
+  "words": [
+    {
+      "id": "a2-d60-01",
+      "en": "future",
+      "ru": [
+        "будущее"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What are your plans for the future?",
+          "ru": "Какие у тебя планы на будущее?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d60-02",
+      "en": "hope",
+      "ru": [
+        "надеяться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I hope to see you again.",
+          "ru": "Надеюсь снова тебя увидеть."
+        }
+      ]
+    },
+    {
+      "id": "a2-d60-03",
+      "en": "one day",
+      "ru": [
+        "однажды",
+        "когда-нибудь"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "One day I'll visit Japan.",
+          "ru": "Когда-нибудь я побываю в Японии."
+        }
+      ]
+    },
+    {
+      "id": "a2-d60-04",
+      "en": "adventure",
+      "ru": [
+        "приключение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Our trip was a real adventure.",
+          "ru": "Наша поездка была настоящим приключением."
+        }
+      ]
+    },
+    {
+      "id": "a2-d60-05",
+      "en": "explore",
+      "ru": [
+        "исследовать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Let's explore the island.",
+          "ru": "Давай исследуем остров."
+        }
+      ]
+    },
+    {
+      "id": "a2-d60-06",
+      "en": "continue",
+      "ru": [
+        "продолжать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Let's continue tomorrow.",
+          "ru": "Давай продолжим завтра."
+        }
+      ]
+    },
+    {
+      "id": "a2-d60-07",
+      "en": "next time",
+      "ru": [
+        "в следующий раз"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "See you next time!",
+          "ru": "До встречи в следующий раз!"
+        }
+      ]
+    },
+    {
+      "id": "a2-d60-08",
+      "en": "wonderful",
+      "ru": [
+        "чудесный",
+        "замечательный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We had a wonderful time.",
+          "ru": "Мы чудесно провели время."
+        }
+      ]
+    },
+    {
+      "id": "a2-d60-09",
+      "en": "sunset",
+      "ru": [
+        "закат"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We watched the sunset from the beach.",
+          "ru": "Мы смотрели на закат с пляжа."
+        }
+      ]
+    },
+    {
+      "id": "a2-d60-10",
+      "en": "sunrise",
+      "ru": [
+        "рассвет",
+        "восход"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We got up early to see the sunrise.",
+          "ru": "Мы встали рано, чтобы увидеть рассвет."
+        }
+      ]
+    }
+  ]
+}

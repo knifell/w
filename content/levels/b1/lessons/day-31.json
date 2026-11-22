@@ -1,0 +1,158 @@
+{
+  "id": "b1-d31",
+  "level": "B1",
+  "day": 31,
+  "island": 4,
+  "title": "The great debate",
+  "topic": "debate",
+  "words": [
+    {
+      "id": "b1-d31-01",
+      "en": "debate",
+      "ru": [
+        "дебаты",
+        "обсуждение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There was a long debate about the new law.",
+          "ru": "Был долгий спор о новом законе."
+        }
+      ]
+    },
+    {
+      "id": "b1-d31-02",
+      "en": "issue",
+      "ru": [
+        "проблема",
+        "вопрос"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Climate change is a serious issue.",
+          "ru": "Изменение климата — серьёзная проблема."
+        }
+      ]
+    },
+    {
+      "id": "b1-d31-03",
+      "en": "claim",
+      "ru": [
+        "утверждать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "claims"
+      ],
+      "examples": [
+        {
+          "en": "He claims that he saw a ghost.",
+          "ru": "Он утверждает, что видел привидение."
+        }
+      ]
+    },
+    {
+      "id": "b1-d31-04",
+      "en": "prove",
+      "ru": [
+        "доказывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Can you prove it?",
+          "ru": "Ты можешь это доказать?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d31-05",
+      "en": "fact",
+      "ru": [
+        "факт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "That's a fact, not an opinion.",
+          "ru": "Это факт, а не мнение."
+        }
+      ]
+    },
+    {
+      "id": "b1-d31-06",
+      "en": "controversial",
+      "ru": [
+        "спорный",
+        "неоднозначный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It's a controversial topic.",
+          "ru": "Это спорная тема."
+        }
+      ]
+    },
+    {
+      "id": "b1-d31-07",
+      "en": "majority",
+      "ru": [
+        "большинство"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The majority of people agreed.",
+          "ru": "Большинство людей согласились."
+        }
+      ]
+    },
+    {
+      "id": "b1-d31-08",
+      "en": "minority",
+      "ru": [
+        "меньшинство"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Only a minority voted against it.",
+          "ru": "Против проголосовало лишь меньшинство."
+        }
+      ]
+    },
+    {
+      "id": "b1-d31-09",
+      "en": "consider",
+      "ru": [
+        "рассматривать",
+        "обдумывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "We should consider all the options.",
+          "ru": "Нам стоит рассмотреть все варианты."
+        }
+      ]
+    },
+    {
+      "id": "b1-d31-10",
+      "en": "conclusion",
+      "ru": [
+        "вывод",
+        "заключение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What is your conclusion?",
+          "ru": "Каков твой вывод?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "id": "b1-d44",
+  "level": "B1",
+  "day": 44,
+  "island": 5,
+  "title": "Pages of history",
+  "topic": "history",
+  "words": [
+    {
+      "id": "b1-d44-01",
+      "en": "historical",
+      "ru": [
+        "исторический"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We watched a historical film.",
+          "ru": "Мы посмотрели исторический фильм."
+        }
+      ]
+    },
+    {
+      "id": "b1-d44-02",
+      "en": "empire",
+      "ru": [
+        "империя"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The Roman Empire was huge.",
+          "ru": "Римская империя была огромной."
+        }
+      ]
+    },
+    {
+      "id": "b1-d44-03",
+      "en": "revolution",
+      "ru": [
+        "революция"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The revolution changed the country.",
+          "ru": "Революция изменила страну."
+        }
+      ]
+    },
+    {
+      "id": "b1-d44-04",
+      "en": "independence",
+      "ru": [
+        "независимость"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The country gained independence in 1991.",
+          "ru": "Страна получила независимость в 1991 году."
+        }
+      ]
+    },
+    {
+      "id": "b1-d44-05",
+      "en": "invade",
+      "ru": [
+        "вторгаться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "invaded"
+      ],
+      "examples": [
+        {
+          "en": "The army invaded the country.",
+          "ru": "Армия вторглась в страну."
+        }
+      ]
+    },
+    {
+      "id": "b1-d44-06",
+      "en": "civilisation",
+      "ru": [
+        "цивилизация"
+      ],
+      "pos": "noun",
+      "forms": [
+        "civilisations"
+      ],
+      "examples": [
+        {
+          "en": "Egypt is one of the oldest civilisations.",
+          "ru": "Египет — одна из древнейших цивилизаций."
+        }
+      ]
+    },
+    {
+      "id": "b1-d44-07",
+      "en": "ruins",
+      "ru": [
+        "руины"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We visited the ruins of an old city.",
+          "ru": "Мы посетили руины древнего города."
+        }
+      ]
+    },
+    {
+      "id": "b1-d44-08",
+      "en": "monument",
+      "ru": [
+        "памятник"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There's a monument in the main square.",
+          "ru": "На главной площади стоит памятник."
+        }
+      ]
+    },
+    {
+      "id": "b1-d44-09",
+      "en": "medieval",
+      "ru": [
+        "средневековый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The town has a medieval church.",
+          "ru": "В городе есть средневековая церковь."
+        }
+      ]
+    },
+    {
+      "id": "b1-d44-10",
+      "en": "period",
+      "ru": [
+        "период"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "It was a difficult period in history.",
+          "ru": "Это был трудный период в истории."
+        }
+      ]
+    }
+  ]
+}

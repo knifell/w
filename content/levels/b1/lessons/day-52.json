@@ -1,0 +1,156 @@
+{
+  "id": "b1-d52",
+  "level": "B1",
+  "day": 52,
+  "island": 6,
+  "title": "To the stars",
+  "topic": "space",
+  "words": [
+    {
+      "id": "b1-d52-01",
+      "en": "universe",
+      "ru": [
+        "вселенная"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The universe is very old.",
+          "ru": "Вселенная очень старая."
+        }
+      ]
+    },
+    {
+      "id": "b1-d52-02",
+      "en": "galaxy",
+      "ru": [
+        "галактика"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Our galaxy is called the Milky Way.",
+          "ru": "Наша галактика называется Млечный Путь."
+        }
+      ]
+    },
+    {
+      "id": "b1-d52-03",
+      "en": "astronaut",
+      "ru": [
+        "космонавт",
+        "астронавт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She wants to be an astronaut.",
+          "ru": "Она хочет стать космонавтом."
+        }
+      ]
+    },
+    {
+      "id": "b1-d52-04",
+      "en": "rocket",
+      "ru": [
+        "ракета"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The rocket flew into space.",
+          "ru": "Ракета улетела в космос."
+        }
+      ]
+    },
+    {
+      "id": "b1-d52-05",
+      "en": "orbit",
+      "ru": [
+        "орбита"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The satellite is in orbit around Earth.",
+          "ru": "Спутник находится на орбите Земли."
+        }
+      ]
+    },
+    {
+      "id": "b1-d52-06",
+      "en": "telescope",
+      "ru": [
+        "телескоп"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We looked at the stars through a telescope.",
+          "ru": "Мы смотрели на звёзды в телескоп."
+        }
+      ]
+    },
+    {
+      "id": "b1-d52-07",
+      "en": "gravity",
+      "ru": [
+        "гравитация",
+        "сила тяжести"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There is less gravity on the Moon.",
+          "ru": "На Луне гравитация слабее."
+        }
+      ]
+    },
+    {
+      "id": "b1-d52-08",
+      "en": "satellite",
+      "ru": [
+        "спутник"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The TV signal comes from a satellite.",
+          "ru": "Телесигнал идёт со спутника."
+        }
+      ]
+    },
+    {
+      "id": "b1-d52-09",
+      "en": "launch",
+      "ru": [
+        "запускать",
+        "запуск"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "They will launch the rocket tomorrow.",
+          "ru": "Ракету запустят завтра."
+        }
+      ]
+    },
+    {
+      "id": "b1-d52-10",
+      "en": "alien",
+      "ru": [
+        "инопланетянин"
+      ],
+      "pos": "noun",
+      "forms": [
+        "aliens"
+      ],
+      "examples": [
+        {
+          "en": "Do you believe in aliens?",
+          "ru": "Ты веришь в инопланетян?"
+        }
+      ]
+    }
+  ]
+}

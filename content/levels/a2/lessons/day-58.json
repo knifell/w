@@ -1,0 +1,155 @@
+{
+  "id": "a2-d58",
+  "level": "A2",
+  "day": 58,
+  "island": 6,
+  "title": "Memories",
+  "topic": "memories",
+  "words": [
+    {
+      "id": "a2-d58-01",
+      "en": "memory",
+      "ru": [
+        "воспоминание",
+        "память"
+      ],
+      "pos": "noun",
+      "forms": [
+        "memories"
+      ],
+      "examples": [
+        {
+          "en": "I have good memories of that summer.",
+          "ru": "У меня хорошие воспоминания о том лете."
+        }
+      ]
+    },
+    {
+      "id": "a2-d58-02",
+      "en": "remind",
+      "ru": [
+        "напоминать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Remind me to call Mum.",
+          "ru": "Напомни мне позвонить маме."
+        }
+      ]
+    },
+    {
+      "id": "a2-d58-03",
+      "en": "used to",
+      "ru": [
+        "раньше (делать)"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "I used to live in Paris.",
+          "ru": "Раньше я жил в Париже."
+        }
+      ]
+    },
+    {
+      "id": "a2-d58-04",
+      "en": "once",
+      "ru": [
+        "однажды",
+        "один раз"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "I once met a famous singer.",
+          "ru": "Однажды я встретил известного певца."
+        }
+      ]
+    },
+    {
+      "id": "a2-d58-05",
+      "en": "still",
+      "ru": [
+        "всё ещё"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "I still remember that day.",
+          "ru": "Я до сих пор помню тот день."
+        }
+      ]
+    },
+    {
+      "id": "a2-d58-06",
+      "en": "anymore",
+      "ru": [
+        "больше не"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "I don't play the piano anymore.",
+          "ru": "Я больше не играю на пианино."
+        }
+      ]
+    },
+    {
+      "id": "a2-d58-07",
+      "en": "past",
+      "ru": [
+        "прошлое"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Let's forget the past.",
+          "ru": "Давай забудем прошлое."
+        }
+      ]
+    },
+    {
+      "id": "a2-d58-08",
+      "en": "ever",
+      "ru": [
+        "когда-либо"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Have you ever been to Italy?",
+          "ru": "Ты когда-нибудь был в Италии?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d58-09",
+      "en": "recently",
+      "ru": [
+        "недавно"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "I recently started a new job.",
+          "ru": "Недавно я начал новую работу."
+        }
+      ]
+    },
+    {
+      "id": "a2-d58-10",
+      "en": "diary",
+      "ru": [
+        "дневник"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I write in my diary every night.",
+          "ru": "Каждый вечер я пишу в дневник."
+        }
+      ]
+    }
+  ]
+}

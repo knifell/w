@@ -1,0 +1,164 @@
+{
+  "id": "a2-d31",
+  "level": "A2",
+  "day": 31,
+  "island": 4,
+  "title": "Nice to meet you",
+  "topic": "meeting people",
+  "words": [
+    {
+      "id": "a2-d31-01",
+      "en": "introduce",
+      "ru": [
+        "представлять",
+        "знакомить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Let me introduce my friend Tom.",
+          "ru": "Позволь представить моего друга Тома."
+        }
+      ]
+    },
+    {
+      "id": "a2-d31-02",
+      "en": "surname",
+      "ru": [
+        "фамилия"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What is your surname?",
+          "ru": "Какая у тебя фамилия?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d31-03",
+      "en": "age",
+      "ru": [
+        "возраст"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He is tall for his age.",
+          "ru": "Он высокий для своего возраста."
+        }
+      ]
+    },
+    {
+      "id": "a2-d31-04",
+      "en": "address",
+      "ru": [
+        "адрес"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Write your address here.",
+          "ru": "Напиши здесь свой адрес."
+        }
+      ]
+    },
+    {
+      "id": "a2-d31-05",
+      "en": "stranger",
+      "ru": [
+        "незнакомец"
+      ],
+      "pos": "noun",
+      "forms": [
+        "strangers"
+      ],
+      "examples": [
+        {
+          "en": "Don't talk to strangers.",
+          "ru": "Не разговаривай с незнакомцами."
+        }
+      ]
+    },
+    {
+      "id": "a2-d31-06",
+      "en": "greet",
+      "ru": [
+        "приветствовать",
+        "здороваться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "greeted"
+      ],
+      "examples": [
+        {
+          "en": "She greeted us at the door.",
+          "ru": "Она встретила нас у двери."
+        }
+      ]
+    },
+    {
+      "id": "a2-d31-07",
+      "en": "shake hands",
+      "ru": [
+        "пожимать руки"
+      ],
+      "pos": "verb",
+      "forms": [
+        "shook hands"
+      ],
+      "examples": [
+        {
+          "en": "They shook hands and smiled.",
+          "ru": "Они пожали руки и улыбнулись."
+        }
+      ]
+    },
+    {
+      "id": "a2-d31-08",
+      "en": "smile",
+      "ru": [
+        "улыбаться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "You should smile more.",
+          "ru": "Тебе стоит чаще улыбаться."
+        }
+      ]
+    },
+    {
+      "id": "a2-d31-09",
+      "en": "nickname",
+      "ru": [
+        "прозвище"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "His nickname at school was Bear.",
+          "ru": "В школе его прозвище было Медведь."
+        }
+      ]
+    },
+    {
+      "id": "a2-d31-10",
+      "en": "guest",
+      "ru": [
+        "гость"
+      ],
+      "pos": "noun",
+      "forms": [
+        "guests"
+      ],
+      "examples": [
+        {
+          "en": "We have guests tonight.",
+          "ru": "Сегодня у нас гости."
+        }
+      ]
+    }
+  ]
+}

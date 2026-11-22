@@ -1,0 +1,154 @@
+{
+  "id": "b1-d35",
+  "level": "B1",
+  "day": 35,
+  "island": 4,
+  "title": "Finding common ground",
+  "topic": "compromise",
+  "words": [
+    {
+      "id": "b1-d35-01",
+      "en": "compromise",
+      "ru": [
+        "компромисс"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We reached a compromise.",
+          "ru": "Мы пришли к компромиссу."
+        }
+      ]
+    },
+    {
+      "id": "b1-d35-02",
+      "en": "agreement",
+      "ru": [
+        "соглашение",
+        "согласие"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The two countries signed an agreement.",
+          "ru": "Две страны подписали соглашение."
+        }
+      ]
+    },
+    {
+      "id": "b1-d35-03",
+      "en": "conflict",
+      "ru": [
+        "конфликт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There's a conflict between the two groups.",
+          "ru": "Между двумя группами конфликт."
+        }
+      ]
+    },
+    {
+      "id": "b1-d35-04",
+      "en": "tension",
+      "ru": [
+        "напряжение",
+        "напряжённость"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "You could feel the tension in the room.",
+          "ru": "В комнате чувствовалось напряжение."
+        }
+      ]
+    },
+    {
+      "id": "b1-d35-05",
+      "en": "calm down",
+      "ru": [
+        "успокаиваться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Calm down, everything will be fine.",
+          "ru": "Успокойся, всё будет хорошо."
+        }
+      ]
+    },
+    {
+      "id": "b1-d35-06",
+      "en": "misunderstanding",
+      "ru": [
+        "недоразумение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "It was just a misunderstanding.",
+          "ru": "Это было просто недоразумение."
+        }
+      ]
+    },
+    {
+      "id": "b1-d35-07",
+      "en": "reasonable",
+      "ru": [
+        "разумный",
+        "приемлемый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The price is reasonable.",
+          "ru": "Цена приемлемая."
+        }
+      ]
+    },
+    {
+      "id": "b1-d35-08",
+      "en": "fair",
+      "ru": [
+        "справедливый",
+        "честный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "That's not fair!",
+          "ru": "Это нечестно!"
+        }
+      ]
+    },
+    {
+      "id": "b1-d35-09",
+      "en": "unfair",
+      "ru": [
+        "несправедливый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The decision was unfair.",
+          "ru": "Решение было несправедливым."
+        }
+      ]
+    },
+    {
+      "id": "b1-d35-10",
+      "en": "side",
+      "ru": [
+        "сторона"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Whose side are you on?",
+          "ru": "Ты на чьей стороне?"
+        }
+      ]
+    }
+  ]
+}

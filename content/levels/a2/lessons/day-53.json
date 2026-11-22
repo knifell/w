@@ -1,0 +1,156 @@
+{
+  "id": "a2-d53",
+  "level": "A2",
+  "day": 53,
+  "island": 6,
+  "title": "Films and TV",
+  "topic": "films",
+  "words": [
+    {
+      "id": "a2-d53-01",
+      "en": "actor",
+      "ru": [
+        "актёр"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He is a famous actor.",
+          "ru": "Он известный актёр."
+        }
+      ]
+    },
+    {
+      "id": "a2-d53-02",
+      "en": "actress",
+      "ru": [
+        "актриса"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She wants to be an actress.",
+          "ru": "Она хочет стать актрисой."
+        }
+      ]
+    },
+    {
+      "id": "a2-d53-03",
+      "en": "scene",
+      "ru": [
+        "сцена"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The last scene was very sad.",
+          "ru": "Последняя сцена была очень грустной."
+        }
+      ]
+    },
+    {
+      "id": "a2-d53-04",
+      "en": "cartoon",
+      "ru": [
+        "мультфильм"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The children are watching a cartoon.",
+          "ru": "Дети смотрят мультфильм."
+        }
+      ]
+    },
+    {
+      "id": "a2-d53-05",
+      "en": "series",
+      "ru": [
+        "сериал",
+        "серия"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I'm watching a new series.",
+          "ru": "Я смотрю новый сериал."
+        }
+      ]
+    },
+    {
+      "id": "a2-d53-06",
+      "en": "episode",
+      "ru": [
+        "эпизод",
+        "серия"
+      ],
+      "pos": "noun",
+      "forms": [
+        "episodes"
+      ],
+      "examples": [
+        {
+          "en": "I watched three episodes last night.",
+          "ru": "Вчера вечером я посмотрел три серии."
+        }
+      ]
+    },
+    {
+      "id": "a2-d53-07",
+      "en": "comedy",
+      "ru": [
+        "комедия"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Let's watch a comedy tonight.",
+          "ru": "Давай посмотрим комедию вечером."
+        }
+      ]
+    },
+    {
+      "id": "a2-d53-08",
+      "en": "director",
+      "ru": [
+        "режиссёр",
+        "директор"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The director made a great film.",
+          "ru": "Режиссёр снял отличный фильм."
+        }
+      ]
+    },
+    {
+      "id": "a2-d53-09",
+      "en": "star",
+      "ru": [
+        "звезда"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She is the star of the show.",
+          "ru": "Она звезда этого шоу."
+        }
+      ]
+    },
+    {
+      "id": "a2-d53-10",
+      "en": "channel",
+      "ru": [
+        "канал"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What's on the other channel?",
+          "ru": "Что идёт по другому каналу?"
+        }
+      ]
+    }
+  ]
+}

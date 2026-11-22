@@ -1,0 +1,154 @@
+{
+  "id": "a2-d45",
+  "level": "A2",
+  "day": 45,
+  "island": 5,
+  "title": "Shapes and sizes",
+  "topic": "shapes",
+  "words": [
+    {
+      "id": "a2-d45-01",
+      "en": "shape",
+      "ru": [
+        "форма"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What shape is it?",
+          "ru": "Какой это формы?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d45-02",
+      "en": "circle",
+      "ru": [
+        "круг"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Draw a circle.",
+          "ru": "Нарисуй круг."
+        }
+      ]
+    },
+    {
+      "id": "a2-d45-03",
+      "en": "triangle",
+      "ru": [
+        "треугольник"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A triangle has three sides.",
+          "ru": "У треугольника три стороны."
+        }
+      ]
+    },
+    {
+      "id": "a2-d45-04",
+      "en": "length",
+      "ru": [
+        "длина"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What is the length of the room?",
+          "ru": "Какая длина у комнаты?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d45-05",
+      "en": "height",
+      "ru": [
+        "высота",
+        "рост"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What is your height?",
+          "ru": "Какой у тебя рост?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d45-06",
+      "en": "weight",
+      "ru": [
+        "вес"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The weight of the bag is ten kilos.",
+          "ru": "Вес сумки — десять килограммов."
+        }
+      ]
+    },
+    {
+      "id": "a2-d45-07",
+      "en": "metre",
+      "ru": [
+        "метр"
+      ],
+      "pos": "noun",
+      "forms": [
+        "metres"
+      ],
+      "examples": [
+        {
+          "en": "The pool is twenty metres long.",
+          "ru": "Бассейн длиной двадцать метров."
+        }
+      ]
+    },
+    {
+      "id": "a2-d45-08",
+      "en": "huge",
+      "ru": [
+        "огромный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "They live in a huge house.",
+          "ru": "Они живут в огромном доме."
+        }
+      ]
+    },
+    {
+      "id": "a2-d45-09",
+      "en": "tiny",
+      "ru": [
+        "крошечный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The kitten is tiny.",
+          "ru": "Котёнок крошечный."
+        }
+      ]
+    },
+    {
+      "id": "a2-d45-10",
+      "en": "deep",
+      "ru": [
+        "глубокий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The lake is very deep.",
+          "ru": "Озеро очень глубокое."
+        }
+      ]
+    }
+  ]
+}

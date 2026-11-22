@@ -1,0 +1,156 @@
+{
+  "id": "a2-d43",
+  "level": "A2",
+  "day": 43,
+  "island": 5,
+  "title": "Things at home",
+  "topic": "household objects",
+  "words": [
+    {
+      "id": "a2-d43-01",
+      "en": "mirror",
+      "ru": [
+        "зеркало"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She looked in the mirror.",
+          "ru": "Она посмотрела в зеркало."
+        }
+      ]
+    },
+    {
+      "id": "a2-d43-02",
+      "en": "lamp",
+      "ru": [
+        "лампа"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Turn on the lamp, please.",
+          "ru": "Включи лампу, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a2-d43-03",
+      "en": "shelf",
+      "ru": [
+        "полка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The books are on the shelf.",
+          "ru": "Книги на полке."
+        }
+      ]
+    },
+    {
+      "id": "a2-d43-04",
+      "en": "sofa",
+      "ru": [
+        "диван"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The cat is sleeping on the sofa.",
+          "ru": "Кошка спит на диване."
+        }
+      ]
+    },
+    {
+      "id": "a2-d43-05",
+      "en": "carpet",
+      "ru": [
+        "ковёр"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We have a red carpet in the hall.",
+          "ru": "В прихожей у нас красный ковёр."
+        }
+      ]
+    },
+    {
+      "id": "a2-d43-06",
+      "en": "curtain",
+      "ru": [
+        "штора",
+        "занавеска"
+      ],
+      "pos": "noun",
+      "forms": [
+        "curtains"
+      ],
+      "examples": [
+        {
+          "en": "Close the curtains, it's dark.",
+          "ru": "Задёрни шторы, уже темно."
+        }
+      ]
+    },
+    {
+      "id": "a2-d43-07",
+      "en": "pillow",
+      "ru": [
+        "подушка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I like a soft pillow.",
+          "ru": "Я люблю мягкую подушку."
+        }
+      ]
+    },
+    {
+      "id": "a2-d43-08",
+      "en": "blanket",
+      "ru": [
+        "одеяло",
+        "плед"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Take a blanket, it's cold.",
+          "ru": "Возьми плед, холодно."
+        }
+      ]
+    },
+    {
+      "id": "a2-d43-09",
+      "en": "drawer",
+      "ru": [
+        "ящик (стола)"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The scissors are in the top drawer.",
+          "ru": "Ножницы в верхнем ящике."
+        }
+      ]
+    },
+    {
+      "id": "a2-d43-10",
+      "en": "cupboard",
+      "ru": [
+        "шкаф",
+        "буфет"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The plates are in the cupboard.",
+          "ru": "Тарелки в шкафу."
+        }
+      ]
+    }
+  ]
+}

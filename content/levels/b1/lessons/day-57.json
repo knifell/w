@@ -1,0 +1,158 @@
+{
+  "id": "b1-d57",
+  "level": "B1",
+  "day": 57,
+  "island": 6,
+  "title": "Always learning",
+  "topic": "learning",
+  "words": [
+    {
+      "id": "b1-d57-01",
+      "en": "knowledge",
+      "ru": [
+        "знание",
+        "знания"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Knowledge is power.",
+          "ru": "Знание — сила."
+        }
+      ]
+    },
+    {
+      "id": "b1-d57-02",
+      "en": "wisdom",
+      "ru": [
+        "мудрость"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "With age comes wisdom.",
+          "ru": "С возрастом приходит мудрость."
+        }
+      ]
+    },
+    {
+      "id": "b1-d57-03",
+      "en": "ability",
+      "ru": [
+        "способность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She has the ability to learn fast.",
+          "ru": "У неё есть способность быстро учиться."
+        }
+      ]
+    },
+    {
+      "id": "b1-d57-04",
+      "en": "intelligent",
+      "ru": [
+        "умный",
+        "разумный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Dolphins are intelligent animals.",
+          "ru": "Дельфины — умные животные."
+        }
+      ]
+    },
+    {
+      "id": "b1-d57-05",
+      "en": "memorise",
+      "ru": [
+        "запоминать наизусть"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I need to memorise these words.",
+          "ru": "Мне нужно выучить эти слова наизусть."
+        }
+      ]
+    },
+    {
+      "id": "b1-d57-06",
+      "en": "concentrate",
+      "ru": [
+        "сосредотачиваться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "It's hard to concentrate with this noise.",
+          "ru": "Трудно сосредоточиться при таком шуме."
+        }
+      ]
+    },
+    {
+      "id": "b1-d57-07",
+      "en": "expert",
+      "ru": [
+        "эксперт",
+        "специалист"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He is an expert in history.",
+          "ru": "Он специалист по истории."
+        }
+      ]
+    },
+    {
+      "id": "b1-d57-08",
+      "en": "beginner",
+      "ru": [
+        "новичок"
+      ],
+      "pos": "noun",
+      "forms": [
+        "beginners"
+      ],
+      "examples": [
+        {
+          "en": "This class is for beginners.",
+          "ru": "Этот курс для новичков."
+        }
+      ]
+    },
+    {
+      "id": "b1-d57-09",
+      "en": "fluent",
+      "ru": [
+        "беглый",
+        "свободно говорящий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She is fluent in three languages.",
+          "ru": "Она свободно говорит на трёх языках."
+        }
+      ]
+    },
+    {
+      "id": "b1-d57-10",
+      "en": "method",
+      "ru": [
+        "метод",
+        "способ"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This method works well.",
+          "ru": "Этот метод хорошо работает."
+        }
+      ]
+    }
+  ]
+}

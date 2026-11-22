@@ -1,0 +1,152 @@
+{
+  "id": "b1-d47",
+  "level": "B1",
+  "day": 47,
+  "island": 5,
+  "title": "Unsolved mysteries",
+  "topic": "mysteries",
+  "words": [
+    {
+      "id": "b1-d47-01",
+      "en": "mysterious",
+      "ru": [
+        "таинственный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "A mysterious man called yesterday.",
+          "ru": "Вчера звонил таинственный мужчина."
+        }
+      ]
+    },
+    {
+      "id": "b1-d47-02",
+      "en": "legend",
+      "ru": [
+        "легенда"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There's an old legend about this lake.",
+          "ru": "Об этом озере есть старая легенда."
+        }
+      ]
+    },
+    {
+      "id": "b1-d47-03",
+      "en": "myth",
+      "ru": [
+        "миф"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "That's just a myth.",
+          "ru": "Это всего лишь миф."
+        }
+      ]
+    },
+    {
+      "id": "b1-d47-04",
+      "en": "unexplained",
+      "ru": [
+        "необъяснимый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "There were unexplained lights in the sky.",
+          "ru": "В небе были необъяснимые огни."
+        }
+      ]
+    },
+    {
+      "id": "b1-d47-05",
+      "en": "supernatural",
+      "ru": [
+        "сверхъестественный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Do you believe in supernatural powers?",
+          "ru": "Ты веришь в сверхъестественные силы?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d47-06",
+      "en": "coincidence",
+      "ru": [
+        "совпадение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What a coincidence!",
+          "ru": "Какое совпадение!"
+        }
+      ]
+    },
+    {
+      "id": "b1-d47-07",
+      "en": "curious",
+      "ru": [
+        "любопытный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Cats are very curious animals.",
+          "ru": "Кошки очень любопытные животные."
+        }
+      ]
+    },
+    {
+      "id": "b1-d47-08",
+      "en": "weird",
+      "ru": [
+        "странный",
+        "чудной"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "That's a weird idea.",
+          "ru": "Это странная идея."
+        }
+      ]
+    },
+    {
+      "id": "b1-d47-09",
+      "en": "exist",
+      "ru": [
+        "существовать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Do you think ghosts exist?",
+          "ru": "Думаешь, привидения существуют?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d47-10",
+      "en": "doubt",
+      "ru": [
+        "сомнение",
+        "сомневаться"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There's no doubt about it.",
+          "ru": "В этом нет сомнений."
+        }
+      ]
+    }
+  ]
+}

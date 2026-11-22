@@ -1,0 +1,154 @@
+{
+  "id": "a2-d42",
+  "level": "A2",
+  "day": 42,
+  "island": 5,
+  "title": "Tools and repairs",
+  "topic": "tools",
+  "words": [
+    {
+      "id": "a2-d42-01",
+      "en": "hammer",
+      "ru": [
+        "молоток"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Pass me the hammer, please.",
+          "ru": "Подай мне молоток, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a2-d42-02",
+      "en": "nail",
+      "ru": [
+        "гвоздь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Put a nail in the wall.",
+          "ru": "Вбей гвоздь в стену."
+        }
+      ]
+    },
+    {
+      "id": "a2-d42-03",
+      "en": "tool",
+      "ru": [
+        "инструмент"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "You need the right tool for the job.",
+          "ru": "Для этой работы нужен подходящий инструмент."
+        }
+      ]
+    },
+    {
+      "id": "a2-d42-04",
+      "en": "repair",
+      "ru": [
+        "ремонтировать",
+        "чинить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Can you repair my bike?",
+          "ru": "Можешь починить мой велосипед?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d42-05",
+      "en": "ladder",
+      "ru": [
+        "стремянка",
+        "лестница"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Hold the ladder for me.",
+          "ru": "Подержи мне стремянку."
+        }
+      ]
+    },
+    {
+      "id": "a2-d42-06",
+      "en": "rope",
+      "ru": [
+        "верёвка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Tie the boat with a rope.",
+          "ru": "Привяжи лодку верёвкой."
+        }
+      ]
+    },
+    {
+      "id": "a2-d42-07",
+      "en": "brush",
+      "ru": [
+        "кисть",
+        "щётка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I need a big brush to paint the wall.",
+          "ru": "Мне нужна большая кисть, чтобы покрасить стену."
+        }
+      ]
+    },
+    {
+      "id": "a2-d42-08",
+      "en": "glue",
+      "ru": [
+        "клей"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Fix it with some glue.",
+          "ru": "Почини это клеем."
+        }
+      ]
+    },
+    {
+      "id": "a2-d42-09",
+      "en": "scissors",
+      "ru": [
+        "ножницы"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Where are the scissors?",
+          "ru": "Где ножницы?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d42-10",
+      "en": "tape",
+      "ru": [
+        "скотч",
+        "клейкая лента"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Put some tape on the box.",
+          "ru": "Заклей коробку скотчем."
+        }
+      ]
+    }
+  ]
+}

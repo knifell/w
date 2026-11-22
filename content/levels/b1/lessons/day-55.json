@@ -1,0 +1,160 @@
+{
+  "id": "b1-d55",
+  "level": "B1",
+  "day": 55,
+  "island": 6,
+  "title": "Innovation",
+  "topic": "innovation",
+  "words": [
+    {
+      "id": "b1-d55-01",
+      "en": "invent",
+      "ru": [
+        "изобретать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "invented"
+      ],
+      "examples": [
+        {
+          "en": "Who invented the telephone?",
+          "ru": "Кто изобрёл телефон?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d55-02",
+      "en": "innovation",
+      "ru": [
+        "инновация",
+        "нововведение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The company is famous for innovation.",
+          "ru": "Компания славится инновациями."
+        }
+      ]
+    },
+    {
+      "id": "b1-d55-03",
+      "en": "develop",
+      "ru": [
+        "разрабатывать",
+        "развивать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "developing"
+      ],
+      "examples": [
+        {
+          "en": "They are developing a new app.",
+          "ru": "Они разрабатывают новое приложение."
+        }
+      ]
+    },
+    {
+      "id": "b1-d55-04",
+      "en": "advanced",
+      "ru": [
+        "продвинутый",
+        "передовой"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This is very advanced technology.",
+          "ru": "Это очень передовая технология."
+        }
+      ]
+    },
+    {
+      "id": "b1-d55-05",
+      "en": "upgrade",
+      "ru": [
+        "обновлять",
+        "модернизировать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I want to upgrade my computer.",
+          "ru": "Я хочу модернизировать компьютер."
+        }
+      ]
+    },
+    {
+      "id": "b1-d55-06",
+      "en": "efficient",
+      "ru": [
+        "эффективный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This heater is very efficient.",
+          "ru": "Этот обогреватель очень эффективный."
+        }
+      ]
+    },
+    {
+      "id": "b1-d55-07",
+      "en": "electric",
+      "ru": [
+        "электрический"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He bought an electric car.",
+          "ru": "Он купил электромобиль."
+        }
+      ]
+    },
+    {
+      "id": "b1-d55-08",
+      "en": "renewable",
+      "ru": [
+        "возобновляемый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Wind is a renewable source of energy.",
+          "ru": "Ветер — возобновляемый источник энергии."
+        }
+      ]
+    },
+    {
+      "id": "b1-d55-09",
+      "en": "automatic",
+      "ru": [
+        "автоматический"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The doors are automatic.",
+          "ru": "Двери автоматические."
+        }
+      ]
+    },
+    {
+      "id": "b1-d55-10",
+      "en": "breakthrough",
+      "ru": [
+        "прорыв"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "It was a breakthrough in medicine.",
+          "ru": "Это был прорыв в медицине."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "id": "b1-d49",
+  "level": "B1",
+  "day": 49,
+  "island": 5,
+  "title": "Sports news",
+  "topic": "sport news",
+  "words": [
+    {
+      "id": "b1-d49-01",
+      "en": "champion",
+      "ru": [
+        "чемпион"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She is the world champion.",
+          "ru": "Она чемпионка мира."
+        }
+      ]
+    },
+    {
+      "id": "b1-d49-02",
+      "en": "tournament",
+      "ru": [
+        "турнир"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Our team won the tournament.",
+          "ru": "Наша команда выиграла турнир."
+        }
+      ]
+    },
+    {
+      "id": "b1-d49-03",
+      "en": "opponent",
+      "ru": [
+        "соперник",
+        "противник"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "His opponent was very strong.",
+          "ru": "Его соперник был очень сильным."
+        }
+      ]
+    },
+    {
+      "id": "b1-d49-04",
+      "en": "referee",
+      "ru": [
+        "судья (в спорте)"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The referee stopped the game.",
+          "ru": "Судья остановил игру."
+        }
+      ]
+    },
+    {
+      "id": "b1-d49-05",
+      "en": "defeat",
+      "ru": [
+        "поражение",
+        "победить"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "It was a painful defeat.",
+          "ru": "Это было болезненное поражение."
+        }
+      ]
+    },
+    {
+      "id": "b1-d49-06",
+      "en": "victory",
+      "ru": [
+        "победа"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The fans celebrated the victory.",
+          "ru": "Болельщики праздновали победу."
+        }
+      ]
+    },
+    {
+      "id": "b1-d49-07",
+      "en": "medal",
+      "ru": [
+        "медаль"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She won a gold medal.",
+          "ru": "Она выиграла золотую медаль."
+        }
+      ]
+    },
+    {
+      "id": "b1-d49-08",
+      "en": "fan",
+      "ru": [
+        "болельщик",
+        "фанат"
+      ],
+      "pos": "noun",
+      "forms": [
+        "fans"
+      ],
+      "examples": [
+        {
+          "en": "The fans were singing.",
+          "ru": "Болельщики пели."
+        }
+      ]
+    },
+    {
+      "id": "b1-d49-09",
+      "en": "stadium",
+      "ru": [
+        "стадион"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The stadium was full.",
+          "ru": "Стадион был полон."
+        }
+      ]
+    },
+    {
+      "id": "b1-d49-10",
+      "en": "athlete",
+      "ru": [
+        "спортсмен"
+      ],
+      "pos": "noun",
+      "forms": [
+        "athletes"
+      ],
+      "examples": [
+        {
+          "en": "Athletes train every day.",
+          "ru": "Спортсмены тренируются каждый день."
+        }
+      ]
+    }
+  ]
+}

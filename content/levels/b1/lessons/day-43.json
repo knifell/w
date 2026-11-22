@@ -1,0 +1,165 @@
+{
+  "id": "b1-d43",
+  "level": "B1",
+  "day": 43,
+  "island": 5,
+  "title": "The investigation",
+  "topic": "investigation",
+  "words": [
+    {
+      "id": "b1-d43-01",
+      "en": "fingerprint",
+      "ru": [
+        "отпечаток пальца"
+      ],
+      "pos": "noun",
+      "forms": [
+        "fingerprints"
+      ],
+      "examples": [
+        {
+          "en": "They found his fingerprints on the glass.",
+          "ru": "На стакане нашли его отпечатки пальцев."
+        }
+      ]
+    },
+    {
+      "id": "b1-d43-02",
+      "en": "search",
+      "ru": [
+        "обыскивать",
+        "искать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "searched"
+      ],
+      "examples": [
+        {
+          "en": "The police searched the house.",
+          "ru": "Полиция обыскала дом."
+        }
+      ]
+    },
+    {
+      "id": "b1-d43-03",
+      "en": "suspicious",
+      "ru": [
+        "подозрительный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Call us if you see anything suspicious.",
+          "ru": "Звоните нам, если увидите что-то подозрительное."
+        }
+      ]
+    },
+    {
+      "id": "b1-d43-04",
+      "en": "motive",
+      "ru": [
+        "мотив"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What was his motive?",
+          "ru": "Каков был его мотив?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d43-05",
+      "en": "alibi",
+      "ru": [
+        "алиби"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She had a good alibi.",
+          "ru": "У неё было надёжное алиби."
+        }
+      ]
+    },
+    {
+      "id": "b1-d43-06",
+      "en": "confess",
+      "ru": [
+        "признаваться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "confessed"
+      ],
+      "examples": [
+        {
+          "en": "He finally confessed.",
+          "ru": "В конце концов он признался."
+        }
+      ]
+    },
+    {
+      "id": "b1-d43-07",
+      "en": "trace",
+      "ru": [
+        "след",
+        "отслеживать"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The thief left no trace.",
+          "ru": "Вор не оставил следов."
+        }
+      ]
+    },
+    {
+      "id": "b1-d43-08",
+      "en": "disappear",
+      "ru": [
+        "исчезать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "disappeared"
+      ],
+      "examples": [
+        {
+          "en": "The man disappeared without a trace.",
+          "ru": "Мужчина исчез бесследно."
+        }
+      ]
+    },
+    {
+      "id": "b1-d43-09",
+      "en": "unknown",
+      "ru": [
+        "неизвестный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The cause of the fire is unknown.",
+          "ru": "Причина пожара неизвестна."
+        }
+      ]
+    },
+    {
+      "id": "b1-d43-10",
+      "en": "identify",
+      "ru": [
+        "опознавать",
+        "определять"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Can you identify the man?",
+          "ru": "Вы можете опознать этого мужчину?"
+        }
+      ]
+    }
+  ]
+}

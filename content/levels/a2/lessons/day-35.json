@@ -1,0 +1,152 @@
+{
+  "id": "a2-d35",
+  "level": "A2",
+  "day": 35,
+  "island": 4,
+  "title": "Character",
+  "topic": "character",
+  "words": [
+    {
+      "id": "a2-d35-01",
+      "en": "kind",
+      "ru": [
+        "добрый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She is kind to everyone.",
+          "ru": "Она добра ко всем."
+        }
+      ]
+    },
+    {
+      "id": "a2-d35-02",
+      "en": "friendly",
+      "ru": [
+        "дружелюбный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The people here are very friendly.",
+          "ru": "Люди здесь очень дружелюбные."
+        }
+      ]
+    },
+    {
+      "id": "a2-d35-03",
+      "en": "funny",
+      "ru": [
+        "смешной",
+        "забавный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "My dad is really funny.",
+          "ru": "Мой папа очень смешной."
+        }
+      ]
+    },
+    {
+      "id": "a2-d35-04",
+      "en": "clever",
+      "ru": [
+        "умный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "What a clever idea!",
+          "ru": "Какая умная идея!"
+        }
+      ]
+    },
+    {
+      "id": "a2-d35-05",
+      "en": "lazy",
+      "ru": [
+        "ленивый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Don't be lazy, get up!",
+          "ru": "Не ленись, вставай!"
+        }
+      ]
+    },
+    {
+      "id": "a2-d35-06",
+      "en": "brave",
+      "ru": [
+        "храбрый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The firefighter was very brave.",
+          "ru": "Пожарный был очень храбрым."
+        }
+      ]
+    },
+    {
+      "id": "a2-d35-07",
+      "en": "careful",
+      "ru": [
+        "осторожный",
+        "аккуратный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Be careful with the knife.",
+          "ru": "Осторожно с ножом."
+        }
+      ]
+    },
+    {
+      "id": "a2-d35-08",
+      "en": "serious",
+      "ru": [
+        "серьёзный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Why are you so serious?",
+          "ru": "Почему ты такой серьёзный?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d35-09",
+      "en": "strange",
+      "ru": [
+        "странный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I heard a strange sound.",
+          "ru": "Я услышал странный звук."
+        }
+      ]
+    },
+    {
+      "id": "a2-d35-10",
+      "en": "hard-working",
+      "ru": [
+        "трудолюбивый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She is a hard-working student.",
+          "ru": "Она трудолюбивая студентка."
+        }
+      ]
+    }
+  ]
+}

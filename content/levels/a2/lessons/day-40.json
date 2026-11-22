@@ -1,0 +1,152 @@
+{
+  "id": "a2-d40",
+  "level": "A2",
+  "day": 40,
+  "island": 4,
+  "title": "Letters and emails",
+  "topic": "writing",
+  "words": [
+    {
+      "id": "a2-d40-01",
+      "en": "email",
+      "ru": [
+        "электронное письмо"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I'll send you an email.",
+          "ru": "Я пришлю тебе письмо."
+        }
+      ]
+    },
+    {
+      "id": "a2-d40-02",
+      "en": "letter",
+      "ru": [
+        "письмо",
+        "буква"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I got a letter from my grandmother.",
+          "ru": "Я получил письмо от бабушки."
+        }
+      ]
+    },
+    {
+      "id": "a2-d40-03",
+      "en": "envelope",
+      "ru": [
+        "конверт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Put the letter in the envelope.",
+          "ru": "Положи письмо в конверт."
+        }
+      ]
+    },
+    {
+      "id": "a2-d40-04",
+      "en": "stamp",
+      "ru": [
+        "марка",
+        "штамп"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I need a stamp for this postcard.",
+          "ru": "Мне нужна марка для этой открытки."
+        }
+      ]
+    },
+    {
+      "id": "a2-d40-05",
+      "en": "postcard",
+      "ru": [
+        "открытка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Send us a postcard from Rome!",
+          "ru": "Пришли нам открытку из Рима!"
+        }
+      ]
+    },
+    {
+      "id": "a2-d40-06",
+      "en": "write back",
+      "ru": [
+        "ответить на письмо"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Please write back soon.",
+          "ru": "Пожалуйста, ответь поскорее."
+        }
+      ]
+    },
+    {
+      "id": "a2-d40-07",
+      "en": "dear",
+      "ru": [
+        "дорогой"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Dear Tom, thank you for your letter.",
+          "ru": "Дорогой Том, спасибо за письмо."
+        }
+      ]
+    },
+    {
+      "id": "a2-d40-08",
+      "en": "wish",
+      "ru": [
+        "желать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I wish you a happy birthday.",
+          "ru": "Желаю тебе счастливого дня рождения."
+        }
+      ]
+    },
+    {
+      "id": "a2-d40-09",
+      "en": "receive",
+      "ru": [
+        "получать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Did you receive my email?",
+          "ru": "Ты получил моё письмо?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d40-10",
+      "en": "best wishes",
+      "ru": [
+        "с наилучшими пожеланиями"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Best wishes, Anna.",
+          "ru": "С наилучшими пожеланиями, Анна."
+        }
+      ]
+    }
+  ]
+}

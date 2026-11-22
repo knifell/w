@@ -1,0 +1,156 @@
+{
+  "id": "b1-d36",
+  "level": "B1",
+  "day": 36,
+  "island": 4,
+  "title": "Modern society",
+  "topic": "society",
+  "words": [
+    {
+      "id": "b1-d36-01",
+      "en": "modern",
+      "ru": [
+        "современный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I like modern art.",
+          "ru": "Мне нравится современное искусство."
+        }
+      ]
+    },
+    {
+      "id": "b1-d36-02",
+      "en": "traditional",
+      "ru": [
+        "традиционный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We cooked a traditional meal.",
+          "ru": "Мы приготовили традиционное блюдо."
+        }
+      ]
+    },
+    {
+      "id": "b1-d36-03",
+      "en": "generation",
+      "ru": [
+        "поколение"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My parents' generation didn't have phones.",
+          "ru": "У поколения моих родителей не было телефонов."
+        }
+      ]
+    },
+    {
+      "id": "b1-d36-04",
+      "en": "society",
+      "ru": [
+        "общество"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We live in a modern society.",
+          "ru": "Мы живём в современном обществе."
+        }
+      ]
+    },
+    {
+      "id": "b1-d36-05",
+      "en": "community",
+      "ru": [
+        "сообщество",
+        "местные жители"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Our community helps elderly people.",
+          "ru": "Наше сообщество помогает пожилым."
+        }
+      ]
+    },
+    {
+      "id": "b1-d36-06",
+      "en": "culture",
+      "ru": [
+        "культура"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I'm interested in Japanese culture.",
+          "ru": "Мне интересна японская культура."
+        }
+      ]
+    },
+    {
+      "id": "b1-d36-07",
+      "en": "social",
+      "ru": [
+        "социальный",
+        "общественный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Unemployment is a social problem.",
+          "ru": "Безработица — социальная проблема."
+        }
+      ]
+    },
+    {
+      "id": "b1-d36-08",
+      "en": "immigrant",
+      "ru": [
+        "иммигрант"
+      ],
+      "pos": "noun",
+      "forms": [
+        "immigrants"
+      ],
+      "examples": [
+        {
+          "en": "Many immigrants live in this city.",
+          "ru": "В этом городе живёт много иммигрантов."
+        }
+      ]
+    },
+    {
+      "id": "b1-d36-09",
+      "en": "neighbourhood",
+      "ru": [
+        "район",
+        "округа"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "It's a quiet neighbourhood.",
+          "ru": "Это тихий район."
+        }
+      ]
+    },
+    {
+      "id": "b1-d36-10",
+      "en": "urban",
+      "ru": [
+        "городской"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Urban areas are often crowded.",
+          "ru": "Городские районы часто переполнены."
+        }
+      ]
+    }
+  ]
+}

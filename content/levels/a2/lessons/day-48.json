@@ -1,0 +1,155 @@
+{
+  "id": "a2-d48",
+  "level": "A2",
+  "day": 48,
+  "island": 5,
+  "title": "Making things",
+  "topic": "crafts",
+  "words": [
+    {
+      "id": "a2-d48-01",
+      "en": "create",
+      "ru": [
+        "создавать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Children love to create things.",
+          "ru": "Дети любят что-то создавать."
+        }
+      ]
+    },
+    {
+      "id": "a2-d48-02",
+      "en": "design",
+      "ru": [
+        "придумывать",
+        "проектировать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "designs"
+      ],
+      "examples": [
+        {
+          "en": "She designs her own clothes.",
+          "ru": "Она сама придумывает себе одежду."
+        }
+      ]
+    },
+    {
+      "id": "a2-d48-03",
+      "en": "sew",
+      "ru": [
+        "шить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "My aunt can sew very well.",
+          "ru": "Моя тётя очень хорошо шьёт."
+        }
+      ]
+    },
+    {
+      "id": "a2-d48-04",
+      "en": "knit",
+      "ru": [
+        "вязать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I'm learning to knit.",
+          "ru": "Я учусь вязать."
+        }
+      ]
+    },
+    {
+      "id": "a2-d48-05",
+      "en": "fold",
+      "ru": [
+        "складывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Fold the paper in half.",
+          "ru": "Сложи бумагу пополам."
+        }
+      ]
+    },
+    {
+      "id": "a2-d48-06",
+      "en": "tie",
+      "ru": [
+        "завязывать",
+        "привязывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Can you tie your shoes?",
+          "ru": "Ты умеешь завязывать шнурки?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d48-07",
+      "en": "wrap",
+      "ru": [
+        "заворачивать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Let's wrap the presents.",
+          "ru": "Давай упакуем подарки."
+        }
+      ]
+    },
+    {
+      "id": "a2-d48-08",
+      "en": "stick",
+      "ru": [
+        "приклеивать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Stick the photo on the card.",
+          "ru": "Приклей фото на открытку."
+        }
+      ]
+    },
+    {
+      "id": "a2-d48-09",
+      "en": "drawing",
+      "ru": [
+        "рисунок"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What a beautiful drawing!",
+          "ru": "Какой красивый рисунок!"
+        }
+      ]
+    },
+    {
+      "id": "a2-d48-10",
+      "en": "handmade",
+      "ru": [
+        "ручной работы"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "This bag is handmade.",
+          "ru": "Эта сумка ручной работы."
+        }
+      ]
+    }
+  ]
+}

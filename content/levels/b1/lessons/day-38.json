@@ -1,0 +1,162 @@
+{
+  "id": "b1-d38",
+  "level": "B1",
+  "day": 38,
+  "island": 4,
+  "title": "School debates",
+  "topic": "education issues",
+  "words": [
+    {
+      "id": "b1-d38-01",
+      "en": "compulsory",
+      "ru": [
+        "обязательный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Maths is a compulsory subject.",
+          "ru": "Математика — обязательный предмет."
+        }
+      ]
+    },
+    {
+      "id": "b1-d38-02",
+      "en": "private",
+      "ru": [
+        "частный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She goes to a private school.",
+          "ru": "Она ходит в частную школу."
+        }
+      ]
+    },
+    {
+      "id": "b1-d38-03",
+      "en": "state school",
+      "ru": [
+        "государственная школа"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I went to a state school.",
+          "ru": "Я учился в государственной школе."
+        }
+      ]
+    },
+    {
+      "id": "b1-d38-04",
+      "en": "grade",
+      "ru": [
+        "оценка",
+        "класс"
+      ],
+      "pos": "noun",
+      "forms": [
+        "grades"
+      ],
+      "examples": [
+        {
+          "en": "She got good grades this year.",
+          "ru": "В этом году у неё хорошие оценки."
+        }
+      ]
+    },
+    {
+      "id": "b1-d38-05",
+      "en": "discipline",
+      "ru": [
+        "дисциплина"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The school has strict discipline.",
+          "ru": "В школе строгая дисциплина."
+        }
+      ]
+    },
+    {
+      "id": "b1-d38-06",
+      "en": "cheat",
+      "ru": [
+        "списывать",
+        "жульничать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Don't cheat in the test.",
+          "ru": "Не списывай на контрольной."
+        }
+      ]
+    },
+    {
+      "id": "b1-d38-07",
+      "en": "punish",
+      "ru": [
+        "наказывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "The teacher didn't punish him.",
+          "ru": "Учитель не наказал его."
+        }
+      ]
+    },
+    {
+      "id": "b1-d38-08",
+      "en": "motivate",
+      "ru": [
+        "мотивировать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Good teachers motivate students.",
+          "ru": "Хорошие учителя мотивируют учеников."
+        }
+      ]
+    },
+    {
+      "id": "b1-d38-09",
+      "en": "fee",
+      "ru": [
+        "плата",
+        "взнос"
+      ],
+      "pos": "noun",
+      "forms": [
+        "fees"
+      ],
+      "examples": [
+        {
+          "en": "University fees are very high.",
+          "ru": "Плата за университет очень высокая."
+        }
+      ]
+    },
+    {
+      "id": "b1-d38-10",
+      "en": "pupil",
+      "ru": [
+        "ученик"
+      ],
+      "pos": "noun",
+      "forms": [
+        "pupils"
+      ],
+      "examples": [
+        {
+          "en": "There are thirty pupils in the class.",
+          "ru": "В классе тридцать учеников."
+        }
+      ]
+    }
+  ]
+}

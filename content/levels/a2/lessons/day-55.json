@@ -1,0 +1,156 @@
+{
+  "id": "a2-d55",
+  "level": "A2",
+  "day": 55,
+  "island": 6,
+  "title": "At sea",
+  "topic": "sea",
+  "words": [
+    {
+      "id": "a2-d55-01",
+      "en": "ship",
+      "ru": [
+        "корабль"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The ship sailed across the ocean.",
+          "ru": "Корабль переплыл океан."
+        }
+      ]
+    },
+    {
+      "id": "a2-d55-02",
+      "en": "boat",
+      "ru": [
+        "лодка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We took a boat to the island.",
+          "ru": "Мы доплыли до острова на лодке."
+        }
+      ]
+    },
+    {
+      "id": "a2-d55-03",
+      "en": "sailor",
+      "ru": [
+        "моряк"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My grandfather was a sailor.",
+          "ru": "Мой дедушка был моряком."
+        }
+      ]
+    },
+    {
+      "id": "a2-d55-04",
+      "en": "storm",
+      "ru": [
+        "шторм",
+        "буря"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The storm lasted all night.",
+          "ru": "Шторм длился всю ночь."
+        }
+      ]
+    },
+    {
+      "id": "a2-d55-05",
+      "en": "captain",
+      "ru": [
+        "капитан"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The captain spoke to the passengers.",
+          "ru": "Капитан обратился к пассажирам."
+        }
+      ]
+    },
+    {
+      "id": "a2-d55-06",
+      "en": "treasure",
+      "ru": [
+        "сокровище",
+        "клад"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "They found treasure on the island.",
+          "ru": "Они нашли на острове клад."
+        }
+      ]
+    },
+    {
+      "id": "a2-d55-07",
+      "en": "compass",
+      "ru": [
+        "компас"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We used a compass to find our way.",
+          "ru": "Мы искали дорогу по компасу."
+        }
+      ]
+    },
+    {
+      "id": "a2-d55-08",
+      "en": "lighthouse",
+      "ru": [
+        "маяк"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The lighthouse helps ships at night.",
+          "ru": "Маяк помогает кораблям ночью."
+        }
+      ]
+    },
+    {
+      "id": "a2-d55-09",
+      "en": "sail",
+      "ru": [
+        "плыть под парусом",
+        "парус"
+      ],
+      "pos": "verb",
+      "forms": [
+        "sailed"
+      ],
+      "examples": [
+        {
+          "en": "We sailed along the coast.",
+          "ru": "Мы плыли вдоль берега."
+        }
+      ]
+    },
+    {
+      "id": "a2-d55-10",
+      "en": "shore",
+      "ru": [
+        "берег"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We walked along the shore.",
+          "ru": "Мы гуляли по берегу."
+        }
+      ]
+    }
+  ]
+}

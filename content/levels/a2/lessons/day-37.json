@@ -1,0 +1,161 @@
+{
+  "id": "a2-d37",
+  "level": "A2",
+  "day": 37,
+  "island": 4,
+  "title": "Making arrangements",
+  "topic": "arrangements",
+  "words": [
+    {
+      "id": "a2-d37-01",
+      "en": "arrange",
+      "ru": [
+        "договариваться",
+        "организовывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Let's arrange a time to meet.",
+          "ru": "Давай договоримся о времени встречи."
+        }
+      ]
+    },
+    {
+      "id": "a2-d37-02",
+      "en": "free",
+      "ru": [
+        "свободный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Are you free on Friday?",
+          "ru": "Ты свободен в пятницу?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d37-03",
+      "en": "instead",
+      "ru": [
+        "вместо этого"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Let's stay at home instead.",
+          "ru": "Давай лучше останемся дома."
+        }
+      ]
+    },
+    {
+      "id": "a2-d37-04",
+      "en": "probably",
+      "ru": [
+        "вероятно",
+        "наверное"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "I'll probably be late.",
+          "ru": "Я, наверное, опоздаю."
+        }
+      ]
+    },
+    {
+      "id": "a2-d37-05",
+      "en": "sure",
+      "ru": [
+        "уверенный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Are you sure?",
+          "ru": "Ты уверен?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d37-06",
+      "en": "offer",
+      "ru": [
+        "предлагать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "offered"
+      ],
+      "examples": [
+        {
+          "en": "He offered to help me.",
+          "ru": "Он предложил мне помощь."
+        }
+      ]
+    },
+    {
+      "id": "a2-d37-07",
+      "en": "accept",
+      "ru": [
+        "принимать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I accept your invitation.",
+          "ru": "Я принимаю твоё приглашение."
+        }
+      ]
+    },
+    {
+      "id": "a2-d37-08",
+      "en": "refuse",
+      "ru": [
+        "отказываться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "refused"
+      ],
+      "examples": [
+        {
+          "en": "She refused to answer.",
+          "ru": "Она отказалась отвечать."
+        }
+      ]
+    },
+    {
+      "id": "a2-d37-09",
+      "en": "decide",
+      "ru": [
+        "решать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "decided"
+      ],
+      "examples": [
+        {
+          "en": "We decided to go by car.",
+          "ru": "Мы решили поехать на машине."
+        }
+      ]
+    },
+    {
+      "id": "a2-d37-10",
+      "en": "change your mind",
+      "ru": [
+        "передумать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Call me if you change your mind.",
+          "ru": "Позвони, если передумаешь."
+        }
+      ]
+    }
+  ]
+}

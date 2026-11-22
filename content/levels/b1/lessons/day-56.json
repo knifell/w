@@ -1,0 +1,153 @@
+{
+  "id": "b1-d56",
+  "level": "B1",
+  "day": 56,
+  "island": 6,
+  "title": "Looking ahead",
+  "topic": "feelings about the future",
+  "words": [
+    {
+      "id": "b1-d56-01",
+      "en": "optimistic",
+      "ru": [
+        "оптимистичный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I'm optimistic about the future.",
+          "ru": "Я с оптимизмом смотрю в будущее."
+        }
+      ]
+    },
+    {
+      "id": "b1-d56-02",
+      "en": "pessimistic",
+      "ru": [
+        "пессимистичный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Don't be so pessimistic.",
+          "ru": "Не будь таким пессимистом."
+        }
+      ]
+    },
+    {
+      "id": "b1-d56-03",
+      "en": "hopeful",
+      "ru": [
+        "полный надежды"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We are hopeful that things will improve.",
+          "ru": "Мы надеемся, что всё наладится."
+        }
+      ]
+    },
+    {
+      "id": "b1-d56-04",
+      "en": "uncertain",
+      "ru": [
+        "неуверенный",
+        "неопределённый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The future is uncertain.",
+          "ru": "Будущее неопределённо."
+        }
+      ]
+    },
+    {
+      "id": "b1-d56-05",
+      "en": "fear",
+      "ru": [
+        "страх",
+        "бояться"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She has a fear of flying.",
+          "ru": "Она боится летать."
+        }
+      ]
+    },
+    {
+      "id": "b1-d56-06",
+      "en": "worry",
+      "ru": [
+        "беспокоиться"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Don't worry, be happy.",
+          "ru": "Не волнуйся, будь счастлив."
+        }
+      ]
+    },
+    {
+      "id": "b1-d56-07",
+      "en": "thrilled",
+      "ru": [
+        "в восторге"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I was thrilled to get the job.",
+          "ru": "Я был в восторге, что получил работу."
+        }
+      ]
+    },
+    {
+      "id": "b1-d56-08",
+      "en": "calm",
+      "ru": [
+        "спокойный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Stay calm and think.",
+          "ru": "Сохраняй спокойствие и думай."
+        }
+      ]
+    },
+    {
+      "id": "b1-d56-09",
+      "en": "nostalgic",
+      "ru": [
+        "ностальгирующий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Old songs make me nostalgic.",
+          "ru": "Старые песни вызывают у меня ностальгию."
+        }
+      ]
+    },
+    {
+      "id": "b1-d56-10",
+      "en": "overwhelmed",
+      "ru": [
+        "ошеломлённый",
+        "перегруженный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I feel overwhelmed by all this work.",
+          "ru": "Я завален всей этой работой."
+        }
+      ]
+    }
+  ]
+}

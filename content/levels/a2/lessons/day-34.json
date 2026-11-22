@@ -1,0 +1,151 @@
+{
+  "id": "a2-d34",
+  "level": "A2",
+  "day": 34,
+  "island": 4,
+  "title": "Around the world",
+  "topic": "countries",
+  "words": [
+    {
+      "id": "a2-d34-01",
+      "en": "foreign",
+      "ru": [
+        "иностранный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Do you speak any foreign languages?",
+          "ru": "Ты говоришь на иностранных языках?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d34-02",
+      "en": "capital",
+      "ru": [
+        "столица"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Paris is the capital of France.",
+          "ru": "Париж — столица Франции."
+        }
+      ]
+    },
+    {
+      "id": "a2-d34-03",
+      "en": "border",
+      "ru": [
+        "граница"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We crossed the border at night.",
+          "ru": "Мы пересекли границу ночью."
+        }
+      ]
+    },
+    {
+      "id": "a2-d34-04",
+      "en": "flag",
+      "ru": [
+        "флаг"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The flag is red and white.",
+          "ru": "Флаг красно-белый."
+        }
+      ]
+    },
+    {
+      "id": "a2-d34-05",
+      "en": "nationality",
+      "ru": [
+        "гражданство",
+        "национальность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What is your nationality?",
+          "ru": "Какое у тебя гражданство?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d34-06",
+      "en": "accent",
+      "ru": [
+        "акцент"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She speaks English with a French accent.",
+          "ru": "Она говорит по-английски с французским акцентом."
+        }
+      ]
+    },
+    {
+      "id": "a2-d34-07",
+      "en": "north",
+      "ru": [
+        "север"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "They live in the north of England.",
+          "ru": "Они живут на севере Англии."
+        }
+      ]
+    },
+    {
+      "id": "a2-d34-08",
+      "en": "south",
+      "ru": [
+        "юг"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Many birds fly south in winter.",
+          "ru": "Зимой многие птицы улетают на юг."
+        }
+      ]
+    },
+    {
+      "id": "a2-d34-09",
+      "en": "east",
+      "ru": [
+        "восток"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The sun rises in the east.",
+          "ru": "Солнце встаёт на востоке."
+        }
+      ]
+    },
+    {
+      "id": "a2-d34-10",
+      "en": "west",
+      "ru": [
+        "запад"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The sun sets in the west.",
+          "ru": "Солнце садится на западе."
+        }
+      ]
+    }
+  ]
+}

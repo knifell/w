@@ -1,0 +1,153 @@
+{
+  "id": "a2-d41",
+  "level": "A2",
+  "day": 41,
+  "island": 5,
+  "title": "What is it made of?",
+  "topic": "materials",
+  "words": [
+    {
+      "id": "a2-d41-01",
+      "en": "wood",
+      "ru": [
+        "дерево",
+        "древесина"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The table is made of wood.",
+          "ru": "Стол сделан из дерева."
+        }
+      ]
+    },
+    {
+      "id": "a2-d41-02",
+      "en": "metal",
+      "ru": [
+        "металл"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This chair is made of metal.",
+          "ru": "Этот стул металлический."
+        }
+      ]
+    },
+    {
+      "id": "a2-d41-03",
+      "en": "glass",
+      "ru": [
+        "стекло",
+        "стакан"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The bottle is made of glass.",
+          "ru": "Бутылка сделана из стекла."
+        }
+      ]
+    },
+    {
+      "id": "a2-d41-04",
+      "en": "cotton",
+      "ru": [
+        "хлопок"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This shirt is made of cotton.",
+          "ru": "Эта рубашка из хлопка."
+        }
+      ]
+    },
+    {
+      "id": "a2-d41-05",
+      "en": "wool",
+      "ru": [
+        "шерсть"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My grandmother knits with wool.",
+          "ru": "Бабушка вяжет из шерсти."
+        }
+      ]
+    },
+    {
+      "id": "a2-d41-06",
+      "en": "leather",
+      "ru": [
+        "кожа",
+        "кожаный"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I bought a leather bag.",
+          "ru": "Я купил кожаную сумку."
+        }
+      ]
+    },
+    {
+      "id": "a2-d41-07",
+      "en": "stone",
+      "ru": [
+        "камень"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The old house is made of stone.",
+          "ru": "Старый дом построен из камня."
+        }
+      ]
+    },
+    {
+      "id": "a2-d41-08",
+      "en": "gold",
+      "ru": [
+        "золото"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Her ring is made of gold.",
+          "ru": "Её кольцо из золота."
+        }
+      ]
+    },
+    {
+      "id": "a2-d41-09",
+      "en": "silver",
+      "ru": [
+        "серебро"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He won a silver medal.",
+          "ru": "Он выиграл серебряную медаль."
+        }
+      ]
+    },
+    {
+      "id": "a2-d41-10",
+      "en": "made of",
+      "ru": [
+        "сделанный из"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "What is this toy made of?",
+          "ru": "Из чего сделана эта игрушка?"
+        }
+      ]
+    }
+  ]
+}

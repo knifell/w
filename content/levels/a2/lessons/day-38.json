@@ -1,0 +1,151 @@
+{
+  "id": "a2-d38",
+  "level": "A2",
+  "day": 38,
+  "island": 4,
+  "title": "Let's talk",
+  "topic": "conversation",
+  "words": [
+    {
+      "id": "a2-d38-01",
+      "en": "repeat",
+      "ru": [
+        "повторять"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Could you repeat that, please?",
+          "ru": "Не могли бы вы повторить?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d38-02",
+      "en": "mean",
+      "ru": [
+        "значить",
+        "иметь в виду"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "What does this word mean?",
+          "ru": "Что значит это слово?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d38-03",
+      "en": "spell",
+      "ru": [
+        "писать по буквам"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "How do you spell your name?",
+          "ru": "Как пишется твоё имя?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d38-04",
+      "en": "pronounce",
+      "ru": [
+        "произносить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "How do you pronounce this word?",
+          "ru": "Как произносится это слово?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d38-05",
+      "en": "conversation",
+      "ru": [
+        "разговор"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We had a long conversation.",
+          "ru": "У нас был долгий разговор."
+        }
+      ]
+    },
+    {
+      "id": "a2-d38-06",
+      "en": "interrupt",
+      "ru": [
+        "перебивать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Sorry to interrupt.",
+          "ru": "Извините, что перебиваю."
+        }
+      ]
+    },
+    {
+      "id": "a2-d38-07",
+      "en": "shout",
+      "ru": [
+        "кричать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Please don't shout.",
+          "ru": "Пожалуйста, не кричи."
+        }
+      ]
+    },
+    {
+      "id": "a2-d38-08",
+      "en": "describe",
+      "ru": [
+        "описывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Can you describe the man?",
+          "ru": "Можешь описать этого мужчину?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d38-09",
+      "en": "reply",
+      "ru": [
+        "отвечать на сообщение"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "He didn't reply to my message.",
+          "ru": "Он не ответил на моё сообщение."
+        }
+      ]
+    },
+    {
+      "id": "a2-d38-10",
+      "en": "loudly",
+      "ru": [
+        "громко"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Please speak more loudly.",
+          "ru": "Пожалуйста, говорите громче."
+        }
+      ]
+    }
+  ]
+}

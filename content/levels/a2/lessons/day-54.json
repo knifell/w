@@ -1,0 +1,150 @@
+{
+  "id": "a2-d54",
+  "level": "A2",
+  "day": 54,
+  "island": 6,
+  "title": "Kings and castles",
+  "topic": "history",
+  "words": [
+    {
+      "id": "a2-d54-01",
+      "en": "history",
+      "ru": [
+        "история"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I love history.",
+          "ru": "Я люблю историю."
+        }
+      ]
+    },
+    {
+      "id": "a2-d54-02",
+      "en": "king",
+      "ru": [
+        "король"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The king lived in a big castle.",
+          "ru": "Король жил в большом замке."
+        }
+      ]
+    },
+    {
+      "id": "a2-d54-03",
+      "en": "queen",
+      "ru": [
+        "королева"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The queen waved to the people.",
+          "ru": "Королева помахала людям."
+        }
+      ]
+    },
+    {
+      "id": "a2-d54-04",
+      "en": "castle",
+      "ru": [
+        "замок"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We visited a castle in Scotland.",
+          "ru": "Мы побывали в замке в Шотландии."
+        }
+      ]
+    },
+    {
+      "id": "a2-d54-05",
+      "en": "war",
+      "ru": [
+        "война"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The war lasted four years.",
+          "ru": "Война длилась четыре года."
+        }
+      ]
+    },
+    {
+      "id": "a2-d54-06",
+      "en": "peace",
+      "ru": [
+        "мир"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "People want peace.",
+          "ru": "Люди хотят мира."
+        }
+      ]
+    },
+    {
+      "id": "a2-d54-07",
+      "en": "soldier",
+      "ru": [
+        "солдат"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The soldier came home after the war.",
+          "ru": "Солдат вернулся домой после войны."
+        }
+      ]
+    },
+    {
+      "id": "a2-d54-08",
+      "en": "army",
+      "ru": [
+        "армия"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "His grandfather was in the army.",
+          "ru": "Его дедушка служил в армии."
+        }
+      ]
+    },
+    {
+      "id": "a2-d54-09",
+      "en": "prince",
+      "ru": [
+        "принц"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The prince rode a white horse.",
+          "ru": "Принц ехал на белом коне."
+        }
+      ]
+    },
+    {
+      "id": "a2-d54-10",
+      "en": "princess",
+      "ru": [
+        "принцесса"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The princess lived in a tower.",
+          "ru": "Принцесса жила в башне."
+        }
+      ]
+    }
+  ]
+}

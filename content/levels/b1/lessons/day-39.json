@@ -1,0 +1,151 @@
+{
+  "id": "b1-d39",
+  "level": "B1",
+  "day": 39,
+  "island": 4,
+  "title": "Life online",
+  "topic": "digital life",
+  "words": [
+    {
+      "id": "b1-d39-01",
+      "en": "social media",
+      "ru": [
+        "соцсети"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She spends hours on social media.",
+          "ru": "Она проводит часы в соцсетях."
+        }
+      ]
+    },
+    {
+      "id": "b1-d39-02",
+      "en": "privacy",
+      "ru": [
+        "конфиденциальность",
+        "частная жизнь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Protect your privacy online.",
+          "ru": "Защищай свою конфиденциальность в интернете."
+        }
+      ]
+    },
+    {
+      "id": "b1-d39-03",
+      "en": "artificial intelligence",
+      "ru": [
+        "искусственный интеллект"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Artificial intelligence is changing the world.",
+          "ru": "Искусственный интеллект меняет мир."
+        }
+      ]
+    },
+    {
+      "id": "b1-d39-04",
+      "en": "robot",
+      "ru": [
+        "робот"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A robot cleans our floor.",
+          "ru": "Наш пол моет робот."
+        }
+      ]
+    },
+    {
+      "id": "b1-d39-05",
+      "en": "data",
+      "ru": [
+        "данные"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The app collects your data.",
+          "ru": "Приложение собирает ваши данные."
+        }
+      ]
+    },
+    {
+      "id": "b1-d39-06",
+      "en": "security",
+      "ru": [
+        "безопасность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Online security is very important.",
+          "ru": "Безопасность в интернете очень важна."
+        }
+      ]
+    },
+    {
+      "id": "b1-d39-07",
+      "en": "hacker",
+      "ru": [
+        "хакер"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "A hacker stole the passwords.",
+          "ru": "Хакер украл пароли."
+        }
+      ]
+    },
+    {
+      "id": "b1-d39-08",
+      "en": "digital",
+      "ru": [
+        "цифровой"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "We live in a digital world.",
+          "ru": "Мы живём в цифровом мире."
+        }
+      ]
+    },
+    {
+      "id": "b1-d39-09",
+      "en": "virtual",
+      "ru": [
+        "виртуальный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He showed us a virtual tour of the house.",
+          "ru": "Он показал нам виртуальный тур по дому."
+        }
+      ]
+    },
+    {
+      "id": "b1-d39-10",
+      "en": "replace",
+      "ru": [
+        "заменять"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Will robots replace teachers?",
+          "ru": "Заменят ли роботы учителей?"
+        }
+      ]
+    }
+  ]
+}

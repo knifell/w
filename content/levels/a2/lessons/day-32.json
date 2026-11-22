@@ -1,0 +1,154 @@
+{
+  "id": "a2-d32",
+  "level": "A2",
+  "day": 32,
+  "island": 4,
+  "title": "What do they look like?",
+  "topic": "appearance",
+  "words": [
+    {
+      "id": "a2-d32-01",
+      "en": "tall",
+      "ru": [
+        "высокий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "My brother is very tall.",
+          "ru": "Мой брат очень высокий."
+        }
+      ]
+    },
+    {
+      "id": "a2-d32-02",
+      "en": "short",
+      "ru": [
+        "невысокий",
+        "короткий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She has short hair.",
+          "ru": "У неё короткие волосы."
+        }
+      ]
+    },
+    {
+      "id": "a2-d32-03",
+      "en": "slim",
+      "ru": [
+        "стройный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He is slim and sporty.",
+          "ru": "Он стройный и спортивный."
+        }
+      ]
+    },
+    {
+      "id": "a2-d32-04",
+      "en": "beard",
+      "ru": [
+        "борода"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My dad has a grey beard.",
+          "ru": "У моего папы седая борода."
+        }
+      ]
+    },
+    {
+      "id": "a2-d32-05",
+      "en": "curly",
+      "ru": [
+        "кудрявый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The baby has curly hair.",
+          "ru": "У малыша кудрявые волосы."
+        }
+      ]
+    },
+    {
+      "id": "a2-d32-06",
+      "en": "blonde",
+      "ru": [
+        "светловолосый",
+        "блондинка"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Her sister is blonde.",
+          "ru": "Её сестра — блондинка."
+        }
+      ]
+    },
+    {
+      "id": "a2-d32-07",
+      "en": "glasses",
+      "ru": [
+        "очки"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I need glasses for reading.",
+          "ru": "Мне нужны очки для чтения."
+        }
+      ]
+    },
+    {
+      "id": "a2-d32-08",
+      "en": "pretty",
+      "ru": [
+        "симпатичный",
+        "хорошенький"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "What a pretty garden!",
+          "ru": "Какой симпатичный сад!"
+        }
+      ]
+    },
+    {
+      "id": "a2-d32-09",
+      "en": "handsome",
+      "ru": [
+        "красивый",
+        "привлекательный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He is a handsome young man.",
+          "ru": "Он красивый молодой человек."
+        }
+      ]
+    },
+    {
+      "id": "a2-d32-10",
+      "en": "look like",
+      "ru": [
+        "быть похожим на"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "You look like your mother.",
+          "ru": "Ты похож на маму."
+        }
+      ]
+    }
+  ]
+}

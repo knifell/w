@@ -1,0 +1,150 @@
+{
+  "id": "a2-d49",
+  "level": "A2",
+  "day": 49,
+  "island": 5,
+  "title": "Out shopping",
+  "topic": "shopping",
+  "words": [
+    {
+      "id": "a2-d49-01",
+      "en": "shopping centre",
+      "ru": [
+        "торговый центр"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Let's meet at the shopping centre.",
+          "ru": "Давай встретимся в торговом центре."
+        }
+      ]
+    },
+    {
+      "id": "a2-d49-02",
+      "en": "return",
+      "ru": [
+        "возвращать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I want to return these shoes.",
+          "ru": "Я хочу вернуть эти туфли."
+        }
+      ]
+    },
+    {
+      "id": "a2-d49-03",
+      "en": "sold out",
+      "ru": [
+        "распроданный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The tickets are sold out.",
+          "ru": "Билеты распроданы."
+        }
+      ]
+    },
+    {
+      "id": "a2-d49-04",
+      "en": "queue",
+      "ru": [
+        "очередь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There was a long queue at the shop.",
+          "ru": "В магазине была длинная очередь."
+        }
+      ]
+    },
+    {
+      "id": "a2-d49-05",
+      "en": "trolley",
+      "ru": [
+        "тележка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Get a trolley, we need a lot of things.",
+          "ru": "Возьми тележку, нам нужно много всего."
+        }
+      ]
+    },
+    {
+      "id": "a2-d49-06",
+      "en": "checkout",
+      "ru": [
+        "касса"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Pay at the checkout.",
+          "ru": "Оплатите на кассе."
+        }
+      ]
+    },
+    {
+      "id": "a2-d49-07",
+      "en": "department store",
+      "ru": [
+        "универмаг"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I bought a coat in a department store.",
+          "ru": "Я купил пальто в универмаге."
+        }
+      ]
+    },
+    {
+      "id": "a2-d49-08",
+      "en": "cashier",
+      "ru": [
+        "кассир"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The cashier gave me a receipt.",
+          "ru": "Кассир дал мне чек."
+        }
+      ]
+    },
+    {
+      "id": "a2-d49-09",
+      "en": "shop assistant",
+      "ru": [
+        "продавец-консультант"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Ask the shop assistant for help.",
+          "ru": "Попроси помощи у продавца-консультанта."
+        }
+      ]
+    },
+    {
+      "id": "a2-d49-10",
+      "en": "shopping list",
+      "ru": [
+        "список покупок"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Don't forget the shopping list.",
+          "ru": "Не забудь список покупок."
+        }
+      ]
+    }
+  ]
+}

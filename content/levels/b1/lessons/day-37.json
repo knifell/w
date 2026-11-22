@@ -1,0 +1,159 @@
+{
+  "id": "b1-d37",
+  "level": "B1",
+  "day": 37,
+  "island": 4,
+  "title": "City or country?",
+  "topic": "places to live",
+  "words": [
+    {
+      "id": "b1-d37-01",
+      "en": "rural",
+      "ru": [
+        "сельский"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "They moved to a rural area.",
+          "ru": "Они переехали в сельскую местность."
+        }
+      ]
+    },
+    {
+      "id": "b1-d37-02",
+      "en": "suburb",
+      "ru": [
+        "пригород"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We live in a suburb of London.",
+          "ru": "Мы живём в пригороде Лондона."
+        }
+      ]
+    },
+    {
+      "id": "b1-d37-03",
+      "en": "housing",
+      "ru": [
+        "жильё",
+        "жилищный"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Housing is expensive in big cities.",
+          "ru": "В больших городах жильё дорогое."
+        }
+      ]
+    },
+    {
+      "id": "b1-d37-04",
+      "en": "public transport",
+      "ru": [
+        "общественный транспорт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I use public transport every day.",
+          "ru": "Я каждый день пользуюсь общественным транспортом."
+        }
+      ]
+    },
+    {
+      "id": "b1-d37-05",
+      "en": "parking",
+      "ru": [
+        "парковка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Parking is difficult in the centre.",
+          "ru": "В центре трудно припарковаться."
+        }
+      ]
+    },
+    {
+      "id": "b1-d37-06",
+      "en": "skyscraper",
+      "ru": [
+        "небоскрёб"
+      ],
+      "pos": "noun",
+      "forms": [
+        "skyscrapers"
+      ],
+      "examples": [
+        {
+          "en": "New York is famous for its skyscrapers.",
+          "ru": "Нью-Йорк знаменит небоскрёбами."
+        }
+      ]
+    },
+    {
+      "id": "b1-d37-07",
+      "en": "outskirts",
+      "ru": [
+        "окраина"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "They live on the outskirts of the city.",
+          "ru": "Они живут на окраине города."
+        }
+      ]
+    },
+    {
+      "id": "b1-d37-08",
+      "en": "resident",
+      "ru": [
+        "житель"
+      ],
+      "pos": "noun",
+      "forms": [
+        "residents"
+      ],
+      "examples": [
+        {
+          "en": "Local residents complained about the noise.",
+          "ru": "Местные жители жаловались на шум."
+        }
+      ]
+    },
+    {
+      "id": "b1-d37-09",
+      "en": "council",
+      "ru": [
+        "городской совет",
+        "муниципалитет"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The council built a new park.",
+          "ru": "Городской совет построил новый парк."
+        }
+      ]
+    },
+    {
+      "id": "b1-d37-10",
+      "en": "development",
+      "ru": [
+        "развитие",
+        "застройка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The development of the city was fast.",
+          "ru": "Город развивался быстро."
+        }
+      ]
+    }
+  ]
+}

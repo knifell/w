@@ -1,0 +1,152 @@
+{
+  "id": "a2-d44",
+  "level": "A2",
+  "day": 44,
+  "island": 5,
+  "title": "Housework",
+  "topic": "housework",
+  "words": [
+    {
+      "id": "a2-d44-01",
+      "en": "tidy",
+      "ru": [
+        "убирать",
+        "прибирать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Tidy your room, please.",
+          "ru": "Прибери свою комнату, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a2-d44-02",
+      "en": "wash up",
+      "ru": [
+        "мыть посуду"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I'll wash up after dinner.",
+          "ru": "Я помою посуду после ужина."
+        }
+      ]
+    },
+    {
+      "id": "a2-d44-03",
+      "en": "vacuum",
+      "ru": [
+        "пылесосить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I vacuum the carpet on Saturdays.",
+          "ru": "По субботам я пылесошу ковёр."
+        }
+      ]
+    },
+    {
+      "id": "a2-d44-04",
+      "en": "iron",
+      "ru": [
+        "гладить"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Can you iron my shirt?",
+          "ru": "Можешь погладить мою рубашку?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d44-05",
+      "en": "sweep",
+      "ru": [
+        "подметать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Sweep the kitchen floor.",
+          "ru": "Подмети пол на кухне."
+        }
+      ]
+    },
+    {
+      "id": "a2-d44-06",
+      "en": "laundry",
+      "ru": [
+        "стирка",
+        "бельё"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I do the laundry on Sundays.",
+          "ru": "По воскресеньям я стираю."
+        }
+      ]
+    },
+    {
+      "id": "a2-d44-07",
+      "en": "rubbish",
+      "ru": [
+        "мусор"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Take out the rubbish, please.",
+          "ru": "Вынеси мусор, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "a2-d44-08",
+      "en": "mess",
+      "ru": [
+        "беспорядок"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What a mess!",
+          "ru": "Какой беспорядок!"
+        }
+      ]
+    },
+    {
+      "id": "a2-d44-09",
+      "en": "housework",
+      "ru": [
+        "работа по дому"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We share the housework.",
+          "ru": "Мы делим домашние дела."
+        }
+      ]
+    },
+    {
+      "id": "a2-d44-10",
+      "en": "dust",
+      "ru": [
+        "пыль"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There is dust on the shelf.",
+          "ru": "На полке пыль."
+        }
+      ]
+    }
+  ]
+}

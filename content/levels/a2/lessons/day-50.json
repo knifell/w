@@ -1,0 +1,158 @@
+{
+  "id": "a2-d50",
+  "level": "A2",
+  "day": 50,
+  "island": 5,
+  "title": "When things go wrong",
+  "topic": "problems",
+  "words": [
+    {
+      "id": "a2-d50-01",
+      "en": "broken",
+      "ru": [
+        "сломанный",
+        "разбитый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "My watch is broken.",
+          "ru": "Мои часы сломаны."
+        }
+      ]
+    },
+    {
+      "id": "a2-d50-02",
+      "en": "stuck",
+      "ru": [
+        "застрявший"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The door is stuck.",
+          "ru": "Дверь заело."
+        }
+      ]
+    },
+    {
+      "id": "a2-d50-03",
+      "en": "missing",
+      "ru": [
+        "пропавший",
+        "недостающий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "One of my socks is missing.",
+          "ru": "Один мой носок пропал."
+        }
+      ]
+    },
+    {
+      "id": "a2-d50-04",
+      "en": "crack",
+      "ru": [
+        "трещина"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There's a crack in the window.",
+          "ru": "На окне трещина."
+        }
+      ]
+    },
+    {
+      "id": "a2-d50-05",
+      "en": "leak",
+      "ru": [
+        "протекать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "leaks"
+      ],
+      "examples": [
+        {
+          "en": "The roof leaks when it rains.",
+          "ru": "Крыша протекает, когда идёт дождь."
+        }
+      ]
+    },
+    {
+      "id": "a2-d50-06",
+      "en": "noise",
+      "ru": [
+        "шум"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What's that noise?",
+          "ru": "Что это за шум?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d50-07",
+      "en": "smell",
+      "ru": [
+        "запах",
+        "пахнуть"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "What's that smell?",
+          "ru": "Что это за запах?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d50-08",
+      "en": "burn",
+      "ru": [
+        "гореть",
+        "сжигать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Don't burn the toast!",
+          "ru": "Не сожги тосты!"
+        }
+      ]
+    },
+    {
+      "id": "a2-d50-09",
+      "en": "scratch",
+      "ru": [
+        "царапина"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There's a scratch on my phone.",
+          "ru": "На моём телефоне царапина."
+        }
+      ]
+    },
+    {
+      "id": "a2-d50-10",
+      "en": "mend",
+      "ru": [
+        "чинить",
+        "штопать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Can you mend my jeans?",
+          "ru": "Можешь зашить мои джинсы?"
+        }
+      ]
+    }
+  ]
+}

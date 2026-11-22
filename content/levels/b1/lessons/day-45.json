@@ -1,0 +1,165 @@
+{
+  "id": "b1-d45",
+  "level": "B1",
+  "day": 45,
+  "island": 5,
+  "title": "Natural disasters",
+  "topic": "disasters",
+  "words": [
+    {
+      "id": "b1-d45-01",
+      "en": "disaster",
+      "ru": [
+        "катастрофа",
+        "бедствие"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The flood was a disaster for the town.",
+          "ru": "Наводнение стало бедствием для города."
+        }
+      ]
+    },
+    {
+      "id": "b1-d45-02",
+      "en": "volcano",
+      "ru": [
+        "вулкан"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The volcano erupted last year.",
+          "ru": "Вулкан извергался в прошлом году."
+        }
+      ]
+    },
+    {
+      "id": "b1-d45-03",
+      "en": "drought",
+      "ru": [
+        "засуха"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The drought lasted three months.",
+          "ru": "Засуха длилась три месяца."
+        }
+      ]
+    },
+    {
+      "id": "b1-d45-04",
+      "en": "hurricane",
+      "ru": [
+        "ураган"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The hurricane hit the coast.",
+          "ru": "Ураган обрушился на побережье."
+        }
+      ]
+    },
+    {
+      "id": "b1-d45-05",
+      "en": "survive",
+      "ru": [
+        "выживать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "survived"
+      ],
+      "examples": [
+        {
+          "en": "Everyone survived the crash.",
+          "ru": "Все выжили в аварии."
+        }
+      ]
+    },
+    {
+      "id": "b1-d45-06",
+      "en": "survivor",
+      "ru": [
+        "выживший"
+      ],
+      "pos": "noun",
+      "forms": [
+        "survivors"
+      ],
+      "examples": [
+        {
+          "en": "Rescuers are looking for survivors.",
+          "ru": "Спасатели ищут выживших."
+        }
+      ]
+    },
+    {
+      "id": "b1-d45-07",
+      "en": "destroy",
+      "ru": [
+        "разрушать",
+        "уничтожать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "destroyed"
+      ],
+      "examples": [
+        {
+          "en": "The fire destroyed the building.",
+          "ru": "Пожар уничтожил здание."
+        }
+      ]
+    },
+    {
+      "id": "b1-d45-08",
+      "en": "collapse",
+      "ru": [
+        "обрушиваться"
+      ],
+      "pos": "verb",
+      "forms": [
+        "collapsed"
+      ],
+      "examples": [
+        {
+          "en": "The bridge collapsed.",
+          "ru": "Мост обрушился."
+        }
+      ]
+    },
+    {
+      "id": "b1-d45-09",
+      "en": "shelter",
+      "ru": [
+        "укрытие",
+        "приют"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We found shelter from the rain.",
+          "ru": "Мы нашли укрытие от дождя."
+        }
+      ]
+    },
+    {
+      "id": "b1-d45-10",
+      "en": "aid",
+      "ru": [
+        "помощь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The country needs international aid.",
+          "ru": "Стране нужна международная помощь."
+        }
+      ]
+    }
+  ]
+}

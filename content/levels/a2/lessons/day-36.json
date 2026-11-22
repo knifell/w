@@ -1,0 +1,151 @@
+{
+  "id": "a2-d36",
+  "level": "A2",
+  "day": 36,
+  "island": 4,
+  "title": "The body",
+  "topic": "body",
+  "words": [
+    {
+      "id": "a2-d36-01",
+      "en": "shoulder",
+      "ru": [
+        "плечо"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My shoulder hurts.",
+          "ru": "У меня болит плечо."
+        }
+      ]
+    },
+    {
+      "id": "a2-d36-02",
+      "en": "knee",
+      "ru": [
+        "колено"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He fell and hurt his knee.",
+          "ru": "Он упал и ушиб колено."
+        }
+      ]
+    },
+    {
+      "id": "a2-d36-03",
+      "en": "neck",
+      "ru": [
+        "шея"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "She wore a scarf around her neck.",
+          "ru": "Она носила шарф на шее."
+        }
+      ]
+    },
+    {
+      "id": "a2-d36-04",
+      "en": "back",
+      "ru": [
+        "спина"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I have a pain in my back.",
+          "ru": "У меня болит спина."
+        }
+      ]
+    },
+    {
+      "id": "a2-d36-05",
+      "en": "stomach",
+      "ru": [
+        "живот",
+        "желудок"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "My stomach hurts.",
+          "ru": "У меня болит живот."
+        }
+      ]
+    },
+    {
+      "id": "a2-d36-06",
+      "en": "finger",
+      "ru": [
+        "палец"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I cut my finger.",
+          "ru": "Я порезал палец."
+        }
+      ]
+    },
+    {
+      "id": "a2-d36-07",
+      "en": "tooth",
+      "ru": [
+        "зуб"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I have a bad tooth.",
+          "ru": "У меня больной зуб."
+        }
+      ]
+    },
+    {
+      "id": "a2-d36-08",
+      "en": "skin",
+      "ru": [
+        "кожа"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Use cream to protect your skin.",
+          "ru": "Пользуйся кремом, чтобы защитить кожу."
+        }
+      ]
+    },
+    {
+      "id": "a2-d36-09",
+      "en": "heart",
+      "ru": [
+        "сердце"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Your heart beats faster when you run.",
+          "ru": "Когда бежишь, сердце бьётся быстрее."
+        }
+      ]
+    },
+    {
+      "id": "a2-d36-10",
+      "en": "blood",
+      "ru": [
+        "кровь"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There was blood on his shirt.",
+          "ru": "На его рубашке была кровь."
+        }
+      ]
+    }
+  ]
+}

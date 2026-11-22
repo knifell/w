@@ -1,0 +1,160 @@
+{
+  "id": "a2-d39",
+  "level": "A2",
+  "day": 39,
+  "island": 4,
+  "title": "Party time",
+  "topic": "party",
+  "words": [
+    {
+      "id": "a2-d39-01",
+      "en": "balloon",
+      "ru": [
+        "воздушный шарик"
+      ],
+      "pos": "noun",
+      "forms": [
+        "balloons"
+      ],
+      "examples": [
+        {
+          "en": "The kids played with balloons.",
+          "ru": "Дети играли с воздушными шариками."
+        }
+      ]
+    },
+    {
+      "id": "a2-d39-02",
+      "en": "candle",
+      "ru": [
+        "свеча"
+      ],
+      "pos": "noun",
+      "forms": [
+        "candles"
+      ],
+      "examples": [
+        {
+          "en": "Blow out the candles!",
+          "ru": "Задуй свечи!"
+        }
+      ]
+    },
+    {
+      "id": "a2-d39-03",
+      "en": "costume",
+      "ru": [
+        "костюм"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He wore a pirate costume.",
+          "ru": "Он был в костюме пирата."
+        }
+      ]
+    },
+    {
+      "id": "a2-d39-04",
+      "en": "snack",
+      "ru": [
+        "перекус"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We had a snack before dinner.",
+          "ru": "Перед ужином мы перекусили."
+        }
+      ]
+    },
+    {
+      "id": "a2-d39-05",
+      "en": "fireworks",
+      "ru": [
+        "фейерверк"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We watched the fireworks at midnight.",
+          "ru": "В полночь мы смотрели фейерверк."
+        }
+      ]
+    },
+    {
+      "id": "a2-d39-06",
+      "en": "cheers",
+      "ru": [
+        "будем здоровы",
+        "ура"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "Cheers! Happy New Year!",
+          "ru": "Будем! С Новым годом!"
+        }
+      ]
+    },
+    {
+      "id": "a2-d39-07",
+      "en": "surprise",
+      "ru": [
+        "сюрприз"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We planned a surprise for her.",
+          "ru": "Мы приготовили для неё сюрприз."
+        }
+      ]
+    },
+    {
+      "id": "a2-d39-08",
+      "en": "song",
+      "ru": [
+        "песня"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This is my favourite song.",
+          "ru": "Это моя любимая песня."
+        }
+      ]
+    },
+    {
+      "id": "a2-d39-09",
+      "en": "sing",
+      "ru": [
+        "петь"
+      ],
+      "pos": "verb",
+      "forms": [
+        "sings"
+      ],
+      "examples": [
+        {
+          "en": "She sings in a band.",
+          "ru": "Она поёт в группе."
+        }
+      ]
+    },
+    {
+      "id": "a2-d39-10",
+      "en": "loud",
+      "ru": [
+        "громкий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The music was too loud.",
+          "ru": "Музыка была слишком громкой."
+        }
+      ]
+    }
+  ]
+}

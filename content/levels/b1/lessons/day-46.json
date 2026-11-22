@@ -1,0 +1,158 @@
+{
+  "id": "b1-d46",
+  "level": "B1",
+  "day": 46,
+  "island": 5,
+  "title": "In the archive",
+  "topic": "documents",
+  "words": [
+    {
+      "id": "b1-d46-01",
+      "en": "document",
+      "ru": [
+        "документ"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Sign this document, please.",
+          "ru": "Подпишите этот документ, пожалуйста."
+        }
+      ]
+    },
+    {
+      "id": "b1-d46-02",
+      "en": "record",
+      "ru": [
+        "запись",
+        "записывать"
+      ],
+      "pos": "noun",
+      "forms": [
+        "records"
+      ],
+      "examples": [
+        {
+          "en": "We keep records of all sales.",
+          "ru": "Мы ведём учёт всех продаж."
+        }
+      ]
+    },
+    {
+      "id": "b1-d46-03",
+      "en": "archive",
+      "ru": [
+        "архив"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The old letters are in the archive.",
+          "ru": "Старые письма хранятся в архиве."
+        }
+      ]
+    },
+    {
+      "id": "b1-d46-04",
+      "en": "original",
+      "ru": [
+        "оригинал",
+        "оригинальный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Is this the original painting?",
+          "ru": "Это оригинал картины?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d46-05",
+      "en": "signature",
+      "ru": [
+        "подпись"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We need your signature here.",
+          "ru": "Нам нужна здесь ваша подпись."
+        }
+      ]
+    },
+    {
+      "id": "b1-d46-06",
+      "en": "form",
+      "ru": [
+        "бланк",
+        "анкета"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Fill in this form.",
+          "ru": "Заполните этот бланк."
+        }
+      ]
+    },
+    {
+      "id": "b1-d46-07",
+      "en": "sign",
+      "ru": [
+        "подписывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Please sign here.",
+          "ru": "Пожалуйста, распишитесь здесь."
+        }
+      ]
+    },
+    {
+      "id": "b1-d46-08",
+      "en": "version",
+      "ru": [
+        "версия"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This is the latest version of the app.",
+          "ru": "Это последняя версия приложения."
+        }
+      ]
+    },
+    {
+      "id": "b1-d46-09",
+      "en": "copy",
+      "ru": [
+        "копия",
+        "копировать"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Can I have a copy of the contract?",
+          "ru": "Можно копию договора?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d46-10",
+      "en": "detail",
+      "ru": [
+        "деталь",
+        "подробность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Tell me every detail.",
+          "ru": "Расскажи мне всё в подробностях."
+        }
+      ]
+    }
+  ]
+}

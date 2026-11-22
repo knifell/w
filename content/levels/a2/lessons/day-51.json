@@ -1,0 +1,157 @@
+{
+  "id": "a2-d51",
+  "level": "A2",
+  "day": 51,
+  "island": 6,
+  "title": "Once upon a time",
+  "topic": "telling stories",
+  "words": [
+    {
+      "id": "a2-d51-01",
+      "en": "story",
+      "ru": [
+        "история",
+        "рассказ"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Tell me a story.",
+          "ru": "Расскажи мне историю."
+        }
+      ]
+    },
+    {
+      "id": "a2-d51-02",
+      "en": "happen",
+      "ru": [
+        "случаться",
+        "происходить"
+      ],
+      "pos": "verb",
+      "forms": [
+        "happened"
+      ],
+      "examples": [
+        {
+          "en": "What happened next?",
+          "ru": "Что случилось дальше?"
+        }
+      ]
+    },
+    {
+      "id": "a2-d51-03",
+      "en": "suddenly",
+      "ru": [
+        "вдруг",
+        "внезапно"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Suddenly, the lights went out.",
+          "ru": "Вдруг погас свет."
+        }
+      ]
+    },
+    {
+      "id": "a2-d51-04",
+      "en": "finally",
+      "ru": [
+        "наконец"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "We finally arrived home.",
+          "ru": "Мы наконец добрались до дома."
+        }
+      ]
+    },
+    {
+      "id": "a2-d51-05",
+      "en": "at first",
+      "ru": [
+        "сначала"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "At first, I didn't like it.",
+          "ru": "Сначала мне это не понравилось."
+        }
+      ]
+    },
+    {
+      "id": "a2-d51-06",
+      "en": "later",
+      "ru": [
+        "позже"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "I'll call you later.",
+          "ru": "Я позвоню тебе позже."
+        }
+      ]
+    },
+    {
+      "id": "a2-d51-07",
+      "en": "in the end",
+      "ru": [
+        "в конце концов"
+      ],
+      "pos": "phrase",
+      "examples": [
+        {
+          "en": "In the end, everything was fine.",
+          "ru": "В конце концов всё было хорошо."
+        }
+      ]
+    },
+    {
+      "id": "a2-d51-08",
+      "en": "beginning",
+      "ru": [
+        "начало"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I missed the beginning of the film.",
+          "ru": "Я пропустил начало фильма."
+        }
+      ]
+    },
+    {
+      "id": "a2-d51-09",
+      "en": "ending",
+      "ru": [
+        "концовка"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The book has a happy ending.",
+          "ru": "У книги счастливый конец."
+        }
+      ]
+    },
+    {
+      "id": "a2-d51-10",
+      "en": "character",
+      "ru": [
+        "персонаж",
+        "герой"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Who is your favourite character?",
+          "ru": "Кто твой любимый персонаж?"
+        }
+      ]
+    }
+  ]
+}

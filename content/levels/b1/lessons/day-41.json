@@ -1,0 +1,161 @@
+{
+  "id": "b1-d41",
+  "level": "B1",
+  "day": 41,
+  "island": 5,
+  "title": "Breaking news",
+  "topic": "news",
+  "words": [
+    {
+      "id": "b1-d41-01",
+      "en": "announce",
+      "ru": [
+        "объявлять"
+      ],
+      "pos": "verb",
+      "forms": [
+        "announced"
+      ],
+      "examples": [
+        {
+          "en": "They announced the winner.",
+          "ru": "Они объявили победителя."
+        }
+      ]
+    },
+    {
+      "id": "b1-d41-02",
+      "en": "confirm",
+      "ru": [
+        "подтверждать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Please confirm your booking.",
+          "ru": "Пожалуйста, подтвердите бронь."
+        }
+      ]
+    },
+    {
+      "id": "b1-d41-03",
+      "en": "rumour",
+      "ru": [
+        "слух"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "It's just a rumour.",
+          "ru": "Это всего лишь слух."
+        }
+      ]
+    },
+    {
+      "id": "b1-d41-04",
+      "en": "source",
+      "ru": [
+        "источник"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Check the source of the news.",
+          "ru": "Проверь источник новостей."
+        }
+      ]
+    },
+    {
+      "id": "b1-d41-05",
+      "en": "latest",
+      "ru": [
+        "последний",
+        "новейший"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Have you heard the latest news?",
+          "ru": "Ты слышал последние новости?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d41-06",
+      "en": "reveal",
+      "ru": [
+        "раскрывать",
+        "обнаруживать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "revealed"
+      ],
+      "examples": [
+        {
+          "en": "The report revealed the truth.",
+          "ru": "Отчёт раскрыл правду."
+        }
+      ]
+    },
+    {
+      "id": "b1-d41-07",
+      "en": "statement",
+      "ru": [
+        "заявление"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The police made a statement.",
+          "ru": "Полиция сделала заявление."
+        }
+      ]
+    },
+    {
+      "id": "b1-d41-08",
+      "en": "press",
+      "ru": [
+        "пресса"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The press asked many questions.",
+          "ru": "Пресса задала много вопросов."
+        }
+      ]
+    },
+    {
+      "id": "b1-d41-09",
+      "en": "investigate",
+      "ru": [
+        "расследовать"
+      ],
+      "pos": "verb",
+      "forms": [
+        "investigating"
+      ],
+      "examples": [
+        {
+          "en": "The police are investigating the case.",
+          "ru": "Полиция расследует дело."
+        }
+      ]
+    },
+    {
+      "id": "b1-d41-10",
+      "en": "scandal",
+      "ru": [
+        "скандал"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The scandal was in all the papers.",
+          "ru": "Скандал был во всех газетах."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "id": "a2-d46",
+  "level": "A2",
+  "day": 46,
+  "island": 5,
+  "title": "Colours and patterns",
+  "topic": "patterns",
+  "words": [
+    {
+      "id": "a2-d46-01",
+      "en": "striped",
+      "ru": [
+        "полосатый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He wore a striped shirt.",
+          "ru": "Он был в полосатой рубашке."
+        }
+      ]
+    },
+    {
+      "id": "a2-d46-02",
+      "en": "spotted",
+      "ru": [
+        "в горошек",
+        "пятнистый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She has a spotted dress.",
+          "ru": "У неё платье в горошек."
+        }
+      ]
+    },
+    {
+      "id": "a2-d46-03",
+      "en": "dark",
+      "ru": [
+        "тёмный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I prefer dark colours.",
+          "ru": "Я предпочитаю тёмные цвета."
+        }
+      ]
+    },
+    {
+      "id": "a2-d46-04",
+      "en": "bright",
+      "ru": [
+        "яркий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The room is painted in bright yellow.",
+          "ru": "Комната выкрашена в ярко-жёлтый цвет."
+        }
+      ]
+    },
+    {
+      "id": "a2-d46-05",
+      "en": "pale",
+      "ru": [
+        "бледный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "You look pale today.",
+          "ru": "Ты сегодня бледный."
+        }
+      ]
+    },
+    {
+      "id": "a2-d46-06",
+      "en": "colourful",
+      "ru": [
+        "красочный",
+        "разноцветный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "The market is very colourful.",
+          "ru": "Рынок очень красочный."
+        }
+      ]
+    },
+    {
+      "id": "a2-d46-07",
+      "en": "pattern",
+      "ru": [
+        "узор"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "I love the pattern on this carpet.",
+          "ru": "Мне нравится узор на этом ковре."
+        }
+      ]
+    },
+    {
+      "id": "a2-d46-08",
+      "en": "plain",
+      "ru": [
+        "однотонный",
+        "простой"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "I want a plain white T-shirt.",
+          "ru": "Я хочу простую белую футболку."
+        }
+      ]
+    },
+    {
+      "id": "a2-d46-09",
+      "en": "shiny",
+      "ru": [
+        "блестящий"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "He has a shiny new car.",
+          "ru": "У него блестящая новая машина."
+        }
+      ]
+    },
+    {
+      "id": "a2-d46-10",
+      "en": "fabric",
+      "ru": [
+        "ткань"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This fabric is very soft.",
+          "ru": "Эта ткань очень мягкая."
+        }
+      ]
+    }
+  ]
+}

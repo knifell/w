@@ -1,0 +1,157 @@
+{
+  "id": "b1-d51",
+  "level": "B1",
+  "day": 51,
+  "island": 6,
+  "title": "What's next?",
+  "topic": "predictions",
+  "words": [
+    {
+      "id": "b1-d51-01",
+      "en": "predict",
+      "ru": [
+        "предсказывать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Nobody can predict the future.",
+          "ru": "Никто не может предсказать будущее."
+        }
+      ]
+    },
+    {
+      "id": "b1-d51-02",
+      "en": "likely",
+      "ru": [
+        "вероятный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It's likely to rain tomorrow.",
+          "ru": "Завтра, вероятно, будет дождь."
+        }
+      ]
+    },
+    {
+      "id": "b1-d51-03",
+      "en": "unlikely",
+      "ru": [
+        "маловероятный"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "It's unlikely that he'll come.",
+          "ru": "Маловероятно, что он придёт."
+        }
+      ]
+    },
+    {
+      "id": "b1-d51-04",
+      "en": "eventually",
+      "ru": [
+        "в конце концов",
+        "со временем"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Eventually, he found a job.",
+          "ru": "В конце концов он нашёл работу."
+        }
+      ]
+    },
+    {
+      "id": "b1-d51-05",
+      "en": "gradually",
+      "ru": [
+        "постепенно"
+      ],
+      "pos": "adverb",
+      "examples": [
+        {
+          "en": "Things gradually got better.",
+          "ru": "Постепенно всё наладилось."
+        }
+      ]
+    },
+    {
+      "id": "b1-d51-06",
+      "en": "trend",
+      "ru": [
+        "тенденция",
+        "тренд"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This is a new trend in fashion.",
+          "ru": "Это новая тенденция в моде."
+        }
+      ]
+    },
+    {
+      "id": "b1-d51-07",
+      "en": "expect",
+      "ru": [
+        "ожидать"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "I expect him to call soon.",
+          "ru": "Я жду, что он скоро позвонит."
+        }
+      ]
+    },
+    {
+      "id": "b1-d51-08",
+      "en": "certain",
+      "ru": [
+        "уверенный",
+        "определённый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "Are you certain about that?",
+          "ru": "Ты в этом уверен?"
+        }
+      ]
+    },
+    {
+      "id": "b1-d51-09",
+      "en": "possibility",
+      "ru": [
+        "возможность",
+        "вероятность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "There's a possibility of snow.",
+          "ru": "Возможен снег."
+        }
+      ]
+    },
+    {
+      "id": "b1-d51-10",
+      "en": "prospect",
+      "ru": [
+        "перспектива"
+      ],
+      "pos": "noun",
+      "forms": [
+        "prospects"
+      ],
+      "examples": [
+        {
+          "en": "The job has good prospects.",
+          "ru": "У этой работы хорошие перспективы."
+        }
+      ]
+    }
+  ]
+}

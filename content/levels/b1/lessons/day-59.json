@@ -1,0 +1,153 @@
+{
+  "id": "b1-d59",
+  "level": "B1",
+  "day": 59,
+  "island": 6,
+  "title": "Explorers",
+  "topic": "exploration",
+  "words": [
+    {
+      "id": "b1-d59-01",
+      "en": "expedition",
+      "ru": [
+        "экспедиция"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "They went on an expedition to the Arctic.",
+          "ru": "Они отправились в экспедицию в Арктику."
+        }
+      ]
+    },
+    {
+      "id": "b1-d59-02",
+      "en": "explorer",
+      "ru": [
+        "исследователь",
+        "путешественник"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "He was a famous explorer.",
+          "ru": "Он был знаменитым путешественником."
+        }
+      ]
+    },
+    {
+      "id": "b1-d59-03",
+      "en": "navigate",
+      "ru": [
+        "ориентироваться",
+        "прокладывать курс"
+      ],
+      "pos": "verb",
+      "examples": [
+        {
+          "en": "Sailors used the stars to navigate.",
+          "ru": "Моряки ориентировались по звёздам."
+        }
+      ]
+    },
+    {
+      "id": "b1-d59-04",
+      "en": "remote",
+      "ru": [
+        "отдалённый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "They live in a remote village.",
+          "ru": "Они живут в отдалённой деревне."
+        }
+      ]
+    },
+    {
+      "id": "b1-d59-05",
+      "en": "wilderness",
+      "ru": [
+        "дикая местность"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We spent a week in the wilderness.",
+          "ru": "Мы провели неделю в дикой природе."
+        }
+      ]
+    },
+    {
+      "id": "b1-d59-06",
+      "en": "territory",
+      "ru": [
+        "территория"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "This is unknown territory.",
+          "ru": "Это неизведанная территория."
+        }
+      ]
+    },
+    {
+      "id": "b1-d59-07",
+      "en": "continent",
+      "ru": [
+        "континент"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "Africa is a huge continent.",
+          "ru": "Африка — огромный континент."
+        }
+      ]
+    },
+    {
+      "id": "b1-d59-08",
+      "en": "ocean",
+      "ru": [
+        "океан"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "The Pacific is the largest ocean.",
+          "ru": "Тихий океан — самый большой."
+        }
+      ]
+    },
+    {
+      "id": "b1-d59-09",
+      "en": "horizon",
+      "ru": [
+        "горизонт"
+      ],
+      "pos": "noun",
+      "examples": [
+        {
+          "en": "We saw a ship on the horizon.",
+          "ru": "Мы увидели корабль на горизонте."
+        }
+      ]
+    },
+    {
+      "id": "b1-d59-10",
+      "en": "adventurous",
+      "ru": [
+        "любящий приключения",
+        "смелый"
+      ],
+      "pos": "adjective",
+      "examples": [
+        {
+          "en": "She is very adventurous.",
+          "ru": "Она очень любит приключения."
+        }
+      ]
+    }
+  ]
+}

@@ -5,7 +5,7 @@
 //   POST /api/status   {initData}            → покупки игрока, срок подписки, приглашённые друзья
 //   POST /api/invoice  {initData, item}      → ссылка на счёт Telegram Stars (цена — только из каталога)
 //   POST /api/referral {initData, ref}       → новичок пришёл по ссылке друга
-//   POST /bot                                 ← вебхук Telegram (pre_checkout_query, successful_payment, refunded_payment, /start)
+//   POST /bot                                 ← вебхук Telegram (pre_checkout_query, successful_payment, refunded_payment, /paysupport, /terms)
 import shop from '../../content/shop.json';
 import { verifyInitData, type TgUser } from './auth';
 
@@ -190,14 +190,7 @@ export async function handleUpdate(env: Env, update: any) {
       '• Ракушки и Premium нельзя обменять на деньги или передать другому.' + contact });
     return;
   }
-  // 5) /start — кнопка, открывающая игру.
-  if (cmd === '/start' && env.APP_URL) {
-    await tgApi(env, 'sendMessage', {
-      chat_id: msg.chat.id,
-      text: 'Привет! Я Шкипер. Поплыли учить английский 🦀',
-      reply_markup: { inline_keyboard: [[{ text: 'Открыть игру', web_app: { url: env.APP_URL } }]] },
-    });
-  }
+  // /start ничего не отвечает: в боте только мини-приложение (кнопка «Играть» в меню).
 }
 
 export async function setupBot(env: Env, origin: string) {
@@ -206,11 +199,8 @@ export async function setupBot(env: Env, origin: string) {
     url: `${origin}/bot`, secret_token: env.WEBHOOK_SECRET,
     allowed_updates: ['message', 'pre_checkout_query'], drop_pending_updates: true,
   });
-  r.commands = await tgApi(env, 'setMyCommands', { commands: [
-    { command: 'start', description: 'Открыть игру' },
-    { command: 'paysupport', description: 'Помощь с оплатой' },
-    { command: 'terms', description: 'Условия' },
-  ] });
+  // Список команд пустой: /paysupport и /terms работают, но в меню не показываются.
+  r.commands = await tgApi(env, 'deleteMyCommands', {});
   if (env.APP_URL) r.menu = await tgApi(env, 'setChatMenuButton', { menu_button: { type: 'web_app', text: 'Играть', web_app: { url: env.APP_URL } } });
   r.description = await tgApi(env, 'setMyDescription', { description:
     'Остров слов — игра для изучения английского. Каждый день короткий урок: новые слова, задания, повторение по интервалам. Острова от A1 до B2, костёр серии дней, друзья и штампы. Нажмите «Играть»!' });

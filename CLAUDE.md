@@ -51,4 +51,5 @@ Telegram Mini App: игра для изучения английского (ру
 - Сборка: `VITE_API_URL=https://ostrov-slov-api.iklammm5.workers.dev VITE_APP_LINK=https://t.me/finderdsfg3bot/play npm run build`,
   затем `npx wrangler@4 pages deploy dist --project-name ostrov-slov --branch main` (запускать вне папки проекта или указать абсолютный путь к dist).
 - Worker: `cd worker && npx wrangler@4 deploy`. Нужны env `CLOUDFLARE_API_TOKEN` и `CLOUDFLARE_ACCOUNT_ID`.
+- В боте только мини-приложение: /start молчит, список команд пуст; /paysupport и /terms отвечают (правила Stars), но скрыты.
 - Настройка бота: `POST /setup` с заголовком `x-setup-secret: <WEBHOOK_SECRET>` (или те же вызовы Bot API напрямую).

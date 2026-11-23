@@ -6,13 +6,15 @@ compatibility_date = "2026-01-01"
 # KV-хранилище покупок. id появится после: npx wrangler kv namespace create DB
 [[kv_namespaces]]
 binding = "DB"
-id = "ВСТАВЬ_ID_KV"
+id = "082c08dc11304f8eb0719317eaec6464"
+
+account_id = "b2a149cb46f0d882a630afaab0eacbe6"
 
 [vars]
 # Адрес мини-приложения на Cloudflare Pages
 APP_URL = "https://ostrov-slov.pages.dev"
 # Контакт для /paysupport и /terms (например "@твой_ник")
-SUPPORT_CONTACT = ""
+SUPPORT_CONTACT = "@finderdsfg3bot"
 
 # Секреты задаются командами (в файл их не писать!):
 #   npx wrangler secret put BOT_TOKEN

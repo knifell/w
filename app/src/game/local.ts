@@ -31,6 +31,7 @@ export interface LocalState {
   claimed: Record<string, 'ok' | 'refunded'>; // начисленные платежи Stars (по id платежа)
   refRewarded: string[];                   // друзья, за которых уже дан бонус
   refBonusTaken: boolean;                  // подарок за приход по ссылке получен
+  admin: boolean;                          // сервер сказал, что это админ
   paidCoins: number;                       // ракушки, купленные за звёзды (минус возвраты)
 }
 
@@ -40,7 +41,7 @@ export const emptyState = (): LocalState => ({
   energy: ENERGY.max, energyAt: nowMs(), inventory: {}, boosts: {}, done: {}, mem: {},
   streak: { cur: 0, best: 0, last: 0 }, emberWeek: 0, stickers: {}, counters: {},
   trialsToday: { day: 0, n: 0 }, unlocks: {}, storySeen: [], reports: [], typos: {}, updatedAt: 0,
-  premiumUntil: 0, devPremiumUntil: 0, claimed: {}, refRewarded: [], refBonusTaken: false, paidCoins: 0,
+  premiumUntil: 0, devPremiumUntil: 0, claimed: {}, refRewarded: [], refBonusTaken: false, paidCoins: 0, admin: false,
 });
 
 export function loadState(): LocalState {
@@ -72,7 +73,7 @@ export function update<T = void>(fn: (s: LocalState) => T): [LocalState, T] {
  */
 export function resetProgress(s: LocalState): LocalState {
   return { ...emptyState(), coins: Math.min(s.coins, s.paidCoins ?? 0), paidCoins: s.paidCoins ?? 0, premiumUntil: s.premiumUntil, devPremiumUntil: s.devPremiumUntil,
-    claimed: s.claimed, refRewarded: s.refRewarded, refBonusTaken: s.refBonusTaken };
+    claimed: s.claimed, refRewarded: s.refRewarded, refBonusTaken: s.refBonusTaken, admin: s.admin };
 }
 export const reportAnswer = (wordId: string, input: string) =>
   update((s) => { s.reports.push({ wordId, input, at: nowMs() }); });

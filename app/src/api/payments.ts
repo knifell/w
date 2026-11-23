@@ -23,6 +23,12 @@ export async function fetchStatus(): Promise<ServerStatus | null> {
   try { return await call<ServerStatus>('/api/status'); } catch { return null; }
 }
 
+/** Запросы админки (сервер сам проверяет, что это админ). */
+export async function adminCall<T = any>(path: 'users' | 'find' | 'grant', body: Record<string, unknown> = {}): Promise<T> {
+  if (!paymentsReady()) throw new Error('Админка работает только внутри Telegram');
+  return call<T>(`/api/admin/${path}`, body);
+}
+
 export type BuyResult = 'paid' | 'cancelled' | 'failed' | 'pending' | 'unavailable';
 
 /** Открывает окно оплаты Telegram. Начисление — после подтверждения сервером (fetchStatus). */

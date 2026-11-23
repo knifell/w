@@ -25,7 +25,7 @@ export async function signInitData(fields: Record<string, string>, botToken: str
   return p.toString();
 }
 
-export interface TgUser { id: number; first_name?: string }
+export interface TgUser { id: number; first_name?: string; last_name?: string; username?: string }
 
 /** Возвращает пользователя, если подпись верна и данные не старше maxAgeSec. */
 export async function verifyInitData(initData: string, botToken: string, nowSec: number, maxAgeSec = 86400): Promise<TgUser | null> {

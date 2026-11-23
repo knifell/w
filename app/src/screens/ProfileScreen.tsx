@@ -11,10 +11,10 @@ import { REFERRAL } from '../game/config';
 interface Props {
   st: LocalState;
   onPremium: () => void; onAbout: () => void; onReset: () => void;
-  onInvite: () => void;
+  onInvite: () => void; onAdmin: () => void;
 }
 
-export function ProfileScreen({ st, onPremium, onAbout, onReset, onInvite }: Props) {
+export function ProfileScreen({ st, onPremium, onAbout, onReset, onInvite, onAdmin }: Props) {
   const [sound, setSound] = useState(() => { try { return localStorage.getItem('sound') !== 'off'; } catch { return true; } });
   const mastered = Object.values(st.mem).filter((m) => m.s >= MASTER_STAGE).length;
   const name = tg?.initDataUnsafe.user?.first_name ?? 'Путешественник';
@@ -52,6 +52,7 @@ export function ProfileScreen({ st, onPremium, onAbout, onReset, onInvite }: Pro
       </section>
 
       {!st.premium && <button class="btn gold" onClick={onPremium}><Icon name="crown" size={20} />Узнать о Premium</button>}
+      {st.admin && <button class="btn small alt" onClick={onAdmin}><Icon name="compass" size={18} />Админка</button>}
       <button class="link" onClick={onAbout}>О проекте и контенте</button>
       <button class="link danger" onClick={onReset}>Удалить прогресс и начать заново</button>
     </main>

@@ -11,6 +11,7 @@ import { commitUnlocks, islandState, unlockGap, nextSteps } from '../app/src/gam
 import { refundEnergy, spendEnergy } from '../app/src/game/energy';
 import { nowMs, resetClock, setTrustedStart } from '../app/src/game/clock';
 import { applyStatus, applyFriendGift } from '../app/src/game/purchases';
+import { adminJump } from '../app/src/game/admin';
 import { STAR_PACKS, REFERRAL } from '../app/src/game/config';
 import { signInitData, verifyInitData } from '../worker/src/auth';
 import worker, { catalogItem, handleUpdate, handleStatus, handleReferral, type Env } from '../worker/src/index';
@@ -465,6 +466,28 @@ await t('удаление прогресса: всё с нуля, остаютс
   assert.equal(resetProgress({ ...emptyState(), coins: 500 }).coins, 0);
   assert.equal(resetProgress({ ...emptyState(), coins: 40, paidCoins: 300 }).coins, 40);
   assert.deepEqual(r.claimed, { p1: 'ok' }); assert.deepEqual(r.refRewarded, ['7']); assert.equal(r.refBonusTaken, true);
+});
+
+await t('подарки админа: один раз, ракушки не ниже нуля, вещи и энергия', () => {
+  const s = emptyState(); s.coins = 50;
+  const st = { purchases: [], premiumUntil: 0, referrals: [], admin: true,
+    grants: [{ id: 'g1', at: 1, coins: 500, items: { ember: 2 } }, { id: 'g2', at: 2, coins: -9999 }] };
+  const a = applyStatus(s, st);
+  assert.equal(a.gifts, 2); assert.equal(s.coins, 0); assert.equal(s.inventory.ember, 2); assert.equal(s.admin, true);
+  assert.equal(applyStatus(s, st).gifts, 0);                          // повтор — ничего
+  assert.equal(s.paidCoins, 0);                                       // подарок не считается покупкой
+});
+
+await t('админ: прыжок на остров', () => {
+  const a1 = JSON.parse(readFileSync('app/public/content/a1.json', 'utf8')) as LevelPack;
+  const s = emptyState();
+  adminJump(s, a1, 3);
+  assert.equal(s.level, a1.level);
+  assert.ok(a1.lessons.filter((l) => l.island < 3).every((l) => s.done[l.id]));
+  assert.ok(!a1.lessons.some((l) => l.island >= 3 && s.done[l.id]));
+  assert.ok(s.unlocks[`${a1.level}-3`] !== undefined && s.unlocks[`${a1.level}-4`] === undefined);
+  const st = islandState(a1, a1.islands[2], { ...s, premium: true });
+  assert.equal(st.kind, 'open');
 });
 
 console.log(`\n${n} проверок пройдено`);

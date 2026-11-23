@@ -28,3 +28,14 @@ export function buy(s: LocalState, id: string): string | null {
   else s.inventory[id] = (s.inventory[id] ?? 0) + 1;
   return null;
 }
+
+/** Выдать товар бесплатно (подарок админа). n < 0 — забрать (только то, что лежит в запасах). */
+export function giveItem(s: LocalState, id: string, n: number) {
+  const it = ITEMS.find((i) => i.id === id);
+  if (!it || !n) return;
+  const e = it.effect;
+  if (n < 0) { s.inventory[id] = Math.max(0, (s.inventory[id] ?? 0) + n); return; }
+  if (e.type === 'boost') s.boosts[id] = Math.max(nowMs(), s.boosts[id] ?? 0) + e.minutes * 60000 * n;
+  else if (e.type === 'energy') addEnergy(s, e.amount * n);
+  else s.inventory[id] = (s.inventory[id] ?? 0) + n;
+}

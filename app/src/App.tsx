@@ -10,7 +10,7 @@ import { nowMs } from './game/clock';
 import { ask, haptic } from './tg/telegram';
 import { canListen } from './lib/speech';
 import { sfx } from './lib/sfx';
-import { emptyState, loadState, resetProgress, saveState, update, type LocalState } from './game/local';
+import { loadState, resetProgress, saveState, update, type LocalState } from './game/local';
 import { recordSession, settleAll, type SessionKind } from './game/session';
 import { refundEnergy, spendEnergy } from './game/energy';
 import { buy as buyItem } from './game/shop';
@@ -21,6 +21,7 @@ import { buildLesson, buildReview, buildTrial, type Exercise } from './engine/ge
 import { vocabOf } from './engine/vocab';
 import { setDictionary } from './engine/check';
 import { OnboardingScreen } from './screens/OnboardingScreen';
+import { AdminScreen } from './screens/AdminScreen';
 import { LevelPickScreen } from './screens/LevelPickScreen';
 import { MiniTestScreen } from './screens/MiniTestScreen';
 import { MapScreen } from './screens/MapScreen';
@@ -39,7 +40,7 @@ import { Skipper } from './components/Skipper';
 
 type Route =
   | { s: 'onboarding' } | { s: 'pick' } | { s: 'minitest'; level: Level } | { s: 'tab'; tab: Tab }
-  | { s: 'about' } | { s: 'premium'; from: Tab }
+  | { s: 'about' } | { s: 'admin' } | { s: 'premium'; from: Tab }
   | { s: 'session'; kind: SessionKind; lessonId?: string; build: () => Exercise[] }
   | { s: 'result'; result: ResultData };
 
@@ -91,6 +92,7 @@ export function App() {
   function applyServer(status: ServerStatus, p: LevelPack[]) {
     const [, a] = update((s) => applyStatus(s, status));
     setSt(settleAll(p)[0]);
+    if (a.gifts > 0 && !a.friends) { haptic.reward(); sfx.coin(); setToast({ text: a.coins > 0 ? `Подарок от капитана: +${a.coins} ракушек!` : 'Подарок от капитана!' }); return a; }
     if (a.coins > 0 || a.friends > 0) {
       haptic.reward(); sfx.coin();
       setToast({ text: a.friends > 0 ? `Друзья приплыли: +${a.friends}! Начислено ${a.coins} ракушек.` : `+${a.coins} ракушек!` });
@@ -185,8 +187,10 @@ export function App() {
         onDone={(l) => setLevel(l)} onBack={() => go({ s: 'pick' })} />;
     case 'session': return <LessonScreen build={r.build} onExit={() => { if (r.kind === 'lesson') mutate(refundEnergy); toMap(); }} onDone={(o) => finish(r.kind, r.lessonId, o)} />;
     case 'result': return <ResultScreen result={r.result} onNext={() => toMap()} />;
-    case 'about': return <AboutScreen index={index} onBack={() => go({ s: 'tab', tab: 'profile' })}
-      onReset={() => { saveState(emptyState()); setSt(loadState()); go({ s: 'onboarding' }); }} />;
+    case 'admin': return <><AdminScreen st={st} packs={packs} onBack={() => go({ s: 'tab', tab: 'profile' })}
+      mutate={(fn) => { mutate(fn); setSt(settleAll(packs)[0]); }}
+      onRefresh={() => { void fetchStatus().then((x) => x && applyServer(x, packs)); }} />{toastEl}</>;
+    case 'about': return <AboutScreen index={index} onBack={() => go({ s: 'tab', tab: 'profile' })} />;
     case 'premium':
       return <><PremiumScreen isPremium={st.premium} until={st.premiumUntil} onBack={() => go({ s: 'tab', tab: r.from })}
         onSubscribe={() => buyStars(STAR_PREMIUM.id)}
@@ -206,7 +210,7 @@ export function App() {
       {tab === 'shop' && <ShopScreen st={st} onBuy={(id) => mutate((s) => buyItem(s, id))} onBuyStars={buyStars} onPremium={() => openPremium()} />}
       {tab === 'profile' && (
         <ProfileScreen st={st} onPremium={() => openPremium()}
-          onAbout={() => go({ s: 'about' })} onReset={resetAll} onInvite={invite} />
+          onAbout={() => go({ s: 'about' })} onReset={resetAll} onInvite={invite} onAdmin={() => go({ s: 'admin' })} />
       )}
       {toastEl}
       <TabBar tab={tab} onTab={(t) => { haptic.select(); go({ s: 'tab', tab: t }); }} />

@@ -1,11 +1,9 @@
 import { useTgBack } from '../tg/telegram';
-import { useState } from 'preact/hooks';
 import type { ContentIndex } from '../types';
 import { Icon } from '../components/Icon';
 
-export function AboutScreen({ index, onBack, onReset }: { index: ContentIndex | null; onBack: () => void; onReset: () => void }) {
+export function AboutScreen({ index, onBack }: { index: ContentIndex | null; onBack: () => void }) {
   useTgBack(onBack);
-  const [sure, setSure] = useState(false);
   return (
     <main class="about">
       <button class="link back" onClick={onBack}><Icon name="back" size={20} />Назад</button>
@@ -32,14 +30,6 @@ export function AboutScreen({ index, onBack, onReset }: { index: ContentIndex | 
         <div class="plan-row">Новые главы истории Шкипера</div>
       </div>
       <div class="foot-note hint"><Icon name="info" size={20} />Не согласен с проверкой ввода? Нажми «Я ответил верно» в уроке — ответ засчитается. Отправлять сообщения об ошибках пока нельзя.</div>
-      {sure ? (
-        <div class="card">
-          <b>Стереть весь прогресс?</b>
-          <p class="hint">Опыт, ракушки, штампы и выученные слова удалятся. Это нельзя отменить.</p>
-          <button class="btn bad" onClick={onReset}>Да, начать заново</button>
-          <button class="link" onClick={() => setSure(false)}>Отмена</button>
-        </div>
-      ) : <button class="link danger" onClick={() => setSure(true)}>Начать заново</button>}
     </main>
   );
 }

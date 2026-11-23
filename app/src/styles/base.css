@@ -710,3 +710,13 @@ section.card > b:first-child { margin-bottom: 0; }
 @keyframes shine { 0% { transform: scale(1); } 40% { transform: scale(1.35) rotate(-8deg); } 100% { transform: scale(1); } }
 @keyframes slam { 0% { opacity: 0; transform: scale(1.6); } 60% { opacity: 1; transform: scale(.94); } 100% { transform: scale(1); } }
 @keyframes slam-rot { from { transform: rotate(-25deg); } to { transform: rotate(0); } }
+
+/* Админка */
+.admin .card { display: grid; gap: 8px; }
+.admin-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.admin-input { width: 96px; min-height: 44px; font-size: 16px; padding: 8px 12px; }
+.admin-input.wide { flex: 1; min-width: 0; width: auto; }
+.admin-found { display: grid; gap: 8px; padding-top: 8px; border-top: 1px solid var(--line); }
+.admin-field { display: flex; justify-content: space-between; align-items: center; gap: 8px; font-size: 15px; }
+.admin-msg { color: var(--sea-text); }
+.admin-user { display: flex; justify-content: space-between; gap: 8px; width: 100%; padding: 10px 4px; background: none; border: 0; border-top: 1px solid var(--line); color: inherit; font: inherit; text-align: left; cursor: pointer; }

@@ -14,6 +14,8 @@ account_id = "b2a149cb46f0d882a630afaab0eacbe6"
 # Адрес мини-приложения на Cloudflare Pages
 APP_URL = "https://ostrov-slov.pages.dev"
 # Контакт для /paysupport и /terms (например "@твой_ник")
+# Telegram id админов через запятую (админка в приложении)
+ADMIN_IDS = ""
 SUPPORT_CONTACT = "@finderdsfg3bot"
 
 # Секреты задаются командами (в файл их не писать!):

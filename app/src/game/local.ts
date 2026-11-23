@@ -31,6 +31,7 @@ export interface LocalState {
   claimed: Record<string, 'ok' | 'refunded'>; // начисленные платежи Stars (по id платежа)
   refRewarded: string[];                   // друзья, за которых уже дан бонус
   refBonusTaken: boolean;                  // подарок за приход по ссылке получен
+  paidCoins: number;                       // ракушки, купленные за звёзды (минус возвраты)
 }
 
 const KEY = 'os.v3';
@@ -39,7 +40,7 @@ export const emptyState = (): LocalState => ({
   energy: ENERGY.max, energyAt: nowMs(), inventory: {}, boosts: {}, done: {}, mem: {},
   streak: { cur: 0, best: 0, last: 0 }, emberWeek: 0, stickers: {}, counters: {},
   trialsToday: { day: 0, n: 0 }, unlocks: {}, storySeen: [], reports: [], typos: {}, updatedAt: 0,
-  premiumUntil: 0, devPremiumUntil: 0, claimed: {}, refRewarded: [], refBonusTaken: false,
+  premiumUntil: 0, devPremiumUntil: 0, claimed: {}, refRewarded: [], refBonusTaken: false, paidCoins: 0,
 });
 
 export function loadState(): LocalState {
@@ -65,9 +66,12 @@ export function update<T = void>(fn: (s: LocalState) => T): [LocalState, T] {
   saveState(s);
   return [s, r];
 }
-/** «Удалить прогресс»: всё с нуля, но покупки остаются (ракушки, Premium, учёт платежей и друзей — иначе их начислили бы второй раз). */
+/**
+ * «Удалить прогресс»: всё с нуля. Остаются только купленные за звёзды ракушки (не больше, чем есть сейчас),
+ * Premium и учёт платежей/друзей — чтобы их не начислили второй раз. Заработанные ракушки сгорают: иначе их можно фармить.
+ */
 export function resetProgress(s: LocalState): LocalState {
-  return { ...emptyState(), coins: s.coins, premiumUntil: s.premiumUntil, devPremiumUntil: s.devPremiumUntil,
+  return { ...emptyState(), coins: Math.min(s.coins, s.paidCoins ?? 0), paidCoins: s.paidCoins ?? 0, premiumUntil: s.premiumUntil, devPremiumUntil: s.devPremiumUntil,
     claimed: s.claimed, refRewarded: s.refRewarded, refBonusTaken: s.refBonusTaken };
 }
 export const reportAnswer = (wordId: string, input: string) =>

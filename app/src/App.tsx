@@ -122,7 +122,7 @@ export function App() {
   const nextLevel = packs[packs.findIndex((p) => p.level === pack.level) + 1]?.level;
   const goNextLevel = () => { if (nextLevel) setLevel(nextLevel); };
   const resetAll = async () => {
-    if (!(await ask('Удалить весь прогресс? Уроки, слова, костёр и штампы пропадут, уровень выберешь заново. Ракушки и Premium останутся.'))) return;
+    if (!(await ask('Удалить весь прогресс? Уроки, слова, костёр и штампы пропадут, уровень выберешь заново. Заработанные ракушки сгорят. Останутся только купленные за звёзды ракушки и Premium.'))) return;
     const s = resetProgress(loadState()); saveState(s); setSt(s); go({ s: 'onboarding' });
   };
   const openPremium = () => go({ s: 'premium', from: r.s === 'tab' ? r.tab : 'map' });

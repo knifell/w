@@ -16,12 +16,15 @@ export function applyStatus(s: LocalState, st: ServerStatus): Applied {
     const pack = STAR_PACKS.find((x) => x.id === p.item);
     const was = s.claimed[p.id];
     if (p.refunded) {
-      if (was === 'ok' && pack) { const minus = Math.min(s.coins, pack.coins); s.coins -= minus; out.coins -= minus; }
+      if (was === 'ok' && pack) {
+        const minus = Math.min(s.coins, pack.coins); s.coins -= minus; out.coins -= minus;
+        s.paidCoins = Math.max(0, (s.paidCoins ?? 0) - pack.coins);
+      }
       if (was !== 'refunded') s.claimed[p.id] = 'refunded';
       continue;
     }
     if (was) continue;
-    if (pack) { s.coins += pack.coins; out.coins += pack.coins; }
+    if (pack) { s.coins += pack.coins; out.coins += pack.coins; s.paidCoins = (s.paidCoins ?? 0) + pack.coins; }
     s.claimed[p.id] = 'ok';
   }
   for (const f of st.referrals) {

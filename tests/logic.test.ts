@@ -300,10 +300,11 @@ await t('покупки: ракушки начисляются один раз, 
   const st = { purchases: [{ id: 'c1', item: pack.id, at: 1 }], premiumUntil: 0, referrals: [] };
   assert.equal(applyStatus(s, st).coins, pack.coins);
   assert.equal(applyStatus(s, st).coins, 0);                         // повтор — без двойного начисления
-  assert.equal(s.coins, pack.coins);
+  assert.equal(s.coins, pack.coins); assert.equal(s.paidCoins, pack.coins);
   s.coins -= 10;                                                     // часть потрачена
   applyStatus(s, { ...st, purchases: [{ id: 'c1', item: pack.id, at: 1, refunded: true }] });
   assert.equal(s.coins, 0);                                          // возврат: снято, но не ниже нуля
+  assert.equal(s.paidCoins, 0);
   applyStatus(s, { purchases: [], premiumUntil: 5_000_000_000_000, referrals: [] });
   assert.equal(s.premiumUntil, 5_000_000_000_000);
   const friends = Array.from({ length: REFERRAL.maxRewardedFriends + 3 }, (_, i) => ({ id: String(i), at: 1 }));
@@ -452,14 +453,17 @@ await t('на слух: 2 задания в уроке со звуком, без
   assert.ok(buildReview(pool.slice(0, 12), pool, 1, undefined, true).some((e) => e.kind === 'listen'));
 });
 
-await t('удаление прогресса: всё с нуля, покупки остаются', () => {
+await t('удаление прогресса: всё с нуля, остаются только купленные ракушки', () => {
   const s = emptyState();
-  Object.assign(s, { level: 'B1', onboarded: true, xp: 500, coins: 320, premiumUntil: 999, claimed: { p1: 'ok' }, refRewarded: ['7'], refBonusTaken: true });
+  Object.assign(s, { level: 'B1', onboarded: true, xp: 500, coins: 320, paidCoins: 300, premiumUntil: 999, claimed: { p1: 'ok' }, refRewarded: ['7'], refBonusTaken: true });
   s.done['b1-d01'] = 1 as never;
   const r = resetProgress(s);
   assert.equal(r.level, null); assert.equal(r.onboarded, false); assert.equal(r.xp, 0);
   assert.deepEqual(r.done, {});
-  assert.equal(r.coins, 320); assert.equal(r.premiumUntil, 999);
+  assert.equal(r.coins, 300); assert.equal(r.paidCoins, 300); assert.equal(r.premiumUntil, 999);
+  // заработанные ракушки сгорают, а потраченные купленные не возвращаются
+  assert.equal(resetProgress({ ...emptyState(), coins: 500 }).coins, 0);
+  assert.equal(resetProgress({ ...emptyState(), coins: 40, paidCoins: 300 }).coins, 40);
   assert.deepEqual(r.claimed, { p1: 'ok' }); assert.deepEqual(r.refRewarded, ['7']); assert.equal(r.refBonusTaken, true);
 });
 

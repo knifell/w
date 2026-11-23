@@ -11,6 +11,8 @@ id = "ВСТАВЬ_ID_KV"
 [vars]
 # Адрес мини-приложения на Cloudflare Pages
 APP_URL = "https://ostrov-slov.pages.dev"
+# Контакт для /paysupport и /terms (например "@твой_ник")
+SUPPORT_CONTACT = ""
 
 # Секреты задаются командами (в файл их не писать!):
 #   npx wrangler secret put BOT_TOKEN

@@ -13,9 +13,9 @@
    npx wrangler secret put WEBHOOK_SECRET  # любая длинная случайная строка
    npx wrangler deploy                     # выдаст адрес вида https://ostrov-slov-api.<имя>.workers.dev
    ```
-3. Подключи бота к серверу (подставь свои значения):
+3. Настрой бота одной командой (вебхук, команды /start /paysupport /terms, кнопка меню, описание):
    ```
-   https://api.telegram.org/bot<BOT_TOKEN>/setWebhook?url=<адрес>/bot&secret_token=<WEBHOOK_SECRET>&allowed_updates=["message","pre_checkout_query"]
+   curl -X POST -H "x-setup-secret: <WEBHOOK_SECRET>" <адрес>/setup
    ```
 4. Собери приложение с адресом сервера и ссылкой на мини-приложение:
    ```
@@ -26,6 +26,7 @@
 
 - `POST /api/invoice` — счёт на оплату. Цена берётся только из `content/shop.json`.
 - `POST /bot` — вебхук Telegram: проверка перед оплатой, запись платежа, возвраты, кнопка «Открыть игру» на /start.
+- `POST /setup` — разовая настройка бота (заголовок `x-setup-secret` = WEBHOOK_SECRET).
 - `POST /api/status` — подтверждённые покупки, срок подписки, приглашённые друзья.
 - `POST /api/referral` — новичок пришёл по ссылке друга (бонус только новым игрокам, не самому себе).
 

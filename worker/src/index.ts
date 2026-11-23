@@ -18,6 +18,7 @@ export interface Env {
   BOT_TOKEN: string;        // секрет: токен бота от @BotFather
   WEBHOOK_SECRET: string;   // секрет: случайная строка, та же, что в setWebhook
   APP_URL: string;          // адрес Mini App (Cloudflare Pages)
+  SUPPORT_CONTACT?: string; // контакт поддержки для /paysupport и /terms (например @username)
 }
 
 interface StoredPurchase { id: string; item: string; at: number; stars: number; refunded?: boolean }
@@ -171,14 +172,50 @@ export async function handleUpdate(env: Env, update: any) {
     }
     return;
   }
-  // 4) /start — кнопка, открывающая игру.
-  if (typeof msg.text === 'string' && msg.text.startsWith('/start') && env.APP_URL) {
+  // 4) /paysupport и /terms — их требуют правила Telegram для оплаты звёздами.
+  const cmd = typeof msg.text === 'string' ? msg.text.split(/[\s@]/)[0] : '';
+  const contact = env.SUPPORT_CONTACT ? ` Пишите: ${env.SUPPORT_CONTACT}.` : '';
+  if (cmd === '/paysupport') {
+    await tgApi(env, 'sendMessage', { chat_id: msg.chat.id, text:
+      'Помощь с оплатой. Опишите, что купили, когда и что пошло не так.' + contact +
+      ' Если покупка не пришла в игру, мы проверим платёж и при ошибке вернём звёзды. Telegram не помогает с покупками в ботах — по оплате обращайтесь только к нам.' });
+    return;
+  }
+  if (cmd === '/terms') {
+    await tgApi(env, 'sendMessage', { chat_id: msg.chat.id, text:
+      'Условия «Острова слов».\n' +
+      '• Игра бесплатная. За звёзды Telegram можно купить ракушки (внутриигровая валюта) и Premium (подписка на месяц, продлевается сама, отменить можно в любой момент в настройках Telegram).\n' +
+      '• Покупки — цифровые товары, начисляются сразу. Возврат — по запросу в /paysupport, если покупка не пришла или была ошибка.\n' +
+      '• Прогресс хранится на вашем телефоне и в облаке Telegram. Мы храним только список покупок и приглашённых друзей по вашему Telegram id.\n' +
+      '• Ракушки и Premium нельзя обменять на деньги или передать другому.' + contact });
+    return;
+  }
+  // 5) /start — кнопка, открывающая игру.
+  if (cmd === '/start' && env.APP_URL) {
     await tgApi(env, 'sendMessage', {
       chat_id: msg.chat.id,
       text: 'Привет! Я Шкипер. Поплыли учить английский 🦀',
       reply_markup: { inline_keyboard: [[{ text: 'Открыть игру', web_app: { url: env.APP_URL } }]] },
     });
   }
+}
+
+export async function setupBot(env: Env, origin: string) {
+  const r: Record<string, unknown> = {};
+  r.webhook = await tgApi(env, 'setWebhook', {
+    url: `${origin}/bot`, secret_token: env.WEBHOOK_SECRET,
+    allowed_updates: ['message', 'pre_checkout_query'], drop_pending_updates: true,
+  });
+  r.commands = await tgApi(env, 'setMyCommands', { commands: [
+    { command: 'start', description: 'Открыть игру' },
+    { command: 'paysupport', description: 'Помощь с оплатой' },
+    { command: 'terms', description: 'Условия' },
+  ] });
+  if (env.APP_URL) r.menu = await tgApi(env, 'setChatMenuButton', { menu_button: { type: 'web_app', text: 'Играть', web_app: { url: env.APP_URL } } });
+  r.description = await tgApi(env, 'setMyDescription', { description:
+    'Остров слов — игра для изучения английского. Каждый день короткий урок: новые слова, задания, повторение по интервалам. Острова от A1 до B2, костёр серии дней, друзья и штампы. Нажмите «Играть»!' });
+  r.short = await tgApi(env, 'setMyShortDescription', { short_description: 'Учим английский играя: острова слов от A1 до B2 🦀' });
+  return r;
 }
 
 export default {
@@ -191,6 +228,12 @@ export default {
       if (req.headers.get('x-telegram-bot-api-secret-token') !== env.WEBHOOK_SECRET) return new Response('forbidden', { status: 403 });
       try { await handleUpdate(env, await req.json()); } catch { /* Telegram повторит, если вернуть ошибку; отвечаем 200 */ }
       return new Response('ok');
+    }
+
+    // Разовая настройка бота (вебхук, команды, кнопка меню, описание) — чтобы токен бота не покидал сервер.
+    if (url.pathname === '/setup') {
+      if (!env.WEBHOOK_SECRET || req.headers.get('x-setup-secret') !== env.WEBHOOK_SECRET) return new Response('forbidden', { status: 403 });
+      return json(await setupBot(env, url.origin));
     }
 
     const a = await auth(req, env);

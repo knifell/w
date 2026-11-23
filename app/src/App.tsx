@@ -7,10 +7,10 @@ import { applyFriendGift, applyStatus, type ServerStatus } from './game/purchase
 import { hasProgress } from './game/local';
 import { STAR_PREMIUM } from './game/config';
 import { nowMs } from './game/clock';
-import { haptic } from './tg/telegram';
+import { ask, haptic } from './tg/telegram';
 import { canListen } from './lib/speech';
 import { sfx } from './lib/sfx';
-import { emptyState, loadState, saveState, update, type LocalState } from './game/local';
+import { emptyState, loadState, resetProgress, saveState, update, type LocalState } from './game/local';
 import { recordSession, settleAll, type SessionKind } from './game/session';
 import { refundEnergy, spendEnergy } from './game/energy';
 import { buy as buyItem } from './game/shop';
@@ -119,6 +119,12 @@ export function App() {
   const mutate = <T,>(fn: (s: LocalState) => T): T => { const [s, res] = update(fn); setSt(s); return res; };
   const toMap = () => go({ s: 'tab', tab: 'map' });
   const setLevel = (level: Level) => { mutate((s) => { s.level = level; s.onboarded = true; }); toMap(); };
+  const nextLevel = packs[packs.findIndex((p) => p.level === pack.level) + 1]?.level;
+  const goNextLevel = () => { if (nextLevel) setLevel(nextLevel); };
+  const resetAll = async () => {
+    if (!(await ask('Удалить весь прогресс? Уроки, слова, костёр и штампы пропадут, уровень выберешь заново. Ракушки и Premium останутся.'))) return;
+    const s = resetProgress(loadState()); saveState(s); setSt(s); go({ s: 'onboarding' });
+  };
   const openPremium = () => go({ s: 'premium', from: r.s === 'tab' ? r.tab : 'map' });
   const openStory = (isl: Island, then?: () => void) => {
     setStory({ isl, then });
@@ -194,13 +200,13 @@ export function App() {
       <TopBar st={st} level={tab === 'map' ? pack.level : undefined} onEnergy={() => setEnergySheet(true)} />
       {tab === 'map' && (
         <MapScreen pack={pack} st={st} due={due} hard={hard} onLesson={startLesson} onReview={startReview} onTrial={startTrial}
-          onStory={(isl) => openStory(isl)} onRetest={() => go({ s: 'pick' })} onPremium={() => openPremium()} />
+          onStory={(isl) => openStory(isl)} nextLevel={nextLevel} onNextLevel={goNextLevel} onPremium={() => openPremium()} />
       )}
       {tab === 'passport' && <PassportScreen st={st} />}
       {tab === 'shop' && <ShopScreen st={st} onBuy={(id) => mutate((s) => buyItem(s, id))} onBuyStars={buyStars} onPremium={() => openPremium()} />}
       {tab === 'profile' && (
-        <ProfileScreen st={st} packs={packs} onLevel={(l) => setLevel(l)} onPremium={() => openPremium()}
-          onAbout={() => go({ s: 'about' })} onRetest={() => go({ s: 'pick' })} onInvite={invite} />
+        <ProfileScreen st={st} onPremium={() => openPremium()}
+          onAbout={() => go({ s: 'about' })} onReset={resetAll} onInvite={invite} />
       )}
       {toastEl}
       <TabBar tab={tab} onTab={(t) => { haptic.select(); go({ s: 'tab', tab: t }); }} />

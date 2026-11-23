@@ -44,16 +44,17 @@ interface Props {
   onReview: (words: Word[]) => void;
   onTrial: (island: Island) => void;
   onStory: (island: Island) => void;
-  onRetest: () => void;
+  nextLevel?: string; onNextLevel: () => void;
   onPremium: () => void;
 }
 
-export function MapScreen({ pack, st, due, hard, onLesson, onReview, onTrial, onStory, onRetest, onPremium }: Props) {
+export function MapScreen({ pack, st, due, hard, onLesson, onReview, onTrial, onStory, nextLevel, onNextLevel, onPremium }: Props) {
   const day = today();
   const nextDue = Math.min(...Object.values(st.mem).map((m) => m.due));
   const current = pack.lessons.find((l) => !st.done[l.id])?.id;
   const steps = nextSteps(pack, st);
   const anyDone = pack.lessons.some((l) => st.done[l.id]);
+  const levelDone = pack.lessons.length > 0 && pack.lessons.every((l) => st.done[l.id]);
   const streakToday = st.streak.last === day;
   // «Трудные слова»: где игрок ошибался чаще всего. Скромная ссылка, чтобы не перегружать карту.
   const hardLink = hard.length >= 3 && (
@@ -81,13 +82,14 @@ export function MapScreen({ pack, st, due, hard, onLesson, onReview, onTrial, on
           <b>{steps.blocked === 'premium' ? 'Бесплатные острова пройдены!' : steps.blocked === 'end' ? 'Все уроки пройдены!' : 'Новых уроков пока нет'}</b>
           <div class="hint">
             {steps.blocked === 'premium' ? 'Дальше острова с Premium. А пока закрепляй слова: повторения и испытания бесплатны и без энергии.'
-              : steps.blocked === 'end' ? 'Новые острова появятся в обновлениях. Повторяй слова, чтобы они не забылись.'
+              : steps.blocked === 'end' ? (levelDone && nextLevel ? `Уровень ${pack.level} покорён! Можно плыть дальше — на ${nextLevel}. Пройденный уровень останется в прошлом, а слова — в повторениях.` : 'Новые острова появятся в обновлениях. Повторяй слова, чтобы они не забылись.')
               : 'Следующий остров откроется, когда закрепятся слова. Повторяй их в разные дни.'}
           </div>
           {!due.length && !streakToday && steps.trialIsland && (
             <div class="hint streak-tip"><Flame size={18} />Сегодня повторений нет — пройди испытание острова, и костёр не погаснет.</div>
           )}
           <div class="next-actions">
+            {levelDone && nextLevel && <button class="btn small gold" onClick={onNextLevel}>Плыть на уровень {nextLevel}</button>}
             {due.length > 0 && <button class="btn small" onClick={() => onReview(due.slice(0, REVIEW_MAX_WORDS))}>Повторить слова</button>}
             {steps.trialIsland && <button class="btn small alt" onClick={() => onTrial(steps.trialIsland!)}>Испытание острова</button>}
             {!st.premium && steps.blocked === 'premium' && <button class="btn small gold" onClick={onPremium}>Открыть все острова</button>}
@@ -149,7 +151,6 @@ export function MapScreen({ pack, st, due, hard, onLesson, onReview, onTrial, on
           <FogArt trail from={xAt(pack.lessons.filter((l) => l.island === pack.islands.length).length - 1)} />
         </section>
       )}
-      {Object.keys(st.done).length < 3 && <button class="link" onClick={onRetest}>Не тот уровень? Выбрать другой</button>}
     </main>
   );
 }

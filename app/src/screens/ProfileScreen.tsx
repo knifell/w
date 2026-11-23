@@ -1,6 +1,5 @@
 import { sfx, sfxOn, setSfx } from '../lib/sfx';
 import { useState } from 'preact/hooks';
-import type { Level, LevelPack } from '../types';
 import type { LocalState } from '../game/local';
 import { MASTER_STAGE } from '../game/srs';
 import { conqueredCount } from '../game/progress';
@@ -10,15 +9,14 @@ import { Skipper } from '../components/Skipper';
 import { REFERRAL } from '../game/config';
 
 interface Props {
-  st: LocalState; packs: LevelPack[];
-  onLevel: (l: Level) => void; onPremium: () => void; onAbout: () => void; onRetest: () => void;
+  st: LocalState;
+  onPremium: () => void; onAbout: () => void; onReset: () => void;
   onInvite: () => void;
 }
 
-export function ProfileScreen({ st, packs, onLevel, onPremium, onAbout, onRetest, onInvite }: Props) {
+export function ProfileScreen({ st, onPremium, onAbout, onReset, onInvite }: Props) {
   const [sound, setSound] = useState(() => { try { return localStorage.getItem('sound') !== 'off'; } catch { return true; } });
   const mastered = Object.values(st.mem).filter((m) => m.s >= MASTER_STAGE).length;
-  const canSwitch = st.premium || Object.keys(st.done).length < 3;
   const name = tg?.initDataUnsafe.user?.first_name ?? 'Путешественник';
   const [fx, setFx] = useState(sfxOn);
   const toggleFx = () => { const v = !fx; setFx(v); setSfx(v); if (v) sfx.ok(); };
@@ -41,17 +39,6 @@ export function ProfileScreen({ st, packs, onLevel, onPremium, onAbout, onRetest
         <div class="stat"><Icon name="ember" /><b>{st.inventory.ember ?? 0}</b><span>угля</span></div>
       </div>
 
-      <section class="card">
-        <b>Архипелаг</b>
-        <div class="levels">
-          {packs.map((p) => (
-            <button class={'chip-btn' + (p.level === st.level ? ' on' : '')} disabled={!canSwitch || p.level === st.level} onClick={() => onLevel(p.level)}>{p.level}</button>
-          ))}
-        </div>
-        <div class="hint">{st.premium ? 'С Premium открыты все уровни.' : canSwitch ? 'Пока пройдено меньше 3 уроков, уровень можно сменить бесплатно.' : 'Сменить уровень можно с Premium.'}</div>
-        {canSwitch && <button class="link" onClick={onRetest}>Выбрать уровень и пройти мини-тест</button>}
-      </section>
-
       <section class="card invite">
         <b><Icon name="gift" />Позвать друга</b>
         <div class="hint">Друг получит {REFERRAL.friendCoins} ракушек на старте. Ты — {REFERRAL.inviterCoins} ракушек и уголь, когда он позанимается {REFERRAL.friendActiveDays} разных дня (до {REFERRAL.maxRewardedFriends} друзей).</div>
@@ -66,6 +53,7 @@ export function ProfileScreen({ st, packs, onLevel, onPremium, onAbout, onRetest
 
       {!st.premium && <button class="btn gold" onClick={onPremium}><Icon name="crown" size={20} />Узнать о Premium</button>}
       <button class="link" onClick={onAbout}>О проекте и контенте</button>
+      <button class="link danger" onClick={onReset}>Удалить прогресс и начать заново</button>
     </main>
   );
 }

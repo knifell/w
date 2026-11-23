@@ -8,7 +8,7 @@
   "rewards": {
     "lesson": {
       "xp": 10,
-      "coins": 5
+      "coins": 10
     },
     "perfect": {
       "xp": 5,
@@ -16,11 +16,11 @@
     },
     "review": {
       "xp": 8,
-      "coins": 4
+      "coins": 6
     },
     "trial": {
       "xp": 12,
-      "coins": 3
+      "coins": 5
     },
     "trialDailyRewarded": 5,
     "premiumCoinMult": 2
@@ -66,7 +66,7 @@
     "premium": {
       "id": "premium_month",
       "title": "Клуб капитанов на месяц",
-      "desc": "Безлимитная энергия, все острова и уровни, ×2 ракушки",
+      "desc": "Безлимитная энергия, все острова уровня, ×2 ракушки",
       "stars": 250,
       "periodDays": 30
     },

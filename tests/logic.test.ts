@@ -5,7 +5,7 @@ import { spawnSync } from 'node:child_process';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { applyAnswer } from '../app/src/engine/../game/srs';
-import { emptyState } from '../app/src/game/local';
+import { emptyState, resetProgress } from '../app/src/game/local';
 import { settleStreak, bumpStreak, liveStreak } from '../app/src/game/streak';
 import { commitUnlocks, islandState, unlockGap, nextSteps } from '../app/src/game/progress';
 import { refundEnergy, spendEnergy } from '../app/src/game/energy';
@@ -450,6 +450,17 @@ await t('на слух: 2 задания в уроке со звуком, без
     assert.equal(buildLesson(l, pool, 3).filter((e) => e.kind === 'listen').length, 0);
   }
   assert.ok(buildReview(pool.slice(0, 12), pool, 1, undefined, true).some((e) => e.kind === 'listen'));
+});
+
+await t('удаление прогресса: всё с нуля, покупки остаются', () => {
+  const s = emptyState();
+  Object.assign(s, { level: 'B1', onboarded: true, xp: 500, coins: 320, premiumUntil: 999, claimed: { p1: 'ok' }, refRewarded: ['7'], refBonusTaken: true });
+  s.done['b1-d01'] = 1 as never;
+  const r = resetProgress(s);
+  assert.equal(r.level, null); assert.equal(r.onboarded, false); assert.equal(r.xp, 0);
+  assert.deepEqual(r.done, {});
+  assert.equal(r.coins, 320); assert.equal(r.premiumUntil, 999);
+  assert.deepEqual(r.claimed, { p1: 'ok' }); assert.deepEqual(r.refRewarded, ['7']); assert.equal(r.refBonusTaken, true);
 });
 
 console.log(`\n${n} проверок пройдено`);

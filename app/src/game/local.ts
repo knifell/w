@@ -65,5 +65,10 @@ export function update<T = void>(fn: (s: LocalState) => T): [LocalState, T] {
   saveState(s);
   return [s, r];
 }
+/** «Удалить прогресс»: всё с нуля, но покупки остаются (ракушки, Premium, учёт платежей и друзей — иначе их начислили бы второй раз). */
+export function resetProgress(s: LocalState): LocalState {
+  return { ...emptyState(), coins: s.coins, premiumUntil: s.premiumUntil, devPremiumUntil: s.devPremiumUntil,
+    claimed: s.claimed, refRewarded: s.refRewarded, refBonusTaken: s.refBonusTaken };
+}
 export const reportAnswer = (wordId: string, input: string) =>
   update((s) => { s.reports.push({ wordId, input, at: nowMs() }); });

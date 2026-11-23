@@ -274,9 +274,10 @@ export async function setupBot(env: Env, origin: string) {
   // Список команд пустой: /paysupport и /terms работают, но в меню не показываются.
   r.commands = await tgApi(env, 'deleteMyCommands', {});
   if (env.APP_URL) r.menu = await tgApi(env, 'setChatMenuButton', { menu_button: { type: 'web_app', text: 'Играть', web_app: { url: env.APP_URL } } });
+  r.name = await tgApi(env, 'setMyName', { name: 'Остров слов | English' });
   r.description = await tgApi(env, 'setMyDescription', { description:
-    'Остров слов — игра для изучения английского. Каждый день короткий урок: новые слова, задания, повторение по интервалам. Острова от A1 до B2, костёр серии дней, друзья и штампы. Нажмите «Играть»!' });
-  r.short = await tgApi(env, 'setMyShortDescription', { short_description: 'Учим английский играя: острова слов от A1 до B2 🦀' });
+    'Остров слов — английский как игра.\n\n🎯 Тест подберёт уровень A1–B2\n🔊 Новые слова с озвучкой\n⚡ Короткие задания на скорость\n🏝️ Открывай новые острова\n🔥 Держи серию дней и собирай ачивки\n\nЖми «Играть» 👇' });
+  r.short = await tgApi(env, 'setMyShortDescription', { short_description: 'Английский без зубрёжки 🏝️ 5 минут в день. Бесплатно.' });
   return r;
 }
 

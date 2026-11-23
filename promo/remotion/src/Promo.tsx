@@ -144,7 +144,7 @@ export const Promo: React.FC = () => {
           <Shot title="СОБИРАЙ" highlight="АЧИВКИ" src="v2.mp4" trim={4} rate={1.25} srcW={576} srcH={1246} cropTop={76} taps={[]} />
         </TransitionSeries.Sequence>
         <TransitionSeries.Sequence name="Финал" durationInFrames={2 * BAR}>
-          <TextCard lines={[{text: 'ЗАЛЕТАЙ', size: 120}, {text: '@finderdsfg3bot', size: 70, hl: true}, {text: 'бесплатно в Telegram', size: 56, font: 'Onest'}]} />
+          <TextCard lines={[{text: 'ЗАЛЕТАЙ', size: 120}, {text: '@ostrovslov_bot', size: 70, hl: true}, {text: 'бесплатно в Telegram', size: 56, font: 'Onest'}]} />
         </TransitionSeries.Sequence>
       </TransitionSeries>
       <Html5Audio src={staticFile('beat.m4a')} />

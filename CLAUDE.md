@@ -46,9 +46,9 @@ Telegram Mini App: игра для изучения английского (ру
 - Проверка в настоящем Telegram (вход, облако, покупки, подписка, друзья, «Назад»).
 
 ## Деплой (сделан 23.11.2026)
-- Бот: @finderdsfg3bot. Мини-приложение: `https://t.me/finderdsfg3bot/play` (создаётся в @BotFather через /newapp, short name `play`).
+- Бот: @ostrovslov_bot. Мини-приложение: `https://t.me/ostrovslov_bot/play` (создаётся в @BotFather через /newapp, short name `play`).
 - Pages: проект `ostrov-slov` → https://ostrov-slov.pages.dev. Worker: https://ostrov-slov-api.iklammm5.workers.dev (KV id в `worker/wrangler.toml`).
-- Сборка: `VITE_API_URL=https://ostrov-slov-api.iklammm5.workers.dev VITE_APP_LINK=https://t.me/finderdsfg3bot/play npm run build`,
+- Сборка: `VITE_API_URL=https://ostrov-slov-api.iklammm5.workers.dev VITE_APP_LINK=https://t.me/ostrovslov_bot/play npm run build`,
   затем `npx wrangler@4 pages deploy dist --project-name ostrov-slov --branch main` (запускать вне папки проекта или указать абсолютный путь к dist).
 - Worker: `cd worker && npx wrangler@4 deploy`. Нужны env `CLOUDFLARE_API_TOKEN` и `CLOUDFLARE_ACCOUNT_ID`.
 - В боте только мини-приложение: /start молчит, список команд пуст; /paysupport и /terms отвечают (правила Stars), но скрыты.

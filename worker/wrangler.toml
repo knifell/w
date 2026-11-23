@@ -15,7 +15,7 @@ account_id = "b2a149cb46f0d882a630afaab0eacbe6"
 APP_URL = "https://ostrov-slov.pages.dev"
 # Контакт для /paysupport и /terms (например "@твой_ник")
 # Telegram id админов через запятую (админка в приложении)
-ADMIN_IDS = ""
+ADMIN_IDS = "6667766623"
 SUPPORT_CONTACT = "@finderdsfg3bot"
 
 # Секреты задаются командами (в файл их не писать!):

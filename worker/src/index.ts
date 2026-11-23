@@ -262,7 +262,14 @@ export async function handleUpdate(env: Env, update: any) {
       '• Ракушки и Premium нельзя обменять на деньги или передать другому.' + contact });
     return;
   }
-  // /start ничего не отвечает: в боте только мини-приложение (кнопка «Играть» в меню).
+  // /start — короткое приветствие и кнопка, открывающая игру.
+  if (cmd === '/start' && env.APP_URL) {
+    await tgApi(env, 'sendMessage', {
+      chat_id: msg.chat.id,
+      text: '🏝️ Остров слов — английский без зубрёжки.\n\n5 минут в день: новые слова с озвучкой, быстрые задания, острова и серия дней 🔥\n\nЖми кнопку и погнали 👇',
+      reply_markup: { inline_keyboard: [[{ text: '▶️ Играть', web_app: { url: env.APP_URL } }]] },
+    });
+  }
 }
 
 export async function setupBot(env: Env, origin: string) {

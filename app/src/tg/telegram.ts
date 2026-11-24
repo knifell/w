@@ -15,6 +15,9 @@ interface TgWebApp {
   openInvoice?(url: string, cb: (status: 'paid' | 'cancelled' | 'failed' | 'pending') => void): void;
   openTelegramLink?(url: string): void;
   showConfirm?(msg: string, cb: (ok: boolean) => void): void;
+  setHeaderColor?(c: string): void;
+  setBackgroundColor?(c: string): void;
+  setBottomBarColor?(c: string): void;
   BackButton?: { show(): void; hide(): void; onClick(cb: () => void): void; offClick(cb: () => void): void };
 }
 
@@ -33,14 +36,14 @@ export function initTelegram() {
 }
 
 function applyTheme() {
+  // Цвета у игры свои (фирменный стиль). Из Telegram берём только «светлая/тёмная»
+  // и красим шапку и фон Telegram в цвет игры, чтобы не было полос.
   const root = document.documentElement;
-  const p = tg?.themeParams ?? {};
-  const map: Record<string, string> = {
-    bg_color: '--tg-bg', secondary_bg_color: '--tg-bg2', text_color: '--tg-text',
-    hint_color: '--tg-hint', button_color: '--tg-accent', button_text_color: '--tg-accent-text',
-  };
-  for (const [k, v] of Object.entries(map)) if (p[k]) root.style.setProperty(v, p[k]);
   root.dataset.theme = tg?.colorScheme ?? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  const bg = getComputedStyle(root).getPropertyValue('--tg-bg').trim();
+  if (bg) {
+    try { tg?.setHeaderColor?.(bg); tg?.setBackgroundColor?.(bg); tg?.setBottomBarColor?.(bg); } catch { /* старый клиент */ }
+  }
 }
 
 export const haptic = {

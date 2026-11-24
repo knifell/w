@@ -18,7 +18,7 @@ export function TopBar({ st, level, onEnergy }: { st: LocalState; level?: string
     <div class="topbar">
       {level && <span class="chip">{level}</span>}
       <span class="stats-row">
-        <span class="pill" title="Костёр" aria-label={`Костёр: ${streak}`}><Flame out={!streak} />{streak}</span>
+        <span class={"pill" + (streak ? " fire-on" : "")} title="Костёр" aria-label={`Костёр: ${streak}`}><Flame out={!streak} />{streak}</span>
         <span class="pill" title="Ракушки" aria-label={`Ракушки: ${st.coins}`}><Shell />{st.coins}</span>
         <button class="energy" onClick={onEnergy} title="Энергия" aria-label={`Энергия: ${e === Infinity ? 'безлимит' : e}`}>
           <Lantern lit={e > 0} />{e === Infinity ? '∞' : e}

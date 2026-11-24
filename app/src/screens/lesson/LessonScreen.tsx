@@ -12,7 +12,10 @@ import { TypeView } from './TypeView';
 import { BuildView } from './BuildView';
 import { LearnCard } from './LearnCard';
 import { ListenView } from './ListenView';
-import { Icon } from '../../components/Icon';
+import { Flame, Icon } from '../../components/Icon';
+import { Skipper } from '../../components/Skipper';
+
+const PRAISE = ['Верно!', 'Отлично!', 'Так держать!', 'Супер!', 'Молодец!'];
 
 export interface SessionOutcome { accuracy: number; seen: Word[]; wrong: Word[] }
 interface Props {
@@ -29,6 +32,7 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
   const [solved, setSolved] = useState(0);
   const [fb, setFb] = useState<Submit | null>(null);
   const [askExit, setAskExit] = useState(false);
+  const [combo, setCombo] = useState(0); // серия верных ответов подряд (только для вида)
   useTgBack(() => setAskExit(true));
   const [stats] = useState(() => ({ answers: 0, correct: 0, wrong: new Set<string>() }));
 
@@ -41,6 +45,7 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
       return setFb(s);
     }
     stats.answers++;
+    setCombo((c) => (s.ok ? c + 1 : 0));
     if (s.ok) { stats.correct++; haptic.ok(); sfx.ok(); } else { haptic.bad(); sfx.bad(); }
     s.wrongIds?.forEach((id) => stats.wrong.add(id));
     if (!s.ok) exerciseWords(ex).forEach((w) => stats.wrong.add(w.id));
@@ -80,6 +85,7 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
       <div class="lesson-top">
         <button class="x" aria-label="Выйти" onClick={() => setAskExit(true)}><Icon name="close" size={26} stroke={2.4} /></button>
         <div class="bar"><div style={{ width: `${progress * 100}%` }} /></div>
+        {combo >= 3 && <span class="combo" key={combo} aria-label={`${combo} подряд`}><Flame />{combo}</span>}
       </div>
       {ex.kind === 'learn' && <LearnCard key={key} ex={ex} {...props} />}
       {ex.kind === 'choice' && <ChoiceView key={key} ex={ex} {...props} />}
@@ -100,8 +106,8 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
       {fb && (
         <div class={'sheet ' + (fb.ok ? 'ok' : 'bad')}>
           <div class="fb-head" role="status">
-            <span class="fb-mark"><Icon name={fb.ok ? 'check' : 'close'} size={24} stroke={3} /></span>
-            {fb.ok ? (fb.typo ? 'Засчитано, но есть опечатка' : 'Верно!') : fb.typoLimit ? 'Снова та же опечатка' : 'Не совсем'}
+            <Skipper size={72} mood={fb.ok ? 'happy' : 'oops'} />
+            {fb.ok ? (fb.typo ? 'Засчитано, но есть опечатка' : combo >= 3 ? `${combo} подряд!` : PRAISE[pos % PRAISE.length]) : fb.typoLimit ? 'Снова та же опечатка' : 'Не совсем'}
           </div>
           {(!fb.ok || fb.typo) && <div class="fb-answer">Правильно: <b>{fb.correct}</b>{fb.input && fb.input.trim().toLowerCase() !== fb.correct.toLowerCase() && <> · у тебя: <s>{fb.input.trim()}</s></>}</div>}
           {fb.typoLimit && <div class="hint">В этом слове опечатка уже не первый раз — теперь засчитывается только точное написание.</div>}

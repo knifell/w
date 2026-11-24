@@ -2,7 +2,6 @@ import { useState } from 'preact/hooks';
 import { haptic } from '../../tg/telegram';
 import { sameSentence } from '../../engine/check';
 import type { ViewProps } from './types';
-import { Skipper } from '../../components/Skipper';
 
 export function BuildView({ ex, locked, onSubmit }: ViewProps<'build'>) {
   const [picked, setPicked] = useState<number[]>([]);
@@ -16,7 +15,6 @@ export function BuildView({ ex, locked, onSubmit }: ViewProps<'build'>) {
     <div class="ex">
       <div class="ex-title">Собери предложение</div>
       <div class="prompt-row">
-        <Skipper size={78} />
         <div class="bubble"><span class="ex-prompt small">{ex.prompt}</span></div>
       </div>
       <div class="build-line">

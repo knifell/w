@@ -1,7 +1,6 @@
 import { useTgBack } from '../tg/telegram';
 import type { Level, LevelPack } from '../types';
 import { Icon } from '../components/Icon';
-import { Skipper } from '../components/Skipper';
 
 const INFO: Record<Level, { title: string; text: string }> = {
   A1: { title: 'Начинаю с нуля', text: 'Знаю буквы и пару слов' },
@@ -15,10 +14,7 @@ export function LevelPickScreen({ packs, current, onPick, onBack }: { packs: Lev
   return (
     <main class="pick">
       {onBack && <button class="link back" onClick={onBack}><Icon name="back" size={20} />Назад</button>}
-      <div class="pick-head">
-        <Skipper mood="wave" size={92} />
-        <div class="bubble"><h1>Какой у тебя уровень?</h1></div>
-      </div>
+      <h1>Какой у тебя уровень?</h1>
       <p class="hint">Выбери сам. Потом короткий тест из 8 вопросов подскажет, подходит ли уровень. Решать всё равно тебе.</p>
       {packs.map((p) => {
         const sample = p.lessons.slice(0, 3).flatMap((l) => l.words.slice(0, 2)).map((w) => w.en).join(', ');

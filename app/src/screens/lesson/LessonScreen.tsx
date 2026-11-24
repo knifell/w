@@ -13,9 +13,8 @@ import { BuildView } from './BuildView';
 import { LearnCard } from './LearnCard';
 import { ListenView } from './ListenView';
 import { Flame, Icon } from '../../components/Icon';
-import { Skipper } from '../../components/Skipper';
 
-const PRAISE = ['Верно!', 'Отлично!', 'Так держать!', 'Супер!', 'Молодец!'];
+const PRAISE = ['Верно', 'Правильно', 'Отлично', 'Точно'];
 
 export interface SessionOutcome { accuracy: number; seen: Word[]; wrong: Word[] }
 interface Props {
@@ -106,8 +105,8 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
       {fb && (
         <div class={'sheet ' + (fb.ok ? 'ok' : 'bad')}>
           <div class="fb-head" role="status">
-            <Skipper size={72} mood={fb.ok ? 'happy' : 'oops'} />
-            {fb.ok ? (fb.typo ? 'Засчитано, но есть опечатка' : combo >= 3 ? `${combo} подряд!` : PRAISE[pos % PRAISE.length]) : fb.typoLimit ? 'Снова та же опечатка' : 'Не совсем'}
+            <span class="fb-mark"><Icon name={fb.ok ? 'check' : 'close'} size={24} stroke={3} /></span>
+            {fb.ok ? (fb.typo ? 'Засчитано, но есть опечатка' : combo >= 3 ? `${combo} подряд` : PRAISE[pos % PRAISE.length]) : fb.typoLimit ? 'Снова та же опечатка' : 'Не совсем'}
           </div>
           {(!fb.ok || fb.typo) && <div class="fb-answer">Правильно: <b>{fb.correct}</b>{fb.input && fb.input.trim().toLowerCase() !== fb.correct.toLowerCase() && <> · у тебя: <s>{fb.input.trim()}</s></>}</div>}
           {fb.typoLimit && <div class="hint">В этом слове опечатка уже не первый раз — теперь засчитывается только точное написание.</div>}

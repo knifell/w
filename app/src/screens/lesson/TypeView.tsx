@@ -3,7 +3,6 @@ import { checkTyped, isTypo } from '../../engine/check';
 import { loadState } from '../../game/local';
 import { noteTyping, typoAllowed } from '../../game/typos';
 import type { ViewProps } from './types';
-import { Skipper } from '../../components/Skipper';
 
 export function TypeView({ ex, locked, onSubmit }: ViewProps<'type'>) {
   const [v, setV] = useState('');
@@ -20,7 +19,6 @@ export function TypeView({ ex, locked, onSubmit }: ViewProps<'type'>) {
     <div class="ex">
       <div class="ex-title">Напиши по-английски</div>
       <div class="prompt-row">
-        <Skipper size={78} />
         <div class="bubble"><span class="ex-prompt">{ex.prompt}</span></div>
       </div>
       <input ref={ref} class="type-input" value={v} disabled={locked} autocomplete="off" autocapitalize="off"

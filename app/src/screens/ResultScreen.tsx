@@ -18,7 +18,7 @@ export function ResultScreen({ result: r, onNext }: { result: ResultData; onNext
   useEffect(() => { sfx.win(); if (r.stickers.length) { haptic.reward(); setTimeout(sfx.coin, 600); } else haptic.ok(); }, []);
   return (
     <main class="result">
-      <Confetti />
+      {(r.stickers.length > 0 || r.perfect) && <Confetti count={30} />}
       <div class="result-hero"><Skipper mood={r.perfect ? 'happy' : 'proud'} size={170} /></div>
       <h1>{r.perfect && r.kind === 'lesson' ? 'Без единой ошибки!' : TITLE[r.kind]}</h1>
       <div class="stats">

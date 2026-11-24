@@ -471,6 +471,8 @@ b { font-weight: 800; }
   background: linear-gradient(180deg, var(--water), var(--water-deep));
 }
 .sheet-art .island-art { margin: 0 0 -8px; }
+.sheet-art.img { padding: 0; }
+.sheet-art.img img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 .story-text { font-size: 18px; line-height: 1.55; margin: 6px 0 4px; }
 .sheet-hero { display: flex; align-items: center; gap: 14px; }
 .sheet-hero > div { flex: 1; }
@@ -547,6 +549,9 @@ b { font-weight: 800; }
     linear-gradient(180deg, transparent 0 58%, var(--water) 58%, var(--water-deep) 100%),
     linear-gradient(180deg, #0b2742, #1a4766 58%); }
 .onb-art > * { position: relative; }
+.onb-art.has-img { display: block; height: auto; aspect-ratio: 1; width: min(100%, 52vh, 440px); margin-inline: auto; background: var(--water); }
+.onb-art.has-img img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; animation: img-in .5s var(--ease-out) both; }
+@keyframes img-in { from { opacity: 0; transform: scale(1.04) } }
 .onb-art .island-art { width: 100%; margin-bottom: -6px; animation: hop .5s var(--ease-pop) both; }
 .sky-sun {
   position: absolute; top: 22px; right: 28px; width: 64px; height: 64px; border-radius: 50%;

@@ -28,6 +28,7 @@ import type { LevelPack } from '../app/src/types';
 import { audioKey } from '../app/src/lib/speech';
 import { chestReady, openChest, isBeacon } from '../app/src/game/nodes';
 import { buildStorm } from '../app/src/engine/generators';
+import { bottleFor, claimBottle } from '../app/src/game/bottle';
 
 let fakeDay = 20000;
 const RealDate = Date;
@@ -541,6 +542,23 @@ await t('тропа: сундук один раз после 5 уроков, М�
   assert.deepEqual(isl1.map((l) => isBeacon(a1, l)).map((b, i) => (b ? i + 1 : 0)).filter(Boolean), [4, 8]);
   const st = buildStorm(isl1.slice(0, 3).flatMap((l) => l.words), a1.lessons.flatMap((l) => l.words), 1);
   assert.ok(st.length >= 20 && st.every((e) => e.kind === 'tf' || (e.kind === 'choice' && e.options.includes(e.answer))));
+});
+
+await t('бутылка с письмом: раз в день, из знакомых слов, награда только за верный ответ', () => {
+  const a1 = JSON.parse(readFileSync('app/public/content/a1.json', 'utf8')) as LevelPack;
+  const learned = a1.lessons.slice(0, 3).flatMap((l) => l.words);
+  const v = vocabOf(learned);
+  const s = emptyState();
+  assert.equal(bottleFor(s, 100, learned.slice(0, 5), v), null); // мало слов
+  const b = bottleFor(s, 100, learned, v)!;
+  assert.ok(b && knownSentence(b.en, v) && b.options.includes(b.ru) && new Set(b.options).size === 3);
+  assert.deepEqual(bottleFor(s, 100, learned, v), b); // одна и та же весь день
+  assert.equal(claimBottle(s, 100, true), 3);
+  assert.equal(bottleFor(s, 100, learned, v), null); // до завтра
+  assert.equal(claimBottle(s, 100, true), 0);
+  const w = emptyState();
+  assert.equal(claimBottle(w, 101, false), 0);
+  assert.equal(w.bottleDay, 101); // ошибся — тоже до завтра
 });
 
 await t('озвучка: ключ файла совпадает с scripts/tts/generate.py', () => {

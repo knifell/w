@@ -8,6 +8,8 @@ import { Flame, Icon } from '../components/Icon';
 import { FogArt, IslandArt } from '../components/IslandArt';
 import { ResidentArt } from '../components/Residents';
 import { CHEST_AFTER, chestKey, chestReady, isBeacon } from '../game/nodes';
+import type { Bottle } from '../game/bottle';
+import { BottleCard } from '../components/BottleCard';
 
 const ROW = 88;
 
@@ -46,12 +48,14 @@ interface Props {
   onTrial: (island: Island) => void;
   onStorm: (island: Island) => void;
   onChest: (island: Island) => void;
+  bottle: Bottle | null; onBottle: (ok: boolean) => void;
+  onLog: (island: Island) => void;
   onStory: (island: Island) => void;
   nextLevel?: string; onNextLevel: () => void;
   onPremium: () => void;
 }
 
-export function MapScreen({ pack, st, due, hard, onLesson, onReview, onTrial, onStorm, onChest, onStory, nextLevel, onNextLevel, onPremium }: Props) {
+export function MapScreen({ pack, st, due, hard, onLesson, onReview, onTrial, onStorm, onChest, bottle, onBottle, onLog, onStory, nextLevel, onNextLevel, onPremium }: Props) {
   const day = today();
   const nextDue = Math.min(...Object.values(st.mem).map((m) => m.due));
   const current = pack.lessons.find((l) => !st.done[l.id])?.id;
@@ -66,6 +70,7 @@ export function MapScreen({ pack, st, due, hard, onLesson, onReview, onTrial, on
 
   return (
     <main class="map">
+      {bottle && <BottleCard key={bottle.en} b={bottle} onAnswer={onBottle} />}
       <div class={"card review" + (due.length ? " due" : "")}>
         <span class="banner-ico"><Icon name="refresh" /></span>
         {due.length ? (
@@ -176,6 +181,9 @@ export function MapScreen({ pack, st, due, hard, onLesson, onReview, onTrial, on
               <div class="island-acts">
                 <button class="btn alt" onClick={() => onTrial(isl)}><Icon name="swords" size={20} />Испытание</button>
                 <button class="btn alt storm-btn" onClick={() => onStorm(isl)}><Icon name="storm" size={20} />Шторм · 60 с</button>
+                {lessons.every((l) => st.done[l.id]) && (
+                  <button class="btn alt log-btn" onClick={() => onLog(isl)}><Icon name="book" size={20} />Журнал капитана</button>
+                )}
               </div>
             )}
           </section>

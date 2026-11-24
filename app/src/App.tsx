@@ -19,6 +19,8 @@ import { today } from './game/time';
 import { REVIEW_MAX_WORDS } from './game/config';
 import { buildLesson, buildReview, buildStorm, buildTrial, type Exercise } from './engine/generators';
 import { isBeacon, openChest } from './game/nodes';
+import { bottleFor, claimBottle } from './game/bottle';
+import { LogSheet } from './components/LogSheet';
 import { vocabOf } from './engine/vocab';
 import { setDictionary } from './engine/check';
 import { OnboardingScreen } from './screens/OnboardingScreen';
@@ -139,6 +141,14 @@ export function App() {
     const learned = Object.keys(st.mem).map((id) => allWords.get(id)).filter((w): w is Word => !!w);
     return vocabOf([...lower, ...learned, ...extra]);
   };
+  const learnedWords = useMemo(() => Object.keys(st.mem).map((id) => allWords.get(id)).filter((w): w is Word => !!w), [st.mem, allWords]);
+  const bottle = useMemo(() => bottleFor(st, day, learnedWords, vocab()), [day, st.bottleDay, learnedWords.length, pack.level]);
+  const answerBottle = (ok: boolean) => {
+    const got = mutate((s) => claimBottle(s, today(), ok));
+    if (ok) { haptic.reward(); sfx.coin(); }
+    setToast({ text: ok ? `Верно! +${got} ракушек` : 'Не угадал. Завтра приплывёт новая бутылка.', err: !ok });
+  };
+  const [log, setLog] = useState<Island | null>(null);
   const buyStars = async (id: string) => {
     const res = await buy(id);
     if (res === 'unavailable') return setToast({ text: 'Покупки за звёзды заработают после запуска в Telegram.', err: true });
@@ -220,6 +230,7 @@ export function App() {
       <TopBar st={st} level={tab === 'map' ? pack.level : undefined} onEnergy={() => setEnergySheet(true)} />
       {tab === 'map' && (
         <MapScreen pack={pack} st={st} due={due} hard={hard} onLesson={startLesson} onReview={startReview} onTrial={startTrial} onStorm={startStorm} onChest={chest}
+          bottle={bottle} onBottle={answerBottle} onLog={setLog}
           onStory={(isl) => openStory(isl)} nextLevel={nextLevel} onNextLevel={goNextLevel} onPremium={() => openPremium()} />
       )}
       {tab === 'passport' && <PassportScreen st={st} />}
@@ -230,6 +241,8 @@ export function App() {
       )}
       {toastEl}
       <TabBar tab={tab} onTab={(t) => { haptic.select(); go({ s: 'tab', tab: t }); }} />
+      {log && (() => { const ws = pack.lessons.filter((l) => l.island === log.n).flatMap((l) => l.words);
+        return <LogSheet island={log} words={ws} vocab={vocab(ws)} onClose={() => setLog(null)} />; })()}
       {story && <StorySheet island={story.isl} onClose={() => setStory(null)} onGo={() => { setStory(null); story.then?.(); }} />}
       {energySheet && (
         <EnergySheet st={st} onClose={() => setEnergySheet(false)}

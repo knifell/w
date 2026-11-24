@@ -1,9 +1,9 @@
 import { sfx } from '../../lib/sfx';
-import { useMemo, useState } from 'preact/hooks';
+import { useEffect, useMemo, useState } from 'preact/hooks';
 import type { Word } from '../../types';
 import { exerciseWords, type Exercise } from '../../engine/generators';
 import { haptic, useTgBack } from '../../tg/telegram';
-import { speak } from '../../lib/speech';
+import { prefetchAudio, speak } from '../../lib/speech';
 import { reportAnswer } from '../../game/local';
 import type { Submit } from './types';
 import { ChoiceView } from './ChoiceView';
@@ -34,6 +34,11 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
   const [combo, setCombo] = useState(0); // серия верных ответов подряд (только для вида)
   useTgBack(() => setAskExit(true));
   const [stats] = useState(() => ({ answers: 0, correct: 0, wrong: new Set<string>() }));
+
+  useEffect(() => { // звук слов и примеров урока — заранее, чтобы не было задержки
+    const ws = [...new Map(initial.flatMap(exerciseWords).map((w) => [w.id, w])).values()];
+    prefetchAudio(ws.flatMap((w) => [w.en, ...w.examples.slice(0, 1).map((e) => e.en)]));
+  }, []);
 
   const ex = queue[pos];
   const progress = solved / initial.length;

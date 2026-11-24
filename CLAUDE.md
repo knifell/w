@@ -27,7 +27,8 @@ Telegram Mini App: игра для изучения английского (ру
 - `app/src/engine/` — генерация упражнений (`generators.ts`), проверка ввода/опечаток (`check.ts`), словарь «изучено» (`vocab.ts`: CORE, NAMES, формы).
 - `app/src/game/` — логика: `local.ts` (состояние), `session.ts` (награды), `srs.ts` (интервалы), `progress.ts` (острова, «что дальше»), `streak.ts` (костёр), `energy.ts`, `shop.ts`, `stickers.ts`, `purchases.ts` (начисление Stars/друзей), `clock.ts` (защита от подкрутки часов), `time.ts`.
 - `app/src/api/` — `content.ts`, `cloud.ts` (копия прогресса в Telegram CloudStorage), `payments.ts` (покупки, приглашения).
-- Звуки: `lib/sfx.ts` (Web Audio), голос: `lib/speech.ts` (только английский), жители островов: `components/Residents.tsx`.
+- Звуки: `lib/sfx.ts` (Web Audio), жители островов: `components/Residents.tsx`.
+- Голос: `lib/speech.ts` играет готовые файлы `app/public/audio/<key>.mp3` (нейросеть Kokoro, голос `af_heart`, ~5000 файлов: все слова и примеры), «Медленнее» = playbackRate 0.72 без смены тона; нет файла → голос телефона. Ключ = cyrb53(норм. текст) — одинаковый в `speech.ts` и `scripts/tts/generate.py` (тест в `tests/logic.test.ts`). **Новый контент → перегенерировать**: `node scripts/tts/texts.mjs > /tmp/t.json && python3 scripts/tts/generate.py /tmp/t.json --model kokoro-v1.0.onnx --voices voices-v1.0.bin` (модель с GitHub releases thewh1teagle/kokoro-onnx; готовые файлы пропускаются).
 - `app/src/screens/`, `components/`, `styles/base.css` — интерфейс. Идёт редизайн (см. «Редизайн» ниже).
 - `worker/` — сервер оплаты на Cloudflare Workers (подпись initData, счета, вебхук, возвраты, друзья). README там.
 - `tests/logic.test.ts` — все тесты (esbuild → node).

@@ -25,6 +25,7 @@ import { vocabOf, knownSentence } from '../app/src/engine/vocab';
 import { canBuy } from '../app/src/game/shop';
 import { ITEMS } from '../app/src/game/config';
 import type { LevelPack } from '../app/src/types';
+import { audioKey } from '../app/src/lib/speech';
 
 let fakeDay = 20000;
 const RealDate = Date;
@@ -488,6 +489,15 @@ await t('админ: прыжок на остров', () => {
   assert.ok(s.unlocks[`${a1.level}-3`] !== undefined && s.unlocks[`${a1.level}-4`] === undefined);
   const st = islandState(a1, a1.islands[2], { ...s, premium: true });
   assert.equal(st.kind, 'open');
+});
+
+await t('озвучка: ключ файла совпадает с scripts/tts/generate.py', () => {
+  // значения посчитаны Python-версией (generate.py → key); при расхождении голос пропадёт
+  assert.equal(audioKey('I am Anna.'), '29pbsckjzsz');
+  assert.equal(audioKey('I am Anna'), '29pbsckjzsz'); // ответ сборки предложения — без точки
+  assert.equal(audioKey('café'), '1440vtls1if');
+  assert.equal(audioKey("Thank you! — You're welcome."), '1yn7bd5bxs4');
+  assert.equal(audioKey('I'), '2ah1ik0fwzy');
 });
 
 console.log(`\n${n} проверок пройдено`);

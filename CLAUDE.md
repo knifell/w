@@ -66,7 +66,7 @@ Telegram Mini App: игра для изучения английского (ру
 - Решение по темпу (Premium сейчас ~4,7 мес. минимум; варианты растянуть до ~7) — ждёт ответа пользователя.
 - Проверка в настоящем Telegram (вход, облако, покупки, подписка, друзья, «Назад»).
 
-## Деплой (сделан 23.11.2026; 24.11 выложены редизайн v2 + озвучка Kokoro, Pages production)
+## Деплой (сделан 23.11.2026; 24.11 выложены редизайн v2, озвучка Kokoro и разнообразные уроки — Pages production)
 - Бот: @ostrovslov_bot. Мини-приложение: `https://t.me/ostrovslov_bot/play` (создаётся в @BotFather через /newapp, short name `play`).
 - Pages: проект `ostrov-slov` → https://ostrov-slov.pages.dev. Worker: https://ostrov-slov-api.iklammm5.workers.dev (KV id в `worker/wrangler.toml`).
 - Сборка: `VITE_API_URL=https://ostrov-slov-api.iklammm5.workers.dev VITE_APP_LINK=https://t.me/ostrovslov_bot/play npm run build`,

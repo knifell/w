@@ -59,11 +59,12 @@ Telegram Mini App: игра для изучения английского (ру
 - Решение по темпу (Premium сейчас ~4,7 мес. минимум; варианты растянуть до ~7) — ждёт ответа пользователя.
 - Проверка в настоящем Telegram (вход, облако, покупки, подписка, друзья, «Назад»).
 
-## Деплой (сделан 23.11.2026)
+## Деплой (сделан 23.11.2026; 24.11 выложены редизайн v2 + озвучка Kokoro, Pages production)
 - Бот: @ostrovslov_bot. Мини-приложение: `https://t.me/ostrovslov_bot/play` (создаётся в @BotFather через /newapp, short name `play`).
 - Pages: проект `ostrov-slov` → https://ostrov-slov.pages.dev. Worker: https://ostrov-slov-api.iklammm5.workers.dev (KV id в `worker/wrangler.toml`).
 - Сборка: `VITE_API_URL=https://ostrov-slov-api.iklammm5.workers.dev VITE_APP_LINK=https://t.me/ostrovslov_bot/play npm run build`,
   затем `npx wrangler@4 pages deploy dist --project-name ostrov-slov --branch main` (запускать вне папки проекта или указать абсолютный путь к dist).
+- Pages: ~5000 файлов (озвучка) — укладывается в лимит 20 000 файлов. Из облачной сессии pages.dev не открывается (сеть), проверять через API `.../pages/projects/ostrov-slov/deployments`.
 - Worker: `cd worker && npx wrangler@4 deploy`. Нужны env `CLOUDFLARE_API_TOKEN` и `CLOUDFLARE_ACCOUNT_ID`.
 - В боте только мини-приложение: /start — приветствие с кнопкой «Играть», список команд пуст; /paysupport и /terms отвечают (правила Stars), но скрыты.
 - Админка: в профиле кнопка «Админка», если id игрока в `ADMIN_IDS` (worker/wrangler.toml). «Себе» — локально (`game/admin.ts`), «другим» — `/api/admin/{users,find,grant}`, подарки приходят через `/api/status` → `grants` (по id, один раз).

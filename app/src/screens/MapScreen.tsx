@@ -63,7 +63,7 @@ export function MapScreen({ pack, st, due, hard, onLesson, onReview, onTrial, on
 
   return (
     <main class="map">
-      <div class="card review">
+      <div class={"card review" + (due.length ? " due" : "")}>
         <span class="banner-ico"><Icon name="refresh" /></span>
         {due.length ? (
           <>
@@ -110,12 +110,17 @@ export function MapScreen({ pack, st, due, hard, onLesson, onReview, onTrial, on
         }
         const lessons = pack.lessons.filter((l) => l.island === isl.n);
         const islandDone = lessons.some((l) => st.done[l.id]);
+        const doneCount = lessons.filter((l) => st.done[l.id]).length;
         return (
-          <section class={`island ${s.kind}`} key={isl.n}>
+          <section class={`island ${s.kind} isl-${((isl.n - 1) % 6) + 1}`} key={isl.n}>
             <button class="island-head" onClick={() => (s.kind === 'premium' ? onPremium() : onStory(isl))}
               aria-label={s.kind === 'premium' ? `${isl.name}: доступен с Premium` : `${isl.name}: глава сюжета`}>
               <ResidentArt island={isl.n} size={44} />
-              <div><div class="hint">Остров {isl.n}</div><h3>{isl.name}</h3></div>
+              <div>
+                <div class="hint">Остров {isl.n}{s.kind === 'open' && <> · {doneCount}/{lessons.length}</>}</div>
+                <h3>{isl.name}</h3>
+                {s.kind === 'open' && <div class="isl-bar"><div style={{ width: `${(doneCount / Math.max(1, lessons.length)) * 100}%` }} /></div>}
+              </div>
               <span class="island-badge"><Icon name={s.kind === 'open' ? 'book' : s.kind === 'premium' ? 'crown' : 'lock'} /></span>
             </button>
             <IslandArt n={isl.n} />

@@ -8,6 +8,7 @@ import { Skipper } from '../components/Skipper';
 import { StampMark } from '../components/Stamp';
 import { useEffect } from 'preact/hooks';
 import { haptic } from '../tg/telegram';
+import { Confetti, CountUp } from '../components/Confetti';
 
 export type ResultData = Reward & { accuracy: number; wrongWords: Word[]; kind: SessionKind };
 const TITLE: Record<SessionKind, string> = { lesson: 'Урок пройден!', review: 'Повторение готово!', trial: 'Испытание пройдено!' };
@@ -17,12 +18,13 @@ export function ResultScreen({ result: r, onNext }: { result: ResultData; onNext
   useEffect(() => { sfx.win(); if (r.stickers.length) { haptic.reward(); setTimeout(sfx.coin, 600); } else haptic.ok(); }, []);
   return (
     <main class="result">
-      <Skipper mood={r.perfect ? 'happy' : 'proud'} size={170} />
+      <Confetti />
+      <div class="result-hero"><Skipper mood={r.perfect ? 'happy' : 'proud'} size={170} /></div>
       <h1>{r.perfect && r.kind === 'lesson' ? 'Без единой ошибки!' : TITLE[r.kind]}</h1>
       <div class="stats">
-        <div class="stat"><Icon name="star" size={22} /><b>+{r.xp}{r.mult > 1 && <small>×{r.mult}</small>}</b><span>опыт</span></div>
-        <div class="stat"><Shell size={22} /><b>+{r.coins}</b><span>ракушки</span></div>
-        <div class="stat"><Icon name="check" size={22} stroke={2.6} /><b>{r.accuracy}%</b><span>точность</span></div>
+        <div class="rstat xp"><span>опыт</span><b><Icon name="star" size={22} />+<CountUp to={r.xp} />{r.mult > 1 && <small>×{r.mult}</small>}</b></div>
+        <div class="rstat shell"><span>ракушки</span><b><Shell size={22} />+<CountUp to={r.coins} delay={420} /></b></div>
+        <div class="rstat acc"><span>точность</span><b><Icon name="check" size={22} stroke={3} /><CountUp to={r.accuracy} delay={540} />%</b></div>
       </div>
       {r.capped && <div class="card hint">Награды за испытания на сегодня закончились — но тренировка всё равно идёт в зачёт штампов.</div>}
       {r.stickers.map((s) => (

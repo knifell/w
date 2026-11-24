@@ -12,6 +12,9 @@ import { TypeView } from './TypeView';
 import { BuildView } from './BuildView';
 import { LearnCard } from './LearnCard';
 import { ListenView } from './ListenView';
+import { SelectView } from './SelectView';
+import { TrueFalseView } from './TrueFalseView';
+import { SpellView } from './SpellView';
 import { Flame, Icon } from '../../components/Icon';
 
 const PRAISE = ['Верно', 'Правильно', 'Отлично', 'Точно'];
@@ -53,7 +56,7 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
     if (s.ok) { stats.correct++; haptic.ok(); sfx.ok(); } else { haptic.bad(); sfx.bad(); }
     s.wrongIds?.forEach((id) => stats.wrong.add(id));
     if (!s.ok) exerciseWords(ex).forEach((w) => stats.wrong.add(w.id));
-    if (s.ok && ex.kind !== 'pairs' && ex.kind !== 'choice') speak(s.correct);
+    if (s.ok && ex.kind !== 'pairs' && ex.kind !== 'choice' && !(ex.kind === 'select' && ex.mode === 'meaning')) speak(s.say ?? s.correct);
     if (ex.kind === 'pairs') return next(true); // пары сами показывают результат
     setFb(s);
   };
@@ -97,6 +100,9 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
       {ex.kind === 'type' && <TypeView key={key} ex={ex} {...props} />}
       {ex.kind === 'listen' && <ListenView key={key} ex={ex} {...props} />}
       {ex.kind === 'build' && <BuildView key={key} ex={ex} {...props} />}
+      {ex.kind === 'select' && <SelectView key={key} ex={ex} {...props} />}
+      {ex.kind === 'tf' && <TrueFalseView key={key} ex={ex} {...props} />}
+      {ex.kind === 'spell' && <SpellView key={key} ex={ex} {...props} />}
       {askExit && (
         <div class="overlay" onClick={() => setAskExit(false)}>
           <div class="sheet story" onClick={(e) => e.stopPropagation()}>

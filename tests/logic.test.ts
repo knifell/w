@@ -491,6 +491,39 @@ await t('админ: прыжок на остров', () => {
   assert.equal(st.kind, 'open');
 });
 
+await t('урок: разминка из прошлых слов и новые виды заданий корректны', () => {
+  const lower = ['a1', 'a2'].flatMap((x) => (JSON.parse(readFileSync(`app/public/content/${x}.json`, 'utf8')) as LevelPack).lessons.flatMap((l) => l.words));
+  for (const lv of ['a1', 'b1']) {
+    const pk = JSON.parse(readFileSync(`app/public/content/${lv}.json`, 'utf8')) as LevelPack;
+    const pool = pk.lessons.flatMap((l) => l.words);
+    let learned: typeof pool = [];
+    const kinds = new Set<string>();
+    for (const l of pk.lessons.slice(0, 30)) {
+      const known = new Set(learned.map((w) => w.id));
+      const v = vocabOf([...(lv === 'b1' ? lower : []), ...learned, ...l.words]); // как в игре: уровни ниже уже знакомы
+      const okEn = new Set([...learned, ...l.words].map((w) => w.en.toLowerCase()));
+      for (const seed of [1, 2]) {
+        const ex = buildLesson(l, pool, seed, known, v, true, learned.slice(-3));
+        if (learned.length >= 3) assert.ok(ex.slice(0, 2).every((e) => e.kind !== 'learn' && learned.includes((e as { word: (typeof pool)[0] }).word)), `${l.id}: разминка`);
+        for (const e of ex) {
+          kinds.add(e.kind === 'select' ? e.mode : e.kind === 'build' && e.audio ? 'dictation' : e.kind);
+          if (e.kind === 'select') {
+            assert.equal(new Set(e.options).size, e.options.length, `${l.id}: ${e.mode} повтор варианта`);
+            assert.ok(e.options.includes(e.answer), `${l.id}: ${e.mode} нет ответа`);
+            if (e.mode === 'cloze') e.options.filter((o) => o !== e.answer).forEach((o) => assert.ok(okEn.has(o.toLowerCase()), `${l.id}: «${o}» не пройдено`));
+            if (e.mode !== 'meaning') assert.ok(knownSentence(e.say, v), `${l.id}: ${e.say}`);
+          }
+          if (e.kind === 'tf') assert.equal(e.truth, e.word.ru.includes(e.shown), `${l.id}: верно/нет`);
+          if (e.kind === 'spell') { const left = [...e.letters]; for (const c of e.answer) { const i = left.indexOf(c); assert.ok(i >= 0, `${l.id}: буквы ${e.answer}`); left.splice(i, 1); } }
+          if (e.kind === 'build' && e.audio) assert.ok(e.word.examples.some((x) => x.en === e.audio), `${l.id}: диктант`);
+        }
+      }
+      learned = [...learned, ...l.words];
+    }
+    for (const k of ['cloze', 'sentence', 'meaning', 'tf', 'spell', 'dictation']) assert.ok(kinds.has(k), `${lv}: нет вида ${k}`);
+  }
+});
+
 await t('озвучка: ключ файла совпадает с scripts/tts/generate.py', () => {
   // значения посчитаны Python-версией (generate.py → key); при расхождении голос пропадёт
   assert.equal(audioKey('I am Anna.'), '29pbsckjzsz');

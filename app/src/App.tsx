@@ -156,12 +156,18 @@ export function App() {
       setToast({ text: 'Приглашения заработают после запуска в Telegram.', err: true });
   };
   const startReview = (words: Word[]) => go({ s: 'session', kind: 'review', build: () => buildReview(words, [...allWords.values()], Date.now(),
-    Object.keys(st.mem).map((id) => allWords.get(id)).filter((w): w is Word => !!w), canListen()) });
+    Object.keys(st.mem).map((id) => allWords.get(id)).filter((w): w is Word => !!w), canListen(), vocab(words)) });
+
+  /** Слова прошлых уроков для разминки: сначала те, кому пора повториться, потом самые «слабые». */
+  const recallFor = (l: Lesson) => Object.entries(st.mem)
+    .filter(([id]) => !l.words.some((w) => w.id === id) && allWords.has(id))
+    .sort(([, a], [, b]) => a.due - b.due || a.s - b.s)
+    .slice(0, 3).map(([id]) => allWords.get(id)!);
 
   const startLesson = (l: Lesson) => {
     const start = () => {
       if (!mutate(spendEnergy)) return setEnergySheet(true);
-      go({ s: 'session', kind: 'lesson', lessonId: l.id, build: () => buildLesson(l, pool, Date.now(), new Set(Object.keys(st.mem)), vocab(l.words), canListen()) });
+      go({ s: 'session', kind: 'lesson', lessonId: l.id, build: () => buildLesson(l, pool, Date.now(), new Set(Object.keys(st.mem)), vocab(l.words), canListen(), recallFor(l)) });
     };
     if (!st.storySeen.includes(`${pack.level}-${l.island}`)) return openStory(pack.islands[l.island - 1], start);
     start();

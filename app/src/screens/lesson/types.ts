@@ -8,6 +8,7 @@ export interface Submit {
   input?: string;    // что ввёл игрок (для «Я ответил верно»)
   wrongIds?: string[]; // слова с ошибками (для пар)
   learn?: boolean;     // карточка нового слова, без оценки
+  say?: string;        // что озвучить после верного ответа (фраза целиком), иначе correct
 }
 export interface ViewProps<K extends Exercise['kind']> {
   ex: Extract<Exercise, { kind: K }>;

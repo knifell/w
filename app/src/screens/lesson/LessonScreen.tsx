@@ -24,10 +24,14 @@ interface Props {
   build: () => Exercise[];
   onExit: () => void;
   onDone: (o: SessionOutcome) => void;
+  /** storm — 60 секунд на быстрые вопросы; boss — испытание с тремя жизнями. */
+  mode?: 'storm' | 'boss';
 }
+const STORM_SEC = 60;
+const LIVES = 3;
 
 /** Общий экран сессии: урок или повторение. */
-export function LessonScreen({ build, onExit, onDone }: Props) {
+export function LessonScreen({ build, onExit, onDone, mode }: Props) {
   const initial = useMemo(build, []);
   const [queue, setQueue] = useState<Exercise[]>(initial);
   const [pos, setPos] = useState(0);
@@ -36,7 +40,17 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
   const [askExit, setAskExit] = useState(false);
   const [combo, setCombo] = useState(0); // серия верных ответов подряд (только для вида)
   useTgBack(() => setAskExit(true));
-  const [stats] = useState(() => ({ answers: 0, correct: 0, wrong: new Set<string>() }));
+  const [stats] = useState(() => ({ answers: 0, correct: 0, wrong: new Set<string>(), done: false }));
+  const [left, setLeft] = useState(STORM_SEC);
+  const [lives, setLives] = useState(LIVES);
+  const [flash, setFlash] = useState<'' | 'ok' | 'bad'>('');
+  const lost = mode === 'boss' && lives <= 0;
+  useEffect(() => { // таймер «Шторма»; пока открыт вопрос «Выйти?» — пауза
+    if (mode !== 'storm' || askExit) return;
+    if (left <= 0) { finish(); return; }
+    const t = setTimeout(() => setLeft((x) => x - 1), 1000);
+    return () => clearTimeout(t);
+  }, [left, askExit]);
 
   useEffect(() => { // звук слов и примеров урока — заранее, чтобы не было задержки
     const ws = [...new Map(initial.flatMap(exerciseWords).map((w) => [w.id, w])).values()];
@@ -56,8 +70,14 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
     if (s.ok) { stats.correct++; haptic.ok(); sfx.ok(); } else { haptic.bad(); sfx.bad(); }
     s.wrongIds?.forEach((id) => stats.wrong.add(id));
     if (!s.ok) exerciseWords(ex).forEach((w) => stats.wrong.add(w.id));
-    if (s.ok && ex.kind !== 'pairs' && ex.kind !== 'choice' && !(ex.kind === 'select' && ex.mode === 'meaning')) speak(s.say ?? s.correct);
+    if (s.ok && mode !== 'storm' && ex.kind !== 'pairs' && ex.kind !== 'choice' && !(ex.kind === 'select' && ex.mode === 'meaning')) speak(s.say ?? s.correct);
     if (ex.kind === 'pairs') return next(true); // пары сами показывают результат
+    if (mode === 'storm') { // без окна ответа: вспышка и сразу следующий вопрос
+      setFlash(s.ok ? 'ok' : 'bad');
+      setTimeout(() => { setFlash(''); next(true); }, s.ok ? 260 : 650);
+      return setFb({ ...s, ok: s.ok });
+    }
+    if (mode === 'boss' && !s.ok) setLives((n) => n - 1);
     setFb(s);
   };
 
@@ -71,6 +91,7 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
   };
 
   const claimRight = () => {
+    if (mode === 'boss') setLives((n) => Math.min(LIVES, n + 1));
     if (ex.kind === 'type' && fb?.input) reportAnswer(ex.word.id, fb.input);
     stats.correct++;
     exerciseWords(ex).forEach((w) => stats.wrong.delete(w.id));
@@ -78,20 +99,30 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
   };
 
   const finish = () => {
+    if (stats.done) return; // таймер «Шторма» и последний ответ могут прийти одновременно
+    stats.done = true;
     const accuracy = Math.round((stats.correct / Math.max(1, stats.answers)) * 100);
     const seen = [...new Map(initial.flatMap(exerciseWords).map((w) => [w.id, w])).values()];
     onDone({ accuracy, seen, wrong: seen.filter((w) => stats.wrong.has(w.id)) });
   };
 
   const key = `${ex.id}#${pos}`;
-  const props = { locked: !!fb, onSubmit: submit };
+  const props = { locked: !!fb, onSubmit: submit, quick: mode === 'storm' };
   const example = ex.kind !== 'pairs' ? ex.word.examples[0] : null;
 
   return (
-    <div class="lesson">
+    <div class={'lesson' + (mode ? ' mode-' + mode : '') + (flash ? ' flash-' + flash : '')}>
       <div class="lesson-top">
         <button class="x" aria-label="Выйти" onClick={() => setAskExit(true)}><Icon name="close" size={26} stroke={2.4} /></button>
-        <div class="bar"><div style={{ width: `${progress * 100}%` }} /></div>
+        {mode === 'storm' ? (
+          <div class={'bar storm-bar' + (left <= 10 ? ' low' : '')}><div style={{ width: `${(left / STORM_SEC) * 100}%` }} /></div>
+        ) : <div class="bar"><div style={{ width: `${progress * 100}%` }} /></div>}
+        {mode === 'storm' && <span class="timer" aria-label={`Осталось ${left} секунд`}>{left}</span>}
+        {mode === 'boss' && (
+          <span class="lives" aria-label={`Жизни: ${lives}`}>
+            {Array.from({ length: LIVES }, (_, i) => <span class={i < lives ? 'on' : ''}><Icon name="heart" size={22} /></span>)}
+          </span>
+        )}
         {combo >= 3 && <span class="combo" key={combo} aria-label={`${combo} подряд`}><Flame />{combo}</span>}
       </div>
       {ex.kind === 'learn' && <LearnCard key={key} ex={ex} {...props} />}
@@ -113,7 +144,16 @@ export function LessonScreen({ build, onExit, onDone }: Props) {
           </div>
         </div>
       )}
-      {fb && (
+      {lost && (
+        <div class="overlay">
+          <div class="sheet story lost" role="alertdialog">
+            <h2>Корабль дал течь</h2>
+            <p class="hint">Три ошибки — испытание не пройдено. Повтори слова острова и попробуй ещё раз: награды за попытку нет, но и штрафа тоже.</p>
+            <button class="btn" onClick={onExit}>На карту</button>
+          </div>
+        </div>
+      )}
+      {fb && mode !== 'storm' && !lost && (
         <div class={'sheet ' + (fb.ok ? 'ok' : 'bad')}>
           <div class="fb-head" role="status">
             <span class="fb-mark"><Icon name={fb.ok ? 'check' : 'close'} size={24} stroke={3} /></span>

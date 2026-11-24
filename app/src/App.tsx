@@ -17,7 +17,8 @@ import { buy as buyItem } from './game/shop';
 import { isDue } from './game/srs';
 import { today } from './game/time';
 import { REVIEW_MAX_WORDS } from './game/config';
-import { buildLesson, buildReview, buildTrial, type Exercise } from './engine/generators';
+import { buildLesson, buildReview, buildStorm, buildTrial, type Exercise } from './engine/generators';
+import { isBeacon, openChest } from './game/nodes';
 import { vocabOf } from './engine/vocab';
 import { setDictionary } from './engine/check';
 import { OnboardingScreen } from './screens/OnboardingScreen';
@@ -41,7 +42,7 @@ import { Skipper } from './components/Skipper';
 type Route =
   | { s: 'onboarding' } | { s: 'pick' } | { s: 'minitest'; level: Level } | { s: 'tab'; tab: Tab }
   | { s: 'about' } | { s: 'admin' } | { s: 'premium'; from: Tab }
-  | { s: 'session'; kind: SessionKind; lessonId?: string; build: () => Exercise[] }
+  | { s: 'session'; kind: SessionKind; lessonId?: string; build: () => Exercise[]; mode?: 'storm' | 'boss' }
   | { s: 'result'; result: ResultData };
 
 export function App() {
@@ -167,14 +168,23 @@ export function App() {
   const startLesson = (l: Lesson) => {
     const start = () => {
       if (!mutate(spendEnergy)) return setEnergySheet(true);
-      go({ s: 'session', kind: 'lesson', lessonId: l.id, build: () => buildLesson(l, pool, Date.now(), new Set(Object.keys(st.mem)), vocab(l.words), canListen(), recallFor(l)) });
+      go({ s: 'session', kind: 'lesson', lessonId: l.id, build: () => buildLesson(l, pool, Date.now(), new Set(Object.keys(st.mem)), vocab(l.words), canListen(), recallFor(l), isBeacon(pack, l) ? 'listen' : undefined) });
     };
     if (!st.storySeen.includes(`${pack.level}-${l.island}`)) return openStory(pack.islands[l.island - 1], start);
     start();
   };
   const startTrial = (isl: Island) => {
     const ws = pack.lessons.filter((l) => l.island === isl.n && st.done[l.id]).flatMap((l) => l.words);
-    go({ s: 'session', kind: 'trial', build: () => buildTrial(ws, pool, Date.now(), vocab(ws), canListen()) });
+    go({ s: 'session', kind: 'trial', mode: 'boss', build: () => buildTrial(ws, pool, Date.now(), vocab(ws), canListen()) });
+  };
+  /** «Шторм»: 60 секунд быстрых вопросов по словам острова. Награда как у испытания (общий дневной лимит). */
+  const startStorm = (isl: Island) => {
+    const ws = pack.lessons.filter((l) => l.island === isl.n && st.done[l.id]).flatMap((l) => l.words);
+    go({ s: 'session', kind: 'trial', mode: 'storm', build: () => buildStorm(ws, pool, Date.now()) });
+  };
+  const chest = (isl: Island) => {
+    const got = mutate((s) => openChest(s, pack, isl.n));
+    if (got) { haptic.reward(); sfx.coin(); setToast({ text: `Сундук открыт: +${got} ракушек` }); }
   };
   const finish = (kind: SessionKind, lessonId: string | undefined, o: SessionOutcome) => {
     const reward = recordSession({ kind, lessonId, accuracy: o.accuracy, seen: o.seen.map((w) => w.id), wrong: o.wrong.map((w) => w.id) }, packs);
@@ -191,7 +201,7 @@ export function App() {
     case 'minitest':
       return <MiniTestScreen pack={packs.find((p) => p.level === r.level)!} packs={packs}
         onDone={(l) => setLevel(l)} onBack={() => go({ s: 'pick' })} />;
-    case 'session': return <LessonScreen build={r.build} onExit={() => { if (r.kind === 'lesson') mutate(refundEnergy); toMap(); }} onDone={(o) => finish(r.kind, r.lessonId, o)} />;
+    case 'session': return <LessonScreen build={r.build} mode={r.mode} onExit={() => { if (r.kind === 'lesson') mutate(refundEnergy); toMap(); }} onDone={(o) => finish(r.kind, r.lessonId, o)} />;
     case 'result': return <ResultScreen result={r.result} onNext={() => toMap()} />;
     case 'admin': return <><AdminScreen st={st} packs={packs} onBack={() => go({ s: 'tab', tab: 'profile' })}
       mutate={(fn) => { mutate(fn); setSt(settleAll(packs)[0]); }}
@@ -209,7 +219,7 @@ export function App() {
     <>
       <TopBar st={st} level={tab === 'map' ? pack.level : undefined} onEnergy={() => setEnergySheet(true)} />
       {tab === 'map' && (
-        <MapScreen pack={pack} st={st} due={due} hard={hard} onLesson={startLesson} onReview={startReview} onTrial={startTrial}
+        <MapScreen pack={pack} st={st} due={due} hard={hard} onLesson={startLesson} onReview={startReview} onTrial={startTrial} onStorm={startStorm} onChest={chest}
           onStory={(isl) => openStory(isl)} nextLevel={nextLevel} onNextLevel={goNextLevel} onPremium={() => openPremium()} />
       )}
       {tab === 'passport' && <PassportScreen st={st} />}

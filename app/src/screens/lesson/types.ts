@@ -14,4 +14,5 @@ export interface ViewProps<K extends Exercise['kind']> {
   ex: Extract<Exercise, { kind: K }>;
   locked: boolean;
   onSubmit: (s: Submit) => void;
+  quick?: boolean;     // «Шторм»: ответ сразу по нажатию, без кнопки «Проверить»
 }

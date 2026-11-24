@@ -23,6 +23,10 @@
       "coins": 5
     },
     "trialDailyRewarded": 5,
+    "chest": {
+      "xp": 0,
+      "coins": 5
+    },
     "premiumCoinMult": 2
   },
   "items": [

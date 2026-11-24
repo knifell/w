@@ -26,6 +26,8 @@ import { canBuy } from '../app/src/game/shop';
 import { ITEMS } from '../app/src/game/config';
 import type { LevelPack } from '../app/src/types';
 import { audioKey } from '../app/src/lib/speech';
+import { chestReady, openChest, isBeacon } from '../app/src/game/nodes';
+import { buildStorm } from '../app/src/engine/generators';
 
 let fakeDay = 20000;
 const RealDate = Date;
@@ -522,6 +524,23 @@ await t('урок: разминка из прошлых слов и новые �
     }
     for (const k of ['cloze', 'sentence', 'meaning', 'tf', 'spell', 'dictation']) assert.ok(kinds.has(k), `${lv}: нет вида ${k}`);
   }
+});
+
+await t('тропа: сундук один раз после 5 уроков, Маяк — уроки 4 и 8, Шторм строится', () => {
+  const a1 = JSON.parse(readFileSync('app/public/content/a1.json', 'utf8')) as LevelPack;
+  const s = emptyState();
+  assert.equal(chestReady(s, a1, 1), false);
+  a1.lessons.filter((l) => l.island === 1).slice(0, 5).forEach((l) => { s.done[l.id] = { best: 100, at: 0 }; });
+  assert.equal(openChest(s, a1, 1), 5);
+  assert.equal(openChest(s, a1, 1), 0); // второй раз — ничего
+  assert.equal(s.coins, 5);
+  const p = emptyState(); p.premium = true;
+  a1.lessons.filter((l) => l.island === 1).slice(0, 5).forEach((l) => { p.done[l.id] = { best: 100, at: 0 }; });
+  assert.equal(openChest(p, a1, 1), 10); // Premium ×2
+  const isl1 = a1.lessons.filter((l) => l.island === 1);
+  assert.deepEqual(isl1.map((l) => isBeacon(a1, l)).map((b, i) => (b ? i + 1 : 0)).filter(Boolean), [4, 8]);
+  const st = buildStorm(isl1.slice(0, 3).flatMap((l) => l.words), a1.lessons.flatMap((l) => l.words), 1);
+  assert.ok(st.length >= 20 && st.every((e) => e.kind === 'tf' || (e.kind === 'choice' && e.options.includes(e.answer))));
 });
 
 await t('озвучка: ключ файла совпадает с scripts/tts/generate.py', () => {

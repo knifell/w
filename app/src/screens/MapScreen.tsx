@@ -7,6 +7,7 @@ import { days, plural, words } from '../lib/format';
 import { Flame, Icon } from '../components/Icon';
 import { FogArt, IslandArt } from '../components/IslandArt';
 import { ResidentArt } from '../components/Residents';
+import { CHEST_AFTER, chestKey, chestReady, isBeacon } from '../game/nodes';
 
 const ROW = 88;
 
@@ -43,12 +44,14 @@ interface Props {
   onLesson: (l: Lesson) => void;
   onReview: (words: Word[]) => void;
   onTrial: (island: Island) => void;
+  onStorm: (island: Island) => void;
+  onChest: (island: Island) => void;
   onStory: (island: Island) => void;
   nextLevel?: string; onNextLevel: () => void;
   onPremium: () => void;
 }
 
-export function MapScreen({ pack, st, due, hard, onLesson, onReview, onTrial, onStory, nextLevel, onNextLevel, onPremium }: Props) {
+export function MapScreen({ pack, st, due, hard, onLesson, onReview, onTrial, onStorm, onChest, onStory, nextLevel, onNextLevel, onPremium }: Props) {
   const day = today();
   const nextDue = Math.min(...Object.values(st.mem).map((m) => m.due));
   const current = pack.lessons.find((l) => !st.done[l.id])?.id;
@@ -126,26 +129,54 @@ export function MapScreen({ pack, st, due, hard, onLesson, onReview, onTrial, on
             <IslandArt n={isl.n} />
             <IslandNote s={s} />
             <div class="path">
-              <Route n={lessons.length} />
-              {lessons.map((l, i) => {
-                const open = lessonOpen(pack, l.day, st, s);
-                const done = !!st.done[l.id];
-                const cur = l.id === current && open;
+              {(() => {
+                // тропа: уроки + сундук после 5-го урока
+                const items: (Lesson | 'chest')[] = [...lessons];
+                if (lessons.length > CHEST_AFTER) items.splice(CHEST_AFTER, 0, 'chest');
                 return (
-                  <div class="stop" key={l.id} style={{ '--x': `${xAt(i)}%` }}>
-                    {cur && <Boat left={xAt(i) > 55} />}
-                    {cur && <span class="node-tag">{st.done[pack.lessons[0].id] ? 'Дальше' : 'Начать'}</span>}
-                    <button class={'node' + (done ? ' done' : '') + (cur ? ' cur' : '')}
-                      disabled={!open} onClick={() => onLesson(l)} title={l.title}
-                      aria-label={`Урок ${l.day}: ${l.title}${done ? ', пройден' : open ? '' : ', закрыт'}`}>
-                      {done ? <Icon name="check" size={30} stroke={3.2} /> : open ? l.day : <Icon name="lock" size={24} />}
-                    </button>
-                  </div>
+                  <>
+                    <Route n={items.length} />
+                    {items.map((it, i) => {
+                      if (it === 'chest') {
+                        const opened = st.chests.includes(chestKey(pack, isl.n));
+                        const ready = s.kind === 'open' && chestReady(st, pack, isl.n);
+                        return (
+                          <div class="stop" key="chest" style={{ '--x': `${xAt(i)}%` }}>
+                            <button class={'node chest' + (ready ? ' ready' : '') + (opened ? ' opened' : '')} disabled={!ready}
+                              onClick={() => onChest(isl)} aria-label={opened ? 'Сундук открыт' : ready ? 'Открыть сундук' : `Сундук: пройди ${CHEST_AFTER} уроков острова`}>
+                              <Icon name="chest" size={30} stroke={2.2} />
+                            </button>
+                            {ready && <span class="node-tag chest-tag">Сундук</span>}
+                          </div>
+                        );
+                      }
+                      const l = it;
+                      const open = lessonOpen(pack, l.day, st, s);
+                      const done = !!st.done[l.id];
+                      const cur = l.id === current && open;
+                      const beacon = isBeacon(pack, l);
+                      return (
+                        <div class="stop" key={l.id} style={{ '--x': `${xAt(i)}%` }}>
+                          {cur && <Boat left={xAt(i) > 55} />}
+                          {cur && <span class="node-tag">{st.done[pack.lessons[0].id] ? 'Дальше' : 'Начать'}</span>}
+                          <button class={'node' + (done ? ' done' : '') + (cur ? ' cur' : '')}
+                            disabled={!open} onClick={() => onLesson(l)} title={l.title}
+                            aria-label={`Урок ${l.day}: ${l.title}${beacon ? ' (на слух)' : ''}${done ? ', пройден' : open ? '' : ', закрыт'}`}>
+                            {done ? <Icon name="check" size={30} stroke={3.2} /> : open ? l.day : <Icon name="lock" size={24} />}
+                            {beacon && <span class="node-badge" aria-hidden="true"><Icon name="beacon" size={14} stroke={2.2} /></span>}
+                          </button>
+                        </div>
+                      );
+                    })}
+                  </>
                 );
-              })}
+              })()}
             </div>
             {s.kind === 'open' && islandDone && (
-              <button class="btn alt trial" onClick={() => onTrial(isl)}><Icon name="swords" size={20} />Испытание острова · без энергии</button>
+              <div class="island-acts">
+                <button class="btn alt" onClick={() => onTrial(isl)}><Icon name="swords" size={20} />Испытание</button>
+                <button class="btn alt storm-btn" onClick={() => onStorm(isl)}><Icon name="storm" size={20} />Шторм · 60 с</button>
+              </div>
             )}
           </section>
         );
@@ -153,7 +184,7 @@ export function MapScreen({ pack, st, due, hard, onLesson, onReview, onTrial, on
 
       {!pack.islands.some((isl) => islandState(pack, isl, st).kind === 'fog') && (
         <section class="island fog" aria-label="Дальше карта скрыта в тумане">
-          <FogArt trail from={xAt(pack.lessons.filter((l) => l.island === pack.islands.length).length - 1)} />
+          <FogArt trail from={(() => { const n = pack.lessons.filter((l) => l.island === pack.islands.length).length; return xAt(n > CHEST_AFTER ? n : n - 1); })()} />
         </section>
       )}
     </main>

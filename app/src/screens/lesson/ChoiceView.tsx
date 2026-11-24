@@ -4,7 +4,7 @@ import { speak } from '../../lib/speech';
 import type { ViewProps } from './types';
 import { Icon } from '../../components/Icon';
 
-export function ChoiceView({ ex, locked, onSubmit }: ViewProps<'choice'>) {
+export function ChoiceView({ ex, locked, onSubmit, quick }: ViewProps<'choice'>) {
   const [sel, setSel] = useState<string | null>(null);
   useEffect(() => { if (ex.dir === 'en-ru') speak(ex.word.en); }, [ex]);
   const cls = (o: string) =>
@@ -20,10 +20,10 @@ export function ChoiceView({ ex, locked, onSubmit }: ViewProps<'choice'>) {
       </div>
       <div class="opts">
         {ex.options.map((o) => (
-          <button class={cls(o)} disabled={locked} onClick={() => { haptic.tap(); setSel(o); }}>{o}</button>
+          <button class={cls(o)} disabled={locked} onClick={() => { haptic.tap(); setSel(o); if (quick) onSubmit({ ok: o === ex.answer, correct: ex.answer }); }}>{o}</button>
         ))}
       </div>
-      {!locked && (
+      {!locked && !quick && (
         <button class="btn check" disabled={!sel} onClick={() => onSubmit({ ok: sel === ex.answer, correct: ex.answer })}>
           Проверить
         </button>

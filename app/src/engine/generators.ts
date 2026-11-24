@@ -263,7 +263,7 @@ function chunks<T>(a: T[]): T[][] {
  */
 export function buildLesson(
   lesson: Lesson, levelPool: Word[], seed = Date.now(), known: Set<string> = new Set(), vocab?: Set<string>, audio = false,
-  recall: Word[] = [],
+  recall: Word[] = [], focus?: 'listen',
 ): Exercise[] {
   const r = mulberry32(hashSeed(lesson.id) ^ seed);
   const ws = lesson.words;
@@ -300,6 +300,11 @@ export function buildLesson(
   if (audio) { // на слух: одно слово выбрать по звуку, одно — записать
     out.push(listenEx(late[late.length - 1], pool, r, 'choose'));
     out.push(listenEx(late[late.length - 2], pool, r, 'write'));
+    if (focus === 'listen') { // урок-«Маяк»: ещё задания на слух и диктант
+      out.push(listenEx(late[late.length - 3] ?? late[0], pool, r, 'choose'));
+      const d = dictation(late[late.length - 4] ?? late[0], pool, r, vocab);
+      out.push(d ?? listenEx(late[late.length - 4] ?? late[0], pool, r, 'write'));
+    }
   }
 
   const fin = [...late.slice(5), ...late.slice(0, 5)];
@@ -346,6 +351,16 @@ export function buildMiniTest(pool: Word[], seed = Date.now()): Exercise[] {
   const r = mulberry32(seed);
   const ws = shuffle(pool, r).slice(0, 8);
   return ws.map((w, i) => (i < 3 ? choice(w, pool, r, 'en-ru') : i < 6 ? choice(w, pool, r, 'ru-en') : typeEx(w, pool)));
+}
+
+/** «Шторм»: быстрые вопросы на время — «верно или нет» и выбор перевода, без окна ответа. */
+export function buildStorm(words: Word[], pool: Word[], seed = Date.now()): Exercise[] {
+  const r = mulberry32(seed);
+  const out: Exercise[] = [];
+  for (let round = 0; round < 3; round++) shuffle(words, r).forEach((w, i) => {
+    out.push((i + round) % 2 ? choice(w, sameLevel(w, pool), r, 'en-ru') : trueFalse(w, sameLevel(w, pool), r));
+  });
+  return out.slice(0, 40);
 }
 
 /** Испытание острова: только ввод и сборка предложений, без подсказок-вариантов. */

@@ -74,4 +74,36 @@ Night sea scene: a small proud wooden sailing ship with golden trim and a purple
 
 ---
 
-Острова A2, B1, B2 (ещё 18 обложек) — потом, по тому же образцу, если A1 понравятся.
+## Обложки островов A2, B1, B2 — 16:9 (ещё 18 шт.)
+
+Промпт для каждой = **НАЧАЛО** + **сцена** из таблицы + **КОНЕЦ** (одним текстом, через пробел).
+
+НАЧАЛО:
+```
+Wide landscape illustration for a language-learning island adventure game.
+```
+КОНЕЦ:
+```
+Skipper the cartoon crab (bright red-orange round body, big white googly eyes on short stalks, rosy cheeks, small navy-blue captain's cap with a white top and a tiny gold anchor badge) is in the scene as described. Flat vector 2D mobile game illustration, bold clean rounded shapes, soft gradients, bright saturated palette: turquoise #00B3CC, sunny yellow #FFC61A, coral #FF7A52, warm sand #FFE2A0, leaf green #3CCF6E. Subject in the center, calm edges. No text, no letters, no numbers, no logo, no watermark.
+```
+
+| Файл | Остров | Сцена (вставить между НАЧАЛО и КОНЕЦ) |
+|---|---|---|
+| `a2-1` | Утренняя бухта | A calm bay at sunrise with pink-orange sky, a cosy beach hut with an open window, a breakfast table with fruit and tea. Skipper stretches happily with a toothbrush in one claw. |
+| `a2-2` | Рыночная коса | A long sandy spit lined with colourful fruit and fish stalls under striped awnings, baskets of mangoes and bananas. Skipper carries a woven shopping basket and points at a pineapple. |
+| `a2-3` | Остров ветров | A breezy green island with white windmills, a weather vane, fast clouds, a rainbow and a light rain shower on one side and sunshine on the other. Skipper holds a small umbrella that the wind is tugging. |
+| `a2-4` | Гавань встреч | A friendly harbour with small boats, a waterside café with round tables and cups, lanterns on strings. Skipper waves to arriving friends: a turtle, a seagull and an octopus. |
+| `a2-5` | Холм ремёсел | A sunny hill with little workshops: a potter's wheel, a carpenter's bench, a weaver's loom, colourful pots and baskets. Skipper wears a tiny apron and proudly shows a clay pot he made. |
+| `a2-6` | Маяк историй | A tall red-and-white lighthouse on a rocky island at dusk, warm light in its windows, an old owl keeper telling a story to animals sitting around a small campfire. Skipper listens with wide sparkling eyes. |
+| `b1-1` | Порт отбытия | A busy sea port with a big white ferry, a gangway, suitcases and travel bags, a departure board with only coloured lights and icons. Skipper holds a ticket and a small suitcase, ready to board. |
+| `b1-2` | Остров ремесла | A modern island workplace in treehouses connected by rope bridges, open laptops, coffee mugs, plants, cheerful animal coworkers. Skipper sits at a desk with a laptop, focused and smiling. |
+| `b1-3` | Лагуна чувств | A peaceful turquoise lagoon at sunset, glowing jellyfish and fish of different colours each showing a different mood (happy, sleepy, surprised). Skipper floats on a ring buoy, relaxed and dreamy. |
+| `b1-4` | Город споров | A sunny island town square with a small stone amphitheatre, animal characters debating with lively gestures and speech bubbles that contain only simple icons. Skipper stands on a little podium, raising one claw to speak. |
+| `b1-5` | Архив новостей | A cosy round library-archive with tall shelves of scrolls and folded papers, paper birds flying between shelves, a big globe. Skipper reads a large blank newspaper with curious eyes. |
+| `b1-6` | Обсерватория | An observatory dome on top of an island hill under a starry night sky with a crescent moon and constellations, a big brass telescope. Skipper looks through the telescope at a shooting star. |
+| `b2-1` | Штормовой мыс | A dramatic rocky cape with big waves crashing, a lighthouse beam cutting through dark storm clouds, lightning far away, but bright and friendly colours. Skipper wears a yellow raincoat and holds onto his cap, brave and determined. |
+| `b2-2` | Риф аргументов | A vivid underwater coral reef with groups of fish facing each other as if debating, bubbles, sea plants, a sunken treasure chest. Skipper in a small diving helmet listens between the groups like a judge. |
+| `b2-3` | Ледяной пролив | A cold strait between glittering icebergs, northern lights in a dark-teal sky, penguins on an ice floe, a small sturdy boat. Skipper wears a striped scarf and a warm hat over his cap, steering the boat. |
+| `b2-4` | Город масок | A festive carnival island town at evening with colourful masks on poles, garlands of lights, confetti, dancing animal characters in masks. Skipper holds a fancy feathered mask in front of his eyes. |
+| `b2-5` | Библиотека бурь | A tall spiral library tower on a cliff during a stormy evening, windows glowing warm, blank pages swirling in the wind like birds. Skipper stands at the top window holding an open glowing book. |
+| `b2-6` | Край карты | The magical edge of the world map: the sea flows over a giant waterfall into stars, a huge old compass rose floating in the sky, a sea serpent friendly and curious. Skipper stands at the bow of a small boat with a spyglass, amazed. |

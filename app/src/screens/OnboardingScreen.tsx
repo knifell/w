@@ -14,10 +14,13 @@ export function OnboardingScreen({ onNext }: { onNext: () => void }) {
   const last = i === SLIDES.length - 1;
   return (
     <main class="onb">
-      <div class="onb-art" key={i}>
-        {s.art === 'skipper' && <Skipper mood="wave" size={200} />}
+      <div class="brand" aria-label="Остров слов">Остров <span>слов</span></div>
+      <div class={'onb-art art-' + s.art} key={i}>
+        <span class="sky-sun" aria-hidden="true" />
+        <span class="cloud c1" aria-hidden="true" /><span class="cloud c2" aria-hidden="true" />
+        {s.art === 'skipper' && <div class="onb-hero"><Skipper mood="wave" size={190} /><span class="mound" /></div>}
         {s.art === 'island' && <IslandArt n={2} />}
-        {s.art === 'fog' && <FogArt />}
+        {s.art === 'fog' && <div class="onb-fog"><IslandArt n={3} /><FogArt /></div>}
       </div>
       <h1>{s.title}</h1>
       <p>{s.text}</p>

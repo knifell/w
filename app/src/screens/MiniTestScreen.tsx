@@ -32,7 +32,7 @@ export function MiniTestScreen({ pack, packs, onDone, onBack }: Props) {
     const tooHard = score <= 3 && down && has(down);
     return (
       <main class="result">
-        <Skipper mood={tooHard ? 'oops' : tooEasy ? 'happy' : 'proud'} size={170} />
+        <div class="result-hero"><Skipper mood={tooHard ? 'oops' : tooEasy ? 'happy' : 'proud'} size={170} /></div>
         <h1>{score} из {qs.length}</h1>
         <p>{tooHard ? `Уровень ${pack.level} пока сложноват. Советуем начать с ${down}: там слова, на которых строится ${pack.level}.`
           : tooEasy ? `Похоже, ${pack.level} для тебя лёгкий. Можно сразу на ${up}.`

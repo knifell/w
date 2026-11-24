@@ -13,12 +13,12 @@ import { sfx } from './lib/sfx';
 import { loadState, resetProgress, saveState, update, type LocalState } from './game/local';
 import { recordSession, settleAll, type SessionKind } from './game/session';
 import { refundEnergy, spendEnergy } from './game/energy';
-import { buy as buyItem } from './game/shop';
+import { buy as buyItem, equip, useTool } from './game/shop';
 import { isDue } from './game/srs';
 import { today } from './game/time';
 import { REVIEW_MAX_WORDS } from './game/config';
 import { buildLesson, buildReview, buildStorm, buildTrial, type Exercise } from './engine/generators';
-import { isBeacon, openChest } from './game/nodes';
+import { lessonPlan, openChest } from './game/nodes';
 import { bottleFor, claimBottle } from './game/bottle';
 import { LogSheet } from './components/LogSheet';
 import { vocabOf } from './engine/vocab';
@@ -44,7 +44,7 @@ import { Skipper } from './components/Skipper';
 type Route =
   | { s: 'onboarding' } | { s: 'pick' } | { s: 'minitest'; level: Level } | { s: 'tab'; tab: Tab }
   | { s: 'about' } | { s: 'admin' } | { s: 'premium'; from: Tab }
-  | { s: 'session'; kind: SessionKind; lessonId?: string; build: () => Exercise[]; mode?: 'storm' | 'boss' }
+  | { s: 'session'; kind: SessionKind; lessonId?: string; build: () => Exercise[]; mode?: 'storm' | 'boss'; extraLives?: number }
   | { s: 'result'; result: ResultData };
 
 export function App() {
@@ -178,14 +178,16 @@ export function App() {
   const startLesson = (l: Lesson) => {
     const start = () => {
       if (!mutate(spendEnergy)) return setEnergySheet(true);
-      go({ s: 'session', kind: 'lesson', lessonId: l.id, build: () => buildLesson(l, pool, Date.now(), new Set(Object.keys(st.mem)), vocab(l.words), canListen(), recallFor(l), isBeacon(pack, l) ? 'listen' : undefined) });
+      go({ s: 'session', kind: 'lesson', lessonId: l.id, build: () => buildLesson(l, pool, Date.now(), new Set(Object.keys(st.mem)), vocab(l.words), canListen(), recallFor(l), (() => { const [f, intro] = lessonPlan(pack, l); return { format: f === 'normal' ? undefined : f, intro }; })()) });
     };
     if (!st.storySeen.includes(`${pack.level}-${l.island}`)) return openStory(pack.islands[l.island - 1], start);
     start();
   };
   const startTrial = (isl: Island) => {
     const ws = pack.lessons.filter((l) => l.island === isl.n && st.done[l.id]).flatMap((l) => l.words);
-    go({ s: 'session', kind: 'trial', mode: 'boss', build: () => buildTrial(ws, pool, Date.now(), vocab(ws), canListen()) });
+    const buoy = mutate((s) => useTool(s, 'buoy')); // спасательный круг — +1 жизнь
+    if (buoy) setToast({ text: 'Спасательный круг: +1 жизнь' });
+    go({ s: 'session', kind: 'trial', mode: 'boss', extraLives: buoy ? 1 : 0, build: () => buildTrial(ws, pool, Date.now(), vocab(ws), canListen()) });
   };
   /** «Шторм»: 60 секунд быстрых вопросов по словам острова. Награда как у испытания (общий дневной лимит). */
   const startStorm = (isl: Island) => {
@@ -211,7 +213,8 @@ export function App() {
     case 'minitest':
       return <MiniTestScreen pack={packs.find((p) => p.level === r.level)!} packs={packs}
         onDone={(l) => setLevel(l)} onBack={() => go({ s: 'pick' })} />;
-    case 'session': return <LessonScreen build={r.build} mode={r.mode} onExit={() => { if (r.kind === 'lesson') mutate(refundEnergy); toMap(); }} onDone={(o) => finish(r.kind, r.lessonId, o)} />;
+    case 'session': return <LessonScreen build={r.build} mode={r.mode} extraLives={r.extraLives}
+      hints={st.inventory.spyglass ?? 0} onHint={() => mutate((s) => useTool(s, 'spyglass'))} onExit={() => { if (r.kind === 'lesson') mutate(refundEnergy); toMap(); }} onDone={(o) => finish(r.kind, r.lessonId, o)} />;
     case 'result': return <ResultScreen result={r.result} onNext={() => toMap()} />;
     case 'admin': return <><AdminScreen st={st} packs={packs} onBack={() => go({ s: 'tab', tab: 'profile' })}
       mutate={(fn) => { mutate(fn); setSt(settleAll(packs)[0]); }}
@@ -234,7 +237,7 @@ export function App() {
           onStory={(isl) => openStory(isl)} nextLevel={nextLevel} onNextLevel={goNextLevel} onPremium={() => openPremium()} />
       )}
       {tab === 'passport' && <PassportScreen st={st} />}
-      {tab === 'shop' && <ShopScreen st={st} onBuy={(id) => mutate((s) => buyItem(s, id))} onBuyStars={buyStars} onPremium={() => openPremium()} />}
+      {tab === 'shop' && <ShopScreen st={st} onBuy={(id) => mutate((s) => buyItem(s, id))} onBuyStars={buyStars} onPremium={() => openPremium()} onEquip={(id) => mutate((s) => equip(s, id))} />}
       {tab === 'profile' && (
         <ProfileScreen st={st} onPremium={() => openPremium()}
           onAbout={() => go({ s: 'about' })} onReset={resetAll} onInvite={invite} onAdmin={() => go({ s: 'admin' })} />

@@ -15,6 +15,9 @@ import { ListenView } from './ListenView';
 import { SelectView } from './SelectView';
 import { TrueFalseView } from './TrueFalseView';
 import { SpellView } from './SpellView';
+import { GlossaryView } from './GlossaryView';
+import { ChatView } from './ChatView';
+import { LetterView } from './LetterView';
 import { Flame, Icon } from '../../components/Icon';
 
 const PRAISE = ['Верно', 'Правильно', 'Отлично', 'Точно'];
@@ -26,12 +29,15 @@ interface Props {
   onDone: (o: SessionOutcome) => void;
   /** storm — 60 секунд на быстрые вопросы; boss — испытание с тремя жизнями. */
   mode?: 'storm' | 'boss';
+  extraLives?: number;          // спасательный круг
+  hints?: number;               // подзорных труб в запасе
+  onHint?: () => boolean;       // потратить трубу
 }
 const STORM_SEC = 60;
 const LIVES = 3;
 
 /** Общий экран сессии: урок или повторение. */
-export function LessonScreen({ build, onExit, onDone, mode }: Props) {
+export function LessonScreen({ build, onExit, onDone, mode, extraLives = 0, hints = 0, onHint }: Props) {
   const initial = useMemo(build, []);
   const [queue, setQueue] = useState<Exercise[]>(initial);
   const [pos, setPos] = useState(0);
@@ -42,7 +48,10 @@ export function LessonScreen({ build, onExit, onDone, mode }: Props) {
   useTgBack(() => setAskExit(true));
   const [stats] = useState(() => ({ answers: 0, correct: 0, wrong: new Set<string>(), done: false }));
   const [left, setLeft] = useState(STORM_SEC);
-  const [lives, setLives] = useState(LIVES);
+  const maxLives = LIVES + extraLives;
+  const [lives, setLives] = useState(maxLives);
+  const [hidden, setHidden] = useState<{ pos: number; opts: string[] } | null>(null);
+  const [hintsLeft, setHintsLeft] = useState(hints);
   const [flash, setFlash] = useState<'' | 'ok' | 'bad'>('');
   const lost = mode === 'boss' && lives <= 0;
   useEffect(() => { // таймер «Шторма»; пока открыт вопрос «Выйти?» — пауза
@@ -69,9 +78,9 @@ export function LessonScreen({ build, onExit, onDone, mode }: Props) {
     setCombo((c) => (s.ok ? c + 1 : 0));
     if (s.ok) { stats.correct++; haptic.ok(); sfx.ok(); } else { haptic.bad(); sfx.bad(); }
     s.wrongIds?.forEach((id) => stats.wrong.add(id));
-    if (!s.ok) exerciseWords(ex).forEach((w) => stats.wrong.add(w.id));
-    if (s.ok && mode !== 'storm' && ex.kind !== 'pairs' && ex.kind !== 'choice' && !(ex.kind === 'select' && ex.mode === 'meaning')) speak(s.say ?? s.correct);
-    if (ex.kind === 'pairs') return next(true); // пары сами показывают результат
+    if (!s.ok && !s.wrongIds) exerciseWords(ex).forEach((w) => stats.wrong.add(w.id));
+    if (s.ok && mode !== 'storm' && ex.kind !== 'pairs' && ex.kind !== 'chat' && ex.kind !== 'letter' && ex.kind !== 'choice' && !(ex.kind === 'select' && ex.mode === 'meaning')) speak(s.say ?? s.correct);
+    if (ex.kind === 'pairs' || ex.kind === 'chat' || ex.kind === 'letter') return next(true); // сами показывают результат
     if (mode === 'storm') { // без окна ответа: вспышка и сразу следующий вопрос
       setFlash(s.ok ? 'ok' : 'bad');
       setTimeout(() => { setFlash(''); next(true); }, s.ok ? 260 : 650);
@@ -91,7 +100,7 @@ export function LessonScreen({ build, onExit, onDone, mode }: Props) {
   };
 
   const claimRight = () => {
-    if (mode === 'boss') setLives((n) => Math.min(LIVES, n + 1));
+    if (mode === 'boss') setLives((n) => Math.min(maxLives, n + 1));
     if (ex.kind === 'type' && fb?.input) reportAnswer(ex.word.id, fb.input);
     stats.correct++;
     exerciseWords(ex).forEach((w) => stats.wrong.delete(w.id));
@@ -107,8 +116,16 @@ export function LessonScreen({ build, onExit, onDone, mode }: Props) {
   };
 
   const key = `${ex.id}#${pos}`;
-  const props = { locked: !!fb, onSubmit: submit, quick: mode === 'storm' };
-  const example = ex.kind !== 'pairs' ? ex.word.examples[0] : null;
+  const choiceOf = (e: Exercise) => (e.kind === 'choice' || e.kind === 'select' || (e.kind === 'listen' && e.mode === 'choose') ? e : null);
+  const canHint = mode !== 'storm' && !fb && hintsLeft > 0 && !!choiceOf(ex) && hidden?.pos !== pos;
+  const useHint = () => { // подзорная труба: убрать 2 неверных варианта
+    const c = choiceOf(ex);
+    if (!c || !onHint?.()) return;
+    const wrong = c.options.filter((o) => o !== c.answer).sort(() => Math.random() - 0.5).slice(0, 2);
+    setHidden({ pos, opts: wrong }); setHintsLeft((n) => n - 1); haptic.tap();
+  };
+  const props = { locked: !!fb, onSubmit: submit, quick: mode === 'storm', hide: hidden?.pos === pos ? hidden.opts : undefined };
+  const example = 'word' in ex ? ex.word.examples[0] : null;
 
   return (
     <div class={'lesson' + (mode ? ' mode-' + mode : '') + (flash ? ' flash-' + flash : '')}>
@@ -120,8 +137,13 @@ export function LessonScreen({ build, onExit, onDone, mode }: Props) {
         {mode === 'storm' && <span class="timer" aria-label={`Осталось ${left} секунд`}>{left}</span>}
         {mode === 'boss' && (
           <span class="lives" aria-label={`Жизни: ${lives}`}>
-            {Array.from({ length: LIVES }, (_, i) => <span class={i < lives ? 'on' : ''}><Icon name="heart" size={22} /></span>)}
+            {Array.from({ length: maxLives }, (_, i) => <span class={i < lives ? 'on' : ''}><Icon name="heart" size={22} /></span>)}
           </span>
+        )}
+        {canHint && (
+          <button class="hint-btn" onClick={useHint} aria-label={`Подзорная труба: убрать 2 неверных варианта (осталось ${hintsLeft})`}>
+            <Icon name="eye" size={20} /><span>{hintsLeft}</span>
+          </button>
         )}
         {combo >= 3 && <span class="combo" key={combo} aria-label={`${combo} подряд`}><Flame />{combo}</span>}
       </div>
@@ -134,6 +156,9 @@ export function LessonScreen({ build, onExit, onDone, mode }: Props) {
       {ex.kind === 'select' && <SelectView key={key} ex={ex} {...props} />}
       {ex.kind === 'tf' && <TrueFalseView key={key} ex={ex} {...props} />}
       {ex.kind === 'spell' && <SpellView key={key} ex={ex} {...props} />}
+      {ex.kind === 'glossary' && <GlossaryView key={key} ex={ex} {...props} />}
+      {ex.kind === 'chat' && <ChatView key={key} ex={ex} {...props} />}
+      {ex.kind === 'letter' && <LetterView key={key} ex={ex} {...props} />}
       {askExit && (
         <div class="overlay" onClick={() => setAskExit(false)}>
           <div class="sheet story" onClick={(e) => e.stopPropagation()}>

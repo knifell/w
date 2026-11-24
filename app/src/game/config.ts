@@ -5,7 +5,9 @@ import stickers from '../../../content/stickers.json';
 export type ItemEffect =
   | { type: 'boost'; minutes: number; xpMult: number }
   | { type: 'shield'; max: number }
-  | { type: 'energy'; amount: number };
+  | { type: 'energy'; amount: number }
+  | { type: 'tool'; max: number; use: 'hint' | 'life' }        // лежит в запасе, тратится в заданиях
+  | { type: 'cosmetic'; slot: 'flag' | 'frame'; value: string }; // покупается один раз, надевается
 export interface ShopItem { id: string; name: string; emoji: string; desc: string; price: number; effect: ItemEffect; freeOnly?: boolean }
 export type Rarity = 'common' | 'rare' | 'epic' | 'legendary';
 export interface Sticker {

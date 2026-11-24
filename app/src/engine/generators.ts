@@ -5,7 +5,14 @@ import { norm } from './check';
 import { knownSentence, knownToken } from './vocab';
 
 export type Exercise =
-  | { kind: 'learn'; id: string; word: Word; options: string[]; answer: string }
+  /** Новое слово. guess — «догадайся по смыслу»: перевод примера виден, перевод слова скрыт. */
+  | { kind: 'learn'; id: string; word: Word; options: string[]; answer: string; guess?: boolean }
+  /** Словарик: новые слова группы списком (звук, перевод, пример) — затем пары. */
+  | { kind: 'glossary'; id: string; words: Word[] }
+  /** Переписка с жителем: он спрашивает «как сказать …», ты дописываешь ответ выученным словом. */
+  | { kind: 'chat'; id: string; island: number; words: Word[]; steps: { ask: string; before: string; after: string; options: string[]; answer: string; say: string; word: Word }[] }
+  /** Письмо с пропусками: вставить слова из банка. */
+  | { kind: 'letter'; id: string; words: Word[]; lines: { before: string; after: string; answer: string; ru: string; word: Word }[]; bank: string[] }
   | { kind: 'choice'; id: string; dir: 'en-ru' | 'ru-en'; word: Word; prompt: string; options: string[]; answer: string }
   | { kind: 'pairs'; id: string; words: Word[]; labels: string[]; left: number[]; right: number[] }
   | { kind: 'type'; id: string; word: Word; prompt: string; answers: string[] }
@@ -213,6 +220,51 @@ function dictation(w: Word, pool: Word[], r: Rng, vocab?: Set<string>): Exercise
   return ex ? { ...b, id: `d-${w.id}`, audio: ex.en } : null;
 }
 
+/** Предложение-пример с одним пропуском (само слово): части до/после и ответ. */
+function gapOf(w: Word, vocab?: Set<string>) {
+  const ex = exampleOf(w, vocab);
+  if (!ex) return null;
+  const toks = tokenize(ex.en);
+  const at = locate(w, toks);
+  if (!at || at[1] !== 1 || toks.length < 3) return null;
+  const end = endMark(ex.en);
+  const cap = (t: string) => t.charAt(0).toUpperCase() + t.slice(1);
+  const before = toks.slice(0, at[0]).join(' '), after = toks.slice(at[0] + 1).join(' ') + end;
+  return { ex, answer: toks[at[0]], before: before ? cap(before) : '', after, end };
+}
+
+/** Переписка: 3 вопроса жителя «Как сказать …?», ответ — фраза с пропуском и 3 варианта. */
+function chat(words: Word[], island: number, r: Rng, vocab: Set<string> | undefined, familiar: Word[], tag: string): Exercise | null {
+  const steps: Extract<Exercise, { kind: 'chat' }>['steps'] = [];
+  for (const w of words) {
+    const g = gapOf(w, vocab);
+    if (!g) continue;
+    const wrong = enDistractors(w, familiar, 2, r, [g.answer]);
+    if (wrong.length < 2) continue;
+    const fit = (x: string) => (!g.before && /^[A-Z]/.test(g.answer) ? x.charAt(0).toUpperCase() + x.slice(1) : x);
+    steps.push({ ask: g.ex.ru, before: g.before, after: g.after, answer: g.answer, options: shuffle([g.answer, ...wrong.map(fit)], r), say: g.ex.en, word: w });
+    if (steps.length === 3) break;
+  }
+  if (steps.length < 2) return null;
+  return { kind: 'chat', id: `h-${tag}`, island, words: steps.map((x) => x.word), steps };
+}
+
+/** Письмо: 3–4 предложения с пропусками, банк слов (+2 лишних). */
+function letter(words: Word[], r: Rng, vocab: Set<string> | undefined, familiar: Word[], tag: string): Exercise | null {
+  const lines: Extract<Exercise, { kind: 'letter' }>['lines'] = [];
+  for (const w of words) {
+    const g = gapOf(w, vocab);
+    if (!g || lines.some((l) => norm(l.answer) === norm(g.answer))) continue;
+    lines.push({ before: g.before, after: g.after, answer: g.answer, ru: g.ex.ru, word: w });
+    if (lines.length === 4) break;
+  }
+  if (lines.length < 3) return null;
+  const extra = enDistractors(lines[0].word, familiar, 6, r, lines.map((l) => l.answer)).filter((x) => /^[a-z]/i.test(x)).slice(0, 2);
+  // в банке всё строчными (кроме I и имён), чтобы заглавная буква не выдавала ответ в начале фразы
+  const low = (t: string) => (t === 'I' || /^[A-Z][a-z]+$/.test(t) && !lines.some((l) => l.answer === t && l.before === '') ? t : t.toLowerCase());
+  return { kind: 'letter', id: `e-${tag}`, words: lines.map((l) => l.word), lines, bank: shuffle([...lines.map((l) => low(l.answer)), ...extra.map(low)], r) };
+}
+
 type Gen = 'choiceRu' | 'choiceEn' | 'type' | 'cloze' | 'sentence' | 'meaning' | 'tf' | 'spell';
 
 /** Задание выбранного вида; если для слова не подходит — null. */
@@ -251,6 +303,8 @@ function chunks<T>(a: T[]): T[][] {
   return out;
 }
 
+export interface LessonOpts { format?: 'listen' | 'chat' | 'letter'; intro?: 'cards' | 'glossary' | 'guess' }
+
 /**
  * Урок по шагам (каждый раз в другом порядке и с другими видами заданий):
  * 0) разминка: 2 слова из прошлых уроков (recall) — чтобы выученное не забывалось;
@@ -263,8 +317,9 @@ function chunks<T>(a: T[]): T[][] {
  */
 export function buildLesson(
   lesson: Lesson, levelPool: Word[], seed = Date.now(), known: Set<string> = new Set(), vocab?: Set<string>, audio = false,
-  recall: Word[] = [], focus?: 'listen',
+  recall: Word[] = [], opts: LessonOpts = {},
 ): Exercise[] {
+  const { format, intro = 'cards' } = opts;
   const r = mulberry32(hashSeed(lesson.id) ^ seed);
   const ws = lesson.words;
   const inLesson = (x: Word) => ws.some((y) => y.id === x.id);
@@ -279,9 +334,11 @@ export function buildLesson(
   varied(back.slice(0, 2), ['choiceRu', 'cloze', 'tf', 'meaning', 'spell'], pool, r, learnedOnly, vocab, out);
 
   chunks(fresh).forEach((c, i) => {
-    c.forEach((w) => {
+    if (intro === 'glossary') out.push({ kind: 'glossary', id: `g-${lesson.id}-${i}`, words: c });
+    else c.forEach((w) => {
       const ch = choice(w, pool, r, 'en-ru');
-      if (ch.kind === 'choice') out.push({ kind: 'learn', id: `l-${w.id}`, word: w, options: ch.options, answer: ch.answer });
+      const guess = intro === 'guess' && !!exampleOf(w);
+      if (ch.kind === 'choice') out.push({ kind: 'learn', id: `l-${w.id}`, word: w, options: ch.options, answer: ch.answer, guess });
     });
     const p = c.length >= 3 ? pairs(c, r, `${lesson.id}-n${i}`) : null;
     if (p) out.push(p);
@@ -295,12 +352,19 @@ export function buildLesson(
   if (po) out.push(po);
 
   const late = shuffle(ws, r);
-  varied([...late.slice(0, 5), ...back.slice(2, 3)], ['choiceRu', 'type', 'cloze', 'sentence', 'meaning', 'spell'], pool, r, familiar, vocab, out);
+  // формат урока: переписка или письмо — главная часть урока, выученные слова применяются в тексте
+  const usePool = [...late, ...back];
+  const special = format === 'chat' ? chat(usePool, lesson.island, r, vocab, familiar, lesson.id)
+    : format === 'letter' ? letter(usePool, r, vocab, familiar, lesson.id) : null;
+  if (special) {
+    out.push(special);
+    varied(late.filter((w) => !exerciseWords(special).includes(w)).slice(0, 3), ['choiceRu', 'type', 'spell', 'meaning'], pool, r, familiar, vocab, out);
+  } else varied([...late.slice(0, 5), ...back.slice(2, 3)], ['choiceRu', 'type', 'cloze', 'sentence', 'meaning', 'spell'], pool, r, familiar, vocab, out);
 
   if (audio) { // на слух: одно слово выбрать по звуку, одно — записать
     out.push(listenEx(late[late.length - 1], pool, r, 'choose'));
     out.push(listenEx(late[late.length - 2], pool, r, 'write'));
-    if (focus === 'listen') { // урок-«Маяк»: ещё задания на слух и диктант
+    if (format === 'listen') { // урок-«Маяк»: ещё задания на слух и диктант
       out.push(listenEx(late[late.length - 3] ?? late[0], pool, r, 'choose'));
       const d = dictation(late[late.length - 4] ?? late[0], pool, r, vocab);
       out.push(d ?? listenEx(late[late.length - 4] ?? late[0], pool, r, 'write'));
@@ -321,7 +385,7 @@ export function buildLesson(
   return out;
 }
 
-export const exerciseWords = (e: Exercise): Word[] => (e.kind === 'pairs' ? e.words : [e.word]);
+export const exerciseWords = (e: Exercise): Word[] => ('words' in e ? e.words : [e.word]);
 
 /** Варианты-ловушки — из того же уровня, что и слово (id вида a1-d01-01), иначе A1-ученик видит слова B2. */
 const sameLevel = (w: Word, pool: Word[]) => {

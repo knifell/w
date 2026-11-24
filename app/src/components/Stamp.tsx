@@ -57,4 +57,4 @@ export function StampMark({ s, has, open }: { s: Sticker; has: boolean; open: bo
 }
 
 /* Значки товаров лавки. */
-export const ITEM_ICON: Record<string, string> = { wind: 'wind', ember: 'ember', oil: 'flask' };
+export const ITEM_ICON: Record<string, string> = { wind: 'wind', ember: 'ember', oil: 'flask', spyglass: 'eye', buoy: 'heart' };

@@ -26,7 +26,7 @@ import { canBuy } from '../app/src/game/shop';
 import { ITEMS } from '../app/src/game/config';
 import type { LevelPack } from '../app/src/types';
 import { audioKey } from '../app/src/lib/speech';
-import { chestReady, openChest, isBeacon } from '../app/src/game/nodes';
+import { chestReady, openChest, isBeacon, lessonPlan } from '../app/src/game/nodes';
 import { buildStorm } from '../app/src/engine/generators';
 import { bottleFor, claimBottle } from '../app/src/game/bottle';
 
@@ -559,6 +559,32 @@ await t('бутылка с письмом: раз в день, из знаком
   const w = emptyState();
   assert.equal(claimBottle(w, 101, false), 0);
   assert.equal(w.bottleDay, 101); // ошибся — тоже до завтра
+});
+
+await t('форматы уроков: словарик, догадка, переписка, письмо — собираются и корректны', () => {
+  const lower = ['a1', 'a2'].flatMap((x) => (JSON.parse(readFileSync(`app/public/content/${x}.json`, 'utf8')) as LevelPack).lessons.flatMap((l) => l.words));
+  for (const lv of ['a1', 'a2', 'b2']) {
+    const pk = JSON.parse(readFileSync(`app/public/content/${lv}.json`, 'utf8')) as LevelPack;
+    const pool = pk.lessons.flatMap((l) => l.words);
+    let learned: typeof pool = [];
+    let chats = 0, letters = 0, total = { chat: 0, letter: 0 };
+    for (const l of pk.lessons) {
+      const [f, intro] = lessonPlan(pk, l);
+      const v = vocabOf([...(lv !== 'a1' ? lower : []), ...learned, ...l.words]);
+      const ex = buildLesson(l, pool, 1, new Set(learned.map((w) => w.id)), v, true, learned.slice(-3), { format: f === 'normal' ? undefined : f, intro });
+      const seen = new Set(ex.filter((e) => e.kind !== 'learn').flatMap((e) => ('words' in e ? e.words : [e.word])).map((w) => w.id));
+      l.words.forEach((w) => assert.ok(seen.has(w.id), `${l.id}: ${w.en} не встречается`));
+      if (intro === 'glossary') assert.ok(ex.some((e) => e.kind === 'glossary'), `${l.id}: нет словарика`);
+      if (intro === 'guess') assert.ok(ex.some((e) => e.kind === 'learn' && e.guess), `${l.id}: нет догадки`);
+      if (f === 'chat' || f === 'letter') total[f]++;
+      for (const e of ex) {
+        if (e.kind === 'chat') { chats++; e.steps.forEach((st) => { assert.ok(st.options.includes(st.answer)); assert.equal(new Set(st.options).size, st.options.length, l.id); }); }
+        if (e.kind === 'letter') { letters++; e.lines.forEach((ln) => assert.ok(e.bank.some((b) => b.toLowerCase() === ln.answer.toLowerCase()), l.id)); assert.equal(new Set(e.bank.map((b) => b.toLowerCase())).size, e.bank.length, `${l.id}: банк`); }
+      }
+      learned = [...learned, ...l.words];
+    }
+    assert.ok(chats >= total.chat * 0.8 && letters >= total.letter * 0.8, `${lv}: переписка ${chats}/${total.chat}, письмо ${letters}/${total.letter}`);
+  }
 });
 
 await t('озвучка: ключ файла совпадает с scripts/tts/generate.py', () => {

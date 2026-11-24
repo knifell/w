@@ -30,7 +30,7 @@ export function LearnCard({ ex, locked, onSubmit }: ViewProps<'learn'>) {
   const [sel, setSel] = useState<string | null>(null);
   useEffect(() => { speak(w.en); }, [w]);
 
-  const reveal = () => { setShown(true); speak(w.en); haptic.tap(); };
+  const reveal = () => { if (ex.guess) { speak(w.en); return; } setShown(true); speak(w.en); haptic.tap(); };
   const pick = (o: string) => {
     if (sel || locked) return;
     setSel(o);
@@ -44,7 +44,7 @@ export function LearnCard({ ex, locked, onSubmit }: ViewProps<'learn'>) {
 
   return (
     <div class="ex learn">
-      <div class="ex-title">Новое слово</div>
+      <div class="ex-title">{ex.guess ? 'Догадайся по смыслу' : 'Новое слово'}</div>
       <div class="learn-card">
         <button class="learn-head" onClick={reveal} title="Нажми, чтобы увидеть перевод">
           <span class="speak" aria-hidden="true"><Icon name="speaker" /></span>
@@ -53,15 +53,15 @@ export function LearnCard({ ex, locked, onSubmit }: ViewProps<'learn'>) {
         <div class="pos">{POS[w.pos] ?? w.pos}</div>
         {shown
           ? <div class="learn-ru">{w.ru.join('; ')}</div>
-          : <button class="peek" onClick={reveal}><Icon name="eye" size={20} />Показать перевод</button>}
-        {w.examples.map((e) => (
+          : !ex.guess && <button class="peek" onClick={reveal}><Icon name="eye" size={20} />Показать перевод</button>}
+        {(ex.guess ? w.examples.slice(0, 1) : w.examples).map((e) => (
           <div class="learn-ex" onClick={() => speak(e.en)}>
             <div>{highlight(e.en, [...(w.forms ?? []), w.en])}</div>
-            {shown && <div class="hint">{e.ru}</div>}
+            {(shown || ex.guess) && <div class={ex.guess ? 'guess-ru' : 'hint'}>{e.ru}</div>}
           </div>
         ))}
       </div>
-      <div class="hint learn-tip">Выбери перевод. Не знаешь — нажми на слово.</div>
+      <div class="hint learn-tip">{ex.guess ? 'Перевод фразы подскажет, что значит слово. Ошибка не страшна.' : 'Выбери перевод. Не знаешь — нажми на слово.'}</div>
       <div class="opts">
         {ex.options.map((o) => <button class={cls(o)} disabled={!!sel || locked} onClick={() => pick(o)}>{o}</button>)}
       </div>

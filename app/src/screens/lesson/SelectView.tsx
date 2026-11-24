@@ -7,7 +7,7 @@ import { Icon } from '../../components/Icon';
 const TITLE = { cloze: 'Вставь пропущенное слово', sentence: 'Как сказать по-английски?', meaning: 'Что значит эта фраза?' };
 
 /** Выбор варианта: пропуск в предложении, верный перевод фразы, смысл английской фразы. */
-export function SelectView({ ex, locked, onSubmit }: ViewProps<'select'>) {
+export function SelectView({ ex, locked, onSubmit, hide }: ViewProps<'select'>) {
   const [sel, setSel] = useState<string | null>(null);
   useEffect(() => { if (ex.mode === 'meaning') speak(ex.say); }, [ex]);
   const cls = (o: string) =>
@@ -30,7 +30,7 @@ export function SelectView({ ex, locked, onSubmit }: ViewProps<'select'>) {
         </div>
       )}
       <div class="opts">
-        {ex.options.map((o) => <button class={cls(o)} disabled={locked} onClick={() => { haptic.tap(); setSel(o); }}>{o}</button>)}
+        {ex.options.map((o) => <button class={cls(o) + (hide?.includes(o) ? ' gone' : '')} disabled={locked || hide?.includes(o)} onClick={() => { haptic.tap(); setSel(o); }}>{o}</button>)}
       </div>
       {!locked && (
         <button class="btn check" disabled={!sel} onClick={() => onSubmit({ ok: sel === ex.answer, correct: ex.answer, say: ex.say })}>Проверить</button>

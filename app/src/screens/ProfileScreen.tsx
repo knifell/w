@@ -6,6 +6,7 @@ import { conqueredCount } from '../game/progress';
 import { tg } from '../tg/telegram';
 import { Flame, Icon } from '../components/Icon';
 import { Skipper } from '../components/Skipper';
+import { equipped } from '../game/shop';
 import { REFERRAL } from '../game/config';
 
 interface Props {
@@ -24,7 +25,7 @@ export function ProfileScreen({ st, onPremium, onAbout, onReset, onInvite, onAdm
   return (
     <main>
       <header class="profile-head">
-        <span class="avatar"><Skipper size={62} /></span>
+        <span class={'avatar frame-' + (equipped(st, 'frame') ?? 'none')}><Skipper size={62} /></span>
         <div>
           <h1>{name}</h1>
           <span class="plan">{st.premium && <Icon name="crown" size={16} />}{st.premium ? 'Premium' : 'Бесплатный план'} · уровень {st.level}</span>

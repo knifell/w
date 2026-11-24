@@ -6,8 +6,16 @@ import { REWARDS } from './config';
 /** Номер урока внутри острова (1…10). */
 const placeOf = (pack: LevelPack, l: Lesson) => pack.lessons.filter((x) => x.island === l.island).indexOf(l) + 1;
 
-/** Уроки 4 и 8 каждого острова — «Маяк»: больше заданий на слух и диктант. */
-export const isBeacon = (pack: LevelPack, l: Lesson) => [4, 8].includes(placeOf(pack, l));
+export type LessonFormat = 'normal' | 'listen' | 'chat' | 'letter';
+export type IntroStyle = 'cards' | 'glossary' | 'guess';
+/** Чередование на острове (номер урока → формат и способ знакомства с новыми словами).
+ *  Маяк (4, 8) — на слух; Переписка (3, 9) и Письмо (6) — выученные слова применяются в тексте. */
+const PLAN: Record<number, [LessonFormat, IntroStyle]> = {
+  1: ['normal', 'cards'], 2: ['normal', 'glossary'], 3: ['chat', 'glossary'], 4: ['listen', 'cards'], 5: ['normal', 'guess'],
+  6: ['letter', 'glossary'], 7: ['normal', 'cards'], 8: ['listen', 'guess'], 9: ['chat', 'cards'], 10: ['normal', 'guess'],
+};
+export const lessonPlan = (pack: LevelPack, l: Lesson): [LessonFormat, IntroStyle] => PLAN[placeOf(pack, l)] ?? ['normal', 'cards'];
+export const isBeacon = (pack: LevelPack, l: Lesson) => lessonPlan(pack, l)[0] === 'listen';
 
 /** Сундук стоит после 5-го урока острова. */
 export const CHEST_AFTER = 5;

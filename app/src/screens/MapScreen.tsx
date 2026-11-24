@@ -7,8 +7,9 @@ import { days, plural, words } from '../lib/format';
 import { Flame, Icon } from '../components/Icon';
 import { FogArt, IslandArt } from '../components/IslandArt';
 import { ResidentArt } from '../components/Residents';
-import { CHEST_AFTER, chestKey, chestReady, isBeacon } from '../game/nodes';
+import { CHEST_AFTER, chestKey, chestReady, lessonPlan } from '../game/nodes';
 import type { Bottle } from '../game/bottle';
+import { equipped } from '../game/shop';
 import { BottleCard } from '../components/BottleCard';
 
 const ROW = 88;
@@ -18,9 +19,9 @@ function Boat({ left }: { left: boolean }) {
   return (
     <svg class={'boat' + (left ? ' l' : '')} viewBox="0 0 44 40" aria-hidden="true">
       <path d="M21 4v24" stroke="#6e4826" stroke-width="2.5" stroke-linecap="round" />
-      <path d="M23 6l14 18H23z" fill="#fff" stroke="#14263a" stroke-width="2" stroke-linejoin="round" />
-      <path d="M19 10 8 24h11z" fill="#ffc83d" stroke="#14263a" stroke-width="2" stroke-linejoin="round" />
-      <path d="M21 4l7 3-7 3z" fill="#ff6b4a" />
+      <path d="M23 6l14 18H23z" fill="var(--sail1)" stroke="#14263a" stroke-width="2" stroke-linejoin="round" />
+      <path d="M19 10 8 24h11z" fill="var(--sail2)" stroke="#14263a" stroke-width="2" stroke-linejoin="round" />
+      <path d="M21 4l7 3-7 3z" fill="var(--flag)" />
       <path d="M4 28h36l-6 8H10z" fill="#ff6b4a" stroke="#14263a" stroke-width="2" stroke-linejoin="round" />
       <path d="M2 38c4-2 8-2 12 0s8 2 12 0 8-2 12 0" fill="none" stroke="#7fd0f5" stroke-width="2" stroke-linecap="round" />
     </svg>
@@ -69,7 +70,7 @@ export function MapScreen({ pack, st, due, hard, onLesson, onReview, onTrial, on
   );
 
   return (
-    <main class="map">
+    <main class={'map flag-' + (equipped(st, 'flag') ?? 'classic')}>
       {bottle && <BottleCard key={bottle.en} b={bottle} onAnswer={onBottle} />}
       <div class={"card review" + (due.length ? " due" : "")}>
         <span class="banner-ico"><Icon name="refresh" /></span>
@@ -159,16 +160,18 @@ export function MapScreen({ pack, st, due, hard, onLesson, onReview, onTrial, on
                       const open = lessonOpen(pack, l.day, st, s);
                       const done = !!st.done[l.id];
                       const cur = l.id === current && open;
-                      const beacon = isBeacon(pack, l);
+                      const fmt = lessonPlan(pack, l)[0];
+                      const badge = fmt === 'listen' ? 'beacon' : fmt === 'chat' ? 'chat' : fmt === 'letter' ? 'mail' : null;
+                      const fmtName = fmt === 'listen' ? ' (на слух)' : fmt === 'chat' ? ' (переписка)' : fmt === 'letter' ? ' (письмо)' : '';
                       return (
                         <div class="stop" key={l.id} style={{ '--x': `${xAt(i)}%` }}>
                           {cur && <Boat left={xAt(i) > 55} />}
                           {cur && <span class="node-tag">{st.done[pack.lessons[0].id] ? 'Дальше' : 'Начать'}</span>}
                           <button class={'node' + (done ? ' done' : '') + (cur ? ' cur' : '')}
                             disabled={!open} onClick={() => onLesson(l)} title={l.title}
-                            aria-label={`Урок ${l.day}: ${l.title}${beacon ? ' (на слух)' : ''}${done ? ', пройден' : open ? '' : ', закрыт'}`}>
+                            aria-label={`Урок ${l.day}: ${l.title}${fmtName}${done ? ', пройден' : open ? '' : ', закрыт'}`}>
                             {done ? <Icon name="check" size={30} stroke={3.2} /> : open ? l.day : <Icon name="lock" size={24} />}
-                            {beacon && <span class="node-badge" aria-hidden="true"><Icon name="beacon" size={14} stroke={2.2} /></span>}
+                            {badge && <span class={'node-badge b-' + fmt} aria-hidden="true"><Icon name={badge} size={14} stroke={2.2} /></span>}
                           </button>
                         </div>
                       );

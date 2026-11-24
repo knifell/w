@@ -68,6 +68,90 @@
         "amount": 3
       },
       "freeOnly": true
+    },
+    {
+      "id": "spyglass",
+      "name": "Подзорная труба",
+      "emoji": "🔭",
+      "desc": "Убирает 2 неверных варианта в задании с выбором. Можно держать 5",
+      "price": 40,
+      "effect": {
+        "type": "tool",
+        "max": 5,
+        "use": "hint"
+      }
+    },
+    {
+      "id": "buoy",
+      "name": "Спасательный круг",
+      "emoji": "🛟",
+      "desc": "+1 жизнь в Испытании острова. Можно держать 3",
+      "price": 60,
+      "effect": {
+        "type": "tool",
+        "max": 3,
+        "use": "life"
+      }
+    },
+    {
+      "id": "flag-sunset",
+      "name": "Парус «Закат»",
+      "emoji": "⛵",
+      "desc": "Оранжево-лиловый парус кораблика на карте",
+      "price": 150,
+      "effect": {
+        "type": "cosmetic",
+        "slot": "flag",
+        "value": "sunset"
+      }
+    },
+    {
+      "id": "flag-navy",
+      "name": "Парус «Флот»",
+      "emoji": "⛵",
+      "desc": "Тёмно-синий парус с белой полосой",
+      "price": 150,
+      "effect": {
+        "type": "cosmetic",
+        "slot": "flag",
+        "value": "navy"
+      }
+    },
+    {
+      "id": "flag-emerald",
+      "name": "Парус «Изумруд»",
+      "emoji": "⛵",
+      "desc": "Изумрудный парус с золотой каймой",
+      "price": 250,
+      "effect": {
+        "type": "cosmetic",
+        "slot": "flag",
+        "value": "emerald"
+      }
+    },
+    {
+      "id": "frame-silver",
+      "name": "Рамка «Серебро»",
+      "emoji": "🖼️",
+      "desc": "Серебряная рамка аватара в профиле",
+      "price": 300,
+      "effect": {
+        "type": "cosmetic",
+        "slot": "frame",
+        "value": "silver"
+      }
+    },
+    {
+      "id": "frame-gold",
+      "name": "Рамка «Золото»",
+      "emoji": "🖼️",
+      "desc": "Золотая рамка аватара в профиле",
+      "price": 600,
+      "effect": {
+        "type": "cosmetic",
+        "slot": "frame",
+        "value": "gold"
+      }
     }
   ],
   "stars": {

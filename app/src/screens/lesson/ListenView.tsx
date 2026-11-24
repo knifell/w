@@ -8,7 +8,7 @@ import type { ViewProps } from './types';
 import { Icon } from '../../components/Icon';
 
 /** Задание на слух: слово звучит по-английски; выбрать перевод или написать услышанное. */
-export function ListenView({ ex, locked, onSubmit }: ViewProps<'listen'>) {
+export function ListenView({ ex, locked, onSubmit, hide }: ViewProps<'listen'>) {
   const [sel, setSel] = useState<string | null>(null);
   const [v, setV] = useState('');
   const ref = useRef<HTMLInputElement>(null);
@@ -35,7 +35,7 @@ export function ListenView({ ex, locked, onSubmit }: ViewProps<'listen'>) {
       {ex.mode === 'choose' ? (
         <>
           <div class="opts">
-            {ex.options.map((o) => <button class={cls(o)} disabled={locked} onClick={() => { haptic.tap(); setSel(o); }}>{o}</button>)}
+            {ex.options.map((o) => <button class={cls(o) + (hide?.includes(o) ? ' gone' : '')} disabled={locked || hide?.includes(o)} onClick={() => { haptic.tap(); setSel(o); }}>{o}</button>)}
           </div>
           {!locked && <button class="btn check" disabled={!sel} onClick={() => onSubmit({ ok: sel === ex.answer, correct: ex.answer })}>Проверить</button>}
         </>

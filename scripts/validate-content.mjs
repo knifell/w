@@ -134,7 +134,7 @@ if (shop) {
     if (!str(it.id) || ids.has(it.id)) err(shopF, `пустой или повторный id "${it.id}"`);
     ids.add(it.id);
     if (!str(it.name) || !str(it.desc) || !(it.price > 0)) err(shopF, `${it.id}: пустое name/desc или цена ≤ 0`);
-    if (!['boost', 'shield', 'energy'].includes(it.effect?.type)) err(shopF, `${it.id}: неизвестный effect`);
+    if (!['boost', 'shield', 'energy', 'tool', 'cosmetic'].includes(it.effect?.type)) err(shopF, `${it.id}: неизвестный effect`);
   }
   // покупки за Telegram Stars: только подписка и ракушки, целые цены от 1 звезды
   const st = shop.stars;

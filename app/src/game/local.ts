@@ -35,6 +35,8 @@ export interface LocalState {
   paidCoins: number;                       // ракушки, купленные за звёзды (минус возвраты)
   chests: string[];                        // открытые сундуки островов ("A1-2")
   bottleDay: number;                       // день, когда открыта «бутылка с письмом»
+  owned: string[];                         // купленные украшения (парус, рамка)
+  equip: { flag?: string; frame?: string }; // надетые украшения: id товара
 }
 
 const KEY = 'os.v3';
@@ -43,7 +45,7 @@ export const emptyState = (): LocalState => ({
   energy: ENERGY.max, energyAt: nowMs(), inventory: {}, boosts: {}, done: {}, mem: {},
   streak: { cur: 0, best: 0, last: 0 }, emberWeek: 0, stickers: {}, counters: {},
   trialsToday: { day: 0, n: 0 }, unlocks: {}, storySeen: [], reports: [], typos: {}, updatedAt: 0,
-  premiumUntil: 0, devPremiumUntil: 0, claimed: {}, refRewarded: [], refBonusTaken: false, paidCoins: 0, admin: false, chests: [], bottleDay: 0,
+  premiumUntil: 0, devPremiumUntil: 0, claimed: {}, refRewarded: [], refBonusTaken: false, paidCoins: 0, admin: false, chests: [], bottleDay: 0, owned: [], equip: {},
 });
 
 export function loadState(): LocalState {
